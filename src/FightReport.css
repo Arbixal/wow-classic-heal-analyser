@@ -1,0 +1,161 @@
+
+div.fight {
+    margin: 5px;
+    background-color: #222222;
+    color: #FFFFFF;
+}
+
+div.fight > div.heading {
+    background-color: #333333;
+    padding: 5px;
+    cursor: pointer;
+}
+
+div.fight.success > div.heading {
+    color: rgb(50%, 90%, 40%);
+}
+
+div.fight.fail > div.heading {
+    color: rgb(90%,65%,55%);
+}
+
+td.healer_name {
+    vertical-align: text-top;
+    width: 120px;
+}
+
+tr.Druid > td.healer_name {
+    color: rgb(100%,49%,4%);
+}
+
+tr.Druid > td.healer_amount > div.bar > div.bar_effective {
+    background-color: rgb(100%,49%,4%);
+}
+
+tr.Druid > td.healer_amount > div.bar > div.bar_overheal {
+    background-color: rgba(100%,49%,4%,50%);
+}
+
+tr.Priest > td.healer_name {
+    color: #FFFFFF;
+}
+
+tr.Priest > td.healer_amount > div.bar > div.bar_effective {
+    background-color: rgb(100%,100%,100%);
+}
+
+tr.Priest > td.healer_amount > div.bar > div.bar_overheal {
+    background-color: rgba(100%,100%,100%,50%);
+}
+
+tr.Shaman > td.healer_name {
+    color: rgb(14%,35%,100%);
+}
+
+tr.Shaman > td.healer_amount > div.bar > div.bar_effective {
+    background-color: rgb(14%,35%,100%);
+}
+
+tr.Shaman > td.healer_amount > div.bar > div.bar_overheal {
+    background-color: rgba(14%,35%,100%,50%);
+}
+
+tr.Paladin > td.healer_name {
+    color: rgb(96%,55%,73%);
+}
+
+tr.Paladin > td.healer_amount > div.bar > div.bar_effective {
+    background-color: rgb(96%,55%,73%);
+}
+
+tr.Paladin > td.healer_amount > div.bar > div.bar_overheal {
+    background-color: rgba(96%,55%,73%,50%);
+}
+
+div.bar_wasted {
+    background-color: rgba(100%,0%,0%,50%);
+}
+
+td.healer_amount {
+    vertical-align: text-top;
+}
+
+td.healer_cooldowns {
+    vertical-align: text-top;
+}
+
+td.healer_consumes {
+    text-align: center;
+}
+
+td.healer_casts {
+    text-align: center;
+}
+
+td {
+    border: solid 1px black;
+    border-collapse: collapse;
+    margin: 0;
+}
+
+td.center {
+    text-align: center;
+}
+
+td.right {
+    text-align: right;
+    padding-right: 5px;
+}
+
+td.percent {
+    width: 55px;
+}
+
+td.amount {
+    width: 55px;
+}
+
+td.healer_amount {
+    width: 400px;
+}
+
+td.healer_consumes_mana {
+    width: 45px;
+    text-align: center;
+}
+
+td.tick {
+    color: rgb(50%, 90%, 40%);
+}
+
+td.cross {
+    color: rgb(90%,65%,55%);
+}
+
+tr.even {
+    background-color: #111111;
+}
+
+tr.spell > td.healer_name {
+    padding-left: 120px;
+    vertical-align: middle;
+}
+
+tr.character {
+    cursor: pointer;
+}
+
+table {
+    border-spacing: 0;
+    margin-left: 10px;
+}
+
+div.bar {
+    display:flex;
+}
+
+img.spell_icon {
+    width: 17px;
+    height: 17px;
+    vertical-align: middle;
+}
