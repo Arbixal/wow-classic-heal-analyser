@@ -46,8 +46,8 @@ export class HealerFightSummary extends Component {
                     <td className={"healer_consumes_flask center " + (flask ? "tick" : "cross")}>{flask ? "✔" : "✖"}</td>
                     <td className="right">{abbreviateNumber(summary.manaGained)}</td>
                     <td className="healer_cooldowns">
-                        {summary.cooldowns.map(cooldown => (
-                            <img className="spell_icon" src={"https://assets.rpglogs.com/img/warcraft/abilities/" + cooldown.icon} alt={cooldown.name} />
+                        {summary.cooldowns.map((cooldown, idx) => (
+                            <img key={idx} className="spell_icon" src={"https://assets.rpglogs.com/img/warcraft/abilities/" + cooldown.icon} alt={cooldown.name} />
                         ))}
                     </td>
                     <td className="healer_casts_started center">{summary.castsStarted}</td>
@@ -67,8 +67,8 @@ export class HealerFightSummary extends Component {
 
                 {isExpanded && spells.sort((x,y) => y.summary.effectiveHeals -x.summary.effectiveHeals)
                                      .map((spell) => (
-                    <tr key={spell.id} className={classType + " spell " + (row % 2 === 0 ? "even" : "odd")}>
-                        <td className="healer_name" colspan="7"><img className="spell_icon" src={"https://assets.rpglogs.com/img/warcraft/abilities/" + spell.icon} alt={spell.name} /> {spell.name}</td>
+                    <tr key={spell.id} className={spell.type + " spell " + (row % 2 === 0 ? "even" : "odd")}>
+                        <td className="healer_name" colSpan="7"><img className="spell_icon" src={"https://assets.rpglogs.com/img/warcraft/abilities/" + spell.icon} alt={spell.name} /> {spell.name}</td>
                         <td className="healer_casts_started center">{spell.summary.castsStarted}</td>
                         <td className="healer_casts_completed center">{spell.summary.castsCompleted}</td>
                         <td className="healer_casts percent right">{spell.summary.getCastsPercent()}%</td>

@@ -2,72 +2,84 @@ export const healingSpells = {
     // Priest Spells
     '2054': {
         name: "Heal (Rank 1)",
+        type: "Holy",
         icon: "spell_holy_heal02.jpg",
         mana: 155,
         castTime: 3000
     },
     '2055': {
         name: "Heal (Rank 2)",
+        type: "Holy",
         icon: "spell_holy_heal02.jpg",
         mana: 205,
         castTime: 3000
     },
     '6063': {
         name: "Heal (Rank 3)",
+        type: "Holy",
         icon: "spell_holy_heal02.jpg",
         mana: 255,
         castTime: 3000
     },
     '6064': {
         name: "Heal (Rank 4)",
+        type: "Holy",
         icon: "spell_holy_heal02.jpg",
         mana: 305,
         castTime: 3000
     },
     '2061': {
         name: "Flash Heal (Rank 1)",
+        type: "Holy",
         icon: "spell_holy_flashheal.jpg",
         mana: 125,
         castTime: 1500
     },
     '9472': {
         name: "Flash Heal (Rank 2)",
+        type: "Holy",
         icon: "spell_holy_flashheal.jpg",
         mana: 155,
         castTime: 1500
     },
     '9473': {
         name: "Flash Heal (Rank 3)",
+        type: "Holy",
         icon: "spell_holy_flashheal.jpg",
         mana: 185,
         castTime: 1500
     },
     '9474': {
         name: "Flash Heal (Rank 4)",
+        type: "Holy",
         icon: "spell_holy_flashheal.jpg",
         mana: 215,
         castTime: 1500
     },
     '10915': {
         name: "Flash Heal (Rank 5)",
+        type: "Holy",
         icon: "spell_holy_flashheal.jpg",
         mana: 265,
         castTime: 1500
     },
     '10916': {
         name: "Flash Heal (Rank 6)",
+        type: "Holy",
         icon: "spell_holy_flashheal.jpg",
         mana: 315,
         castTime: 1500
     },
     '10917': {
         name: "Flash Heal (Rank 7)",
+        type: "Holy",
         icon: "spell_holy_flashheal.jpg",
         mana: 380,
         castTime: 1500
     },
     '139': {
         name: "Renew (Rank 1)",
+        type: "Holy",
         icon: "spell_holy_renew.jpg",
         mana: 30,
         castTime: 0,
@@ -76,6 +88,7 @@ export const healingSpells = {
     },
     '6074': {
         name: "Renew (Rank 2)",
+        type: "Holy",
         icon: "spell_holy_renew.jpg",
         mana: 65,
         castTime: 0,
@@ -84,6 +97,7 @@ export const healingSpells = {
     },
     '6075': {
         name: "Renew (Rank 3)",
+        type: "Holy",
         icon: "spell_holy_renew.jpg",
         mana: 105,
         castTime: 0,
@@ -92,6 +106,7 @@ export const healingSpells = {
     },
     '6076': {
         name: "Renew (Rank 4)",
+        type: "Holy",
         icon: "spell_holy_renew.jpg",
         mana: 140,
         castTime: 0,
@@ -100,6 +115,7 @@ export const healingSpells = {
     },
     '6077': {
         name: "Renew (Rank 5)",
+        type: "Holy",
         icon: "spell_holy_renew.jpg",
         mana: 170,
         castTime: 0,
@@ -108,6 +124,7 @@ export const healingSpells = {
     },
     '6078': {
         name: "Renew (Rank 6)",
+        type: "Holy",
         icon: "spell_holy_renew.jpg",
         mana: 205,
         castTime: 0,
@@ -116,6 +133,7 @@ export const healingSpells = {
     },
     '10927': {
         name: "Renew (Rank 7)",
+        type: "Holy",
         icon: "spell_holy_renew.jpg",
         mana: 250,
         castTime: 0,
@@ -124,6 +142,7 @@ export const healingSpells = {
     },
     '10928': {
         name: "Renew (Rank 8)",
+        type: "Holy",
         icon: "spell_holy_renew.jpg",
         mana: 305,
         castTime: 0,
@@ -132,6 +151,7 @@ export const healingSpells = {
     },
     '10929': {
         name: "Renew (Rank 9)",
+        type: "Holy",
         icon: "spell_holy_renew.jpg",
         mana: 365,
         castTime: 0,
@@ -140,6 +160,7 @@ export const healingSpells = {
     },
     '25315': {
         name: "Renew (Rank 10)",
+        type: "Holy",
         icon: "spell_holy_renew.jpg",
         mana: 410,
         castTime: 0,
@@ -148,97 +169,178 @@ export const healingSpells = {
     },
     '17': {
         name: "Power Word: Shield (Rank 1)",
+        type: "Holy",
         icon: "spell_holy_powerwordshield.jpg",
         mana: 45,
         castTime: 0
     },
     '592': {
         name: "Power Word: Shield (Rank 2)",
+        type: "Holy",
         icon: "spell_holy_powerwordshield.jpg",
         mana: 80,
         castTime: 0
     },
     '600': {
         name: "Power Word: Shield (Rank 3)",
+        type: "Holy",
         icon: "spell_holy_powerwordshield.jpg",
         mana: 130,
         castTime: 0
     },
     '3747': {
         name: "Power Word: Shield (Rank 4)",
+        type: "Holy",
         icon: "spell_holy_powerwordshield.jpg",
         mana: 175,
         castTime: 0
     },
     '6065': {
         name: "Power Word: Shield (Rank 5)",
+        type: "Holy",
         icon: "spell_holy_powerwordshield.jpg",
         mana: 210,
         castTime: 0
     },
     '6066': {
         name: "Power Word: Shield (Rank 6)",
+        type: "Holy",
         icon: "spell_holy_powerwordshield.jpg",
         mana: 250,
         castTime: 0
     },
     '10898': {
         name: "Power Word: Shield (Rank 7)",
+        type: "Holy",
         icon: "spell_holy_powerwordshield.jpg",
         mana: 300,
         castTime: 0
     },
     '10899': {
         name: "Power Word: Shield (Rank 8)",
+        type: "Holy",
         icon: "spell_holy_powerwordshield.jpg",
         mana: 355,
         castTime: 0
     },
     '10900': {
         name: "Power Word: Shield (Rank 9)",
+        type: "Holy",
         icon: "spell_holy_powerwordshield.jpg",
         mana: 425,
         castTime: 0
     },
     '10901': {
         name: "Power Word: Shield (Rank 10)",
+        type: "Holy",
         icon: "spell_holy_powerwordshield.jpg",
         mana: 500,
         castTime: 0
     },
     '2060': {
         name: "Greater Heal (Rank 1)",
+        type: "Holy",
         icon: "spell_holy_greaterheal.jpg",
         mana: 370,
         castTime: 3000
     },
     '10963': {
         name: "Greater Heal (Rank 2)",
+        type: "Holy",
         icon: "spell_holy_greaterheal.jpg",
         mana: 455,
         castTime: 3000
     },
     '10964': {
         name: "Greater Heal (Rank 3)",
+        type: "Holy",
         icon: "spell_holy_greaterheal.jpg",
         mana: 545,
         castTime: 3000
     },
     '10965': {
         name: "Greater Heal (Rank 4)",
+        type: "Holy",
         icon: "spell_holy_greaterheal.jpg",
         mana: 655,
         castTime: 3000
     },
     '25314': {
         name: "Greater Heal (Rank 5)",
+        type: "Holy",
         icon: "spell_holy_greaterheal.jpg",
         mana: 710,
         castTime: 3000
     },
+    '596': {
+        name: "Prayer of Healing (Rank 1)",
+        type: "Holy",
+        icon: "spell_holy_prayerofhealing02.jpg",
+        mana: 410,
+        castTime: 3000
+    },
+    '996': {
+        name: "Prayer of Healing (Rank 2)",
+        type: "Holy",
+        icon: "spell_holy_prayerofhealing02.jpg",
+        mana: 560,
+        castTime: 3000
+    },
+    '10960': {
+        name: "Prayer of Healing (Rank 3)",
+        type: "Holy",
+        icon: "spell_holy_prayerofhealing02.jpg",
+        mana: 770,
+        castTime: 3000
+    },
+    '10961': {
+        name: "Prayer of Healing (Rank 4)",
+        type: "Holy",
+        icon: "spell_holy_prayerofhealing02.jpg",
+        mana: 1030,
+        castTime: 3000
+    },
+    '25316': {
+        name: "Prayer of Healing (Rank 5)",
+        type: "Holy",
+        icon: "spell_holy_prayerofhealing02.jpg",
+        mana: 1070,
+        castTime: 3000
+    },
+    '2050': {
+        name: "Lesser Heal (Rank 1)",
+        type: "Holy",
+        icon: "spell_holy_lesserheal.jpg",
+        mana: 30,
+        castTime: 1500
+    },
+    '2052': {
+        name: "Lesser Heal (Rank 2)",
+        type: "Holy",
+        icon: "spell_holy_lesserheal.jpg",
+        mana: 45,
+        castTime: 2000
+    },
+    '2053': {
+        name: "Lesser Heal (Rank 3)",
+        type: "Holy",
+        icon: "spell_holy_lesserheal.jpg",
+        mana: 75,
+        castTime: 2500
+    },
+    '22009': {
+        name: "Greater Heal (Renew)",
+        type: "Holy",
+        icon: "spell_holy_renew.jpg",
+        mana: 0,
+        castTime: 0,
+        ticks: 5,
+        tickPortion: 0
+    },
     // Druid Spells
     '774': {
         name: "Rejuvenation (Rank 1)",
+        type: "Nature",
         icon: "spell_nature_rejuvenation.jpg",
         mana: 25,
         castTime: 0,
@@ -247,6 +349,7 @@ export const healingSpells = {
     },
     '1058': {
         name: "Rejuvenation (Rank 2)",
+        type: "Nature",
         icon: "spell_nature_rejuvenation.jpg",
         mana: 40,
         castTime: 0,
@@ -255,6 +358,7 @@ export const healingSpells = {
     },
     '1430': {
         name: "Rejuvenation (Rank 3)",
+        type: "Nature",
         icon: "spell_nature_rejuvenation.jpg",
         mana: 75,
         castTime: 0,
@@ -263,6 +367,7 @@ export const healingSpells = {
     },
     '2090': {
         name: "Rejuvenation (Rank 4)",
+        type: "Nature",
         icon: "spell_nature_rejuvenation.jpg",
         mana: 105,
         castTime: 0,
@@ -271,6 +376,7 @@ export const healingSpells = {
     },
     '2091': {
         name: "Rejuvenation (Rank 5)",
+        type: "Nature",
         icon: "spell_nature_rejuvenation.jpg",
         mana: 135,
         castTime: 0,
@@ -279,6 +385,7 @@ export const healingSpells = {
     },
     '3627': {
         name: "Rejuvenation (Rank 6)",
+        type: "Nature",
         icon: "spell_nature_rejuvenation.jpg",
         mana: 160,
         castTime: 0,
@@ -287,6 +394,7 @@ export const healingSpells = {
     },
     '8910': {
         name: "Rejuvenation (Rank 7)",
+        type: "Nature",
         icon: "spell_nature_rejuvenation.jpg",
         mana: 195,
         castTime: 0,
@@ -295,6 +403,7 @@ export const healingSpells = {
     },
     '9839': {
         name: "Rejuvenation (Rank 8)",
+        type: "Nature",
         icon: "spell_nature_rejuvenation.jpg",
         mana: 235,
         castTime: 0,
@@ -303,6 +412,7 @@ export const healingSpells = {
     },
     '9840': {
         name: "Rejuvenation (Rank 9)",
+        type: "Nature",
         icon: "spell_nature_rejuvenation.jpg",
         mana: 280,
         castTime: 0,
@@ -311,6 +421,7 @@ export const healingSpells = {
     },
     '9841': {
         name: "Rejuvenation (Rank 10)",
+        type: "Nature",
         icon: "spell_nature_rejuvenation.jpg",
         mana: 335,
         castTime: 0,
@@ -319,6 +430,7 @@ export const healingSpells = {
     },
     '25299': {
         name: "Rejuvenation (Rank 11)",
+        type: "Nature",
         icon: "spell_nature_rejuvenation.jpg",
         mana: 360,
         castTime: 0,
@@ -327,72 +439,84 @@ export const healingSpells = {
     },
     '5185': {
         name: "Healing Touch (Rank 1)",
+        type: "Nature",
         icon: "spell_nature_healingtouch.jpg",
         mana: 25,
         castTime: 1500
     },
     '5186': {
         name: "Healing Touch (Rank 2)",
+        type: "Nature",
         icon: "spell_nature_healingtouch.jpg",
         mana: 55,
         castTime: 2000
     },
     '5187': {
         name: "Healing Touch (Rank 3)",
+        type: "Nature",
         icon: "spell_nature_healingtouch.jpg",
         mana: 110,
         castTime: 2500
     },
     '5188': {
         name: "Healing Touch (Rank 4)",
+        type: "Nature",
         icon: "spell_nature_healingtouch.jpg",
         mana: 185,
         castTime: 3000
     },
     '5189': {
         name: "Healing Touch (Rank 5)",
+        type: "Nature",
         icon: "spell_nature_healingtouch.jpg",
         mana: 270,
         castTime: 3500
     },
     '6778': {
         name: "Healing Touch (Rank 6)",
+        type: "Nature",
         icon: "spell_nature_healingtouch.jpg",
         mana: 335,
         castTime: 3500
     },
     '8903': {
         name: "Healing Touch (Rank 7)",
+        type: "Nature",
         icon: "spell_nature_healingtouch.jpg",
         mana: 405,
         castTime: 3500
     },
     '9758': {
         name: "Healing Touch (Rank 8)",
+        type: "Nature",
         icon: "spell_nature_healingtouch.jpg",
         mana: 495,
         castTime: 3500
     },
     '9888': {
         name: "Healing Touch (Rank 9)",
+        type: "Nature",
         icon: "spell_nature_healingtouch.jpg",
         mana: 600,
         castTime: 3500
     },
     '9889': {
         name: "Healing Touch (Rank 10)",
+        type: "Nature",
         icon: "spell_nature_healingtouch.jpg",
         mana: 720,
         castTime: 3500
     },
     '25297': {
         name: "Healing Touch (Rank 11)",
+        type: "Nature",
         icon: "spell_nature_healingtouch.jpg",
         mana: 800,
         castTime: 3500
     },
     '8936': {
         name: "Regrowth (Rank 1)",
+        type: "Nature",
         icon: "spell_nature_resistnature.jpg",
         mana: 120,
         castTime: 2000,
@@ -401,6 +525,7 @@ export const healingSpells = {
     },
     '8938': {
         name: "Regrowth (Rank 2)",
+        type: "Nature",
         icon: "spell_nature_resistnature.jpg",
         mana: 205,
         castTime: 2000,
@@ -409,6 +534,7 @@ export const healingSpells = {
     },
     '8939': {
         name: "Regrowth (Rank 3)",
+        type: "Nature",
         icon: "spell_nature_resistnature.jpg",
         mana: 280,
         castTime: 2000,
@@ -417,6 +543,7 @@ export const healingSpells = {
     },
     '8940': {
         name: "Regrowth (Rank 4)",
+        type: "Nature",
         icon: "spell_nature_resistnature.jpg",
         mana: 350,
         castTime: 2000,
@@ -425,6 +552,7 @@ export const healingSpells = {
     },
     '8941': {
         name: "Regrowth (Rank 5)",
+        type: "Nature",
         icon: "spell_nature_resistnature.jpg",
         mana: 420,
         castTime: 2000,
@@ -433,6 +561,7 @@ export const healingSpells = {
     },
     '9750': {
         name: "Regrowth (Rank 6)",
+        type: "Nature",
         icon: "spell_nature_resistnature.jpg",
         mana: 510,
         castTime: 2000,
@@ -441,6 +570,7 @@ export const healingSpells = {
     },
     '9856': {
         name: "Regrowth (Rank 7)",
+        type: "Nature",
         icon: "spell_nature_resistnature.jpg",
         mana: 615,
         castTime: 2000,
@@ -449,6 +579,7 @@ export const healingSpells = {
     },
     '9857': {
         name: "Regrowth (Rank 8)",
+        type: "Nature",
         icon: "spell_nature_resistnature.jpg",
         mana: 740,
         castTime: 2000,
@@ -457,6 +588,7 @@ export const healingSpells = {
     },
     '9858': {
         name: "Regrowth (Rank 9)",
+        type: "Nature",
         icon: "spell_nature_resistnature.jpg",
         mana: 880,
         castTime: 2000,
@@ -465,30 +597,35 @@ export const healingSpells = {
     },
     '740': {
         name: "Tranquility (Rank 1)",
+        type: "Nature",
         icon: "spell_nature_tranquility.jpg",
         mana: 375,
         castTime: 0
     },
     '8918': {
         name: "Tranquility (Rank 2)",
+        type: "Nature",
         icon: "spell_nature_tranquility.jpg",
         mana: 505,
         castTime: 0
     },
     '9862': {
         name: "Tranquility (Rank 3)",
+        type: "Nature",
         icon: "spell_nature_tranquility.jpg",
         mana: 695,
         castTime: 0
     },
     '9863': {
         name: "Tranquility (Rank 4)",
+        type: "Nature",
         icon: "spell_nature_tranquility.jpg",
         mana: 925,
         castTime: 0
     },
     '18562': {
         name: "Swiftmend",
+        type: "Nature",
         icon: "inv_relics_idolofrejuvenation.jpg",
         mana: 250,
         castTime: 0
@@ -496,190 +633,479 @@ export const healingSpells = {
     // Shaman
     '1064': {
         name: "Chain Heal (Rank 1)",
+        type: "Nature",
         icon: "spell_nature_healingwavegreater.jpg",
         mana: 260,
         castTime: 2500
     },
     '10622': {
         name: "Chain Heal (Rank 2)",
+        type: "Nature",
         icon: "spell_nature_healingwavegreater.jpg",
         mana: 315,
         castTime: 2500
     },
     '10623': {
         name: "Chain Heal (Rank 3)",
+        type: "Nature",
         icon: "spell_nature_healingwavegreater.jpg",
         mana: 405,
         castTime: 2500
     },
     '8004': {
         name: "Lesser Healing Wave (Rank 1)",
+        type: "Nature",
         icon: "spell_nature_healingwavelesser.jpg",
         mana: 105,
         castTime: 1500
     },
     '8008': {
         name: "Lesser Healing Wave (Rank 2)",
+        type: "Nature",
         icon: "spell_nature_healingwavelesser.jpg",
         mana: 145,
         castTime: 1500
     },
     '8010': {
         name: "Lesser Healing Wave (Rank 3)",
+        type: "Nature",
         icon: "spell_nature_healingwavelesser.jpg",
         mana: 185,
         castTime: 1500
     },
     '10466': {
         name: "Lesser Healing Wave (Rank 4)",
+        type: "Nature",
         icon: "spell_nature_healingwavelesser.jpg",
         mana: 235,
         castTime: 1500
     },
     '10467': {
         name: "Lesser Healing Wave (Rank 5)",
+        type: "Nature",
         icon: "spell_nature_healingwavelesser.jpg",
         mana: 305,
         castTime: 1500
     },
     '10468': {
         name: "Lesser Healing Wave (Rank 6)",
+        type: "Nature",
         icon: "spell_nature_healingwavelesser.jpg",
         mana: 380,
         castTime: 1500
     },
     '331': {
         name: "Healing Wave (Rank 1)",
+        type: "Nature",
         icon: "spell_nature_magicimmunity.jpg",
         mana: 25,
         castTime: 1500
     },
     '332': {
         name: "Healing Wave (Rank 2)",
+        type: "Nature",
         icon: "spell_nature_magicimmunity.jpg",
         mana: 45,
         castTime: 2000
     },
     '547': {
         name: "Healing Wave (Rank 3)",
+        type: "Nature",
         icon: "spell_nature_magicimmunity.jpg",
         mana: 80,
         castTime: 2500
     },
     '913': {
         name: "Healing Wave (Rank 4)",
+        type: "Nature",
         icon: "spell_nature_magicimmunity.jpg",
         mana: 155,
         castTime: 3000
     },
     '939': {
         name: "Healing Wave (Rank 5)",
+        type: "Nature",
         icon: "spell_nature_magicimmunity.jpg",
         mana: 200,
         castTime: 3000
     },
     '959': {
         name: "Healing Wave (Rank 6)",
+        type: "Nature",
         icon: "spell_nature_magicimmunity.jpg",
         mana: 265,
         castTime: 3000
     },
     '8005': {
         name: "Healing Wave (Rank 7)",
+        type: "Nature",
         icon: "spell_nature_magicimmunity.jpg",
         mana: 340,
         castTime: 3000
     },
     '10395': {
         name: "Healing Wave (Rank 8)",
+        type: "Nature",
         icon: "spell_nature_magicimmunity.jpg",
         mana: 440,
         castTime: 3000
     },
     '10396': {
         name: "Healing Wave (Rank 9)",
+        type: "Nature",
         icon: "spell_nature_magicimmunity.jpg",
         mana: 560,
         castTime: 3000
     },
     '25357': {
         name: "Healing Wave (Rank 10)",
+        type: "Nature",
         icon: "spell_nature_magicimmunity.jpg",
         mana: 620,
         castTime: 3000
     },
+    '5672': {
+        name: "Healing Stream (Rank 1)",
+        type: "Nature",
+        icon: "inv_spear_04.jpg",
+        mana: 40,
+        castTime: 0,
+        ticks: 30,
+        tickPortion: 1
+    },
+    '6371': {
+        name: "Healing Stream (Rank 2)",
+        type: "Nature",
+        icon: "inv_spear_04.jpg",
+        mana: 50,
+        castTime: 0,
+        ticks: 30,
+        tickPortion: 1
+    },
+    '6372': {
+        name: "Healing Stream (Rank 3)",
+        type: "Nature",
+        icon: "inv_spear_04.jpg",
+        mana: 60,
+        castTime: 0,
+        ticks: 30,
+        tickPortion: 1
+    },
+    '10460': {
+        name: "Healing Stream (Rank 4)",
+        type: "Nature",
+        icon: "inv_spear_04.jpg",
+        mana: 70,
+        castTime: 0,
+        ticks: 30,
+        tickPortion: 1
+    },
+    '10461': {
+        name: "Healing Stream (Rank 5)",
+        type: "Nature",
+        icon: "inv_spear_04.jpg",
+        mana: 80,
+        castTime: 0,
+        ticks: 30,
+        tickPortion: 1
+    },
     // Bandages
     '746': {
         name: "Linen Bandage",
+        type: "Physical",
         icon: "inv_misc_bandage_15.jpg",
         mana: 0,
         castTime: 0
     },
     '1159': {
         name: "Heavy Linen Bandage",
+        type: "Physical",
         icon: "inv_misc_bandage_18.jpg",
         mana: 0,
         castTime: 0
     },
     '3267': {
         name: "Wool Bandage",
+        type: "Physical",
         icon: "inv_misc_bandage_14.jpg",
         mana: 0,
         castTime: 0
     },
     '3268': {
         name: "Heavy Wool Bandage",
+        type: "Physical",
         icon: "inv_misc_bandage_17.jpg",
         mana: 0,
         castTime: 0
     },
     '7926': {
         name: "Silk Bandage",
+        type: "Physical",
         icon: "inv_misc_bandage_01.jpg",
         mana: 0,
         castTime: 0
     },
     '7927': {
         name: "Heavy Silk Bandage",
+        type: "Physical",
         icon: "inv_misc_bandage_02.jpg",
         mana: 0,
         castTime: 0
     },
     '10838': {
         name: "Mageweave Bandage",
+        type: "Physical",
         icon: "inv_misc_bandage_19.jpg",
         mana: 0,
         castTime: 0
     },
     '10839': {
         name: "Heave Mageweave Bandage",
+        type: "Physical",
         icon: "inv_misc_bandage_20.jpg",
         mana: 0,
         castTime: 0
     },
     '18608': {
         name: "Runecloth Bandage",
+        type: "Physical",
         icon: "inv_misc_bandage_11.jpg",
         mana: 0,
         castTime: 0
     },
     '18610': {
         name: "Heavy Runecloth Bandage",
+        type: "Physical",
         icon: "inv_misc_bandage_12.jpg",
+        mana: 0,
+        castTime: 0
+    },
+    // Paladin
+    '19750': {
+        name: "Flash of Light (Rank 1)",
+        type: "Holy",
+        icon: "spell_holy_flashheal.jpg",
+        mana: 35,
+        castTime: 1500
+    },
+    '19939': {
+        name: "Flash of Light (Rank 2)",
+        type: "Holy",
+        icon: "spell_holy_flashheal.jpg",
+        mana: 50,
+        castTime: 1500
+    },
+    '19940': {
+        name: "Flash of Light (Rank 3)",
+        type: "Holy",
+        icon: "spell_holy_flashheal.jpg",
+        mana: 70,
+        castTime: 1500
+    },
+    '19941': {
+        name: "Flash of Light (Rank 4)",
+        type: "Holy",
+        icon: "spell_holy_flashheal.jpg",
+        mana: 90,
+        castTime: 1500
+    },
+    '19942': {
+        name: "Flash of Light (Rank 5)",
+        type: "Holy",
+        icon: "spell_holy_flashheal.jpg",
+        mana: 115,
+        castTime: 1500
+    },
+    '19943': {
+        name: "Flash of Light (Rank 6)",
+        type: "Holy",
+        icon: "spell_holy_flashheal.jpg",
+        mana: 140,
+        castTime: 1500
+    },
+    '635': {
+        name: "Holy Light (Rank 1)",
+        type: "Holy",
+        icon: "spell_holy_holybolt.jpg",
+        mana: 35,
+        castTime: 2500
+    },
+    '639': {
+        name: "Holy Light (Rank 2)",
+        type: "Holy",
+        icon: "spell_holy_holybolt.jpg",
+        mana: 60,
+        castTime: 2500
+    },
+    '647': {
+        name: "Holy Light (Rank 3)",
+        type: "Holy",
+        icon: "spell_holy_holybolt.jpg",
+        mana: 110,
+        castTime: 2500
+    },
+    '1026': {
+        name: "Holy Light (Rank 4)",
+        type: "Holy",
+        icon: "spell_holy_holybolt.jpg",
+        mana: 190,
+        castTime: 2500
+    },
+    '1042': {
+        name: "Holy Light (Rank 5)",
+        type: "Holy",
+        icon: "spell_holy_holybolt.jpg",
+        mana: 275,
+        castTime: 2500
+    },
+    '3472': {
+        name: "Holy Light (Rank 6)",
+        type: "Holy",
+        icon: "spell_holy_holybolt.jpg",
+        mana: 365,
+        castTime: 2500
+    },
+    '10328': {
+        name: "Holy Light (Rank 7)",
+        type: "Holy",
+        icon: "spell_holy_holybolt.jpg",
+        mana: 465,
+        castTime: 2500
+    },
+    '10329': {
+        name: "Holy Light (Rank 8)",
+        type: "Holy",
+        icon: "spell_holy_holybolt.jpg",
+        mana: 580,
+        castTime: 2500
+    },
+    '25292': {
+        name: "Holy Light (Rank 9)",
+        type: "Holy",
+        icon: "spell_holy_holybolt.jpg",
+        mana: 660,
+        castTime: 2500
+    },
+    '633': {
+        name: "Lay on Hands (Rank 1)",
+        type: "Holy",
+        icon: "spell_holy_layonhands.jpg",
+        mana: 7000,
+        castTime: 0
+    },
+    '2800': {
+        name: "Lay on Hands (Rank 2)",
+        type: "Holy",
+        icon: "spell_holy_layonhands.jpg",
+        mana: 7000,
+        castTime: 0
+    },
+    '10310': {
+        name: "Lay on Hands (Rank 3)",
+        type: "Holy",
+        icon: "spell_holy_layonhands.jpg",
+        mana: 7000,
+        castTime: 0
+    },
+    /*'20185': {
+        name: "Judgement of Light (Rank 1)",
+        icon: "spell_holy_healingaura.jpg",
+        mana: 0,
+        castTime: 0
+    },
+    '20344': {
+        name: "Judgement of Light (Rank 2)",
+        icon: "spell_holy_healingaura.jpg",
+        mana: 0,
+        castTime: 0
+    },
+    '20345': {
+        name: "Judgement of Light (Rank 3)",
+        icon: "spell_holy_healingaura.jpg",
+        mana: 0,
+        castTime: 0
+    },
+    '20346': {
+        name: "Judgement of Light (Rank 4)",
+        icon: "spell_holy_healingaura.jpg",
+        mana: 0,
+        castTime: 0
+    }*/
+
+    '17546': {
+        name: "Greater Nature Protection Potion",
+        type: "Nature",
+        icon: "inv_potion_22.jpg",
+        mana: 0,
+        castTime: 0
+    },
+    '7254': {
+        name: "Nature Protection Potion",
+        type: "Nature",
+        icon: "inv_potion_06.jpg",
+        mana: 0,
+        castTime: 0
+    },
+    '17548': {
+        name: "Greater Shadow Protection Potion",
+        type: "Shadow",
+        icon: "inv_potion_23.jpg",
+        mana: 0,
+        castTime: 0
+    },
+    '7242': {
+        name: "Shadow Protection Potion",
+        type: "Shadow",
+        icon: "inv_potion_44.jpg",
+        mana: 0,
+        castTime: 0
+    },
+    '17544': {
+        name: "Greater Frost Protection Potion",
+        type: "Frost",
+        icon: "inv_potion_20.jpg",
+        mana: 0,
+        castTime: 0
+    },
+    '7240': {
+        name: "Frost Protection Potion",
+        type: "Frost",
+        icon: "inv_potion_13.jpg",
+        mana: 0,
+        castTime: 0
+    },
+    '17543': {
+        name: "Greater Fire Protection Potion",
+        type: "Fire",
+        icon: "inv_potion_24.jpg",
+        mana: 0,
+        castTime: 0
+    },
+    '7230': {
+        name: "Fire Protection Potion",
+        type: "Fire",
+        icon: "inv_potion_16.jpg",
+        mana: 0,
+        castTime: 0
+    },
+    '17549': {
+        name: "Greater Arcane Protection Potion",
+        type: "Arcane",
+        icon: "inv_potion_83.jpg",
+        mana: 0,
+        castTime: 0
+    },
+    //Trinkets
+    '26470': {
+        name: "Scarab Brooch",
+        type: "Physical",
+        icon: "inv_misc_ahnqirajtrinket_06.jpg",
         mana: 0,
         castTime: 0
     }
 
-    // Prayer of Healing
-    // Lesser Heal
     // Healing Totem
-    // Flash of Light
-    // Lay on Hands
-    // Divine Intervention
-    // Divine Shield
-    // Divine Protection
-    // Holy Light
-    // Blessing of Protection
+
     // Seal of Light
 }
 
@@ -768,6 +1194,115 @@ export const cooldownList = {
         name: "Berserking",
         icon: "racial_troll_berserk.jpg",
         cooldown: 180000
+    },
+    '633': {
+        name: "Lay on Hands (Rank 1)",
+        icon: "spell_holy_layonhands.jpg",
+        cooldown: 3600000
+    },
+    '2800': {
+        name: "Lay on Hands (Rank 2)",
+        icon: "spell_holy_layonhands.jpg",
+        cooldown: 3600000
+    },
+    '10310': {
+        name: "Lay on Hands (Rank 3)",
+        icon: "spell_holy_layonhands.jpg",
+        cooldown: 3600000
+    },
+    '19752': {
+        name: "Divine Intervention",
+        icon: "spell_nature_timestop.jpg",
+        cooldown: 3600000
+    },
+    '642': {
+        name: "Divine Shield (Rank 1)",
+        icon: "spell_holy_divineintervention.jpg",
+        cooldown: 300000
+    },
+    '1020': {
+        name: "Divine Shield (Rank 2)",
+        icon: "spell_holy_divineintervention.jpg",
+        cooldown: 300000
+    },
+    '498': {
+        name: "Divine Protection (Rank 1)",
+        icon: "spell_holy_restoration.jpg",
+        cooldown: 300000
+    },
+    '5573': {
+        name: "Divine Protection (Rank 2)",
+        icon: "spell_holy_restoration.jpg",
+        cooldown: 300000
+    },
+    '1022': {
+        name: "Blessing of Protection (Rank 1)",
+        icon: "spell_holy_sealofprotection.jpg",
+        cooldown: 300000
+    },
+    '5599': {
+        name: "Blessing of Protection (Rank 2)",
+        icon: "spell_holy_sealofprotection.jpg",
+        cooldown: 300000
+    },
+    '10278': {
+        name: "Blessing of Protection (Rank 3)",
+        icon: "spell_holy_sealofprotection.jpg",
+        cooldown: 300000
+    },
+    '23734': {
+        name: "Natural Alignment Crystal",
+        icon: "inv_misc_gem_03.jpg",
+        cooldown: 300000
+    },
+    '26467': {
+        name: "Scarab Brooch",
+        icon: "inv_misc_ahnqirajtrinket_06.jpg",
+        cooldown: 180000
+    },
+    '24659': {
+        name: "Zandalarian Hero Charm",
+        icon: "inv_jewelry_necklace_13.jpg",
+        cooldown: 120000
     }
 
+}
+
+export const protectionPotions = {
+    '17546': {
+        name: "Greater Nature Protection Potion",
+        type: "Nature"
+    },
+    '7254': {
+        name: "Nature Protection Potion",
+        type: "Nature"
+    },
+    '17548': {
+        name: "Greater Shadow Protection Potion",
+        type: "Shadow"
+    },
+    '7242': {
+        name: "Shadow Protection Potion",
+        type: "Shadow"
+    },
+    '17544': {
+        name: "Greater Frost Protection Potion",
+        type: "Frost"
+    },
+    '7240': {
+        name: "Frost Protection Potion",
+        type: "Frost"
+    },
+    '17543': {
+        name: "Greater Fire Protection Potion",
+        type: "Fire"
+    },
+    '7230': {
+        name: "Fire Protection Potion",
+        type: "Fire"
+    },
+    '17549': {
+        name: "Greater Arcane Protection Potion",
+        type: "Arcane"
+    }
 }

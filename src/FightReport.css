@@ -12,28 +12,28 @@ div.fight > div.heading {
 }
 
 div.fight.success > div.heading {
-    color: rgb(50%, 90%, 40%);
+    color:#7FE566;
 }
 
 div.fight.fail > div.heading {
-    color: rgb(90%,65%,55%);
+    color: #E5A68C;
 }
 
 td.healer_name {
     vertical-align: text-top;
-    width: 120px;
+    width: 240px;
 }
 
 tr.Druid > td.healer_name {
-    color: rgb(100%,49%,4%);
+    color: #FF7B0A;
 }
 
 tr.Druid > td.healer_amount > div.bar > div.bar_effective {
-    background-color: rgb(100%,49%,4%);
+    background-color: #FF7B0A;
 }
 
 tr.Druid > td.healer_amount > div.bar > div.bar_overheal {
-    background-color: rgba(100%,49%,4%,50%);
+    background-color: #FF7B0A7F;
 }
 
 tr.Priest > td.healer_name {
@@ -41,39 +41,135 @@ tr.Priest > td.healer_name {
 }
 
 tr.Priest > td.healer_amount > div.bar > div.bar_effective {
-    background-color: rgb(100%,100%,100%);
+    background-color: #FFFFFF;
 }
 
 tr.Priest > td.healer_amount > div.bar > div.bar_overheal {
-    background-color: rgba(100%,100%,100%,50%);
+    background-color: #FFFFFF7F;
 }
 
 tr.Shaman > td.healer_name {
-    color: rgb(14%,35%,100%);
+    color: #2258FF;
 }
 
 tr.Shaman > td.healer_amount > div.bar > div.bar_effective {
-    background-color: rgb(14%,35%,100%);
+    background-color: #2258FF;
 }
 
 tr.Shaman > td.healer_amount > div.bar > div.bar_overheal {
-    background-color: rgba(14%,35%,100%,50%);
+    background-color: #2258FF7F;
 }
 
 tr.Paladin > td.healer_name {
-    color: rgb(96%,55%,73%);
+    color: #F47EB9;
 }
 
 tr.Paladin > td.healer_amount > div.bar > div.bar_effective {
-    background-color: rgb(96%,55%,73%);
+    background-color: #F47EB9;
 }
 
 tr.Paladin > td.healer_amount > div.bar > div.bar_overheal {
-    background-color: rgba(96%,55%,73%,50%);
+    background-color: #F47EB97F;
+}
+
+tr.Nature > td.healer_name {
+    color: #429c5c;
+}
+
+tr.Nature > td.healer_amount > div.bar > div.bar_effective {
+    background-color: #429c5c;
+}
+
+tr.Nature > td.healer_amount > div.bar > div.bar_overheal {
+    background-color: #429c5c7F;
+}
+
+tr.Shadow > td.healer_name {
+    color: #c072dd;
+}
+
+tr.Shadow > td.healer_amount > div.bar > div.bar_effective {
+    background-color: #c072dd;
+}
+
+tr.Shadow > td.healer_amount > div.bar > div.bar_overheal {
+    background-color: #c072dd7F;
+}
+
+tr.Frost > td.healer_name {
+    color: #55BBFF;
+}
+
+tr.Frost > td.healer_amount > div.bar > div.bar_effective {
+    background-color: #55BBFF;
+}
+
+tr.Frost > td.healer_amount > div.bar > div.bar_overheal {
+    background-color: #55BBFF7F;
+}
+
+tr.Fire > td.healer_name {
+    color: #FF0000;
+}
+
+tr.Fire > td.healer_amount > div.bar > div.bar_effective {
+    background-color: #FF0000;
+}
+
+tr.Fire > td.healer_amount > div.bar > div.bar_overheal {
+    background-color: #FF00007F;
+}
+
+tr.Arcane > td.healer_name {
+    color: #DDBBFF;
+}
+
+tr.Arcane > td.healer_amount > div.bar > div.bar_effective {
+    background-color: #DDBBFF;
+}
+
+tr.Arcane > td.healer_amount > div.bar > div.bar_overheal {
+    background-color: #DDBBFF7F;
+}
+
+tr.Holy > td.healer_name {
+    color: #FFFFAA;
+}
+
+tr.Holy > td.healer_amount > div.bar > div.bar_effective {
+    background-color: #FFFFAA;
+}
+
+tr.Holy > td.healer_amount > div.bar > div.bar_overheal {
+    background-color: #FFFFAA7F;
+}
+
+tr.Consumable > td.healer_name {
+    color: #AAAAAA;
+}
+
+tr.Consumable > td.healer_amount > div.bar > div.bar_effective {
+    background-color: #AAAAAA;
+}
+
+tr.Consumable > td.healer_amount > div.bar > div.bar_overheal {
+    background-color: #AAAAAA7F;
+}
+
+tr.Physical > td.healer_name {
+    color: #AAAAAA;
+}
+
+tr.Physical > td.healer_amount > div.bar > div.bar_effective {
+    background-color: #AAAAAA;
+}
+
+tr.Physical > td.healer_amount > div.bar > div.bar_overheal {
+    background-color: #AAAAAA7F;
 }
 
 div.bar_wasted {
-    background-color: rgba(100%,0%,0%,50%);
+    background-color: #FF00007F;
 }
 
 td.healer_amount {

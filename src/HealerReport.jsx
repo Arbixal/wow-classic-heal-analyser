@@ -8,7 +8,8 @@ export class HealerReport extends Component {
         this.state = {
             error: null,
             fights: [],
-            characters: [],
+            characters: {},
+            pets: {},
             isLoaded: false,
             reportId: props.reportId
         }
@@ -32,7 +33,15 @@ export class HealerReport extends Component {
                         }
 
                         return acc;
-                    }, {})
+                    }, {}),
+                    pets: result.friendlyPets.reduce((acc, obj) => {
+                        let id = obj["id"];
+                        if (!acc[id]) {
+                            acc[id] = obj;
+                        }
+
+                        return acc;
+                    })
                 })
             },
             (error) => {
@@ -46,7 +55,7 @@ export class HealerReport extends Component {
     }
 
     render() {
-        const { error, isLoaded, fights, reportId, characters} = this.state;
+        const { error, isLoaded, fights, reportId, characters, pets} = this.state;
         if (error) {
             return <div>Error: {error.message}</div>;
         } else if (!isLoaded) {
@@ -55,7 +64,7 @@ export class HealerReport extends Component {
             return (
                 <>
                 {fights.map(item => (
-                    <FightReport key={item.id} fight={item} characters={characters} reportId={reportId} />
+                    <FightReport key={item.id} fight={item} characters={characters} pets={pets} reportId={reportId} />
                 ))}
                 </>
             )

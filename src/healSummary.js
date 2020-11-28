@@ -23,62 +23,57 @@ export class HealSummary {
 
 export function getHealSummary(collection, event, getOrCreate) {
     
-        let aggregate = getOrCreate(collection, event);
+    let aggregate = getOrCreate(collection, event);
 
-        if (!aggregate) {
-            return;
-        }
+    if (!aggregate) {
+        return;
+    }
 
-        if (event.ability.guid === 27869 || event.ability.guid === 16666) {
-            aggregate.runes++;
-            aggregate.manaGained += 1500;
-        }
+    if (event.ability.guid === 27869 || event.ability.guid === 16666) {
+        aggregate.runes++;
+        aggregate.manaGained += 1500;
+    }
 
-        if (event.ability.guid === 17531) {
-            aggregate.manaPots++;
-            aggregate.manaGained += 2250;
-        }
+    if (event.ability.guid === 17531) {
+        aggregate.manaPots++;
+        aggregate.manaGained += 2250;
+    }
 
-        let spellInfo = healingSpells[event.ability.guid];
+    let spellInfo = healingSpells[event.ability.guid];
 
-        if (spellInfo)
-        {
-            if (event.type === "begincast") {
+    if (spellInfo)
+    {
+        if (event.type === "begincast") {
+            aggregate.castsStarted++;
+        } else if (event.type === "cast") {
+            if (spellInfo.castTime === 0) {
                 aggregate.castsStarted++;
-            } else if (event.type === "cast") {
-                if (spellInfo.castTime === 0) {
-                    aggregate.castsStarted++;
-                }
-                aggregate.castsCompleted++;
             }
+            aggregate.castsCompleted++;
         }
+    } else {
+        console.log("Not healing spell: " + event.ability.name + " (" + event.ability.guid + ")");
+    }
 
-        if (event.type === "heal" || event.type === "absorbed") {
-            if (event.amount) {
-                aggregate.effectiveHeals += event.amount;
-            }
-            if (event.overheal) {
-                aggregate.overHeal += event.overheal;
-                if (event.amount === 0) {
-                    aggregate.wastedHeals += event.overheal;
-                    if (event.tick && spellInfo && spellInfo.ticks) {
-                        aggregate.wastedMana += (spellInfo.mana * spellInfo.tickPortion / spellInfo.ticks);
-                    } else {
-                        aggregate.wastedMana += spellInfo ? spellInfo.mana : 0;
-                    }
+    if (event.type === "heal" || event.type === "absorbed") {
+        if (event.amount) {
+            aggregate.effectiveHeals += event.amount;
+        }
+        if (event.overheal) {
+            aggregate.overHeal += event.overheal;
+            if (event.amount === 0) {
+                aggregate.wastedHeals += event.overheal;
+                if (event.tick && spellInfo && spellInfo.ticks) {
+                    aggregate.wastedMana += Math.round(spellInfo.mana * spellInfo.tickPortion / spellInfo.ticks);
+                } else {
+                    aggregate.wastedMana += spellInfo ? spellInfo.mana : 0;
                 }
             }
         }
+    }
 
-        if (event.type === "cast" && cooldownList[event.ability.guid]) {
-            aggregate.cooldowns.push(cooldownList[event.ability.guid]);
-        }
+    if (event.type === "cast" && cooldownList[event.ability.guid]) {
+        aggregate.cooldowns.push(cooldownList[event.ability.guid]);
+    }
 
-        // Cooldowns
-        // Inner Focus (14751)
-        // Nature's Swiftness (17116)
-        // Innervate (29166)
-        // Mana Tide Totem (17359)
-        // Tranquility (740)
-        // Rebirth (20739)
 }

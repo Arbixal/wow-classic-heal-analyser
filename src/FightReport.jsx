@@ -4,7 +4,7 @@ import {LogLoader} from "./warcraftLogLoader";
 import {msToTime, abbreviateNumber} from "./utils";
 import { HealerFightSummary } from "./HealerFightSummary";
 import {getHealSummary, HealSummary} from "./healSummary";
-import {healingSpells} from "./data";
+import {healingSpells, protectionPotions} from "./data";
 
 export class FightReport extends Component {
     constructor(props) {
@@ -37,14 +37,22 @@ export class FightReport extends Component {
 
                 for (const [key, value] of Object.entries(eventsByCharacter.characters))
                 {
-                    if (!characters[key]) {
-                        continue;
+                    let characterName;
+                    let characterClass;
+                    if (characters[key]) {
+                        characterName = characters[key].name;
+                        characterClass = characters[key].type;
+                    }
+
+                    if (key === '9999') {
+                        characterName = "Protection Potions";
+                        characterClass = "Consumable";
                     }
 
                     characterList.push({ 
                         id: key,
-                        name: characters[key].name,
-                        classType: characters[key].type,
+                        name: characterName,
+                        classType: characterClass,
                         summary: value.total,
                         spells: Object.entries(value.spells).map(keyValuePair => keyValuePair[1])
                     })
@@ -68,11 +76,21 @@ export class FightReport extends Component {
     }
 
     getCharactersFromEvents(events) {
+        const {pets} = this.props;
 
         let groupByCharacter = events.reduce((acc, obj) => {
             getHealSummary(acc, obj, (collection, _event) => collection.total);  // Save to totals
             getHealSummary(acc, obj, (collection, event) => {
                 let sourceId = event["sourceID"];
+                if (pets[sourceId]) {
+                    sourceId = pets[sourceId].petOwner;
+                }
+
+                let abilityId = event.ability.guid;
+                if (protectionPotions[abilityId]) {
+                    sourceId = 9999;
+                }
+
                 if (!collection.characters[sourceId]) {
                     collection.characters[sourceId] = { total: new HealSummary(), spells: {} };
                 }
@@ -81,7 +99,13 @@ export class FightReport extends Component {
             });
             getHealSummary(acc, obj, (collection, event) => {
                 let sourceId = event.sourceID;
+                if (pets[sourceId]) {
+                    sourceId = pets[sourceId].petOwner;
+                }
                 let spellId = event.ability.guid;
+                if (protectionPotions[spellId]) {
+                    sourceId = 9999;
+                }
 
                 let spell = healingSpells[spellId];
                 if (!spell) {
@@ -89,7 +113,7 @@ export class FightReport extends Component {
                 }
 
                 if (!collection.characters[sourceId].spells[spellId]) {
-                    collection.characters[sourceId].spells[spellId] = { id: spellId, name: spell.name, icon: spell.icon, summary: new HealSummary() };
+                    collection.characters[sourceId].spells[spellId] = { id: spellId, name: spell.name, icon: spell.icon, type: spell.type, summary: new HealSummary() };
                 }
 
                 return collection.characters[sourceId].spells[spellId].summary;
@@ -167,7 +191,7 @@ export class FightReport extends Component {
                             <td className="healer_name">Total</td>
                             <td className="healer_consumes_mana center">{healSummary.manaPots}</td>
                             <td className="healer_consumes_runes center">{healSummary.runes}</td>
-                            <td className="healer_consumes_mageblood center" colspan="2"></td>
+                            <td className="healer_consumes_mageblood center" colSpan="2"></td>
                             <td className="right">{abbreviateNumber(healSummary.manaGained)}</td>
                             <td className="healer_cooldowns"></td>
                             <td className="healer_casts_started center">{healSummary.castsStarted}</td>
@@ -189,7 +213,7 @@ export class FightReport extends Component {
         }
         return (
             <div className={"fight " + (fight.kill ? "success" : "fail")}>
-            <div className="heading" onClick={this.toggle}>{fight.name} ({msToTime(fight.end_time - fight.start_time)})</div>
+            <div className="heading" onClick={this.toggle}>{fight.name} {fight.kill ? "- Kill " : "- Wipe "}({msToTime(fight.end_time - fight.start_time)})</div>
             {expanded && details}
             </div>
         )
