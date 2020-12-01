@@ -48,7 +48,13 @@ class WarcraftLogLoader {
         + "&end=" + end_time)
         .then(response => response.json())
         .then(data => {
-            let healerData = data.playerDetails.healers.reduce((acc, obj) => {
+            let healerData = [];
+            if (!data.playerDetails.healers) {
+                resolve(healerData);
+                return;
+            }
+
+            healerData = data.playerDetails.healers.reduce((acc, obj) => {
                 let playerId = obj["id"];
 
                 const slots = {

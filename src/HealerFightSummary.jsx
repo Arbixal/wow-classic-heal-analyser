@@ -88,7 +88,7 @@ export class HealerFightSummary extends Component {
                 {isExpanded && spells.sort((x,y) => y.summary.effectiveHeals -x.summary.effectiveHeals)
                                      .map((spell) => (
                     <tr key={spell.id} className={spell.type + " spell " + (row % 2 === 0 ? "even" : "odd")}>
-                        <td className="healer_name" colSpan="6"><img className="spell_icon" src={"https://assets.rpglogs.com/img/warcraft/abilities/" + spell.icon} alt={spell.name} /> {spell.name}</td>
+                        <td className="healer_name" colSpan="7"><img className="spell_icon" src={"https://assets.rpglogs.com/img/warcraft/abilities/" + spell.icon} alt={spell.name} /> {spell.name}</td>
                         <td className="healer_casts_started center">{spell.summary.castsStarted}</td>
                         <td className="healer_casts_completed center">{spell.summary.castsCompleted}</td>
                         <td className="healer_casts percent right">{spell.summary.getCastsPercent()}%</td>

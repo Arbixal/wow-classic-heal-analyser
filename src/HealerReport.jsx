@@ -25,7 +25,7 @@ export class HealerReport extends Component {
             (result) => {
                 this.setState({
                     isLoaded: true,
-                    fights: result.fights.filter(x => x.boss !== 0),
+                    fights: result.fights,
                     characters: result.friendlies.reduce((acc, obj) => {
                         let id = obj["id"];
                         if (!acc[id]) {
@@ -56,6 +56,7 @@ export class HealerReport extends Component {
 
     render() {
         const { error, isLoaded, fights, reportId, characters, pets} = this.state;
+        const {showTrash} = this.props;
         if (error) {
             return <div>Error: {error.message}</div>;
         } else if (!isLoaded) {
@@ -63,7 +64,7 @@ export class HealerReport extends Component {
         } else {
             return (
                 <>
-                {fights.map(item => (
+                {fights.filter(x => showTrash || x.boss !== 0).map(item => (
                     <FightReport key={item.id} fight={item} characters={characters} pets={pets} reportId={reportId} />
                 ))}
                 </>

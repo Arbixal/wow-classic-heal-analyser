@@ -164,6 +164,7 @@ export class FightReport extends Component {
     render() {
         const { error, isLoaded, fight, healSummary, healers, expanded} = this.state;
 
+        let fightClass = !fight.boss ? "trash" : fight.kill ? "success" : "fail";
         let details;
         if (error) {
             details = <div>Error: {error.message}</div>
@@ -242,7 +243,7 @@ export class FightReport extends Component {
             )
         }
         return (
-            <div className={"fight " + (fight.kill ? "success" : "fail")}>
+            <div className={"fight " + fightClass}>
             <div className="heading" onClick={this.toggle}>{fight.name} {fight.kill ? "- Kill " : "- Wipe "}({msToTime(fight.end_time - fight.start_time)})</div>
             {expanded && details}
             </div>

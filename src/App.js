@@ -9,11 +9,13 @@ class App extends Component {
     super(props);
     this.state = {
       reportInput: null,
-      reportId: ''
+      reportId: '',
+      showTrash: false
     }
 
     this.handleSubmit = this.handleSubmit.bind(this);
     this.handleChange = this.handleChange.bind(this);
+    this.handleTrashToggle = this.handleTrashToggle.bind(this);
   }
 
   componentDidMount() {
@@ -30,6 +32,10 @@ class App extends Component {
     this.setState({reportInput: event.target.value });
   }
 
+  handleTrashToggle(event) {
+    this.setState({showTrash: !this.state.showTrash});
+  }
+
   handleSubmit(event) {
     const {reportInput} = this.state;
     this.setState({reportId: reportInput});
@@ -38,7 +44,7 @@ class App extends Component {
   }
 
   render() {
-    const {reportId} = this.state;
+    const {reportId, showTrash} = this.state;
     return (
       <>
         <div className="App">
@@ -47,7 +53,7 @@ class App extends Component {
           </form>
         </div>
 
-        {reportId !== '' && <HealerReport reportId={reportId} />}
+        {reportId !== '' && <HealerReport reportId={reportId} showTrash={showTrash} />}
       </>
     );
   }

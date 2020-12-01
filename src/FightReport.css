@@ -19,6 +19,10 @@ div.fight.fail > div.heading {
     color: #E5A68C;
 }
 
+div.fight.trash > div.heading {
+    color: #AAAAAA;
+}
+
 td.healer_name {
     vertical-align: text-top;
     width: 240px;

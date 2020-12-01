@@ -1348,7 +1348,7 @@ const sharedEnchants = {
     "7": {  // Feet
         911: { score: 1, name: "Minor Run Speed" },    // Minor Run Speed
         1887: { score: 0, name: "Greater Agility (+7)"},
-        851: { score: 0, name: "Spirit (+5)"},
+        851: { score: 0.5, name: "Spirit (+5)"},
         929: { score: 0, name: "Greater Stamina (+7)"}
     },
     "8": {  // Bracers
@@ -1368,7 +1368,7 @@ const sharedEnchants = {
         2619: { score: 1, name: "Greater Fire Resistance (+15)" }, // Greater Fire Resistance
         2620: { score: 1, name: "Greater Nature Resistance (+15)" }, // Greater Nature Resistance
         1888: { score: 1, name: "Greater Resistance (+5)" },  // Greater Resistance
-        2621: { score: 0, name: "Subtlety (-2% threat)" },
+        2621: { score: 1, name: "Subtlety (-2% threat)" },
         2622: { score: 0, name: "Dodge (1% dodge)" },
         1889: { score: 0, name: "Superior Defense (+70 armor)" }
     },
