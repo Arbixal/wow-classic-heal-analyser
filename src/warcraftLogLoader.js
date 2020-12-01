@@ -75,7 +75,7 @@ class WarcraftLogLoader {
 
                 let enchants = obj.combatantInfo.gear.reduce((enchant, gear) => {
                     
-                    if (slots[gear.slot].enchantable && !offhandFrills[gear.id])
+                    if (slots[gear.slot].enchantable && gear.id !== 0 && !offhandFrills[gear.id])
                     {
                         enchant.permanentEnchants.push({slot: gear.slot, slotname: slots[gear.slot].name, id: gear.permanentEnchant, name: gear.permanentEnchantName})
                     }
