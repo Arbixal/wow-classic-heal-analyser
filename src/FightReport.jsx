@@ -4,7 +4,8 @@ import {LogLoader} from "./warcraftLogLoader";
 import {msToTime, abbreviateNumber} from "./utils";
 import { HealerFightSummary } from "./HealerFightSummary";
 import {getHealSummary, HealSummary} from "./healSummary";
-import {healingSpells, protectionPotions} from "./data";
+import {healingSpells, protectionPotions, requiredEnchants} from "./data";
+import ReactTooltip from "react-tooltip";
 
 export class FightReport extends Component {
     constructor(props) {
@@ -29,6 +30,15 @@ export class FightReport extends Component {
         if (!reportId || !fight || isLoaded)
             return;
 
+        let healerInfo = {};
+
+        LogLoader.getHealerInfo(fight.start_time, fight.end_time)
+        .then(
+            (healers) => {
+                healerInfo = healers;
+            }
+        );
+
         LogLoader.getHealEvents(fight.start_time, fight.end_time)
         .then(
             (result) => {
@@ -39,9 +49,25 @@ export class FightReport extends Component {
                 {
                     let characterName;
                     let characterClass;
+                    let characterManaOil = false;
+                    let enchants = [];
                     if (characters[key]) {
                         characterName = characters[key].name;
                         characterClass = characters[key].type;
+                        if (healerInfo[key]) {
+                            characterManaOil = healerInfo[key].weaponEnchant.id === 2629;
+
+                            const bisEnchants = requiredEnchants[characterClass];
+
+                            enchants = healerInfo[key].enchants.map((obj) => {
+                                return {
+                                    slot: obj.slotname,
+                                    score: bisEnchants[obj.slot][obj.id] ? bisEnchants[obj.slot][obj.id].score : 0,
+                                    name: bisEnchants[obj.slot][obj.id] ? bisEnchants[obj.slot][obj.id].name : obj.name
+                                }
+
+                            })
+                        }
                     }
 
                     if (key === '9999') {
@@ -53,6 +79,8 @@ export class FightReport extends Component {
                         id: key,
                         name: characterName,
                         classType: characterClass,
+                        manaOil: characterManaOil,
+                        enchants: enchants,
                         summary: value.total,
                         spells: Object.entries(value.spells).map(keyValuePair => keyValuePair[1])
                     })
@@ -154,7 +182,8 @@ export class FightReport extends Component {
                     <thead>
                         <tr>
                             <td className="healer_name" rowSpan="2">Name</td>
-                            <td className="healer_consumes" colSpan="4">Consumes</td>
+                            <td className="healer_enchants" rowSpan="2">Enchants</td>
+                            <td className="healer_consumes" colSpan="3">Consumes</td>
                             <td className="healer_consumes_mana" rowSpan="2">Mana Gained</td>
                             <td className="healer_cooldowns" rowSpan="2">Cooldowns</td>
                             <td className="healer_casts" colSpan="3">Casts</td>
@@ -164,10 +193,9 @@ export class FightReport extends Component {
                             <td className="healer_wasted center" colSpan="3">Wasted</td>
                         </tr>
                         <tr>
-                            <td className="healer_consumes_mana center"><img src="https://assets.rpglogs.com/img/warcraft/abilities/inv_potion_76.jpg" width="24" height="24" alt="Major Mana Potion"/></td>
-                            <td className="healer_consumes_runes center"><img src="https://assets.rpglogs.com/img/warcraft/abilities/inv_misc_rune_04.jpg" width="24" height="24" alt="Demonic Runes"/></td>
-                            <td className="healer_consumes_mageblood center"><img src="https://assets.rpglogs.com/img/warcraft/abilities/inv_potion_45.jpg" width="24" height="24" alt="Mageblood Potion"/></td>
-                            <td className="healer_consumes_flask center"><img src="https://assets.rpglogs.com/img/warcraft/abilities/inv_potion_97.jpg" width="24" height="24" alt="Flask of Distilled Wisdom"/></td>
+                            <td className="healer_consumes_manapot center"><img src="https://assets.rpglogs.com/img/warcraft/abilities/inv_potion_76.jpg" width="24" height="24" alt="Major Mana Potion" data-tip='Major Mana Potions'/></td>
+                            <td className="healer_consumes_runes center"><img src="https://assets.rpglogs.com/img/warcraft/abilities/inv_misc_rune_04.jpg" width="24" height="24" alt="Demonic/Dark Runes"  data-tip='Demonic/Dark Runes'/></td>
+                            <td className="healer_consumes_manaoil center"><img src="https://assets.rpglogs.com/img/warcraft/abilities/inv_potion_100.jpg" width="24" height="24" alt="Brilliant Mana Oil"  data-tip='Brilliant Mana Oil'/></td>
                             <td className="healer_casts_started center">Start</td>
                             <td className="healer_casts_completed center">Finish</td>
                             <td className="healer_casts percent right">%</td>
@@ -189,9 +217,10 @@ export class FightReport extends Component {
                     <tfoot>
                         <tr>
                             <td className="healer_name">Total</td>
-                            <td className="healer_consumes_mana center">{healSummary.manaPots}</td>
+                            <td className="healer_enchants"></td>
+                            <td className="healer_consumes_manapot center">{healSummary.manaPots}</td>
                             <td className="healer_consumes_runes center">{healSummary.runes}</td>
-                            <td className="healer_consumes_mageblood center" colSpan="2"></td>
+                            <td className="healer_consumes_manaoil center"></td>
                             <td className="right">{abbreviateNumber(healSummary.manaGained)}</td>
                             <td className="healer_cooldowns"></td>
                             <td className="healer_casts_started center">{healSummary.castsStarted}</td>
@@ -208,6 +237,7 @@ export class FightReport extends Component {
                         </tr>
                     </tfoot>
                 </table>
+                <ReactTooltip />
             </>
             )
         }

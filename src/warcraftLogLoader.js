@@ -1,3 +1,4 @@
+import {offhandFrills} from "./data";
 
 class WarcraftLogLoader {
     constructor() {
@@ -27,6 +28,8 @@ class WarcraftLogLoader {
             this.getClassCastEvents(start_time, end_time, "shaman"),
             this.getClassCastEvents(start_time, end_time, "paladin"),
 
+            //this.getManaRegeneration(start_time, end_time),
+
             this.getProtectionPotionHealingEvents(start_time, end_time),
             this.getProtectionPotionCastEvents(start_time, end_time),
         ])
@@ -37,6 +40,93 @@ class WarcraftLogLoader {
             return accum;
         }, []))));
     }
+
+    getHealerInfo(start_time, end_time) {
+        return new Promise((resolve, reject) => fetch(this.domain + "report/tables/summary/" + this.reportId
+        + "?api_key=" + this.key 
+        + "&start=" + start_time
+        + "&end=" + end_time)
+        .then(response => response.json())
+        .then(data => {
+            let healerData = data.playerDetails.healers.reduce((acc, obj) => {
+                let playerId = obj["id"];
+
+                const slots = {
+                    0: { enchantable: true, name: "Head" },
+                    1: { enchantable: false, name: "Neck" },
+                    2: { enchantable: true, name: "Shoulders" },
+                    3: { enchantable: false, name: "Shirt" },
+                    4: { enchantable: true, name: "Chest" },
+                    5: { enchantable: false, name: "Waist" },
+                    6: { enchantable: true, name: "Legs" },
+                    7: { enchantable: true, name: "Feet" },
+                    8: { enchantable: true, name: "Arms" },
+                    9: { enchantable: true, name: "Hands" },
+                    10: { enchantable: false, name: "Ring 1" },
+                    11: { enchantable: false, name: "Ring 2" },
+                    12: { enchantable: false, name: "Trinket 1" },
+                    13: { enchantable: false, name: "Trinket 2" },
+                    14: { enchantable: true, name: "Back" },
+                    15: { enchantable: true, name: "Main Hand" },
+                    16: { enchantable: true, name: "Off Hand" },
+                    17: { enchantable: false, name: "Ranged" },
+                    18: { enchantable: false, name: "Tabard" }
+                };
+
+                let enchants = obj.combatantInfo.gear.reduce((enchant, gear) => {
+                    
+                    if (slots[gear.slot].enchantable && !offhandFrills[gear.id])
+                    {
+                        enchant.permanentEnchants.push({slot: gear.slot, slotname: slots[gear.slot].name, id: gear.permanentEnchant, name: gear.permanentEnchantName})
+                    }
+
+                    if (gear.slot === 15) {
+                        enchant.weaponEnchant.id = gear.temporaryEnchant;
+                        enchant.weaponEnchant.name = gear.temporaryEnchantName;
+                    }
+
+                    return enchant;
+                }, { permanentEnchants: [], weaponEnchant: {}});
+                
+                acc[playerId] = {
+                    id: playerId,
+                    name: obj.name,
+                    type: obj.type,
+                    intellect: obj.combatantInfo.stats.Intellect.max,
+                    stamina: obj.combatantInfo.stats.Stamina.max,
+                    weaponEnchant: enchants.weaponEnchant,
+                    enchants: enchants.permanentEnchants
+                };
+
+                return acc;
+            }, {});
+
+            resolve(healerData);
+        }).catch(reject));
+    }
+
+    /* getManaRegeneration(start_time, end_time, events = []) {
+        return new Promise((resolve, reject) => fetch(this.domain + "report/events/resources/" + this.reportId
+        + "?api_key=" + this.key 
+        + "&start=" + start_time
+        + "&end=" + end_time
+        + "&abilityid=100")
+        .then(response =>  {
+            if (response.status !== 200) {
+                throw new Error(`${response.stats}: ${response.statusText}`);
+            }
+            response.json().then(data => {
+                events = events.concat(data.events.filter(obj => obj.ability.guid === 18194));
+
+                if (data.nextPageTimestamp) {
+                    this.getManaRegeneration(data.nextPageTimestamp, end_time, events)
+                    .then(resolve).catch(reject);
+                } else {
+                    resolve(events);
+                }
+            }).catch(reject);
+        }).catch(reject));
+    } */
 
     getProtectionPotionHealingEvents(start_time, end_time, events = []) {
         return new Promise((resolve, reject) => fetch(this.domain + "report/events/healing/" + this.reportId 

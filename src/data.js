@@ -1306,3 +1306,161 @@ export const protectionPotions = {
         type: "Arcane"
     }
 }
+
+const sharedEnchants = {
+    "0": {
+        2544: { score: 0, name: "Arcanum of Focus (+8 heal)"},
+        2543: { score: 0, name: "Arcanum of Rapidity (1% haste)"},
+        2545: { score: 0, name: "Arcanum of Protection (1% dodge)"},
+        1503: { score: 0, name: "Lesser Arcanum of Constitution (+100hp)"},
+        1505: { score: 0, name: "Lesser Arcanum of Resilience (+20FR)"},
+        1483: { score: 0, name: "Lesser Arcanum of Rumination (+150mana)"},
+        1504: { score: 0, name: "Lesser Arcanum of Tenacity (+125 armor)"},
+        1506: { score: 0, name: "Lesser Arcanum of Voracity (+8 str)"},
+        1507: { score: 0, name: "Lesser Arcanum of Voracity (+8 stam)"},
+        1508: { score: 0, name: "Lesser Arcanum of Voracity (+8 agi)"},
+        1509: { score: 0, name: "Lesser Arcanum of Voracity (+8 int)"},
+        1510: { score: 0, name: "Lesser Arcanum of Voracity (+8 spi)"}
+    },
+    "2": {  // Shoulders
+        2604: { score: 1, name: "Zandalar Signet of Serenity" }  // Zandalar Signet of Serenity
+    },
+    "4": {  // Chest
+        1891: { score: 1, name: "Greater Stats (+4)" },     // +4 Stats
+        1893: { score: 0.5, name: "Major Mana (+100)" },   // Major Mana
+        928: { score: 0.5, name: "Stats (+3)" },     // Stats
+        1892: { score: 0, name: "Major Health (+100)"}
+    },
+    "6": {
+        2544: { score: 0, name: "Arcanum of Focus (+8 heal)"},
+        2543: { score: 0, name: "Arcanum of Rapidity (1% haste)"},
+        2545: { score: 0, name: "Arcanum of Protection (1% dodge)"},
+        1503: { score: 0, name: "Lesser Arcanum of Constitution (+100hp)"},
+        1505: { score: 0, name: "Lesser Arcanum of Resilience (+20FR)"},
+        1483: { score: 0, name: "Lesser Arcanum of Rumination (+150mana)"},
+        1504: { score: 0, name: "Lesser Arcanum of Tenacity (+125 armor)"},
+        1506: { score: 0, name: "Lesser Arcanum of Voracity (+8 str)"},
+        1507: { score: 0, name: "Lesser Arcanum of Voracity (+8 stam)"},
+        1508: { score: 0, name: "Lesser Arcanum of Voracity (+8 agi)"},
+        1509: { score: 0, name: "Lesser Arcanum of Voracity (+8 int)"},
+        1510: { score: 0, name: "Lesser Arcanum of Voracity (+8 spi)"}
+    },
+    "7": {  // Feet
+        911: { score: 1, name: "Minor Run Speed" },    // Minor Run Speed
+        1887: { score: 0, name: "Greater Agility (+7)"},
+        851: { score: 0, name: "Spirit (+5)"},
+        929: { score: 0, name: "Greater Stamina (+7)"}
+    },
+    "8": {  // Bracers
+        2566: { score: 1, name: "Healing Power (+24)" },  // +24 Healing
+        1886: { score: 0, name: "Superior Stamina (+9)"},
+        1885: { score: 0, name: "Superior Strength (+9)"},
+        2565: { score: 0, name: "Mana Regeneration (4mp5)"},
+        1884: { score: 0, name: "Superior Spirit (+9)"},
+        1883: { score: 0, name: "Greater Intellect (+7)"}
+    },
+    "9": {  // Gloves
+        2617: { score: 1, name: "Healing Power (+30)" },  // +30 Healing
+        930: { score: 0, name: "Riding Skill" },
+        931: { score: 0, name: "Minor Haste" }
+    },
+    "14": {  // Back
+        2619: { score: 1, name: "Greater Fire Resistance (+15)" }, // Greater Fire Resistance
+        2620: { score: 1, name: "Greater Nature Resistance (+15)" }, // Greater Nature Resistance
+        1888: { score: 1, name: "Greater Resistance (+5)" },  // Greater Resistance
+        2621: { score: 0, name: "Subtlety (-2% threat)" },
+        2622: { score: 0, name: "Dodge (1% dodge)" },
+        1889: { score: 0, name: "Superior Defense (+70 armor)" }
+    },
+    "15": {  // Main Hand
+        2505: { score: 1, name: "Healing Power (+55)" },  // +55 Healing
+        2504: { score: 0, name: "Spell Power (+30)" },
+        2567: { score: 0, name: "Mighty Spirit (+20)" } ,
+        2568: { score: 0, name: "Mighty Intellect (+22)" } ,
+        1903: { score: 0, name: "Major Spirit (+9)" } ,
+        1904: { score: 0, name: "Major Intellect (+9)" } 
+    },
+    "16": {  // Offhand
+        929: { score: 1, name: "Greater Stamina (+7)" },   // +7 Stamina
+        1890: { score: 1, name: "Superior Spirit (+9)" },
+        926: { score: 1, name: "Frost Resistance (+8)" }
+    }
+}
+
+export const requiredEnchants = {
+    "Priest": Object.assign({}, sharedEnchants, {
+        "0": Object.assign({}, sharedEnchants["0"], {  // Head     
+            2590: { score: 1, name: "Prophetic Aura" }  // Prophetic Aura
+        }),
+        "6": Object.assign({}, sharedEnchants["6"], {  // Legs
+            2590: { score: 1, name: "Prophetic Aura" },  // Prophetic Aura
+        })
+    }),
+    "Shaman": Object.assign({}, sharedEnchants, {
+        "0": Object.assign({}, sharedEnchants["0"], {  // Head     
+            2587: { score: 1, name: "Vodouisant's Vigilant Embrace" }  // Vodouisant's Vigilant Embrace
+        }),
+        "6": Object.assign({}, sharedEnchants["6"], {  // Legs
+            2587: { score: 1, name: "Vodouisant's Vigilant Embrace" }  // Vodouisant's Vigilant Embrace
+        })
+    }),
+    "Druid": Object.assign({}, sharedEnchants, {
+        "0": Object.assign({}, sharedEnchants["0"], {  // Head     
+            2591: { score: 1, name: "Animist's Caress" }  // Animist's Caress
+        }),
+        "6": Object.assign({}, sharedEnchants["6"], {  // Legs
+            2591: { score: 1, name: "Animist's Caress" }  // Animist's Caress
+        })
+    }),
+    "Paladin": Object.assign({}, sharedEnchants, {
+        "0": Object.assign({}, sharedEnchants["0"], {  // Head     
+            2584: { score: 1, name: "Syncretist's Sigil" }  // Syncretist's Sigil
+        }),
+        "6": Object.assign({}, sharedEnchants["6"], {  // Legs
+            2584: { score: 1, name: "Syncretist's Sigil" }  // Syncretist's Sigil
+        })
+    })
+}
+
+export const offhandFrills = {
+    23049: true,    // Sapphiron's Left Eye
+    23048: true,    // Sapphiron's Right Eye
+    23029: true,    // Noth's Frigid Heart
+    22937: true,    // Gem of Nerubis
+    22994: true,    // Digested Hand of Power
+    19366: true,    // Master Dragonslayer's Orb
+    21597: true,    // Royal Scepter of Vek'lor
+    23452: true,    // Grand Marshal's Tome of Power
+    23468: true,    // High Warlord's Tome of Destruction
+    23469: true,    // High Warlord's Tome of Mending
+    23453: true,    // Grand Marshal's Tome of Restoration
+    21666: true,    // Sartura's Might
+    17067: true,    // Ancient Cornerstone Grimoire
+    20582: true,    // Trance Stone
+    19142: true,    // Fire Runed Grimoire
+    21471: true,    // Talon of Furious Concentration
+    19922: true,    // Arlokk's Hoodoo Stick
+    19891: true,    // Jin'do's Bag of Whammies
+    19312: true,    // Lei of the Lifegiver
+    19315: true,    // Therazane's Touch
+    15942: true,    // Master's Rod
+    15989: true,    // Eternal Rod
+    15941: true,    // High Councillor's Scepter
+    15968: true,    // Elunarian Sphere
+    22329: true,    // Scepter of Interminable Focus
+    18523: true,    // Brightly Glowing Stone
+    13353: true,    // Book of the Dead
+    22253: true,    // Tome of the Lost
+    15988: true,    // Resplendent Orb
+    21185: true,    // Earthcalm Orb
+    23156: true,    // Blackwood's Thigh
+    18695: true,    // Spellbound Tome
+    15940: true,    // Elegant Scepter
+    13385: true,    // Tome of Knowledge
+    22319: true,    // Tome of Divine Right
+    15805: true,    // Penelope's Rose,
+    15987: true,    // Astral Orb
+    15931: true,    // Arcane Star
+    15857: true,    // Magebane Scion
+    11928: true    // Thaurissan's Royal Scepter
+}

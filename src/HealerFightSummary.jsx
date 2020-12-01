@@ -6,11 +6,11 @@ export class HealerFightSummary extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            mageBlood: false,
-            flask: false,
             summary: props.healer.summary,
             spells: props.healer.spells,
             name: props.healer.name,
+            manaOil: props.healer.manaOil,
+            enchants: props.healer.enchants,
             id: props.healer.id,
             classType: props.healer.classType,
             isExpanded: false
@@ -26,7 +26,7 @@ export class HealerFightSummary extends Component {
     }
 
     render() {
-        const {id, name, classType, mageBlood, flask, summary, spells, isExpanded} = this.state;
+        const {id, name, classType, manaOil, summary, spells, isExpanded, enchants} = this.state;
         const {row, maxHeals} = this.props;
 
         let maxSpellHeals = spells.reduce((agg,obj) => {
@@ -36,18 +36,38 @@ export class HealerFightSummary extends Component {
             return agg;
         }, 0);
 
+        let enchantScore = enchants.reduce((acc, obj) => {
+            acc.score += obj.score;
+            acc.count++;
+
+            if (acc.score !== acc.count) {
+                acc.colour = "yellow";
+            }
+
+            if (acc.score === 0) {
+                acc.colour = "red";
+            }
+
+            acc.tooltip += obj.slot + ": " 
+                + (obj.name ? obj.name : "(none)") 
+                + (obj.score === 1 ? " <span class='tick'>✔</span>" : obj.score === 0 ? " <span class='cross'>✖</span>" : " <span class='alternative'>✔</span>")
+                + "<br />";
+
+            return acc;
+        }, { score: 0, count: 0, colour: "green", tooltip: ""})
+
         return (
             <>
                 <tr key={id} className={classType + " character " + (row % 2 === 0 ? "even" : "odd")} onClick={this.toggle}>
                     <td className="healer_name">{name}</td>
-                    <td className="healer_consumes_mana center">{summary.manaPots}</td>
+                    <td className={"healer_enchants_" + enchantScore.colour} data-tip={enchantScore.tooltip} data-place='right' data-class='enchant_tooltip' data-html={true}>{enchantScore.score}/{enchantScore.count}</td>
+                    <td className="healer_consumes_manapot center">{summary.manaPots}</td>
                     <td className="healer_consumes_runes center">{summary.runes}</td>
-                    <td className={"healer_consumes_mageblood center " + (mageBlood ? "tick" : "cross")}>{mageBlood ? "✔" : "✖"}</td>
-                    <td className={"healer_consumes_flask center " + (flask ? "tick" : "cross")}>{flask ? "✔" : "✖"}</td>
+                    <td className={"healer_consumes_manaoil center " + (manaOil ? "tick" : "cross")}>{manaOil ? "✔" : "✖"}</td>
                     <td className="right">{abbreviateNumber(summary.manaGained)}</td>
                     <td className="healer_cooldowns">
                         {summary.cooldowns.map((cooldown, idx) => (
-                            <img key={idx} className="spell_icon" src={"https://assets.rpglogs.com/img/warcraft/abilities/" + cooldown.icon} alt={cooldown.name} />
+                            <img key={idx} className="spell_icon" src={"https://assets.rpglogs.com/img/warcraft/abilities/" + cooldown.icon} alt={cooldown.name} data-tip={cooldown.name} />
                         ))}
                     </td>
                     <td className="healer_casts_started center">{summary.castsStarted}</td>
@@ -68,7 +88,7 @@ export class HealerFightSummary extends Component {
                 {isExpanded && spells.sort((x,y) => y.summary.effectiveHeals -x.summary.effectiveHeals)
                                      .map((spell) => (
                     <tr key={spell.id} className={spell.type + " spell " + (row % 2 === 0 ? "even" : "odd")}>
-                        <td className="healer_name" colSpan="7"><img className="spell_icon" src={"https://assets.rpglogs.com/img/warcraft/abilities/" + spell.icon} alt={spell.name} /> {spell.name}</td>
+                        <td className="healer_name" colSpan="6"><img className="spell_icon" src={"https://assets.rpglogs.com/img/warcraft/abilities/" + spell.icon} alt={spell.name} /> {spell.name}</td>
                         <td className="healer_casts_started center">{spell.summary.castsStarted}</td>
                         <td className="healer_casts_completed center">{spell.summary.castsCompleted}</td>
                         <td className="healer_casts percent right">{spell.summary.getCastsPercent()}%</td>
