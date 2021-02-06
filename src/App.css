@@ -7,3 +7,11 @@ body {
   color: #ffffff;
   font-size: 13px;
 }
+
+td.center {
+  text-align: center;
+}
+
+td.right {
+  text-align: right;
+}

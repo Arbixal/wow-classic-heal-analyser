@@ -1,4 +1,4 @@
-import {healingSpells, cooldownList} from "./data";
+import {healingSpells, cooldownList} from "../data";
 
 export class HealSummary {
     constructor() {

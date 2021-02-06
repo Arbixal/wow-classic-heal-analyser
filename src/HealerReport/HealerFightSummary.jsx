@@ -1,6 +1,6 @@
 import {Component} from "react";
-import {abbreviateNumber} from "./utils";
-import {ProgressBar} from "./ProgressBar";
+import {abbreviateNumber} from "../utils";
+import {ProgressBar} from "../ProgressBar";
 
 export class HealerFightSummary extends Component {
     constructor(props) {

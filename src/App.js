@@ -1,8 +1,15 @@
 import './App.css';
 import {Component} from "react";
-import {HealerReport} from "./HealerReport";
+import {HealerReport} from "./HealerReport/HealerReport";
+import {ShamanReport} from "./ShamanReport/ShamanReport";
 import {LogLoader} from "./warcraftLogLoader";
 import queryString from "query-string";
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
 
 class App extends Component {
   constructor(props) {
@@ -46,15 +53,35 @@ class App extends Component {
   render() {
     const {reportId, showTrash} = this.state;
     return (
-      <>
+      <Router>
+        <nav>
+          <ul>
+            <li>
+              <Link to={location => ("/" + location.search)}>Healer Report</Link>
+            </li>
+            <li>
+              <Link to={location => ("/shaman" + location.search)}>Shaman Report</Link>
+            </li>
+          </ul>
+        </nav>
+
         <div className="App">
           <form onSubmit={this.handleSubmit} >
           Enter your Classic Warcraft Logs ID: <input type="text" value={reportId} onChange={this.handleChange} /> <input type="submit" value="Go" />
           </form>
         </div>
 
-        {reportId !== '' && <HealerReport reportId={reportId} showTrash={showTrash} />}
-      </>
+        {reportId !== '' &&
+          <Switch>
+            <Route path="/shaman">
+              <ShamanReport reportId={reportId} />
+            </Route>
+            <Route path="/" >
+              <HealerReport reportId={reportId} showTrash={showTrash} />
+            </Route>
+          </Switch>
+        }
+      </Router>
     );
   }
 }

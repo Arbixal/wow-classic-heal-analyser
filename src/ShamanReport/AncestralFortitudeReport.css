@@ -1,0 +1,45 @@
+td.success {
+    color:#7FE566;
+}
+
+td.fail {
+    color: #E5A68C;
+}
+
+td.Warrior {
+    color: #C69B6D;
+}
+
+td.WarriorBackground {
+    color: #000000;
+    background-color: #C69B6D;
+}
+
+td.Druid {
+    color: #FF7B0A;
+}
+
+td.DruidBackground {
+    color: #000000;
+    background-color: #FF7B0A;
+}
+
+td.inspiration_heading {
+    width: 75px;
+    text-align: center;
+}
+
+.tick {
+    color: rgb(50%, 90%, 40%);
+}
+
+.cross {
+    color: rgb(90%,65%,55%);
+}
+
+div.note {
+    margin-left: 12px;
+    margin-top: 5px;
+    font-style: italic;
+    font-size: small;
+}

@@ -1,6 +1,6 @@
 import {Component} from "react";
 import {FightReport} from "./FightReport";
-import {LogLoader} from "./warcraftLogLoader";
+import {LogLoader} from "../warcraftLogLoader";
 
 export class HealerReport extends Component {
     constructor(props) {

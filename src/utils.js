@@ -15,3 +15,7 @@ export function abbreviateNumber(num) {
 
     return num;
 }
+
+export function asPercentage(num) {
+    return (num*100).toFixed(1) + "%";
+}

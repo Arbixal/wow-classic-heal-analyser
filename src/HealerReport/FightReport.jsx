@@ -1,10 +1,10 @@
 import "./FightReport.css";
 import {Component} from "react";
-import {LogLoader} from "./warcraftLogLoader";
-import {msToTime, abbreviateNumber} from "./utils";
+import {LogLoader} from "../warcraftLogLoader";
+import {msToTime, abbreviateNumber} from "../utils";
 import { HealerFightSummary } from "./HealerFightSummary";
 import {getHealSummary, HealSummary} from "./healSummary";
-import {healingSpells, protectionPotions, requiredEnchants} from "./data";
+import {healingSpells, protectionPotions, requiredEnchants} from "../data";
 import ReactTooltip from "react-tooltip";
 
 export class FightReport extends Component {

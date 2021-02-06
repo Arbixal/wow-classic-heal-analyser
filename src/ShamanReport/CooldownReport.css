@@ -1,0 +1,7 @@
+tr.Shaman > td.shaman_name {
+    color: #2258FF;
+}
+
+td.shaman_cooldown {
+    text-align: right;
+}

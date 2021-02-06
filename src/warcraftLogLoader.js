@@ -111,6 +111,37 @@ class WarcraftLogLoader {
         }).catch(reject));
     }
 
+    getTankInfo(start_time, end_time, context = null) {
+        return new Promise((resolve, reject) => fetch(this.domain + "report/tables/summary/" + this.reportId
+        + "?api_key=" + this.key 
+        + "&start=" + start_time
+        + "&end=" + end_time)
+        .then(response => response.json())
+        .then(data => {
+            let tankData = [];
+            if (data.playerDetails.tanks) {
+
+                tankData = data.playerDetails.tanks.reduce((acc, obj) => {
+                    let playerId = obj["id"];
+                    
+                    acc[playerId] = {
+                        id: playerId,
+                        name: obj.name,
+                        type: obj.type,
+                        armor: obj.combatantInfo?.stats?.Armor?.max,
+                        stamina: obj.combatantInfo?.stats?.Stamina?.max,
+                        strength: obj.combatantInfo?.stats?.Strength?.max,
+                        agility: obj.combatantInfo?.stats?.Agility?.max
+                    };
+
+                    return acc;
+                }, {});
+            }
+
+            resolve({context: context, data: tankData});
+        }).catch(reject));
+    }
+
     /* getManaRegeneration(start_time, end_time, events = []) {
         return new Promise((resolve, reject) => fetch(this.domain + "report/events/resources/" + this.reportId
         + "?api_key=" + this.key 
@@ -222,6 +253,65 @@ class WarcraftLogLoader {
                 } else {
                     resolve(events);
                 }
+            }).catch(reject);
+        }).catch(reject));
+    }
+
+    getCharacterCastTable(start_time, end_time, sourceid, sourcename) {
+        return new Promise((resolve, reject) => fetch(this.domain + "report/tables/casts/" + this.reportId 
+        + "?api_key=" + this.key 
+        + "&start=" + start_time
+        + "&end=" + end_time
+        + "&sourceid=" + sourceid)
+        .then(response => {
+            if (response.status !== 200) {
+                throw new Error(`${response.stats}: ${response.statusText}`);
+            }
+            response.json().then(data => {
+                resolve({ id: sourceid, name: sourcename, entries: data.entries })
+            }).catch(reject);
+        }).catch(reject));
+    }
+
+    getArmorBuffUptime(start_time, end_time, context = null) {
+        return Promise.all([
+            this.getBuffUptime(start_time, end_time, 15359), // Inspiration (Rank 3)
+            this.getBuffUptime(start_time, end_time, 16237), // Ancestral Fortitude (Rank 3)
+        ])
+        .then(res => new Promise((resolve, _reject) => resolve(res.reduce((accum,current) => {
+            current.reduce((innerAccum, character) => {
+                if (!innerAccum[character.id]) {
+                    innerAccum[character.id] = character;
+                }
+                else {
+                    // Join together
+                    let existingCharacter = innerAccum[character.id];
+                    existingCharacter.totalUptime += character.totalUptime;
+                    existingCharacter.totalUses += character.totalUses;
+                    existingCharacter.bands = [...existingCharacter.bands, ...character.bands];
+                    existingCharacter.bands = existingCharacter.bands.sort((x, y) => x.startTime - y.startTime);
+                }
+
+                return innerAccum;
+            }, accum)
+
+            return accum;
+        }, {}))))
+        .then(results => new Promise((resolve,_reject) => resolve({context: context, data: results})));
+    }
+
+    getBuffUptime(start_time, end_time, abilityid) {
+        return new Promise((resolve, reject) => fetch(this.domain + "report/tables/buffs/" + this.reportId 
+        + "?api_key=" + this.key 
+        + "&start=" + start_time
+        + "&end=" + end_time
+        + "&abilityid=" + abilityid)
+        .then(response => {
+            if (response.status !== 200) {
+                throw new Error(`${response.stats}: ${response.statusText}`);
+            }
+            response.json().then(data => {
+                resolve(data.auras)
             }).catch(reject);
         }).catch(reject));
     }

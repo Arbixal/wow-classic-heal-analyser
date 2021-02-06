@@ -1112,158 +1112,261 @@ export const healingSpells = {
 export const cooldownList = {
     '14751': {
         name: "Inner Focus",
+        type: "Priest",
         icon: "spell_frost_windwalkon.jpg",
         cooldown: 180000
     },
     '17116': {
         name: "Nature's Swiftness",
+        type: "Druid",
         icon: "spell_nature_ravenform.jpg",
         cooldown: 180000
     },
     '16188': {
         name: "Nature's Swiftness",
+        type: "Restoration",
         icon: "spell_nature_ravenform.jpg",
         cooldown: 180000
     },
     '29166': {
         name: "Innervate",
+        type: "Druid",
         icon: "spell_nature_lightning.jpg",
         cooldown: 360000
     },
     '16190': {
         name: "Mana Tide Totem (Rank 1)",
+        type: "Restoration",
         icon: "spell_frost_summonwaterelemental.jpg",
         cooldown: 300000
     },
     '17354': {
         name: "Mana Tide Totem (Rank 2)",
+        type: "Restoration",
         icon: "spell_frost_summonwaterelemental.jpg",
         cooldown: 300000
     },
     '17359': {
         name: "Mana Tide Totem (Rank 3)",
+        type: "Restoration",
         icon: "spell_frost_summonwaterelemental.jpg",
         cooldown: 300000
     },
     '20484': {
         name: "Rebirth (Rank 1)",
+        type: "Druid",
         icon: "spell_nature_reincarnation.jpg",
         cooldown: 1800000
     },
     '20739': {
         name: "Rebirth (Rank 2)",
+        type: "Druid",
         icon: "spell_nature_reincarnation.jpg",
         cooldown: 1800000
     },
     '20742': {
         name: "Rebirth (Rank 3)",
+        type: "Druid",
         icon: "spell_nature_reincarnation.jpg",
         cooldown: 1800000
     },
     '20747': {
         name: "Rebirth (Rank 4)",
+        type: "Druid",
         icon: "spell_nature_reincarnation.jpg",
         cooldown: 1800000
     },
     '20748': {
         name: "Rebirth (Rank 5)",
+        type: "Druid",
         icon: "spell_nature_reincarnation.jpg",
         cooldown: 1800000
     },
     '740': {
         name: "Tranquility (Rank 1)",
+        type: "Druid",
         icon: "spell_nature_tranquility.jpg",
         cooldown: 300000
     },
     '8918': {
         name: "Tranquility (Rank 2)",
+        type: "Druid",
         icon: "spell_nature_tranquility.jpg",
         cooldown: 300000
     },
     '9862': {
         name: "Tranquility (Rank 3)",
+        type: "Druid",
         icon: "spell_nature_tranquility.jpg",
         cooldown: 300000
     },
     '9863': {
         name: "Tranquility (Rank 4)",
+        type: "Druid",
         icon: "spell_nature_tranquility.jpg",
         cooldown: 300000
     },
     '20554': {
         name: "Berserking",
+        type: "Racial",
         icon: "racial_troll_berserk.jpg",
         cooldown: 180000
     },
     '633': {
         name: "Lay on Hands (Rank 1)",
+        type: "Paladin",
         icon: "spell_holy_layonhands.jpg",
         cooldown: 3600000
     },
     '2800': {
         name: "Lay on Hands (Rank 2)",
+        type: "Paladin",
         icon: "spell_holy_layonhands.jpg",
         cooldown: 3600000
     },
     '10310': {
         name: "Lay on Hands (Rank 3)",
+        type: "Paladin",
         icon: "spell_holy_layonhands.jpg",
         cooldown: 3600000
     },
     '19752': {
         name: "Divine Intervention",
+        type: "Paladin",
         icon: "spell_nature_timestop.jpg",
         cooldown: 3600000
     },
     '642': {
         name: "Divine Shield (Rank 1)",
+        type: "Paladin",
         icon: "spell_holy_divineintervention.jpg",
         cooldown: 300000
     },
     '1020': {
         name: "Divine Shield (Rank 2)",
+        type: "Paladin",
         icon: "spell_holy_divineintervention.jpg",
         cooldown: 300000
     },
     '498': {
         name: "Divine Protection (Rank 1)",
+        type: "Paladin",
         icon: "spell_holy_restoration.jpg",
         cooldown: 300000
     },
     '5573': {
         name: "Divine Protection (Rank 2)",
+        type: "Paladin",
         icon: "spell_holy_restoration.jpg",
         cooldown: 300000
     },
     '1022': {
         name: "Blessing of Protection (Rank 1)",
+        type: "Paladin",
         icon: "spell_holy_sealofprotection.jpg",
         cooldown: 300000
     },
     '5599': {
         name: "Blessing of Protection (Rank 2)",
+        type: "Paladin",
         icon: "spell_holy_sealofprotection.jpg",
         cooldown: 300000
     },
     '10278': {
         name: "Blessing of Protection (Rank 3)",
+        type: "Paladin",
         icon: "spell_holy_sealofprotection.jpg",
         cooldown: 300000
     },
     '23734': {
         name: "Natural Alignment Crystal",
+        type: "Trinket",
         icon: "inv_misc_gem_03.jpg",
         cooldown: 300000
     },
     '26467': {
         name: "Scarab Brooch",
+        type: "Trinket",
         icon: "inv_misc_ahnqirajtrinket_06.jpg",
         cooldown: 180000
     },
     '24659': {
         name: "Zandalarian Hero Charm",
+        type: "Trinket",
         icon: "inv_jewelry_necklace_13.jpg",
         cooldown: 120000
+    },
+    '24854': {
+        name: "Enamored Water Spirit",
+        type: "Trinket",
+        icon: "inv_wand_01.jpg",
+        cooldown: 180000
+    },
+    '20549': {
+        name: "War Stomp",
+        type: "Racial",
+        icon: "ability_warstomp.jpg",
+        cooldown: 120000
+    },
+    '16166': {
+        name: "Elemental Mastery",
+        type: "Elemental",
+        icon: "spell_nature_wispheal.jpg",
+        cooldown: 180000
+    },
+    '24268': {
+        name: "Mar'li's Eye",
+        type: "Trinket",
+        icon: "inv_zulgurubtrinket.jpg",
+        cooldown: 180000
+    },
+    '15604': {
+        name: "Second Wind",
+        type: "Trinket",
+        icon: "inv_jewelry_talisman_06.jpg",
+        cooldown: 900000
+    },
+    '28760': {
+        name: "Warmth of Forgiveness",
+        type: "Trinket",
+        icon: "inv_trinket_naxxramas01.jpg",
+        cooldown: 180000
+    },
+    '28862': {
+        name: "Eye of Diminution",
+        type: "Trinket",
+        icon: "inv_trinket_naxxramas02.jpg",
+        cooldown: 120000
+    },
+    '28780': {
+        name: "Eye of the Dead",
+        type: "Trinket",
+        icon: "inv_trinket_naxxramas01.jpg",
+        cooldown: 120000
+    },
+    '28779': {
+        name: "The Restrained Essence of Sapphiron",
+        type: "Trinket",
+        icon: "inv_trinket_naxxramas06.jpg",
+        cooldown: 120000
+    },
+    '23271': {
+        name: "Talisman of Ephemeral Power",
+        type: "Trinket",
+        icon: "inv_misc_stonetablet_11.jpg",
+        cooldown: 90000
+    },
+    '15646': {
+        name: "Burst of Knowledge",
+        type: "Trinket",
+        icon: "inv_jewelry_amulet_07.jpg",
+        cooldown: 900000
+    },
+    '27675': {
+        name: "Draconic Infused Emblem",
+        type: "Trinket",
+        icon: "inv_jewelry_talisman_09.jpg",
+        cooldown: 75000
     }
 
 }
