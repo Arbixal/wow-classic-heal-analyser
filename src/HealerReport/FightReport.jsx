@@ -1,4 +1,4 @@
-import "./FightReport.css";
+import "./FightReport.scss";
 import {Component} from "react";
 import {LogLoader} from "../warcraftLogLoader";
 import {msToTime, abbreviateNumber} from "../utils";

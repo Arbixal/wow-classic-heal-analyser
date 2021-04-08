@@ -2,10 +2,11 @@ import './App.css';
 import {Component} from "react";
 import {HealerReport} from "./HealerReport/HealerReport";
 import {ShamanReport} from "./ShamanReport/ShamanReport";
+import {SummaryReport} from "./SummaryReport/SummaryReport";
 import {LogLoader} from "./warcraftLogLoader";
 import queryString from "query-string";
 import {
-  BrowserRouter as Router,
+  HashRouter as Router,
   Switch,
   Route,
   Link
@@ -62,6 +63,9 @@ class App extends Component {
             <li>
               <Link to={location => ("/shaman" + location.search)}>Shaman Report</Link>
             </li>
+            <li>
+              <Link to={location => ("/summary" + location.search)}>Summary Report</Link>
+            </li>
           </ul>
         </nav>
 
@@ -75,6 +79,9 @@ class App extends Component {
           <Switch>
             <Route path="/shaman">
               <ShamanReport reportId={reportId} />
+            </Route>
+            <Route path="/summary">
+              <SummaryReport reportId={reportId} />
             </Route>
             <Route path="/" >
               <HealerReport reportId={reportId} showTrash={showTrash} />

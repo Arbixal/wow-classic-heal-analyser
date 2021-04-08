@@ -1,0 +1,224 @@
+@import "../_colours.scss";
+@import "../_utils.scss";
+@use "sass:color";
+
+div.fight {
+    margin: 5px;
+    background-color: #222222;
+    color: #FFFFFF;
+}
+
+div.fight > div.heading {
+    background-color: #333333;
+    padding: 5px;
+    cursor: pointer;
+}
+
+div.fight.success > div.heading {
+    color:#7FE566;
+}
+
+div.fight.fail > div.heading {
+    color: #E5A68C;
+}
+
+div.fight.trash > div.heading {
+    color: #AAAAAA;
+}
+
+td.healer_name {
+    vertical-align: text-top;
+    width: 240px;
+}
+
+td.healer_enchants {
+    vertical-align: text-top;
+    text-align: center;
+}
+
+td.healer_enchants_red {
+    text-align: center;
+    color: #E5A68C;
+}
+
+td.healer_enchants_yellow {
+    text-align: center;
+    color: #FFFFAA;
+}
+
+td.healer_enchants_green {
+    text-align: center;
+    color:#7FE566;
+}
+
+@mixin healer-block($class-color) {
+    td.healer_name {
+        color: $class-color;
+    }
+
+    td.healer_amount {
+        div.bar {
+            div.bar_effective {
+                background-color: $class-color;
+            }
+
+            div.bar_overheal {
+                background-color: scale-color($class-color, $alpha: -50%);
+            }
+        }
+    }
+
+    td.healer_effective:not(.empty) {
+        background-color: $class-color;
+        color: choose-contrast-color($class-color);
+    }
+
+    td.healer_overheal:not(.empty) {
+        background-color: scale-color($class-color, $alpha: -50%);
+        color: choose-contrast-color(scale-color($class-color, $alpha: -50%));
+    }
+}
+
+tr.Druid {
+    @include healer-block($druid);
+}
+
+tr.Priest {
+    @include healer-block($priest);
+}
+
+tr.Shaman {
+    @include healer-block($shaman);
+}
+
+tr.Paladin {
+    @include healer-block($paladin);
+}
+
+tr.Nature {
+    @include healer-block($nature);
+}
+
+tr.Shadow {
+    @include healer-block($shadow);
+}
+
+tr.Frost {
+    @include healer-block($frost);
+}
+
+tr.Fire {
+    @include healer-block($fire);
+}
+
+tr.Arcane {
+    @include healer-block($arcane);
+}
+
+tr.Holy {
+    @include healer-block($holy);
+}
+
+tr.Consumable, tr.Physical {
+    @include healer-block(#AAAAAA);
+}
+
+div.bar_wasted, tr.character.even > td.healer_wasted:not(.empty), tr.spell.even > td.healer_wasted:not(.empty) {
+    background-color: #FF00007F;
+}
+
+tr.character.odd > td.healer_wasted:not(.empty), tr.spell.odd > td.healer_wasted:not(.empty) {
+    background-color: #FF00009F;
+}
+
+td.healer_amount {
+    vertical-align: text-top;
+}
+
+td.healer_cooldowns {
+    vertical-align: text-top;
+}
+
+td.healer_consumes {
+    text-align: center;
+}
+
+td.healer_casts {
+    text-align: center;
+}
+
+td {
+    border: solid 1px black;
+    border-collapse: collapse;
+    margin: 0;
+}
+
+td.center {
+    text-align: center;
+}
+
+td.right {
+    text-align: right;
+    padding-right: 5px;
+}
+
+td.percent {
+    width: 55px;
+}
+
+td.amount {
+    width: 55px;
+}
+
+td.healer_amount {
+    width: 400px;
+}
+
+td.healer_consumes_mana {
+    width: 45px;
+    text-align: center;
+}
+
+.tick {
+    color: rgb(50%, 90%, 40%);
+}
+
+.cross {
+    color: rgb(90%,65%,55%);
+}
+
+.alternative {
+    color: #FFFFAA;
+}
+
+tr.even {
+    background-color: #111111;
+}
+
+tr.spell > td.healer_name {
+    padding-left: 120px;
+    vertical-align: middle;
+}
+
+tr.character {
+    cursor: pointer;
+}
+
+table {
+    border-spacing: 0;
+    margin-left: 10px;
+}
+
+div.bar {
+    display:flex;
+}
+
+img.spell_icon {
+    width: 17px;
+    height: 17px;
+    vertical-align: middle;
+}
+
+.enchant_tooltip {
+    text-align: left;
+}

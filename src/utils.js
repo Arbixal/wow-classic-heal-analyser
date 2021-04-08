@@ -16,6 +16,42 @@ export function abbreviateNumber(num) {
     return num;
 }
 
-export function asPercentage(num) {
-    return (num*100).toFixed(1) + "%";
+export function asPercentage(num, decimals = 1) {
+    return (num*100).toFixed(decimals) + "%";
+}
+
+export function removeDuplicates(array, keyAccessFunction) {
+    if (!keyAccessFunction || typeof(keyAccessFunction) !== 'function') {
+        keyAccessFunction = (obj) => obj;
+    }
+
+    var a = array.concat();
+    for(var i=0; i<a.length; ++i) {
+        for(var j=i+1; j<a.length; ++j) {
+            if(keyAccessFunction(a[i]) === keyAccessFunction(a[j]))
+                a.splice(j--, 1);
+        }
+    }
+
+    return a;
+};
+
+export function countNonNull(...params) {
+    return params.reduce((agg, obj) => {
+        if (obj) {
+            agg++
+        }
+
+        return agg;
+    }, 0);
+}
+
+export function sumNonNull(...params) {
+    return params.reduce((agg, obj) => {
+        if (obj) {
+            agg += obj;
+        }
+
+        return agg;
+    }, 0);
 }

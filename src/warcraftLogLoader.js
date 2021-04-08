@@ -1,14 +1,309 @@
 import {offhandFrills} from "./data";
+import {removeDuplicates} from "./utils";
 
-class WarcraftLogLoader {
-    constructor() {
+export class WarcraftLogLoader {
+    constructor(reportId = null) {
         this.key = "e422378c419a25cc1accb41845b259ab";
         this.domain = "https://classic.warcraftlogs.com/v1/";
-        this.reportId = null;
+        this.reportId = reportId;
+        this.Results = {};
+        this._loadedStatus = {
+            fights: false,
+            characterSummaries: false,
+            deaths: false,
+            character: {
+                details: {},
+                casts: {},
+                buffs: {},
+                damageTaken: {},
+                protectionPots: {},
+            }
+        }
+    }
+
+    static Load(reportId) {
+        return new WarcraftLogLoader(reportId);
     }
 
     setReport(reportId) {
         this.reportId = reportId;
+    }
+
+    loadFights() {
+        if (this._loadedStatus.fights) {
+            return new Promise(resolve => resolve(this));
+        }
+
+        return fetch(this.domain + "report/fights/" + this.reportId + "?api_key=" + this.key)
+            .then(res => res.json())
+            .then(res => {
+                this.Results.Fights = res.fights;
+                this.Results.Characters = res.friendlies.reduce((acc,obj) => {
+                    acc[obj.id] = obj;
+
+                    acc[obj.id].raidStartTime = res.fights[obj.fights[0].id-1].start_time;
+
+                    return acc;
+                }, {});
+                // Add pet information to their owner
+                res.friendlyPets.forEach((pet) => {
+                    if (!this.Results.Characters[pet.petOwner])
+                        return;
+
+                    this.Results.Characters[pet.petOwner].pets = [...(this.Results.Characters[pet.petOwner].pets || []),pet];
+                })
+                this.Results.startTime = res.fights[0].start_time;
+                this.Results.endTime = res.fights[res.fights.length-1].end_time;
+
+                this._loadedStatus.fights = true;
+
+                return this;
+            });
+    }
+
+    loadCharacterSummary() {
+        if (!this._loadedStatus.fights) {
+            return new Promise((_resolve, reject) => reject("Fights have not yet been loaded."));
+        }
+
+        if (this._loadedStatus.characterSummaries) {
+            return new Promise(resolve => resolve(this));
+        }
+
+        return new Promise((resolve, reject) => fetch(this.domain + "report/tables/summary/" + this.reportId
+        + "?api_key=" + this.key 
+        + "&start=" + this.Results.startTime
+        + "&end=" + this.Results.endTime)
+        .then(response => response.json())
+        .then(data => {
+            let playerData = [];
+
+            if (data.playerDetails?.tanks) {
+                playerData = data.playerDetails.tanks.reduce(this._reducePlayerDetails("tank"), {});
+            }
+
+            if (data.playerDetails?.healers) {
+                playerData = data.playerDetails.healers.reduce(this._reducePlayerDetails("healer"), playerData);
+            }
+
+            if (data.playerDetails?.dps) {
+                playerData = data.playerDetails.dps.reduce(this._reducePlayerDetails("dps"), playerData);
+            }
+
+            for (const [key,value] of Object.entries(playerData)) {
+                let playerInfo = this.Results.Characters[key];
+
+                playerInfo.roles = value.roles;
+                playerInfo.intellect = value.intellect;
+                playerInfo.armor = value.armor;
+                playerInfo.stamina = value.stamina;
+                playerInfo.strength = value.strength;
+                playerInfo.agility = value.agility;
+                playerInfo.weaponEnchant = value.weaponEnchant;
+                playerInfo.enchants = value.enchants;
+            }
+
+            this._loadedStatus.characterSummaries = true;
+
+            resolve(this);
+        }).catch(reject));
+    }
+
+    loadDeaths() {
+        if (!this._loadedStatus.fights) {
+            return new Promise((_resolve, reject) => reject("Fights have not yet been loaded."));
+        }
+
+        if (this._loadedStatus.deaths) {
+            return new Promise(resolve => resolve(this));
+        }
+
+        return new Promise((resolve, reject) => fetch(this.domain + "report/tables/deaths/" + this.reportId 
+        + "?api_key=" + this.key 
+        + "&start=" + this.Results.startTime
+        + "&end=" + this.Results.endTime)
+        .then(response => response.json())
+        .then(data => {
+            data.entries.forEach((obj) => {
+                let character = this.Results.Characters[obj.id];
+
+                if (!character) {
+                    return;
+                }
+
+                character.deaths = [...(character.deaths || []),obj];
+            })
+
+            this._loadedStatus.deaths = true;
+
+            resolve(this);
+        }).catch(reject));
+    }
+
+    loadCharacterDetails(playerid) {
+        if (!this._loadedStatus.fights) {
+            return new Promise((_resolve, reject) => reject("Fights have not yet been loaded."));
+        }
+
+        if (this._loadedStatus.character.details[playerid]) {
+            return new Promise(resolve => resolve(this));
+        }
+
+        return Promise.all([
+            this._loadCharacterCasts(playerid),
+            this._loadCharacterBuffs(playerid),
+            this._loadProtectionPots(playerid),
+            //this._loadCharacterDamageTaken(playerid),
+        ])
+        .then((_data) => {
+            this._loadedStatus.character.details[playerid] = true;
+
+            return new Promise((resolve, _reject) => resolve(this))
+        })
+    }
+
+    _loadCharacterCasts(playerid) {
+        if (!this._loadedStatus.fights) {
+            return new Promise((_resolve, reject) => reject("Fights have not yet been loaded."));
+        }
+
+        if (this._loadedStatus.character.casts[playerid]) {
+            return new Promise(resolve => resolve(this));
+        }
+
+        return new Promise((resolve, reject) => fetch(this.domain + "report/events/casts/" + this.reportId 
+        + "?api_key=" + this.key 
+        + "&start=" + this.Results.startTime
+        + "&end=" + this.Results.endTime
+        + "&sourceid=" + playerid)
+        .then(response => response.json())
+        .then(data => {
+            data.events.forEach((obj) => {
+                let character = this.Results.Characters[playerid];
+
+                if (!character) {
+                    return;
+                }
+
+                character.casts = [...(character.casts || []),obj];
+            })
+
+            this._loadedStatus.character.casts[playerid] = true;
+
+            resolve(this);
+        }).catch(reject));
+    }
+
+    _loadCharacterBuffs(playerid) {
+        if (!this._loadedStatus.fights) {
+            return new Promise((_resolve, reject) => reject("Fights have not yet been loaded."));
+        }
+
+        if (this._loadedStatus.character.buffs[playerid]) {
+            return new Promise(resolve => resolve(this));
+        }
+
+        return new Promise((resolve, reject) => fetch(this.domain + "report/tables/buffs/" + this.reportId 
+        + "?api_key=" + this.key 
+        + "&start=" + this.Results.startTime
+        + "&end=" + this.Results.endTime
+        + "&sourceid=" + playerid)
+        .then(response => response.json())
+        .then(data => {
+            data.auras.forEach((obj) => {
+                let character = this.Results.Characters[playerid];
+
+                if (!character) {
+                    return;
+                }
+
+                character.buffs = {...character.buffs, [obj.guid]: obj};
+            })
+
+            this._loadedStatus.character.buffs[playerid] = true;
+
+            resolve(this);
+        }).catch(reject));
+    }
+
+    _loadCharacterDamageTaken(playerid) {
+        if (!this._loadedStatus.fights) {
+            return new Promise((_resolve, reject) => reject("Fights have not yet been loaded."));
+        }
+
+        if (this._loadedStatus.character.damageTaken[playerid]) {
+            return new Promise(resolve => resolve(this));
+        }
+
+        return new Promise((resolve, reject) => fetch(this.domain + "report/tables/damage-taken/" + this.reportId 
+        + "?api_key=" + this.key 
+        + "&start=" + this.Results.startTime
+        + "&end=" + this.Results.endTime
+        + "&sourceid=" + playerid)
+        .then(response => response.json())
+        .then(data => {
+            
+            this._loadedStatus.character.damageTaken[playerid] = true;
+
+            resolve(this);
+        }).catch(reject));
+    }
+
+    _loadProtectionPots(playerid) {
+        if (!this._loadedStatus.fights) {
+            return new Promise((_resolve, reject) => reject("Fights have not yet been loaded."));
+        }
+
+        if (this._loadedStatus.character.protectionPots[playerid]) {
+            return new Promise(resolve => resolve(this));
+        }
+
+        return new Promise((resolve, reject) => fetch(this.domain + "report/events/healing/" + this.reportId 
+        + "?api_key=" + this.key 
+        + "&start=" + this.Results.startTime
+        + "&end=" + this.Results.endTime
+        + "&sourceid=" + playerid
+        + "&filter=ability.id=17546 OR ability.id=7254 OR ability.id=17548 OR ability.id=7242 OR ability.id=17544 OR ability.id=7240 OR ability.id=17543 OR ability.id=7230 OR ability.id=17549")
+        .then(response => response.json())
+        .then(data => {
+            let character = this.Results.Characters[playerid];
+
+            if (!character) {
+                return;
+            }
+
+            if (!character.protectionPotions) {
+                character.protectionPotions = {};
+            }
+
+            data.events.forEach((obj) => {
+                let protPot = character.protectionPotions[obj.ability.guid];
+                if (!protPot) {
+                    character.protectionPotions[obj.ability.guid] = {
+                        amount: 0,
+                        firstAbsorb: {},
+                    };
+                    protPot = character.protectionPotions[obj.ability.guid]
+                }
+
+                protPot.amount += obj.amount;
+                if (!protPot.firstAbsorb[obj.fight]) {
+                    protPot.firstAbsorb[obj.fight] = obj.timestamp;
+                }
+            });
+
+            this._loadedStatus.character.protectionPots[playerid] = true;
+
+            resolve(this);
+        }).catch(reject));
+    }
+
+    getResults() {
+        return this.Results;
+    }
+
+    getCharacter(characterid) {
+        return this.Results.Characters[characterid];
     }
 
     getFights() {
@@ -41,21 +336,9 @@ class WarcraftLogLoader {
         }, []))));
     }
 
-    getHealerInfo(start_time, end_time) {
-        return new Promise((resolve, reject) => fetch(this.domain + "report/tables/summary/" + this.reportId
-        + "?api_key=" + this.key 
-        + "&start=" + start_time
-        + "&end=" + end_time)
-        .then(response => response.json())
-        .then(data => {
-            let healerData = [];
-            if (!data.playerDetails.healers) {
-                resolve(healerData);
-                return;
-            }
-
-            healerData = data.playerDetails.healers.reduce((acc, obj) => {
-                let playerId = obj["id"];
+    _reducePlayerDetails(role) {
+        return (acc, obj) => {
+        let playerId = obj["id"];
 
                 const slots = {
                     0: { enchantable: true, name: "Head" },
@@ -79,11 +362,19 @@ class WarcraftLogLoader {
                     18: { enchantable: false, name: "Tabard" }
                 };
 
-                let enchants = obj.combatantInfo.gear.reduce((enchant, gear) => {
+                let enchants = obj.combatantInfo?.gear?.reduce((enchant, gear) => {
                     
                     if (slots[gear.slot].enchantable && gear.id !== 0 && !offhandFrills[gear.id])
                     {
-                        enchant.permanentEnchants.push({slot: gear.slot, slotname: slots[gear.slot].name, id: gear.permanentEnchant, name: gear.permanentEnchantName})
+                        enchant.permanentEnchants.push({
+                            slot: gear.slot, 
+                            slotname: slots[gear.slot].name, 
+                            id: gear.permanentEnchant, 
+                            name: gear.permanentEnchantName, 
+                            key: gear.id + "_" + gear.permanentEnchant,
+                            gearId: gear.id,
+                            gearName: gear.name,
+                        })
                     }
 
                     if (gear.slot === 15) {
@@ -93,19 +384,78 @@ class WarcraftLogLoader {
 
                     return enchant;
                 }, { permanentEnchants: [], weaponEnchant: {}});
-                
-                acc[playerId] = {
-                    id: playerId,
-                    name: obj.name,
-                    type: obj.type,
-                    intellect: obj.combatantInfo.stats.Intellect.max,
-                    stamina: obj.combatantInfo.stats.Stamina.max,
-                    weaponEnchant: enchants.weaponEnchant,
-                    enchants: enchants.permanentEnchants
-                };
+
+                if (!acc[playerId]) {
+                    acc[playerId] = {
+                        id: playerId,
+                        name: obj.name,
+                        type: obj.type,
+                        roles: [role],
+                        intellect: obj.combatantInfo?.stats?.Intellect?.max,
+                        armor: obj.combatantInfo?.stats?.Armor?.max,
+                        stamina: obj.combatantInfo?.stats?.Stamina?.max,
+                        strength: obj.combatantInfo?.stats?.Strength?.max,
+                        agility: obj.combatantInfo?.stats?.Agility?.max,
+                        weaponEnchant: enchants?.weaponEnchant,
+                        enchants: enchants?.permanentEnchants
+                    };
+                }
+                else {
+                    acc[playerId].roles.push(role);
+                    if (!acc[playerId].weaponEnchant) {
+                        acc[playerId].weaponEnchant = enchants?.weaponEnchant;
+                    }
+                    acc[playerId].enchants = removeDuplicates([...(acc[playerId].enchants || []), ...(enchants?.permanentEnchants || [])], x => x.key);
+
+                }
 
                 return acc;
-            }, {});
+        }
+    }
+
+    getCharacterInfo(start_time, end_time) {
+        return new Promise((resolve, reject) => fetch(this.domain + "report/tables/summary/" + this.reportId
+        + "?api_key=" + this.key 
+        + "&start=" + start_time
+        + "&end=" + end_time)
+        .then(response => response.json())
+        .then(data => {
+            let playerData = [];
+            if (!data.playerDetails) {
+                resolve(playerData);
+                return;
+            }
+
+            if (data.playerDetails.tanks) {
+                playerData = data.playerDetails.tanks.reduce(this._reducePlayerDetails("tank"), {});
+            }
+
+            if (data.playerDetails.healers) {
+                playerData = data.playerDetails.healers.reduce(this._reducePlayerDetails("healer"), playerData);
+            }
+
+            if (data.playerDetails.dps) {
+                playerData = data.playerDetails.dps.reduce(this._reducePlayerDetails("dps"), playerData);
+            }
+
+            resolve(playerData);
+        }).catch(reject));
+    }
+
+    getHealerInfo(start_time, end_time) {
+        return new Promise((resolve, reject) => fetch(this.domain + "report/tables/summary/" + this.reportId
+        + "?api_key=" + this.key 
+        + "&start=" + start_time
+        + "&end=" + end_time)
+        .then(response => response.json())
+        .then(data => {
+            let healerData = [];
+            if (!data.playerDetails.healers) {
+                resolve(healerData);
+                return;
+            }
+
+            healerData = data.playerDetails.healers.reduce(this._reducePlayerDetails("healer"), {});
 
             resolve(healerData);
         }).catch(reject));

@@ -1371,46 +1371,75 @@ export const cooldownList = {
 
 }
 
+export const protectionPotionEnum = {
+    GNPP: 17546,
+    NPP: 7254,
+    GSPP: 17548,
+    SPP: 7242,
+    GFrPP: 17544,
+    FrPP: 7240,
+    GFPP: 17543,
+    FPP: 7230,
+    GAPP: 17549,
+}
 export const protectionPotions = {
     '17546': {
         name: "Greater Nature Protection Potion",
-        type: "Nature"
+        type: "Nature",
+        icon: "inv_potion_22.jpg",
+        rank: 2,
     },
     '7254': {
         name: "Nature Protection Potion",
-        type: "Nature"
+        type: "Nature",
+        icon: "inv_potion_06.jpg",
+        rank: 1,
     },
     '17548': {
         name: "Greater Shadow Protection Potion",
-        type: "Shadow"
+        type: "Shadow",
+        icon: "inv_potion_23.jpg",
+        rank: 2,
     },
     '7242': {
         name: "Shadow Protection Potion",
-        type: "Shadow"
+        type: "Shadow",
+        icon: "inv_potion_44.jpg",
+        rank: 1,
     },
     '17544': {
         name: "Greater Frost Protection Potion",
-        type: "Frost"
+        type: "Frost",
+        icon: "inv_potion_20.jpg",
+        rank: 2,
     },
     '7240': {
         name: "Frost Protection Potion",
-        type: "Frost"
+        type: "Frost",
+        icon: "inv_potion_13.jpg",
+        rank: 1,
     },
     '17543': {
         name: "Greater Fire Protection Potion",
-        type: "Fire"
+        type: "Fire",
+        icon: "inv_potion_24.jpg",
+        rank: 2,
     },
     '7230': {
         name: "Fire Protection Potion",
-        type: "Fire"
+        type: "Fire",
+        icon: "inv_potion_16.jpg",
+        rank: 1,
     },
     '17549': {
         name: "Greater Arcane Protection Potion",
-        type: "Arcane"
+        type: "Arcane",
+        icon: "inv_potion_83.jpg",
+        rank: 2,
     }
 }
 
-const sharedEnchants = {
+const sharedHealingEnchants = {
     "0": {
         2544: { score: 0, name: "Arcanum of Focus (+8 heal)"},
         2543: { score: 0, name: "Arcanum of Rapidity (1% haste)"},
@@ -1491,35 +1520,35 @@ const sharedEnchants = {
 }
 
 export const requiredEnchants = {
-    "Priest": Object.assign({}, sharedEnchants, {
-        "0": Object.assign({}, sharedEnchants["0"], {  // Head     
+    "Priest": Object.assign({}, sharedHealingEnchants, {
+        "0": Object.assign({}, sharedHealingEnchants["0"], {  // Head     
             2590: { score: 1, name: "Prophetic Aura" }  // Prophetic Aura
         }),
-        "6": Object.assign({}, sharedEnchants["6"], {  // Legs
+        "6": Object.assign({}, sharedHealingEnchants["6"], {  // Legs
             2590: { score: 1, name: "Prophetic Aura" },  // Prophetic Aura
         })
     }),
-    "Shaman": Object.assign({}, sharedEnchants, {
-        "0": Object.assign({}, sharedEnchants["0"], {  // Head     
+    "Shaman": Object.assign({}, sharedHealingEnchants, {
+        "0": Object.assign({}, sharedHealingEnchants["0"], {  // Head     
             2587: { score: 1, name: "Vodouisant's Vigilant Embrace" }  // Vodouisant's Vigilant Embrace
         }),
-        "6": Object.assign({}, sharedEnchants["6"], {  // Legs
+        "6": Object.assign({}, sharedHealingEnchants["6"], {  // Legs
             2587: { score: 1, name: "Vodouisant's Vigilant Embrace" }  // Vodouisant's Vigilant Embrace
         })
     }),
-    "Druid": Object.assign({}, sharedEnchants, {
-        "0": Object.assign({}, sharedEnchants["0"], {  // Head     
+    "Druid": Object.assign({}, sharedHealingEnchants, {
+        "0": Object.assign({}, sharedHealingEnchants["0"], {  // Head     
             2591: { score: 1, name: "Animist's Caress" }  // Animist's Caress
         }),
-        "6": Object.assign({}, sharedEnchants["6"], {  // Legs
+        "6": Object.assign({}, sharedHealingEnchants["6"], {  // Legs
             2591: { score: 1, name: "Animist's Caress" }  // Animist's Caress
         })
     }),
-    "Paladin": Object.assign({}, sharedEnchants, {
-        "0": Object.assign({}, sharedEnchants["0"], {  // Head     
+    "Paladin": Object.assign({}, sharedHealingEnchants, {
+        "0": Object.assign({}, sharedHealingEnchants["0"], {  // Head     
             2584: { score: 1, name: "Syncretist's Sigil" }  // Syncretist's Sigil
         }),
-        "6": Object.assign({}, sharedEnchants["6"], {  // Legs
+        "6": Object.assign({}, sharedHealingEnchants["6"], {  // Legs
             2584: { score: 1, name: "Syncretist's Sigil" }  // Syncretist's Sigil
         })
     })
@@ -1566,4 +1595,224 @@ export const offhandFrills = {
     15931: true,    // Arcane Star
     15857: true,    // Magebane Scion
     11928: true    // Thaurissan's Royal Scepter
+}
+
+export const worldBuffs = {
+    DragonHead: 22888,
+    Rend: 16609,
+    HoH: 24425,
+    Songflower: 15366,
+    Moldar: 22818,
+    Fengus: 22817,
+    Slipkik: 22820,
+    DMF: 23768,
+    '22888': {
+        name: "Rallying Cry of the Dragonslayer",
+        icon: "inv_misc_head_dragon_01.jpg",
+        display: true
+    },
+    '16609': {
+        name: "Warchief's Blessing",
+        icon: "spell_arcane_teleportorgrimmar.jpg",
+        display: true
+    },
+    '24425': {
+        name: "Spirit of Zandalar",
+        icon: "ability_creature_poison_05.jpg",
+        display: true
+    },
+    '15366': {
+        name: "Songflower Serenade",
+        icon: "spell_holy_mindvision.jpg",
+        display: true
+    },
+    '22818': {
+        name: "Mol'dar's Moxie",
+        icon: "spell_nature_massteleport.jpg",
+        display: true
+    },
+    '22817': {
+        name: "Fengus' Ferocity",
+        icon: "spell_nature_undyingstrength.jpg",
+        display: true
+    },
+    '22820': {
+        name: "Slip'kik's Savvy",
+        icon: "spell_holy_lesserheal02.jpg",
+        display: true
+    },
+    '23768': {
+        name: "Sayge's Dark Fortune", // of Damage
+        icon: "inv_misc_orb_02.jpg",
+        otherRanks: [
+            '23769',    // of Resistance
+            '23767',    // of Armor
+            '23766',    // of Intelligence
+            '23738',    // of Spirit
+            '23737',    // of Stamina
+            '23735',    // of Strength
+            '23736',    // of Agility
+        ]
+    },
+}
+
+export const dispelSpells = {
+    'Druid': {
+        '8946': {
+            name: "Cure Poison",
+            icon: "spell_nature_nullifypoison.jpg"
+        },
+        '2893': {
+            name: "Abolish Poison",
+            icon: "spell_nature_nullifypoison_02.jpg"
+        },
+        '2782': {
+            name: "Remove Curse",
+            icon: "spell_holy_removecurse.jpg"
+        },
+    },
+    'Hunter': {
+        '19801': {
+            name: "Tranquilizing Shot",
+            icon: "spell_nature_drowsy.jpg",
+        },
+    },
+    'Mage': {
+        '475': {
+            name: "Remove Lesser Curse",
+            icon: "spell_nature_removecurse.jpg",
+        },
+    },
+    'Paladin': {
+        '1152': {
+            name: "Purify",
+            icon: "spell_holy_purify.jpg"
+        },
+        '4987': {
+            name: "Cleanse",
+            icon: "spell_holy_renew.jpg"
+        },
+    },
+    'Priest': {
+        '988': {
+            name: "Dispel Magic",   // Rank 2
+            icon: "spell_holy_dispelmagic.jpg",
+            otherRanks: [
+                '527',      // Rank 1
+            ]
+        },
+        '528': {
+            name: "Cure Disease",
+            icon: "spell_holy_nullifydisease.jpg"
+        },
+        '552': {
+            name: "Abolish Disease",
+            icon: "spell_nature_nullifydisease.jpg"
+        },
+    },
+    'Rogue': {
+
+    },
+    'Shaman': {
+        '8012': {
+            name: "Purge",  // Rank 2
+            icon: "spell_nature_purge.jpg",
+            otherRanks: [
+                '370',      // Rank 1
+            ]
+        },
+        '526': {
+            name: "Cure Poison",
+            icon: "spell_nature_nullifypoison.jpg"
+        },
+        '2870': {
+            name: "Cure Disease",
+            icon: "spell_nature_removedisease.jpg"
+        },
+        '8166': {
+            name: "Poison Cleansing Totem",
+            icon: "spell_nature_poisoncleansingtotem.jpg"
+        },
+        '8170': {
+            name: "Disease Cleansing Totem",
+            icon: "spell_nature_diseasecleansingtotem.jpg"
+        },
+    },
+    'Warlock': {
+
+    },
+    'Warrior': {
+
+    }
+}
+
+export const interruptSpells = {
+    'Druid': {
+        '8983': {
+            name: "Bash",
+            icon: "ability_druid_bash.jpg"
+        },
+        '16979': {
+            name: "Feral Charge",
+            icon: "ability_hunter_pet_bear.jpg"
+        },
+    },
+    'Hunter': {
+        
+    },
+    'Mage': {
+        '2139': {
+            name: "Counterspell",
+            icon: "spell_frost_iceshock.jpg",
+        }
+    },
+    'Paladin': {
+        '10308': {
+            name: "Hammer of Justice",
+            icon: "spell_holy_sealofmight.jpg"
+        },
+    },
+    'Priest': {
+        '15487': {
+            name: "Silence",
+            icon: "spell_shadow_impphaseshift.jpg"
+        },
+    },
+    'Rogue': {
+        '1769': {
+            name: "Kick",   // Rank 4
+            icon: "ability_kick.jpg",
+            otherRanks: [
+                '1766',     // Rank 1
+                '1767',     // Rank 2
+                '1768',     // Rank 3
+            ],
+        },
+    },
+    'Shaman': {
+        '10414': {
+            name: "Earth Shock",    // Rank 7
+            icon: "spell_nature_earthshock.jpg",
+            otherRanks: [
+                '8042',     // Rank 1
+                '8044',     // Rank 2
+                '8045',     // Rank 3
+                '8046',     // Rank 4
+                '10412',    // Rank 5
+                '10413',    // Rank 6
+            ],
+        }
+    },
+    'Warlock': {
+
+    },
+    'Warrior': {
+        '6552': {
+            name: "Pummel", // Rank 2
+            icon: "inv_gauntlets_04.jpg",
+            otherRanks: [
+                '6554',     // Rank 1
+            ]
+        },
+    }
 }

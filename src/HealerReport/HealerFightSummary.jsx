@@ -76,13 +76,13 @@ export class HealerFightSummary extends Component {
                     <td className="healer_amount">
                         <ProgressBar summary={summary} maxHeals={maxHeals} />
                     </td>
-                    <td className="healer_effective amount right">{abbreviateNumber(summary.effectiveHeals)}</td>
-                    <td className="healer_effective percent right">{summary.getEffectivePercent()}%</td>
-                    <td className="healer_overheal amount right">{abbreviateNumber(summary.overHeal)}</td>
-                    <td className="healer_overheal percent right">{summary.getOverhealPercent()}%</td>
-                    <td className="healer_wasted amount right">{abbreviateNumber(summary.wastedHeals)}</td>
-                    <td className="healer_wasted percent right">{summary.getWastedPercent()}%</td>
-                    <td className="healer_wasted percent right">{abbreviateNumber(summary.wastedMana)}</td>
+                    <td className={"healer_effective amount right" + (summary.effectiveHeals === 0 ? " empty" : "")}>{abbreviateNumber(summary.effectiveHeals)}</td>
+                    <td className={"healer_effective percent right" + (summary.effectiveHeals === 0 ? " empty" : "")}>{summary.getEffectivePercent()}%</td>
+                    <td className={"healer_overheal amount right" + (summary.overHeal === 0 ? " empty" : "")}>{abbreviateNumber(summary.overHeal)}</td>
+                    <td className={"healer_overheal percent right" + (summary.overHeal === 0 ? " empty" : "")}>{summary.getOverhealPercent()}%</td>
+                    <td className={"healer_wasted amount right" + (summary.wastedHeals === 0 ? " empty" : "")}>{abbreviateNumber(summary.wastedHeals)}</td>
+                    <td className={"healer_wasted percent right" + (summary.wastedHeals === 0 ? " empty" : "")}>{summary.getWastedPercent()}%</td>
+                    <td className={"healer_wasted percent right" + (summary.wastedHeals === 0 ? " empty" : "")}>{abbreviateNumber(summary.wastedMana)}</td>
                 </tr>
 
                 {isExpanded && spells.sort((x,y) => y.summary.effectiveHeals -x.summary.effectiveHeals)
@@ -95,13 +95,13 @@ export class HealerFightSummary extends Component {
                         <td className="healer_amount">
                             <ProgressBar summary={spell.summary} maxHeals={maxSpellHeals} />
                         </td>
-                        <td className="healer_effective amount right">{abbreviateNumber(spell.summary.effectiveHeals)}</td>
-                        <td className="healer_effective percent right">{spell.summary.getEffectivePercent()}%</td>
-                        <td className="healer_overheal amount right">{abbreviateNumber(spell.summary.overHeal)}</td>
-                        <td className="healer_overheal percent right">{spell.summary.getOverhealPercent()}%</td>
-                        <td className="healer_wasted amount right">{abbreviateNumber(spell.summary.wastedHeals)}</td>
-                        <td className="healer_wasted percent right">{spell.summary.getWastedPercent()}%</td>
-                        <td className="healer_wasted percent right">{abbreviateNumber(spell.summary.wastedMana)}</td>
+                        <td className={"healer_effective amount right" + (spell.summary.effectiveHeals === 0 ? " empty" : "")}>{abbreviateNumber(spell.summary.effectiveHeals)}</td>
+                        <td className={"healer_effective percent right" + (spell.summary.effectiveHeals === 0 ? " empty" : "")}>{spell.summary.getEffectivePercent()}%</td>
+                        <td className={"healer_overheal amount right" + (spell.summary.overHeal === 0 ? " empty" : "")}>{abbreviateNumber(spell.summary.overHeal)}</td>
+                        <td className={"healer_overheal percent right" + (spell.summary.overHeal === 0 ? " empty" : "")}>{spell.summary.getOverhealPercent()}%</td>
+                        <td className={"healer_wasted amount right" + (spell.summary.wastedHeals === 0 ? " empty" : "")}>{abbreviateNumber(spell.summary.wastedHeals)}</td>
+                        <td className={"healer_wasted percent right" + (spell.summary.wastedHeals === 0 ? " empty" : "")}>{spell.summary.getWastedPercent()}%</td>
+                        <td className={"healer_wasted percent right" + (spell.summary.wastedHeals === 0 ? " empty" : "")}>{abbreviateNumber(spell.summary.wastedMana)}</td>
                     </tr>
                 ))}
             </>

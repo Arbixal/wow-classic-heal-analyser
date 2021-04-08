@@ -1,0 +1,359 @@
+@import "../_colours.scss";
+
+@mixin character-block($class-color) {
+    height: 25px;
+
+    &_Summary {
+        background-color: scale-color($class-color, $alpha: -50%);
+
+        th.name {
+            text-align: left;
+        }
+    }
+
+    td.name {
+        color: $class-color;
+    }
+
+    td.enchants {
+        background-color: scale-color($class-color, $alpha: -75%);
+        width: 65px;
+        text-align: center;
+    }
+
+    td.deaths {
+        background-color: scale-color($class-color, $alpha: -75%);
+        text-align: center;
+    }
+
+    td.world_buffs {
+        background-color: scale-color($class-color, $alpha: -75%);
+        text-align: center;
+
+        &.count {
+            width: 30px;
+        }
+
+        &.uptime {
+            width: 45px;
+        }
+    }
+
+    td.protection_potion_summary {
+        text-align: center;
+    
+        .amount {
+            width: 55px;
+        }
+
+        &:not(.amount) {
+            width: 55px;
+        }
+    }
+
+    td.dispels {
+        background-color: scale-color($class-color, $alpha: -75%);
+        text-align: center;
+
+        &.summary {
+            width: 50px;
+        }
+
+        &:not(.summary) {
+            width: 25px;
+        }
+    }
+
+    td.interrupts {
+        text-align: center;
+
+        &.summary {
+            width: 50px;
+        }
+
+        &:not(.summary) {
+            width: 25px;
+        }
+    }
+
+    td.even_column_group {
+        background-color: scale-color($class-color, $alpha: -75%);
+    }
+}
+
+tr.Druid {
+    @include character-block($druid);
+}
+
+tr.Hunter {
+    @include character-block($hunter);
+}
+
+tr.Mage {
+    @include character-block($mage);
+}
+
+tr.Paladin {
+    @include character-block($paladin);
+}
+
+tr.Priest {
+    @include character-block($priest);
+}
+
+tr.Rogue {
+    @include character-block($rogue);
+}
+
+tr.Shaman {
+    @include character-block($shaman);
+}
+
+tr.Warlock {
+    @include character-block($warlock);
+}
+
+tr.Warrior {
+    @include character-block($warrior);
+}
+
+@mixin protection-potion($school-colour) {
+    background-color: scale-color($school-colour, $alpha: -75%);
+    text-align: center;
+    
+    .amount {
+        width: 50px;
+    }
+
+    &:not(.amount) {
+        width: 25px;
+    }
+}
+
+tr.grid_header {
+    height: 30px;
+
+    th.WorldBuffs {
+        min-width: 120px;
+    }
+
+    th.ProtPotions {
+        min-width: 120px;
+    }
+
+    th.Deaths {
+        min-width: 65px;
+    }
+}
+
+tr.error {
+    background-color: scale-color(#FF0000, $alpha: -75%);
+}
+
+td.nature.protection_potion {
+    @include protection-potion($nature);
+}
+
+td.fire.protection_potion {
+    @include protection-potion($fire);
+}
+
+td.frost.protection_potion {
+    @include protection-potion($frost);
+}
+
+td.shadow.protection_potion {
+    @include protection-potion($shadow);
+}
+
+td.arcane.protection_potion {
+    @include protection-potion($arcane);
+}
+
+td.holy.protection_potion {
+    @include protection-potion($holy);
+}
+
+td.priest.protection_potion {
+    @include protection-potion($priest);
+}
+
+td.world_buff {
+    width: 30px;
+    text-align: right;
+    padding-right: 5px;
+
+    &.died {
+        color: #FFC7CE;
+    }
+
+    &.buff_limit {
+        color: #FFEB9C;
+    }
+
+    &.time_out {
+        color: #C6EFCE;
+    }
+}
+
+td {
+    border: solid 1px black;
+    border-collapse: collapse;
+    margin: 0;
+}
+
+td.center {
+    text-align: center;
+}
+
+td.right {
+    text-align: right;
+    padding-right: 5px;
+}
+
+tr.even {
+    background-color: #111111;
+}
+
+table {
+    border-spacing: 0;
+    margin-left: 10px;
+
+    margin: 5px;
+    background-color: #222;
+}
+
+td.center {
+    text-align: center;
+}
+
+td.right {
+    text-align: right;
+    padding-right: 5px;
+}
+
+@mixin class_nav($class_color) {
+    &.class_nav {
+        padding: 5px;
+        margin: 5px;
+        width: 70px;
+        border: solid 1px #333333;
+        border-radius: 5px;
+        color: $class_color;
+        cursor: pointer;
+
+        img.spell_icon {
+            margin-right: 5px;
+        }
+
+        &:hover, &.selected {
+            background-color: scale-color($class_color, $alpha: -50%);
+            color: #FFFFFF;
+        }
+    }
+}
+
+div.nav_bar {
+    display: flex;
+
+    div.Tank {
+        @include class_nav($frost);
+    }
+
+    div.DPS {
+        @include class_nav($fire);
+    }
+
+    div.Healer {
+        @include class_nav($nature);
+    }
+
+    div.separator {
+        &:after {
+            margin: 5px;
+            font-size: 20px;
+            line-height: 40px;
+            border-right: solid 1px #333333;
+            content: ' '
+        }
+    }
+
+    div.Warrior {
+        @include class_nav($warrior);
+    }
+
+    div.Rogue {
+        @include class_nav($rogue);
+    }
+
+    div.Hunter {
+        @include class_nav($hunter);
+    }
+
+    div.Mage {
+        @include class_nav($mage);
+    }
+
+    div.Warlock {
+        @include class_nav($warlock);
+    }
+
+    div.Priest {
+        @include class_nav($priest);
+    }
+
+    div.Paladin {
+        @include class_nav($paladin);
+    }
+
+    div.Shaman {
+        @include class_nav($shaman);
+    }
+
+    div.Druid {
+        @include class_nav($druid);
+    }
+}
+
+tr.loading {
+    td:after {
+    overflow: hidden;
+    display: inline-block;
+    vertical-align: bottom;
+    -webkit-animation: ellipsis steps(4,end) 900ms infinite;      
+    animation: ellipsis steps(4,end) 900ms infinite;
+    content: "\2026"; /* ascii code for the ellipsis character */
+    width: 0px;
+  }
+}
+  
+@keyframes ellipsis {
+to {
+    width: 1.25em;    
+}
+}
+
+@-webkit-keyframes ellipsis {
+to {
+    width: 1.25em;    
+}
+}
+
+.expand_toggle {
+    cursor: pointer;
+    border: solid 1px #555555;
+    border-radius: 50%;
+    margin: 5px;
+    min-width: 20px;
+    display: inline-block;
+    font-size: larger;
+    font-family: Arial, Helvetica, sans-serif;
+
+    &:hover {
+        background-color: #555555;
+    }
+}
+
+.even-colgroup {
+    background-color: #111111;
+}
