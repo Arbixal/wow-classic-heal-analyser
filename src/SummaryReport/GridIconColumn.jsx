@@ -1,5 +1,6 @@
 import {Component} from "react";
 import {asPercentage} from "../utils";
+import ReactTooltip from "react-tooltip";
 
 export class GridIconColumn extends Component {
     constructor(props) {
@@ -47,13 +48,22 @@ export class GridIconColumn extends Component {
     }
 
     renderSubHeader() {
-        const {label, cssClass, icon_name} = this.props;
+        const {label, cssClass, icon_name, icon_url} = this.props;
 
         if (!this.isVisible()) {
             return null;
         }
 
-        return <th className={cssClass}><img className="spell_icon" src={"https://assets.rpglogs.com/img/warcraft/abilities/" + icon_name} alt={label} data-tip={label} /></th>;
+        let icon = icon_url;
+        if (icon == null) {
+            icon = "https://assets.rpglogs.com/img/warcraft/abilities/" + icon_name;
+        }
+
+        return (
+        <th className={cssClass}>
+            <img className="spell_icon" src={icon} alt={label} data-tip={label} />
+            <ReactTooltip />
+        </th>);
     }
 
     renderCell() {

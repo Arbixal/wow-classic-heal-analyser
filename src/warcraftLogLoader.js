@@ -38,6 +38,11 @@ export class WarcraftLogLoader {
             .then(res => res.json())
             .then(res => {
                 this.Results.Fights = res.fights;
+                this.Results.FightType = res.fights.reduce((acc,obj) => {
+                    acc[obj.id] = (obj.boss > 0 ? "boss" : "trash");
+
+                    return acc;
+                }, {})
                 this.Results.Characters = res.friendlies.reduce((acc,obj) => {
                     acc[obj.id] = obj;
 
@@ -184,6 +189,8 @@ export class WarcraftLogLoader {
                 if (!character) {
                     return;
                 }
+
+                obj.fightType = this.Results.FightType[obj.fight];
 
                 character.casts = [...(character.casts || []),obj];
             })

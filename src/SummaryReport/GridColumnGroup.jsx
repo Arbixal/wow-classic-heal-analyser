@@ -67,7 +67,13 @@ export class GridColumnGroup extends Component {
         const {id, label, onColGroupToggle, cssClass} = this.props;
         const {collapsed} = this.state;
 
-        return <th className={cssClass + ' ' + id} colSpan={this._getVisibleChildCount()}>{label}{this._canExpand() && <ExpandCollapseButton expanded={!collapsed} onToggle={() => onColGroupToggle(id)} />}</th>;
+        let visibleChildren = this._getVisibleChildCount();
+
+        if (visibleChildren == 0) {
+            return null;
+        }
+
+        return <th className={cssClass + ' ' + id} colSpan={visibleChildren}>{label}{this._canExpand() && <ExpandCollapseButton expanded={!collapsed} onToggle={() => onColGroupToggle(id)} />}</th>;
     }
 
     renderSubHeader() {

@@ -10,6 +10,7 @@ export class Grid extends Component {
                 [GroupKeys.WorldBuffs]: true,
                 [GroupKeys.ProtPotions]: true,
                 [GroupKeys.Consumes]: true,
+                [GroupKeys.DispelsInterrupts]: true,
             },
             hiddenColumns: {},
             classFilter: props.classFilter,

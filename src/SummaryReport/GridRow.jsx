@@ -170,6 +170,68 @@ export class GridRow extends Component {
 
         characterData[DataPoints.ConsumesBandages] = sumNonNull(characterData[DataPoints.ConsumesHeavyRuneclothBandage],
             characterData[DataPoints.ConsumesAntiVenom]);
+
+        characterData[DataPoints.DispelDruidCurePoison] = this._getCastCount(character, 8946);
+        characterData[DataPoints.DispelDruidAbolishPoison] = this._getCastCount(character, 2893);
+        characterData[DataPoints.DispelDruidRemoveCurse] = this._getCastCount(character, 2782);
+        characterData[DataPoints.DispelHunterTranqShot] = this._getCastCount(character, 19801);
+        characterData[DataPoints.DispelMageRemoveLesserCurse] = this._getCastCount(character, 475);
+        characterData[DataPoints.DispelPaladinPurify] = this._getCastCount(character, 1152);
+        characterData[DataPoints.DispelPaladinCleanse] = this._getCastCount(character, 4987);
+        characterData[DataPoints.DispelPriestDispelMagic] = this._getCastCount(character, 988, 527);
+        characterData[DataPoints.DispelPriestCureDisease] = this._getCastCount(character, 528);
+        characterData[DataPoints.DispelPriestAbolishDisease] = this._getCastCount(character, 552);
+        characterData[DataPoints.DispelShamanPurge] = this._getCastCount(character, 8012, 370);
+        characterData[DataPoints.DispelShamanCurePoison] = this._getCastCount(character, 526);
+        characterData[DataPoints.DispelShamanCureDisease] = this._getCastCount(character, 2870);
+        characterData[DataPoints.DispelShamanPoisonCleansingTotem] = this._getCastCount(character, 8166);
+        characterData[DataPoints.DispelShamanDiseaseCleansingTotem] = this._getCastCount(character, 8170);
+
+        characterData[DataPoints.DispelPoison] = sumNonNull(characterData[DataPoints.DispelDruidCurePoison],
+            characterData[DataPoints.DispelDruidAbolishPoison],
+            characterData[DataPoints.DispelShamanCurePoison],
+            characterData[DataPoints.DispelShamanPoisonCleansingTotem]);
+
+        characterData[DataPoints.DispelDisease] = sumNonNull(characterData[DataPoints.DispelPriestCureDisease],
+            characterData[DataPoints.DispelPriestAbolishDisease],
+            characterData[DataPoints.DispelShamanCureDisease],
+            characterData[DataPoints.DispelShamanDiseaseCleansingTotem]);
+
+        characterData[DataPoints.DispelCurse] = sumNonNull(characterData[DataPoints.DispelDruidRemoveCurse],
+            characterData[DataPoints.DispelMageRemoveLesserCurse]);
+
+        characterData[DataPoints.DispelMagic] = sumNonNull(characterData[DataPoints.DispelPriestDispelMagic],
+            characterData[DataPoints.DispelShamanPurge],
+            characterData[DataPoints.DispelPaladinCleanse]);
+
+        characterData[DataPoints.DispelFrenzy] = sumNonNull(characterData[DataPoints.DispelHunterTranqShot]);
+
+        characterData[DataPoints.DispelBoss] = this._getBossCastCount(character, 8946, 2893, 2782, 19801, 475, 1152, 4987, 988, 527, 528, 552, 8012, 370, 526, 2870, 8166, 8170);
+        characterData[DataPoints.DispelTrash] = this._getTrashCastCount(character, 8946, 2893, 2782, 19801, 475, 1152, 4987, 988, 527, 528, 552, 8012, 370, 526, 2870, 8166, 8170);
+
+        characterData[DataPoints.DispelTotal] = sumNonNull(characterData[DataPoints.DispelPoison],
+            characterData[DataPoints.DispelDisease],
+            characterData[DataPoints.DispelCurse],
+            characterData[DataPoints.DispelMagic],
+            characterData[DataPoints.DispelFrenzy]);
+
+        characterData[DataPoints.InterruptDruidBash] = this._getCastCount(character, 8983);
+        characterData[DataPoints.InterruptDruidFeralCharge] = this._getCastCount(character, 16979);
+        characterData[DataPoints.InterruptMageCounterspell] = this._getCastCount(character, 2139);
+        characterData[DataPoints.InterruptPaladinHammerOfJustice] = this._getCastCount(character, 10308);
+        characterData[DataPoints.InterruptPriestSilence] = this._getCastCount(character, 15487);
+        characterData[DataPoints.InterruptRogueKick] = this._getCastCount(character, 1769, 1768, 1767, 1766);
+        characterData[DataPoints.InterruptShamanEarthShock] = this._getCastCount(character, 10414, 8042, 8044, 8045, 8046, 10412, 10413);
+        characterData[DataPoints.InterruptWarriorPummel] = this._getCastCount(character, 6552, 6554);
+
+        characterData[DataPoints.InterruptTotal] = sumNonNull(characterData[DataPoints.InterruptDruidBash],
+            characterData[DataPoints.InterruptDruidFeralCharge],
+            characterData[DataPoints.InterruptMageCounterspell],
+            characterData[DataPoints.InterruptPaladinHammerOfJustice],
+            characterData[DataPoints.InterruptPriestSilence],
+            characterData[DataPoints.InterruptRogueKick],
+            characterData[DataPoints.InterruptShamanEarthShock],
+            characterData[DataPoints.InterruptWarriorPummel]);
         
         return characterData;
     }
@@ -268,8 +330,31 @@ export class GridRow extends Component {
         return deaths?.length;
     }
 
-    _getCastCount(character, ...spellIds) {
+    _getBossCastCount(character, ...spellIds) {
+        return this._getRestrictedCastCount(character, "boss", spellIds);
+    }
+
+    _getTrashCastCount(character, ...spellIds) {
+        return this._getRestrictedCastCount(character, "trash", spellIds);
+    }
+
+    _getRestrictedCastCount(character, fightType, spellIds) {
         const {casts} = character;
+
+        let castCount = 0;
+        for (let i = 0; i < casts.length; ++i) {
+            let cast = casts[i];
+            if ((fightType == null || cast.fightType === fightType) && spellIds.includes(cast.ability.guid)) {
+                castCount++;
+            }
+        }
+
+        return castCount;
+    }
+
+    _getCastCount(character, ...spellIds) {
+        return this._getRestrictedCastCount(character, null, spellIds);
+        /* const {casts} = character;
 
         let castCount = 0;
         for (let i = 0; i < casts.length; ++i) {
@@ -279,7 +364,7 @@ export class GridRow extends Component {
             }
         }
 
-        return castCount;
+        return castCount; */
     }
 
     render() {
