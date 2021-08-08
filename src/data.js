@@ -1374,13 +1374,19 @@ export const cooldownList = {
 export const protectionPotionEnum = {
     GNPP: 17546,
     NPP: 7254,
+    MNPP: 28513,
     GSPP: 17548,
     SPP: 7242,
+    MSPP: 28537,
     GFrPP: 17544,
     FrPP: 7240,
+    MFrPP: 28512,
     GFPP: 17543,
     FPP: 7230,
+    MFPP: 28511,
     GAPP: 17549,
+    MAPP: 28536,
+    MHPP: 28538,
 }
 export const protectionPotions = {
     '17546': {
@@ -1815,4 +1821,2470 @@ export const interruptSpells = {
             ]
         },
     }
+}
+
+export const trackedDamageTakenSpells = [
+    {
+        name: "Whirlwind",
+        ids: [1680,15589,26686,26084]
+    },
+    {
+        name: "Rain of Fire",
+        ids: [5740,11678,11677,6219,28794]
+    },
+    {
+        name: "Fire Shield",
+        ids: [8317,8316,2947,11770,11771]
+    },
+    {
+        name: "Flames",
+        ids: [7897,12796,19628,29115,15643]
+    },
+    {
+        name: "Cleave",
+        ids: [797,3433,3434,3435,5532,11427,15284,15496,15579,15584,15613,15622,15623,15663,16044,17685,19632,19642,20571,20605,20666,20677,20684,20691,22540,26350,27794,19983]
+    },
+    {
+        name: "Blizzard",
+        ids: [26607]
+    },
+    {
+        name: "Explode",
+        ids: [26059,25699]
+    },
+    {
+        name: "Impale",
+        ids: [26025]
+    },
+    {
+        name: "Bomb",
+        ids: [8858,9143,22334]
+    },
+    {
+        name: "Thunderclap",
+        ids: [26554,8732]
+    },
+    {
+        name: "Shadow Storm",
+        ids: [26546,26555]
+    },
+    {
+        name: "Dark Glare",
+        ids: [41936,41937,26029]
+    },
+    {
+        name: "Falling",
+        ids: [3]
+    },
+    {
+        name: "Void Zone",
+        ids: [28863,28865]
+    },
+    {
+        name: "Poison Cloud",
+        ids: [28240,28241]
+    },
+    {
+        name: "Frost Breath",
+        ids: [3129,28524]
+    },
+    {
+        name: "Eruption",
+        ids: [29371]
+    },
+    {
+        name: "Brood Power Bronze",
+        ids: [22311]
+    },
+    {
+        name: "Void Blast",
+        ids: [27812]
+    },
+    {
+        name: "Tail Sweep",
+        ids: [15847,25653]
+    },
+    {
+        name: "Positive Charge",
+        ids: [28062]
+    },
+    {
+        name: "Negative Charge",
+        ids: [28085]
+    },
+    {
+        name: "Disrupting Shout",
+        ids: [29107]
+    },
+    {
+        name: "Chill",
+        ids: [28547]
+    },
+    {
+        name: "Dark Blast",
+        ids: [28457]
+    },
+    {
+        name: "Wail of Souls",
+        ids: [28459]
+    }
+]
+
+export const foodBuffs = [
+    {
+        id: 33268,
+        name: "+44 Healing",
+        icon: "inv_misc_fish_18.jpg"
+    },
+    {
+        id: 33256,
+        name: "+20 Strength",
+        icon: "inv_misc_food_60.jpg"
+    },
+    {
+        id: 43764,
+        name: "+20 Hit Rating",
+        icon: "inv_misc_food_84_roastclefthoof.jpg"
+    },
+    {
+        id: 33257,
+        name: "+30 Stamina",
+        icon: "inv_misc_fish_16.jpg"
+    },
+    {
+        id: 35272,
+        name: "+20 Stamina",
+        icon: "inv_misc_food_48.jpg"
+    },
+    {
+        id: 33263,
+        name: "+23 Spell Damage",
+        icon: "inv_misc_food_86_basilisk.jpg"
+    },
+    {
+        id: 33259,
+        name: "+40 Attack Power",
+        icon: "inv_misc_food_53.jpg"
+    },
+    {
+        id: 33261,
+        name: "+20 Agility",
+        icon: "inv_misc_food_65.jpg"
+    },
+    {
+        id: 43722,
+        name: "+20 Spell Crit",
+        icon: "inv_misc_food_63.jpg"
+    },
+    {
+        id: 33265,
+        name: "+8 Mp5",
+        icon: "inv_misc_food_79.jpg"
+    },
+    {
+        id: 45619,
+        name: "+8 Resistances",
+        icon: "inv_misc_fish_29.jpg"
+    },
+    {
+        id: 43730,
+        name: "Stormchops",
+        icon: "inv_misc_food_91.jpg"
+    }
+]
+
+export const flaskBuffs = [
+    {
+        id: 28518,
+        name: "Flask of Fortification",
+        icon: "inv_potion_119.jpg"
+    },
+    {
+        id: 41609,
+        name: "Flask of Fortification",
+        icon: "inv_potion_119.jpg"
+    },
+    {
+        id: 28540,
+        name: "Flask of Pure Death",
+        icon: "inv_potion_115.jpg"
+    },
+    {
+        id: 46837,
+        name: "Flask of Pure Death",
+        icon: "inv_potion_115.jpg"
+    },
+    {
+        id: 28520,
+        name: "Flask of Relentless Assault",
+        icon: "inv_potion_117.jpg"
+    },
+    {
+        id: 41608,
+        name: "Flask of Relentless Assault",
+        icon: "inv_potion_117.jpg"
+    },
+    {
+        id: 28521,
+        name: "Flask of Blinding Light",
+        icon: "inv_potion_116.jpg"
+    },
+    {
+        id: 46839,
+        name: "Flask of Blinding Light",
+        icon: "inv_potion_116.jpg"
+    },
+    {
+        id: 28519,
+        name: "Flask of Mighty Restoration",
+        icon: "inv_potion_118.jpg"
+    },
+    {
+        id: 41610,
+        name: "Flask of Mighty Restoration",
+        icon: "inv_potion_118.jpg"
+    },
+    {
+        id: 42735,
+        name: "Flask of Chromatic Wonder",
+        icon: "inv_potion_48.jpg"
+    },
+    {
+        id: 17626,
+        name: "Flask of the Titans",
+        icon: "inv_potion_62.jpg"
+    },
+    {
+        id: 17628,
+        name: "Flask of Supreme Power",
+        icon: "inv_potion_41.jpg"
+    },
+    {
+        id: 41611,
+        name: "Flask of Supreme Power",
+        icon: "inv_potion_41.jpg"
+    },
+    {
+        id: 17627,
+        name: "Flask of Distilled Wisdom",
+        icon: "inv_potion_97.jpg"
+    },
+    {
+        id: 17629,
+        name: "Flask of Chromatic Resistance",
+        icon: "inv_potion_48.jpg"
+    }
+]
+
+export const battleElixirBuffs = [
+    {
+        id: 28491,
+        name: "Elixir of Healing Power",
+        icon: "inv_potion_142.jpg"
+    },
+    {
+        id: 28503,
+        name: "Elixir of Major Shadow Power",
+        icon: "inv_potion_145.jpg"
+    },
+    {
+        id: 38954,
+        name: "Fel Strength Elixir",
+        icon: "inv_potion_152.jpg"
+    },
+    {
+        id: 28497,
+        name: "Elixir of Major Agility",
+        icon: "inv_potion_127.jpg"
+    },
+    {
+        id: 28501,
+        name: "Elixir of Major Firepower",
+        icon: "inv_potion_146.jpg"
+    },
+    {
+        id: 28493,
+        name: "Elixir of Major Frost Power",
+        icon: "inv_potion_148.jpg"
+    },
+    {
+        id: 33726,
+        name: "Elixir of Mastery",
+        icon: "inv_potion_111.jpg"
+    },
+    {
+        id: 28490,
+        name: "Elixir of Major Strength",
+        icon: "inv_potion_147.jpg"
+    },
+    {
+        id: 33721,
+        name: "Adept's Elixir",
+        icon: "inv_potion_96.jpg"
+    },
+    {
+        id: 33720,
+        name: "Onslaught Elixir",
+        icon: "inv_potion_58.jpg"
+    },
+    {
+        id: 11406,
+        name: "Elixir of Demonslaying",
+        icon: "inv_potion_27.jpg"
+    },
+    {
+        id: 17538,
+        name: "Elixir of the Mongoose",
+        icon: "inv_potion_32.jpg"
+    },
+    {
+        id: 10669,
+        name: "Ground Scorpok Assay",
+        icon: "inv_misc_dust_02.jpg"
+    },
+    {
+        id: 17539,
+        name: "Greater Arcane Elixir",
+        icon: "inv_potion_25.jpg"
+    },
+    {
+        id: 17038,
+        name: "Winterfall Firewater",
+        icon: "inv_potion_92.jpg"
+    },
+    {
+        id: 16329,
+        name: "Juju Might",
+        icon: "inv_misc_monsterscales_07.jpg"
+    },
+    {
+        id: 26276,
+        name: "Elixir of Greater Firepower",
+        icon: "inv_potion_60.jpg"
+    },
+    {
+        id: 11474,
+        name: "Elixir of Shadow Power",
+        icon: "inv_potion_46.jpg"
+    },
+    {
+        id: 16323,
+        name: "Juju Power",
+        icon: "inv_misc_monsterscales_11.jpg"
+    },
+    {
+        id: 11405,
+        name: "Elixir of Giants",
+        icon: "inv_potion_61.jpg"
+    },
+    {
+        id: 10667,
+        name: "R.O.I.D.S.",
+        icon: "inv_stone_15.jpg"
+    },
+    {
+        id: 17537,
+        name: "Elixir of Brute Force",
+        icon: "inv_potion_59.jpg"
+    }
+]
+
+export const guardianElixirBuffs = [
+    {
+        id: 39627,
+        name: "Elixir of Draenic Wisdom",
+        icon: "inv_potion_155.jpg"
+    },
+    {
+        id: 28514,
+        name: "Elixir of Empowerment",
+        icon: "inv_potion_136.jpg"
+    },
+    {
+        id: 28509,
+        name: "Elixir of Major Mageblood",
+        icon: "inv_potion_151.jpg"
+    },
+    {
+        id: 28502,
+        name: "Elixir of Major Defense",
+        icon: "inv_potion_122.jpg"
+    },
+    {
+        id: 39628,
+        name: "Elixir of Ironskin",
+        icon: "inv_potion_159.jpg"
+    },
+    {
+        id: 39626,
+        name: "Earthen Elixir",
+        icon: "inv_potion_154.jpg"
+    },
+    {
+        id: 39625,
+        name: "Elixir of Major Fortitude",
+        icon: "inv_potion_158.jpg"
+    },
+    {
+        id: 11371,
+        name: "Gift of Arthas",
+        icon: "inv_potion_28.jpg"
+    },
+    {
+        id: 24363,
+        name: "Mageblood Potion",
+        icon: "inv_potion_45.jpg"
+    },
+    {
+        id: 24382,
+        name: "Spirit of Zanza",
+        icon: "inv_potion_30.jpg"
+    },
+    {
+        id: 24383,
+        name: "Swiftness of Zanza",
+        icon: "inv_potion_31.jpg"
+    },
+    {
+        id: 24417,
+        name: "Sheen of Zanza",
+        icon: "inv_potion_29.jpg"
+    },
+    {
+        id: 24361,
+        name: "Major Troll's Blood Potion",
+        icon: "inv_potion_80.jpg"
+    },
+    {
+        id: 17535,
+        name: "Elixir of the Sages",
+        icon: "inv_potion_29.jpg"
+    },
+    {
+        id: 11348,
+        name: "Elixir of Superior Defense",
+        icon: "inv_potion_66.jpg"
+    },
+    {
+        id: 10668,
+        name: "Lung Juice Cocktail",
+        icon: "inv_drink_12.jpg"
+    },
+    {
+        id: 10692,
+        name: "Cerebral Cortex Compound",
+        icon: "inv_potion_32.jpg"
+    },
+    {
+        id: 10693,
+        name: "Gizzard Gum",
+        icon: "inv_misc_food_30.jpg"
+    }
+]
+
+export const seasonBuffs = [
+    {
+        id: 27723,
+        name: "Dark Desire (+20 hit)",
+        icon: "inv_valentineschocolate04.jpg"
+    },
+    {
+        id: 27721,
+        name: "Very Berry Cream (+23 spell damage)",
+        icon: "inv_valentineschocolate02.jpg"
+    },
+    {
+        id: 27720,
+        name: "Buttermilk Delight (+20 defense)",
+        icon: "inv_valentineschocolate01.jpg"
+    },
+    {
+        id: 27722,
+        name: "Sweet Surprise (+44 healing)",
+        icon: "inv_valentineschocolate03.jpg"
+    },
+    {
+        id: 26004,
+        name: "Mistletoe (+20s spirit)",
+        icon: "spell_nature_healingtouch.jpg"
+    },
+    {
+        id: 29338,
+        name: "Fire Festival Fury (+3% crit)",
+        icon: "inv_misc_summerfest_brazierorange.jpg"
+    },
+    {
+        id: 29235,
+        name: "Fire Festival Fortitude (+30 stamina)",
+        icon: "inv_summerfest_firespirit.jpg"
+    },
+    {
+        id: 29335,
+        name: "Elderberry Pie (+20 defense)",
+        icon: "inv_misc_food_10.jpg"
+    },
+    {
+        id: 29332,
+        name: "Fire-toasted Bun (+20 hit)",
+        icon: "inv_misc_food_11.jpg"
+    },
+    {
+        id: 29333,
+        name: "Midsummer Sausage (+23 spell damage)",
+        icon: "inv_misc_food_53.jpg"
+    },
+    {
+        id: 29334,
+        name: "Toasted Smorc (+44 healing)",
+        icon: "inv_summerfest_smorc.jpg"
+    }
+]
+
+export const scrollBuffs = [
+    {
+        id: 33077,
+        name: "Scroll of Agility V",
+        icon: "inv_scroll_02.jpg"
+    },
+    {
+        id: 33078,
+        name: "Scroll of Intellect V",
+        icon: "inv_scroll_01.jpg"
+    },
+    {
+        id: 33079,
+        name: "Scroll of Protection V",
+        icon: "inv_scroll_07.jpg"
+    },
+    {
+        id: 33080,
+        name: "Scroll of Spirit V",
+        icon: "inv_scroll_01.jpg"
+    },
+    {
+        id: 33081,
+        name: "Scroll of Stamina V",
+        icon: "inv_scroll_07.jpg"
+    },
+    {
+        id: 33082,
+        name: "Scroll of Strength V",
+        icon: "inv_scroll_02.jpg"
+    }
+]
+
+export const tempWeaponEnchants = [
+    {
+        id: 2629,
+        name: "Brilliant Mana Oil",
+        icon: "inv_potion_100.jpg"
+    },
+    {
+        id: 2678,
+        name: "Superior Wizard Oil",
+        icon: "inv_potion_141.jpg"
+    },
+    {
+        id: 2677,
+        name: "Superior Mana Oil",
+        icon: "inv_potion_101.jpg"
+    },
+    {
+        id: 2713,
+        name: "Adamantite Sharpening Stone",
+        icon: "inv_stone_sharpeningstone_07.jpg"
+    },
+    {
+        id: 2955,
+        name: "Adamantite Weightstone",
+        icon: "inv_stone_weightstone_07.jpg"
+    },
+    {
+        id: 3265,
+        name: "Blessed Weapon Coating",
+        icon: "inv_potion_101.jpg"
+    },
+    {
+        id: 3266,
+        name: "Righteous Weapon Coating",
+        icon: "inv_potion_101.jpg"
+    },
+    {
+        id: 2506,
+        name: "Elemental Sharpening Stone",
+        icon: "inv_stone_02.jpg"
+    },
+    {
+        id: 2628,
+        name: "Brilliant Wizard Oil",
+        icon: "inv_potion_105.jpg"
+    },
+    {
+        id: 2685,
+        name: "Blessed Wizard Oil",
+        icon: "inv_potion_26.jpg"
+    },
+    {
+        id: 2684,
+        name: "Consecrated Sharpening Stone",
+        icon: "inv_stone_sharpeningstone_02.jpg"
+    }
+]
+
+export const rarity = {
+    Common: "Common",
+    Uncommon: "Uncommon",
+    Rare: "Rare",
+    Epic: "Epic",
+}
+export const gemList = {
+    /* #region Red Gems */
+    /* #region Runed (Spell Damage) */
+    28461: {
+        id: 28461,
+        label: "Runed Tourmaline",
+        rarity: rarity.Common,
+        colour: "red",
+        icon: "inv_misc_gem_ruby_03.jpg",
+        description: "+5 spell damage"
+    },
+    23096: {
+        id: 23096,
+        label: "Runed Blood Garnet",
+        rarity: rarity.Uncommon,
+        colour: "red",
+        icon: "inv_misc_gem_bloodgem_02.jpg",
+        description: "+7 spell damage"
+    },
+    24030: {
+        id: 24030,
+        label: "Runed Living Ruby",
+        rarity: rarity.Rare,
+        colour: "red",
+        icon: "inv_jewelcrafting_livingruby_03.jpg",
+        description: "+9 spell damage"
+    },
+    35488: {
+        id: 35488,
+        label: "Runed Crimson Spinel",
+        rarity: rarity.Epic,
+        colour: "red",
+        icon: "inv_jewelcrafting_crimsonspinel_02.jpg",
+        description: "+12 spell damage"
+    },
+    32196: {
+        id: 32196,
+        label: "Runed Crimson Spinel",
+        rarity: rarity.Epic,
+        colour: "red",
+        icon: "inv_jewelcrafting_crimsonspinel_02.jpg",
+        description: "+12 spell damage"
+    },
+    33133: {
+        id: 33133,
+        label: "Don Julio's Heart",
+        rarity: rarity.Epic,
+        colour: "red",
+        icon: "inv_jewelcrafting_crimsonspinel_02.jpg",
+        description: "+14 spell damage"
+    },
+    /* #endregion */
+
+    // Teardrop (Healing)
+    28460: {
+        id: 28460,
+        label: "Teardrop Tourmaline",
+        rarity: rarity.Common,
+        colour: "red",
+        icon: "inv_misc_gem_ruby_03.jpg",
+        description: "+9 healing and +3 spell damage"
+    },
+    23094: {
+        id: 23094,
+        label: "Teardrop Blood Garnet",
+        rarity: rarity.Uncommon,
+        colour: "red",
+        icon: "inv_misc_gem_bloodgem_02.jpg",
+        description: "+13 healing and +5 spell damage"
+    },
+    24029: {
+        id: 24029,
+        label: "Teardrop Living Ruby",
+        rarity: rarity.Rare,
+        colour: "red",
+        icon: "inv_jewelcrafting_livingruby_03.jpg",
+        description: "+18 healing and +6 spell damage",
+    },
+    35489: {
+        id: 35489,
+        label: "Teardrop Crimson Spinel",
+        rarity: rarity.Epic,
+        colour: "red",
+        icon: "inv_jewelcrafting_crimsonspinel_02.jpg",
+        description: "+22 healing and +8 spell damage"
+    },
+    32195: {
+        id: 32195,
+        label: "Teardrop Crimson Spinel",
+        rarity: rarity.Epic,
+        colour: "red",
+        icon: "inv_jewelcrafting_crimsonspinel_02.jpg",
+        description: "+22 healing and +8 spell damage"
+    },
+    33134: {
+        id: 33134,
+        label: "Kailee's Rose",
+        rarity: rarity.Epic,
+        colour: "red",
+        icon: "inv_jewelcrafting_crimsonspinel_02.jpg",
+        description: "+26 healing and +9 spell damage"
+    },
+
+    // Delicate (Agility)
+    28459: {
+        id: 28459,
+        label: "Delicate Tourmaline",
+        rarity: rarity.Common,
+        colour: "red",
+        icon: "inv_misc_gem_ruby_03.jpg",
+        description: "+4 agility"
+    },
+    23097: {
+        id: 23097,
+        label: "Delicate Blood Garnet",
+        rarity: rarity.Uncommon,
+        colour: "red",
+        icon: "inv_misc_gem_bloodgem_02.jpg",
+        description: "+6 agility"
+    },
+    24028: {
+        id: 24028,
+        label: "Delicate Living Ruby",
+        rarity: rarity.Rare,
+        colour: "red",
+        icon: "inv_jewelcrafting_livingruby_03.jpg",
+        description: "+8 agility",
+    },
+    32194: {
+        id: 32194,
+        label: "Delicate Crimson Spinel",
+        rarity: rarity.Epic,
+        colour: "red",
+        icon: "inv_jewelcrafting_crimsonspinel_02.jpg",
+        description: "+10 agility"
+    },
+    33132: {
+        id: 33132,
+        label: "Delicate Fire Ruby",
+        rarity: rarity.Epic,
+        colour: "red",
+        icon: "inv_jewelcrafting_crimsonspinel_02.jpg",
+        description: "+12 agility"
+    },
+
+    // Bold (Strength)
+    28458: {
+        id: 28458,
+        label: "Bold Tourmaline",
+        rarity: rarity.Common,
+        colour: "red",
+        icon: "inv_misc_gem_ruby_03.jpg",
+        description: "+4 strength"
+    },
+    23095: {
+        id: 23095,
+        label: "Bold Blood Garnet",
+        rarity: rarity.Uncommon,
+        colour: "red",
+        icon: "inv_misc_gem_bloodgem_02.jpg",
+        description: "+6 strength"
+    },
+    24027: {
+        id: 24027,
+        label: "Bold Living Ruby",
+        rarity: rarity.Rare,
+        colour: "red",
+        icon: "inv_jewelcrafting_livingruby_03.jpg",
+        description: "+8 strength",
+    },
+    32193: {
+        id: 32193,
+        label: "Bold Crimson Spinel",
+        rarity: rarity.Epic,
+        colour: "red",
+        icon: "inv_jewelcrafting_crimsonspinel_02.jpg",
+        description: "+10 strength"
+    },
+
+    // Bright (Attack Power)
+    28462: {
+        id: 28462,
+        label: "Bright Tourmaline",
+        rarity: rarity.Common,
+        colour: "red",
+        icon: "inv_misc_gem_ruby_03.jpg",
+        description: "+8 attack power"
+    },
+    28595: {
+        id: 28595,
+        label: "Bright Blood Garnet",
+        rarity: rarity.Uncommon,
+        colour: "red",
+        icon: "inv_misc_gem_bloodgem_02.jpg",
+        description: "+12 attack power"
+    },
+    24031: {
+        id: 24031,
+        label: "Bright Living Ruby",
+        rarity: rarity.Rare,
+        colour: "red",
+        icon: "inv_jewelcrafting_livingruby_03.jpg",
+        description: "+16 attack power",
+    },
+    32197: {
+        id: 32197,
+        label: "Bright Crimson Spinel",
+        rarity: rarity.Epic,
+        colour: "red",
+        icon: "inv_jewelcrafting_crimsonspinel_02.jpg",
+        description: "+20 attack power"
+    },
+    33131: {
+        id: 33131,
+        label: "Crimson Sun",
+        rarity: rarity.Epic,
+        colour: "red",
+        icon: "inv_jewelcrafting_crimsonspinel_02.jpg",
+        description: "+24 attack power"
+    },
+
+    // Subtle (Dodge)
+    24032: {
+        id: 24032,
+        label: "Subtle Living Ruby",
+        rarity: rarity.Rare,
+        colour: "red",
+        icon: "inv_jewelcrafting_livingruby_03.jpg",
+        description: "+8 dodge rating",
+    },
+    32198: {
+        id: 32198,
+        label: "Subtle Crimson Spinel",
+        rarity: rarity.Epic,
+        colour: "red",
+        icon: "inv_jewelcrafting_crimsonspinel_02.jpg",
+        description: "+10 dodge rating"
+    },
+
+    // Flashing (Parry)
+    24036: {
+        id: 24036,
+        label: "Flashing Living Ruby",
+        rarity: rarity.Rare,
+        colour: "red",
+        icon: "inv_jewelcrafting_livingruby_03.jpg",
+        description: "+8 parry rating",
+    },
+    32199: {
+        id: 32199,
+        label: "Flashing Crimson Spinel",
+        rarity: rarity.Epic,
+        colour: "red",
+        icon: "inv_jewelcrafting_crimsonspinel_02.jpg",
+        description: "+10 parry rating"
+    },
+
+    /* #endregion Red Gems */
+
+    // Solid (Stamina)
+    28463: {
+        id: 28463,
+        label: "Solid Zircon",
+        rarity: rarity.Common,
+        colour: "blue",
+        icon: "inv_misc_gem_crystal_03.jpg",
+        description: "+6 stamina"
+    },
+    23118: {
+        id: 23118,
+        label: "Solid Azure Moonstone",
+        rarity: rarity.Uncommon,
+        colour: "blue",
+        icon: "inv_misc_gem_azuredraenite_02.jpg",
+        description: "+9 stamina"
+    },
+    24033: {
+        id: 24033,
+        label: "Solid Star of Elune",
+        rarity: rarity.Rare,
+        colour: "blue",
+        icon: "inv_jewelcrafting_starofelune_03.jpg",
+        description: "+12 stamina",
+    },
+    32200: {
+        id: 32200,
+        label: "Solid Empyrean Sapphire",
+        rarity: rarity.Epic,
+        colour: "blue",
+        icon: "inv_jewelcrafting_empyreansapphire_02.jpg",
+        description: "+15 stamina"
+    },
+    34831: {
+        id: 34831,
+        label: "Eye of the Sea",
+        rarity: rarity.Rare,
+        colour: "blue",
+        icon: "inv_jewelcrafting_starofelune_01.jpg",
+        description: "+15 stamina"
+    },
+    33135: {
+        id: 33135,
+        label: "Falling Star",
+        rarity: rarity.Epic,
+        colour: "blue",
+        icon: "inv_jewelcrafting_empyreansapphire_02.jpg",
+        description: "+18 stamina"
+    },
+
+    // Sparkling (Spirit)
+    28464: {
+        id: 28464,
+        label: "Sparkling Zircon",
+        rarity: rarity.Common,
+        colour: "blue",
+        icon: "inv_misc_gem_crystal_03.jpg",
+        description: "+4 spirit"
+    },
+    23119: {
+        id: 23119,
+        label: "Sparkling Azure Moonstone",
+        rarity: rarity.Uncommon,
+        colour: "blue",
+        icon: "inv_misc_gem_azuredraenite_02.jpg",
+        description: "+6 spirit"
+    },
+    24035: {
+        id: 24035,
+        label: "Sparkling Star of Elune",
+        rarity: rarity.Rare,
+        colour: "blue",
+        icon: "inv_jewelcrafting_starofelune_03.jpg",
+        description: "+8 spirit",
+    },
+    32201: {
+        id: 32201,
+        label: "Sparkling Empyrean Sapphire",
+        rarity: rarity.Epic,
+        colour: "blue",
+        icon: "inv_jewelcrafting_empyreansapphire_02.jpg",
+        description: "+10 spirit"
+    },
+    33137: {
+        id: 33137,
+        label: "Sparkling Falling Star",
+        rarity: rarity.Epic,
+        colour: "blue",
+        icon: "inv_jewelcrafting_empyreansapphire_02.jpg",
+        description: "+12 spirit"
+    },
+
+    // Lustrous (Mana per 5)
+    28465: {
+        id: 28465,
+        label: "Lustrous Zircon",
+        rarity: rarity.Common,
+        colour: "blue",
+        icon: "inv_misc_gem_crystal_03.jpg",
+        description: "+1 mp5"
+    },
+    23121: {
+        id: 23121,
+        label: "Lustrous Azure Moonstone",
+        rarity: rarity.Uncommon,
+        colour: "blue",
+        icon: "inv_misc_gem_azuredraenite_02.jpg",
+        description: "+2 mp5"
+    },
+    24037: {
+        id: 24037,
+        label: "Lustrous Star of Elune",
+        rarity: rarity.Rare,
+        colour: "blue",
+        icon: "inv_jewelcrafting_starofelune_03.jpg",
+        description: "+3 mp5",
+    },
+    32202: {
+        id: 32202,
+        label: "Lustrous Empyrean Sapphire",
+        rarity: rarity.Epic,
+        colour: "blue",
+        icon: "inv_jewelcrafting_empyreansapphire_02.jpg",
+        description: "+4 mp5"
+    },
+
+    // Stormy (Spell Penetration)
+    23120: {
+        id: 23120,
+        label: "Stormy Azure Moonstone",
+        rarity: rarity.Uncommon,
+        colour: "blue",
+        icon: "inv_misc_gem_azuredraenite_02.jpg",
+        description: "+8 spell penetration"
+    },
+    24039: {
+        id: 24039,
+        label: "Stormy Star of Elune",
+        rarity: rarity.Rare,
+        colour: "blue",
+        icon: "inv_jewelcrafting_starofelune_03.jpg",
+        description: "+10 spell penetration",
+    },
+    32203: {
+        id: 32203,
+        label: "Stormy Empyrean Sapphire",
+        rarity: rarity.Epic,
+        colour: "blue",
+        icon: "inv_jewelcrafting_empyreansapphire_02.jpg",
+        description: "+13 spell penetration"
+    },
+
+    // Rigid (Hit)
+    28468: {
+        id: 28468,
+        label: "Rigid Amber",
+        rarity: rarity.Common,
+        colour: "yellow",
+        icon: "inv_misc_gem_topaz_03.jpg",
+        description: "+4 hit rating"
+    },
+    23116: {
+        id: 23116,
+        label: "Rigid Golden Draenite",
+        rarity: rarity.Uncommon,
+        colour: "yellow",
+        icon: "inv_misc_gem_goldendraenite_02.jpg",
+        description: "+6 hit rating"
+    },
+    24051: {
+        id: 24051,
+        label: "Rigid Dawnstone",
+        rarity: rarity.Rare,
+        colour: "yellow",
+        icon: "inv_jewelcrafting_dawnstone_03.jpg",
+        description: "+8 hit rating",
+    },
+    32206: {
+        id: 32206,
+        label: "Rigid Lionseye",
+        rarity: rarity.Epic,
+        colour: "yellow",
+        icon: "inv_jewelcrafting_lionseye_02.jpg",
+        description: "+10 hit rating"
+    },
+    33142: {
+        id: 33142,
+        label: "Rigid Bladestone",
+        rarity: rarity.Epic,
+        colour: "yellow",
+        icon: "inv_jewelcrafting_lionseye_02.jpg",
+        description: "+12 hit rating"
+    },
+
+    // Smooth (Crit)
+    28467: {
+        id: 28467,
+        label: "Smooth Amber",
+        rarity: rarity.Common,
+        colour: "yellow",
+        icon: "inv_misc_gem_topaz_03.jpg",
+        description: "+4 crit rating"
+    },
+    28290: {
+        id: 28290,
+        label: "Smooth Golden Draenite",
+        rarity: rarity.Uncommon,
+        colour: "yellow",
+        icon: "inv_misc_gem_goldendraenite_02.jpg",
+        description: "+6 crit rating"
+    },
+    24048: {
+        id: 24048,
+        label: "Smooth Dawnstone",
+        rarity: rarity.Rare,
+        colour: "yellow",
+        icon: "inv_jewelcrafting_dawnstone_03.jpg",
+        description: "+8 crit rating",
+    },
+    32205: {
+        id: 32205,
+        label: "Smooth Lionseye",
+        rarity: rarity.Epic,
+        colour: "yellow",
+        icon: "inv_jewelcrafting_lionseye_02.jpg",
+        description: "+10 crit rating"
+    },
+    33143: {
+        id: 33143,
+        label: "Stone of Blades",
+        rarity: rarity.Epic,
+        colour: "yellow",
+        icon: "inv_jewelcrafting_lionseye_02.jpg",
+        description: "+12 crit rating"
+    },
+
+    // Gleaming (Spell Crit)
+    28469: {
+        id: 28469,
+        label: "Gleaming Amber",
+        rarity: rarity.Common,
+        colour: "yellow",
+        icon: "inv_misc_gem_topaz_03.jpg",
+        description: "+4 spell crit rating"
+    },
+    23114: {
+        id: 23114,
+        label: "Gleaming Golden Draenite",
+        rarity: rarity.Uncommon,
+        colour: "yellow",
+        icon: "inv_misc_gem_goldendraenite_02.jpg",
+        description: "+6 spell crit rating"
+    },
+    24050: {
+        id: 24050,
+        label: "Gleaming Dawnstone",
+        rarity: rarity.Rare,
+        colour: "yellow",
+        icon: "inv_jewelcrafting_dawnstone_03.jpg",
+        description: "+8 spell crit rating",
+    },
+    32207: {
+        id: 32207,
+        label: "Gleaming Lionseye",
+        rarity: rarity.Epic,
+        colour: "yellow",
+        icon: "inv_jewelcrafting_lionseye_02.jpg",
+        description: "+10 spell crit rating"
+    },
+    33140: {
+        id: 33140,
+        label: "Blood of Amber",
+        rarity: rarity.Epic,
+        colour: "yellow",
+        icon: "inv_jewelcrafting_lionseye_02.jpg",
+        description: "+12 spell crit rating"
+    },
+
+    // Brilliant (Intellect)
+    28466: {
+        id: 28466,
+        label: "Brilliant Amber",
+        rarity: rarity.Common,
+        colour: "yellow",
+        icon: "inv_misc_gem_topaz_03.jpg",
+        description: "+4 intellect"
+    },
+    23113: {
+        id: 23113,
+        label: "Brilliant Golden Draenite",
+        rarity: rarity.Uncommon,
+        colour: "yellow",
+        icon: "inv_misc_gem_goldendraenite_02.jpg",
+        description: "+6 intellect"
+    },
+    24047: {
+        id: 24047,
+        label: "Brilliant Dawnstone",
+        rarity: rarity.Rare,
+        colour: "yellow",
+        icon: "inv_jewelcrafting_dawnstone_03.jpg",
+        description: "+8 intellect",
+    },
+    32204: {
+        id: 32204,
+        label: "Brilliant Lionseye",
+        rarity: rarity.Epic,
+        colour: "yellow",
+        icon: "inv_jewelcrafting_lionseye_02.jpg",
+        description: "+10 intellect"
+    },
+    33139: {
+        id: 33139,
+        label: "Brilliant Bladestone",
+        rarity: rarity.Epic,
+        colour: "yellow",
+        icon: "inv_jewelcrafting_lionseye_02.jpg",
+        description: "+12 intellect"
+    },
+
+    // Thick (Defense)
+    28470: {
+        id: 28470,
+        label: "Thick Amber",
+        rarity: rarity.Common,
+        colour: "yellow",
+        icon: "inv_misc_gem_topaz_03.jpg",
+        description: "+4 defense rating"
+    },
+    23115: {
+        id: 23115,
+        label: "Thick Golden Draenite",
+        rarity: rarity.Uncommon,
+        colour: "yellow",
+        icon: "inv_misc_gem_goldendraenite_02.jpg",
+        description: "+6 defense rating"
+    },
+    24052: {
+        id: 24052,
+        label: "Thick Dawnstone",
+        rarity: rarity.Rare,
+        colour: "yellow",
+        icon: "inv_jewelcrafting_dawnstone_03.jpg",
+        description: "+8 defense rating",
+    },
+    32208: {
+        id: 32208,
+        label: "Thick Lionseye",
+        rarity: rarity.Epic,
+        colour: "yellow",
+        icon: "inv_jewelcrafting_lionseye_02.jpg",
+        description: "+10 defense rating"
+    },
+    33144: {
+        id: 33144,
+        label: "Facet of Eternity",
+        rarity: rarity.Epic,
+        colour: "yellow",
+        icon: "inv_jewelcrafting_lionseye_02.jpg",
+        description: "+12 defense rating"
+    },
+
+    // Great (Spell Hit)
+    31860: {
+        id: 31860,
+        label: "Great Golden Draenite",
+        rarity: rarity.Uncommon,
+        colour: "yellow",
+        icon: "inv_misc_gem_goldendraenite_02.jpg",
+        description: "+6 spell hit rating"
+    },
+    31861: {
+        id: 31861,
+        label: "Great Dawnstone",
+        rarity: rarity.Rare,
+        colour: "yellow",
+        icon: "inv_jewelcrafting_dawnstone_03.jpg",
+        description: "+8 spell hit rating",
+    },
+    32210: {
+        id: 32210,
+        label: "Great Lionseye",
+        rarity: rarity.Epic,
+        colour: "yellow",
+        icon: "inv_jewelcrafting_lionseye_02.jpg",
+        description: "+10 spell hit rating"
+    },
+    33141: {
+        id: 33141,
+        label: "Great Bladestone",
+        rarity: rarity.Epic,
+        colour: "yellow",
+        icon: "inv_jewelcrafting_lionseye_02.jpg",
+        description: "+12 spell hit rating"
+    },
+
+    // Quick (Spell Haste)
+    35315: {
+        id: 35315,
+        label: "Quick Dawnstone",
+        rarity: rarity.Rare,
+        colour: "yellow",
+        icon: "inv_jewelcrafting_dawnstone_03.jpg",
+        description: "+8 spell haste rating",
+    },
+    35761: {
+        id: 35761,
+        label: "Quick Lionseye",
+        rarity: rarity.Epic,
+        colour: "yellow",
+        icon: "inv_jewelcrafting_lionseye_02.jpg",
+        description: "+10 spell haste rating"
+    },
+
+    // Mystic (Resilience)
+    24053: {
+        id: 24053,
+        label: "Mystic Dawnstone",
+        rarity: rarity.Rare,
+        colour: "yellow",
+        icon: "inv_jewelcrafting_dawnstone_03.jpg",
+        description: "+8 resilience",
+    },
+    32209: {
+        id: 32209,
+        label: "Mystic Lionseye",
+        rarity: rarity.Epic,
+        colour: "yellow",
+        icon: "inv_jewelcrafting_lionseye_02.jpg",
+        description: "+10 resilience"
+    },
+    33138: {
+        id: 33138,
+        label: "Mystic Bladestone",
+        rarity: rarity.Epic,
+        colour: "yellow",
+        icon: "inv_jewelcrafting_lionseye_02.jpg",
+        description: "+12 resilience"
+    },
+
+    // Nightbane
+    31116: {
+        id: 31116,
+        label: "Infused Amethyst",
+        rarity: rarity.Epic,
+        colour: "purple",
+        icon: "inv_jewelcrafting_nightseye_03.jpg",
+        description: "+6 spell damage and +6 stamina"
+    },
+    31117: {
+        id: 31117,
+        label: "Soothing Amethyst",
+        rarity: rarity.Epic,
+        colour: "purple",
+        icon: "inv_jewelcrafting_nightseye_03.jpg",
+        description: "+11 healing +4 spell damage and +6 stamina"
+    },
+    31118: {
+        id: 31118,
+        label: "Pulsing Amethyst",
+        rarity: rarity.Epic,
+        colour: "purple",
+        icon: "inv_jewelcrafting_nightseye_03.jpg",
+        description: "+10 attack power and +6 stamina"
+    },
+
+    // Miscellaneous Purple
+    32833: {
+        id: 32833,
+        label: "Purified Jaggal Pearl",
+        rarity: rarity.Uncommon,
+        colour: "purple",
+        icon: "inv_misc_gem_pearl_08.jpg",
+        description: "+7 healing +3 damage and +3 spirit"
+    },
+    32836: {
+        id: 32836,
+        label: "Purified Shadow Pearl",
+        rarity: rarity.Rare,
+        colour: "purple",
+        icon: "inv_misc_gem_pearl_07.jpg",
+        description: "+9 healing +3 damage and +4 spirit"
+    },
+    32634: {
+        id: 32634,
+        label: "Unstable Amethyst",
+        rarity: rarity.Rare,
+        colour: "purple",
+        icon: "inv_jewelcrafting_shadowsongamethyst_01.jpg",
+        description: "+8 attack power and +6 stamina"
+    },
+    32636: {
+        id: 32636,
+        label: "Unstable Sapphire",
+        rarity: rarity.Rare,
+        colour: "purple",
+        icon: "inv_misc_gem_sapphire_02.jpg",
+        description: "+9 healing +3 damage and +4 spirit"
+    },
+    30566: {
+        id: 30566,
+        label: "Defender's Tanzanite",
+        rarity: rarity.Epic,
+        colour: "purple",
+        icon: "inv_jewelcrafting_nightseye_03.jpg",
+        description: "+5 parry rating and +6 stamina"
+    },
+    30572: {
+        id: 30572,
+        label: "Imperial Tanzanite",
+        rarity: rarity.Epic,
+        colour: "purple",
+        icon: "inv_jewelcrafting_nightseye_03.jpg",
+        description: "+5 spirit and +9 healing +3 spell damage"
+    },
+    37503: {
+        id: 37503,
+        label: "Purified Shadowsong Amethyst",
+        rarity: rarity.Epic,
+        colour: "purple",
+        icon: "inv_jewelcrafting_shadowsongamethyst_02.jpg",
+        description: "+11 healing +4 spell damage and +5 spirit"
+    },
+    35707: {
+        id: 35707,
+        label: "Regal Nightseye",
+        rarity: rarity.Epic,
+        colour: "purple",
+        icon: "inv_jewelcrafting_nightseye_03.jpg",
+        description: "+4 dodge rating and +6 stamina"
+    },
+    30563: {
+        id: 30563,
+        label: "Regal Tanzanite",
+        rarity: rarity.Epic,
+        colour: "purple",
+        icon: "inv_jewelcrafting_nightseye_03.jpg",
+        description: "+5 dodge rating and +6 stamina"
+    },
+    30552: {
+        id: 30552,
+        label: "Blessed Tanzanite",
+        rarity: rarity.Epic,
+        colour: "purple",
+        icon: "inv_jewelcrafting_nightseye_03.jpg",
+        description: "+11 healing +4 spell damage and +6 stamina"
+    },
+    30600: {
+        id: 30600,
+        label: "Fluorescent Tanzanite",
+        rarity: rarity.Epic,
+        colour: "purple",
+        icon: "inv_jewelcrafting_nightseye_03.jpg",
+        description: "+6 spell damage and +4 spirit"
+    },
+
+    // Glowing (Spell Damage and Stamina)
+    23108: {
+        id: 23108,
+        label: "Glowing Shadow Draenite",
+        rarity: rarity.Uncommon,
+        colour: "purple",
+        icon: "inv_misc_gem_ebondraenite_02.jpg",
+        description: "+4 spell damage and +4 stamina"
+    },
+    24056: {
+        id: 24056,
+        label: "Glowing Nightseye",
+        rarity: rarity.Rare,
+        colour: "purple",
+        icon: "inv_jewelcrafting_nightseye_03.jpg",
+        description: "+5 spell damage and +6 stamina",
+    },
+    30555: {
+        id: 30555,
+        label: "Glowing Tanzanite",
+        rarity: rarity.Epic,
+        colour: "purple",
+        icon: "inv_jewelcrafting_nightseye_03.jpg",
+        description: "+6 spell damage and +6 stamina"
+    },
+    32215: {
+        id: 32215,
+        label: "Glowing Shadowsong Amethyst",
+        rarity: rarity.Epic,
+        colour: "purple",
+        icon: "inv_jewelcrafting_shadowsongamethyst_02.jpg",
+        description: "+6 spell damage and +7 stamina"
+    },
+
+    // Shifting (Agility and Stamina)
+    23110: {
+        id: 23110,
+        label: "Shifting Shadow Draenite",
+        rarity: rarity.Uncommon,
+        colour: "purple",
+        icon: "inv_misc_gem_ebondraenite_02.jpg",
+        description: "+3 agility and +4 stamina"
+    },
+    24055: {
+        id: 24055,
+        label: "Shifting Nightseye",
+        rarity: rarity.Rare,
+        colour: "purple",
+        icon: "inv_jewelcrafting_nightseye_03.jpg",
+        description: "+4 agility and +6 stamina",
+    },
+    30549: {
+        id: 30549,
+        label: "Shifting Tanzanite",
+        rarity: rarity.Epic,
+        colour: "purple",
+        icon: "inv_jewelcrafting_nightseye_03.jpg",
+        description: "+5 agility and +6 stamina"
+    },
+    32212: {
+        id: 32212,
+        label: "Shifting Shadowsong Amethyst",
+        rarity: rarity.Epic,
+        colour: "purple",
+        icon: "inv_jewelcrafting_shadowsongamethyst_02.jpg",
+        description: "+5 agility and +7 stamina"
+    },
+
+    // Royal (Healing and MP5)
+    23109: {
+        id: 23109,
+        label: "Royal Shadow Draenite",
+        rarity: rarity.Uncommon,
+        colour: "purple",
+        icon: "inv_misc_gem_ebondraenite_02.jpg",
+        description: "+7 healing +3 spell damage and +1 mp5"
+    },
+    24057: {
+        id: 24057,
+        label: "Royal Nightseye",
+        rarity: rarity.Rare,
+        colour: "purple",
+        icon: "inv_jewelcrafting_nightseye_03.jpg",
+        description: "+9 healing +3 spell damage and +2 mp5",
+    },
+    30603: {
+        id: 30603,
+        label: "Royal Tanzanite",
+        rarity: rarity.Epic,
+        colour: "purple",
+        icon: "inv_jewelcrafting_nightseye_03.jpg",
+        description: "+11 healing +4 spell damage and +2 mp5"
+    },
+    32216: {
+        id: 32216,
+        label: "Royal Shadowsong Amethyst",
+        rarity: rarity.Epic,
+        colour: "purple",
+        icon: "inv_jewelcrafting_shadowsongamethyst_02.jpg",
+        description: "+11 healing +4 spell damage and +2 mp5"
+    },
+
+    // Sovereign (Strength and Stamina)
+    23111: {
+        id: 23111,
+        label: "Sovereign Shadow Draenite",
+        rarity: rarity.Uncommon,
+        colour: "purple",
+        icon: "inv_misc_gem_ebondraenite_02.jpg",
+        description: "+3 strength and +4 stamina"
+    },
+    24054: {
+        id: 24054,
+        label: "Sovereign Nightseye",
+        rarity: rarity.Rare,
+        colour: "purple",
+        icon: "inv_jewelcrafting_nightseye_03.jpg",
+        description: "+4 strength and +6 stamina",
+    },
+    30546: {
+        id: 30546,
+        label: "Sovereign Tanzanite",
+        rarity: rarity.Epic,
+        colour: "purple",
+        icon: "inv_jewelcrafting_nightseye_03.jpg",
+        description: "+5 strength and +6 stamina"
+    },
+    32211: {
+        id: 32211,
+        label: "Sovereign Shadowsong Amethyst",
+        rarity: rarity.Epic,
+        colour: "purple",
+        icon: "inv_jewelcrafting_shadowsongamethyst_02.jpg",
+        description: "+5 strength and +7 stamina"
+    },
+
+    // Infused (Attack Power and MP5)
+    31864: {
+        id: 31864,
+        label: "Infused Shadow Draenite",
+        rarity: rarity.Uncommon,
+        colour: "purple",
+        icon: "inv_misc_gem_ebondraenite_02.jpg",
+        description: "+6 attack power and +1 mp5"
+    },
+    31865: {
+        id: 31865,
+        label: "Infused Nightseye",
+        rarity: rarity.Rare,
+        colour: "purple",
+        icon: "inv_jewelcrafting_nightseye_03.jpg",
+        description: "+8 attack power and +2 mp5",
+    },
+    32214: {
+        id: 32214,
+        label: "Infused Shadowsong Amethyst",
+        rarity: rarity.Epic,
+        colour: "purple",
+        icon: "inv_jewelcrafting_shadowsongamethyst_02.jpg",
+        description: "+10 attack power and +2 mp5"
+    },
+
+    // Balanced (Attack Power and Stamina)
+    31862: {
+        id: 31862,
+        label: "Balanced Shadow Draenite",
+        rarity: rarity.Uncommon,
+        colour: "purple",
+        icon: "inv_misc_gem_ebondraenite_02.jpg",
+        description: "+6 attack power and +4 stamina"
+    },
+    31863: {
+        id: 31863,
+        label: "Balanced Nightseye",
+        rarity: rarity.Rare,
+        colour: "purple",
+        icon: "inv_jewelcrafting_nightseye_03.jpg",
+        description: "+8 attack power and +6 stamina",
+    },
+    30574: {
+        id: 30574,
+        label: "Brutal Tanzanite",
+        rarity: rarity.Epic,
+        colour: "purple",
+        icon: "inv_jewelcrafting_nightseye_03.jpg",
+        description: "+10 attack power and +6 stamina"
+    },
+    32213: {
+        id: 32213,
+        label: "Balanced Shadowsong Amethyst",
+        rarity: rarity.Epic,
+        colour: "purple",
+        icon: "inv_jewelcrafting_shadowsongamethyst_02.jpg",
+        description: "+10 attack power and +7 stamina"
+    },
+
+    // Miscellaneous Green Gems
+    27786: {
+        id: 27786,
+        label: "Barbed Deep Peridot",
+        rarity: rarity.Rare,
+        colour: "green",
+        icon: "inv_misc_gem_deepperidot_01.jpg",
+        description: "+3 stamina and +4 crit rating"
+    },
+    27809: {
+        id: 27809,
+        label: "Barbed Deep Peridot",
+        rarity: rarity.Rare,
+        colour: "green",
+        icon: "inv_misc_gem_deepperidot_01.jpg",
+        description: "+3 stamina and +4 crit rating"
+    },
+    27820: {
+        id: 27820,
+        label: "Notched Deep Peridot",
+        rarity: rarity.Rare,
+        colour: "green",
+        icon: "inv_misc_gem_deepperidot_03.jpg",
+        description: "+3 stamina and +4 spell crit rating"
+    },
+    27785: {
+        id: 27820,
+        label: "Notched Deep Peridot",
+        rarity: rarity.Rare,
+        colour: "green",
+        icon: "inv_misc_gem_deepperidot_03.jpg",
+        description: "+3 stamina and +4 spell crit rating"
+    },
+    32635: {
+        id: 32635,
+        label: "Unstable Peridot",
+        rarity: rarity.Rare,
+        colour: "green",
+        icon: "inv_misc_gem_deepperidot_03.jpg",
+        description: "+4 intellect and +6 stamina"
+    },
+    32639: {
+        id: 32639,
+        label: "Unstable Talasite",
+        rarity: rarity.Rare,
+        colour: "green",
+        icon: "inv_jewelcrafting_talasite_01.jpg",
+        description: "+4 spell crit rating and +6 stamina"
+    },
+    30594: {
+        id: 30594,
+        label: "Effulgent Chrysoprase",
+        rarity: rarity.Epic,
+        colour: "green",
+        icon: "inv_jewelcrafting_talasite_03.jpg",
+        description: "+5 defense rating and +2 mp5"
+    },
+    30583: {
+        id: 30583,
+        label: "Timeless Chrysoprase",
+        rarity: rarity.Epic,
+        colour: "green",
+        icon: "inv_jewelcrafting_talasite_03.jpg",
+        description: "+5 intellect and +6 stamina"
+    },
+    30560: {
+        id: 30560,
+        label: "Rune Covered Chrysoprase",
+        rarity: rarity.Epic,
+        colour: "green",
+        icon: "inv_jewelcrafting_talasite_03.jpg",
+        description: "+5 spell crit rating and +2 mp5"
+    },
+    30548: {
+        id: 30548,
+        label: "Polished Chrysoprase",
+        rarity: rarity.Epic,
+        colour: "green",
+        icon: "inv_jewelcrafting_talasite_03.jpg",
+        description: "+5 spell crit rating and +6 stamina"
+    },
+    30586: {
+        id: 30586,
+        label: "Seer's Chrysoprase",
+        rarity: rarity.Epic,
+        colour: "green",
+        icon: "inv_jewelcrafting_talasite_03.jpg",
+        description: "+4 intellect and +5 spirit"
+    },
+    30606: {
+        id: 30606,
+        label: "Lambent Chrysoprase",
+        rarity: rarity.Epic,
+        colour: "green",
+        icon: "inv_jewelcrafting_talasite_03.jpg",
+        description: "+5 spell hit rating and +2 mp5"
+    },
+    30550: {
+        id: 30550,
+        label: "Sundered Chrysoprase",
+        rarity: rarity.Epic,
+        colour: "green",
+        icon: "inv_jewelcrafting_talasite_03.jpg",
+        description: "+5 crit rating and +2 mp5"
+    },
+    30605: {
+        id: 30605,
+        label: "Vivid Chrysoprase",
+        rarity: rarity.Epic,
+        colour: "green",
+        icon: "inv_jewelcrafting_talasite_03.jpg",
+        description: "+5 spell hit rating and +6 stamina"
+    },
+
+    // Enduring (Defense and Stamina)
+    23105: {
+        id: 23105,
+        label: "Enduring Deep Peridot",
+        rarity: rarity.Uncommon,
+        colour: "green",
+        icon: "inv_misc_gem_deepperidot_02.jpg",
+        description: "+3 defense rating and +4 stamina"
+    },
+    24062: {
+        id: 24062,
+        label: "Enduring Talasite",
+        rarity: rarity.Rare,
+        colour: "green",
+        icon: "inv_jewelcrafting_talasite_03.jpg",
+        description: "+4 defense rating and +6 stamina",
+    },
+    30590: {
+        id: 30590,
+        label: "Enduring Chrysoprase",
+        rarity: rarity.Epic,
+        colour: "green",
+        icon: "inv_jewelcrafting_talasite_03.jpg",
+        description: "+5 defense rating and +6 stamina"
+    },
+    32223: {
+        id: 32223,
+        label: "Enduring Seaspray Emerald",
+        rarity: rarity.Epic,
+        colour: "green",
+        icon: "inv_jewelcrafting_seasprayemerald_02.jpg",
+        description: "+5 defense rating and +7 stamina"
+    },
+
+    // Jagged (Crit Rating and Stamina)
+    23104: {
+        id: 23104,
+        label: "Jagged Deep Peridot",
+        rarity: rarity.Uncommon,
+        colour: "green",
+        icon: "inv_misc_gem_deepperidot_02.jpg",
+        description: "+3 crit rating and +4 stamina"
+    },
+    24067: {
+        id: 24067,
+        label: "Jagged Talasite",
+        rarity: rarity.Rare,
+        colour: "green",
+        icon: "inv_jewelcrafting_talasite_03.jpg",
+        description: "+4 crit rating and +6 stamina",
+    },
+    30602: {
+        id: 30602,
+        label: "Jagged Chrysoprase",
+        rarity: rarity.Epic,
+        colour: "green",
+        icon: "inv_jewelcrafting_talasite_03.jpg",
+        description: "+5 crit rating and +6 stamina"
+    },
+    32226: {
+        id: 32226,
+        label: "Jagged Seaspray Emerald",
+        rarity: rarity.Epic,
+        colour: "green",
+        icon: "inv_jewelcrafting_seasprayemerald_02.jpg",
+        description: "+5 crit rating and +7 stamina"
+    },
+
+    // Radiant (Spell Crit Rating and Spell Penetration)
+    23103: {
+        id: 23103,
+        label: "Radiant Deep Peridot",
+        rarity: rarity.Uncommon,
+        colour: "green",
+        icon: "inv_misc_gem_deepperidot_02.jpg",
+        description: "+3 spell crit rating and +4 spell penetration"
+    },
+    24066: {
+        id: 24066,
+        label: "Radiant Talasite",
+        rarity: rarity.Rare,
+        colour: "green",
+        icon: "inv_jewelcrafting_talasite_03.jpg",
+        description: "+4 spell crit rating and +5 spell penetration",
+    },
+    30608: {
+        id: 30608,
+        label: "Radiant Chrysoprase",
+        rarity: rarity.Epic,
+        colour: "green",
+        icon: "inv_jewelcrafting_talasite_03.jpg",
+        description: "+5 spell crit rating and +5 spell penetration"
+    },
+    32224: {
+        id: 32224,
+        label: "Radiant Seaspray Emerald",
+        rarity: rarity.Epic,
+        colour: "green",
+        icon: "inv_jewelcrafting_seasprayemerald_02.jpg",
+        description: "+5 spell crit rating and +6 spell penetration"
+    },
+
+    // Dazzling (Intellect and MP5)
+    23106: {
+        id: 23106,
+        label: "Dazzling Deep Peridot",
+        rarity: rarity.Uncommon,
+        colour: "green",
+        icon: "inv_misc_gem_deepperidot_02.jpg",
+        description: "+3 intellect and +1 mp5"
+    },
+    24065: {
+        id: 24065,
+        label: "Dazzling Talasite",
+        rarity: rarity.Rare,
+        colour: "green",
+        icon: "inv_jewelcrafting_talasite_03.jpg",
+        description: "+4 intellect and +2 mp5",
+    },
+    30589: {
+        id: 30589,
+        label: "Dazzling Chrysoprase",
+        rarity: rarity.Epic,
+        colour: "green",
+        icon: "inv_jewelcrafting_talasite_03.jpg",
+        description: "+5 intellect and +2 mp5"
+    },
+    32225: {
+        id: 32225,
+        label: "Dazzling Seaspray Emerald",
+        rarity: rarity.Epic,
+        colour: "green",
+        icon: "inv_jewelcrafting_seasprayemerald_02.jpg",
+        description: "+5 intellect and +2 mp5"
+    },
+
+    // Forceful (Spell Haste and Stamina)
+    35318: {
+        id: 35318,
+        label: "Forceful Talasite",
+        rarity: rarity.Rare,
+        colour: "green",
+        icon: "inv_jewelcrafting_talasite_03.jpg",
+        description: "+4 spell haste and +6 stamina",
+    },
+    35759: {
+        id: 35759,
+        label: "Forceful Seaspray Emerald",
+        rarity: rarity.Epic,
+        colour: "green",
+        icon: "inv_jewelcrafting_seasprayemerald_02.jpg",
+        description: "+5 spell haste and +7 stamina"
+    },
+
+    // Steady (Resilience and Stamina)
+    33782: {
+        id: 33782,
+        label: "Steady Talasite",
+        rarity: rarity.Rare,
+        colour: "green",
+        icon: "inv_jewelcrafting_talasite_03.jpg",
+        description: "+4 resilience and +6 stamina",
+    },
+    30592: {
+        id: 30592,
+        label: "Steady Chrysoprase",
+        rarity: rarity.Epic,
+        colour: "green",
+        icon: "inv_jewelcrafting_talasite_03.jpg",
+        description: "+5 resilience and +6 stamina"
+    },
+    35758: {
+        id: 35758,
+        label: "Steady Seaspray Emerald",
+        rarity: rarity.Epic,
+        colour: "green",
+        icon: "inv_jewelcrafting_seasprayemerald_02.jpg",
+        description: "+5 resilience and +7 stamina"
+    },
+
+    // Veiled (Spell Hit and Spell Damage)
+    31866: {
+        id: 31866,
+        label: "Veiled Flame Spessarite",
+        rarity: rarity.Uncommon,
+        colour: "orange",
+        icon: "inv_misc_gem_flamespessarite_02.jpg",
+        description: "+3 spell hit rating and +4 spell damage"
+    },
+    31867: {
+        id: 31867,
+        label: "Veiled Noble Topaz",
+        rarity: rarity.Rare,
+        colour: "orange",
+        icon: "inv_jewelcrafting_nobletopaz_03.jpg",
+        description: "+4 spell hit rating and +5 spell damage",
+    },
+    30564: {
+        id: 30564,
+        label: "Shining Fire Opal",
+        rarity: rarity.Epic,
+        colour: "orange",
+        icon: "inv_jewelcrafting_nobletopaz_03.jpg",
+        description: "+5 spell hit rating and +6 spell damage"
+    },
+    32221: {
+        id: 32221,
+        label: "Veiled Pyrestone",
+        rarity: rarity.Epic,
+        colour: "orange",
+        icon: "inv_jewelcrafting_pyrestone_02.jpg",
+        description: "+5 spell hit rating and +6 spell damage"
+    },
+
+    // Glinting (Hit Rating and Agility)
+    23100: {
+        id: 23100,
+        label: "Glinting Flame Spessarite",
+        rarity: rarity.Uncommon,
+        colour: "orange",
+        icon: "inv_misc_gem_flamespessarite_02.jpg",
+        description: "+3 hit rating and +3 agility"
+    },
+    24061: {
+        id: 24061,
+        label: "Glinting Noble Topaz",
+        rarity: rarity.Rare,
+        colour: "orange",
+        icon: "inv_jewelcrafting_nobletopaz_03.jpg",
+        description: "+4 hit rating and +4 agility",
+    },
+    30556: {
+        id: 30556,
+        label: "Glinting Fire Opal",
+        rarity: rarity.Epic,
+        colour: "orange",
+        icon: "inv_jewelcrafting_nobletopaz_03.jpg",
+        description: "+4 hit rating and +5 agility"
+    },
+    32220: {
+        id: 32220,
+        label: "Glinting Pyrestone",
+        rarity: rarity.Epic,
+        colour: "orange",
+        icon: "inv_jewelcrafting_pyrestone_02.jpg",
+        description: "+5 hit rating and +5 agility"
+    },
+
+    // Potent (Spell Crit Rating and Spell Damage)
+    23101: {
+        id: 23101,
+        label: "Potent Flame Spessarite",
+        rarity: rarity.Uncommon,
+        colour: "orange",
+        icon: "inv_misc_gem_flamespessarite_02.jpg",
+        description: "+3 spell crit rating and +4 spell damage"
+    },
+    24059: {
+        id: 24059,
+        label: "Potent Noble Topaz",
+        rarity: rarity.Rare,
+        colour: "orange",
+        icon: "inv_jewelcrafting_nobletopaz_03.jpg",
+        description: "+4 spell crit rating and +5 spell damage",
+    },
+    30588: {
+        id: 30588,
+        label: "Potent Fire Opal",
+        rarity: rarity.Epic,
+        colour: "orange",
+        icon: "inv_jewelcrafting_nobletopaz_03.jpg",
+        description: "+4 spell crit rating and +6 spell damage"
+    },
+    32218: {
+        id: 32218,
+        label: "Potent Pyrestone",
+        rarity: rarity.Epic,
+        colour: "orange",
+        icon: "inv_jewelcrafting_pyrestone_02.jpg",
+        description: "+5 spell crit rating and +6 spell damage"
+    },
+
+    // Wicked (Crit Rating and Attack Power)
+    31869: {
+        id: 31869,
+        label: "Wicked Flame Spessarite",
+        rarity: rarity.Uncommon,
+        colour: "orange",
+        icon: "inv_misc_gem_flamespessarite_02.jpg",
+        description: "+3 crit rating and +6 attack power"
+    },
+    31868: {
+        id: 31868,
+        label: "Wicked Noble Topaz",
+        rarity: rarity.Rare,
+        colour: "orange",
+        icon: "inv_jewelcrafting_nobletopaz_03.jpg",
+        description: "+4 crit rating and +8 attack power",
+    },
+    30582: {
+        id: 30582,
+        label: "Deadly Fire Opal",
+        rarity: rarity.Epic,
+        colour: "orange",
+        icon: "inv_jewelcrafting_nobletopaz_03.jpg",
+        description: "+5 crit rating and +8 attack power"
+    },
+    32222: {
+        id: 32222,
+        label: "Wicked Pyrestone",
+        rarity: rarity.Epic,
+        colour: "orange",
+        icon: "inv_jewelcrafting_pyrestone_02.jpg",
+        description: "+5 crit rating and +10 attack power"
+    },
+
+    // Luminous (Healing and Intellect)
+    23099: {
+        id: 23099,
+        label: "Luminous Flame Spessarite",
+        rarity: rarity.Uncommon,
+        colour: "orange",
+        icon: "inv_misc_gem_flamespessarite_02.jpg",
+        description: "+7 healing +3 spell damage and +3 intellect"
+    },
+    24060: {
+        id: 24060,
+        label: "Luminous Noble Topaz",
+        rarity: rarity.Rare,
+        colour: "orange",
+        icon: "inv_jewelcrafting_nobletopaz_03.jpg",
+        description: "+9 healing +3 spell damage and +4 intellect",
+    },
+    30547: {
+        id: 30547,
+        label: "Luminous Fire Opal",
+        rarity: rarity.Epic,
+        colour: "orange",
+        icon: "inv_jewelcrafting_nobletopaz_03.jpg",
+        description: "+11 healing +4 spell damage and +4 intellect"
+    },
+    32219: {
+        id: 32219,
+        label: "Luminous Pyrestone",
+        rarity: rarity.Epic,
+        colour: "orange",
+        icon: "inv_jewelcrafting_pyrestone_02.jpg",
+        description: "+11 healing +4 spell damage and +5 intellect"
+    },
+
+    // Inscribed (Strength and Crit)
+    23098: {
+        id: 23098,
+        label: "Inscribed Flame Spessarite",
+        rarity: rarity.Uncommon,
+        colour: "orange",
+        icon: "inv_misc_gem_flamespessarite_02.jpg",
+        description: "+3 strength and +3 crit rating"
+    },
+    24058: {
+        id: 24058,
+        label: "Inscribed Noble Topaz",
+        rarity: rarity.Rare,
+        colour: "orange",
+        icon: "inv_jewelcrafting_nobletopaz_03.jpg",
+        description: "+4 strength and +4 crit rating",
+    },
+    30584: {
+        id: 30584,
+        label: "Enscribed Fire Opal",
+        rarity: rarity.Epic,
+        colour: "orange",
+        icon: "inv_jewelcrafting_nobletopaz_03.jpg",
+        description: "+5 strength and +4 crit rating"
+    },
+    32217: {
+        id: 32217,
+        label: "Inscribed Pyrestone",
+        rarity: rarity.Epic,
+        colour: "orange",
+        icon: "inv_jewelcrafting_pyrestone_02.jpg",
+        description: "+5 strength and +5 crit rating"
+    },
+
+    // Reckless (Spell Haste and Spell Damage)
+    35316: {
+        id: 35316,
+        label: "Reckless Noble Topaz",
+        rarity: rarity.Rare,
+        colour: "orange",
+        icon: "inv_jewelcrafting_nobletopaz_03.jpg",
+        description: "+4 spell haste and +5 spell damage",
+    },
+    35760: {
+        id: 35760,
+        label: "Reckless Pyrestone",
+        rarity: rarity.Epic,
+        colour: "orange",
+        icon: "inv_jewelcrafting_pyrestone_02.jpg",
+        description: "+5 spell haste and +6 spell damage"
+    },
+
+    // Miscellaneous Orange Gems
+    30607: {
+        id: 30607,
+        label: "Splendid Fire Opal",
+        rarity: rarity.Epic,
+        colour: "orange",
+        icon: "inv_jewelcrafting_nobletopaz_03.jpg",
+        description: "+5 parry rating and +4 resilience"
+    },
+    30601: {
+        id: 30601,
+        label: "Beaming Fire Opal",
+        rarity: rarity.Epic,
+        colour: "orange",
+        icon: "inv_jewelcrafting_nobletopaz_03.jpg",
+        description: "+5 dodge rating and +4 resilience"
+    },
+    30565: {
+        id: 30565,
+        label: "Assassin's Fire Opal",
+        rarity: rarity.Epic,
+        colour: "orange",
+        icon: "inv_jewelcrafting_nobletopaz_03.jpg",
+        description: "+5 dodge rating and +6 crit rating"
+    },
+    30587: {
+        id: 30587,
+        label: "Champion's Fire Opal",
+        rarity: rarity.Epic,
+        colour: "orange",
+        icon: "inv_jewelcrafting_nobletopaz_03.jpg",
+        description: "+5 strength and +4 defense"
+    },
+    30575: {
+        id: 30575,
+        label: "Nimble Fire Opal",
+        rarity: rarity.Epic,
+        colour: "orange",
+        icon: "inv_jewelcrafting_nobletopaz_03.jpg",
+        description: "+5 dodge rating and +4 hit rating"
+    },
+    30558: {
+        id: 30558,
+        label: "Glimmering Fire Opal",
+        rarity: rarity.Epic,
+        colour: "orange",
+        icon: "inv_jewelcrafting_nobletopaz_03.jpg",
+        description: "+5 parry rating and +4 defense"
+    },
+    30591: {
+        id: 30591,
+        label: "Empowered Fire Opal",
+        rarity: rarity.Epic,
+        colour: "orange",
+        icon: "inv_jewelcrafting_nobletopaz_03.jpg",
+        description: "+8 attack power and +5 resilience"
+    },
+    30585: {
+        id: 30585,
+        label: "Glistening Fire Opal",
+        rarity: rarity.Epic,
+        colour: "orange",
+        icon: "inv_jewelcrafting_nobletopaz_03.jpg",
+        description: "+5 defense and +4 agility"
+    },
+    30604: {
+        id: 30604,
+        label: "Resplendent Fire Opal",
+        rarity: rarity.Epic,
+        colour: "orange",
+        icon: "inv_jewelcrafting_nobletopaz_03.jpg",
+        description: "+5 strength and +4 resilience"
+    },
+    30553: {
+        id: 30553,
+        label: "Pristine Fire Opal",
+        rarity: rarity.Epic,
+        colour: "orange",
+        icon: "inv_jewelcrafting_nobletopaz_03.jpg",
+        description: "+10 attack power and +4 hit rating"
+    },
+    30581: {
+        id: 30581,
+        label: "Durable Fire Opal",
+        rarity: rarity.Epic,
+        colour: "orange",
+        icon: "inv_jewelcrafting_nobletopaz_03.jpg",
+        description: "+11 healing +4 spell damage and +4 resilience"
+    },
+    30607: {
+        id: 30607,
+        label: "Stalwart Fire Opal",
+        rarity: rarity.Epic,
+        colour: "orange",
+        icon: "inv_jewelcrafting_nobletopaz_03.jpg",
+        description: "+5 defense and +4 dodge rating"
+    },
+    30593: {
+        id: 30593,
+        label: "Iridescent Fire Opal",
+        rarity: rarity.Epic,
+        colour: "orange",
+        icon: "inv_jewelcrafting_nobletopaz_03.jpg",
+        description: "+11 healing +4 spell damage and +4 spell crit"
+    },
+    30559: {
+        id: 30559,
+        label: "Etched Fire Opal",
+        rarity: rarity.Epic,
+        colour: "orange",
+        icon: "inv_jewelcrafting_nobletopaz_03.jpg",
+        description: "+5 strength and +4 hit rating"
+    },
+    30573: {
+        id: 30573,
+        label: "Mysterious Fire Opal",
+        rarity: rarity.Epic,
+        colour: "orange",
+        icon: "inv_jewelcrafting_nobletopaz_03.jpg",
+        description: "+6 spell damage and +5 spell penetration"
+    },
+    30551: {
+        id: 30551,
+        label: "Infused Fire Opal",
+        rarity: rarity.Epic,
+        colour: "orange",
+        icon: "inv_jewelcrafting_nobletopaz_03.jpg",
+        description: "+6 spell damage and +4 intellect"
+    },
+    32637: {
+        id: 32637,
+        label: "Unstable Citrine",
+        rarity: rarity.Rare,
+        colour: "orange",
+        icon: "inv_misc_gem_opal_01.jpg",
+        description: "+8 attack power and +4 crit rating"
+    },
+    32638: {
+        id: 32638,
+        label: "Unstable Topaz",
+        rarity: rarity.Rare,
+        colour: "orange",
+        icon: "inv_jewelcrafting_nobletopaz_02.jpg",
+        description: "+5 spell damage and +4 intellect"
+    },
+    38547: {
+        id: 38547,
+        label: "Inscribed Ornate Topaz",
+        rarity: rarity.Epic,
+        colour: "orange",
+        icon: "inv_misc_gem_opal_01.jpg",
+        description: "+10 attack power and +5 crit rating"
+    },
+    28363: {
+        id: 28363,
+        label: "Inscribed Ornate Topaz",
+        rarity: rarity.Epic,
+        colour: "orange",
+        icon: "inv_misc_gem_opal_01.jpg",
+        description: "+10 attack power and +5 crit rating"
+    },
+    28123: {
+        id: 28123,
+        label: "Potent Ornate Topaz",
+        rarity: rarity.Epic,
+        colour: "orange",
+        icon: "inv_misc_gem_opal_02.jpg",
+        description: "+6 spell damage and +5 spell crit rating"
+    },
+    38548: {
+        id: 38548,
+        label: "Potent Ornate Topaz",
+        rarity: rarity.Epic,
+        colour: "orange",
+        icon: "inv_misc_gem_opal_02.jpg",
+        description: "+6 spell damage and +5 spell crit rating"
+    },
+
+    // Metagems
+    32409: {
+        id: 32409,
+        label: "Relentless Earthstorm Diamond",
+        rarity: rarity.Rare,
+        colour: "meta",
+        icon: "inv_misc_gem_diamond_06.jpg",
+        description: "+12 agility and 3% increase crit damage"
+    },
+    25901: {
+        id: 25901,
+        label: "Insightful Earthstorm Diamond",
+        rarity: rarity.Rare,
+        colour: "meta",
+        icon: "inv_misc_gem_diamond_06.jpg",
+        description: "+12 intellect & chance to restore mana on cast"
+    },
+    25896: {
+        id: 25896,
+        label: "Powerful Earthstorm Diamond",
+        rarity: rarity.Rare,
+        colour: "meta",
+        icon: "inv_misc_gem_diamond_06.jpg",
+        description: "+18 stamina & 5% stun resist"
+    },
+    25897: {
+        id: 25897,
+        label: "Bracing Earthstorm Diamond",
+        rarity: rarity.Rare,
+        colour: "meta",
+        icon: "inv_misc_gem_diamond_06.jpg",
+        description: "+26 healing +9 spell damage and 2% reduced threat"
+    },
+    25898: {
+        id: 25898,
+        label: "Tenacious Earthstorm Diamond",
+        rarity: rarity.Rare,
+        colour: "meta",
+        icon: "inv_misc_gem_diamond_06.jpg",
+        description: "+12 defense rating & chance to restore health on it"
+    },
+    25899: {
+        id: 25899,
+        label: "Brutal Earthstorm Diamond",
+        rarity: rarity.Rare,
+        colour: "meta",
+        icon: "inv_misc_gem_diamond_06.jpg",
+        description: "+3 melee damage & chance to stun target"
+    },
+    35501: {
+        id: 35501,
+        label: "Eternal Earthstorm Diamond",
+        rarity: rarity.Rare,
+        colour: "meta",
+        icon: "inv_misc_gem_diamond_06.jpg",
+        description: "+12 defense rating & 10% shield block value"
+    },
+    32641: {
+        id: 32641,
+        label: "Imbued Unstable Diamond",
+        rarity: rarity.Rare,
+        colour: "meta",
+        icon: "inv_misc_gem_diamond_06.jpg",
+        description: "+14 spell damage & 5% stun resistance"
+    },
+    28556: {
+        id: 28556,
+        label: "Swift Windfire Diamond",
+        rarity: rarity.Rare,
+        colour: "meta",
+        icon: "inv_misc_gem_diamond_07.jpg",
+        description: "+20 attack power and minor run speed increase"
+    },
+    28557: {
+        id: 28557,
+        label: "Swift Starfire Diamond",
+        rarity: rarity.Rare,
+        colour: "meta",
+        icon: "inv_misc_gem_diamond_07.jpg",
+        description: "+12 spell damage and minor run speed increase"
+    },
+    25894: {
+        id: 25894,
+        label: "Swift Skyfire Diamond",
+        rarity: rarity.Rare,
+        colour: "meta",
+        icon: "inv_misc_gem_diamond_07.jpg",
+        description: "+24 attack power and minor run speed increase"
+    },
+    34220: {
+        id: 34220,
+        label: "Chaotic Skyfire Diamond",
+        rarity: rarity.Rare,
+        colour: "meta",
+        icon: "inv_misc_gem_diamond_07.jpg",
+        description: "+12 spell critical & 3% increased crit damage"
+    },
+    25893: {
+        id: 25893,
+        label: "Mystical Skyfire Diamond",
+        rarity: rarity.Rare,
+        colour: "meta",
+        icon: "inv_misc_gem_diamond_07.jpg",
+        description: "Chance to increase spell cast speed"
+    },
+    32410: {
+        id: 32410,
+        label: "Thundering Skyfire Diamond",
+        rarity: rarity.Rare,
+        colour: "meta",
+        icon: "inv_misc_gem_diamond_07.jpg",
+        description: "Chance to increase melee/ranged attack speed"
+    },
+    35503: {
+        id: 35503,
+        label: "Ember Skyfire Diamond",
+        rarity: rarity.Rare,
+        colour: "meta",
+        icon: "inv_misc_gem_diamond_07.jpg",
+        description: "+14 spell damage & +2% intellect"
+    },
+    25895: {
+        id: 25895,
+        label: "Enigmatic Skyfire Diamond",
+        rarity: rarity.Rare,
+        colour: "meta",
+        icon: "inv_misc_gem_diamond_07.jpg",
+        description: "+12 crit rating & 5% snare and root resist"
+    },
+    25890: {
+        id: 25890,
+        label: "Destructive Skyfire Diamond",
+        rarity: rarity.Rare,
+        colour: "meta",
+        icon: "inv_misc_gem_diamond_07.jpg",
+        description: "+14 spell crit rating and 1% spell reflect"
+    },
+    32640: {
+        id: 32640,
+        label: "Potent Unstable Diamond",
+        rarity: rarity.Rare,
+        colour: "meta",
+        icon: "inv_misc_gem_diamond_07.jpg",
+        description: "+24 attack power and 5% stun resistance"
+    },
 }

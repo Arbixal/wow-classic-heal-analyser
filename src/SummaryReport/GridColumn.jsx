@@ -1,4 +1,5 @@
 import {Component} from "react";
+import ReactTooltip from "react-tooltip";
 import { asPercentage } from "../utils";
 
 export class GridColumn extends Component {
@@ -57,13 +58,26 @@ export class GridColumn extends Component {
     }
 
     renderCell() {
-        const {data, field, cssClass} = this.props;
+        const {data, field, tooltipField, cssClass} = this.props;
 
         if (!this.isVisible()) {
             return null;
         }
 
-        return <td className={cssClass}>{this._cleanupValue(data[field])}</td>
+        if (tooltipField == null) {
+            return <td className={cssClass}>{this._cleanupValue(data[field])}</td>;
+        }
+
+        let tooltip = data[tooltipField];
+
+        return (
+        <td className={cssClass}>
+            <div data-tip>{this._cleanupValue(data[field])}</div>
+            {tooltipField && <ReactTooltip>
+                    <table>
+                    </table>
+                </ReactTooltip>}
+        </td>)
     }
 
     render() {

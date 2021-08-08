@@ -1,4 +1,4 @@
-import {offhandFrills} from "./data";
+import {gemList, offhandFrills} from "./data";
 import {removeDuplicates} from "./utils";
 
 export class WarcraftLogLoader {
@@ -106,6 +106,7 @@ export class WarcraftLogLoader {
                 playerInfo.agility = value.agility;
                 playerInfo.weaponEnchant = value.weaponEnchant;
                 playerInfo.enchants = value.enchants;
+                playerInfo.gems = value.gems;
             }
 
             this._loadedStatus.characterSummaries = true;
@@ -158,7 +159,7 @@ export class WarcraftLogLoader {
             this._loadCharacterCasts(playerid),
             this._loadCharacterBuffs(playerid),
             this._loadProtectionPots(playerid),
-            //this._loadCharacterDamageTaken(playerid),
+            this._loadCharacterDamageTaken(playerid),
         ])
         .then((_data) => {
             this._loadedStatus.character.details[playerid] = true;
@@ -249,7 +250,16 @@ export class WarcraftLogLoader {
         + "&sourceid=" + playerid)
         .then(response => response.json())
         .then(data => {
-            
+            data.entries.forEach((obj) => {
+                let character = this.Results.Characters[playerid];
+
+                if (!character) {
+                    return;
+                }
+
+                character.damageTaken = {...character.damageTaken, [obj.guid]: obj};
+            })
+
             this._loadedStatus.character.damageTaken[playerid] = true;
 
             resolve(this);
@@ -392,6 +402,32 @@ export class WarcraftLogLoader {
                     return enchant;
                 }, { permanentEnchants: [], weaponEnchant: {}});
 
+                let gems = obj.combatantInfo?.gear?.reduce((gems, gear) => {
+                    
+                    gear?.gems?.reduce((gems, gem) => {
+                        if (gems[gem.id]) {
+                            gems[gem.id].count++;
+                        }
+                        else {
+                            let gemDetails = gemList[gem.id];
+                            gems[gem.id] = {
+                                id: gem.id,
+                                itemLevel: gem.itemLevel,
+                                icon: gemDetails?.icon || gem.icon,
+                                rarity: gemDetails?.rarity,
+                                colour: gemDetails?.colour,
+                                label: gemDetails?.label,
+                                description: gemDetails?.description,
+                                count: 1
+                            };
+                        }
+
+                        return gems;
+                    }, gems);
+
+                    return gems;
+                }, {});
+
                 if (!acc[playerId]) {
                     acc[playerId] = {
                         id: playerId,
@@ -404,7 +440,8 @@ export class WarcraftLogLoader {
                         strength: obj.combatantInfo?.stats?.Strength?.max,
                         agility: obj.combatantInfo?.stats?.Agility?.max,
                         weaponEnchant: enchants?.weaponEnchant,
-                        enchants: enchants?.permanentEnchants
+                        enchants: enchants?.permanentEnchants,
+                        gems: gems
                     };
                 }
                 else {

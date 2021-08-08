@@ -24,8 +24,13 @@
     }
 
     td.enchants {
-        background-color: scale-color($class-color, $alpha: -75%);
+        //background-color: scale-color($class-color, $alpha: -75%);
         width: 65px;
+        text-align: center;
+    }
+
+    td.gems {
+        background-color: scale-color($class-color, $alpha: -75%);
         text-align: center;
     }
 
@@ -375,4 +380,20 @@ th.trash {
     img.spell_icon {
         filter: grayscale(100%);
     }
+}
+
+th.common {
+    color: #FFFFFF;
+}
+
+th.uncommon {
+    color: #1eff00;
+}
+
+th.rare {
+    color: #0070dd;
+}
+
+th.epic {
+    color: #a335ee;
 }

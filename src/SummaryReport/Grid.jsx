@@ -8,6 +8,7 @@ export class Grid extends Component {
         this.state = {
             collapsed: {
                 [GroupKeys.WorldBuffs]: true,
+                [GroupKeys.Gems]: true,
                 [GroupKeys.ProtPotions]: true,
                 [GroupKeys.Consumes]: true,
                 [GroupKeys.DispelsInterrupts]: true,
