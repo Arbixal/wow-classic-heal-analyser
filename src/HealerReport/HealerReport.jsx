@@ -1,8 +1,9 @@
 import {Component} from "react";
 import {FightReport} from "./FightReport";
 import {LogLoader} from "../warcraftLogLoader";
+import { withRouter } from "react-router-dom";
 
-export class HealerReport extends Component {
+class HealerReport extends Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -11,15 +12,19 @@ export class HealerReport extends Component {
             characters: {},
             pets: {},
             isLoaded: false,
-            reportId: props.reportId
+            //reportId: props.reportId
         }
     }
 
     componentDidMount() {
-        const { reportId } = this.state;
-        if (!reportId)
+        const { id } = this.props.match.params;
+        //const { reportId } = this.state;
+        if (!id)
             return;
 
+        this.setState({reportId: id});
+
+        LogLoader.setReport(id);
         LogLoader.getFights()
         .then(
             (result) => {
@@ -72,3 +77,5 @@ export class HealerReport extends Component {
         }
     }
 }
+
+export const HealerReportWithRouter = withRouter(HealerReport);

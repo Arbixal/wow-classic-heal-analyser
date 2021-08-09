@@ -57,6 +57,9 @@ export class WarcraftLogLoader {
 
                     this.Results.Characters[pet.petOwner].pets = [...(this.Results.Characters[pet.petOwner].pets || []),pet];
                 })
+                this.Results.title = res.title;
+                this.Results.startTimestamp = res.start;
+                this.Results.endTimestamp = res.end;
                 this.Results.startTime = res.fights[0].start_time;
                 this.Results.endTime = res.fights[res.fights.length-1].end_time;
 

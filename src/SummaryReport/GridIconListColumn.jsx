@@ -1,6 +1,4 @@
 import {Component} from "react";
-import {asPercentage} from "../utils";
-import ReactTooltip from "react-tooltip";
 
 export class GridIconListColumn extends Component {
     constructor(props) {
@@ -60,7 +58,6 @@ export class GridIconListColumn extends Component {
         return (
         <th className={cssClass}>
             <img className="spell_icon" src={icon} alt={label} data-tip={label} />
-            <ReactTooltip />
         </th>);
     }
 
@@ -71,7 +68,7 @@ export class GridIconListColumn extends Component {
             return null;
         }
 
-        return <td className={cssClass}>{this._cleanupValue(data[field])}<ReactTooltip /></td>
+        return <td className={cssClass}>{this._cleanupValue(data[field])}</td>
     }
 
     render() {

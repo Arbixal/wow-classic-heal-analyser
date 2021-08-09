@@ -7,7 +7,6 @@ export class Grid extends Component {
         super(props);
         this.state = {
             collapsed: {
-                [GroupKeys.WorldBuffs]: true,
                 [GroupKeys.Gems]: true,
                 [GroupKeys.ProtPotions]: true,
                 [GroupKeys.Consumes]: true,

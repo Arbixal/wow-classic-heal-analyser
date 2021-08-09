@@ -4053,8 +4053,8 @@ export const gemList = {
         icon: "inv_jewelcrafting_nobletopaz_03.jpg",
         description: "+11 healing +4 spell damage and +4 resilience"
     },
-    30607: {
-        id: 30607,
+    30554: {
+        id: 30554,
         label: "Stalwart Fire Opal",
         rarity: rarity.Epic,
         colour: "orange",

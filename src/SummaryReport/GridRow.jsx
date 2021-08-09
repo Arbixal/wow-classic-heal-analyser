@@ -55,37 +55,6 @@ export class GridRow extends Component {
         characterData[DataPoints.GemsEpic] = this._getGemCount(character, rarity.Epic);
         characterData[DataPoints.GemsList] = this._getGemList(character);
 
-        /* characterData[DataPoints.WorldBuffNef] = this._getWorldBuffUptime(character, worldBuffs.DragonHead);
-        characterData[DataPoints.WorldBuffRend] = this._getWorldBuffUptime(character, worldBuffs.Rend);
-        characterData[DataPoints.WorldBuffHoH] = this._getWorldBuffUptime(character, worldBuffs.HoH);
-        characterData[DataPoints.WorldBuffSF] = this._getWorldBuffUptime(character, worldBuffs.Songflower);
-        characterData[DataPoints.WorldBuffMM] = this._getWorldBuffUptime(character, worldBuffs.Moldar);
-        characterData[DataPoints.WorldBuffFF] = this._getWorldBuffUptime(character, worldBuffs.Fengus);
-        characterData[DataPoints.WorldBuffSS] = this._getWorldBuffUptime(character, worldBuffs.Slipkik);
-        characterData[DataPoints.WorldBuffDMF] = this._getWorldBuffUptime(character, worldBuffs.DMF);
-
-        let buffCount = countNonNull(characterData[DataPoints.WorldBuffNef], 
-            characterData[DataPoints.WorldBuffRend], 
-            characterData[DataPoints.WorldBuffHoH],
-            characterData[DataPoints.WorldBuffSF],
-            characterData[DataPoints.WorldBuffMM],
-            characterData[DataPoints.WorldBuffFF],
-            characterData[DataPoints.WorldBuffSS],
-            characterData[DataPoints.WorldBuffDMF]);
-
-        characterData[DataPoints.WorldBuffCount] = buffCount + "/8";
-
-        let buffUptime = sumNonNull(characterData[DataPoints.WorldBuffNef], 
-            characterData[DataPoints.WorldBuffRend], 
-            characterData[DataPoints.WorldBuffHoH],
-            characterData[DataPoints.WorldBuffSF],
-            characterData[DataPoints.WorldBuffMM],
-            characterData[DataPoints.WorldBuffFF],
-            characterData[DataPoints.WorldBuffSS],
-            characterData[DataPoints.WorldBuffDMF]);
-
-        characterData[DataPoints.WorldBuffUptime] = buffUptime / buffCount; */
-
         characterData[DataPoints.ElixirsFood] = this._getBuffs(character, foodBuffs);
         characterData[DataPoints.ElixirsFlasks] = this._getBuffs(character, flaskBuffs);
         characterData[DataPoints.ElixirsBattle] = this._getBuffs(character, battleElixirBuffs);
@@ -158,9 +127,6 @@ export class GridRow extends Component {
         characterData[DataPoints.ConsumesManaGem] = this._getCastCount(character, 10058, 10057, 10052, 5405, 27103);
         characterData[DataPoints.ConsumesNightmareSeed] = this._getCastCount(character, 28726);
 
-        /* characterData[DataPoints.ConsumesPetris] = this._getCastCount(character, 17624);
-        characterData[DataPoints.ConsumesElixirOfPoisonResistance] = this._getCastCount(character, 26677);
-        characterData[DataPoints.ConsumesOilOfImmolation] = this._getCastCount(character, 11350); */
         characterData[DataPoints.ConsumesDrumsBattle] = this._getCastCount(character, 35476, 351355);
         characterData[DataPoints.ConsumesDrumsWar] = this._getCastCount(character, 35475, 351360);
         characterData[DataPoints.ConsumesDrumsRestoration] = this._getCastCount(character, 35478, 351358);
@@ -270,84 +236,8 @@ export class GridRow extends Component {
             characterData[DataPoints.InterruptRogueKick],
             characterData[DataPoints.InterruptShamanEarthShock],
             characterData[DataPoints.InterruptWarriorPummel]);
-
-        /* characterData[DataPoints.DamageWhirlwind] = this._getDamageDone(character, 1680,15589,26686,26084);
-        characterData[DataPoints.DamageRainOfFire] = this._getDamageDone(character, 5740,11678,11677,6219,28794);
-        characterData[DataPoints.DamageFireShield] = this._getDamageDone(character, 8317,8316,2947,11770,11771);
-        characterData[DataPoints.DamageFlames] = this._getDamageDone(character, 7897,12796,19628,29115,15643);
-        characterData[DataPoints.DamageCleave] = this._getDamageDone(character, 797,3433,3434,3435,5532,11427,15284,15496,15579,15584,15613,15622,15623,15663,16044,17685,19632,19642,20571,20605,20666,20677,20684,20691,22540,26350,27794,19983);
-        characterData[DataPoints.DamageBlizzard] = this._getDamageDone(character, 26607);
-        characterData[DataPoints.DamageExplode] = this._getDamageDone(character, 26059,25699);
-        characterData[DataPoints.DamageImpale] = this._getDamageDone(character, 26025);
-        characterData[DataPoints.DamageBomb] = this._getDamageDone(character, 8858,9143,22334);
-        characterData[DataPoints.DamageThunderclap] = this._getDamageDone(character, 26554,8732);
-        characterData[DataPoints.DamageShadowStorm] = this._getDamageDone(character, 26546,26555);
-        characterData[DataPoints.DamageDarkGlare] = this._getDamageDone(character, 41936,41937,26029);
-        characterData[DataPoints.DamageFalling] = this._getDamageDone(character, 3);
-        characterData[DataPoints.DamageVoidZone] = this._getDamageDone(character, 28863,28865);
-        characterData[DataPoints.DamagePoisonCloud] = this._getDamageDone(character, 28240,28241);
-        characterData[DataPoints.DamageFrostBreath] = this._getDamageDone(character, 3129,28524);
-        characterData[DataPoints.DamageEruption] = this._getDamageDone(character, 29371);
-        characterData[DataPoints.DamageBroodPowerBronze] = this._getDamageDone(character, 22311);
-        characterData[DataPoints.DamageVoidBlast] = this._getDamageDone(character, 27812);
-        characterData[DataPoints.DamageTailSweep] = this._getDamageDone(character, 15847,25653);
-        characterData[DataPoints.DamagePositiveCharge] = this._getDamageDone(character, 28062);
-        characterData[DataPoints.DamageNegativeCharge] = this._getDamageDone(character, 28085);
-        characterData[DataPoints.DamageDisruptingShout] = this._getDamageDone(character, 29107);
-        characterData[DataPoints.DamageChill] = this._getDamageDone(character, 28547);
-        characterData[DataPoints.DamageDarkBlast] = this._getDamageDone(character, 28457);
-        characterData[DataPoints.DamageWailOfSouls] = this._getDamageDone(character, 28459);
-
-        characterData[DataPoints.DamageTooltip] = this._getDamageTakenTable(character);
-
-        characterData[DataPoints.DamageTotal] = sumNonNull(characterData[DataPoints.DamageWhirlwind],
-            characterData[DataPoints.DamageRainOfFire],
-            characterData[DataPoints.DamageFireShield],
-            characterData[DataPoints.DamageFlames],
-            characterData[DataPoints.DamageCleave],
-            characterData[DataPoints.DamageBlizzard],
-            characterData[DataPoints.DamageExplode],
-            characterData[DataPoints.DamageImpale],
-            characterData[DataPoints.DamageBomb],
-            characterData[DataPoints.DamageThunderclap],
-            characterData[DataPoints.DamageShadowStorm],
-            characterData[DataPoints.DamageDarkGlare],
-            characterData[DataPoints.DamageFalling],
-            characterData[DataPoints.DamageVoidZone],
-            characterData[DataPoints.DamagePoisonCloud],
-            characterData[DataPoints.DamageFrostBreath],
-            characterData[DataPoints.DamageEruption],
-            characterData[DataPoints.DamageBroodPowerBronze],
-            characterData[DataPoints.DamageVoidBlast],
-            characterData[DataPoints.DamageTailSweep],
-            characterData[DataPoints.DamagePositiveCharge],
-            characterData[DataPoints.DamageNegativeCharge],
-            characterData[DataPoints.DamageDisruptingShout],
-            characterData[DataPoints.DamageChill],
-            characterData[DataPoints.DamageDarkBlast],
-            characterData[DataPoints.DamageWailOfSouls]); */
         
         return characterData;
-    }
-
-    _getWorldBuffUptime(character, buffId) {
-        const {raidTime} = this.state;
-        const {buffs, raidStartTime} = character;
-
-        if (!buffs) {
-            return null;
-        }
-
-        let characterBuff = buffs[buffId];
-        if (!characterBuff) {
-            return null;
-        }
-
-        let buffEnd = characterBuff.bands[characterBuff.bands.length-1].endTime;
-        let buffStart = raidStartTime;
-        let uptime = (buffEnd - buffStart)/raidTime;
-
-        return uptime;
     }
 
     _getBuffs(character, options) {
@@ -424,24 +314,6 @@ export class GridRow extends Component {
             return gemIcons;
         }, []);
     }
-
-    /*_getCastCount(spellId) {
-        const {casts} = this.state;
-
-        let count = 0;
-        for (let i = 0; i < casts.length; ++i) {
-            let cast = casts[i];
-            if (cast.ability.guid.toString() === spellId) {
-                count++;
-            }
-        }
-        
-        if (count === 0) {
-            return " ";
-        }
-
-        return count;
-    }*/
 
     _getProtectionPotionCount(character, spellId) {
         const {casts, protectionPotions, fights} = character;
@@ -536,17 +408,6 @@ export class GridRow extends Component {
 
     _getCastCount(character, ...spellIds) {
         return this._getRestrictedCastCount(character, null, spellIds);
-        /* const {casts} = character;
-
-        let castCount = 0;
-        for (let i = 0; i < casts.length; ++i) {
-            let cast = casts[i];
-            if (spellIds.includes(cast.ability.guid)) {
-                castCount++;
-            }
-        }
-
-        return castCount; */
     }
 
     _getDamageDone(character, ...spellIds) {

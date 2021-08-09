@@ -7,8 +7,11 @@ import {GridColumnGroup} from "./GridColumnGroup";
 import {GridColumn} from "./GridColumn";
 import {GridIconColumn} from "./GridIconColumn";
 import { GridIconListColumn } from "./GridIconListColumn";
+import ReactTooltip from "react-tooltip";
+import { withRouter, Link } from "react-router-dom";
+import { format, intervalToDuration} from "date-fns";
 
-export class SummaryReport extends Component {
+class SummaryReport extends Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -16,7 +19,8 @@ export class SummaryReport extends Component {
             fights: [],
             characters: {},
             isLoaded: false,
-            reportId: props.reportId,
+            reportDetails: {},
+            //reportId: props.reportId,
             context: {},
         }
         this._logLoader = null;
@@ -24,11 +28,14 @@ export class SummaryReport extends Component {
     }
 
     componentDidMount() {
-        const { reportId } = this.state;
-        if (!reportId)
+        const { id } = this.props.match.params;
+        //const { reportId } = this.state;
+        if (!id)
             return;
 
-        this._logLoader = WarcraftLogLoader.Load(reportId);
+        this.setState({reportId: id});
+
+        this._logLoader = WarcraftLogLoader.Load(id);
         this._logLoader.loadFights()
             .then(x => x.loadCharacterSummary())
             .then(x => x.loadDeaths())
@@ -39,6 +46,11 @@ export class SummaryReport extends Component {
                     characters: report.Characters,
                     fights: report.Fights,
                     raidTime: report.endTime - report.startTime,
+                    reportDetails: {
+                        title: report.title,
+                        startTime: new Date(report.startTimestamp),
+                        endTime: new Date(report.endTimestamp)
+                    }
                 })
             })
             .catch((error) => {
@@ -68,7 +80,7 @@ export class SummaryReport extends Component {
     }
 
     render() {
-        const { error, isLoaded, characters, classFilter, roleFilter} = this.state;
+        const { error, isLoaded, characters, classFilter, roleFilter, reportId, reportDetails} = this.state;
         const classSortOrder = { Warrior: 0, Rogue: 1, Hunter: 2, Mage: 3, Warlock: 4, Priest: 5, Shaman: 6, Paladin: 7, Druid: 8 };
         if (error) {
             return <div>Error: {error.message}</div>;
@@ -87,8 +99,13 @@ export class SummaryReport extends Component {
 
                      return aValue.name.localeCompare(bValue.name);
                     });
+            
+            let duration = intervalToDuration({start: reportDetails.startTime, end: reportDetails.endTime});
             return (
                 <>
+                    <h3 class="report_title">{reportDetails.title}</h3>
+                    <div><strong>Report ID:</strong> {reportId} (<Link to="/">Load a different report</Link>)</div>
+                    <div>{format(reportDetails.startTime, "EEE do MMM HH:mm:ss")} - {format(reportDetails.endTime, "HH:mm:ss")} ({duration.hours}:{duration.minutes.toString().padStart(2, "0")}:{duration.seconds.toString().padStart(2, "0")})</div>
                     <div className="nav_bar">
                         <div className={"class_nav Tank" + (roleFilter === "tank" ? " selected" : "")} onClick={() => this.handleRole("tank")}><img className="spell_icon" src="https://wow.zamimg.com/images/wow/icons/tiny/role_tank.gif" alt="Tanks" />Tanks</div>
                         <div className={"class_nav DPS" + (roleFilter === "dps" ? " selected" : "")} onClick={() => this.handleRole("dps")}><img className="spell_icon" src="https://wow.zamimg.com/images/wow/icons/tiny/role_dps.gif" alt="DPS" />DPS</div>
@@ -266,12 +283,6 @@ export class SummaryReport extends Component {
                                         cssClass="protection_potion arcane" 
                                         visibility={(ctx) => ctx.collapsed === false} />
                         </GridColumnGroup>
-                        {/* <GridColumnGroup id={GroupKeys.Damage} label="Damage" cssClass="even-colgroup">
-                            <GridColumn field={DataPoints.DamageTotal}
-                                        tooltipField={DataPoints.DamageTooltip}
-                                        label="Tracked"
-                                        cssClass="name" />
-                        </GridColumnGroup> */}
                         <GridColumnGroup id={GroupKeys.Consumes} label="Consumes" cssClass="odd-colgroup">
                             <GridIconColumn field={DataPoints.ConsumesPotions} 
                                             label="Potions" 
@@ -602,45 +613,12 @@ export class SummaryReport extends Component {
                                             visibility={(ctx) => ctx.classFilter === "Warrior"} />
                             
                         </GridColumnGroup>
-                        
-                        {/* <GridColumnGroup id={GroupKeys.Abilities} label="Abilities" cssClass="odd-colgroup">
-                            <GridColumn field={DataPoints.Enchants} 
-                                        cssClass="name" />
-                        </GridColumnGroup> */}
                     </Grid>
-
-                    {/* <table>
-                        <thead>
-                            <tr className="grid_header">
-                                {this.gridDefinition.map((colGroup) => {
-                                    return colGroup.GetHeader(context);
-                                })}
-                            </tr>
-                            <tr className="grid_subheader">
-                                {this.gridDefinition.map((colGroup) => {
-                                    return colGroup.GetSubHeader(context);
-                                })}
-                            </tr>
-                        </thead>
-                        <tbody>
-                            {Object.entries(characters)
-                                   .filter(([_key,character]) => character.type !== "NPC" && character.type !== "Pet")
-                                   .sort(([_aKey,aValue], [_bKey,bValue]) => {
-                                        let classCompare = classSortOrder[aValue.type] - classSortOrder[bValue.type];
-
-                                        if (classCompare !== 0)
-                                            return classCompare;
-
-                                        return aValue.name.localeCompare(bValue.name);
-                                   })
-                                   .map(([key, character], row) => {
-                                       return (
-                                <SummaryRow key={key} character={character} row={row} logLoader={this._logLoader} gridDefinition={this.gridDefinition} context={this.state.context} />
-                            )})}
-                        </tbody>
-                    </table> */}
+                    <ReactTooltip />
                 </>
             )
         }
     }
 }
+
+export const SummaryReportWithRouter = withRouter(SummaryReport);

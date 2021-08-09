@@ -1,4 +1,5 @@
 import {Component, Children, cloneElement, isValidElement} from "react";
+import ReactTooltip from "react-tooltip";
 import { ExpandCollapseButton } from "./ExpandCollapseButton";
 
 export class GridColumnGroup extends Component {
@@ -23,6 +24,12 @@ export class GridColumnGroup extends Component {
               roleFilter: this.props.context?.roleFilter,
           })
         }
+
+        ReactTooltip.rebuild();
+    }
+
+    componentDidMount() {
+        ReactTooltip.rebuild();
     }
 
     _getVisibleChildCount() {

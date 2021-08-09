@@ -1,11 +1,12 @@
 import {Component} from "react";
+import { withRouter } from "react-router-dom";
 //import {FightReport} from "./FightReport";
 import {LogLoader} from "../warcraftLogLoader";
 import { AncestralFortitudeReport } from "./AncestralFortitudeReport";
 import { CooldownReport } from "./CooldownReport";
 import { TotemReport } from "./TotemReport";
 
-export class ShamanReport extends Component {
+class ShamanReport extends Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -14,17 +15,21 @@ export class ShamanReport extends Component {
             characters: {},
             pets: {},
             isLoaded: false,
-            reportId: props.reportId,
+            //reportId: props.reportId,
             startTime: null,
             endTime: null
         }
     }
 
     componentDidMount() {
-        const { reportId } = this.state;
-        if (!reportId)
+        const { id } = this.props.match.params;
+        //const { reportId } = this.state;
+        if (!id)
             return;
 
+        this.setState({reportId: id});
+
+        LogLoader.setReport(id);
         LogLoader.getFights()
         .then(
             (result) => {
@@ -71,3 +76,5 @@ export class ShamanReport extends Component {
         }
     }
 }
+
+export const ShamanReportWithRouter = withRouter(ShamanReport);
