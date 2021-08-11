@@ -68,7 +68,7 @@ export class GridColumn extends Component {
             return <td className={cssClass}>{this._cleanupValue(data[field])}</td>;
         }
 
-        let tooltip = data[tooltipField];
+        //let tooltip = data[tooltipField];
 
         return (
         <td className={cssClass}>

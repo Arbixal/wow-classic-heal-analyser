@@ -76,7 +76,7 @@ export class GridColumnGroup extends Component {
 
         let visibleChildren = this._getVisibleChildCount();
 
-        if (visibleChildren == 0) {
+        if (visibleChildren === 0) {
             return null;
         }
 

@@ -39,7 +39,7 @@ export class Grid extends Component {
     }
 
     render() {
-        const {data, id, children} = this.props;
+        const {data, children} = this.props;
 
         return (
         <table>

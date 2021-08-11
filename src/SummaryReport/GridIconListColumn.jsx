@@ -10,8 +10,6 @@ export class GridIconListColumn extends Component {
     }
 
     _cleanupValue(value) {
-        const {format} = this.props;
-
         if (!value) {
             return ' ';
         }
@@ -23,7 +21,7 @@ export class GridIconListColumn extends Component {
         return (
             <>
             { value.map(x => (
-                <img className="spell_icon" src={"https://assets.rpglogs.com/img/warcraft/abilities/" + x.icon} alt={x.name} data-tip={x.name} />
+                <span class="icon_count" data-tip={x.name} data-count={x.count}><img className="spell_icon" src={"https://assets.rpglogs.com/img/warcraft/abilities/" + x.icon} alt={x.name} /></span>
             ))}
             </>
         );
@@ -51,14 +49,18 @@ export class GridIconListColumn extends Component {
         }
 
         let icon = icon_url;
-        if (icon == null) {
+        if (icon == null && icon_name) {
             icon = "https://assets.rpglogs.com/img/warcraft/abilities/" + icon_name;
         }
 
+        let header = label;
+
+        if (icon) {
+            header = (<img className="spell_icon" src={icon} alt={label} data-tip={label} />);
+        }
+
         return (
-        <th className={cssClass}>
-            <img className="spell_icon" src={icon} alt={label} data-tip={label} />
-        </th>);
+        <th className={cssClass}>{header}</th>);
     }
 
     renderCell() {

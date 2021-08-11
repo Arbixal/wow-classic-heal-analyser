@@ -64,7 +64,7 @@ class SummaryReport extends Component {
     handleRole(roleName) {
         this.setState((state,_props) => {
             return {
-                roleFilter: state.roleFilter == roleName ? null : roleName,
+                roleFilter: state.roleFilter === roleName ? null : roleName,
                 classFilter: null
             }
         });
@@ -73,7 +73,7 @@ class SummaryReport extends Component {
     handleClass(className) {
         this.setState((state,_props) => {
             return {
-                classFilter: state.classFilter == className ? null : className,
+                classFilter: state.classFilter === className ? null : className,
                 roleFilter: null
             }
         });
@@ -612,6 +612,20 @@ class SummaryReport extends Component {
                                             cssClass="center"
                                             visibility={(ctx) => ctx.classFilter === "Warrior"} />
                             
+                        </GridColumnGroup>
+                        <GridColumnGroup id={GroupKeys.Cooldowns} label="Cooldowns" cssClass="odd-colgroup">
+{/*                             <GridIconListColumn field={DataPoints.Cooldowns}
+                                        label=" "
+                                        cssClass="center" /> */}
+                            <GridIconListColumn field={DataPoints.CooldownsRacial}
+                                        label=" "
+                                        cssClass="cooldowns center" />
+                            <GridIconListColumn field={DataPoints.CooldownsAbility}
+                                        label=" "
+                                        cssClass="cooldowns center" />
+                            <GridIconListColumn field={DataPoints.CooldownsItems}
+                                        label=" "
+                                        cssClass="cooldowns center" />
                         </GridColumnGroup>
                     </Grid>
                     <ReactTooltip />

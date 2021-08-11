@@ -1,7 +1,7 @@
 import {Component, Children, isValidElement, cloneElement} from "react";
-import {battleElixirBuffs, flaskBuffs, foodBuffs, guardianElixirBuffs, protectionPotionEnum, rarity, scrollBuffs, seasonBuffs, tempWeaponEnchants, worldBuffs} from "../data";
+import {battleElixirBuffs, cooldownList, flaskBuffs, foodBuffs, guardianElixirBuffs, protectionPotionEnum, rarity, scrollBuffs, seasonBuffs, tempWeaponEnchants} from "../data";
 import {DataPoints, emptyData} from "./GridContexts";
-import {countNonNull, sumNonNull} from "../utils";
+import {sumNonNull} from "../utils";
 
 export class GridRow extends Component {
     constructor(props) {
@@ -115,8 +115,8 @@ export class GridRow extends Component {
         characterData[DataPoints.ConsumesShrouding] = this._getCastCount(character, 28548);
         characterData[DataPoints.ConsumesFelRegeneration] = this._getCastCount(character, 38908);
         characterData[DataPoints.ConsumesHeroic] = this._getCastCount(character, 28506);
-        characterData[DataPoints.ConsumesDestruction] = this._getCastCount(character, 28508);
-        characterData[DataPoints.ConsumesHaste] = this._getCastCount(character, 28507);
+        characterData[DataPoints.ConsumesDestruction] = this._getCastCount(character, 28508); // Check for buff on combat start
+        characterData[DataPoints.ConsumesHaste] = this._getCastCount(character, 28507); // Check for buff on combat start
         characterData[DataPoints.ConsumesFelMana] = this._getCastCount(character, 38929);
         characterData[DataPoints.ConsumesIronshield] = this._getCastCount(character, 17540, 28515);
 
@@ -236,6 +236,11 @@ export class GridRow extends Component {
             characterData[DataPoints.InterruptRogueKick],
             characterData[DataPoints.InterruptShamanEarthShock],
             characterData[DataPoints.InterruptWarriorPummel]);
+
+        characterData[DataPoints.Cooldowns] = this._getCooldownList(character);
+        characterData[DataPoints.CooldownsRacial] = this._getCooldownList(character, "Racial");
+        characterData[DataPoints.CooldownsAbility] = this._getCooldownList(character, "Ability");
+        characterData[DataPoints.CooldownsItems] = this._getCooldownList(character, "Trinket");
         
         return characterData;
     }
@@ -266,7 +271,7 @@ export class GridRow extends Component {
 
         let activeBuffs = [];
         for (let i = 0; i < options.length; ++i) {
-            if (weaponEnchant.id == options[i].id) {
+            if (weaponEnchant.id === options[i].id) {
                 activeBuffs.push(options[i]);
             }
         }
@@ -308,11 +313,41 @@ export class GridRow extends Component {
             gemIcons.push({
                 id: gem.id,
                 name: gem.count + " x " + gem.label + " (" + gem.description + ")",
-                icon: gem.icon
+                icon: gem.icon,
+                count: gem.count,
             })
 
             return gemIcons;
         }, []);
+    }
+
+    _getCooldownList(character, type = null) {
+        const {casts} = character;
+
+        if (!casts) {
+            return [];
+        }
+
+        let cooldowns = casts.reduce((cds, cast) => {
+            let cooldownInfo = cooldownList[cast.ability.guid];
+            if (cooldownInfo && (type == null || type === cooldownInfo.type)) {
+                if (cds[cast.ability.guid]) {
+                    cds[cast.ability.guid].count++;
+                }
+                else {
+                    cds[cast.ability.guid] = {
+                        id: cast.ability.guid,
+                        name: cooldownInfo.name,
+                        icon: cooldownInfo.icon,
+                        count: 1
+                    }
+                }
+            }
+
+            return cds;
+        }, {});
+
+        return Object.values(cooldowns);
     }
 
     _getProtectionPotionCount(character, spellId) {

@@ -11,6 +11,7 @@ export const GroupKeys = {
     Abilities: "Abilities",
     Damage: "Damage",
     DispelsInterrupts: "DispelsInterrupts",
+    Cooldowns: "Cooldowns",
 }
 
 export const DataPoints = {
@@ -119,6 +120,10 @@ export const DataPoints = {
     InterruptRogueKick: "InterruptRogueKick",
     InterruptShamanEarthShock: "InterruptShamanEarthShock",
     InterruptWarriorPummel: "InterruptWarriorPummel",
+    Cooldowns: "Cooldowns",
+    CooldownsRacial: "CooldownsRacial",
+    CooldownsAbility: "CooldownsAbility",
+    CooldownsItems: "CooldownsItems",
 };
 
 export const emptyData = {
@@ -228,4 +233,8 @@ export const emptyData = {
     [DataPoints.InterruptRogueKick]: " ",
     [DataPoints.InterruptShamanEarthShock]: " ",
     [DataPoints.InterruptWarriorPummel]: " ",
+    [DataPoints.Cooldowns]: [],
+    [DataPoints.CooldownsRacial]: [],
+    [DataPoints.CooldownsAbility]: [],
+    [DataPoints.CooldownsItems]: [],
 }

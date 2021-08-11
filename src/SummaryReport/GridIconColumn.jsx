@@ -21,7 +21,7 @@ export class GridIconColumn extends Component {
             return value;
         }
 
-        if (value == 0) {
+        if (value === 0) {
             return ' ';
         }
 
