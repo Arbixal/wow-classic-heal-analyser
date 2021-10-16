@@ -7,6 +7,7 @@ import {GridColumnGroup} from "./GridColumnGroup";
 import {GridColumn} from "./GridColumn";
 import {GridIconColumn} from "./GridIconColumn";
 import { GridIconListColumn } from "./GridIconListColumn";
+import { BossNavItem } from "./BossNavItem";
 import ReactTooltip from "react-tooltip";
 import { withRouter, Link } from "react-router-dom";
 import { format, intervalToDuration} from "date-fns";
@@ -80,7 +81,7 @@ class SummaryReport extends Component {
     }
 
     render() {
-        const { error, isLoaded, characters, classFilter, roleFilter, reportId, reportDetails} = this.state;
+        const { error, isLoaded, characters, classFilter, roleFilter, reportId, reportDetails, fights} = this.state;
         const classSortOrder = { Warrior: 0, Rogue: 1, Hunter: 2, Mage: 3, Warlock: 4, Priest: 5, Shaman: 6, Paladin: 7, Druid: 8 };
         if (error) {
             return <div>Error: {error.message}</div>;
@@ -106,6 +107,33 @@ class SummaryReport extends Component {
                     <h3 class="report_title">{reportDetails.title}</h3>
                     <div><strong>Report ID:</strong> {reportId} (<Link to="/">Load a different report</Link>)</div>
                     <div>{format(reportDetails.startTime, "EEE do MMM HH:mm:ss")} - {format(reportDetails.endTime, "HH:mm:ss")} ({duration.hours}:{duration.minutes.toString().padStart(2, "0")}:{duration.seconds.toString().padStart(2, "0")})</div>
+                    <div className="boss_nav">
+                    <div className="boss_tile">
+                        <div className="boss_fight">
+                            <img src="https://assets.rpglogs.com/img/warcraft/icons/Boss.jpg" alt="Trash" />
+                            <div className="boss_name">Trash</div>
+                        </div>
+                    </div>
+                        {fights.filter(fight => fight.boss > 0)
+                               .reduce((accum, fight) => {
+                                    let found = false;
+                                    for (let i = 0; i < accum.length; ++i) {
+                                        if (accum[i].id === fight.boss) {
+                                            accum[i].fights.push(fight);
+                                            found = true;
+                                        }
+                                    }
+
+                                    if (!found) {
+                                        accum.push({ id: fight.boss, fights: [fight] });
+                                    }
+
+                                    return accum;
+                               },[])
+                               .map(boss => (
+                            <BossNavItem key={boss.id} boss={boss} />
+                        ))}
+                    </div>
                     <div className="nav_bar">
                         <div className={"class_nav Tank" + (roleFilter === "tank" ? " selected" : "")} onClick={() => this.handleRole("tank")}><img className="spell_icon" src="https://wow.zamimg.com/images/wow/icons/tiny/role_tank.gif" alt="Tanks" />Tanks</div>
                         <div className={"class_nav DPS" + (roleFilter === "dps" ? " selected" : "")} onClick={() => this.handleRole("dps")}><img className="spell_icon" src="https://wow.zamimg.com/images/wow/icons/tiny/role_dps.gif" alt="DPS" />DPS</div>

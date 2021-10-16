@@ -255,6 +255,67 @@ td.right {
     padding-right: 5px;
 }
 
+div.boss_nav {
+    margin-top: 10px;
+    display: flex;
+
+    div.separator {
+        &:after {
+            margin: 5px;
+            font-size: 20px;
+            line-height: 40px;
+            border-right: solid 1px #333333;
+            content: ' '
+        }
+    }
+
+    div.boss_fight {
+        width: 128px;
+        border-radius: 5px;
+        border: solid 1px #333333;
+        cursor: pointer;
+        text-align: center;
+
+        img {
+            max-width: 128px;
+        }
+
+        &:hover, &.selected {
+            background-color: #333333;
+            color: #FFFFFF;
+        }
+
+        div.boss_name {
+            text-align: center;
+            height: 34px;
+        }
+
+        &:first-child {
+            min-height: 111px;
+        }
+
+        &:not(:first-child) {
+            div.boss_percentage {
+                margin-top: 5px;
+                margin-bottom: 5px;
+            }
+        }
+    }
+
+    div.boss_percentage {
+        margin-top: 5px;
+        height: 5px;
+        
+        &.kill {
+            background-color: #429c5c;
+        }
+
+        &.wipe {
+            background-color: #fd4646;
+        }
+    }
+}
+
 @mixin class_nav($class_color) {
     &.class_nav {
         padding: 5px;
