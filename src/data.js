@@ -3811,9 +3811,19 @@ export const tempWeaponEnchants = [
         icon: "inv_potion_101.jpg"
     },
     {
+        id: 2712,
+        name: "Fel Sharpening Stone",
+        icon: "inv_stone_sharpeningstone_06.jpg"
+    },
+    {
         id: 2713,
         name: "Adamantite Sharpening Stone",
         icon: "inv_stone_sharpeningstone_07.jpg"
+    },
+    {
+        id: 2954,
+        name: "Fel Weightstone",
+        icon: "inv_stone_weightstone_06.jpg"
     },
     {
         id: 2955,

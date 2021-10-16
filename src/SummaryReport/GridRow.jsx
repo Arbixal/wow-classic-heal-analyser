@@ -263,7 +263,7 @@ export class GridRow extends Component {
     }
 
     _getWeaponImbue(character, options) {
-        const {weaponEnchant} = character;
+        const {weaponEnchant, offhandEnchant} = character;
 
         if (!weaponEnchant) {
             return [];
@@ -274,6 +274,10 @@ export class GridRow extends Component {
             if (weaponEnchant.id === options[i].id) {
                 activeBuffs.push(options[i]);
             }
+            if (offhandEnchant.id === options[i].id) {
+                activeBuffs.push(options[i]);
+            }
+            
         }
 
         return activeBuffs;

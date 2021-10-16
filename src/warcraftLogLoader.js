@@ -108,6 +108,7 @@ export class WarcraftLogLoader {
                 playerInfo.strength = value.strength;
                 playerInfo.agility = value.agility;
                 playerInfo.weaponEnchant = value.weaponEnchant;
+                playerInfo.offhandEnchant = value.offhandEnchant;
                 playerInfo.enchants = value.enchants;
                 playerInfo.gems = value.gems;
             }
@@ -402,8 +403,13 @@ export class WarcraftLogLoader {
                         enchant.weaponEnchant.name = gear.temporaryEnchantName;
                     }
 
+                    if (gear.slot === 16) {
+                        enchant.offhandEnchant.id = gear.temporaryEnchant;
+                        enchant.offhandEnchant.name = gear.temporaryEnchantName;
+                    }
+
                     return enchant;
-                }, { permanentEnchants: [], weaponEnchant: {}});
+                }, { permanentEnchants: [], weaponEnchant: {}, offhandEnchant: {}});
 
                 let gems = obj.combatantInfo?.gear?.reduce((gems, gear) => {
                     
@@ -443,6 +449,7 @@ export class WarcraftLogLoader {
                         strength: obj.combatantInfo?.stats?.Strength?.max,
                         agility: obj.combatantInfo?.stats?.Agility?.max,
                         weaponEnchant: enchants?.weaponEnchant,
+                        offhandEnchant: enchants?.offhandEnchant,
                         enchants: enchants?.permanentEnchants,
                         gems: gems
                     };
@@ -451,6 +458,9 @@ export class WarcraftLogLoader {
                     acc[playerId].roles.push(role);
                     if (!acc[playerId].weaponEnchant) {
                         acc[playerId].weaponEnchant = enchants?.weaponEnchant;
+                    }
+                    if (!acc[playerId].offhandEnchant) {
+                        acc[playerId].offhandEnchant = enchants?.offhandEnchant;
                     }
                     acc[playerId].enchants = removeDuplicates([...(acc[playerId].enchants || []), ...(enchants?.permanentEnchants || [])], x => x.key);
 
