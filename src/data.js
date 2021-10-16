@@ -5786,4 +5786,3 @@ export const gemList = {
         description: "+14 attack power"
     },
 }
-}
