@@ -2629,12 +2629,6 @@ export const cooldownList = {
         icon: "inv_jewelry_necklace_13.jpg",
         cooldown: 120000
     },
-    '24268': {
-        name: "Mar'li's Eye",
-        type: "Trinket",
-        icon: "inv_zulgurubtrinket.jpg",
-        cooldown: 180000
-    },
     '25891': {
         name: "Earthstrike",
         type: "Trinket",
@@ -4124,7 +4118,6 @@ export const gemList = {
         icon: "inv_jewelcrafting_crimsonspinel_02.jpg",
         description: "+10 parry rating"
     },
-
     /* #endregion Red Gems */
 
     // Solid (Stamina)
