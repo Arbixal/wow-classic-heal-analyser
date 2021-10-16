@@ -5708,4 +5708,79 @@ export const gemList = {
         icon: "inv_misc_gem_diamond_07.jpg",
         description: "+24 attack power and 5% stun resistance"
     },
+
+    // PvP
+    28118: {
+        id: 28118,
+        label: "Runed Ornate Ruby",
+        rarity: rarity.Epic,
+        colour: "red",
+        icon: "inv_misc_gem_bloodstone_01.jpg",
+        description: "+12 spell damage"
+    },
+    28362: {
+        id: 28362,
+        label: "Bold Ornate Ruby",
+        rarity: rarity.Epic,
+        colour: "red",
+        icon: "inv_misc_gem_ruby_02.jpg",
+        description: "+20 attack power"
+    },
+    28119: {
+        id: 28119,
+        label: "Smooth Ornate Dawnstone",
+        rarity: rarity.Epic,
+        colour: "yellow",
+        icon: "inv_misc_gem_topaz_01.jpg",
+        description: "+10 crit rating"
+    },
+    27679: {
+        id: 27679,
+        label: "Sublime Mystic Dawnstone",
+        rarity: rarity.Epic,
+        colour: "yellow",
+        icon: "inv_misc_gem_topaz_01.jpg",
+        description: "+10 resilience rating"
+    },
+    28120: {
+        id: 28120,
+        label: "Gleaming Ornate Dawnstone",
+        rarity: rarity.Epic,
+        colour: "yellow",
+        icon: "inv_misc_gem_topaz_02.jpg",
+        description: "+10 spell crit rating"
+    },
+    27812: {
+        id: 27812,
+        label: "Stark Blood Garnet",
+        rarity: rarity.Rare,
+        colour: "red",
+        icon: "inv_misc_gem_ruby_01.jpg",
+        description: "+8 spell damage"
+    },
+    27777: {
+        id: 27777,
+        label: "Stark Blood Garnet",
+        rarity: rarity.Rare,
+        colour: "red",
+        icon: "inv_misc_gem_ruby_01.jpg",
+        description: "+8 spell damage"
+    },
+    28361: {
+        id: 28361,
+        label: "Mighty Blood Garnet",
+        rarity: rarity.Rare,
+        colour: "red",
+        icon: "inv_misc_gem_bloodstone_02.jpg",
+        description: "+14 attack power"
+    },
+    28360: {
+        id: 28360,
+        label: "Mighty Blood Garnet",
+        rarity: rarity.Rare,
+        colour: "red",
+        icon: "inv_misc_gem_bloodstone_02.jpg",
+        description: "+14 attack power"
+    },
+}
 }
