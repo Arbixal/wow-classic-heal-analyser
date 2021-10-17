@@ -6,6 +6,8 @@ body {
   background-color: #000000;
   color: #ffffff;
   font-size: 13px;
+  margin-top: 0;
+  padding-left: 10px;
 }
 
 td.center {
@@ -14,4 +16,34 @@ td.center {
 
 td.right {
   text-align: right;
+}
+
+.nav-bar {
+  height: 58px;
+}
+
+.nav-bar h1 {
+  margin: 0;
+  line-height: 58px;
+}
+
+.bug-report {
+  height: 38px;
+  vertical-align: middle;
+  float: right;
+  line-height: 38px;
+  padding: 10px;
+}
+
+.bug-report:hover {
+  background-color: #333333;
+}
+
+.bug-report > a {
+  text-decoration: none;
+}
+
+.bug-report img {
+  width: 14px;
+  height: 14px;
 }
