@@ -1,4 +1,7 @@
+import { useParams } from "react-router";
+import { NavLink } from "react-router-dom";
 import { bosses } from "../data"
+import {msToTime} from "../utils"
 
 function getPercentageBar(fight) {
     if (fight.kill) {
@@ -10,6 +13,7 @@ function getPercentageBar(fight) {
 
 export function BossNavItem (props) {
     let {boss} = props;
+    let {id} = useParams();
     let bossInfo = bosses[boss.id];
     if (!bossInfo) {
         bossInfo = {
@@ -38,15 +42,20 @@ export function BossNavItem (props) {
     return (
         <>
         <div className="boss_tile">
-            <div className="boss_fight">
-                <img src={bossInfo.logo} alt={bossInfo.name} />
-                <div className="boss_name">{bossInfo.name}</div>
-                {lastFightTile}
-            </div>
-            {otherFights.map(fight => (
+            <NavLink to={"/" + id + "/" + lastFight.id} activeClassName="selected">
                 <div className="boss_fight">
-                    {getPercentageBar(fight)}{/* <div className={"boss_percentage wipe"} style={{ width: (fight.fightPercentage/100).toString() + "%"}}></div> */}
+                    <img src={bossInfo.logo} alt={bossInfo.name} />
+                    <div className="boss_name">{bossInfo.name}</div>
+                    {lastFightTile}
                 </div>
+            </NavLink>
+            {otherFights.map(fight => (
+                <NavLink to={"/" + id + "/" + fight.id} activeClassName="selected">
+                    <div className="boss_fight">
+                        {msToTime(fight.end_time - fight.start_time)}
+                        {getPercentageBar(fight)}{/* <div className={"boss_percentage wipe"} style={{ width: (fight.fightPercentage/100).toString() + "%"}}></div> */}
+                    </div>
+                </NavLink>
             ))}
         </div>
         </>

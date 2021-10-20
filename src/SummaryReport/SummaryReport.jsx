@@ -1,5 +1,6 @@
 import "./SummaryReport.scss";
 import {Component} from "react";
+import { NavLink } from "react-router-dom";
 import {WarcraftLogLoader} from "../warcraftLogLoader";
 import {GroupKeys, DataPoints} from "./GridContexts";
 import {Grid} from "./Grid";
@@ -12,6 +13,72 @@ import ReactTooltip from "react-tooltip";
 import { withRouter, Link } from "react-router-dom";
 import { format, intervalToDuration} from "date-fns";
 
+const roles = {
+    'tank': {
+        slug: 'tank',
+        name: 'Tank',
+        icon: 'https://wow.zamimg.com/images/wow/icons/tiny/role_tank.gif',
+    },
+    'dps': {
+        slug: 'dps',
+        name: 'DPS',
+        icon: 'https://wow.zamimg.com/images/wow/icons/tiny/role_dps.gif',
+    },
+    'healer': {
+        slug: 'healer',
+        name: 'Healer',
+        icon: 'https://wow.zamimg.com/images/wow/icons/tiny/role_healer.gif',
+    }
+};
+
+const classes = {
+    'warrior': {
+        slug: 'warrior',
+        name: 'Warrior',
+        icon: 'https://assets.rpglogs.com/img/warcraft/abilities/inv_sword_27.jpg',
+    },
+    'rogue': {
+        slug: 'rogue',
+        name: 'Rogue',
+        icon: 'https://assets.rpglogs.com/img/warcraft/abilities/INV_ThrowingKnife_04.jpg',
+    },
+    'hunter': {
+        slug: 'hunter',
+        name: 'Hunter',
+        icon: 'https://assets.rpglogs.com/img/warcraft/abilities/INV_Weapon_Bow_07.jpg',
+    },
+    'mage': {
+        slug: 'mage',
+        name: 'Mage',
+        icon: 'https://assets.rpglogs.com/img/warcraft/abilities/INV_Staff_13.jpg',
+    },
+    'warlock': {
+        slug: 'warlock',
+        name: 'Warlock',
+        icon: 'https://assets.rpglogs.com/img/warcraft/abilities/Spell_Nature_Drowsy.jpg',
+    },
+    'priest': {
+        slug: 'priest',
+        name: 'Priest',
+        icon: 'https://assets.rpglogs.com/img/warcraft/abilities/INV_Staff_30.jpg',
+    },
+    'paladin': {
+        slug: 'paladin',
+        name: 'Paladin',
+        icon: 'https://wow.zamimg.com/images/wow/icons/medium/class_paladin.jpg',
+    },
+    'shaman': {
+        slug: 'shaman',
+        name: 'Shaman',
+        icon: 'https://assets.rpglogs.com/img/warcraft/abilities/inv_jewelry_talisman_04.jpg',
+    },
+    'druid': {
+        slug: 'druid',
+        name: 'Druid',
+        icon: 'https://assets.rpglogs.com/img/warcraft/abilities/Ability_Druid_Maul.jpg',
+    },
+}
+
 class SummaryReport extends Component {
     constructor(props) {
         super(props);
@@ -21,20 +88,19 @@ class SummaryReport extends Component {
             characters: {},
             isLoaded: false,
             reportDetails: {},
-            //reportId: props.reportId,
             context: {},
+            selectedFight: -1,
         }
         this._logLoader = null;
 
     }
 
     componentDidMount() {
-        const { id } = this.props.match.params;
-        //const { reportId } = this.state;
+        const { id, fight } = this.props.match.params;
         if (!id)
             return;
 
-        this.setState({reportId: id});
+        this.setState({reportId: id, selectedFight: fight ?? -1});
 
         this._logLoader = WarcraftLogLoader.Load(id);
         this._logLoader.loadFights()
@@ -62,26 +128,22 @@ class SummaryReport extends Component {
             });
     }
 
-    handleRole(roleName) {
-        this.setState((state,_props) => {
-            return {
-                roleFilter: state.roleFilter === roleName ? null : roleName,
-                classFilter: null
-            }
-        });
-    }
-
-    handleClass(className) {
-        this.setState((state,_props) => {
-            return {
-                classFilter: state.classFilter === className ? null : className,
-                roleFilter: null
-            }
-        });
-    }
-
     render() {
-        const { error, isLoaded, characters, classFilter, roleFilter, reportId, reportDetails, fights} = this.state;
+        const { error, isLoaded, characters, reportId, selectedFight, reportDetails, fights} = this.state;
+        let roleFilter = null;
+        let classFilter = null;
+        const { filter } = this.props.match.params;
+
+        if (roles[filter]) {
+            classFilter = null;
+            roleFilter = filter;
+        }
+
+        if (classes[filter]) {
+            classFilter = classes[filter].name;
+            roleFilter = null;
+        }
+        
         const classSortOrder = { Warrior: 0, Rogue: 1, Hunter: 2, Mage: 3, Warlock: 4, Priest: 5, Shaman: 6, Paladin: 7, Druid: 8 };
         if (error) {
             return <div>Error: {error.message}</div>;
@@ -109,10 +171,20 @@ class SummaryReport extends Component {
                     <div>{format(reportDetails.startTime, "EEE do MMM HH:mm:ss")} - {format(reportDetails.endTime, "HH:mm:ss")} ({duration.hours}:{duration.minutes.toString().padStart(2, "0")}:{duration.seconds.toString().padStart(2, "0")})</div>
                     <div className="boss_nav">
                     <div className="boss_tile">
-                        <div className="boss_fight">
-                            <img src="https://assets.rpglogs.com/img/warcraft/icons/Boss.jpg" alt="Trash" />
-                            <div className="boss_name">Trash</div>
-                        </div>
+                        <NavLink to={"/" + reportId}>
+                            <div className="boss_fight">
+                                <img src="https://wow.zamimg.com/images/wow/journal/ui-ej-boss-default.png" alt="Summary" />
+                                <div className="boss_name">Summary</div>
+                            </div>
+                        </NavLink>
+                    </div>
+                    <div className="boss_tile">
+                        <NavLink to={"/" + reportId + "/0"} activeClassName="selected">
+                            <div className="boss_fight">
+                                <img src="https://wow.zamimg.com/images/wow/journal/ui-ej-boss-timmy-the-cruel.png" alt="Trash" />
+                                <div className="boss_name">Trash</div>
+                            </div>
+                        </NavLink>
                     </div>
                         {fights.filter(fight => fight.boss > 0)
                                .reduce((accum, fight) => {
@@ -135,19 +207,11 @@ class SummaryReport extends Component {
                         ))}
                     </div>
                     <div className="nav_bar">
-                        <div className={"class_nav Tank" + (roleFilter === "tank" ? " selected" : "")} onClick={() => this.handleRole("tank")}><img className="spell_icon" src="https://wow.zamimg.com/images/wow/icons/tiny/role_tank.gif" alt="Tanks" />Tanks</div>
-                        <div className={"class_nav DPS" + (roleFilter === "dps" ? " selected" : "")} onClick={() => this.handleRole("dps")}><img className="spell_icon" src="https://wow.zamimg.com/images/wow/icons/tiny/role_dps.gif" alt="DPS" />DPS</div>
-                        <div className={"class_nav Healer" + (roleFilter === "healer" ? " selected" : "")} onClick={() => this.handleRole("healer")}><img className="spell_icon" src="https://wow.zamimg.com/images/wow/icons/tiny/role_healer.gif" alt="Healers" />Healers</div>
+                        <NavLink to={"/" + reportId + "/" + selectedFight} activeClassName="selected"><div className={"class_nav All"}><img className="spell_icon" src="https://assets.rpglogs.com/img/warcraft/abilities/inv_misc_questionmark.jpg" alt="All" />All</div></NavLink>
                         <div className="separator"></div>
-                        <div className={"class_nav Warrior" + (classFilter === "Warrior" ? " selected" : "")} onClick={() => this.handleClass("Warrior")}><img className="spell_icon" src="https://assets.rpglogs.com/img/warcraft/abilities/inv_sword_27.jpg" alt="Warrior" />Warrior</div>
-                        <div className={"class_nav Rogue" + (classFilter === "Rogue" ? " selected" : "")} onClick={() => this.handleClass("Rogue")}><img className="spell_icon" src="https://assets.rpglogs.com/img/warcraft/abilities/INV_ThrowingKnife_04.jpg" alt="Rogue" />Rogue</div>
-                        <div className={"class_nav Hunter" + (classFilter === "Hunter" ? " selected" : "")} onClick={() => this.handleClass("Hunter")}><img className="spell_icon" src="https://assets.rpglogs.com/img/warcraft/abilities/INV_Weapon_Bow_07.jpg" alt="Hunter" />Hunter</div>
-                        <div className={"class_nav Mage" + (classFilter === "Mage" ? " selected" : "")} onClick={() => this.handleClass("Mage")}><img className="spell_icon" src="https://assets.rpglogs.com/img/warcraft/abilities/INV_Staff_13.jpg" alt="Mage" />Mage</div>
-                        <div className={"class_nav Warlock" + (classFilter === "Warlock" ? " selected" : "")} onClick={() => this.handleClass("Warlock")}><img className="spell_icon" src="https://assets.rpglogs.com/img/warcraft/abilities/Spell_Nature_Drowsy.jpg" alt="Warlock" />Warlock</div>
-                        <div className={"class_nav Priest" + (classFilter === "Priest" ? " selected" : "")} onClick={() => this.handleClass("Priest")}><img className="spell_icon" src="https://assets.rpglogs.com/img/warcraft/abilities/INV_Staff_30.jpg" alt="Priest" />Priest</div>
-                        <div className={"class_nav Paladin" + (classFilter === "Paladin" ? " selected" : "")} onClick={() => this.handleClass("Paladin")}><img className="spell_icon" src="https://wow.zamimg.com/images/wow/icons/medium/class_paladin.jpg" alt="Paladin" />Paladin</div>
-                        <div className={"class_nav Shaman" + (classFilter === "Shaman" ? " selected" : "")} onClick={() => this.handleClass("Shaman")}><img className="spell_icon" src="https://assets.rpglogs.com/img/warcraft/abilities/inv_jewelry_talisman_04.jpg" alt="Shaman" />Shaman</div>
-                        <div className={"class_nav Druid" + (classFilter === "Druid" ? " selected" : "")} onClick={() => this.handleClass("Druid")}><img className="spell_icon" src="https://assets.rpglogs.com/img/warcraft/abilities/Ability_Druid_Maul.jpg" alt="Druid" />Druid</div>
+                        {Object.values(roles).map(role => <NavLink to={"/" + reportId + "/" + selectedFight + "/" + role.slug} activeClassName="selected"><div className={"class_nav " + role.name}><img className="spell_icon" src={role.icon} alt={role.name} />{role.name}</div></NavLink>)}
+                        <div className="separator"></div>
+                        {Object.values(classes).map(role => <NavLink to={"/" + reportId + "/" + selectedFight + "/" + role.slug} activeClassName="selected"><div className={"class_nav " + role.name}><img className="spell_icon" src={role.icon} alt={role.name} />{role.name}</div></NavLink>)}
                     </div>
 
                     <Grid data={data} logLoader={this._logLoader} classFilter={classFilter} roleFilter={roleFilter}>
