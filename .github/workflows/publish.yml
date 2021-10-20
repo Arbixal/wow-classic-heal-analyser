@@ -1,0 +1,55 @@
+# This workflow will do a clean install of node dependencies, cache/restore them, build the source code and run tests across different versions of node
+# For more information see: https://help.github.com/actions/language-and-framework-guides/using-nodejs-with-github-actions
+
+name: Node.js CI
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [14.x]
+        # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Use Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v2
+      with:
+        node-version: ${{ matrix.node-version }}
+        cache: 'npm'
+    - run: npm ci
+    - run: npm run build --if-present
+
+
+  # You may pin to the exact commit or the version.
+  # uses: tagus/git-deploy@c7de901f0c7d498fefa2dbddf99290a5b3015550
+    - uses: tagus/git-deploy@v0.3.2
+      with:
+        # The ssh url of the target repository.
+        repository: git@github.com:Arbixal/Arbixal.github.io.git
+        # The path to the directory containing the changes to deploy.
+        changes: build
+        # SSH key used to push to the registry. The SSH key is configured with the local git config, enabling this action ro run authenticated git commands.
+
+        ssh_key: ${{ secrets.REPO_DEPLOY_KEY }}
+        # Known hosts to run ssh commands against.
+        # ssh_known_hosts: # optional
+        # A name for the git user creating the git commit.
+        name: Arbixal
+        # An email for the git user creating the git commit.
+        email: arbixal@hotmail.com
+        # The remote branch to push the new commit to (defaults to master)
+        # branch: # optional
+        # The commit message that should be used with the commit (defaults to a standard format)
+        # message: # optional
+        # Whether to remove files from the repo not present in the given changes
+        # clean_repo: # optional
