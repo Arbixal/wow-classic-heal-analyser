@@ -13,7 +13,7 @@ function getPercentageBar(fight) {
 
 export function BossNavItem (props) {
     let {boss} = props;
-    let {id} = useParams();
+    let {id, filter} = useParams();
     let bossInfo = bosses[boss.id];
     if (!bossInfo) {
         bossInfo = {
@@ -25,24 +25,17 @@ export function BossNavItem (props) {
     let lastFight = boss.fights[boss.fights.length - 1];
 
     let lastFightTile = getPercentageBar(lastFight);
-/*     if (lastFight.kill) {
-        lastFightTile = <div className={"boss_percentage kill"}></div>
-    }
-    else {
-        lastFightTile = <div className={"boss_percentage wipe"} style={{ width: (lastFight.fightPercentage/100).toString() + "%"}}></div>
-    } */
+    const filterSuffix = filter ? "/" + filter : "";
 
     let otherFights = [];
     for (let i = boss.fights.length - 2; i >= 0; --i) {
         otherFights.push(boss.fights[i]);
     }
 
-    
-
     return (
         <>
         <div className="boss_tile">
-            <NavLink to={"/" + id + "/" + lastFight.id} activeClassName="selected">
+            <NavLink to={"/" + id + "/" + lastFight.id + filterSuffix} activeClassName="selected">
                 <div className="boss_fight">
                     <img src={bossInfo.logo} alt={bossInfo.name} />
                     <div className="boss_name">{bossInfo.name}</div>
@@ -50,7 +43,7 @@ export function BossNavItem (props) {
                 </div>
             </NavLink>
             {otherFights.map(fight => (
-                <NavLink to={"/" + id + "/" + fight.id} activeClassName="selected">
+                <NavLink key={fight.id} to={"/" + id + "/" + fight.id + filterSuffix} activeClassName="selected">
                     <div className="boss_fight">
                         {msToTime(fight.end_time - fight.start_time)}
                         {getPercentageBar(fight)}{/* <div className={"boss_percentage wipe"} style={{ width: (fight.fightPercentage/100).toString() + "%"}}></div> */}

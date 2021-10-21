@@ -6242,81 +6242,81 @@ export const bosses = {
     100001: {
         id: 100001,
         name: "Hellfire Ramparts",
-        logo: "https://assets.rpglogs.com/img/warcraft/bosses/100001-icon.jpg"
+        logo: "https://wow.zamimg.com/images/wow/journal/ui-ej-boss-vazruden.png"
     },
     100002: {
         id: 100002,
         name: "Blood Furnace",
-        logo: "https://assets.rpglogs.com/img/warcraft/bosses/100002-icon.jpg"
+        logo: "https://wow.zamimg.com/images/wow/journal/ui-ej-boss-kelidan-the-breaker.png"
     },
     100003: {
         id: 100003,
         name: "Shattered Halls",
-        logo: "https://assets.rpglogs.com/img/warcraft/bosses/100003-icon.jpg"
+        logo: "https://wow.zamimg.com/images/wow/journal/ui-ej-boss-kargath-bladefist.png"
     },
     100004: {
         id: 100004,
         name: "Slave Pens",
-        logo: "https://assets.rpglogs.com/img/warcraft/bosses/100004-icon.jpg"
+        logo: "https://wow.zamimg.com/images/wow/journal/ui-ej-boss-quagmirran.png"
     },
     100005: {
         id: 100005,
         name: "Underbog",
-        logo: "https://assets.rpglogs.com/img/warcraft/bosses/100005-icon.jpg"
+        logo: "https://wow.zamimg.com/images/wow/journal/ui-ej-boss-the-black-stalker.png"
     },
     100006: {
         id: 100006,
         name: "Steamvault",
-        logo: "https://assets.rpglogs.com/img/warcraft/bosses/100006-icon.jpg"
+        logo: "https://wow.zamimg.com/images/wow/journal/ui-ej-boss-warlord-kalithresh.png"
     },
     100007: {
         id: 100007,
         name: "Mana-Tombs",
-        logo: "https://assets.rpglogs.com/img/warcraft/bosses/100007-icon.jpg"
+        logo: "https://wow.zamimg.com/images/wow/journal/ui-ej-boss-nexus-prince-shaffar.png"
     },
     100008: {
         id: 100008,
         name: "Auchenai Crypts",
-        logo: "https://assets.rpglogs.com/img/warcraft/bosses/100008-icon.jpg"
+        logo: "https://wow.zamimg.com/images/wow/journal/ui-ej-boss-exarch-maladaar.png"
     },
     100009: {
         id: 100009,
         name: "Sethekk Halls",
-        logo: "https://assets.rpglogs.com/img/warcraft/bosses/100009-icon.jpg"
+        logo: "https://wow.zamimg.com/images/wow/journal/ui-ej-boss-talon-king-ikiss.png"
     },
     100010: {
         id: 100010,
         name: "Shadow Labyrinth",
-        logo: "https://assets.rpglogs.com/img/warcraft/bosses/100010-icon.jpg"
+        logo: "https://wow.zamimg.com/images/wow/journal/ui-ej-boss-murmur.png"
     },
     100011: {
         id: 100011,
         name: "Old Hillsbrad",
-        logo: "https://assets.rpglogs.com/img/warcraft/bosses/100011-icon.jpg"
+        logo: "https://wow.zamimg.com/images/wow/journal/ui-ej-boss-epoch-hunter.png"
     },
     100012: {
         id: 100012,
         name: "Black Morass",
-        logo: "https://assets.rpglogs.com/img/warcraft/bosses/100012-icon.jpg"
+        logo: "https://wow.zamimg.com/images/wow/journal/ui-ej-boss-aeonus.png"
     },
     100013: {
         id: 100013,
         name: "Botanica",
-        logo: "https://assets.rpglogs.com/img/warcraft/bosses/100013-icon.jpg"
+        logo: "https://wow.zamimg.com/images/wow/journal/ui-ej-boss-warp-splinter.png"
     },
     100014: {
         id: 100014,
         name: "Mechanar",
-        logo: "https://assets.rpglogs.com/img/warcraft/bosses/100014-icon.jpg"
+        logo: "https://wow.zamimg.com/images/wow/journal/ui-ej-boss-pathaleon-the-calculator.png"
     },
     100015: {
         id: 100015,
         name: "Arcatraz",
-        logo: "https://assets.rpglogs.com/img/warcraft/bosses/100015-icon.jpg"
+        logo: "https://wow.zamimg.com/images/wow/journal/ui-ej-boss-harbinger-skyriss.png"
     },
     100016: {
         id: 100016,
         name: "Magister's Terrace",
-        logo: "https://assets.rpglogs.com/img/warcraft/bosses/100016-icon.jpg"
+        logo: "https://wow.zamimg.com/images/wow/journal/ui-ej-boss-kaelthas-sunstrider.png"
     },
 }

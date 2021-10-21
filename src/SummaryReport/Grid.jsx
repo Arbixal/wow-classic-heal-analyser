@@ -39,7 +39,7 @@ export class Grid extends Component {
     }
 
     render() {
-        const {data, children} = this.props;
+        const {data, children, fightId} = this.props;
 
         return (
         <table>
@@ -65,7 +65,7 @@ export class Grid extends Component {
             </thead>
             <tbody>
                 {data.map((obj, idx) => (
-                <GridRow key={obj.id} character={obj} row={idx} logLoader={this._logLoader} context={this.state} >
+                <GridRow key={obj.id} character={obj} row={idx} logLoader={this._logLoader} context={this.state} fightId={fightId} >
                     {children}
                 </GridRow>
                 ))}

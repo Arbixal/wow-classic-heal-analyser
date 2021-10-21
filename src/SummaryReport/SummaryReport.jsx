@@ -95,19 +95,36 @@ class SummaryReport extends Component {
 
     }
 
+    _getResults(selectedFight) {
+        let report = this._logLoader.getResults(selectedFight);
+        this.setState({
+            isLoaded: true,
+            characters: report.Characters,
+            fights: report.Fights,
+            raidTime: report.endTime - report.startTime,
+            reportDetails: {
+                title: report.title,
+                startTime: new Date(report.startTimestamp),
+                endTime: new Date(report.endTimestamp)
+            }
+        })
+    }
+
     componentDidMount() {
-        const { id, fight } = this.props.match.params;
+        const { id, fightId } = this.props.match.params;
         if (!id)
             return;
 
-        this.setState({reportId: id, selectedFight: fight ?? -1});
+        let selectedFight = isNaN(parseInt(fightId)) ? -1 : parseInt(fightId);
+
+        this.setState({reportId: id, selectedFight: selectedFight});
 
         this._logLoader = WarcraftLogLoader.Load(id);
         this._logLoader.loadFights()
             .then(x => x.loadCharacterSummary())
             .then(x => x.loadDeaths())
             .then(x => {
-                let report = x.getResults();
+                let report = x.getResults(selectedFight);
                 this.setState({
                     isLoaded: true,
                     characters: report.Characters,
@@ -128,11 +145,22 @@ class SummaryReport extends Component {
             });
     }
 
+    componentDidUpdate(prevProps) {
+        if (this.props.match !== prevProps.match) {
+            const { fightId } = this.props.match.params;
+            let selectedFight = isNaN(parseInt(fightId)) ? -1 : parseInt(fightId);
+
+            this._getResults(selectedFight);
+        }
+    }
+
     render() {
-        const { error, isLoaded, characters, reportId, selectedFight, reportDetails, fights} = this.state;
+        const { error, isLoaded, characters, reportId, reportDetails, fights} = this.state;
         let roleFilter = null;
         let classFilter = null;
-        const { filter } = this.props.match.params;
+        const { fightId, filter } = this.props.match.params;
+
+        let selectedFight = isNaN(parseInt(fightId)) ? -1 : parseInt(fightId);
 
         if (roles[filter]) {
             classFilter = null;
@@ -143,6 +171,8 @@ class SummaryReport extends Component {
             classFilter = classes[filter].name;
             roleFilter = null;
         }
+
+        const filterSuffix = filter ? "/" + filter : "";
         
         const classSortOrder = { Warrior: 0, Rogue: 1, Hunter: 2, Mage: 3, Warlock: 4, Priest: 5, Shaman: 6, Paladin: 7, Druid: 8 };
         if (error) {
@@ -166,12 +196,12 @@ class SummaryReport extends Component {
             let duration = intervalToDuration({start: reportDetails.startTime, end: reportDetails.endTime});
             return (
                 <>
-                    <h3 class="report_title">{reportDetails.title}</h3>
+                    <h3 className="report_title">{reportDetails.title}</h3>
                     <div><strong>Report ID:</strong> {reportId} (<Link to="/">Load a different report</Link>)</div>
                     <div>{format(reportDetails.startTime, "EEE do MMM HH:mm:ss")} - {format(reportDetails.endTime, "HH:mm:ss")} ({duration.hours}:{duration.minutes.toString().padStart(2, "0")}:{duration.seconds.toString().padStart(2, "0")})</div>
                     <div className="boss_nav">
                     <div className="boss_tile">
-                        <NavLink to={"/" + reportId}>
+                        <NavLink to={"/" + reportId + (filterSuffix ? "/-1" + filterSuffix : "")}>
                             <div className="boss_fight">
                                 <img src="https://wow.zamimg.com/images/wow/journal/ui-ej-boss-default.png" alt="Summary" />
                                 <div className="boss_name">Summary</div>
@@ -179,7 +209,7 @@ class SummaryReport extends Component {
                         </NavLink>
                     </div>
                     <div className="boss_tile">
-                        <NavLink to={"/" + reportId + "/0"} activeClassName="selected">
+                        <NavLink to={"/" + reportId + "/0" + filterSuffix} activeClassName="selected">
                             <div className="boss_fight">
                                 <img src="https://wow.zamimg.com/images/wow/journal/ui-ej-boss-timmy-the-cruel.png" alt="Trash" />
                                 <div className="boss_name">Trash</div>
@@ -207,14 +237,14 @@ class SummaryReport extends Component {
                         ))}
                     </div>
                     <div className="nav_bar">
-                        <NavLink to={"/" + reportId + "/" + selectedFight} activeClassName="selected"><div className={"class_nav All"}><img className="spell_icon" src="https://assets.rpglogs.com/img/warcraft/abilities/inv_misc_questionmark.jpg" alt="All" />All</div></NavLink>
+                        <NavLink to={"/" + reportId + "/" + fightId} activeClassName="selected"><div className={"class_nav All"}><img className="spell_icon" src="https://assets.rpglogs.com/img/warcraft/abilities/inv_misc_questionmark.jpg" alt="All" />All</div></NavLink>
                         <div className="separator"></div>
-                        {Object.values(roles).map(role => <NavLink to={"/" + reportId + "/" + selectedFight + "/" + role.slug} activeClassName="selected"><div className={"class_nav " + role.name}><img className="spell_icon" src={role.icon} alt={role.name} />{role.name}</div></NavLink>)}
+                        {Object.values(roles).map(role => <NavLink key={role.slug} to={"/" + reportId + "/" + fightId + "/" + role.slug} activeClassName="selected"><div className={"class_nav " + role.name}><img className="spell_icon" src={role.icon} alt={role.name} />{role.name}</div></NavLink>)}
                         <div className="separator"></div>
-                        {Object.values(classes).map(role => <NavLink to={"/" + reportId + "/" + selectedFight + "/" + role.slug} activeClassName="selected"><div className={"class_nav " + role.name}><img className="spell_icon" src={role.icon} alt={role.name} />{role.name}</div></NavLink>)}
+                        {Object.values(classes).map(role => <NavLink key={role.slug} to={"/" + reportId + "/" + fightId + "/" + role.slug} activeClassName="selected"><div className={"class_nav " + role.name}><img className="spell_icon" src={role.icon} alt={role.name} />{role.name}</div></NavLink>)}
                     </div>
 
-                    <Grid data={data} logLoader={this._logLoader} classFilter={classFilter} roleFilter={roleFilter}>
+                    <Grid data={data} logLoader={this._logLoader} classFilter={classFilter} roleFilter={roleFilter} fightId={selectedFight}>
                         <GridColumnGroup id={GroupKeys.Name} label="Name" cssClass="odd-colgroup">
                             <GridColumn field={DataPoints.Name} 
                                         cssClass="name" />

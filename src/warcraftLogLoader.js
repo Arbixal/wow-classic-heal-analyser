@@ -319,12 +319,105 @@ export class WarcraftLogLoader {
         }).catch(reject));
     }
 
-    getResults() {
-        return this.Results;
+    _getFightIds(fightId) {
+        let fightIds = [];
+        if (fightId > 0)
+            fightIds.push(fightId);
+        else {
+            this.Results.Fights.forEach(fight => {
+                if (fight.boss !== 0)
+                    return;
+                    
+                fightIds.push(fight.id);
+            });
+        }
+
+        return fightIds;
     }
 
-    getCharacter(characterid) {
-        return this.Results.Characters[characterid];
+    getResults(fightId) {
+        if (fightId == null || fightId === -1) {
+            return this.Results;
+        }
+
+        let fightIds = this._getFightIds(fightId);
+
+        let filteredResults = {
+            Characters: {},
+            Fights: this.Results.Fights,
+            FightType: this.Results.FightType,
+            title: this.Results.title,
+            startTimestamp: this.Results.startTimestamp,
+            endTimestamp: this.Results.endTimestamp,
+            startTime: this.Results.startTime,
+            endTime: this.Results.endTime,
+        };
+
+        Object.values(this.Results.Characters).forEach(character => {
+            let filteredCharacter = this._getFilteredCharacter(character, fightIds);
+            if (filteredCharacter)
+                filteredResults.Characters[character.id] = filteredCharacter;
+        });
+
+        return filteredResults;
+    }
+
+    _getFilteredCharacter(character, fightIds) {
+        let filteredCharacter = null;
+
+        character.fights.forEach(characterFight => {
+            if (fightIds.includes(characterFight.id)) {
+                filteredCharacter = {...character};
+            }
+        })
+
+        if (!filteredCharacter)
+            return null;
+
+        let fightBands = [];
+        this.Results.Fights.forEach(aFight => {
+            if (fightIds.includes(aFight.id)) {
+                fightBands.push({start: aFight.start_time, end: aFight.end_time});
+            }
+        })
+        
+
+        // Amend the collections
+        // buffs
+        if (character.buffs) {
+            filteredCharacter.buffs = {};
+            Object.values(character.buffs).forEach(x => {
+                let validBands = x.bands.filter(buffBand => {
+                    return fightBands.some(fightBand => buffBand.endTime > fightBand.start || buffBand.startTime < fightBand.end);
+                });
+
+                if (validBands.length > 0) {
+                    filteredCharacter.buffs[x.guid] = x;
+                }
+            })
+        }
+        // casts
+        if (character.casts) {
+            filteredCharacter.casts = character.casts.filter(x => fightIds.includes(x.fight));
+        }
+        // damageTaken???
+        // deaths
+        if (character.deaths) {
+            filteredCharacter.deaths = character.deaths.filter(x => fightIds.includes(x.fight));
+        }
+        // protectionPotions???
+
+        return filteredCharacter;
+    }
+
+    getCharacter(characterid, fightId) {
+        if (fightId == null || fightId === -1) {
+            return this.Results.Characters[characterid];
+        }
+
+        let fightIds = this._getFightIds(fightId);
+
+        return this._getFilteredCharacter(this.Results.Characters[characterid], fightIds);
     }
 
     getFights() {
