@@ -5786,3 +5786,537 @@ export const gemList = {
         description: "+14 attack power"
     },
 }
+
+export const bosses = {
+    // Onyxia
+    1084: {
+        id: 1084,
+        name: "Onyxia",
+        logo: "https://wow.zamimg.com/images/wow/journal/ui-ej-boss-onyxia.png",
+    },
+    
+    // Molten Core
+    663: {
+        id: 663,
+        name: "Lucifron",
+        logo: "https://wow.zamimg.com/images/wow/journal/ui-ej-boss-lucifron.png",
+    },
+    664: {
+        id: 664,
+        name: "Magmadar",
+        logo: "https://wow.zamimg.com/images/wow/journal/ui-ej-boss-magmadar.png",
+    },
+    665: {
+        id: 665,
+        name: "Gehennas",
+        logo: "https://wow.zamimg.com/images/wow/journal/ui-ej-boss-gehennas.png",
+    },
+    666: {
+        id: 666,
+        name: "Garr",
+        logo: "https://wow.zamimg.com/images/wow/journal/ui-ej-boss-garr.png",
+    },
+    667: {
+        id: 667,
+        name: "Shazzrah",
+        logo: "https://wow.zamimg.com/images/wow/journal/ui-ej-boss-shazzrah.png",
+    },
+    668: {
+        id: 668,
+        name: "Baron Geddon",
+        logo: "https://wow.zamimg.com/images/wow/journal/ui-ej-boss-baron-geddon.png",
+    },
+    669: {
+        id: 669,
+        name: "Sulfuron Harbinger",
+        logo: "https://wow.zamimg.com/images/wow/journal/ui-ej-boss-sulfuron-harbinger.png",
+    },
+    670: {
+        id: 670,
+        name: "Golemagg",
+        logo: "https://wow.zamimg.com/images/wow/journal/ui-ej-boss-golemagg-the-incinerator.png",
+    },
+    671: {
+        id: 671,
+        name: "Majordomo Executus",
+        logo: "https://wow.zamimg.com/images/wow/journal/ui-ej-boss-majordomo-executus.png",
+    },
+    672: {
+        id: 672,
+        name: "Ragnaros",
+        logo: "https://wow.zamimg.com/images/wow/journal/ui-ej-boss-ragnaros.png",
+    },
+    
+    // Zul'Gurub
+    784: {
+        id: 784,
+        name: "Venoxis",
+        logo: "https://assets.rpglogs.com/img/warcraft/bosses/784-icon.jpg",
+    },
+    785: {
+        id: 785,
+        name: "Jeklik",
+        logo: "https://assets.rpglogs.com/img/warcraft/bosses/785-icon.jpg",
+    },
+    786: {
+        id: 786,
+        name: "Mar'li",
+        logo: "https://assets.rpglogs.com/img/warcraft/bosses/786-icon.jpg",
+    },
+    787: {
+        id: 787,
+        name: "Bloodlord Mandokir",
+        logo: "https://assets.rpglogs.com/img/warcraft/bosses/787-icon.jpg",
+    },
+    788: {
+        id: 788,
+        name: "Edge of Madness",
+        logo: "https://assets.rpglogs.com/img/warcraft/bosses/788-icon.jpg",
+    },
+    789: {
+        id: 789,
+        name: "Thekal",
+        logo: "https://assets.rpglogs.com/img/warcraft/bosses/789-icon.jpg",
+    },
+    790: {
+        id: 790,
+        name: "Gahz'ranka",
+        logo: "https://assets.rpglogs.com/img/warcraft/bosses/790-icon.jpg",
+    },
+    791: {
+        id: 791,
+        name: "Arlokk",
+        logo: "https://assets.rpglogs.com/img/warcraft/bosses/791-icon.jpg",
+    },
+    792: {
+        id: 792,
+        name: "Jin'do the Hexxer",
+        logo: "https://assets.rpglogs.com/img/warcraft/bosses/792-icon.jpg",
+    },
+    793: {
+        id: 793,
+        name: "Hakkar",
+        logo: "https://assets.rpglogs.com/img/warcraft/bosses/793-icon.jpg",
+    },
+    794: {
+        id: 794,
+        name: "Hakkar (Hard Mode)",
+        logo: "https://assets.rpglogs.com/img/warcraft/bosses/794-icon.jpg",
+    },
+    
+    // BWL
+    610: {
+        id: 610,
+        name: "Razorgore",
+        logo: "https://wow.zamimg.com/images/wow/journal/ui-ej-boss-razorgore-the-untamed.png",
+    },
+    611: {
+        id: 611,
+        name: "Vaelastrasz",
+        logo: "https://wow.zamimg.com/images/wow/journal/ui-ej-boss-vaelastrasz-the-corrupt.png",
+    },
+    612: {
+        id: 612,
+        name: "Broodlord Lashlayer",
+        logo: "https://wow.zamimg.com/images/wow/journal/ui-ej-boss-broodlord-lashlayer.png",
+    },
+    613: {
+        id: 613,
+        name: "Firemaw",
+        logo: "https://wow.zamimg.com/images/wow/journal/ui-ej-boss-firemaw.png",
+    },
+    614: {
+        id: 614,
+        name: "Ebonroc",
+        logo: "https://wow.zamimg.com/images/wow/journal/ui-ej-boss-ebonroc.png",
+    },
+    615: {
+        id: 615,
+        name: "Flamegor",
+        logo: "https://wow.zamimg.com/images/wow/journal/ui-ej-boss-flamegor.png",
+    },
+    616: {
+        id: 616,
+        name: "Chromaggus",
+        logo: "https://wow.zamimg.com/images/wow/journal/ui-ej-boss-chromaggus.png",
+    },
+    617: {
+        id: 617,
+        name: "Nefarian",
+        logo: "https://wow.zamimg.com/images/wow/journal/ui-ej-boss-nefarian.png",
+    },
+    631: {
+        id: 631,
+        name: "Two Drakes",
+        logo: "https://wow.zamimg.com/images/wow/journal/ui-ej-boss-flamegor.png",
+    },
+    
+    // AQ20
+    718: {
+        id: 718,
+        name: "Kurinnaxx",
+        logo: "https://wow.zamimg.com/images/wow/journal/ui-ej-boss-kurinnaxx.png",
+    },
+    719: {
+        id: 719,
+        name: "Rajaxx",
+        logo: "https://wow.zamimg.com/images/wow/journal/ui-ej-boss-general-rajaxx.png",
+    },
+    720: {
+        id: 720,
+        name: "Moam",
+        logo: "https://wow.zamimg.com/images/wow/journal/ui-ej-boss-moam.png",
+    },
+    721: {
+        id: 721,
+        name: "Buru",
+        logo: "https://wow.zamimg.com/images/wow/journal/ui-ej-boss-buru-the-gorger.png",
+    },
+    722: {
+        id: 722,
+        name: "Ayamiss",
+        logo: "https://wow.zamimg.com/images/wow/journal/ui-ej-boss-ayamiss-the-hunter.png",
+    },
+    723: {
+        id: 723,
+        name: "Ossirian",
+        logo: "https://wow.zamimg.com/images/wow/journal/ui-ej-boss-ossirian-the-unscarred.png",
+    },
+    
+    // AQ40
+    709: {
+        id: 709,
+        name: "Skeram",
+        logo: "https://wow.zamimg.com/images/wow/journal/ui-ej-boss-the-prophet-skeram.png",
+    },
+    710: {
+        id: 710,
+        name: "Silithid Royalty",
+        logo: "https://wow.zamimg.com/images/wow/journal/ui-ej-boss-silithid-royalty.png",
+    },
+    711: {
+        id: 711,
+        name: "Sartura",
+        logo: "https://wow.zamimg.com/images/wow/journal/ui-ej-boss-battleguard-sartura.png",
+    },
+    712: {
+        id: 712,
+        name: "Fankriss",
+        logo: "https://wow.zamimg.com/images/wow/journal/ui-ej-boss-fankriss-the-unyielding.png",
+    },
+    713: {
+        id: 713,
+        name: "Viscidus",
+        logo: "https://wow.zamimg.com/images/wow/journal/ui-ej-boss-viscidus.png",
+    },
+    714: {
+        id: 714,
+        name: "Huhuran",
+        logo: "https://wow.zamimg.com/images/wow/journal/ui-ej-boss-princess-huhuran.png",
+    },
+    715: {
+        id: 715,
+        name: "Twin Emperors",
+        logo: "https://wow.zamimg.com/images/wow/journal/ui-ej-boss-twin-emperors.png",
+    },
+    716: {
+        id: 716,
+        name: "Ouro",
+        logo: "https://wow.zamimg.com/images/wow/journal/ui-ej-boss-ouro.png",
+    },
+    717: {
+        id: 717,
+        name: "C'Thun",
+        logo: "https://wow.zamimg.com/images/wow/journal/ui-ej-boss-cthun.png",
+    },
+    
+    // Naxxramas
+    1118: {
+        id: 1118,
+        name: "Patchwerk",
+        logo: "https://wow.zamimg.com/images/wow/journal/ui-ej-boss-patchwerk.png",
+    },
+    1111: {
+        id: 1111,
+        name: "Grobbulus",
+        logo: "https://wow.zamimg.com/images/wow/journal/ui-ej-boss-grobbulus.png",
+    },
+    1108: {
+        id: 1108,
+        name: "Gluth",
+        logo: "https://wow.zamimg.com/images/wow/journal/ui-ej-boss-gluth.png",
+    },
+    1120: {
+        id: 1120,
+        name: "Thaddius",
+        logo: "https://wow.zamimg.com/images/wow/journal/ui-ej-boss-thaddius.png",
+    },
+    1117: {
+        id: 1117,
+        name: "Noth",
+        logo: "https://wow.zamimg.com/images/wow/journal/ui-ej-boss-noth-the-plaguebringer.png",
+    },
+    1112: {
+        id: 1112,
+        name: "Heigan",
+        logo: "https://wow.zamimg.com/images/wow/journal/ui-ej-boss-heigan-the-unclean.png",
+    },
+    1115: {
+        id: 1115,
+        name: "Loatheb",
+        logo: "https://wow.zamimg.com/images/wow/journal/ui-ej-boss-loatheb.png",
+    },
+    1107: {
+        id: 1107,
+        name: "Anub'Rekhan",
+        logo: "https://wow.zamimg.com/images/wow/journal/ui-ej-boss-anubrekhan.png",
+    },
+    1110: {
+        id: 1110,
+        name: "Faerlina",
+        logo: "https://wow.zamimg.com/images/wow/journal/ui-ej-boss-grand-widow-faerlina.png",
+    },
+    1116: {
+        id: 1116,
+        name: "Maexxna",
+        logo: "https://wow.zamimg.com/images/wow/journal/ui-ej-boss-maexxna.png",
+    },
+    1113: {
+        id: 1113,
+        name: "Razuvious",
+        logo: "https://wow.zamimg.com/images/wow/journal/ui-ej-boss-instructor-razuvious.png",
+    },
+    1109: {
+        id: 1109,
+        name: "Gothik",
+        logo: "https://wow.zamimg.com/images/wow/journal/ui-ej-boss-gothik-the-harvester.png",
+    },
+    1121: {
+        id: 1121,
+        name: "Four Horsemen",
+        logo: "https://wow.zamimg.com/images/wow/journal/ui-ej-boss-four-horseman.png",
+    },
+    1119: {
+        id: 1119,
+        name: "Sapphiron",
+        logo: "https://wow.zamimg.com/images/wow/journal/ui-ej-boss-sapphiron.png",
+    },
+    1114: {
+        id: 1114,
+        name: "Kel'Thuzad",
+        logo: "https://wow.zamimg.com/images/wow/journal/ui-ej-boss-kelthuzad.png",
+    },
+
+    // Gruul's Lair
+    649: {
+        id: 649,
+        name: "High King Maulgar",
+        logo: "https://wow.zamimg.com/images/wow/journal/ui-ej-boss-high-king-maulgar.png",
+    },
+    650: {
+        id: 650,
+        name: "Gruul the Dragonkiller",
+        logo: "https://wow.zamimg.com/images/wow/journal/ui-ej-boss-gruul-the-dragonkiller.png"
+    },
+
+    // Magtheridon
+    651: {
+        id: 651,
+        name: "Magtheridon",
+        logo: "https://wow.zamimg.com/images/wow/journal/ui-ej-boss-magtheridon.png"
+    },
+
+    // Karazhan
+    652: {
+        id: 652,
+        name: "Attumen",
+        logo: "https://wow.zamimg.com/images/wow/journal/ui-ej-boss-attumen-the-huntsman.png"
+    },
+    653: {
+        id: 652,
+        name: "Moroes",
+        logo: "https://wow.zamimg.com/images/wow/journal/ui-ej-boss-moroes.png"
+    },
+    654: {
+        id: 654,
+        name: "Maiden of Virtue",
+        logo: "https://wow.zamimg.com/images/wow/journal/ui-ej-boss-maiden-of-virtue.png"
+    },
+    655: {
+        id: 655,
+        name: "Opera Hall",
+        logo: "https://wow.zamimg.com/images/wow/journal/ui-ej-boss-opera.png"
+    },
+    656: {
+        id: 656,
+        name: "The Curator",
+        logo: "https://wow.zamimg.com/images/wow/journal/ui-ej-boss-the-curator.png"
+    },
+    657: {
+        id: 657,
+        name: "Terestian Illhoof",
+        logo: "https://wow.zamimg.com/images/wow/journal/ui-ej-boss-terestian-illhoof.png"
+    },
+    658: {
+        id: 658,
+        name: "Shade of Aran",
+        logo: "https://wow.zamimg.com/images/wow/journal/ui-ej-boss-shade-of-aran.png"
+    },
+    659: {
+        id: 659,
+        name: "Netherspite",
+        logo: "https://wow.zamimg.com/images/wow/journal/ui-ej-boss-netherspite.png"
+    },
+    660: {
+        id: 660,
+        name: "Chess Event",
+        logo: "https://wow.zamimg.com/images/wow/journal/ui-ej-boss-chess-horde.png"
+    },
+    661: {
+        id: 661,
+        name: "Prince Malchezaar",
+        logo: "https://wow.zamimg.com/images/wow/journal/ui-ej-boss-prince-malchezaar.png"
+    },
+    662: {
+        id: 662,
+        name: "Nightbane",
+        logo: "https://wow.zamimg.com/images/wow/journal/ui-ej-boss-nefarian.png"
+    },
+
+    // Serpentshrine Cavern
+    623: {
+        id: 623,
+        name: "Hydross the Unstable",
+        logo: "https://wow.zamimg.com/images/wow/journal/ui-ej-boss-hydross-the-unstable.png",
+    },
+    624: {
+        id: 624,
+        name: "The Lurker Below",
+        logo: "https://wow.zamimg.com/images/wow/journal/ui-ej-boss-the-lurker-below.png"
+    },
+    625: {
+        id: 625,
+        name: "Leotheras the Blind",
+        logo: "https://wow.zamimg.com/images/wow/journal/ui-ej-boss-leotheras-the-blind.png"
+    },
+    626: {
+        id: 626,
+        name: "Fathom-Lord Karathress",
+        logo: "https://wow.zamimg.com/images/wow/journal/ui-ej-boss-fathom-lord-karathress.png"
+    },
+    627: {
+        id: 627,
+        name: "Morogrim Tidewalker",
+        logo: "https://wow.zamimg.com/images/wow/journal/ui-ej-boss-morogrim-tidewalker.png"
+    },
+    628: {
+        id: 628,
+        name: "Lady Vashj",
+        logo: "https://wow.zamimg.com/images/wow/journal/ui-ej-boss-lady-vashj.png"
+    },
+
+    // Tempest Keep
+    730: {
+        id: 730,
+        name: "Al'ar",
+        logo: "https://wow.zamimg.com/images/wow/journal/ui-ej-boss-alar.png"
+    },
+    731: {
+        id: 731,
+        name: "Void Reaver",
+        logo: "https://wow.zamimg.com/images/wow/journal/ui-ej-boss-void-reaver.png"
+    },
+    732: {
+        id: 732,
+        name: "High Astromancer Solarian",
+        logo: "https://wow.zamimg.com/images/wow/journal/ui-ej-boss-high-astromancer-solarian.png"
+    },
+    733: {
+        id: 733,
+        name: "Kael'thas Sunstrider",
+        logo: "https://wow.zamimg.com/images/wow/journal/ui-ej-boss-kaelthas-sunstrider.png"
+    },
+
+
+    // Heroics
+    100001: {
+        id: 100001,
+        name: "Hellfire Ramparts",
+        logo: "https://wow.zamimg.com/images/wow/journal/ui-ej-boss-vazruden.png"
+    },
+    100002: {
+        id: 100002,
+        name: "Blood Furnace",
+        logo: "https://wow.zamimg.com/images/wow/journal/ui-ej-boss-kelidan-the-breaker.png"
+    },
+    100003: {
+        id: 100003,
+        name: "Shattered Halls",
+        logo: "https://wow.zamimg.com/images/wow/journal/ui-ej-boss-kargath-bladefist.png"
+    },
+    100004: {
+        id: 100004,
+        name: "Slave Pens",
+        logo: "https://wow.zamimg.com/images/wow/journal/ui-ej-boss-quagmirran.png"
+    },
+    100005: {
+        id: 100005,
+        name: "Underbog",
+        logo: "https://wow.zamimg.com/images/wow/journal/ui-ej-boss-the-black-stalker.png"
+    },
+    100006: {
+        id: 100006,
+        name: "Steamvault",
+        logo: "https://wow.zamimg.com/images/wow/journal/ui-ej-boss-warlord-kalithresh.png"
+    },
+    100007: {
+        id: 100007,
+        name: "Mana-Tombs",
+        logo: "https://wow.zamimg.com/images/wow/journal/ui-ej-boss-nexus-prince-shaffar.png"
+    },
+    100008: {
+        id: 100008,
+        name: "Auchenai Crypts",
+        logo: "https://wow.zamimg.com/images/wow/journal/ui-ej-boss-exarch-maladaar.png"
+    },
+    100009: {
+        id: 100009,
+        name: "Sethekk Halls",
+        logo: "https://wow.zamimg.com/images/wow/journal/ui-ej-boss-talon-king-ikiss.png"
+    },
+    100010: {
+        id: 100010,
+        name: "Shadow Labyrinth",
+        logo: "https://wow.zamimg.com/images/wow/journal/ui-ej-boss-murmur.png"
+    },
+    100011: {
+        id: 100011,
+        name: "Old Hillsbrad",
+        logo: "https://wow.zamimg.com/images/wow/journal/ui-ej-boss-epoch-hunter.png"
+    },
+    100012: {
+        id: 100012,
+        name: "Black Morass",
+        logo: "https://wow.zamimg.com/images/wow/journal/ui-ej-boss-aeonus.png"
+    },
+    100013: {
+        id: 100013,
+        name: "Botanica",
+        logo: "https://wow.zamimg.com/images/wow/journal/ui-ej-boss-warp-splinter.png"
+    },
+    100014: {
+        id: 100014,
+        name: "Mechanar",
+        logo: "https://wow.zamimg.com/images/wow/journal/ui-ej-boss-pathaleon-the-calculator.png"
+    },
+    100015: {
+        id: 100015,
+        name: "Arcatraz",
+        logo: "https://wow.zamimg.com/images/wow/journal/ui-ej-boss-harbinger-skyriss.png"
+    },
+    100016: {
+        id: 100016,
+        name: "Magister's Terrace",
+        logo: "https://wow.zamimg.com/images/wow/journal/ui-ej-boss-kaelthas-sunstrider.png"
+    },
+}

@@ -255,6 +255,85 @@ td.right {
     padding-right: 5px;
 }
 
+div.boss_nav {
+    margin-top: 10px;
+    display: flex;
+
+    div.separator {
+        &:after {
+            margin: 5px;
+            font-size: 20px;
+            line-height: 40px;
+            border-right: solid 1px #333333;
+            content: ' '
+        }
+    }
+
+    a {
+        text-decoration: none;
+
+        &.selected > div.boss_fight {
+            background-color: #333333;
+            color: #FFFFFF;
+        }
+
+        &:first-child > div.boss_fight {
+            min-height: 111px;
+        }
+    }
+
+    div.boss_fight {
+        width: 128px;
+        border-radius: 5px;
+        border: solid 1px #333333;
+        cursor: pointer;
+        text-align: center;
+
+        img {
+            max-width: 128px;
+        }
+
+        &:hover, &.selected {
+            background-color: #333333;
+            color: #FFFFFF;
+        }
+
+        div.boss_name {
+            text-align: center;
+            height: 34px;
+        }
+
+        /* &:first-child {
+            min-height: 111px;
+        } */
+
+        /* &:not(:first-child) {
+            div.boss_percentage {
+                margin-top: 5px;
+                margin-bottom: 5px;
+            }
+        } */
+    }
+
+    div.boss_percentage {
+        margin-top: 5px;
+        height: 5px;
+        
+        &.kill {
+            background-color: #429c5c;
+        }
+
+        &.wipe {
+            background-color: #fd4646;
+        }
+    }
+}
+
+@mixin class_hover($class_color) {
+    background-color: scale-color($class_color, $alpha: -50%);
+    color: #FFFFFF !important;
+}
+
 @mixin class_nav($class_color) {
     &.class_nav {
         padding: 5px;
@@ -269,9 +348,8 @@ td.right {
             margin-right: 5px;
         }
 
-        &:hover, &.selected {
-            background-color: scale-color($class_color, $alpha: -50%);
-            color: #FFFFFF;
+        &:hover {
+            @include class_hover($class_color);
         }
     }
 }
@@ -279,16 +357,110 @@ td.right {
 div.nav_bar {
     display: flex;
 
-    div.Tank {
-        @include class_nav($frost);
-    }
+    a {
+        text-decoration: none;
 
-    div.DPS {
-        @include class_nav($fire);
-    }
+        &.selected {
+            div.Tank {
+                @include class_hover($frost);
+            }
 
-    div.Healer {
-        @include class_nav($nature);
+            div.DPS {
+                @include class_hover($fire);
+            }
+
+            div.Healer {
+                @include class_hover($nature);
+            }
+
+            div.Warrior {
+                @include class_hover($warrior);
+            }
+
+            div.Rogue {
+                @include class_hover($rogue);
+            }
+
+            div.Hunter {
+                @include class_hover($hunter);
+            }
+
+            div.Mage {
+                @include class_hover($mage);
+            }
+
+            div.Warlock {
+                @include class_hover($warlock);
+            }
+
+            div.Priest {
+                @include class_hover($priest);
+            }
+
+            div.Paladin {
+                @include class_hover($paladin);
+            }
+
+            div.Shaman {
+                @include class_hover($shaman);
+            }
+
+            div.Druid {
+                @include class_hover($druid);
+            }
+        }
+
+        div.Tank {
+            @include class_nav($frost);
+        }
+
+        div.DPS {
+            @include class_nav($fire);
+        }
+
+        div.Healer {
+            @include class_nav($nature);
+        }
+
+        div.Warrior {
+            @include class_nav($warrior);
+        }
+    
+        div.Rogue {
+            @include class_nav($rogue);
+        }
+    
+        div.Hunter {
+            @include class_nav($hunter);
+        }
+    
+        div.Mage {
+            @include class_nav($mage);
+        }
+    
+        div.Warlock {
+            @include class_nav($warlock);
+        }
+    
+        div.Priest {
+            @include class_nav($priest);
+        }
+    
+        div.Paladin {
+            @include class_nav($paladin);
+        }
+    
+        div.Shaman {
+            @include class_nav($shaman);
+        }
+    
+        div.Druid {
+            @include class_nav($druid);
+        }
+
+        div.All {
+            @include class_nav($poor);
+        }
     }
 
     div.separator {
@@ -299,42 +471,6 @@ div.nav_bar {
             border-right: solid 1px #333333;
             content: ' '
         }
-    }
-
-    div.Warrior {
-        @include class_nav($warrior);
-    }
-
-    div.Rogue {
-        @include class_nav($rogue);
-    }
-
-    div.Hunter {
-        @include class_nav($hunter);
-    }
-
-    div.Mage {
-        @include class_nav($mage);
-    }
-
-    div.Warlock {
-        @include class_nav($warlock);
-    }
-
-    div.Priest {
-        @include class_nav($priest);
-    }
-
-    div.Paladin {
-        @include class_nav($paladin);
-    }
-
-    div.Shaman {
-        @include class_nav($shaman);
-    }
-
-    div.Druid {
-        @include class_nav($druid);
     }
 }
 

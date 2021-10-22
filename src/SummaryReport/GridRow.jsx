@@ -24,7 +24,7 @@ export class GridRow extends Component {
         
         this._logLoader.loadCharacterDetails(this.state.id)
         .then((data) => {
-            let character = data.getCharacter(this.state.id);
+            let character = data.getCharacter(this.state.id, this.props.fightId);
 
             this.setState({
                 isLoaded: true,
@@ -37,6 +37,17 @@ export class GridRow extends Component {
                 error: error
             })
         });
+    }
+
+    componentDidUpdate(prevProps) {
+        if (this.props.fightId !== prevProps.fightId) {
+            let character = this._logLoader.getCharacter(this.state.id, this.props.fightId);
+
+            this.setState({
+                isLoaded: true,
+                Data: this._flattenCharacterData(character),
+            });
+        }
     }
 
     _flattenCharacterData(character) {
@@ -275,7 +286,7 @@ export class GridRow extends Component {
                 activeBuffs.push(options[i]);
             }
             if (offhandEnchant.id === options[i].id) {
-                activeBuffs.push(options[i]);
+                activeBuffs.push({...options[i], name: options[i].name + ' (OH)'});
             }
             
         }

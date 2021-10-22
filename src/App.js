@@ -31,7 +31,7 @@ class App extends Component {
             <Route path="/:id/archived/healer" >
               <HealerReport />
             </Route>
-            <Route path="/:id">
+            <Route path="/:id/:fightId?/:filter?">
               <SummaryReport />
             </Route>
           </Switch>
