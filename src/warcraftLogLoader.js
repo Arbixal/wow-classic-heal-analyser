@@ -303,11 +303,13 @@ export class WarcraftLogLoader {
                     character.protectionPotions[obj.ability.guid] = {
                         amount: 0,
                         firstAbsorb: {},
+                        events: [],
                     };
                     protPot = character.protectionPotions[obj.ability.guid]
                 }
 
                 protPot.amount += obj.amount;
+                protPot.events.push(obj);
                 if (!protPot.firstAbsorb[obj.fight]) {
                     protPot.firstAbsorb[obj.fight] = obj.timestamp;
                 }
@@ -388,7 +390,7 @@ export class WarcraftLogLoader {
             filteredCharacter.buffs = {};
             Object.values(character.buffs).forEach(x => {
                 let validBands = x.bands.filter(buffBand => {
-                    return fightBands.some(fightBand => buffBand.endTime > fightBand.start || buffBand.startTime < fightBand.end);
+                    return fightBands.some(fightBand => buffBand.endTime > fightBand.start && buffBand.startTime < fightBand.end);
                 });
 
                 if (validBands.length > 0) {
@@ -405,7 +407,21 @@ export class WarcraftLogLoader {
         if (character.deaths) {
             filteredCharacter.deaths = character.deaths.filter(x => fightIds.includes(x.fight));
         }
-        // protectionPotions???
+        // protectionPotions
+        if (character.protectionPotions) {
+            filteredCharacter.protectionPotions = {};
+            Object.entries(character.protectionPotions).forEach(([key,value]) => {
+                let validEvents = value.events.filter(y => fightIds.includes(y.fight));
+                if (validEvents.length > 0)
+                {
+                    filteredCharacter.protectionPotions[key] = {
+                        events: validEvents,
+                        amount: validEvents.reduce((agg, potEvent) => agg += potEvent.amount, 0),
+                        firstAbsorb: value.firstAbsorb,
+                    };
+                }
+            });
+        }
 
         return filteredCharacter;
     }
