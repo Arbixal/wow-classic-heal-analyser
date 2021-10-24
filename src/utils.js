@@ -4,8 +4,10 @@ export function msToTime(s) {
     var secs = s % 60;
     s = (s - secs) / 60;
     var mins = s % 60;
+    s = (s - mins) / 60;
+    var hours = s % 24;
 
-    return mins + ':' + (secs < 10 ? "0" : "") + secs;
+    return (hours > 0 ? hours + ":" + (mins < 10 ? "0" : "") : "") + mins + ':' + (secs < 10 ? "0" : "") + secs;
 }
 
 export function abbreviateNumber(num) {

@@ -1,0 +1,80 @@
+$boss-kill-colour: #429c5c;
+$boss-wipe-colour: #fd4646;
+$trash-colour: #84bdf8;
+$idle-colour: #333333;
+
+@mixin coloriseSummary($colour) {
+    th {
+        background-color: #000000;
+        color: $colour;
+    }
+
+    td {
+        background-color: scale-color($colour, $alpha: -50%);
+    }
+}
+
+div.fightChart {
+    display: flex;
+
+    div.fightSummary {
+        margin-top: 15px;
+        margin-right: 10px;
+
+        th.name {
+            width: 70px;
+            text-align: right;
+            padding-right: 10px;
+        }
+
+        td.time {
+            width: 50px;
+            text-align: right;
+            padding-right: 10px;
+        }
+
+        td.percentage {
+            width: 40px;
+            text-align: right;
+            padding-right: 10px;
+        }
+
+        tr.boss-kill {
+            @include coloriseSummary($boss-kill-colour);
+        }
+
+        tr.boss-wipe {
+            @include coloriseSummary($boss-wipe-colour);
+        }
+
+        tr.trash {
+            @include coloriseSummary($trash-colour);
+        }
+
+        tr.idle {
+            @include coloriseSummary($idle-colour);
+        }
+
+        tr.total {
+            background-color: #000000;
+        }
+    }
+
+    svg {
+        .boss-kill {
+            fill: $boss-kill-colour;
+        }
+
+        .boss-wipe {
+            fill: $boss-wipe-colour;
+        }
+
+        .trash {
+            fill: $trash-colour;
+        }
+
+        .idle {
+            fill: $idle-colour;
+        }
+    }
+}

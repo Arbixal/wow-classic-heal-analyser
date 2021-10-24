@@ -22,6 +22,26 @@ export class Grid extends Component {
         this.handleColGroupToggle = this.handleColGroupToggle.bind(this);
     }
 
+    shouldComponentUpdate(nextProps, nextState) {
+        if (this.props.data !== nextProps.data) {
+            return true;
+        }
+
+        if (this.props.classFilter !== nextProps.classFilter) {
+            return true;
+        }
+
+        if (this.props.roleFilter !== nextProps.roleFilter) {
+            return true;
+        }
+
+        if (this.props.fightId !== nextProps.fightId) {
+            return true;
+        }
+
+        return false;
+    }
+
     componentDidUpdate(prevProps) {
         if (this.props.classFilter !== prevProps.classFilter
             || this.props.roleFilter !== prevProps.roleFilter) {

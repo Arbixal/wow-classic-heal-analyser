@@ -24,7 +24,6 @@
     }
 
     td.enchants {
-        //background-color: scale-color($class-color, $alpha: -75%);
         width: 65px;
         text-align: center;
     }
@@ -302,17 +301,6 @@ div.boss_nav {
             text-align: center;
             height: 34px;
         }
-
-        /* &:first-child {
-            min-height: 111px;
-        } */
-
-        /* &:not(:first-child) {
-            div.boss_percentage {
-                margin-top: 5px;
-                margin-bottom: 5px;
-            }
-        } */
     }
 
     div.boss_percentage {
@@ -559,4 +547,8 @@ a {
         margin-top: 2px;
         text-shadow: 1px 1px black
     }
+}
+
+svg {
+    margin-top: 10px;
 }

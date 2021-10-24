@@ -12,6 +12,7 @@ import { BossNavItem } from "./BossNavItem";
 import ReactTooltip from "react-tooltip";
 import { withRouter, Link } from "react-router-dom";
 import { format, intervalToDuration} from "date-fns";
+import { FightChart } from "./FightChart";
 
 const roles = {
     'tank': {
@@ -90,9 +91,14 @@ class SummaryReport extends Component {
             reportDetails: {},
             context: {},
             selectedFight: -1,
+            data: [],
+            classFilter: null,
+            roleFilter: null,
         }
         this._logLoader = null;
 
+        this.handleFightMouseOut = this.handleFightMouseOut.bind(this);
+        this.handleFightMouseOver = this.handleFightMouseOver.bind(this);
     }
 
     _getResults(selectedFight) {
@@ -115,7 +121,7 @@ class SummaryReport extends Component {
         if (!id)
             return;
 
-        let selectedFight = isNaN(parseInt(fightId)) ? -1 : parseInt(fightId);
+        let selectedFight = fightId == null || isNaN(parseInt(fightId)) ? -1 : parseInt(fightId);
 
         this.setState({reportId: id, selectedFight: selectedFight});
 
@@ -136,6 +142,7 @@ class SummaryReport extends Component {
                         endTime: new Date(report.endTimestamp)
                     }
                 })
+                this._generateFilteredData();
             })
             .catch((error) => {
                 this.setState({
@@ -148,19 +155,63 @@ class SummaryReport extends Component {
     componentDidUpdate(prevProps) {
         if (this.props.match !== prevProps.match) {
             const { fightId } = this.props.match.params;
-            let selectedFight = isNaN(parseInt(fightId)) ? -1 : parseInt(fightId);
+            let selectedFight = fightId == null || isNaN(parseInt(fightId)) ? -1 : parseInt(fightId);
 
             this._getResults(selectedFight);
+            this._generateFilteredData();
         }
     }
 
-    render() {
-        const { error, isLoaded, characters, reportId, reportDetails, fights} = this.state;
+    _getFightIds(fightId) {
+        const { fights, hoverFight} = this.state;
+        let fightIds = [];
+        if (fightId === -1 && hoverFight == null)
+            return [];
+            
+        if (fightId > 0)
+            fightIds.push(fightId);
+
+        if (hoverFight > 0)
+            fightIds.push(hoverFight);
+
+        if (fightId === 0 || hoverFight === 0) {
+            fights.forEach(fight => {
+                if (fight.boss !== 0)
+                    return;
+                    
+                fightIds.push(fight.id);
+            });
+        }
+
+        return fightIds;
+    }
+
+    handleFightMouseOver(fightId) {
+        const {hoverFight} = this.state;
+
+        if (hoverFight !== fightId) {
+            console.log("OnMouseOver: " + fightId);
+            this.setState({hoverFight: fightId});
+        }
+    }
+
+    handleFightMouseOut(fightId) {
+        const {hoverFight} = this.state;
+
+        if (hoverFight === fightId) {
+            console.log("OnMouseOut: " + fightId);
+            this.setState({hoverFight: null});
+        }
+    }
+
+    _generateFilteredData() {
+        const {characters} = this.state;
+        const {filter} = this.props.match.params;
+
+        const classSortOrder = { Warrior: 0, Rogue: 1, Hunter: 2, Mage: 3, Warlock: 4, Priest: 5, Shaman: 6, Paladin: 7, Druid: 8 };
+
         let roleFilter = null;
         let classFilter = null;
-        const { fightId, filter } = this.props.match.params;
-
-        let selectedFight = isNaN(parseInt(fightId)) ? -1 : parseInt(fightId);
 
         if (roles[filter]) {
             classFilter = null;
@@ -172,15 +223,38 @@ class SummaryReport extends Component {
             roleFilter = null;
         }
 
+        let data = [...Object.values(characters)
+        .filter((character) => character.type !== "NPC" && character.type !== "Pet" && character.type !== "Boss")
+        .filter((character) => classFilter == null || character.type === classFilter)
+        .filter((character) => roleFilter == null || character.roles.includes(roleFilter))
+        .sort((aValue, bValue) => {
+             let classCompare = classSortOrder[aValue.type] - classSortOrder[bValue.type];
+
+             if (classCompare !== 0)
+                 return classCompare;
+
+             return aValue.name.localeCompare(bValue.name);
+            })];
+
+        this.setState({data: data, classFilter: classFilter, roleFilter: roleFilter});
+    }
+
+    render() {
+        const { error, isLoaded, data, reportId, reportDetails, fights, raidTime, classFilter, roleFilter} = this.state;
+        const { fightId, filter } = this.props.match.params;
+
+        let selectedFight = fightId == null || isNaN(parseInt(fightId)) ? -1 : parseInt(fightId);
+
+        let fightIds = this._getFightIds(selectedFight);
+
         const filterSuffix = filter ? "/" + filter : "";
         
-        const classSortOrder = { Warrior: 0, Rogue: 1, Hunter: 2, Mage: 3, Warlock: 4, Priest: 5, Shaman: 6, Paladin: 7, Druid: 8 };
         if (error) {
             return <div>Error: {error.message}</div>;
         } else if (!isLoaded) {
             return <div>Loading ...</div>;
         } else {
-            let data = Object.values(characters)
+/*             let data = Object.values(characters)
                 .filter((character) => character.type !== "NPC" && character.type !== "Pet" && character.type !== "Boss")
                 .filter((character) => classFilter == null || character.type === classFilter)
                 .filter((character) => roleFilter == null || character.roles.includes(roleFilter))
@@ -191,7 +265,7 @@ class SummaryReport extends Component {
                          return classCompare;
 
                      return aValue.name.localeCompare(bValue.name);
-                    });
+                    }); */
             
             let duration = intervalToDuration({start: reportDetails.startTime, end: reportDetails.endTime});
             return (
@@ -210,7 +284,7 @@ class SummaryReport extends Component {
                     </div>
                     <div className="boss_tile">
                         <NavLink to={"/" + reportId + "/0" + filterSuffix} activeClassName="selected">
-                            <div className="boss_fight">
+                            <div className="boss_fight" onMouseOver={(e) => this.handleFightMouseOver(0)} onMouseOut={(e) => this.handleFightMouseOut(0)}>
                                 <img src="https://wow.zamimg.com/images/wow/journal/ui-ej-boss-timmy-the-cruel.png" alt="Trash" />
                                 <div className="boss_name">Trash</div>
                             </div>
@@ -233,15 +307,16 @@ class SummaryReport extends Component {
                                     return accum;
                                },[])
                                .map(boss => (
-                            <BossNavItem key={boss.id} boss={boss} />
+                            <BossNavItem key={boss.id} boss={boss} onMouseOver={this.handleFightMouseOver} onMouseOut={this.handleFightMouseOut} />
                         ))}
                     </div>
+                    <FightChart fights={fights} raidTime={raidTime} fightIds={fightIds} />
                     <div className="nav_bar">
-                        <NavLink to={"/" + reportId + "/" + fightId} activeClassName="selected"><div className={"class_nav All"}><img className="spell_icon" src="https://assets.rpglogs.com/img/warcraft/abilities/inv_misc_questionmark.jpg" alt="All" />All</div></NavLink>
+                        <NavLink to={"/" + reportId + "/" + selectedFight} activeClassName="selected"><div className={"class_nav All"}><img className="spell_icon" src="https://assets.rpglogs.com/img/warcraft/abilities/inv_misc_questionmark.jpg" alt="All" />All</div></NavLink>
                         <div className="separator"></div>
-                        {Object.values(roles).map(role => <NavLink key={role.slug} to={"/" + reportId + "/" + fightId + "/" + role.slug} activeClassName="selected"><div className={"class_nav " + role.name}><img className="spell_icon" src={role.icon} alt={role.name} />{role.name}</div></NavLink>)}
+                        {Object.values(roles).map(role => <NavLink key={role.slug} to={"/" + reportId + "/" + selectedFight + "/" + role.slug} activeClassName="selected"><div className={"class_nav " + role.name}><img className="spell_icon" src={role.icon} alt={role.name} />{role.name}</div></NavLink>)}
                         <div className="separator"></div>
-                        {Object.values(classes).map(role => <NavLink key={role.slug} to={"/" + reportId + "/" + fightId + "/" + role.slug} activeClassName="selected"><div className={"class_nav " + role.name}><img className="spell_icon" src={role.icon} alt={role.name} />{role.name}</div></NavLink>)}
+                        {Object.values(classes).map(role => <NavLink key={role.slug} to={"/" + reportId + "/" + selectedFight + "/" + role.slug} activeClassName="selected"><div className={"class_nav " + role.name}><img className="spell_icon" src={role.icon} alt={role.name} />{role.name}</div></NavLink>)}
                     </div>
 
                     <Grid data={data} logLoader={this._logLoader} classFilter={classFilter} roleFilter={roleFilter} fightId={selectedFight}>
