@@ -39,6 +39,10 @@ export class Grid extends Component {
             return true;
         }
 
+        if (this.state.collapsed !== nextState.collapsed) {
+            return true;
+        }
+
         return false;
     }
 
