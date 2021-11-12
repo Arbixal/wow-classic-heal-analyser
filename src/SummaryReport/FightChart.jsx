@@ -2,7 +2,7 @@ import "./FightChart.scss";
 import { asPercentage, msToTime } from "../utils";
 
 export function FightChart(props) {
-    const {fights, raidTime, fightIds} = props;
+    const {fights, raidStart,  raidTime, fightIds} = props;
 
     const maxWidth = 1000;
 
@@ -26,10 +26,10 @@ export function FightChart(props) {
 
     fights.forEach((fight, index, array) => {
         if (index !== 0) {
-            fightBands.push({ start: timeToPixel(array[index-1].end_time), end: timeToPixel(fight.start_time), cssClass: "idle", id: 10000 + index});
+            fightBands.push({ start: timeToPixel(array[index-1].end_time - raidStart), end: timeToPixel(fight.start_time - raidStart), cssClass: "idle", id: 10000 + index});
         }
 
-        fightBands.push({start: timeToPixel(fight.start_time), end: timeToPixel(fight.end_time), cssClass: getClassName(fight), id: fight.id});
+        fightBands.push({start: timeToPixel(fight.start_time - raidStart), end: timeToPixel(fight.end_time - raidStart), cssClass: getClassName(fight), id: fight.id});
     })
 
     let fightSummary = fights.reduce((agg, fight) => {

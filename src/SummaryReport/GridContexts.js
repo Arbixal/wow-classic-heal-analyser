@@ -12,6 +12,9 @@ export const GroupKeys = {
     Damage: "Damage",
     DispelsInterrupts: "DispelsInterrupts",
     Cooldowns: "Cooldowns",
+    Tank: "Tank",
+    Healer: "Healer",
+    Dps: "Dps",
 }
 
 export const DataPoints = {
@@ -124,6 +127,13 @@ export const DataPoints = {
     CooldownsRacial: "CooldownsRacial",
     CooldownsAbility: "CooldownsAbility",
     CooldownsItems: "CooldownsItems",
+    DamageTakenHit: "DamageTakenHit",
+    DamageTakenCrit: "DamageTakenCrit",
+    DamageTakenCrushed: "DamageTakenCrushed",
+    DamageTakenBlocked: "DamageTakenBlocked",
+    DamageTakenMiss: "DamageTakenMiss",
+    DamageTakenDodge: "DamageTakenDodge",
+    DamageTakenParry: "DamageTakenParry",
 };
 
 export const emptyData = {
@@ -237,4 +247,11 @@ export const emptyData = {
     [DataPoints.CooldownsRacial]: [],
     [DataPoints.CooldownsAbility]: [],
     [DataPoints.CooldownsItems]: [],
+    [DataPoints.DamageTakenHit]: " ",
+    [DataPoints.DamageTakenCrushed]: " ",
+    [DataPoints.DamageTakenCrit]: " ",
+    [DataPoints.DamageTakenBlocked]: " ",
+    [DataPoints.DamageTakenParry]: " ",
+    [DataPoints.DamageTakenDodge]: " ",
+    [DataPoints.DamageTakenMiss]: " ",
 }

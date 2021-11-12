@@ -7,6 +7,7 @@ import {Grid} from "./Grid";
 import {GridColumnGroup} from "./GridColumnGroup";
 import {GridColumn} from "./GridColumn";
 import {GridIconColumn} from "./GridIconColumn";
+import { GridBarColumn, GridBarColumnSection } from "./GridBarColumn";
 import { GridIconListColumn } from "./GridIconListColumn";
 import { BossNavItem } from "./BossNavItem";
 import ReactTooltip from "react-tooltip";
@@ -107,13 +108,16 @@ class SummaryReport extends Component {
             isLoaded: true,
             characters: report.Characters,
             fights: report.Fights,
+            raidStart: report.startTime,
             raidTime: report.endTime - report.startTime,
             reportDetails: {
                 title: report.title,
                 startTime: new Date(report.startTimestamp),
                 endTime: new Date(report.endTimestamp)
             }
-        })
+        });
+
+        return report;
     }
 
     componentDidMount() {
@@ -130,19 +134,8 @@ class SummaryReport extends Component {
             .then(x => x.loadCharacterSummary())
             .then(x => x.loadDeaths())
             .then(x => {
-                let report = x.getResults(selectedFight);
-                this.setState({
-                    isLoaded: true,
-                    characters: report.Characters,
-                    fights: report.Fights,
-                    raidTime: report.endTime - report.startTime,
-                    reportDetails: {
-                        title: report.title,
-                        startTime: new Date(report.startTimestamp),
-                        endTime: new Date(report.endTimestamp)
-                    }
-                })
-                this._generateFilteredData();
+                let report = this._getResults();
+                this._generateFilteredData(report.Characters);
             })
             .catch((error) => {
                 this.setState({
@@ -157,8 +150,8 @@ class SummaryReport extends Component {
             const { fightId } = this.props.match.params;
             let selectedFight = fightId == null || isNaN(parseInt(fightId)) ? -1 : parseInt(fightId);
 
-            this._getResults(selectedFight);
-            this._generateFilteredData();
+            let report = this._getResults(selectedFight);
+            this._generateFilteredData(report.Characters);
         }
     }
 
@@ -204,8 +197,7 @@ class SummaryReport extends Component {
         }
     }
 
-    _generateFilteredData() {
-        const {characters} = this.state;
+    _generateFilteredData(characters) {
         const {filter} = this.props.match.params;
 
         const classSortOrder = { Warrior: 0, Rogue: 1, Hunter: 2, Mage: 3, Warlock: 4, Priest: 5, Shaman: 6, Paladin: 7, Druid: 8 };
@@ -240,7 +232,7 @@ class SummaryReport extends Component {
     }
 
     render() {
-        const { error, isLoaded, data, reportId, reportDetails, fights, raidTime, classFilter, roleFilter} = this.state;
+        const { error, isLoaded, data, reportId, reportDetails, fights, raidStart, raidTime, classFilter, roleFilter} = this.state;
         const { fightId, filter } = this.props.match.params;
 
         let selectedFight = fightId == null || isNaN(parseInt(fightId)) ? -1 : parseInt(fightId);
@@ -310,7 +302,7 @@ class SummaryReport extends Component {
                             <BossNavItem key={boss.id} boss={boss} onMouseOver={this.handleFightMouseOver} onMouseOut={this.handleFightMouseOut} />
                         ))}
                     </div>
-                    <FightChart fights={fights} raidTime={raidTime} fightIds={fightIds} />
+                    <FightChart fights={fights} raidStart={raidStart} raidTime={raidTime} fightIds={fightIds} />
                     <div className="nav_bar">
                         <NavLink to={"/" + reportId + "/" + selectedFight} activeClassName="selected"><div className={"class_nav All"}><img className="spell_icon" src="https://assets.rpglogs.com/img/warcraft/abilities/inv_misc_questionmark.jpg" alt="All" />All</div></NavLink>
                         <div className="separator"></div>
@@ -823,6 +815,24 @@ class SummaryReport extends Component {
                             <GridIconListColumn field={DataPoints.CooldownsItems}
                                         label=" "
                                         cssClass="cooldowns center" />
+                        </GridColumnGroup>
+                        <GridColumnGroup id={GroupKeys.Tank} label="Tank Stats" cssClass="even-colgroup">
+                            <GridBarColumn label="Damage Taken" width="270" visibility={(ctx) => ctx.roleFilter === "tank"}>
+                                <GridBarColumnSection field={DataPoints.DamageTakenHit} label="Hit" cssClass="class-colour1" />
+                                <GridBarColumnSection field={DataPoints.DamageTakenCrushed} label="Crushing Blow" cssClass="bad2" />
+                                <GridBarColumnSection field={DataPoints.DamageTakenCrit} label="Crit" cssClass="bad1" />
+                                <GridBarColumnSection field={DataPoints.DamageTakenBlocked} label="Blocked" cssClass="class-colour3" />
+                                <GridBarColumnSection field={DataPoints.DamageTakenParry} label="Parry" cssClass="good2" />
+                                <GridBarColumnSection field={DataPoints.DamageTakenDodge} label="Dodge" cssClass="good1" />
+                                <GridBarColumnSection field={DataPoints.DamageTakenMiss} label="Miss" cssClass="class-colour4" />
+                            </GridBarColumn>
+                            <GridColumn label="Hit" field={DataPoints.DamageTakenHit} format="%" cssClass="right class-colour4 percentage" visibility={(ctx) => ctx.roleFilter === "tank"} />
+                            <GridColumn label="Crush" field={DataPoints.DamageTakenCrushed} format="%" cssClass="right class-colour4 percentage" visibility={(ctx) => ctx.roleFilter === "tank"}  />
+                            <GridColumn label="Crit" field={DataPoints.DamageTakenCrit} format="%" cssClass="right class-colour4 percentage" visibility={(ctx) => ctx.roleFilter === "tank"}  />
+                            <GridColumn label="Block" field={DataPoints.DamageTakenBlocked} format="%" cssClass="right class-colour4 percentage" visibility={(ctx) => ctx.roleFilter === "tank"}  />
+                            <GridColumn label="Parry" field={DataPoints.DamageTakenParry} format="%" cssClass="right percentage" visibility={(ctx) => ctx.roleFilter === "tank"}  />
+                            <GridColumn label="Dodge" field={DataPoints.DamageTakenDodge} format="%" cssClass="right percentage" visibility={(ctx) => ctx.roleFilter === "tank"}  />
+                            <GridColumn label="Miss" field={DataPoints.DamageTakenMiss} format="%" cssClass="right percentage" visibility={(ctx) => ctx.roleFilter === "tank"}  />
                         </GridColumnGroup>
                     </Grid>
                     <ReactTooltip />

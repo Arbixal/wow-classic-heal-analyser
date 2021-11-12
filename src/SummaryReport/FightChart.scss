@@ -1,7 +1,4 @@
-$boss-kill-colour: #429c5c;
-$boss-wipe-colour: #fd4646;
-$trash-colour: #84bdf8;
-$idle-colour: #333333;
+@import "../_colours.scss";
 
 @mixin coloriseSummary($colour) {
     th {

@@ -115,9 +115,9 @@ export class GridRow extends Component {
             characterData[DataPoints.ProtectionPotionsNatureAbsorbed],
             characterData[DataPoints.ProtectionPotionsShadowAbsorbed]);
 
-        characterData[DataPoints.ConsumesManaPots] = this._getCastCount(character, 17531, 28499, 41618);
+        characterData[DataPoints.ConsumesManaPots] = this._getCastCount(character, 17531, 28499, 41618, 41617);
         characterData[DataPoints.ConsumesRejuvPots] = this._getCastCount(character, 22729, 28517, 45051);
-        characterData[DataPoints.ConsumesHealthPots] = this._getCastCount(character, 17534, 28495, 41620);
+        characterData[DataPoints.ConsumesHealthPots] = this._getCastCount(character, 17534, 28495, 41620, 41619);
         characterData[DataPoints.ConsumesFreeActionPotion] = this._getCastCount(character, 6615, 24364);
         characterData[DataPoints.ConsumesRestorationPots] = this._getCastCount(character, 11359, 17550);
         characterData[DataPoints.ConsumesRagePotions] = this._getCastCount(character, 6613, 17528);
@@ -252,6 +252,8 @@ export class GridRow extends Component {
         characterData[DataPoints.CooldownsRacial] = this._getCooldownList(character, "Racial");
         characterData[DataPoints.CooldownsAbility] = this._getCooldownList(character, "Ability");
         characterData[DataPoints.CooldownsItems] = this._getCooldownList(character, "Trinket");
+
+        this._getTankStats(character, characterData);
         
         return characterData;
     }
@@ -515,6 +517,39 @@ export class GridRow extends Component {
         return damageTakenTable;
     }
 
+    _getTankStats(character, characterData) {
+        const meleeDamage = character.damageTaken[1];
+        if (!meleeDamage)
+            return;
+
+        let totalHits = meleeDamage.hitCount + meleeDamage.missCount;
+        let hitMap = {
+            "Hit": DataPoints.DamageTakenHit,
+            "Blocked Hit": DataPoints.DamageTakenBlocked,
+            "Crushing Blow": DataPoints.DamageTakenCrushed,
+            "Critical Hit": DataPoints.DamageTakenCrit,
+            "Miss": DataPoints.DamageTakenMiss,
+            "Dodge": DataPoints.DamageTakenDodge,
+            "Parry": DataPoints.DamageTakenParry,
+        }
+
+        meleeDamage.hitdetails.forEach(hit => {
+            let hitType = hitMap[hit.type];
+            if (!hitType)
+                return;
+
+            characterData[hitType] = hit.count / totalHits;
+        })
+
+        meleeDamage.missdetails.forEach(miss => {
+            let hitType = hitMap[miss.type];
+            if (!hitType)
+                return;
+
+            characterData[hitType] = miss.count / totalHits;
+        })
+    }
+
     render() {
         const {Data, isLoaded, error, classType} = this.state;
         const {children, row, context} = this.props;
@@ -524,7 +559,7 @@ export class GridRow extends Component {
                 {Children.map(children, child => {
                     // checking isValidElement is the safe way and avoids a typescript error too
                     if (isValidElement(child)) {
-                        return cloneElement(child, { data: Data, context: context, render: (x) => x.renderCell() });
+                        return cloneElement(child, { data: Data, context: context, render: (x) => x.renderCell(), renderType: "cell" });
                     }
                     return child;
                 })}

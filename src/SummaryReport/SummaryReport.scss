@@ -100,6 +100,42 @@
     td.even_column_group {
         background-color: scale-color($class-color, $alpha: -75%);
     }
+
+    .class-colour1 {
+        background-color: $class-color;
+    }
+    
+    .class-colour2 {
+        background-color: scale-color($class-color, $alpha: -25%);
+    }
+
+    .class-colour3 {
+        background-color: scale-color($class-color, $alpha: -50%);
+    }
+
+    .class-colour4 {
+        background-color: scale-color($class-color, $alpha: -75%);
+    }
+
+    .percentage {
+        width: 32px;
+    }
+}
+
+.bad1 {
+    background-color: $boss-wipe-colour;
+}
+
+.bad2 {
+    background-color: scale-color($boss-wipe-colour, $alpha: -50%);
+}
+
+.good1 {
+    background-color: $boss-kill-colour;
+}
+
+.good2 {
+    background-color: scale-color($boss-kill-colour, $alpha: -50%);
 }
 
 tr.Druid {
@@ -551,4 +587,8 @@ a {
 
 svg {
     margin-top: 10px;
+}
+
+.grid-bar-column {
+    display: flex;
 }

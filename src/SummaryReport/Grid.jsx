@@ -12,9 +12,6 @@ export class Grid extends Component {
                 [GroupKeys.Consumes]: true,
                 [GroupKeys.DispelsInterrupts]: true,
             },
-            hiddenColumns: {},
-            classFilter: props.classFilter,
-            roleFilter: props.roleFilter,
         }
 
         this._logLoader = props.logLoader;
@@ -46,16 +43,6 @@ export class Grid extends Component {
         return false;
     }
 
-    componentDidUpdate(prevProps) {
-        if (this.props.classFilter !== prevProps.classFilter
-            || this.props.roleFilter !== prevProps.roleFilter) {
-            this.setState({
-                classFilter: this.props.classFilter,
-                roleFilter: this.props.roleFilter
-            });
-        }
-    }
-
     handleColGroupToggle(colGroup) {
         this.setState((state) => ({
             collapsed: {...state.collapsed, [colGroup]: (state.collapsed[colGroup] ? !state.collapsed[colGroup] : true)}
@@ -63,7 +50,10 @@ export class Grid extends Component {
     }
 
     render() {
-        const {data, children, fightId} = this.props;
+        const {data, children, fightId, classFilter, roleFilter} = this.props;
+        const {collapsed} = this.state;
+
+        let ctx = {collapsed: collapsed, classFilter: classFilter, roleFilter: roleFilter};
 
         return (
         <table>
@@ -72,7 +62,7 @@ export class Grid extends Component {
                     {Children.map(children, child => {
                         // checking isValidElement is the safe way and avoids a typescript error too
                         if (isValidElement(child)) {
-                            return cloneElement(child, { render: (x) => x.renderHeader(), context: this.state, onColGroupToggle: this.handleColGroupToggle });
+                            return cloneElement(child, { render: (x) => x.renderHeader(), renderType: "header", context: ctx, onColGroupToggle: this.handleColGroupToggle });
                         }
                         return child;
                     })}
@@ -81,7 +71,7 @@ export class Grid extends Component {
                 {Children.map(children, child => {
                         // checking isValidElement is the safe way and avoids a typescript error too
                         if (isValidElement(child)) {
-                            return cloneElement(child, { render: (x) => x.renderSubHeader(), context: this.state });
+                            return cloneElement(child, { render: (x) => x.renderSubHeader(), renderType: "sub-header", context: ctx });
                         }
                         return child;
                     })}
@@ -89,7 +79,7 @@ export class Grid extends Component {
             </thead>
             <tbody>
                 {data.map((obj, idx) => (
-                <GridRow key={obj.id} character={obj} row={idx} logLoader={this._logLoader} context={this.state} fightId={fightId} >
+                <GridRow key={obj.id} character={obj} row={idx} logLoader={this._logLoader} context={ctx} fightId={fightId} >
                     {children}
                 </GridRow>
                 ))}
