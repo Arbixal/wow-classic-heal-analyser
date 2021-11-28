@@ -58,20 +58,24 @@ div.fightChart {
     }
 
     svg {
-        .boss-kill {
+        rect.boss-kill, text.boss-kill {
             fill: $boss-kill-colour;
         }
 
-        .boss-wipe {
+        rect.boss-wipe, text.boss-wipe {
             fill: $boss-wipe-colour;
         }
 
-        .trash {
+        rect.trash, text.trash {
             fill: $trash-colour;
         }
 
-        .idle {
+        rect.idle {
             fill: $idle-colour;
+        }
+
+        text.idle {
+            fill: #FFFFFF;
         }
     }
 }
