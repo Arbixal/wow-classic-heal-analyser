@@ -21,7 +21,7 @@ export class GridIconListColumn extends Component {
         return (
             <>
             { value.map(x => (
-                <span key={x.name} className="icon_count" data-tip={x.name} data-count={x.count}><img className="spell_icon" src={"https://assets.rpglogs.com/img/warcraft/abilities/" + x.icon} alt={x.name} /></span>
+                <a href={"https://tbc.wowhead.com/" + (x.itemId ? "item=" + x.itemId : (x.spellId ? "spell=" + x.spellId : ""))} target="_blank" rel="noreferrer"><span key={x.name} className="icon_count" data-count={x.count}><img className="spell_icon" src={"https://assets.rpglogs.com/img/warcraft/abilities/" + x.icon} alt={x.name} /></span></a>
             ))}
             </>
         );

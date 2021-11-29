@@ -47,7 +47,7 @@ export class GridIconColumn extends Component {
     }
 
     renderSubHeader() {
-        const {label, cssClass, icon_name, icon_url} = this.props;
+        const {label, cssClass, icon_name, icon_url, item_id} = this.props;
 
         if (!this.isVisible()) {
             return null;
@@ -58,9 +58,14 @@ export class GridIconColumn extends Component {
             icon = "https://assets.rpglogs.com/img/warcraft/abilities/" + icon_name;
         }
 
+        let cellContent = <img className="spell_icon" src={icon} alt={label} data-tip={item_id ? null : label} />
+        if (item_id) {
+            cellContent = <a href={"https://tbc.wowhead.com/item=" + item_id} target="_blank" rel="noreferrer">{cellContent}</a>
+        }
+
         return (
         <th className={cssClass}>
-            <img className="spell_icon" src={icon} alt={label} data-tip={label} />
+            {cellContent}
         </th>);
     }
 

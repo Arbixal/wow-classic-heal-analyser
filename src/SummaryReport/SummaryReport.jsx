@@ -384,16 +384,19 @@ class SummaryReport extends Component {
                             <GridIconColumn field={DataPoints.ProtectionPotionsNature} 
                                         label="Nature Protection Potion" 
                                         icon_name="inv_potion_06.jpg" 
+                                        item_id={6052}
                                         cssClass="protection_potion nature" 
                                         visibility={(ctx) => ctx.collapsed === false} />
                             <GridIconColumn field={DataPoints.ProtectionPotionsGreaterNature} 
                                         label="Greater Nature Protection Potion" 
                                         icon_name="inv_potion_22.jpg" 
+                                        item_id={13458}
                                         cssClass="protection_potion nature" 
                                         visibility={(ctx) => ctx.collapsed === false} />
                             <GridIconColumn field={DataPoints.ProtectionPotionsMajorNature} 
                                         label="Major Nature Protection Potion" 
                                         icon_name="inv_potion_127.jpg" 
+                                        item_id={22844}
                                         cssClass="protection_potion nature" 
                                         visibility={(ctx) => ctx.collapsed === false} />
                             <GridColumn field={DataPoints.ProtectionPotionsNatureAbsorbed} 
@@ -403,16 +406,19 @@ class SummaryReport extends Component {
                             <GridIconColumn field={DataPoints.ProtectionPotionsFire} 
                                         label="Fire Protection Potion" 
                                         icon_name="inv_potion_16.jpg" 
+                                        item_id={6049}
                                         cssClass="protection_potion fire" 
                                         visibility={(ctx) => ctx.collapsed === false} />
                             <GridIconColumn field={DataPoints.ProtectionPotionsGreaterFire} 
                                         label="Greater Fire Protection Potion" 
                                         icon_name="inv_potion_24.jpg" 
+                                        item_id={13457}
                                         cssClass="protection_potion fire" 
                                         visibility={(ctx) => ctx.collapsed === false} />
                             <GridIconColumn field={DataPoints.ProtectionPotionsMajorFire} 
                                         label="Major Fire Protection Potion" 
                                         icon_name="inv_potion_124.jpg" 
+                                        item_id={22841}
                                         cssClass="protection_potion fire" 
                                         visibility={(ctx) => ctx.collapsed === false} />
                             <GridColumn field={DataPoints.ProtectionPotionsFireAbsorbed} 
@@ -422,16 +428,19 @@ class SummaryReport extends Component {
                             <GridIconColumn field={DataPoints.ProtectionPotionsFrost} 
                                             label="Frost Protection Potion" 
                                             icon_name="inv_potion_13.jpg" 
+                                            item_id={6050}
                                             cssClass="protection_potion frost" 
                                             visibility={(ctx) => ctx.collapsed === false} />
                             <GridIconColumn field={DataPoints.ProtectionPotionsGreaterFrost} 
                                             label="Greater Frost Protection Potion" 
                                             icon_name="inv_potion_20.jpg" 
+                                            item_id={13456}
                                             cssClass="protection_potion frost" 
                                             visibility={(ctx) => ctx.collapsed === false} />
                             <GridIconColumn field={DataPoints.ProtectionPotionsMajorFrost} 
                                             label="Major Frost Protection Potion" 
                                             icon_name="inv_potion_126.jpg" 
+                                            item_id={22842}
                                             cssClass="protection_potion frost" 
                                             visibility={(ctx) => ctx.collapsed === false} />
                             <GridColumn field={DataPoints.ProtectionPotionsFrostAbsorbed} 
@@ -441,16 +450,19 @@ class SummaryReport extends Component {
                             <GridIconColumn field={DataPoints.ProtectionPotionsShadow} 
                                             label="Shadow Protection Potion" 
                                             icon_name="inv_potion_44.jpg" 
+                                            item_id={6048}
                                             cssClass="protection_potion shadow" 
                                             visibility={(ctx) => ctx.collapsed === false} />
                             <GridIconColumn field={DataPoints.ProtectionPotionsGreaterShadow} 
                                             label="Greater Shadow Protection Potion" 
                                             icon_name="inv_potion_23.jpg" 
+                                            item_id={13459}
                                             cssClass="protection_potion shadow" 
                                             visibility={(ctx) => ctx.collapsed === false} />
                             <GridIconColumn field={DataPoints.ProtectionPotionsMajorShadow} 
                                             label="Major Shadow Protection Potion" 
                                             icon_name="inv_potion_123.jpg" 
+                                            item_id={22846}
                                             cssClass="protection_potion shadow" 
                                             visibility={(ctx) => ctx.collapsed === false} />
                             <GridColumn field={DataPoints.ProtectionPotionsShadowAbsorbed} 
@@ -460,11 +472,13 @@ class SummaryReport extends Component {
                             <GridIconColumn field={DataPoints.ProtectionPotionsGreaterArcane} 
                                             label="Greater Arcane Protection Potion" 
                                             icon_name="inv_potion_83.jpg" 
+                                            item_id={13461}
                                             cssClass="protection_potion arcane" 
                                             visibility={(ctx) => ctx.collapsed === false} />
                             <GridIconColumn field={DataPoints.ProtectionPotionsMajorArcane} 
                                             label="Major Arcane Protection Potion" 
                                             icon_name="inv_potion_128.jpg" 
+                                            item_id={22845}
                                             cssClass="protection_potion arcane" 
                                             visibility={(ctx) => ctx.collapsed === false} />
                             <GridColumn field={DataPoints.ProtectionPotionsArcaneAbsorbed} 
@@ -481,71 +495,85 @@ class SummaryReport extends Component {
                             <GridIconColumn field={DataPoints.ConsumesManaPots} 
                                             label="Mana Potions" 
                                             icon_name="inv_potion_137.jpg" 
+                                            item_id={22832}
                                             cssClass="protection_potion frost"
                                             visibility={(ctx) => ctx.classFilter !== "Warrior" && ctx.classFilter !== "Rogue" && ctx.collapsed === false} />
                             <GridIconColumn field={DataPoints.ConsumesRejuvPots} 
                                             label="Rejuvenation Potions" 
                                             icon_name="inv_potion_134.jpg" 
+                                            item_id={22850}
                                             cssClass="protection_potion frost"
                                             visibility={(ctx) => ctx.collapsed === false} />
                             <GridIconColumn field={DataPoints.ConsumesHealthPots} 
                                             label="Healing Potion" 
                                             icon_name="inv_potion_131.jpg" 
+                                            item_id={22829}
                                             cssClass="protection_potion frost"
                                             visibility={(ctx) => ctx.collapsed === false} />
                             <GridIconColumn field={DataPoints.ConsumesFreeActionPotion} 
                                             label="Free/Living Action Potion" 
                                             icon_name="inv_potion_04.jpg" 
+                                            item_id={5634}
                                             cssClass="protection_potion frost"
                                             visibility={(ctx) => ctx.collapsed === false} />
                             <GridIconColumn field={DataPoints.ConsumesRestorationPots} 
                                             label="Restorative Potion" 
                                             icon_name="inv_potion_01.jpg" 
+                                            item_id={9030}
                                             cssClass="protection_potion frost"
                                             visibility={(ctx) => ctx.collapsed === false} />
                             <GridIconColumn field={DataPoints.ConsumesRagePotions} 
                                             label="Rage Potions" 
                                             icon_name="inv_potion_41.jpg" 
+                                            item_id={13442}
                                             cssClass="protection_potion frost"
                                             visibility={(ctx) => (ctx.classFilter == null && ctx.collapsed === false && ctx.roleFilter !== "healer") || (ctx.classFilter === "Warrior")} />
                             <GridIconColumn field={DataPoints.ConsumesIronshield} 
                                             label="Ironshield Potions" 
                                             icon_name="inv_potion_133.jpg" 
+                                            item_id={22849}
                                             cssClass="protection_potion frost"
                                             visibility={(ctx) => (ctx.classFilter == null && ctx.collapsed === false && ctx.roleFilter !== "healer") || (ctx.roleFilter === "tank")} />
                             <GridIconColumn field={DataPoints.ConsumesInsaneStrength} 
                                             label="Insane Strength Potion" 
                                             icon_name="inv_potion_109.jpg" 
+                                            item_id={22828}
                                             cssClass="protection_potion frost"
                                             visibility={(ctx) => ctx.collapsed === false} />
                             <GridIconColumn field={DataPoints.ConsumesShrouding} 
                                             label="Shrouding Potion" 
                                             icon_name="inv_potion_144.jpg" 
+                                            item_id={22871}
                                             cssClass="protection_potion frost"
                                             visibility={(ctx) => ctx.collapsed === false} />
                             <GridIconColumn field={DataPoints.ConsumesFelRegeneration} 
                                             label="Fel Regeneration Potion" 
                                             icon_name="inv_potion_140.jpg" 
+                                            item_id={31676}
                                             cssClass="protection_potion frost"
                                             visibility={(ctx) => ctx.collapsed === false} />
                             <GridIconColumn field={DataPoints.ConsumesHeroic} 
                                             label="Heroic Potion" 
                                             icon_name="inv_potion_106.jpg" 
+                                            item_id={22837}
                                             cssClass="protection_potion frost"
                                             visibility={(ctx) => ctx.collapsed === false} />
                             <GridIconColumn field={DataPoints.ConsumesDestruction} 
                                             label="Destruction Potion" 
                                             icon_name="inv_potion_107.jpg" 
+                                            item_id={22839}
                                             cssClass="protection_potion frost"
                                             visibility={(ctx) => ctx.collapsed === false} />
                             <GridIconColumn field={DataPoints.ConsumesHaste} 
                                             label="Haste Potion" 
                                             icon_name="inv_potion_108.jpg" 
+                                            item_id={22838}
                                             cssClass="protection_potion frost"
                                             visibility={(ctx) => ctx.collapsed === false} />
                             <GridIconColumn field={DataPoints.ConsumesFelMana} 
                                             label="Fel Mana Potion" 
                                             icon_name="inv_potion_138.jpg" 
+                                            item_id={31677}
                                             cssClass="protection_potion frost"
                                             visibility={(ctx) => ctx.collapsed === false} />
 
@@ -557,31 +585,37 @@ class SummaryReport extends Component {
                             <GridIconColumn field={DataPoints.ConsumesRunes} 
                                             label="Dark/Demonic Runes" 
                                             icon_name="inv_misc_rune_04.jpg" 
+                                            item_id={12662}
                                             cssClass="protection_potion nature"
                                             visibility={(ctx) => ctx.classFilter !== "Warrior" && ctx.classFilter !== "Rogue" && ctx.collapsed === false} />
                             <GridIconColumn field={DataPoints.ConsumesHealthStones} 
                                             label="Major Health Stone" 
                                             icon_name="inv_stone_04.jpg" 
+                                            item_id={22105}
                                             cssClass="protection_potion nature"
                                             visibility={(ctx) => ctx.collapsed === false} />
                             <GridIconColumn field={DataPoints.ConsumesNightmareSeed} 
                                             label="Nightmare Seed" 
+                                            item_id={22797}
                                             icon_name="inv_misc_herb_nightmareseed.jpg" 
                                             cssClass="protection_potion nature"
                                             visibility={(ctx) => ctx.collapsed === false} />
                             <GridIconColumn field={DataPoints.ConsumesWhipperRootTuber} 
                                             label="Whipper Root Tuber" 
                                             icon_name="inv_misc_food_55.jpg" 
+                                            item_id={11951}
                                             cssClass="protection_potion nature"
                                             visibility={(ctx) => ctx.collapsed === false} />
                             <GridIconColumn field={DataPoints.ConsumesThistleTea} 
                                             label="Thistle Tea" 
                                             icon_name="inv_drink_milk_05.jpg" 
+                                            item_id={7676}
                                             cssClass="protection_potion nature"
                                             visibility={(ctx) => (ctx.classFilter == null && ctx.collapsed === false && ctx.roleFilter !== "healer" && ctx.roleFilter !== "tank") || (ctx.classFilter === "Rogue")} />
                             <GridIconColumn field={DataPoints.ConsumesManaGem} 
                                             label="Mana Gem" 
                                             icon_name="inv_misc_gem_stone_01.jpg" 
+                                            item_id={22044}
                                             cssClass="protection_potion nature"
                                             visibility={(ctx) => (ctx.classFilter == null && ctx.collapsed === false && ctx.roleFilter !== "healer" && ctx.roleFilter !== "tank") || (ctx.classFilter === "Mage")} />
 
@@ -593,21 +627,25 @@ class SummaryReport extends Component {
                             <GridIconColumn field={DataPoints.ConsumesDrumsBattle} 
                                             label="Drums of Battle" 
                                             icon_name="inv_misc_drum_02.jpg" 
+                                            item_id={29529}
                                             cssClass="protection_potion holy"
                                             visibility={(ctx) => ctx.collapsed === false} />
                             <GridIconColumn field={DataPoints.ConsumesDrumsWar} 
                                             label="Drums of War" 
                                             icon_name="inv_misc_drum_03.jpg" 
+                                            item_id={29528}
                                             cssClass="protection_potion holy"
                                             visibility={(ctx) => ctx.collapsed === false} />
                             <GridIconColumn field={DataPoints.ConsumesDrumsRestoration} 
                                             label="Drums of Restoration" 
                                             icon_name="inv_misc_drum_07.jpg" 
+                                            item_id={29531}
                                             cssClass="protection_potion holy"
                                             visibility={(ctx) => ctx.collapsed === false} />
                             <GridIconColumn field={DataPoints.ConsumesDrumsPanic} 
                                             label="Drums of Panic" 
                                             icon_name="inv_misc_drum_06.jpg" 
+                                            item_id={29532}
                                             cssClass="protection_potion holy"
                                             visibility={(ctx) => ctx.collapsed === false} />
 
@@ -619,21 +657,25 @@ class SummaryReport extends Component {
                             <GridIconColumn field={DataPoints.ConsumesHolyWater} 
                                             label="Stratholme Holy Water" 
                                             icon_name="inv_potion_75.jpg" 
+                                            item_id={13180}
                                             cssClass="protection_potion fire"
                                             visibility={(ctx) => ctx.collapsed === false} />
                             <GridIconColumn field={DataPoints.ConsumesSapperCharge} 
                                             label="Sapper Charge" 
                                             icon_name="inv_gizmo_supersappercharge.jpg" 
+                                            item_id={23827}
                                             cssClass="protection_potion fire"
                                             visibility={(ctx) => ctx.collapsed === false} />
                             <GridIconColumn field={DataPoints.ConsumesEzThro} 
                                             label="Ez-Thro Dynamite II" 
                                             icon_name="inv_misc_bomb_03.jpg" 
+                                            item_id={18588}
                                             cssClass="protection_potion fire"
                                             visibility={(ctx) => ctx.collapsed === false} />
                             <GridIconColumn field={DataPoints.ConsumesDenseDynamite} 
                                             label="Dense Dynamite" 
                                             icon_name="inv_misc_bomb_06.jpg" 
+                                            item_id={18641}
                                             cssClass="protection_potion fire"
                                             visibility={(ctx) => ctx.collapsed === false} />
 
@@ -645,11 +687,13 @@ class SummaryReport extends Component {
                             <GridIconColumn field={DataPoints.ConsumesHeavyRuneclothBandage} 
                                             label="Bandages" 
                                             icon_name="inv_misc_bandage_netherweave_heavy.jpg" 
+                                            item_id={21991}
                                             cssClass="protection_potion priest"
                                             visibility={(ctx) => ctx.collapsed === false} />
                             <GridIconColumn field={DataPoints.ConsumesAntiVenom} 
                                             label="Powerful Anti-Venom" 
                                             icon_name="inv_drink_14.jpg" 
+                                            item_id={19440}
                                             cssClass="protection_potion priest"
                                             visibility={(ctx) => ctx.collapsed === false} />
                         </GridColumnGroup>

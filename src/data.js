@@ -1930,233 +1930,272 @@ export const cooldownList = {
     '23734': {
         name: "Natural Alignment Crystal",
         type: "Trinket",
+        itemId: 19344,
         icon: "inv_misc_gem_03.jpg",
         cooldown: 300000
     },
     '26467': {
         name: "Scarab Brooch",
         type: "Trinket",
+        itemId: 21625,
         icon: "inv_misc_ahnqirajtrinket_06.jpg",
         cooldown: 180000
     },
     '24659': {
         name: "Zandalarian Hero Charm",
         type: "Trinket",
+        itemId: 19950,
         icon: "inv_jewelry_necklace_13.jpg",
         cooldown: 120000
     },
     '24268': {
         name: "Mar'li's Eye",
         type: "Trinket",
+        itemId: 19930,
         icon: "inv_zulgurubtrinket.jpg",
         cooldown: 180000
     },
     '15604': {
         name: "Second Wind",
         type: "Trinket",
+        itemId: 11819,
         icon: "inv_jewelry_talisman_06.jpg",
         cooldown: 900000
     },
     '28760': {
         name: "Warmth of Forgiveness",
         type: "Trinket",
+        itemId: 23027,
         icon: "inv_trinket_naxxramas01.jpg",
         cooldown: 180000
     },
     '28862': {
         name: "Eye of Diminution",
         type: "Trinket",
+        itemId: 23001,
         icon: "inv_trinket_naxxramas02.jpg",
         cooldown: 120000
     },
     '28780': {
         name: "Eye of the Dead",
         type: "Trinket",
+        itemId: 23047,
         icon: "inv_trinket_naxxramas01.jpg",
         cooldown: 120000
     },
     '28779': {
         name: "The Restrained Essence of Sapphiron",
         type: "Trinket",
+        itemId: 23046,
         icon: "inv_trinket_naxxramas06.jpg",
         cooldown: 120000
     },
     '23271': {
         name: "Talisman of Ephemeral Power",
         type: "Trinket",
+        itemId: 18820,
         icon: "inv_misc_stonetablet_11.jpg",
         cooldown: 90000
     },
     '15646': {
         name: "Burst of Knowledge",
         type: "Trinket",
+        itemId: 11832,
         icon: "inv_jewelry_amulet_07.jpg",
         cooldown: 900000
     },
     '27675': {
         name: "Draconic Infused Emblem",
         type: "Trinket",
+        itemId: 22268,
         icon: "inv_jewelry_talisman_09.jpg",
         cooldown: 75000
     },
     '45042': {
         name: "Shifting Naaru Sliver",
         type: "Trinket",
+        itemId: 34429,
         icon: "inv_jewelry_talisman_15.jpg",
         cooldown: 90000
     },
     '45049': {
         name: "Steely Naaru Sliver",
         type: "Trinket",
+        itemId: 34428,
         icon: "inv_jewelry_talisman_18.jpg",
         cooldown: 300000
     },
     '40396': {
         name: "The Skull of Gul'dan",
         type: "Trinket",
+        itemId: 32483,
         icon: "inv_misc_bone_elfskull_01.jpg",
         cooldown: 120000
     },
     '40464': {
         name: "Shadowmoon Insignia",
         type: "Trinket",
+        itemId: 32501,
         icon: "inv_jewelcrafting_shadowsongamethyst_01.jpg",
         cooldown: 180000
     },
     '43716': {
         name: "Berserker's Call",
         type: "Trinket",
+        itemId: 33831,
         icon: "racial_troll_berserk.jpg",
         cooldown: 120000
     },
     '43712': {
         name: "Hex Shrunken Head",
         type: "Trinket",
+        itemId: 33829,
         icon: "inv_misc_head_troll_01.jpg",
         cooldown: 120000
     },
     '44055': {
         name: "Battlemaster's Trinket",
         type: "Trinket",
+        itemId: 34578,
         icon: "ability_warrior_endlessrage.jpg",
         cooldown: 180000
     },
     '43710': {
         name: "Tome of Diabolic Remedy",
         type: "Trinket",
+        itemId: 33828,
         icon: "inv_offhand_stratholme_a_01.jpg",
         cooldown: 120000
     },
     '43713': {
         name: "Ancient Aqir Artifact",
         type: "Trinket",
+        itemId: 33830,
         icon: "inv_trinket_naxxramas05.jpg",
         cooldown: 120000
     },
     '40402': {
         name: "Earing of Soulful Meditation",
         type: "Trinket",
+        itemId: 30665,
         icon: "inv_jewelry_ring_07.jpg",
         cooldown: 120000
     },
     '38325': {
         name: "Spyglass of the Hidden Fleet",
         type: "Trinket",
+        itemId: 30620,
         icon: "inv_misc_spyglass_02.jpg",
         cooldown: 120000
     },
     '42292': {
         name: "PvP Trinket",
         type: "Trinket",
+        itemId: 37865,
         icon: "inv_jewelry_trinketpvp_02.jpg",
         cooldown: 120000
     },
     '38351': {
         name: "Scarab of Displacement",
         type: "Trinket",
+        itemId: 30629,
         icon: "inv_trinket_naxxramas05.jpg",
         cooldown: 180000
     },
     '48042': {
         name: "Balebrew Charm",
         type: "Trinket",
+        itemId: 37128,
         icon: "inv_drink_04.jpg",
         cooldown: 600000
     },
     '48041': {
         name: "Brightbrew Charm",
         type: "Trinket",
+        itemId: 37127,
         icon: "inv_drink_08.jpg",
         cooldown: 600000
     },
     '43995': {
         name: "Tiny Voodoo Mask",
         type: "Trinket",
+        itemId: 34029,
         icon: "inv_helm_mask_zulgurub_d_01.jpg",
         cooldown: 600000
     },
     '46784': {
         name: "Figurine - Shadowsong Panther",
         type: "Trinket",
+        itemId: 35702,
         icon: "inv_jewelcrafting_blackpearlpanther.jpg",
         cooldown: 90000
     },
     '46783': {
         name: "Figurine - Crimson Serpent",
         type: "Trinket",
+        itemId: 35700,
         icon: "inv_jewelcrafting_rubyserpent.jpg",
         cooldown: 120000
     },
     '46782': {
         name: "Figurine - Khorium Boar",
         type: "Trinket",
+        itemId: 35694,
         icon: "inv_jewelcrafting_truesilverboar.jpg",
         cooldown: 300000
     },
     '46780': {
         name: "Figurine - Empyrean Tortoise",
         type: "Trinket",
+        itemId: 35693,
         icon: "ability_hunter_pet_turtle.jpg",
         cooldown: 120000
     },
     '46785': {
         name: "Figurine - Seaspray Albatross",
         type: "Trinket",
+        itemId: 35703,
         icon: "inv_qirajidol_obsidian.jpg",
         cooldown: 180000
     },
     '40729': {
         name: "Badge of Tenacity",
         type: "Trinket",
+        itemId: 32658,
         icon: "inv_misc_armorkit_12.jpg",
         cooldown: 120000
     },
     '33807': {
         name: "Abacus of Violent Odds",
         type: "Trinket",
+        itemId: 28288,
         icon: "inv_misc_enggizmos_18.jpg",
         cooldown: 120000
     },
     '33089': {
         name: "Figurine of the Colossus",
         type: "Trinket",
+        itemId: 27529,
         icon: "inv_qirajidol_rebirth.jpg",
         cooldown: 120000
     },
     '35337': {
         name: "Scryer's Bloodgem",
         type: "Trinket",
+        itemId: 29132,
         icon: "inv_misc_gem_bloodstone_02.jpg",
         cooldown: 90000
     },
     '35166': {
         name: "Bloodlust Brooch",
         type: "Trinket",
+        itemId: 29383,
         icon: "inv_misc_monsterscales_15.jpg",
         cooldown: 120000
     },
     '35165': {
         name: "Essence of the Martyr",
+        itemId: 29376,
         type: "Trinket",
         icon: "inv_valentineperfumebottle.jpg",
         cooldown: 120000
@@ -2164,600 +2203,700 @@ export const cooldownList = {
     '35169': {
         name: "Gnomeregan Auto-Blocker 600",
         type: "Trinket",
+        itemId: 29387,
         icon: "inv_battery_02.jpg",
         cooldown: 120000
     },
     '34106': {
         name: "Icon of Unyielding Courage",
         type: "Trinket",
+        itemId: 28121,
         icon: "inv_brd_banner.jpg",
         cooldown: 120000
     },
     '38332': {
         name: "Ribbon of Sacrifice",
         type: "Trinket",
+        itemId: 28590,
         icon: "inv_misc_bandage_16.jpg",
         cooldown: 120000
     },
     '37877': {
         name: "Lower City Prayerbook",
         type: "Trinket",
+        itemId: 30841,
         icon: "inv_misc_book_11.jpg",
         cooldown: 60000
     },
     '34519': {
         name: "Moroes' Lucky Picket Watch",
         type: "Trinket",
+        itemId: 28528,
         icon: "inv_misc_pocketwatch_02.jpg",
         cooldown: 120000
     },
     '40538': {
         name: "Brooch of the Immortal King",
         type: "Trinket",
+        itemId: 32534,
         icon: "inv_jewelry_necklace_28.jpg",
         cooldown: 300000
     },
     '35163': {
         name: "Icon of the Silver Crescent",
         type: "Trinket",
+        itemId: 29370,
         icon: "inv_weapon_shortblade_23.jpg",
         cooldown: 120000
     },
     '37208': {
         name: "The Decapitator",
         type: "Trinket",
+        itemId: 28767,
         icon: "inv_axe_66.jpg",
         cooldown: 180000
     },
     '28777': {
         name: "Slayer's Crest",
         type: "Trinket",
+        itemId: 23041,
         icon: "inv_trinket_naxxramas03.jpg",
         cooldown: 120000
     },
     '34210': {
         name: "Bangle of Endless Blessings",
         type: "Trinket",
+        itemId: 28370,
         icon: "inv_jewelry_necklace_27.jpg",
         cooldown: 120000
     },
     '29601': {
         name: "Pendant of the Violet Eye",
         type: "Trinket",
+        itemId: 28727,
         icon: "inv_trinket_naxxramas02.jpg",
         cooldown: 120000
     },
     '39228': {
         name: "Argussian Compass",
         type: "Trinket",
+        itemId: 27770,
         icon: "inv_misc_armorkit_22.jpg",
         cooldown: 120000
     },
     '34000': {
         name: "Arcanist's Stone",
         type: "Trinket",
+        itemId: 28223,
         icon: "inv_jewelcrafting_nightseye_01.jpg",
         cooldown: 120000
     },
     '31040': {
         name: "Figurine - Living Ruby Serpent",
         type: "Trinket",
+        itemId: 24126,
         icon: "inv_jewelcrafting_rubyserpent.jpg",
         cooldown: 300000
     },
     '31039': {
         name: "Figurine - Dawnstone Crab",
         type: "Trinket",
+        itemId: 24125,
         icon: "inv_jewelcrafting_truesilvercrab.jpg",
         cooldown: 120000
     },
     '40724': {
         name: "Crystalforged Trinket",
         type: "Trinket",
+        itemId: 32654,
         icon: "inv_datacrystal01.jpg",
         cooldown: 60000
     },
     '31038': {
         name: "Figurine - Felsteel Boar",
         type: "Trinket",
+        itemId: 24124,
         icon: "inv_jewelcrafting_truesilverboar.jpg",
         cooldown: 300000
     },
     '31045': {
         name: "Figurine - Talasite Owl",
         type: "Trinket",
+        itemId: 24127,
         icon: "inv_jewelcrafting_jadeowl.jpg",
         cooldown: 300000
     },
     '33400': {
         name: "Warp-Scarab Brooch",
         type: "Trinket",
+        itemId: 27828,
         icon: "inv_scarab_crystal.jpg",
         cooldown: 120000
     },
     '45064': {
         name: "Vial of the Sunwell",
         type: "Trinket",
+        itemId: 34471,
         icon: "inv_potion_106.jpg",
         cooldown: 120000
     },
     '36432': {
         name: "Starkiller's Bauble",
         type: "Trinket",
+        itemId: 30340,
         icon: "spell_arcane_arcaneresilience.jpg",
         cooldown: 90000
     },
     '33479': {
         name: "Adamantite Figurine",
         type: "Trinket",
+        itemId: 27891,
         icon: "inv_qirajidol_sage.jpg",
         cooldown: 120000
     },
     '33486': {
         name: "Jewel of Charismatic Mystique",
         type: "Trinket",
+        itemId: 27900,
         icon: "inv_misc_gem_lionseye_01.jpg",
         cooldown: 300000
     },
     '36347': {
         name: "Heavenly Inspiration",
         type: "Trinket",
+        itemId: 30293,
         icon: "spell_nature_lightning.jpg",
         cooldown: 90000
     },
     '51954': {
         name: "Direbrew Hops",
         type: "Trinket",
+        itemId: 38288,
         icon: "inv_misc_herb_08.jpg",
         cooldown: 120000
     },
     '51953': {
         name: "Dark Iron Smoking Pipe",
         type: "Trinket",
+        itemId: 38290,
         icon: "inv_misc_pipe_01.jpg",
         cooldown: 120000
     },
     '51955': {
         name: "Empty Mug of Direbrew",
         type: "Trinket",
+        itemId: 38287,
         icon: "inv_drink_03.jpg",
         cooldown: 120000
     },
     '51952': {
         name: "Coren's Lucky Coin",
         type: "Trinket",
+        itemId: 38289,
         icon: "inv_misc_elvencoins.jpg",
         cooldown: 120000
     },
     '36372': {
         name: "Dabiri's Enigma",
         type: "Trinket",
+        itemId: 30300,
         icon: "ability_warrior_shieldmastery.jpg",
         cooldown: 90000
     },
     '32355': {
         name: "Ancient Crystal Talisman",
         type: "Trinket",
+        itemId: 25620,
         icon: "inv_jewelry_necklace_28.jpg",
         cooldown: 120000
     },
     '32599': {
         name: "Hypnotist's Watch",
         type: "Trinket",
+        itemId: 25786,
         icon: "inv_misc_gem_variety_02.jpg",
         cooldown: 300000
     },
     '32600': {
         name: "Charm of Alacrity",
         type: "Trinket",
+        itemId: 25787,
         icon: "inv_jewelry_talisman_05.jpg",
         cooldown: 90000
     },
     '31771': {
         name: "Runed Fungalcap",
         type: "Trinket",
+        itemId: 24376,
         icon: "inv_mushroom_06.jpg",
         cooldown: 120000
     },
     '32140': {
         name: "Talisman of the Horde",
         type: "Trinket",
+        itemId: 24551,
         icon: "inv_jewelry_talisman_09.jpg",
         cooldown: 120000
     },
     '33828': {
         name: "Talisman of the Alliance",
         type: "Trinket",
+        itemId: 25829,
         icon: "inv_jewelry_talisman_10.jpg",
         cooldown: 120000
     },
     '28773': {
         name: "Glyph of Deflection",
         type: "Trinket",
+        itemId: 23040,
         icon: "inv_trinket_naxxramas05.jpg",
         cooldown: 120000
     },
     '33667': {
         name: "Bladefist's Breadth",
         type: "Trinket",
+        itemId: 28041,
         icon: "inv_datacrystal06.jpg",
         cooldown: 90000
     },
     '33668': {
         name: "Regal Protectorate",
         type: "Trinket",
+        itemId: 28042,
         icon: "inv_datacrystal06.jpg",
         cooldown: 300000
     },
     '33662': {
         name: "Vengeance of the Illidari",
         type: "Trinket",
+        itemId: 28040,
         icon: "inv_datacrystal06.jpg",
         cooldown: 90000
     },
     '31794': {
         name: "Auslese's Light Channeler",
         type: "Trinket",
+        itemId: 24390,
         icon: "inv_qiraj_jewelencased.jpg",
         cooldown: 180000
     },
     '26391': {
         name: "Vanquished Tentacle of C'Thun",
         type: "Trinket",
+        itemId: 21579,
         icon: "inv_misc_ahnqirajtrinket_05.jpg",
         cooldown: 180000
     },
     '32956': {
         name: "Star of Sha'naar",
         type: "Trinket",
+        itemId: 25995,
         icon: "spell_arcane_arcane03.jpg",
         cooldown: 120000
     },
     '32957': {
         name: "Emblem of Perseverance",
         type: "Trinket",
+        itemId: 25996,
         icon: "inv_shield_02.jpg",
         cooldown: 120000
     },
     '32955': {
         name: "Rune of Force",
         type: "Trinket",
+        itemId: 25994,
         icon: "inv_stone_weightstone_05.jpg",
         cooldown: 120000
     },
     '28778': {
         name: "Loatheb's Reflection",
         type: "Trinket",
+        itemId: 23042,
         icon: "inv_trinket_naxxramas05.jpg",
         cooldown: 120000
     },
     '29602': {
         name: "Jom Gabbar",
         type: "Trinket",
+        itemId: 23570,
         icon: "inv_misc_enggizmos_19.jpg",
         cooldown: 120000
     },
     '29506': {
         name: "The Burrower's Shell",
         type: "Trinket",
+        itemId: 23558,
         icon: "inv_shield_23.jpg",
         cooldown: 120000
     },
     '26400': {
         name: "Fetish of the Sand Reaver",
         type: "Trinket",
+        itemId: 21647,
         icon: "inv_misc_ahnqirajtrinket_03.jpg",
         cooldown: 180000
     },
     '26480': {
         name: "Badge of the Swarmguard",
         type: "Trinket",
+        itemId: 21670,
         icon: "inv_misc_ahnqirajtrinket_04.jpg",
         cooldown: 180000
     },
     '23723': {
         name: "Mind Quickening Gem",
         type: "Trinket",
+        itemId: 19339,
         icon: "spell_nature_wispheal.jpg",
         cooldown: 300000
     },
     '26463': {
         name: "Petrified Scarab",
         type: "Trinket",
+        itemId: 21685,
         icon: "inv_misc_ahnqirajtrinket_01.jpg",
         cooldown: 180000
     },
     '23720': {
         name: "The Black Book",
         type: "Trinket",
+        itemId: 19337,
         icon: "inv_misc_book_06.jpg",
         cooldown: 300000
     },
     '23733': {
         name: "Scrolls of Blindng Light",
         type: "Trinket",
+        itemId: 19343,
         icon: "inv_scroll_08.jpg",
         cooldown: 300000
     },
     '23725': {
         name: "Lifegiving Gem",
         type: "Trinket",
+        itemId: 19341,
         icon: "inv_misc_gem_pearl_05.jpg",
         cooldown: 300000
     },
     '23721': {
         name: "Arcane Infused Gem",
         type: "Trinket",
+        itemId: 19336,
         icon: "spell_nature_wispsplode.jpg",
         cooldown: 120000
     },
     '23724': {
         name: "Rune of Metamorphosis",
         type: "Trinket",
+        itemId: 19340,
         icon: "inv_misc_rune_06.jpg",
         cooldown: 300000
     },
     '23726': {
         name: "Venomous Totem",
         type: "Trinket",
+        itemId: 19342,
         icon: "inv_misc_idol_03.jpg",
         cooldown: 300000
     },
     '23780': {
         name: "Aegis of Preservation",
         type: "Trinket",
+        itemId: 19345,
         icon: "classic_spell_holy_blessingofprotection.jpg",
         cooldown: 300000
     },
     '40815': {
         name: "Commander's Badge",
         type: "Trinket",
+        itemId: 32864,
         icon: "inv_misc_gem_sapphire_01.jpg",
         cooldown: 600000
     },
     '35733': {
-        name: "Commander's Badge",
+        name: "Core of Ar'kelos",
         type: "Trinket",
+        itemId: 29776,
         icon: "spell_nature_abolishmagic.jpg",
         cooldown: 120000
     },
     '32367': {
         name: "Oshu'gun Relic",
         type: "Trinket",
+        itemId: 25634,
         icon: "inv_jewelry_talisman_06.jpg",
         cooldown: 120000
     },
     '35352': {
         name: "Timelapse Shard",
         type: "Trinket",
+        itemId: 29181,
         icon: "inv_datacrystal02.jpg",
         cooldown: 120000
     },
     '32362': {
         name: "Ogre Mauler's Badge",
         type: "Trinket",
+        itemId: 25628,
         icon: "inv_jewelry_talisman_04.jpg",
         cooldown: 120000
     },
     '33012': {
         name: "Oculus of the Hidden Eye",
         type: "Trinket",
+        itemId: 26055,
         icon: "inv_jewelry_ring_45.jpg",
         cooldown: 120000
     },
     '33014': {
         name: "Fetish of the Fallen",
         type: "Trinket",
+        itemId: 27416,
         icon: "inv_helmet_45.jpg",
         cooldown: 120000
     },
     '39200': {
         name: "Terokkar Tablet of Precision",
         type: "Trinket",
+        itemId: 25937,
         icon: "inv_misc_stonetablet_11.jpg",
         cooldown: 90000
     },
     '39201': {
         name: "Terokkar Tablet of Vim",
         type: "Trinket",
+        itemId: 25936,
         icon: "inv_misc_stonetablet_11.jpg",
         cooldown: 90000
     },
     '26789': {
         name: "Shard of the Fallen Star",
         type: "Trinket",
+        itemId: 21891,
         icon: "inv_misc_ahnqirajtrinket_04.jpg",
         cooldown: 180000
     },
     '26166': {
         name: "Eye of Moam",
         type: "Trinket",
+        itemId: 21473,
         icon: "inv_misc_eye_01.jpg",
         cooldown: 180000
     },
     '26168': {
         name: "Fetish of Chitinous Spikes",
         type: "Trinket",
+        itemId: 21488,
         icon: "inv_misc_ahnqirajtrinket_02.jpg",
         cooldown: 180000
     },
     '24998': {
         name: "Hibernation Crystal",
         type: "Trinket",
+        itemId: 20636,
         icon: "inv_misc_gem_stone_01.jpg",
         cooldown: 90000
     },
     '46567': {
         name: "Goblin Rocket Launcher",
         type: "Trinket",
+        itemId: 23836,
         icon: "inv_gizmo_rocketlauncher.jpg",
         cooldown: 120000
     },
     '41301': {
         name: "Time-Lost Figurine",
         type: "Trinket",
+        itemId: 32782,
         icon: "inv_qirajidol_war.jpg",
         cooldown: 1800000
     },
     '40811': {
         name: "Overseer's Badge",
         type: "Trinket",
+        itemId: 32694,
         icon: "inv_misc_gem_sapphire_01.jpg",
         cooldown: 600000
     },
     '30507': {
         name: "Gnomish Poultryizer",
         type: "Trinket",
+        itemId: 23835,
         icon: "inv_misc_enggizmos_06.jpg",
         cooldown: 300000
     },
     '24610': {
         name: "Nat Pagle's Broken Reel",
         type: "Trinket",
+        itemId: 19947,
         icon: "inv_gizmo_09.jpg",
         cooldown: 75000
     },
     '24574': {
         name: "Zandalarian Hero Badge",
         type: "Trinket",
+        itemId: 19948,
         icon: "inv_jewelry_necklace_13.jpg",
         cooldown: 120000
     },
     '24661': {
         name: "Zandalarian Hero Medallion",
         type: "Trinket",
+        itemId: 19949,
         icon: "inv_jewelry_necklace_13.jpg",
         cooldown: 120000
     },
     '25891': {
         name: "Earthstrike",
         type: "Trinket",
+        itemId: 21180,
         icon: "spell_nature_abolishmagic.jpg",
         cooldown: 120000
     },
     '25892': {
         name: "Grace of Earth",
         type: "Trinket",
+        itemId: 21181,
         icon: "inv_misc_herb_02.jpg",
         cooldown: 300000
     },
     '24544': {
         name: "Hazza'rah's Charm of Magic",
         type: "Trinket",
+        itemId: 19959,
         icon: "inv_jewelry_necklace_19.jpg",
         cooldown: 180000
     },
     '24546': {
         name: "Hazza'rah's Charm of Healing",
         type: "Trinket",
+        itemId: 19958,
         icon: "inv_jewelry_necklace_19.jpg",
         cooldown: 180000
     },
     '24571': {
         name: "Hazza'rah's Charm of Might",
         type: "Trinket",
+        itemId: 19951,
         icon: "inv_jewelry_necklace_19.jpg",
         cooldown: 180000
     },
     '24532': {
         name: "Hazza'rah's Charm of Trickery",
         type: "Trinket",
+        itemId: 19954,
         icon: "inv_jewelry_necklace_19.jpg",
         cooldown: 180000
     },
     '24531': {
         name: "Hazza'rah's Charm of Beasts",
         type: "Trinket",
+        itemId: 19953,
         icon: "inv_jewelry_necklace_19.jpg",
         cooldown: 180000
     },
     '24542': {
         name: "Hazza'rah's Charm of Nature",
         type: "Trinket",
+        itemId: 19955,
         icon: "inv_jewelry_necklace_19.jpg",
         cooldown: 180000
     },
     '24499': {
         name: "Hazza'rah's Charm of Spirits",
         type: "Trinket",
+        itemId: 19956,
         icon: "inv_jewelry_necklace_19.jpg",
         cooldown: 180000
     },
     '24543': {
         name: "Hazza'rah's Charm of Destruction",
         type: "Trinket",
+        itemId: 19957,
         icon: "inv_jewelry_necklace_19.jpg",
         cooldown: 180000
     },
     '24498': {
         name: "Hazza'rah's Charm of Valor",
         type: "Trinket",
+        itemId: 19952,
         icon: "inv_jewelry_necklace_19.jpg",
         cooldown: 180000
     },
     '26066': {
         name: "Defender of the Timbermaw",
         type: "Trinket",
+        itemId: 21326,
         icon: "inv_misc_horn_01.jpg",
         cooldown: 600000
     },
     '18307': {
         name: "Barov Peasant Caller",
         type: "Trinket",
+        itemId: 14022,
         icon: "inv_misc_bell_01.jpg",
         cooldown: 600000
     },
     '18308': {
         name: "Barov Peasant Caller",
         type: "Trinket",
+        itemId: 14023,
         icon: "inv_misc_bell_01.jpg",
         cooldown: 600000
     },
     '6251': {
         name: "Cannonball Runner",
         type: "Trinket",
+        itemId: 13382,
         icon: "inv_misc_bomb_04.jpg",
         cooldown: 300000
     },
     '17283': {
         name: "Smokey's Lighter",
         type: "Trinket",
+        itemId: 13171,
         icon: "spell_fire_searingtotem.jpg",
         cooldown: 300000
     },
     '17275': {
         name: "Heart of the Scale",
         type: "Trinket",
+        itemId: 13164,
         icon: "inv_misc_gem_bloodstone_01.jpg",
         cooldown: 1800000
     },
     '19804': {
         name: "Arcanite Dragonling",
         type: "Trinket",
+        itemId: 16022,
         icon: "inv_misc_head_dragon_01.jpg",
         cooldown: 1200000
     },
     '12766': {
         name: "Chained Essence of Eranikus",
         type: "Trinket",
+        itemId: 10455,
         icon: "inv_stone_03.jpg",
         cooldown: 900000
     },
     '23132': {
         name: "Ultra-Flash Shadow Reflector",
         type: "Trinket",
+        itemId: 18639,
         icon: "inv_misc_enggizmos_16.jpg",
         cooldown: 300000
     },
     '21956': {
         name: "Mark of Resolution",
         type: "Trinket",
+        itemId: 17759,
         icon: "inv_jewelry_talisman_07.jpg",
         cooldown: 1800000
     },
     '28200': {
         name: "Talisman of Ascendance",
         type: "Trinket",
+        itemId: 22678,
         icon: "inv_misc_gem_pearl_04.jpg",
         cooldown: 60000
     },
@@ -3348,61 +3487,73 @@ export const trackedDamageTakenSpells = [
 export const foodBuffs = [
     {
         id: 33268,
+        itemId: 27666,
         name: "+44 Healing",
         icon: "inv_misc_fish_18.jpg"
     },
     {
         id: 33256,
+        itemId: 27658,
         name: "+20 Strength",
         icon: "inv_misc_food_60.jpg"
     },
     {
         id: 43764,
+        itemId: 33872,
         name: "+20 Hit Rating",
         icon: "inv_misc_food_84_roastclefthoof.jpg"
     },
     {
         id: 33257,
+        itemId: 27667,
         name: "+30 Stamina",
         icon: "inv_misc_fish_16.jpg"
     },
     {
         id: 35272,
+        itemId: 27660,
         name: "+20 Stamina",
         icon: "inv_misc_food_48.jpg"
     },
     {
         id: 33263,
+        itemId: 27657,
         name: "+23 Spell Damage",
         icon: "inv_misc_food_86_basilisk.jpg"
     },
     {
         id: 33259,
+        itemId: 27655,
         name: "+40 Attack Power",
         icon: "inv_misc_food_53.jpg"
     },
     {
         id: 33261,
+        itemId: 27659,
         name: "+20 Agility",
         icon: "inv_misc_food_65.jpg"
     },
     {
         id: 43722,
+        itemId: 33825,
         name: "+20 Spell Crit",
         icon: "inv_misc_food_63.jpg"
     },
     {
         id: 33265,
+        itemId: 27663,
         name: "+8 Mp5",
         icon: "inv_misc_food_79.jpg"
     },
     {
         id: 45619,
+        itemId: 33867,
         name: "+8 Resistances",
         icon: "inv_misc_fish_29.jpg"
     },
     {
         id: 43730,
+        itemId: 33866,
         name: "Stormchops",
         icon: "inv_misc_food_91.jpg"
     }
@@ -3411,81 +3562,97 @@ export const foodBuffs = [
 export const flaskBuffs = [
     {
         id: 28518,
+        itemId: 22851,
         name: "Flask of Fortification",
         icon: "inv_potion_119.jpg"
     },
     {
         id: 41609,
+        itemId: 32898,
         name: "Flask of Fortification",
         icon: "inv_potion_119.jpg"
     },
     {
         id: 28540,
+        itemId: 22866,
         name: "Flask of Pure Death",
         icon: "inv_potion_115.jpg"
     },
     {
         id: 46837,
+        itemId: 35716,
         name: "Flask of Pure Death",
         icon: "inv_potion_115.jpg"
     },
     {
         id: 28520,
+        itemId: 22854,
         name: "Flask of Relentless Assault",
         icon: "inv_potion_117.jpg"
     },
     {
         id: 41608,
+        itemId: 32901,
         name: "Flask of Relentless Assault",
         icon: "inv_potion_117.jpg"
     },
     {
         id: 28521,
+        itemId: 22861,
         name: "Flask of Blinding Light",
         icon: "inv_potion_116.jpg"
     },
     {
         id: 46839,
+        itemId: 35717,
         name: "Flask of Blinding Light",
         icon: "inv_potion_116.jpg"
     },
     {
         id: 28519,
+        itemId: 22853,
         name: "Flask of Mighty Restoration",
         icon: "inv_potion_118.jpg"
     },
     {
         id: 41610,
+        itemId: 32899,
         name: "Flask of Mighty Restoration",
         icon: "inv_potion_118.jpg"
     },
     {
         id: 42735,
+        itemId: 33208,
         name: "Flask of Chromatic Wonder",
         icon: "inv_potion_48.jpg"
     },
     {
         id: 17626,
+        itemId: 13510,
         name: "Flask of the Titans",
         icon: "inv_potion_62.jpg"
     },
     {
         id: 17628,
+        itemId: 13512,
         name: "Flask of Supreme Power",
         icon: "inv_potion_41.jpg"
     },
     {
         id: 41611,
+        itemId: 32900,
         name: "Flask of Supreme Power",
         icon: "inv_potion_41.jpg"
     },
     {
         id: 17627,
+        itemId: 13511,
         name: "Flask of Distilled Wisdom",
         icon: "inv_potion_97.jpg"
     },
     {
         id: 17629,
+        itemId: 13513,
         name: "Flask of Chromatic Resistance",
         icon: "inv_potion_48.jpg"
     }
@@ -3494,111 +3661,133 @@ export const flaskBuffs = [
 export const battleElixirBuffs = [
     {
         id: 28491,
+        itemId: 22825,
         name: "Elixir of Healing Power",
         icon: "inv_potion_142.jpg"
     },
     {
         id: 28503,
+        itemId: 22835,
         name: "Elixir of Major Shadow Power",
         icon: "inv_potion_145.jpg"
     },
     {
         id: 38954,
+        itemId: 31679,
         name: "Fel Strength Elixir",
         icon: "inv_potion_152.jpg"
     },
     {
         id: 28497,
+        itemId: 22831,
         name: "Elixir of Major Agility",
         icon: "inv_potion_127.jpg"
     },
     {
         id: 28501,
+        itemId: 22833,
         name: "Elixir of Major Firepower",
         icon: "inv_potion_146.jpg"
     },
     {
         id: 28493,
+        itemId: 22827,
         name: "Elixir of Major Frost Power",
         icon: "inv_potion_148.jpg"
     },
     {
         id: 33726,
+        itemId: 28104,
         name: "Elixir of Mastery",
         icon: "inv_potion_111.jpg"
     },
     {
         id: 28490,
+        itemId: 22824,
         name: "Elixir of Major Strength",
         icon: "inv_potion_147.jpg"
     },
     {
         id: 33721,
+        itemId: 28103,
         name: "Adept's Elixir",
         icon: "inv_potion_96.jpg"
     },
     {
         id: 33720,
+        itemId: 28102,
         name: "Onslaught Elixir",
         icon: "inv_potion_58.jpg"
     },
     {
         id: 11406,
+        itemId: 9224,
         name: "Elixir of Demonslaying",
         icon: "inv_potion_27.jpg"
     },
     {
         id: 17538,
+        itemId: 13452,
         name: "Elixir of the Mongoose",
         icon: "inv_potion_32.jpg"
     },
     {
         id: 10669,
+        itemId: 8412,
         name: "Ground Scorpok Assay",
         icon: "inv_misc_dust_02.jpg"
     },
     {
         id: 17539,
+        itemId: 13454,
         name: "Greater Arcane Elixir",
         icon: "inv_potion_25.jpg"
     },
     {
         id: 17038,
+        itemId: 12820,
         name: "Winterfall Firewater",
         icon: "inv_potion_92.jpg"
     },
     {
         id: 16329,
+        itemId: 12460,
         name: "Juju Might",
         icon: "inv_misc_monsterscales_07.jpg"
     },
     {
         id: 26276,
+        itemId: 21546,
         name: "Elixir of Greater Firepower",
         icon: "inv_potion_60.jpg"
     },
     {
         id: 11474,
+        itemId: 9264,
         name: "Elixir of Shadow Power",
         icon: "inv_potion_46.jpg"
     },
     {
         id: 16323,
+        itemId: 12451,
         name: "Juju Power",
         icon: "inv_misc_monsterscales_11.jpg"
     },
     {
         id: 11405,
+        itemId: 9206,
         name: "Elixir of Giants",
         icon: "inv_potion_61.jpg"
     },
     {
         id: 10667,
+        itemId: 8410,
         name: "R.O.I.D.S.",
         icon: "inv_stone_15.jpg"
     },
     {
         id: 17537,
+        itemId: 13453,
         name: "Elixir of Brute Force",
         icon: "inv_potion_59.jpg"
     }
@@ -3607,91 +3796,109 @@ export const battleElixirBuffs = [
 export const guardianElixirBuffs = [
     {
         id: 39627,
+        itemId: 32067,
         name: "Elixir of Draenic Wisdom",
         icon: "inv_potion_155.jpg"
     },
     {
         id: 28514,
+        itemId: 22848,
         name: "Elixir of Empowerment",
         icon: "inv_potion_136.jpg"
     },
     {
         id: 28509,
+        itemId: 22840,
         name: "Elixir of Major Mageblood",
         icon: "inv_potion_151.jpg"
     },
     {
         id: 28502,
+        itemId: 22834,
         name: "Elixir of Major Defense",
         icon: "inv_potion_122.jpg"
     },
     {
         id: 39628,
+        itemId: 32068,
         name: "Elixir of Ironskin",
         icon: "inv_potion_159.jpg"
     },
     {
         id: 39626,
+        itemId: 32063,
         name: "Earthen Elixir",
         icon: "inv_potion_154.jpg"
     },
     {
         id: 39625,
+        itemId: 32062,
         name: "Elixir of Major Fortitude",
         icon: "inv_potion_158.jpg"
     },
     {
         id: 11371,
+        itemId: 9088,
         name: "Gift of Arthas",
         icon: "inv_potion_28.jpg"
     },
     {
         id: 24363,
+        itemId: 20007,
         name: "Mageblood Potion",
         icon: "inv_potion_45.jpg"
     },
     {
         id: 24382,
+        itemId: 20079,
         name: "Spirit of Zanza",
         icon: "inv_potion_30.jpg"
     },
     {
         id: 24383,
+        itemId: 20081,
         name: "Swiftness of Zanza",
         icon: "inv_potion_31.jpg"
     },
     {
         id: 24417,
+        itemId: 20080,
         name: "Sheen of Zanza",
         icon: "inv_potion_29.jpg"
     },
     {
         id: 24361,
+        itemId: 20004,
         name: "Major Troll's Blood Potion",
         icon: "inv_potion_80.jpg"
     },
     {
         id: 17535,
+        itemId: 13447,
         name: "Elixir of the Sages",
         icon: "inv_potion_29.jpg"
     },
     {
         id: 11348,
+        itemId: 13445,
         name: "Elixir of Superior Defense",
         icon: "inv_potion_66.jpg"
     },
     {
         id: 10668,
+        itemId: 8411,
         name: "Lung Juice Cocktail",
         icon: "inv_drink_12.jpg"
     },
     {
         id: 10692,
+        itemId: 8423,
         name: "Cerebral Cortex Compound",
         icon: "inv_potion_32.jpg"
     },
     {
         id: 10693,
+        itemId: 8424,
         name: "Gizzard Gum",
         icon: "inv_misc_food_30.jpg"
     }
@@ -3700,56 +3907,67 @@ export const guardianElixirBuffs = [
 export const seasonBuffs = [
     {
         id: 27723,
+        itemId: 22237,
         name: "Dark Desire (+20 hit)",
         icon: "inv_valentineschocolate04.jpg"
     },
     {
         id: 27721,
+        itemId: 22238,
         name: "Very Berry Cream (+23 spell damage)",
         icon: "inv_valentineschocolate02.jpg"
     },
     {
         id: 27720,
+        itemId: 22236,
         name: "Buttermilk Delight (+20 defense)",
         icon: "inv_valentineschocolate01.jpg"
     },
     {
         id: 27722,
+        itemId: 22239,
         name: "Sweet Surprise (+44 healing)",
         icon: "inv_valentineschocolate03.jpg"
     },
     {
         id: 26004,
+        itemId: 21519,
         name: "Mistletoe (+20s spirit)",
         icon: "spell_nature_healingtouch.jpg"
     },
     {
         id: 29338,
+        itemId: 23247,
         name: "Fire Festival Fury (+3% crit)",
         icon: "inv_misc_summerfest_brazierorange.jpg"
     },
     {
         id: 29235,
+        spellId: 29235,
         name: "Fire Festival Fortitude (+30 stamina)",
         icon: "inv_summerfest_firespirit.jpg"
     },
     {
         id: 29335,
+        itemId: 23435,
         name: "Elderberry Pie (+20 defense)",
         icon: "inv_misc_food_10.jpg"
     },
     {
         id: 29332,
+        itemId: 23327,
         name: "Fire-toasted Bun (+20 hit)",
         icon: "inv_misc_food_11.jpg"
     },
     {
         id: 29333,
+        itemId: 23326,
         name: "Midsummer Sausage (+23 spell damage)",
         icon: "inv_misc_food_53.jpg"
     },
     {
         id: 29334,
+        itemId: 23211,
         name: "Toasted Smorc (+44 healing)",
         icon: "inv_summerfest_smorc.jpg"
     }
@@ -3758,31 +3976,37 @@ export const seasonBuffs = [
 export const scrollBuffs = [
     {
         id: 33077,
+        itemId: 27498,
         name: "Scroll of Agility V",
         icon: "inv_scroll_02.jpg"
     },
     {
         id: 33078,
+        itemId: 27499,
         name: "Scroll of Intellect V",
         icon: "inv_scroll_01.jpg"
     },
     {
         id: 33079,
+        itemId: 27500,
         name: "Scroll of Protection V",
         icon: "inv_scroll_07.jpg"
     },
     {
         id: 33080,
+        itemId: 27501,
         name: "Scroll of Spirit V",
         icon: "inv_scroll_01.jpg"
     },
     {
         id: 33081,
+        itemId: 27502,
         name: "Scroll of Stamina V",
         icon: "inv_scroll_07.jpg"
     },
     {
         id: 33082,
+        itemId: 27503,
         name: "Scroll of Strength V",
         icon: "inv_scroll_02.jpg"
     }
@@ -3791,66 +4015,79 @@ export const scrollBuffs = [
 export const tempWeaponEnchants = [
     {
         id: 2629,
+        itemId: 20748,
         name: "Brilliant Mana Oil",
         icon: "inv_potion_100.jpg"
     },
     {
         id: 2678,
+        itemId: 22522,
         name: "Superior Wizard Oil",
         icon: "inv_potion_141.jpg"
     },
     {
         id: 2677,
+        itemId: 22521,
         name: "Superior Mana Oil",
         icon: "inv_potion_101.jpg"
     },
     {
         id: 2712,
+        itemId: 23528,
         name: "Fel Sharpening Stone",
         icon: "inv_stone_sharpeningstone_06.jpg"
     },
     {
         id: 2713,
+        itemId: 23529,
         name: "Adamantite Sharpening Stone",
         icon: "inv_stone_sharpeningstone_07.jpg"
     },
     {
         id: 2954,
+        itemId: 28420,
         name: "Fel Weightstone",
         icon: "inv_stone_weightstone_06.jpg"
     },
     {
         id: 2955,
+        itemId: 28421,
         name: "Adamantite Weightstone",
         icon: "inv_stone_weightstone_07.jpg"
     },
     {
         id: 3265,
+        itemId: 34538,
         name: "Blessed Weapon Coating",
         icon: "inv_potion_101.jpg"
     },
     {
         id: 3266,
+        itemId: 34539,
         name: "Righteous Weapon Coating",
         icon: "inv_potion_101.jpg"
     },
     {
         id: 2506,
+        itemId: 18262,
         name: "Elemental Sharpening Stone",
         icon: "inv_stone_02.jpg"
     },
     {
         id: 2628,
+        itemId: 20749,
         name: "Brilliant Wizard Oil",
         icon: "inv_potion_105.jpg"
     },
     {
         id: 2685,
+        itemId: 23123,
         name: "Blessed Wizard Oil",
         icon: "inv_potion_26.jpg"
     },
     {
         id: 2684,
+        itemId: 23122,
         name: "Consecrated Sharpening Stone",
         icon: "inv_stone_sharpeningstone_02.jpg"
     }

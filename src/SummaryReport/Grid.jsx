@@ -56,7 +56,7 @@ export class Grid extends Component {
         let ctx = {collapsed: collapsed, classFilter: classFilter, roleFilter: roleFilter};
 
         return (
-        <table>
+        <table className="grid_table">
             <thead>
                 <tr className="grid_header">
                     {Children.map(children, child => {

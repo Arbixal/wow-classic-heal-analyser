@@ -329,6 +329,7 @@ export class GridRow extends Component {
 
             gemIcons.push({
                 id: gem.id,
+                itemId: gem.id,
                 name: gem.count + " x " + gem.label + " (" + gem.description + ")",
                 icon: gem.icon,
                 count: gem.count,
@@ -354,6 +355,8 @@ export class GridRow extends Component {
                 else {
                     cds[cast.ability.guid] = {
                         id: cast.ability.guid,
+                        itemId: cooldownInfo.itemId,
+                        spellId: cast.ability.guid,
                         name: cooldownInfo.name,
                         icon: cooldownInfo.icon,
                         count: 1
