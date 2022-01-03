@@ -6480,6 +6480,79 @@ export const bosses = {
         logo: "https://wow.zamimg.com/images/wow/journal/ui-ej-boss-kaelthas-sunstrider.png"
     },
 
+    // Mount Hyjal
+    618: {
+        id: 618,
+        name: "Rage Winterchill",
+        logo: "https://wow.zamimg.com/images/wow/journal/ui-ej-boss-rage-winterchill.png"
+    },
+    619: {
+        id: 619,
+        name: "Anetheron",
+        logo: "https://wow.zamimg.com/images/wow/journal/ui-ej-boss-anetheron.png"
+    },
+    620: {
+        id: 620,
+        name: "Kaz'rogal",
+        logo: "https://wow.zamimg.com/images/wow/journal/ui-ej-boss-kazrogal.png"
+    },
+    621: {
+        id: 621,
+        name: "Azgalor",
+        logo: "https://wow.zamimg.com/images/wow/journal/ui-ej-boss-azgalor.png"
+    },
+    622: {
+        id: 622,
+        name: "Archimonde",
+        logo: "https://wow.zamimg.com/images/wow/journal/ui-ej-boss-archimonde.png"
+    },
+
+    // Black Temple
+    601: {
+        id: 601,
+        name: "Naj'entus",
+        logo: "https://wow.zamimg.com/images/wow/journal/ui-ej-boss-high-warlord-najentus.png"
+    },
+    602: {
+        id: 602,
+        name: "Supremus",
+        logo: "https://wow.zamimg.com/images/wow/journal/ui-ej-boss-supremus.png"
+    },
+    603: {
+        id: 603,
+        name: "Shade of Akama",
+        logo: "https://wow.zamimg.com/images/wow/journal/ui-ej-boss-shade-of-akama.png"
+    },
+    604: {
+        id: 604,
+        name: "Teron Gorefiend",
+        logo: "https://wow.zamimg.com/images/wow/journal/ui-ej-boss-teron-gorefiend.png"
+    },
+    605: {
+        id: 605,
+        name: "Gurtogg Bloodboil",
+        logo: "https://wow.zamimg.com/images/wow/journal/ui-ej-boss-gurtogg-bloodboil.png"
+    },
+    606: {
+        id: 606,
+        name: "Reliquary of Souls",
+        logo: "https://wow.zamimg.com/images/wow/journal/ui-ej-boss-reliquary-of-souls.png"
+    },
+    607: {
+        id: 607,
+        name: "Mother Shahraz",
+        logo: "https://wow.zamimg.com/images/wow/journal/ui-ej-boss-mother-shahraz.png"
+    },
+    608: {
+        id: 608,
+        name: "The Illidari Council",
+        logo: "https://wow.zamimg.com/images/wow/journal/ui-ej-boss-illidari-council.png"
+    },
+    609: {
+        id: 609,
+        name: "Illidan Stormrage",
+        logo: "https://wow.zamimg.com/images/wow/journal/ui-ej-boss-illidan-stormrage.png"
+    },
 
     // Heroics
     100001: {
