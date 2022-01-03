@@ -3516,6 +3516,12 @@ export const foodBuffs = [
         icon: "inv_misc_food_48.jpg"
     },
     {
+        id: 33254,
+        itemId: 27662,
+        name: "+20 Stamina",
+        icon: "inv_misc_food_74.jpg"
+    },
+    {
         id: 33263,
         itemId: 27657,
         name: "+23 Spell Damage",

@@ -565,10 +565,10 @@ export class WarcraftLogLoader {
                 }
                 else {
                     acc[playerId].roles.push(role);
-                    if (!acc[playerId].weaponEnchant) {
+                    if (!acc[playerId].weaponEnchant?.id && enchants?.weaponEnchant) {
                         acc[playerId].weaponEnchant = enchants?.weaponEnchant;
                     }
-                    if (!acc[playerId].offhandEnchant) {
+                    if (!acc[playerId].offhandEnchant?.id && enchants?.offhandEnchant) {
                         acc[playerId].offhandEnchant = enchants?.offhandEnchant;
                     }
                     acc[playerId].enchants = removeDuplicates([...(acc[playerId].enchants || []), ...(enchants?.permanentEnchants || [])], x => x.key);
