@@ -1,5 +1,5 @@
 import {Component, Children, isValidElement, cloneElement} from "react";
-import {GroupKeys} from "./GridContexts";
+import {DataPoints, emptyData, GroupKeys} from "./GridContexts";
 import {GridRow} from "./GridRow";
 
 export class Grid extends Component {
@@ -12,11 +12,13 @@ export class Grid extends Component {
                 [GroupKeys.Consumes]: true,
                 [GroupKeys.DispelsInterrupts]: true,
             },
+            summaryRow: {...emptyData, [DataPoints.Name]: "Totals"},
         }
 
         this._logLoader = props.logLoader;
 
         this.handleColGroupToggle = this.handleColGroupToggle.bind(this);
+        this.handleDataUpdate = this.handleDataUpdate.bind(this);
     }
 
     shouldComponentUpdate(nextProps, nextState) {
@@ -40,6 +42,10 @@ export class Grid extends Component {
             return true;
         }
 
+        if (this.state.summaryRow !== nextState.summaryRow) {
+            return true;
+        }
+
         return false;
     }
 
@@ -49,9 +55,33 @@ export class Grid extends Component {
         }));
     }
 
+    handleDataUpdate(character) {
+        const {children} = this.props;
+        let {summaryRow} = this.state;
+
+        Children.forEach(children, colGroup => {
+            if (!isValidElement(colGroup)) {
+                return;
+            }
+
+            Children.forEach(colGroup.props.children, column => {
+                if (!isValidElement(column)) {
+                    return;
+                }
+
+                if (column.props.aggregate === true && column.props.field) {
+                    const field = column.props.field;
+                    summaryRow[field] = (summaryRow[field] === ' ' ? 0 : summaryRow[field]) + character[field];
+                }
+            });
+        });
+
+        this.setState({summaryRow: {...summaryRow}});
+    }
+
     render() {
         const {data, children, fightId, classFilter, roleFilter} = this.props;
-        const {collapsed} = this.state;
+        const {collapsed, summaryRow} = this.state;
 
         let ctx = {collapsed: collapsed, classFilter: classFilter, roleFilter: roleFilter};
 
@@ -79,12 +109,21 @@ export class Grid extends Component {
             </thead>
             <tbody>
                 {data.map((obj, idx) => (
-                <GridRow key={obj.id} character={obj} row={idx} logLoader={this._logLoader} context={ctx} fightId={fightId} >
+                <GridRow key={obj.id} character={obj} row={idx} logLoader={this._logLoader} context={ctx} fightId={fightId} onDataUpdate={this.handleDataUpdate}>
                     {children}
                 </GridRow>
                 ))}
     
             </tbody>
+            <tfoot>
+                <tr className="Summary">
+                    {Children.map(children, child => {
+                        if (isValidElement(child)) {
+                            return cloneElement(child, { render: (x) => x.renderCell(), renderType: "cell", data: summaryRow, context: ctx })
+                        }
+                    })}
+                </tr>
+            </tfoot>
         </table>
         );
     }

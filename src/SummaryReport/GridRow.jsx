@@ -147,6 +147,7 @@ export class GridRow extends Component {
         characterData[DataPoints.ConsumesSapperCharge] = this._getCastCount(character, 13241, 30486);
         characterData[DataPoints.ConsumesDenseDynamite] = this._getCastCount(character, 23063);
         characterData[DataPoints.ConsumesEzThro] = this._getCastCount(character, 23000);
+        characterData[DataPoints.ConsumesFelIronBombs] = this._getCastCount(character, 30216);
 
         characterData[DataPoints.ConsumesHeavyRuneclothBandage] = this._getCastCount(character, 18610, 27030, 27031);
         characterData[DataPoints.ConsumesAntiVenom] = this._getCastCount(character, 23786);
@@ -181,6 +182,7 @@ export class GridRow extends Component {
         characterData[DataPoints.ConsumesExplosives] = sumNonNull(characterData[DataPoints.ConsumesHolyWater],
             characterData[DataPoints.ConsumesSapperCharge],
             characterData[DataPoints.ConsumesDenseDynamite],
+            characterData[DataPoints.ConsumesFelIronBombs],
             characterData[DataPoints.ConsumesEzThro]);
 
         characterData[DataPoints.ConsumesBandages] = sumNonNull(characterData[DataPoints.ConsumesHeavyRuneclothBandage],
@@ -255,6 +257,8 @@ export class GridRow extends Component {
 
         this._getTankStats(character, characterData);
         
+        this.props.onDataUpdate(characterData);
+
         return characterData;
     }
 

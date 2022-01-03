@@ -370,7 +370,7 @@ class SummaryReport extends Component {
                         </GridColumnGroup>
                         <GridColumnGroup id={GroupKeys.Deaths} label="Deaths" cssClass="odd-colgroup">
                             <GridColumn field={DataPoints.Deaths} 
-                                        cssClass="deaths" />
+                                        cssClass="deaths" aggregate={true} />
                         </GridColumnGroup>
                         <GridColumnGroup id={GroupKeys.ProtPotions} label="Prot Potions" cssClass="even-colgroup">
                             <GridColumn field={DataPoints.ProtectionPotionsTotal} 
@@ -491,211 +491,253 @@ class SummaryReport extends Component {
                                             label="Potions" 
                                             icon_name="inv_drink_06.jpg" 
                                             cssClass="protection_potion frost"
-                                            visibility={(ctx) => ctx.collapsed === true} />
+                                            visibility={(ctx) => ctx.collapsed === true}
+                                            aggregate={true} />
                             <GridIconColumn field={DataPoints.ConsumesManaPots} 
                                             label="Mana Potions" 
                                             icon_name="inv_potion_137.jpg" 
                                             item_id={22832}
                                             cssClass="protection_potion frost"
-                                            visibility={(ctx) => ctx.classFilter !== "Warrior" && ctx.classFilter !== "Rogue" && ctx.collapsed === false} />
+                                            visibility={(ctx) => ctx.classFilter !== "Warrior" && ctx.classFilter !== "Rogue" && ctx.collapsed === false}
+                                            aggregate={true} />
                             <GridIconColumn field={DataPoints.ConsumesRejuvPots} 
                                             label="Rejuvenation Potions" 
                                             icon_name="inv_potion_134.jpg" 
                                             item_id={22850}
                                             cssClass="protection_potion frost"
-                                            visibility={(ctx) => ctx.collapsed === false} />
+                                            visibility={(ctx) => ctx.collapsed === false}
+                                            aggregate={true} />
                             <GridIconColumn field={DataPoints.ConsumesHealthPots} 
                                             label="Healing Potion" 
                                             icon_name="inv_potion_131.jpg" 
                                             item_id={22829}
                                             cssClass="protection_potion frost"
-                                            visibility={(ctx) => ctx.collapsed === false} />
+                                            visibility={(ctx) => ctx.collapsed === false}
+                                            aggregate={true} />
                             <GridIconColumn field={DataPoints.ConsumesFreeActionPotion} 
                                             label="Free/Living Action Potion" 
                                             icon_name="inv_potion_04.jpg" 
                                             item_id={5634}
                                             cssClass="protection_potion frost"
-                                            visibility={(ctx) => ctx.collapsed === false} />
+                                            visibility={(ctx) => ctx.collapsed === false}
+                                            aggregate={true} />
                             <GridIconColumn field={DataPoints.ConsumesRestorationPots} 
                                             label="Restorative Potion" 
                                             icon_name="inv_potion_01.jpg" 
                                             item_id={9030}
                                             cssClass="protection_potion frost"
-                                            visibility={(ctx) => ctx.collapsed === false} />
+                                            visibility={(ctx) => ctx.collapsed === false}
+                                            aggregate={true} />
                             <GridIconColumn field={DataPoints.ConsumesRagePotions} 
                                             label="Rage Potions" 
                                             icon_name="inv_potion_41.jpg" 
                                             item_id={13442}
                                             cssClass="protection_potion frost"
-                                            visibility={(ctx) => (ctx.classFilter == null && ctx.collapsed === false && ctx.roleFilter !== "healer") || (ctx.classFilter === "Warrior")} />
+                                            visibility={(ctx) => (ctx.classFilter == null && ctx.collapsed === false && ctx.roleFilter !== "healer") || (ctx.classFilter === "Warrior")}
+                                            aggregate={true} />
                             <GridIconColumn field={DataPoints.ConsumesIronshield} 
                                             label="Ironshield Potions" 
                                             icon_name="inv_potion_133.jpg" 
                                             item_id={22849}
                                             cssClass="protection_potion frost"
-                                            visibility={(ctx) => (ctx.classFilter == null && ctx.collapsed === false && ctx.roleFilter !== "healer") || (ctx.roleFilter === "tank")} />
+                                            visibility={(ctx) => (ctx.classFilter == null && ctx.collapsed === false && ctx.roleFilter !== "healer") || (ctx.roleFilter === "tank")}
+                                            aggregate={true} />
                             <GridIconColumn field={DataPoints.ConsumesInsaneStrength} 
                                             label="Insane Strength Potion" 
                                             icon_name="inv_potion_109.jpg" 
                                             item_id={22828}
                                             cssClass="protection_potion frost"
-                                            visibility={(ctx) => ctx.collapsed === false} />
+                                            visibility={(ctx) => ctx.collapsed === false}
+                                            aggregate={true} />
                             <GridIconColumn field={DataPoints.ConsumesShrouding} 
                                             label="Shrouding Potion" 
                                             icon_name="inv_potion_144.jpg" 
                                             item_id={22871}
                                             cssClass="protection_potion frost"
-                                            visibility={(ctx) => ctx.collapsed === false} />
+                                            visibility={(ctx) => ctx.collapsed === false}
+                                            aggregate={true} />
                             <GridIconColumn field={DataPoints.ConsumesFelRegeneration} 
                                             label="Fel Regeneration Potion" 
                                             icon_name="inv_potion_140.jpg" 
                                             item_id={31676}
                                             cssClass="protection_potion frost"
-                                            visibility={(ctx) => ctx.collapsed === false} />
+                                            visibility={(ctx) => ctx.collapsed === false}
+                                            aggregate={true} />
                             <GridIconColumn field={DataPoints.ConsumesHeroic} 
                                             label="Heroic Potion" 
                                             icon_name="inv_potion_106.jpg" 
                                             item_id={22837}
                                             cssClass="protection_potion frost"
-                                            visibility={(ctx) => ctx.collapsed === false} />
+                                            visibility={(ctx) => ctx.collapsed === false}
+                                            aggregate={true} />
                             <GridIconColumn field={DataPoints.ConsumesDestruction} 
                                             label="Destruction Potion" 
                                             icon_name="inv_potion_107.jpg" 
                                             item_id={22839}
                                             cssClass="protection_potion frost"
-                                            visibility={(ctx) => ctx.collapsed === false} />
+                                            visibility={(ctx) => ctx.collapsed === false}
+                                            aggregate={true} />
                             <GridIconColumn field={DataPoints.ConsumesHaste} 
                                             label="Haste Potion" 
                                             icon_name="inv_potion_108.jpg" 
                                             item_id={22838}
                                             cssClass="protection_potion frost"
-                                            visibility={(ctx) => ctx.collapsed === false} />
+                                            visibility={(ctx) => ctx.collapsed === false}
+                                            aggregate={true} />
                             <GridIconColumn field={DataPoints.ConsumesFelMana} 
                                             label="Fel Mana Potion" 
                                             icon_name="inv_potion_138.jpg" 
                                             item_id={31677}
                                             cssClass="protection_potion frost"
-                                            visibility={(ctx) => ctx.collapsed === false} />
+                                            visibility={(ctx) => ctx.collapsed === false}
+                                            aggregate={true} />
 
                             <GridIconColumn field={DataPoints.ConsumesGems} 
                                             label="Gems/Runes/Stones" 
                                             icon_name="inv_misc_gem_variety_01.jpg" 
                                             cssClass="protection_potion nature"
-                                            visibility={(ctx) => ctx.collapsed === true} />
+                                            visibility={(ctx) => ctx.collapsed === true}
+                                            aggregate={true} />
                             <GridIconColumn field={DataPoints.ConsumesRunes} 
                                             label="Dark/Demonic Runes" 
                                             icon_name="inv_misc_rune_04.jpg" 
                                             item_id={12662}
                                             cssClass="protection_potion nature"
-                                            visibility={(ctx) => ctx.classFilter !== "Warrior" && ctx.classFilter !== "Rogue" && ctx.collapsed === false} />
+                                            visibility={(ctx) => ctx.classFilter !== "Warrior" && ctx.classFilter !== "Rogue" && ctx.collapsed === false}
+                                            aggregate={true} />
                             <GridIconColumn field={DataPoints.ConsumesHealthStones} 
                                             label="Major Health Stone" 
                                             icon_name="inv_stone_04.jpg" 
                                             item_id={22105}
                                             cssClass="protection_potion nature"
-                                            visibility={(ctx) => ctx.collapsed === false} />
+                                            visibility={(ctx) => ctx.collapsed === false}
+                                            aggregate={true} />
                             <GridIconColumn field={DataPoints.ConsumesNightmareSeed} 
                                             label="Nightmare Seed" 
                                             item_id={22797}
                                             icon_name="inv_misc_herb_nightmareseed.jpg" 
                                             cssClass="protection_potion nature"
-                                            visibility={(ctx) => ctx.collapsed === false} />
+                                            visibility={(ctx) => ctx.collapsed === false}
+                                            aggregate={true} />
                             <GridIconColumn field={DataPoints.ConsumesWhipperRootTuber} 
                                             label="Whipper Root Tuber" 
                                             icon_name="inv_misc_food_55.jpg" 
                                             item_id={11951}
                                             cssClass="protection_potion nature"
-                                            visibility={(ctx) => ctx.collapsed === false} />
+                                            visibility={(ctx) => ctx.collapsed === false}
+                                            aggregate={true} />
                             <GridIconColumn field={DataPoints.ConsumesThistleTea} 
                                             label="Thistle Tea" 
                                             icon_name="inv_drink_milk_05.jpg" 
                                             item_id={7676}
                                             cssClass="protection_potion nature"
-                                            visibility={(ctx) => (ctx.classFilter == null && ctx.collapsed === false && ctx.roleFilter !== "healer" && ctx.roleFilter !== "tank") || (ctx.classFilter === "Rogue")} />
+                                            visibility={(ctx) => (ctx.classFilter == null && ctx.collapsed === false && ctx.roleFilter !== "healer" && ctx.roleFilter !== "tank") || (ctx.classFilter === "Rogue")}
+                                            aggregate={true} />
                             <GridIconColumn field={DataPoints.ConsumesManaGem} 
                                             label="Mana Gem" 
                                             icon_name="inv_misc_gem_stone_01.jpg" 
                                             item_id={22044}
                                             cssClass="protection_potion nature"
-                                            visibility={(ctx) => (ctx.classFilter == null && ctx.collapsed === false && ctx.roleFilter !== "healer" && ctx.roleFilter !== "tank") || (ctx.classFilter === "Mage")} />
+                                            visibility={(ctx) => (ctx.classFilter == null && ctx.collapsed === false && ctx.roleFilter !== "healer" && ctx.roleFilter !== "tank") || (ctx.classFilter === "Mage")}
+                                            aggregate={true} />
 
                             <GridIconColumn field={DataPoints.ConsumesDrums} 
                                             label="Drums" 
                                             icon_name="inv_misc_drum_02.jpg" 
                                             cssClass="protection_potion holy"
-                                            visibility={(ctx) => ctx.collapsed === true} />
+                                            visibility={(ctx) => ctx.collapsed === true}
+                                            aggregate={true} />
                             <GridIconColumn field={DataPoints.ConsumesDrumsBattle} 
                                             label="Drums of Battle" 
                                             icon_name="inv_misc_drum_02.jpg" 
                                             item_id={29529}
                                             cssClass="protection_potion holy"
-                                            visibility={(ctx) => ctx.collapsed === false} />
+                                            visibility={(ctx) => ctx.collapsed === false}
+                                            aggregate={true} />
                             <GridIconColumn field={DataPoints.ConsumesDrumsWar} 
                                             label="Drums of War" 
                                             icon_name="inv_misc_drum_03.jpg" 
                                             item_id={29528}
                                             cssClass="protection_potion holy"
-                                            visibility={(ctx) => ctx.collapsed === false} />
+                                            visibility={(ctx) => ctx.collapsed === false}
+                                            aggregate={true} />
                             <GridIconColumn field={DataPoints.ConsumesDrumsRestoration} 
                                             label="Drums of Restoration" 
                                             icon_name="inv_misc_drum_07.jpg" 
                                             item_id={29531}
                                             cssClass="protection_potion holy"
-                                            visibility={(ctx) => ctx.collapsed === false} />
+                                            visibility={(ctx) => ctx.collapsed === false}
+                                            aggregate={true} />
                             <GridIconColumn field={DataPoints.ConsumesDrumsPanic} 
                                             label="Drums of Panic" 
                                             icon_name="inv_misc_drum_06.jpg" 
                                             item_id={29532}
                                             cssClass="protection_potion holy"
-                                            visibility={(ctx) => ctx.collapsed === false} />
+                                            visibility={(ctx) => ctx.collapsed === false}
+                                            aggregate={true} />
 
                             <GridIconColumn field={DataPoints.ConsumesExplosives} 
                                             label="Bombs and Explosives" 
                                             icon_name="inv_misc_bomb_06.jpg" 
                                             cssClass="protection_potion fire"
-                                            visibility={(ctx) => ctx.collapsed === true} />
+                                            visibility={(ctx) => ctx.collapsed === true}
+                                            aggregate={true} />
                             <GridIconColumn field={DataPoints.ConsumesHolyWater} 
                                             label="Stratholme Holy Water" 
                                             icon_name="inv_potion_75.jpg" 
                                             item_id={13180}
                                             cssClass="protection_potion fire"
-                                            visibility={(ctx) => ctx.collapsed === false} />
+                                            visibility={(ctx) => ctx.collapsed === false}
+                                            aggregate={true} />
                             <GridIconColumn field={DataPoints.ConsumesSapperCharge} 
                                             label="Sapper Charge" 
                                             icon_name="inv_gizmo_supersappercharge.jpg" 
                                             item_id={23827}
                                             cssClass="protection_potion fire"
-                                            visibility={(ctx) => ctx.collapsed === false} />
+                                            visibility={(ctx) => ctx.collapsed === false}
+                                            aggregate={true} />
                             <GridIconColumn field={DataPoints.ConsumesEzThro} 
                                             label="Ez-Thro Dynamite II" 
                                             icon_name="inv_misc_bomb_03.jpg" 
                                             item_id={18588}
                                             cssClass="protection_potion fire"
-                                            visibility={(ctx) => ctx.collapsed === false} />
+                                            visibility={(ctx) => ctx.collapsed === false}
+                                            aggregate={true} />
                             <GridIconColumn field={DataPoints.ConsumesDenseDynamite} 
                                             label="Dense Dynamite" 
                                             icon_name="inv_misc_bomb_06.jpg" 
                                             item_id={18641}
                                             cssClass="protection_potion fire"
-                                            visibility={(ctx) => ctx.collapsed === false} />
+                                            visibility={(ctx) => ctx.collapsed === false}
+                                            aggregate={true} />
+                            <GridIconColumn field={DataPoints.ConsumesFelIronBombs} 
+                                            label="Fel Iron Bomb" 
+                                            icon_name="spell_fire_selfdestruct.jpg" 
+                                            item_id={23736}
+                                            cssClass="protection_potion fire"
+                                            visibility={(ctx) => ctx.collapsed === false}
+                                            aggregate={true} />
 
                             <GridIconColumn field={DataPoints.ConsumesBandages} 
                                             label="First Aid" 
                                             icon_name="spell_holy_sealofsacrifice.jpg" 
                                             cssClass="protection_potion priest"
-                                            visibility={(ctx) => ctx.collapsed === true} />
+                                            visibility={(ctx) => ctx.collapsed === true}
+                                            aggregate={true} />
                             <GridIconColumn field={DataPoints.ConsumesHeavyRuneclothBandage} 
                                             label="Bandages" 
                                             icon_name="inv_misc_bandage_netherweave_heavy.jpg" 
                                             item_id={21991}
                                             cssClass="protection_potion priest"
-                                            visibility={(ctx) => ctx.collapsed === false} />
+                                            visibility={(ctx) => ctx.collapsed === false}
+                                            aggregate={true} />
                             <GridIconColumn field={DataPoints.ConsumesAntiVenom} 
                                             label="Powerful Anti-Venom" 
                                             icon_name="inv_drink_14.jpg" 
                                             item_id={19440}
                                             cssClass="protection_potion priest"
-                                            visibility={(ctx) => ctx.collapsed === false} />
+                                            visibility={(ctx) => ctx.collapsed === false}
+                                            aggregate={true} />
                         </GridColumnGroup>
 
                         <GridColumnGroup id={GroupKeys.DispelsInterrupts} label="Dispels" cssClass="even-colgroup">
@@ -703,147 +745,175 @@ class SummaryReport extends Component {
                                         label="Boss" 
                                         cssClass="center"
                                         icon_url="https://image.flaticon.com/icons/png/128/3325/3325105.png"
-                                        visibility={(ctx) => ctx.classFilter == null && ctx.collapsed === true} />
+                                        visibility={(ctx) => ctx.classFilter == null && ctx.collapsed === true}
+                                        aggregate={true} />
                             <GridIconColumn field={DataPoints.DispelTrash}
                                         label="Trash" 
                                         cssClass="center"
                                         icon_url="https://image.flaticon.com/icons/png/128/3022/3022156.png"
-                                        visibility={(ctx) => ctx.classFilter == null && ctx.collapsed === true} />
+                                        visibility={(ctx) => ctx.classFilter == null && ctx.collapsed === true}
+                                        aggregate={true} />
 
                             <GridIconColumn field={DataPoints.DispelPoison} 
                                             label="Poison" 
                                             icon_name="spell_nature_nullifypoison.jpg" 
                                             cssClass="center"
-                                            visibility={(ctx) => ctx.classFilter == null && ctx.collapsed === false} />
+                                            visibility={(ctx) => ctx.classFilter == null && ctx.collapsed === false}
+                                            aggregate={true} />
                             <GridIconColumn field={DataPoints.DispelDruidCurePoison} 
                                             label="Cure Poison" 
                                             icon_name="spell_nature_nullifypoison.jpg" 
                                             cssClass="center"
-                                            visibility={(ctx) => ctx.classFilter === "Druid"} />
+                                            visibility={(ctx) => ctx.classFilter === "Druid"}
+                                            aggregate={true} />
                             <GridIconColumn field={DataPoints.DispelDruidAbolishPoison} 
                                             label="Abolish Poison" 
                                             icon_name="spell_nature_nullifypoison_02.jpg" 
                                             cssClass="center"
-                                            visibility={(ctx) => ctx.classFilter === "Druid"} />
+                                            visibility={(ctx) => ctx.classFilter === "Druid"}
+                                            aggregate={true} />
                             <GridIconColumn field={DataPoints.DispelShamanCurePoison} 
                                             label="Cure Poison" 
                                             icon_name="spell_nature_nullifypoison.jpg" 
                                             cssClass="center"
-                                            visibility={(ctx) => ctx.classFilter === "Shaman"} />
+                                            visibility={(ctx) => ctx.classFilter === "Shaman"}
+                                            aggregate={true} />
                             <GridIconColumn field={DataPoints.DispelShamanPoisonCleansingTotem} 
                                             label="Poison Cleansing Totem" 
                                             icon_name="spell_nature_poisoncleansingtotem.jpg" 
                                             cssClass="center"
-                                            visibility={(ctx) => ctx.classFilter === "Shaman"} />
+                                            visibility={(ctx) => ctx.classFilter === "Shaman"}
+                                            aggregate={true} />
 
                             <GridIconColumn field={DataPoints.DispelDisease} 
                                             label="Disease" 
                                             icon_name="spell_holy_nullifydisease.jpg" 
                                             cssClass="center"
-                                            visibility={(ctx) => ctx.classFilter == null && ctx.collapsed === false} />
+                                            visibility={(ctx) => ctx.classFilter == null && ctx.collapsed === false}
+                                            aggregate={true} />
                             <GridIconColumn field={DataPoints.DispelPriestCureDisease} 
                                             label="Cure Disease" 
                                             icon_name="spell_holy_nullifydisease.jpg" 
                                             cssClass="center"
-                                            visibility={(ctx) => ctx.classFilter === "Priest"} />
+                                            visibility={(ctx) => ctx.classFilter === "Priest"}
+                                            aggregate={true} />
                             <GridIconColumn field={DataPoints.DispelPriestAbolishDisease} 
                                             label="Abolish Disease" 
                                             icon_name="spell_nature_nullifydisease.jpg" 
                                             cssClass="center"
-                                            visibility={(ctx) => ctx.classFilter === "Priest"} />
+                                            visibility={(ctx) => ctx.classFilter === "Priest"}
+                                            aggregate={true} />
                             <GridIconColumn field={DataPoints.DispelShamanCureDisease} 
                                             label="Cure Disease" 
                                             icon_name="spell_nature_removedisease.jpg" 
                                             cssClass="center"
-                                            visibility={(ctx) => ctx.classFilter === "Shaman"} />
+                                            visibility={(ctx) => ctx.classFilter === "Shaman"}
+                                            aggregate={true} />
                             <GridIconColumn field={DataPoints.DispelShamanDiseaseCleansingTotem} 
                                             label="Disease Cleansing Totem" 
                                             icon_name="spell_nature_diseasecleansingtotem.jpg" 
                                             cssClass="center"
-                                            visibility={(ctx) => ctx.classFilter === "Shaman"} />
+                                            visibility={(ctx) => ctx.classFilter === "Shaman"}
+                                            aggregate={true} />
 
                             <GridIconColumn field={DataPoints.DispelCurse} 
                                             label="Curse" 
                                             icon_name="spell_nature_removecurse.jpg" 
                                             cssClass="center"
-                                            visibility={(ctx) => ctx.classFilter == null && ctx.collapsed === false} />
+                                            visibility={(ctx) => ctx.classFilter == null && ctx.collapsed === false}
+                                            aggregate={true} />
                             <GridIconColumn field={DataPoints.DispelDruidRemoveCurse} 
                                             label="Remove Curse" 
                                             icon_name="spell_holy_removecurse.jpg" 
                                             cssClass="center"
-                                            visibility={(ctx) => ctx.classFilter === "Druid"} />
+                                            visibility={(ctx) => ctx.classFilter === "Druid"}
+                                            aggregate={true} />
                             <GridIconColumn field={DataPoints.DispelMageRemoveLesserCurse} 
                                             label="Remove Lesser Curse" 
                                             icon_name="spell_nature_removecurse.jpg" 
                                             cssClass="center"
-                                            visibility={(ctx) => ctx.classFilter === "Mage"} />
+                                            visibility={(ctx) => ctx.classFilter === "Mage"}
+                                            aggregate={true} />
 
                             <GridIconColumn field={DataPoints.DispelMagic} 
                                             label="Magic" 
                                             icon_name="spell_holy_dispelmagic.jpg" 
                                             cssClass="center "
-                                            visibility={(ctx) => ctx.classFilter == null && ctx.collapsed === false} />
+                                            visibility={(ctx) => ctx.classFilter == null && ctx.collapsed === false}
+                                            aggregate={true} />
                             <GridIconColumn field={DataPoints.DispelPriestDispelMagic} 
                                             label="Dispel Magic" 
                                             icon_name="spell_holy_dispelmagic.jpg" 
                                             cssClass="center"
-                                            visibility={(ctx) => ctx.classFilter === "Priest"} />
+                                            visibility={(ctx) => ctx.classFilter === "Priest"}
+                                            aggregate={true} />
                             <GridIconColumn field={DataPoints.DispelShamanPurge} 
                                             label="Purge" 
                                             icon_name="spell_nature_purge.jpg" 
                                             cssClass="center"
-                                            visibility={(ctx) => ctx.classFilter === "Shaman"} />
+                                            visibility={(ctx) => ctx.classFilter === "Shaman"}
+                                            aggregate={true} />
 
                             <GridIconColumn field={DataPoints.DispelFrenzy} 
                                             label="Frenzy" 
                                             icon_name="ability_druid_challangingroar.jpg" 
                                             cssClass="center"
-                                            visibility={(ctx) => ctx.classFilter == null && ctx.collapsed === false} />
+                                            visibility={(ctx) => ctx.classFilter == null && ctx.collapsed === false}
+                                            aggregate={true} />
                             <GridIconColumn field={DataPoints.DispelHunterTranqShot} 
                                             label="Tranquilizing Shot" 
                                             icon_name="spell_nature_drowsy.jpg" 
                                             cssClass="center"
-                                            visibility={(ctx) => ctx.classFilter === "Hunter"} />
+                                            visibility={(ctx) => ctx.classFilter === "Hunter"}
+                                            aggregate={true} />
                             
                             <GridColumn field={DataPoints.InterruptTotal}
                                         label="Interrupts" 
                                         cssClass="center"
-                                        visibility={(ctx) => ctx.classFilter == null} />
+                                        visibility={(ctx) => ctx.classFilter == null}
+                                        aggregate={true} />
                             <GridIconColumn field={DataPoints.InterruptDruidBash} 
                                             label="Bash" 
                                             icon_name="ability_druid_bash.jpg" 
                                             cssClass="center"
-                                            visibility={(ctx) => ctx.classFilter === "Druid"} />
+                                            visibility={(ctx) => ctx.classFilter === "Druid"}
+                                            aggregate={true} />
                             <GridIconColumn field={DataPoints.InterruptDruidFeralCharge} 
                                             label="Feral Charge" 
                                             icon_name="ability_hunter_pet_bear.jpg" 
                                             cssClass="center"
-                                            visibility={(ctx) => ctx.classFilter === "Druid"} />
+                                            visibility={(ctx) => ctx.classFilter === "Druid"}
+                                            aggregate={true} />
                             <GridIconColumn field={DataPoints.InterruptMageCounterspell} 
                                             label="Counterspell" 
                                             icon_name="spell_frost_iceshock.jpg" 
                                             cssClass="center"
-                                            visibility={(ctx) => ctx.classFilter === "Mage"} />
+                                            visibility={(ctx) => ctx.classFilter === "Mage"}
+                                            aggregate={true} />
                             <GridIconColumn field={DataPoints.InterruptPriestSilence} 
                                             label="Silence" 
                                             icon_name="spell_shadow_impphaseshift.jpg" 
                                             cssClass="center"
-                                            visibility={(ctx) => ctx.classFilter === "Priest"} />
+                                            visibility={(ctx) => ctx.classFilter === "Priest"}
+                                            aggregate={true} />
                             <GridIconColumn field={DataPoints.InterruptShamanEarthShock} 
                                             label="Earth Shock" 
                                             icon_name="spell_nature_earthshock.jpg" 
                                             cssClass="center"
-                                            visibility={(ctx) => ctx.classFilter === "Shaman"} />
+                                            visibility={(ctx) => ctx.classFilter === "Shaman"}
+                                            aggregate={true} />
                             <GridIconColumn field={DataPoints.InterruptRogueKick} 
                                             label="Kick" 
                                             icon_name="ability_kick.jpg" 
                                             cssClass="center"
-                                            visibility={(ctx) => ctx.classFilter === "Rogue"} />
+                                            visibility={(ctx) => ctx.classFilter === "Rogue"}
+                                            aggregate={true} />
                             <GridIconColumn field={DataPoints.InterruptWarriorPummel} 
                                             label="Pummel" 
                                             icon_name="inv_gauntlets_04.jpg" 
                                             cssClass="center"
-                                            visibility={(ctx) => ctx.classFilter === "Warrior"} />
+                                            visibility={(ctx) => ctx.classFilter === "Warrior"}
+                                            aggregate={true} />
                             
                         </GridColumnGroup>
                         <GridColumnGroup id={GroupKeys.Cooldowns} label="Cooldowns" cssClass="odd-colgroup">
