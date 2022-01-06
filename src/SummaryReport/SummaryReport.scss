@@ -596,3 +596,17 @@ svg {
 .grid-bar-column {
     display: flex;
 }
+
+a.external {
+    img {
+        height: 16px;
+        width: 16px;
+        margin-right: 5px;
+    }
+    &:after {
+        content: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAA70lEQVQ4jcWPMVLDQBAEe2Q/yhQR/MHEDskom0Cne4BvFdgUOfAA/AdS6RNEvENaEnAdKpVEBBNd7e3M9MJ/S98PM3sCNsAiXwghqK7rV3dfD+cAy2y2AR7dvR22dF33IOkk6Ra4zv/ygIW7t1VVnYYBMcbGzHbAFfCWhyyHy2NKKW2BA1C5+7ukc0AxZzaznaQDcB9CsKIoPiSdKScJ8uYQwhGgLMsWuJklSCltJR2/zJbN12bmkwT7/f4iwz5OUY4SxBibvu8v58yTJ8QYmzkz/Dyhk7RKKU0aJK2AbizgBbiTtJsp7SQ9/4bub/QJa/9UXUTXyz4AAAAASUVORK5CYII=");
+        line-height: 1em;
+        margin: 0 3px 0 5px;
+        vertical-align: bottom;
+    }
+}

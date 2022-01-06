@@ -14,6 +14,9 @@ import ReactTooltip from "react-tooltip";
 import { withRouter, Link } from "react-router-dom";
 import { format, intervalToDuration} from "date-fns";
 import { FightChart } from "./FightChart";
+import { WoWAnalyzerLink } from "./WoWAnalyzerLink";
+import { ThreatReportLink } from "./ThreatReportLink";
+import { WarcraftLogsLink } from "./WarcraftLogsLink";
 
 const roles = {
     'tank': {
@@ -265,6 +268,9 @@ class SummaryReport extends Component {
                     <h3 className="report_title">{reportDetails.title}</h3>
                     <div><strong>Report ID:</strong> {reportId} (<Link to="/">Load a different report</Link>)</div>
                     <div>{format(reportDetails.startTime, "EEE do MMM HH:mm:ss")} - {format(reportDetails.endTime, "HH:mm:ss")} ({duration.hours}:{duration.minutes.toString().padStart(2, "0")}:{duration.seconds.toString().padStart(2, "0")})</div>
+                    <WoWAnalyzerLink reportId={reportId} fightId={selectedFight} />
+                    <ThreatReportLink reportId={reportId} fightId={selectedFight} />
+                    <WarcraftLogsLink reportId={reportId} fightId={selectedFight} />
                     <div className="boss_nav">
                     <div className="boss_tile">
                         <NavLink to={"/" + reportId + (filterSuffix ? "/-1" + filterSuffix : "")}>
@@ -949,6 +955,9 @@ class SummaryReport extends Component {
                             <GridColumn label="Miss" field={DataPoints.DamageTakenMiss} format="%" cssClass="right percentage" visibility={(ctx) => ctx.roleFilter === "tank"}  />
                         </GridColumnGroup>
                     </Grid>
+
+                    Threat Graph: (link)
+                    WoW Analyzer: (link)
                     <ReactTooltip />
                 </>
             )
