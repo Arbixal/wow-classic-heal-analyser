@@ -955,9 +955,6 @@ class SummaryReport extends Component {
                             <GridColumn label="Miss" field={DataPoints.DamageTakenMiss} format="%" cssClass="right percentage" visibility={(ctx) => ctx.roleFilter === "tank"}  />
                         </GridColumnGroup>
                     </Grid>
-
-                    Threat Graph: (link)
-                    WoW Analyzer: (link)
                     <ReactTooltip />
                 </>
             )
