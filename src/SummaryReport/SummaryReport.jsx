@@ -136,6 +136,7 @@ class SummaryReport extends Component {
         this._logLoader.loadFights()
             .then(x => x.loadCharacterSummary())
             .then(x => x.loadDeaths())
+            .then(x => x.loadInterrupts())
             .then(x => {
                 let report = this._getResults();
                 this._generateFilteredData(report.Characters);
@@ -770,24 +771,28 @@ class SummaryReport extends Component {
                                             label="Cure Poison" 
                                             icon_name="spell_nature_nullifypoison.jpg" 
                                             cssClass="center"
+                                            spell_id={8946}
                                             visibility={(ctx) => ctx.classFilter === "Druid"}
                                             aggregate={true} />
                             <GridIconColumn field={DataPoints.DispelDruidAbolishPoison} 
                                             label="Abolish Poison" 
                                             icon_name="spell_nature_nullifypoison_02.jpg" 
                                             cssClass="center"
+                                            spell_id={2893}
                                             visibility={(ctx) => ctx.classFilter === "Druid"}
                                             aggregate={true} />
                             <GridIconColumn field={DataPoints.DispelShamanCurePoison} 
                                             label="Cure Poison" 
                                             icon_name="spell_nature_nullifypoison.jpg" 
                                             cssClass="center"
+                                            spell_id={526}
                                             visibility={(ctx) => ctx.classFilter === "Shaman"}
                                             aggregate={true} />
                             <GridIconColumn field={DataPoints.DispelShamanPoisonCleansingTotem} 
                                             label="Poison Cleansing Totem" 
                                             icon_name="spell_nature_poisoncleansingtotem.jpg" 
                                             cssClass="center"
+                                            spell_id={8166}
                                             visibility={(ctx) => ctx.classFilter === "Shaman"}
                                             aggregate={true} />
 
@@ -801,24 +806,28 @@ class SummaryReport extends Component {
                                             label="Cure Disease" 
                                             icon_name="spell_holy_nullifydisease.jpg" 
                                             cssClass="center"
+                                            spell_id={528}
                                             visibility={(ctx) => ctx.classFilter === "Priest"}
                                             aggregate={true} />
                             <GridIconColumn field={DataPoints.DispelPriestAbolishDisease} 
                                             label="Abolish Disease" 
                                             icon_name="spell_nature_nullifydisease.jpg" 
                                             cssClass="center"
+                                            spell_id={552}
                                             visibility={(ctx) => ctx.classFilter === "Priest"}
                                             aggregate={true} />
                             <GridIconColumn field={DataPoints.DispelShamanCureDisease} 
                                             label="Cure Disease" 
                                             icon_name="spell_nature_removedisease.jpg" 
                                             cssClass="center"
+                                            spell_id={2870}
                                             visibility={(ctx) => ctx.classFilter === "Shaman"}
                                             aggregate={true} />
                             <GridIconColumn field={DataPoints.DispelShamanDiseaseCleansingTotem} 
                                             label="Disease Cleansing Totem" 
                                             icon_name="spell_nature_diseasecleansingtotem.jpg" 
                                             cssClass="center"
+                                            spell_id={8170}
                                             visibility={(ctx) => ctx.classFilter === "Shaman"}
                                             aggregate={true} />
 
@@ -832,12 +841,14 @@ class SummaryReport extends Component {
                                             label="Remove Curse" 
                                             icon_name="spell_holy_removecurse.jpg" 
                                             cssClass="center"
+                                            spell_id={2782}
                                             visibility={(ctx) => ctx.classFilter === "Druid"}
                                             aggregate={true} />
                             <GridIconColumn field={DataPoints.DispelMageRemoveLesserCurse} 
                                             label="Remove Lesser Curse" 
                                             icon_name="spell_nature_removecurse.jpg" 
                                             cssClass="center"
+                                            spell_id={475}
                                             visibility={(ctx) => ctx.classFilter === "Mage"}
                                             aggregate={true} />
 
@@ -851,12 +862,14 @@ class SummaryReport extends Component {
                                             label="Dispel Magic" 
                                             icon_name="spell_holy_dispelmagic.jpg" 
                                             cssClass="center"
+                                            spell_id={988}
                                             visibility={(ctx) => ctx.classFilter === "Priest"}
                                             aggregate={true} />
                             <GridIconColumn field={DataPoints.DispelShamanPurge} 
                                             label="Purge" 
                                             icon_name="spell_nature_purge.jpg" 
                                             cssClass="center"
+                                            spell_id={8012}
                                             visibility={(ctx) => ctx.classFilter === "Shaman"}
                                             aggregate={true} />
 
@@ -870,6 +883,7 @@ class SummaryReport extends Component {
                                             label="Tranquilizing Shot" 
                                             icon_name="spell_nature_drowsy.jpg" 
                                             cssClass="center"
+                                            spell_id={19801}
                                             visibility={(ctx) => ctx.classFilter === "Hunter"}
                                             aggregate={true} />
                             
@@ -882,42 +896,49 @@ class SummaryReport extends Component {
                                             label="Bash" 
                                             icon_name="ability_druid_bash.jpg" 
                                             cssClass="center"
+                                            spell_id={8983}
                                             visibility={(ctx) => ctx.classFilter === "Druid"}
                                             aggregate={true} />
                             <GridIconColumn field={DataPoints.InterruptDruidFeralCharge} 
                                             label="Feral Charge" 
                                             icon_name="ability_hunter_pet_bear.jpg" 
                                             cssClass="center"
+                                            spell_id={16979}
                                             visibility={(ctx) => ctx.classFilter === "Druid"}
                                             aggregate={true} />
                             <GridIconColumn field={DataPoints.InterruptMageCounterspell} 
                                             label="Counterspell" 
                                             icon_name="spell_frost_iceshock.jpg" 
                                             cssClass="center"
+                                            spell_id={2139}
                                             visibility={(ctx) => ctx.classFilter === "Mage"}
                                             aggregate={true} />
                             <GridIconColumn field={DataPoints.InterruptPriestSilence} 
                                             label="Silence" 
                                             icon_name="spell_shadow_impphaseshift.jpg" 
                                             cssClass="center"
+                                            spell_id={15487}
                                             visibility={(ctx) => ctx.classFilter === "Priest"}
                                             aggregate={true} />
                             <GridIconColumn field={DataPoints.InterruptShamanEarthShock} 
                                             label="Earth Shock" 
                                             icon_name="spell_nature_earthshock.jpg" 
                                             cssClass="center"
+                                            spell_id={25454}
                                             visibility={(ctx) => ctx.classFilter === "Shaman"}
                                             aggregate={true} />
                             <GridIconColumn field={DataPoints.InterruptRogueKick} 
                                             label="Kick" 
                                             icon_name="ability_kick.jpg" 
                                             cssClass="center"
+                                            spell_id={38768}
                                             visibility={(ctx) => ctx.classFilter === "Rogue"}
                                             aggregate={true} />
                             <GridIconColumn field={DataPoints.InterruptWarriorPummel} 
                                             label="Pummel" 
                                             icon_name="inv_gauntlets_04.jpg" 
                                             cssClass="center"
+                                            spell_id={6554}
                                             visibility={(ctx) => ctx.classFilter === "Warrior"}
                                             aggregate={true} />
                             

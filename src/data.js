@@ -3339,19 +3339,20 @@ export const interruptSpells = {
         },
     },
     'Rogue': {
-        '1769': {
-            name: "Kick",   // Rank 4
+        '38768': {
+            name: "Kick",   // Rank 5
             icon: "ability_kick.jpg",
             otherRanks: [
                 '1766',     // Rank 1
                 '1767',     // Rank 2
                 '1768',     // Rank 3
+                '1769',     // Rank 4
             ],
         },
     },
     'Shaman': {
-        '10414': {
-            name: "Earth Shock",    // Rank 7
+        '25454': {
+            name: "Earth Shock",    // Rank 8
             icon: "spell_nature_earthshock.jpg",
             otherRanks: [
                 '8042',     // Rank 1
@@ -3360,6 +3361,7 @@ export const interruptSpells = {
                 '8046',     // Rank 4
                 '10412',    // Rank 5
                 '10413',    // Rank 6
+                '10414',    // Rank 7
             ],
         }
     },

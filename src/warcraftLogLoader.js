@@ -11,6 +11,7 @@ export class WarcraftLogLoader {
             fights: false,
             characterSummaries: false,
             deaths: false,
+            interrupts: false,
             character: {
                 details: {},
                 casts: {},
@@ -145,6 +146,37 @@ export class WarcraftLogLoader {
             })
 
             this._loadedStatus.deaths = true;
+
+            resolve(this);
+        }).catch(reject));
+    }
+
+    loadInterrupts() {
+        if (!this._loadedStatus.fights) {
+            return new Promise((_resolve, reject) => reject("Fights have not yet been loaded."));
+        }
+
+        if (this._loadedStatus.interrupts) {
+            return new Promise(resolve => resolve(this));
+        }
+
+        return new Promise((resolve, reject) => fetch(this.domain + "report/events/interrupts/" + this.reportId 
+        + "?api_key=" + this.key 
+        + "&start=" + this.Results.startTime
+        + "&end=" + this.Results.endTime)
+        .then(response => response.json())
+        .then(data => {
+            data.events.forEach((obj) => {
+                let character = this.Results.Characters[obj.sourceID];
+
+                if (!character) {
+                    return;
+                }
+
+                character.interrupts = [...(character.interrupts || []),obj];
+            })
+
+            this._loadedStatus.interrupts = true;
 
             resolve(this);
         }).catch(reject));
@@ -406,6 +438,10 @@ export class WarcraftLogLoader {
         // deaths
         if (character.deaths) {
             filteredCharacter.deaths = character.deaths.filter(x => fightIds.includes(x.fight));
+        }
+        // interrupts
+        if (character.interrupts) {
+            filteredCharacter.interrupts = character.interrupts.filter(x => fightIds.includes(x.fight));
         }
         // protectionPotions
         if (character.protectionPotions) {

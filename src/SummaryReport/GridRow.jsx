@@ -232,14 +232,14 @@ export class GridRow extends Component {
             characterData[DataPoints.DispelMagic],
             characterData[DataPoints.DispelFrenzy]);
 
-        characterData[DataPoints.InterruptDruidBash] = this._getCastCount(character, 8983);
-        characterData[DataPoints.InterruptDruidFeralCharge] = this._getCastCount(character, 16979);
-        characterData[DataPoints.InterruptMageCounterspell] = this._getCastCount(character, 2139);
-        characterData[DataPoints.InterruptPaladinHammerOfJustice] = this._getCastCount(character, 10308);
-        characterData[DataPoints.InterruptPriestSilence] = this._getCastCount(character, 15487);
-        characterData[DataPoints.InterruptRogueKick] = this._getCastCount(character, 1769, 1768, 1767, 1766);
-        characterData[DataPoints.InterruptShamanEarthShock] = this._getCastCount(character, 10414, 8042, 8044, 8045, 8046, 10412, 10413);
-        characterData[DataPoints.InterruptWarriorPummel] = this._getCastCount(character, 6552, 6554);
+        characterData[DataPoints.InterruptDruidBash] = this._getInterruptCount(character, 8983);
+        characterData[DataPoints.InterruptDruidFeralCharge] = this._getInterruptCount(character, 19675);
+        characterData[DataPoints.InterruptMageCounterspell] = this._getInterruptCount(character, 2139);
+        characterData[DataPoints.InterruptPaladinHammerOfJustice] = this._getInterruptCount(character, 10308);
+        characterData[DataPoints.InterruptPriestSilence] = this._getInterruptCount(character, 15487);
+        characterData[DataPoints.InterruptRogueKick] = this._getInterruptCount(character, 1769, 1768, 1767, 1766, 38768);
+        characterData[DataPoints.InterruptShamanEarthShock] = this._getInterruptCount(character, 10414, 8042, 8044, 8045, 8046, 10412, 10413, 25454);
+        characterData[DataPoints.InterruptWarriorPummel] = this._getInterruptCount(character, 6552, 6554);
 
         characterData[DataPoints.InterruptTotal] = sumNonNull(characterData[DataPoints.InterruptDruidBash],
             characterData[DataPoints.InterruptDruidFeralCharge],
@@ -445,6 +445,24 @@ export class GridRow extends Component {
 
     _getTrashCastCount(character, ...spellIds) {
         return this._getRestrictedCastCount(character, "trash", spellIds);
+    }
+
+    _getInterruptCount(character, ...spellIds) {
+        const {interrupts} = character;
+
+        if (!interrupts) {
+            return 0;
+        }
+
+        let castCount = 0;
+        for (let i = 0; i < interrupts.length; ++i) {
+            let cast = interrupts[i];
+            if (cast.type === "interrupt" && spellIds.includes(cast.ability.guid)) {
+                castCount++;
+            }
+        }
+
+        return castCount;
     }
 
     _getRestrictedCastCount(character, fightType, spellIds) {
