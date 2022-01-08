@@ -55,8 +55,13 @@ export class WarcraftLogLoader {
                 res.friendlyPets.forEach((pet) => {
                     if (!this.Results.Characters[pet.petOwner])
                         return;
+                    
+                    if (!this.Results.Pets) {
+                        this.Results.Pets = {};
+                    }
 
                     this.Results.Characters[pet.petOwner].pets = [...(this.Results.Characters[pet.petOwner].pets || []),pet];
+                    this.Results.Pets[pet.id] = pet;
                 })
                 this.Results.title = res.title;
                 this.Results.startTimestamp = res.start;
@@ -170,6 +175,13 @@ export class WarcraftLogLoader {
                 let character = this.Results.Characters[obj.sourceID];
 
                 if (!character) {
+                    let pet = this.Results.Pets[obj.sourceID];
+                    if (pet) {
+                        character = this.Results.Characters[pet.petOwner];
+                    }
+                }
+
+                if (!character) {
                     return;
                 }
 
@@ -222,6 +234,13 @@ export class WarcraftLogLoader {
         .then(data => {
             data.events.forEach((obj) => {
                 let character = this.Results.Characters[playerid];
+
+                if (!character) {
+                    let pet = this.Results.Pets[obj.sourceID];
+                    if (pet) {
+                        character = this.Results.Characters[pet.petOwner];
+                    }
+                }
 
                 if (!character) {
                     return;

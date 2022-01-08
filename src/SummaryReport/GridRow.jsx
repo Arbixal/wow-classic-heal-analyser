@@ -203,6 +203,7 @@ export class GridRow extends Component {
         characterData[DataPoints.DispelShamanCureDisease] = this._getCastCount(character, 2870);
         characterData[DataPoints.DispelShamanPoisonCleansingTotem] = this._getCastCount(character, 8166);
         characterData[DataPoints.DispelShamanDiseaseCleansingTotem] = this._getCastCount(character, 8170);
+        characterData[DataPoints.DispelWarlockDevourMagic] = this._getCastCount(character, 19505, 19731, 19734, 19736, 27276, 27277);
 
         characterData[DataPoints.DispelPoison] = sumNonNull(characterData[DataPoints.DispelDruidCurePoison],
             characterData[DataPoints.DispelDruidAbolishPoison],
@@ -219,12 +220,13 @@ export class GridRow extends Component {
 
         characterData[DataPoints.DispelMagic] = sumNonNull(characterData[DataPoints.DispelPriestDispelMagic],
             characterData[DataPoints.DispelShamanPurge],
-            characterData[DataPoints.DispelPaladinCleanse]);
+            characterData[DataPoints.DispelPaladinCleanse],
+            characterData[DataPoints.DispelWarlockDevourMagic]);
 
         characterData[DataPoints.DispelFrenzy] = sumNonNull(characterData[DataPoints.DispelHunterTranqShot]);
 
-        characterData[DataPoints.DispelBoss] = this._getBossCastCount(character, 8946, 2893, 2782, 19801, 475, 1152, 4987, 988, 527, 528, 552, 8012, 370, 526, 2870, 8166, 8170);
-        characterData[DataPoints.DispelTrash] = this._getTrashCastCount(character, 8946, 2893, 2782, 19801, 475, 1152, 4987, 988, 527, 528, 552, 8012, 370, 526, 2870, 8166, 8170);
+        characterData[DataPoints.DispelBoss] = this._getBossCastCount(character, 8946, 2893, 2782, 19801, 475, 1152, 4987, 988, 527, 528, 552, 8012, 370, 526, 2870, 8166, 8170, 19505, 19731, 19734, 19736, 27276, 27277);
+        characterData[DataPoints.DispelTrash] = this._getTrashCastCount(character, 8946, 2893, 2782, 19801, 475, 1152, 4987, 988, 527, 528, 552, 8012, 370, 526, 2870, 8166, 8170, 19505, 19731, 19734, 19736, 27276, 27277);
 
         characterData[DataPoints.DispelTotal] = sumNonNull(characterData[DataPoints.DispelPoison],
             characterData[DataPoints.DispelDisease],
@@ -238,8 +240,12 @@ export class GridRow extends Component {
         characterData[DataPoints.InterruptPaladinHammerOfJustice] = this._getInterruptCount(character, 10308);
         characterData[DataPoints.InterruptPriestSilence] = this._getInterruptCount(character, 15487);
         characterData[DataPoints.InterruptRogueKick] = this._getInterruptCount(character, 1769, 1768, 1767, 1766, 38768);
+        characterData[DataPoints.InterruptCheapShot] = this._getInterruptCount(character, 1833);
         characterData[DataPoints.InterruptShamanEarthShock] = this._getInterruptCount(character, 10414, 8042, 8044, 8045, 8046, 10412, 10413, 25454);
         characterData[DataPoints.InterruptWarriorPummel] = this._getInterruptCount(character, 6552, 6554);
+        characterData[DataPoints.InterruptWarlockSpellLock] = this._getInterruptCount(character, 19647);
+        characterData[DataPoints.InterruptHunterIntimidate] = this._getInterruptCount(character, 24394);
+        characterData[DataPoints.InterruptWarstomp] = this._getInterruptCount(character, 20549);
 
         characterData[DataPoints.InterruptTotal] = sumNonNull(characterData[DataPoints.InterruptDruidBash],
             characterData[DataPoints.InterruptDruidFeralCharge],
@@ -247,7 +253,11 @@ export class GridRow extends Component {
             characterData[DataPoints.InterruptPaladinHammerOfJustice],
             characterData[DataPoints.InterruptPriestSilence],
             characterData[DataPoints.InterruptRogueKick],
+            characterData[DataPoints.InterruptCheapShot],
             characterData[DataPoints.InterruptShamanEarthShock],
+            characterData[DataPoints.InterruptWarlockSpellLock],
+            characterData[DataPoints.InterruptHunterIntimidate],
+            characterData[DataPoints.InterruptWarstomp],
             characterData[DataPoints.InterruptWarriorPummel]);
 
         characterData[DataPoints.Cooldowns] = this._getCooldownList(character);
@@ -457,7 +467,7 @@ export class GridRow extends Component {
         let castCount = 0;
         for (let i = 0; i < interrupts.length; ++i) {
             let cast = interrupts[i];
-            if (cast.type === "interrupt" && spellIds.includes(cast.ability.guid)) {
+            if (spellIds.includes(cast.ability.guid)) {
                 castCount++;
             }
         }

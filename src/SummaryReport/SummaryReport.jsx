@@ -872,6 +872,13 @@ class SummaryReport extends Component {
                                             spell_id={8012}
                                             visibility={(ctx) => ctx.classFilter === "Shaman"}
                                             aggregate={true} />
+                            <GridIconColumn field={DataPoints.DispelWarlockDevourMagic} 
+                                            label="Devour Magic" 
+                                            icon_name="spell_nature_purge.jpg" 
+                                            cssClass="center"
+                                            spell_id={27277}
+                                            visibility={(ctx) => ctx.classFilter === "Warlock"}
+                                            aggregate={true} />
 
                             <GridIconColumn field={DataPoints.DispelFrenzy} 
                                             label="Frenzy" 
@@ -933,6 +940,34 @@ class SummaryReport extends Component {
                                             cssClass="center"
                                             spell_id={38768}
                                             visibility={(ctx) => ctx.classFilter === "Rogue"}
+                                            aggregate={true} />
+                            <GridIconColumn field={DataPoints.InterruptCheapShot} 
+                                            label="Cheap Shot" 
+                                            icon_name="ability_cheapshot.jpg" 
+                                            cssClass="center"
+                                            spell_id={1833}
+                                            visibility={(ctx) => ctx.classFilter === "Rogue"}
+                                            aggregate={true} />
+                            <GridIconColumn field={DataPoints.InterruptWarlockSpellLock} 
+                                            label="Spell Lock" 
+                                            icon_name="spell_shadow_mindrot.jpg" 
+                                            cssClass="center"
+                                            spell_id={19647}
+                                            visibility={(ctx) => ctx.classFilter === "Warlock"}
+                                            aggregate={true} />
+                            <GridIconColumn field={DataPoints.InterruptHunterIntimidate} 
+                                            label="Intimidation" 
+                                            icon_name="ability_devour.jpg" 
+                                            cssClass="center"
+                                            spell_id={19577}
+                                            visibility={(ctx) => ctx.classFilter === "Hunter"}
+                                            aggregate={true} />
+                            <GridIconColumn field={DataPoints.InterruptWarstomp} 
+                                            label="War Stomp" 
+                                            icon_name="ability_warstomp.jpg" 
+                                            cssClass="center"
+                                            spell_id={20549}
+                                            visibility={(ctx) => ctx.classFilter === "Hunter" || ctx.classFilter === "Druid" || ctx.classFilter === "Shaman" || ctx.classFilter === "Warrior"}
                                             aggregate={true} />
                             <GridIconColumn field={DataPoints.InterruptWarriorPummel} 
                                             label="Pummel" 
