@@ -1,0 +1,115 @@
+[
+    {
+        "id": 20554,
+        "name": "Berserking",
+        "type": "Racial",
+        "icon": "racial_troll_berserk.jpg",
+        "cooldown": 180000
+    },
+    {
+        "id": 26297,
+        "name": "Berserking",
+        "type": "Racial",
+        "icon": "racial_troll_berserk.jpg",
+        "cooldown": 180000
+    },
+    {
+        "id": 26296,
+        "name": "Berserking",
+        "type": "Racial",
+        "icon": "racial_troll_berserk.jpg",
+        "cooldown": 180000
+    },
+
+    {
+        "id": 20549,
+        "name": "War Stomp",
+        "type": "Racial",
+        "icon": "ability_warstomp.jpg",
+        "cooldown": 120000
+    },
+
+    {
+        "id": 20572,
+        "name": "Blood Fury",
+        "type": "Racial",
+        "icon": "racial_orc_berserkerstrength.jpg",
+        "cooldown": 120000
+    },
+    {
+        "id": 33697,
+        "name": "Blood Fury",
+        "type": "Racial",
+        "icon": "racial_orc_berserkerstrength.jpg",
+        "cooldown": 120000
+    },
+    {
+        "id": 33702,
+        "name": "Blood Fury",
+        "type": "Racial",
+        "icon": "racial_orc_berserkerstrength.jpg",
+        "cooldown": 120000
+    },
+
+    {
+        "id": 20577,
+        "name": "Cannibalize",
+        "type": "Racial",
+        "icon": "ability_racial_cannibalize.jpg",
+        "cooldown": 120000
+    },
+    {
+        "id": 7744,
+        "name": "Will of the Forsaken",
+        "type": "Racial",
+        "icon": "spell_shadow_raisedead.jpg",
+        "cooldown": 120000
+    },
+
+    {
+        "id": 28730,
+        "name": "Arcane Torrent",
+        "type": "Racial",
+        "icon": "spell_shadow_teleport.jpg",
+        "cooldown": 120000
+    },
+    {
+        "id": 25046,
+        "name": "Arcane Torrent",
+        "type": "Racial",
+        "icon": "spell_shadow_teleport.jpg",
+        "cooldown": 120000
+    },
+
+    {
+        "id": 20600,
+        "name": "Perception",
+        "type": "Racial",
+        "icon": "spell_nature_sleep.jpg",
+        "cooldown": 180000
+    },
+
+    {
+        "id": 20594,
+        "name": "Stoneform",
+        "type": "Racial",
+        "icon": "spell_shadow_unholystrength.jpg",
+        "cooldown": 180000
+    },
+
+    {
+        "id": 20589,
+        "name": "Escape Artist",
+        "type": "Racial",
+        "icon": "ability_rogue_trip.jpg",
+        "cooldown": 105000
+    },
+
+    {
+        "id": 28880,
+        "name": "Gift of the Naaru",
+        "type": "Racial",
+        "icon": "spell_holy_holyprotection.jpg",
+        "cooldown": 180000
+    }
+]

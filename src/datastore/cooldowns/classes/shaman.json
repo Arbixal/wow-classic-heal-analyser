@@ -1,0 +1,65 @@
+[
+    {
+        "id": 16188,
+        "name":  "Nature's Swiftness",
+        "type":  "Ability",
+        "icon":  "spell_nature_ravenform.jpg",
+        "cooldown":  180000
+    },
+    {
+        "id": 16190,
+        "name":  "Mana Tide Totem",
+        "type":  "Ability",
+        "icon":  "spell_frost_summonwaterelemental.jpg",
+        "cooldown":  300000
+    },
+    {
+        "id": 24854,
+        "name":  "Enamored Water Spirit",
+        "type":  "Trinket",
+        "icon":  "inv_wand_01.jpg",
+        "cooldown":  180000
+    },
+    {
+        "id": 16166,
+        "name":  "Elemental Mastery",
+        "type":  "Ability",
+        "icon":  "spell_nature_wispheal.jpg",
+        "cooldown":  180000
+    },
+    {
+        "id": 2825,
+        "name":  "Bloodlust",
+        "type":  "Ability",
+        "icon":  "spell_nature_bloodlust.jpg",
+        "cooldown":  600000
+    },
+    {
+        "id": 32182,
+        "name":  "Heroism",
+        "type":  "Ability",
+        "icon":  "ability_shaman_heroism.jpg",
+        "cooldown":  600000
+    },
+    {
+        "id": 2894,
+        "name":  "Fire Elemental",
+        "type":  "Ability",
+        "icon":  "spell_fire_elemental_totem.jpg",
+        "cooldown":  1200000
+    },
+    {
+        "id": 2062,
+        "name":  "Earth Elemental",
+        "type":  "Ability",
+        "icon":  "spell_nature_earthelemental_totem.jpg",
+        "cooldown":  1200000
+    },
+    {
+        "id": 30823,
+        "name":  "Shamanistic Rage",
+        "type":  "Ability",
+        "icon":  "spell_nature_shamanrage.jpg",
+        "cooldown":  120000
+    }
+]

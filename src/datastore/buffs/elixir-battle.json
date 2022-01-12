@@ -1,0 +1,134 @@
+[
+    {
+        "id": 28491,
+        "itemId": 22825,
+        "name": "Elixir of Healing Power",
+        "icon": "inv_potion_142.jpg"
+    },
+    {
+        "id": 28503,
+        "itemId": 22835,
+        "name": "Elixir of Major Shadow Power",
+        "icon": "inv_potion_145.jpg"
+    },
+    {
+        "id": 38954,
+        "itemId": 31679,
+        "name": "Fel Strength Elixir",
+        "icon": "inv_potion_152.jpg"
+    },
+    {
+        "id": 28497,
+        "itemId": 22831,
+        "name": "Elixir of Major Agility",
+        "icon": "inv_potion_127.jpg"
+    },
+    {
+        "id": 28501,
+        "itemId": 22833,
+        "name": "Elixir of Major Firepower",
+        "icon": "inv_potion_146.jpg"
+    },
+    {
+        "id": 28493,
+        "itemId": 22827,
+        "name": "Elixir of Major Frost Power",
+        "icon": "inv_potion_148.jpg"
+    },
+    {
+        "id": 33726,
+        "itemId": 28104,
+        "name": "Elixir of Mastery",
+        "icon": "inv_potion_111.jpg"
+    },
+    {
+        "id": 28490,
+        "itemId": 22824,
+        "name": "Elixir of Major Strength",
+        "icon": "inv_potion_147.jpg"
+    },
+    {
+        "id": 33721,
+        "itemId": 28103,
+        "name": "Adept's Elixir",
+        "icon": "inv_potion_96.jpg"
+    },
+    {
+        "id": 33720,
+        "itemId": 28102,
+        "name": "Onslaught Elixir",
+        "icon": "inv_potion_58.jpg"
+    },
+    {
+        "id": 11406,
+        "itemId": 9224,
+        "name": "Elixir of Demonslaying",
+        "icon": "inv_potion_27.jpg"
+    },
+    {
+        "id": 17538,
+        "itemId": 13452,
+        "name": "Elixir of the Mongoose",
+        "icon": "inv_potion_32.jpg"
+    },
+    {
+        "id": 10669,
+        "itemId": 8412,
+        "name": "Ground Scorpok Assay",
+        "icon": "inv_misc_dust_02.jpg"
+    },
+    {
+        "id": 17539,
+        "itemId": 13454,
+        "name": "Greater Arcane Elixir",
+        "icon": "inv_potion_25.jpg"
+    },
+    {
+        "id": 17038,
+        "itemId": 12820,
+        "name": "Winterfall Firewater",
+        "icon": "inv_potion_92.jpg"
+    },
+    {
+        "id": 16329,
+        "itemId": 12460,
+        "name": "Juju Might",
+        "icon": "inv_misc_monsterscales_07.jpg"
+    },
+    {
+        "id": 26276,
+        "itemId": 21546,
+        "name": "Elixir of Greater Firepower",
+        "icon": "inv_potion_60.jpg"
+    },
+    {
+        "id": 11474,
+        "itemId": 9264,
+        "name": "Elixir of Shadow Power",
+        "icon": "inv_potion_46.jpg"
+    },
+    {
+        "id": 16323,
+        "itemId": 12451,
+        "name": "Juju Power",
+        "icon": "inv_misc_monsterscales_11.jpg"
+    },
+    {
+        "id": 11405,
+        "itemId": 9206,
+        "name": "Elixir of Giants",
+        "icon": "inv_potion_61.jpg"
+    },
+    {
+        "id": 10667,
+        "itemId": 8410,
+        "name": "R.O.I.D.S.",
+        "icon": "inv_stone_15.jpg"
+    },
+    {
+        "id": 17537,
+        "itemId": 13453,
+        "name": "Elixir of Brute Force",
+        "icon": "inv_potion_59.jpg"
+    }
+]

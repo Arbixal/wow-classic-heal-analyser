@@ -1,0 +1,72 @@
+[
+    {
+        "id": 14185,
+        "name":  "Preparation",
+        "type":  "Ability",
+        "icon":  "spell_shadow_antishadow.jpg",
+        "cooldown":  600000
+    },
+    {
+        "id": 14183,
+        "name":  "Premeditation",
+        "type":  "Ability",
+        "icon":  "spell_shadow_possession.jpg",
+        "cooldown":  120000
+    },
+    {
+        "id": 14177,
+        "name":  "Cold Blood",
+        "type":  "Ability",
+        "icon":  "spell_ice_lament.jpg",
+        "cooldown":  180000
+    },
+    {
+        "id": 13877,
+        "name":  "Blade Flurry",
+        "type":  "Ability",
+        "icon":  "ability_warrior_punishingblow.jpg",
+        "cooldown":  120000
+    },
+    {
+        "id": 13750,
+        "name":  "Adrenaline Rush",
+        "type":  "Ability",
+        "icon":  "spell_shadow_shadowworddominate.jpg",
+        "cooldown":  300000
+    },
+    {
+        "id": 5277,
+        "name":  "Evasion (Rank 1)",
+        "type":  "Ability",
+        "icon":  "spell_shadow_shadowward.jpg",
+        "cooldown":  300000
+    },
+    {
+        "id": 26669,
+        "name":  "Evasion (Rank 2)",
+        "type":  "Ability",
+        "icon":  "spell_shadow_shadowward.jpg",
+        "cooldown":  300000
+    },
+    {
+        "id": 1856,
+        "name":  "Vanish (Rank 1)",
+        "type":  "Ability",
+        "icon":  "ability_vanish.jpg",
+        "cooldown":  300000
+    },
+    {
+        "id": 1857,
+        "name":  "Vanish (Rank 2)",
+        "type":  "Ability",
+        "icon":  "ability_vanish.jpg",
+        "cooldown":  300000
+    },
+    {
+        "id": 26889,
+        "name":  "Vanish (Rank 3)",
+        "type":  "Ability",
+        "icon":  "ability_vanish.jpg",
+        "cooldown":  300000
+    }
+]

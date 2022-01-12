@@ -1,0 +1,79 @@
+[
+    {
+        "id": 18708,
+        "name":  "Fel Domination",
+        "type":  "Ability",
+        "icon":  "spell_nature_removecurse.jpg",
+        "cooldown":  900000
+    },
+    {
+        "id": 18288,
+        "name":  "Amplify Curse",
+        "type":  "Ability",
+        "icon":  "spell_shadow_contagion.jpg",
+        "cooldown":  180000
+    },
+    {
+        "id": 20707,
+        "name":  "Minor Soulstone",
+        "type":  "Ability",
+        "icon":  "inv_misc_orb_04.jpg",
+        "cooldown":  1800000
+    },
+    {
+        "id": 20762,
+        "name":  "Lesser Soulstone",
+        "type":  "Ability",
+        "icon":  "inv_misc_orb_04.jpg",
+        "cooldown":  1800000
+    },
+    {
+        "id": 20763,
+        "name":  "Soulstone",
+        "type":  "Ability",
+        "icon":  "inv_misc_orb_04.jpg",
+        "cooldown":  1800000
+    },
+    {
+        "id": 20764,
+        "name":  "Greater Soulstone",
+        "type":  "Ability",
+        "icon":  "inv_misc_orb_04.jpg",
+        "cooldown":  1800000
+    },
+    {
+        "id": 20765,
+        "name":  "Major Soulstone",
+        "type":  "Ability",
+        "icon":  "inv_misc_orb_04.jpg",
+        "cooldown":  1800000
+    },
+    {
+        "id": 27239,
+        "name":  "Master Soulstone",
+        "type":  "Ability",
+        "icon":  "inv_misc_orb_04.jpg",
+        "cooldown":  1800000
+    },
+    {
+        "id": 1122,
+        "name":  "Inferno",
+        "type":  "Ability",
+        "icon":  "spell_shadow_summoninfernal.jpg",
+        "cooldown":  3600000
+    },
+    {
+        "id": 18540,
+        "name":  "Ritual of Doom",
+        "type":  "Ability",
+        "icon":  "spell_shadow_antimagicshell.jpg",
+        "cooldown":  3600000
+    },
+    {
+        "id": 29858,
+        "name":  "Soulshatter",
+        "type":  "Ability",
+        "icon":  "spell_arcane_arcane01.jpg",
+        "cooldown":  300000
+    }
+]

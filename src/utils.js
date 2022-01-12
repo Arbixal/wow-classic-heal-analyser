@@ -57,3 +57,7 @@ export function sumNonNull(...params) {
         return agg;
     }, 0);
 }
+
+export function arrayToDictionary(array, key) {
+    return array.reduce((accum, value) => ({...accum, [value[key]]: value}), {});
+}

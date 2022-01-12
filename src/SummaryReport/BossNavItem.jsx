@@ -1,6 +1,6 @@
 import { useParams } from "react-router";
 import { NavLink } from "react-router-dom";
-import { bosses } from "../data"
+import { bosses } from "../datastore"
 import {msToTime} from "../utils"
 
 function getPercentageBar(fight) {

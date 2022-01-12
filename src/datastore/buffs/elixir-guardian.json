@@ -1,0 +1,110 @@
+[
+    {
+        "id": 39627,
+        "itemId": 32067,
+        "name": "Elixir of Draenic Wisdom",
+        "icon": "inv_potion_155.jpg"
+    },
+    {
+        "id": 28514,
+        "itemId": 22848,
+        "name": "Elixir of Empowerment",
+        "icon": "inv_potion_136.jpg"
+    },
+    {
+        "id": 28509,
+        "itemId": 22840,
+        "name": "Elixir of Major Mageblood",
+        "icon": "inv_potion_151.jpg"
+    },
+    {
+        "id": 28502,
+        "itemId": 22834,
+        "name": "Elixir of Major Defense",
+        "icon": "inv_potion_122.jpg"
+    },
+    {
+        "id": 39628,
+        "itemId": 32068,
+        "name": "Elixir of Ironskin",
+        "icon": "inv_potion_159.jpg"
+    },
+    {
+        "id": 39626,
+        "itemId": 32063,
+        "name": "Earthen Elixir",
+        "icon": "inv_potion_154.jpg"
+    },
+    {
+        "id": 39625,
+        "itemId": 32062,
+        "name": "Elixir of Major Fortitude",
+        "icon": "inv_potion_158.jpg"
+    },
+    {
+        "id": 11371,
+        "itemId": 9088,
+        "name": "Gift of Arthas",
+        "icon": "inv_potion_28.jpg"
+    },
+    {
+        "id": 24363,
+        "itemId": 20007,
+        "name": "Mageblood Potion",
+        "icon": "inv_potion_45.jpg"
+    },
+    {
+        "id": 24382,
+        "itemId": 20079,
+        "name": "Spirit of Zanza",
+        "icon": "inv_potion_30.jpg"
+    },
+    {
+        "id": 24383,
+        "itemId": 20081,
+        "name": "Swiftness of Zanza",
+        "icon": "inv_potion_31.jpg"
+    },
+    {
+        "id": 24417,
+        "itemId": 20080,
+        "name": "Sheen of Zanza",
+        "icon": "inv_potion_29.jpg"
+    },
+    {
+        "id": 24361,
+        "itemId": 20004,
+        "name": "Major Troll's Blood Potion",
+        "icon": "inv_potion_80.jpg"
+    },
+    {
+        "id": 17535,
+        "itemId": 13447,
+        "name": "Elixir of the Sages",
+        "icon": "inv_potion_29.jpg"
+    },
+    {
+        "id": 11348,
+        "itemId": 13445,
+        "name": "Elixir of Superior Defense",
+        "icon": "inv_potion_66.jpg"
+    },
+    {
+        "id": 10668,
+        "itemId": 8411,
+        "name": "Lung Juice Cocktail",
+        "icon": "inv_drink_12.jpg"
+    },
+    {
+        "id": 10692,
+        "itemId": 8423,
+        "name": "Cerebral Cortex Compound",
+        "icon": "inv_potion_32.jpg"
+    },
+    {
+        "id": 10693,
+        "itemId": 8424,
+        "name": "Gizzard Gum",
+        "icon": "inv_misc_food_30.jpg"
+    }
+]

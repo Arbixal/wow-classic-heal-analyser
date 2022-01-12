@@ -1,0 +1,80 @@
+[
+    {
+        "id": 33268,
+        "itemId": 27666,
+        "name": "+44 Healing",
+        "icon": "inv_misc_fish_18.jpg"
+    },
+    {
+        "id": 33256,
+        "itemId": 27658,
+        "name": "+20 Strength",
+        "icon": "inv_misc_food_60.jpg"
+    },
+    {
+        "id": 43764,
+        "itemId": 33872,
+        "name": "+20 Hit Rating",
+        "icon": "inv_misc_food_84_roastclefthoof.jpg"
+    },
+    {
+        "id": 33257,
+        "itemId": 27667,
+        "name": "+30 Stamina",
+        "icon": "inv_misc_fish_16.jpg"
+    },
+    {
+        "id": 35272,
+        "itemId": 27660,
+        "name": "+20 Stamina",
+        "icon": "inv_misc_food_48.jpg"
+    },
+    {
+        "id": 33254,
+        "itemId": 27662,
+        "name": "+20 Stamina",
+        "icon": "inv_misc_food_74.jpg"
+    },
+    {
+        "id": 33263,
+        "itemId": 27657,
+        "name": "+23 Spell Damage",
+        "icon": "inv_misc_food_86_basilisk.jpg"
+    },
+    {
+        "id": 33259,
+        "itemId": 27655,
+        "name": "+40 Attack Power",
+        "icon": "inv_misc_food_53.jpg"
+    },
+    {
+        "id": 33261,
+        "itemId": 27659,
+        "name": "+20 Agility",
+        "icon": "inv_misc_food_65.jpg"
+    },
+    {
+        "id": 43722,
+        "itemId": 33825,
+        "name": "+20 Spell Crit",
+        "icon": "inv_misc_food_63.jpg"
+    },
+    {
+        "id": 33265,
+        "itemId": 27663,
+        "name": "+8 Mp5",
+        "icon": "inv_misc_food_79.jpg"
+    },
+    {
+        "id": 45619,
+        "itemId": 33867,
+        "name": "+8 Resistances",
+        "icon": "inv_misc_fish_29.jpg"
+    },
+    {
+        "id": 43730,
+        "itemId": 33866,
+        "name": "Stormchops",
+        "icon": "inv_misc_food_91.jpg"
+    }
+]

@@ -1,0 +1,37 @@
+[
+    {
+        "id": 12975,
+        "name":  "Last Stand",
+        "type":  "Ability",
+        "icon":  "spell_holy_ashestoashes.jpg",
+        "cooldown":  480000
+    },
+    {
+        "id": 12292,
+        "name":  "Death Wish",
+        "type":  "Ability",
+        "icon":  "spell_shadow_deathpact.jpg",
+        "cooldown":  180000
+    },
+    {
+        "id": 20230,
+        "name":  "Retaliation",
+        "type":  "Ability",
+        "icon":  "ability_warrior_challange.jpg",
+        "cooldown":  1800000
+    },
+    {
+        "id": 871,
+        "name":  "Shield Wall",
+        "type":  "Ability",
+        "icon":  "ability_warrior_shieldwall.jpg",
+        "cooldown":  1800000
+    },
+    {
+        "id": 1719,
+        "name":  "Recklessness",
+        "type":  "Ability",
+        "icon":  "ability_criticalstrike.jpg",
+        "cooldown":  1800000
+    }
+]

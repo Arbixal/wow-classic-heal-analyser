@@ -1,0 +1,80 @@
+[
+    {
+        "id": 2629,
+        "itemId": 20748,
+        "name": "Brilliant Mana Oil",
+        "icon": "inv_potion_100.jpg"
+    },
+    {
+        "id": 2678,
+        "itemId": 22522,
+        "name": "Superior Wizard Oil",
+        "icon": "inv_potion_141.jpg"
+    },
+    {
+        "id": 2677,
+        "itemId": 22521,
+        "name": "Superior Mana Oil",
+        "icon": "inv_potion_101.jpg"
+    },
+    {
+        "id": 2712,
+        "itemId": 23528,
+        "name": "Fel Sharpening Stone",
+        "icon": "inv_stone_sharpeningstone_06.jpg"
+    },
+    {
+        "id": 2713,
+        "itemId": 23529,
+        "name": "Adamantite Sharpening Stone",
+        "icon": "inv_stone_sharpeningstone_07.jpg"
+    },
+    {
+        "id": 2954,
+        "itemId": 28420,
+        "name": "Fel Weightstone",
+        "icon": "inv_stone_weightstone_06.jpg"
+    },
+    {
+        "id": 2955,
+        "itemId": 28421,
+        "name": "Adamantite Weightstone",
+        "icon": "inv_stone_weightstone_07.jpg"
+    },
+    {
+        "id": 3265,
+        "itemId": 34538,
+        "name": "Blessed Weapon Coating",
+        "icon": "inv_potion_101.jpg"
+    },
+    {
+        "id": 3266,
+        "itemId": 34539,
+        "name": "Righteous Weapon Coating",
+        "icon": "inv_potion_101.jpg"
+    },
+    {
+        "id": 2506,
+        "itemId": 18262,
+        "name": "Elemental Sharpening Stone",
+        "icon": "inv_stone_02.jpg"
+    },
+    {
+        "id": 2628,
+        "itemId": 20749,
+        "name": "Brilliant Wizard Oil",
+        "icon": "inv_potion_105.jpg"
+    },
+    {
+        "id": 2685,
+        "itemId": 23123,
+        "name": "Blessed Wizard Oil",
+        "icon": "inv_potion_26.jpg"
+    },
+    {
+        "id": 2684,
+        "itemId": 23122,
+        "name": "Consecrated Sharpening Stone",
+        "icon": "inv_stone_sharpeningstone_02.jpg"
+    }
+]

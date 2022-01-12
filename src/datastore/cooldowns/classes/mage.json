@@ -1,0 +1,65 @@
+[
+    {
+        "id": 31687,
+        "name":  "Summon Water Elemental",
+        "type":  "Ability",
+        "icon":  "spell_frost_summonwaterelemental_2.jpg",
+        "cooldown":  180000
+    },
+    {
+        "id": 12043,
+        "name":  "Presence of Mind",
+        "type":  "Ability",
+        "icon":  "spell_nature_enchantarmor.jpg",
+        "cooldown":  180000
+    },
+    {
+        "id": 12472,
+        "name":  "Icy Veins",
+        "type":  "Ability",
+        "icon":  "spell_frost_coldhearted.jpg",
+        "cooldown":  180000
+    },
+    {
+        "id": 11129,
+        "name":  "Combustion",
+        "type":  "Ability",
+        "icon":  "spell_fire_sealoffire.jpg",
+        "cooldown":  180000
+    },
+    {
+        "id": 11958,
+        "name":  "Cold Snap",
+        "type":  "Ability",
+        "icon":  "spell_frost_wizardmark.jpg",
+        "cooldown":  480000
+    },
+    {
+        "id": 12042,
+        "name":  "Arcane Power",
+        "type":  "Ability",
+        "icon":  "spell_nature_lightning.jpg",
+        "cooldown":  180000
+    },
+    {
+        "id": 45438,
+        "name":  "Ice Block",
+        "type":  "Ability",
+        "icon":  "spell_frost_frost.jpg",
+        "cooldown":  300000
+    },
+    {
+        "id": 12051,
+        "name":  "Evocation",
+        "type":  "Ability",
+        "icon":  "spell_nature_purge.jpg",
+        "cooldown":  480000
+    },
+    {
+        "id": 66,
+        "name":  "Invisibility",
+        "type":  "Ability",
+        "icon":  "ability_mage_invisibility.jpg",
+        "cooldown":  300000
+    }
+]

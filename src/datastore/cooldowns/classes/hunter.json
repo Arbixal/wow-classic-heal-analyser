@@ -1,0 +1,44 @@
+[
+    {
+        "id": 23989,
+        "name":  "Readiness",
+        "type":  "Ability",
+        "icon":  "ability_hunter_readiness.jpg",
+        "cooldown":  300000
+    },
+    {
+        "id": 19577,
+        "name":  "Intimidation",
+        "type":  "Ability",
+        "icon":  "ability_devour.jpg",
+        "cooldown":  60000
+    },
+    {
+        "id": 19574,
+        "name":  "Bestial Wrath",
+        "type":  "Ability",
+        "icon":  "ability_druid_ferociousbite.jpg",
+        "cooldown":  120000
+    },
+    {
+        "id": 19263,
+        "name":  "Deterrence",
+        "type":  "Ability",
+        "icon":  "ability_whirlwind.jpg",
+        "cooldown":  300000
+    },
+    {
+        "id": 3045,
+        "name":  "Rapid Fire",
+        "type":  "Ability",
+        "icon":  "ability_hunter_runningshot.jpg",
+        "cooldown":  300000
+    },
+    {
+        "id": 34477,
+        "name":  "Misdirection",
+        "type":  "Ability",
+        "icon":  "ability_hunter_misdirection.jpg",
+        "cooldown":  120000
+    }
+]

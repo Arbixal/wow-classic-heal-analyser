@@ -1,0 +1,38 @@
+[
+    {
+        "id": 33077,
+        "itemId": 27498,
+        "name": "Scroll of Agility V",
+        "icon": "inv_scroll_02.jpg"
+    },
+    {
+        "id": 33078,
+        "itemId": 27499,
+        "name": "Scroll of Intellect V",
+        "icon": "inv_scroll_01.jpg"
+    },
+    {
+        "id": 33079,
+        "itemId": 27500,
+        "name": "Scroll of Protection V",
+        "icon": "inv_scroll_07.jpg"
+    },
+    {
+        "id": 33080,
+        "itemId": 27501,
+        "name": "Scroll of Spirit V",
+        "icon": "inv_scroll_01.jpg"
+    },
+    {
+        "id": 33081,
+        "itemId": 27502,
+        "name": "Scroll of Stamina V",
+        "icon": "inv_scroll_07.jpg"
+    },
+    {
+        "id": 33082,
+        "itemId": 27503,
+        "name": "Scroll of Strength V",
+        "icon": "inv_scroll_02.jpg"
+    }
+]

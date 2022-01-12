@@ -1,4 +1,5 @@
-import {gemList, offhandFrills} from "./data";
+import {offhandFrills} from "./data";
+import {gemList} from "./datastore";
 import {removeDuplicates} from "./utils";
 
 export class WarcraftLogLoader {

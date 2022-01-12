@@ -1,0 +1,226 @@
+[
+    {
+        "id": 14751,
+        "name":  "Inner Focus",
+        "type":  "Ability",
+        "icon":  "spell_frost_windwalkon.jpg",
+        "cooldown":  180000
+    },
+    {
+        "id": 10060,
+        "name":  "Power Infusion",
+        "type":  "Ability",
+        "icon":  "spell_holy_powerinfusion.jpg",
+        "cooldown":  180000
+    },
+    {
+        "id": 33206,
+        "name":  "Pain Suppression",
+        "type":  "Ability",
+        "icon":  "spell_holy_painsupression.jpg",
+        "cooldown":  120000
+    },
+    {
+        "id": 724,
+        "name":  "Lightwell (Rank 1)",
+        "type":  "Ability",
+        "icon":  "spell_holy_summonlightwell.jpg",
+        "cooldown":  360000
+    },
+    {
+        "id": 27870,
+        "name":  "Lightwell (Rank 2)",
+        "type":  "Ability",
+        "icon":  "spell_holy_summonlightwell.jpg",
+        "cooldown":  360000
+    },
+    {
+        "id": 27871,
+        "name":  "Lightwell (Rank 3)",
+        "type":  "Ability",
+        "icon":  "spell_holy_summonlightwell.jpg",
+        "cooldown":  360000
+    },
+    {
+        "id": 28275,
+        "name":  "Lightwell (Rank 4)",
+        "type":  "Ability",
+        "icon":  "spell_holy_summonlightwell.jpg",
+        "cooldown":  360000
+    },
+    {
+        "id": 32548,
+        "name":  "Symbol of Hope (Rank 1)",
+        "type":  "Ability",
+        "icon":  "spell_holy_symbolofhope.jpg",
+        "cooldown":  300000
+    },
+    {
+        "id": 13908,
+        "name":  "Desperate Prayer (Rank 1)",
+        "type":  "Ability",
+        "icon":  "spell_holy_restoration.jpg",
+        "cooldown":  600000
+    },
+    {
+        "id": 19236,
+        "name":  "Desperate Prayer (Rank 2)",
+        "type":  "Ability",
+        "icon":  "spell_holy_restoration.jpg",
+        "cooldown":  600000
+    },
+    {
+        "id": 19238,
+        "name":  "Desperate Prayer (Rank 3)",
+        "type":  "Ability",
+        "icon":  "spell_holy_restoration.jpg",
+        "cooldown":  600000
+    },
+    {
+        "id": 19240,
+        "name":  "Desperate Prayer (Rank 4)",
+        "type":  "Ability",
+        "icon":  "spell_holy_restoration.jpg",
+        "cooldown":  600000
+    },
+    {
+        "id": 19241,
+        "name":  "Desperate Prayer (Rank 5)",
+        "type":  "Ability",
+        "icon":  "spell_holy_restoration.jpg",
+        "cooldown":  600000
+    },
+    {
+        "id": 19242,
+        "name":  "Desperate Prayer (Rank 6)",
+        "type":  "Ability",
+        "icon":  "spell_holy_restoration.jpg",
+        "cooldown":  600000
+    },
+    {
+        "id": 19243,
+        "name":  "Desperate Prayer (Rank 7)",
+        "type":  "Ability",
+        "icon":  "spell_holy_restoration.jpg",
+        "cooldown":  600000
+    },
+    {
+        "id": 25437,
+        "name":  "Desperate Prayer (Rank 8)",
+        "type":  "Ability",
+        "icon":  "spell_holy_restoration.jpg",
+        "cooldown":  600000
+    },
+    {
+        "id": 13896,
+        "name":  "Feedback (Rank 1)",
+        "type":  "Ability",
+        "icon":  "spell_shadow_ritualofsacrifice.jpg",
+        "cooldown":  180000
+    },
+    {
+        "id": 19271,
+        "name":  "Feedback (Rank 2)",
+        "type":  "Ability",
+        "icon":  "spell_shadow_ritualofsacrifice.jpg",
+        "cooldown":  180000
+    },
+    {
+        "id": 19273,
+        "name":  "Feedback (Rank 3)",
+        "type":  "Ability",
+        "icon":  "spell_shadow_ritualofsacrifice.jpg",
+        "cooldown":  180000
+    },
+    {
+        "id": 19274,
+        "name":  "Feedback (Rank 4)",
+        "type":  "Ability",
+        "icon":  "spell_shadow_ritualofsacrifice.jpg",
+        "cooldown":  180000
+    },
+    {
+        "id": 19275,
+        "name":  "Feedback (Rank 5)",
+        "type":  "Ability",
+        "icon":  "spell_shadow_ritualofsacrifice.jpg",
+        "cooldown":  180000
+    },
+    {
+        "id": 25441,
+        "name":  "Feedback (Rank 6)",
+        "type":  "Ability",
+        "icon":  "spell_shadow_ritualofsacrifice.jpg",
+        "cooldown":  180000
+    },
+    {
+        "id": 2651,
+        "name":  "Elune's Grace",
+        "type":  "Ability",
+        "icon":  "spell_holy_elunesgrace.jpg",
+        "cooldown":  180000
+    },
+    {
+        "id": 2944,
+        "name":  "Devouring Plague (Rank 1)",
+        "type":  "Ability",
+        "icon":  "spell_shadow_blackplague.jpg",
+        "cooldown":  180000
+    },
+    {
+        "id": 19276,
+        "name":  "Devouring Plague (Rank 2)",
+        "type":  "Ability",
+        "icon":  "spell_shadow_blackplague.jpg",
+        "cooldown":  180000
+    },
+    {
+        "id": 19277,
+        "name":  "Devouring Plague (Rank 3)",
+        "type":  "Ability",
+        "icon":  "spell_shadow_blackplague.jpg",
+        "cooldown":  180000
+    },
+    {
+        "id": 19278,
+        "name":  "Devouring Plague (Rank 4)",
+        "type":  "Ability",
+        "icon":  "spell_shadow_blackplague.jpg",
+        "cooldown":  180000
+    },
+    {
+        "id": 19279,
+        "name":  "Devouring Plague (Rank 5)",
+        "type":  "Ability",
+        "icon":  "spell_shadow_blackplague.jpg",
+        "cooldown":  180000
+    },
+    {
+        "id": 19280,
+        "name":  "Devouring Plague (Rank 6)",
+        "type":  "Ability",
+        "icon":  "spell_shadow_blackplague.jpg",
+        "cooldown":  180000
+    },
+    {
+        "id": 25467,
+        "name":  "Devouring Plague (Rank 7)",
+        "type":  "Ability",
+        "icon":  "spell_shadow_blackplague.jpg",
+        "cooldown":  180000
+    },
+    {
+        "id": 32676,
+        "name":  "Consume Magic",
+        "type":  "Ability",
+        "icon":  "spell_arcane_studentofmagic.jpg",
+        "cooldown":  120000
+    },
+    {
+        "id": 34433,
+        "name":  "Shadowfiend",
+        "type":  "Ability",
+        "icon":  "spell_shadow_shadowfiend.jpg",
+        "cooldown":  300000
+    }
+]

@@ -1,5 +1,6 @@
 import {Component, Children, isValidElement, cloneElement} from "react";
-import {battleElixirBuffs, cooldownList, flaskBuffs, foodBuffs, guardianElixirBuffs, protectionPotionEnum, rarity, scrollBuffs, seasonBuffs, tempWeaponEnchants} from "../data";
+import {protectionPotionEnum, rarity} from "../data";
+import {battleElixirBuffs, cooldownList, flaskBuffs, foodBuffs, guardianElixirBuffs, scrollBuffs, seasonBuffs, tempWeaponEnchants} from "../datastore";
 import {DataPoints, emptyData} from "./GridContexts";
 import {sumNonNull} from "../utils";
 

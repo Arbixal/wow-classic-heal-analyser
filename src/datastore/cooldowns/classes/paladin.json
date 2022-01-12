@@ -1,0 +1,107 @@
+[
+    {
+        "id": 633,
+        "name":  "Lay on Hands (Rank 1)",
+        "type":  "Ability",
+        "icon":  "spell_holy_layonhands.jpg",
+        "cooldown":  3600000
+    },
+    {
+        "id": 2800,
+        "name":  "Lay on Hands (Rank 2)",
+        "type":  "Ability",
+        "icon":  "spell_holy_layonhands.jpg",
+        "cooldown":  3600000
+    },
+    {
+        "id": 10310,
+        "name":  "Lay on Hands (Rank 3)",
+        "type":  "Ability",
+        "icon":  "spell_holy_layonhands.jpg",
+        "cooldown":  3600000
+    },
+    {
+        "id": 27154,
+        "name":  "Lay on Hands (Rank 4)",
+        "type":  "Ability",
+        "icon":  "spell_holy_layonhands.jpg",
+        "cooldown":  3600000
+    },
+    {
+        "id": 19752,
+        "name":  "Divine Intervention",
+        "type":  "Ability",
+        "icon":  "spell_nature_timestop.jpg",
+        "cooldown":  3600000
+    },
+    {
+        "id": 642,
+        "name":  "Divine Shield (Rank 1)",
+        "type":  "Ability",
+        "icon":  "spell_holy_divineintervention.jpg",
+        "cooldown":  300000
+    },
+    {
+        "id": 1020,
+        "name":  "Divine Shield (Rank 2)",
+        "type":  "Ability",
+        "icon":  "spell_holy_divineintervention.jpg",
+        "cooldown":  300000
+    },
+    {
+        "id": 498,
+        "name":  "Divine Protection (Rank 1)",
+        "type":  "Ability",
+        "icon":  "spell_holy_restoration.jpg",
+        "cooldown":  300000
+    },
+    {
+        "id": 5573,
+        "name":  "Divine Protection (Rank 2)",
+        "type":  "Ability",
+        "icon":  "spell_holy_restoration.jpg",
+        "cooldown":  300000
+    },
+    {
+        "id": 1022,
+        "name":  "Blessing of Protection (Rank 1)",
+        "type":  "Ability",
+        "icon":  "spell_holy_sealofprotection.jpg",
+        "cooldown":  300000
+    },
+    {
+        "id": 5599,
+        "name":  "Blessing of Protection (Rank 2)",
+        "type":  "Ability",
+        "icon":  "spell_holy_sealofprotection.jpg",
+        "cooldown":  300000
+    },
+    {
+        "id": 10278,
+        "name":  "Blessing of Protection (Rank 3)",
+        "type":  "Ability",
+        "icon":  "spell_holy_sealofprotection.jpg",
+        "cooldown":  300000
+    },
+    {
+        "id": 31842,
+        "name":  "Divine Illumination",
+        "type":  "Ability",
+        "icon":  "spell_holy_divineillumination.jpg",
+        "cooldown":  180000
+    },
+    {
+        "id": 20216,
+        "name":  "Divine Favor",
+        "type":  "Ability",
+        "icon":  "spell_holy_heal.jpg",
+        "cooldown":  120000
+    },
+    {
+        "id": 31884,
+        "name":  "Avenging Wrath",
+        "type":  "Ability",
+        "icon":  "spell_holy_avenginewrath.jpg",
+        "cooldown":  180000
+    }
+]

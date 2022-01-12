@@ -1,0 +1,98 @@
+[
+    {
+        "id": 28518,
+        "itemId": 22851,
+        "name": "Flask of Fortification",
+        "icon": "inv_potion_119.jpg"
+    },
+    {
+        "id": 41609,
+        "itemId": 32898,
+        "name": "Flask of Fortification",
+        "icon": "inv_potion_119.jpg"
+    },
+    {
+        "id": 28540,
+        "itemId": 22866,
+        "name": "Flask of Pure Death",
+        "icon": "inv_potion_115.jpg"
+    },
+    {
+        "id": 46837,
+        "itemId": 35716,
+        "name": "Flask of Pure Death",
+        "icon": "inv_potion_115.jpg"
+    },
+    {
+        "id": 28520,
+        "itemId": 22854,
+        "name": "Flask of Relentless Assault",
+        "icon": "inv_potion_117.jpg"
+    },
+    {
+        "id": 41608,
+        "itemId": 32901,
+        "name": "Flask of Relentless Assault",
+        "icon": "inv_potion_117.jpg"
+    },
+    {
+        "id": 28521,
+        "itemId": 22861,
+        "name": "Flask of Blinding Light",
+        "icon": "inv_potion_116.jpg"
+    },
+    {
+        "id": 46839,
+        "itemId": 35717,
+        "name": "Flask of Blinding Light",
+        "icon": "inv_potion_116.jpg"
+    },
+    {
+        "id": 28519,
+        "itemId": 22853,
+        "name": "Flask of Mighty Restoration",
+        "icon": "inv_potion_118.jpg"
+    },
+    {
+        "id": 41610,
+        "itemId": 32899,
+        "name": "Flask of Mighty Restoration",
+        "icon": "inv_potion_118.jpg"
+    },
+    {
+        "id": 42735,
+        "itemId": 33208,
+        "name": "Flask of Chromatic Wonder",
+        "icon": "inv_potion_48.jpg"
+    },
+    {
+        "id": 17626,
+        "itemId": 13510,
+        "name": "Flask of the Titans",
+        "icon": "inv_potion_62.jpg"
+    },
+    {
+        "id": 17628,
+        "itemId": 13512,
+        "name": "Flask of Supreme Power",
+        "icon": "inv_potion_41.jpg"
+    },
+    {
+        "id": 41611,
+        "itemId": 32900,
+        "name": "Flask of Supreme Power",
+        "icon": "inv_potion_41.jpg"
+    },
+    {
+        "id": 17627,
+        "itemId": 13511,
+        "name": "Flask of Distilled Wisdom",
+        "icon": "inv_potion_97.jpg"
+    },
+    {
+        "id": 17629,
+        "itemId": 13513,
+        "name": "Flask of Chromatic Resistance",
+        "icon": "inv_potion_48.jpg"
+    }
+]

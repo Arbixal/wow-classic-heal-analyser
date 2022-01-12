@@ -1,6 +1,6 @@
 import {Component} from "react";
 import {LogLoader} from "../warcraftLogLoader";
-import {cooldownList} from "../data";
+import {cooldownList} from "../datastore";
 import ReactTooltip from "react-tooltip";
 import "./CooldownReport.css";
 

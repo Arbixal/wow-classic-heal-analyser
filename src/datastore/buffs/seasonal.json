@@ -1,0 +1,68 @@
+[
+    {
+        "id": 27723,
+        "itemId": 22237,
+        "name": "Dark Desire (+20 hit)",
+        "icon": "inv_valentineschocolate04.jpg"
+    },
+    {
+        "id": 27721,
+        "itemId": 22238,
+        "name": "Very Berry Cream (+23 spell damage)",
+        "icon": "inv_valentineschocolate02.jpg"
+    },
+    {
+        "id": 27720,
+        "itemId": 22236,
+        "name": "Buttermilk Delight (+20 defense)",
+        "icon": "inv_valentineschocolate01.jpg"
+    },
+    {
+        "id": 27722,
+        "itemId": 22239,
+        "name": "Sweet Surprise (+44 healing)",
+        "icon": "inv_valentineschocolate03.jpg"
+    },
+    {
+        "id": 26004,
+        "itemId": 21519,
+        "name": "Mistletoe (+20s spirit)",
+        "icon": "spell_nature_healingtouch.jpg"
+    },
+    {
+        "id": 29338,
+        "itemId": 23247,
+        "name": "Fire Festival Fury (+3% crit)",
+        "icon": "inv_misc_summerfest_brazierorange.jpg"
+    },
+    {
+        "id": 29235,
+        "spellId": 29235,
+        "name": "Fire Festival Fortitude (+30 stamina)",
+        "icon": "inv_summerfest_firespirit.jpg"
+    },
+    {
+        "id": 29335,
+        "itemId": 23435,
+        "name": "Elderberry Pie (+20 defense)",
+        "icon": "inv_misc_food_10.jpg"
+    },
+    {
+        "id": 29332,
+        "itemId": 23327,
+        "name": "Fire-toasted Bun (+20 hit)",
+        "icon": "inv_misc_food_11.jpg"
+    },
+    {
+        "id": 29333,
+        "itemId": 23326,
+        "name": "Midsummer Sausage (+23 spell damage)",
+        "icon": "inv_misc_food_53.jpg"
+    },
+    {
+        "id": 29334,
+        "itemId": 23211,
+        "name": "Toasted Smorc (+44 healing)",
+        "icon": "inv_summerfest_smorc.jpg"
+    }
+]
