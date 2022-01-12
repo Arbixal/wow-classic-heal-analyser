@@ -1,0 +1,1081 @@
+[
+  {
+    "id": 8085,
+    "name": "Light Plate Pants",
+    "slot": 6
+  },
+  {
+    "id": 8318,
+    "name": "Alabaster Plate Leggings",
+    "slot": 6
+  },
+  {
+    "id": 10133,
+    "name": "Revenant Leggings",
+    "slot": 6
+  },
+  {
+    "id": 10169,
+    "name": "Templar Legplates",
+    "slot": 6
+  },
+  {
+    "id": 10244,
+    "name": "Heavy Lamellar Leggings",
+    "slot": 6
+  },
+  {
+    "id": 10280,
+    "name": "Emerald Legplates",
+    "slot": 6
+  },
+  {
+    "id": 10382,
+    "name": "Commander\u0027s Leggings",
+    "slot": 6
+  },
+  {
+    "id": 10389,
+    "name": "Hyperion Legplates",
+    "slot": 6
+  },
+  {
+    "id": 10373,
+    "name": "Imbued Plate Leggings",
+    "slot": 6
+  },
+  {
+    "id": 10633,
+    "name": "Silvershell Leggings",
+    "slot": 6
+  },
+  {
+    "id": 10740,
+    "name": "Centurion Legplates",
+    "slot": 6
+  },
+  {
+    "id": 11802,
+    "name": "Lavacrest Leggings",
+    "slot": 6
+  },
+  {
+    "id": 11910,
+    "name": "Bejeweled Legguards",
+    "slot": 6
+  },
+  {
+    "id": 11927,
+    "name": "Legplates of the Eternal Guardian",
+    "slot": 6
+  },
+  {
+    "id": 12429,
+    "name": "Imperial Plate Leggings",
+    "slot": 6
+  },
+  {
+    "id": 12414,
+    "name": "Thorium Leggings",
+    "slot": 6
+  },
+  {
+    "id": 12619,
+    "name": "Enchanted Thorium Leggings",
+    "slot": 6
+  },
+  {
+    "id": 12614,
+    "name": "Runic Plate Leggings",
+    "slot": 6
+  },
+  {
+    "id": 12935,
+    "name": "Warmaster Legguards",
+    "slot": 6
+  },
+  {
+    "id": 13075,
+    "name": "Direwing Legguards",
+    "slot": 6
+  },
+  {
+    "id": 13498,
+    "name": "Handcrafted Mastersmith Leggings",
+    "slot": 6
+  },
+  {
+    "id": 14554,
+    "name": "Cloudkeeper Legplates",
+    "slot": 6
+  },
+  {
+    "id": 14623,
+    "name": "Deathbone Legguards",
+    "slot": 6
+  },
+  {
+    "id": 14850,
+    "name": "Sunscale Legplates",
+    "slot": 6
+  },
+  {
+    "id": 14859,
+    "name": "Vanguard Legplates",
+    "slot": 6
+  },
+  {
+    "id": 14867,
+    "name": "Warleader\u0027s Leggings",
+    "slot": 6
+  },
+  {
+    "id": 14920,
+    "name": "Jade Legplates",
+    "slot": 6
+  },
+  {
+    "id": 14928,
+    "name": "Lofty Legguards",
+    "slot": 6
+  },
+  {
+    "id": 14936,
+    "name": "Heroic Legplates",
+    "slot": 6
+  },
+  {
+    "id": 14962,
+    "name": "High Chief\u0027s Legguards",
+    "slot": 6
+  },
+  {
+    "id": 14970,
+    "name": "Glorious Legplates",
+    "slot": 6
+  },
+  {
+    "id": 14980,
+    "name": "Exalted Legplates",
+    "slot": 6
+  },
+  {
+    "id": 16435,
+    "name": "Knight-Captain\u0027s Lamellar Leggings",
+    "slot": 6
+  },
+  {
+    "id": 16431,
+    "name": "Knight-Captain\u0027s Plate Leggings",
+    "slot": 6
+  },
+  {
+    "id": 16475,
+    "name": "Marshal\u0027s Lamellar Legplates",
+    "slot": 6
+  },
+  {
+    "id": 16515,
+    "name": "Legionnaire\u0027s Plate Legguards",
+    "slot": 6
+  },
+  {
+    "id": 16543,
+    "name": "General\u0027s Plate Leggings",
+    "slot": 6
+  },
+  {
+    "id": 16479,
+    "name": "Marshal\u0027s Plate Legguards",
+    "slot": 6
+  },
+  {
+    "id": 16728,
+    "name": "Lightforge Legplates",
+    "slot": 6
+  },
+  {
+    "id": 16732,
+    "name": "Legplates of Valor",
+    "slot": 6
+  },
+  {
+    "id": 16855,
+    "name": "Lawbringer Legplates",
+    "slot": 6
+  },
+  {
+    "id": 16867,
+    "name": "Legplates of Might",
+    "slot": 6
+  },
+  {
+    "id": 16954,
+    "name": "Judgement Legplates",
+    "slot": 6
+  },
+  {
+    "id": 16962,
+    "name": "Legplates of Wrath",
+    "slot": 6
+  },
+  {
+    "id": 17013,
+    "name": "Dark Iron Leggings",
+    "slot": 6
+  },
+  {
+    "id": 17711,
+    "name": "Elemental Rockridge Leggings",
+    "slot": 6
+  },
+  {
+    "id": 18305,
+    "name": "Breakwater Legguards",
+    "slot": 6
+  },
+  {
+    "id": 18380,
+    "name": "Eldritch Reinforced Legplates",
+    "slot": 6
+  },
+  {
+    "id": 18690,
+    "name": "Wraithplate Leggings",
+    "slot": 6
+  },
+  {
+    "id": 18739,
+    "name": "Chitinous Plate Legguards",
+    "slot": 6
+  },
+  {
+    "id": 18861,
+    "name": "Flamewaker Legplates",
+    "slot": 6
+  },
+  {
+    "id": 19402,
+    "name": "Legguards of the Fallen Crusader",
+    "slot": 6
+  },
+  {
+    "id": 19694,
+    "name": "Darksoul Leggings",
+    "slot": 6
+  },
+  {
+    "id": 19855,
+    "name": "Bloodsoaked Legplates",
+    "slot": 6
+  },
+  {
+    "id": 20266,
+    "name": "Peacekeeper Leggings",
+    "slot": 6
+  },
+  {
+    "id": 20639,
+    "name": "Strangely Glyphed Legplates",
+    "slot": 6
+  },
+  {
+    "id": 20671,
+    "name": "Abyssal Plate Legplates",
+    "slot": 6
+  },
+  {
+    "id": 20700,
+    "name": "Cenarion Reservist\u0027s Legplates",
+    "slot": 6
+  },
+  {
+    "id": 20699,
+    "name": "Cenarion Reservist\u0027s Legplates",
+    "slot": 6
+  },
+  {
+    "id": 21316,
+    "name": "Leggings of the Ursa",
+    "slot": 6
+  },
+  {
+    "id": 21332,
+    "name": "Conqueror\u0027s Legguards",
+    "slot": 6
+  },
+  {
+    "id": 21390,
+    "name": "Avenger\u0027s Legguards",
+    "slot": 6
+  },
+  {
+    "id": 21495,
+    "name": "Legplates of the Qiraji Command",
+    "slot": 6
+  },
+  {
+    "id": 21475,
+    "name": "Legplates of the Destroyer",
+    "slot": 6
+  },
+  {
+    "id": 21667,
+    "name": "Legplates of Blazing Light",
+    "slot": 6
+  },
+  {
+    "id": 22000,
+    "name": "Legplates of Heroism",
+    "slot": 6
+  },
+  {
+    "id": 22092,
+    "name": "Soulforge Legplates",
+    "slot": 6
+  },
+  {
+    "id": 22328,
+    "name": "Legplates of Vigilance",
+    "slot": 6
+  },
+  {
+    "id": 22385,
+    "name": "Titanic Leggings",
+    "slot": 6
+  },
+  {
+    "id": 22417,
+    "name": "Dreadnaught Legplates",
+    "slot": 6
+  },
+  {
+    "id": 22427,
+    "name": "Redemption Legguards",
+    "slot": 6
+  },
+  {
+    "id": 22651,
+    "name": "Outrider\u0027s Plate Legguards",
+    "slot": 6
+  },
+  {
+    "id": 22672,
+    "name": "Sentinel\u0027s Plate Legguards",
+    "slot": 6
+  },
+  {
+    "id": 22699,
+    "name": "Icebane Leggings",
+    "slot": 6
+  },
+  {
+    "id": 22753,
+    "name": "Sentinel\u0027s Lamellar Legguards",
+    "slot": 6
+  },
+  {
+    "id": 22873,
+    "name": "Legionnaire\u0027s Plate Leggings",
+    "slot": 6
+  },
+  {
+    "id": 23068,
+    "name": "Legplates of Carnage",
+    "slot": 6
+  },
+  {
+    "id": 23273,
+    "name": "Knight-Captain\u0027s Lamellar Leggings",
+    "slot": 6
+  },
+  {
+    "id": 23301,
+    "name": "Knight-Captain\u0027s Plate Leggings",
+    "slot": 6
+  },
+  {
+    "id": 23488,
+    "name": "Fel Iron Plate Pants",
+    "slot": 6
+  },
+  {
+    "id": 23512,
+    "name": "Enchanted Adamantite Leggings",
+    "slot": 6,
+    "sockets": 3
+  },
+  {
+    "id": 23518,
+    "name": "Felsteel Leggings",
+    "slot": 6,
+    "sockets": 3
+  },
+  {
+    "id": 23523,
+    "name": "Khorium Pants",
+    "slot": 6
+  },
+  {
+    "id": 23668,
+    "name": "Leggings of the Grand Crusader",
+    "slot": 6
+  },
+  {
+    "id": 24364,
+    "name": "Azureplate Greaves",
+    "slot": 6
+  },
+  {
+    "id": 24456,
+    "name": "Greaves of the Iron Guardian",
+    "slot": 6,
+    "sockets": 3
+  },
+  {
+    "id": 24547,
+    "name": "Gladiator\u0027s Plate Legguards",
+    "slot": 6
+  },
+  {
+    "id": 24939,
+    "name": "Darkcrest Legguards",
+    "slot": 6
+  },
+  {
+    "id": 24923,
+    "name": "Grimscale Legguards",
+    "slot": 6
+  },
+  {
+    "id": 24947,
+    "name": "Bloodscale Legguards",
+    "slot": 6
+  },
+  {
+    "id": 24931,
+    "name": "Ango\u0027rosh Legguards",
+    "slot": 6
+  },
+  {
+    "id": 24971,
+    "name": "Talonguard Legplates",
+    "slot": 6
+  },
+  {
+    "id": 24955,
+    "name": "Bogslayer Legplates",
+    "slot": 6
+  },
+  {
+    "id": 24979,
+    "name": "Reaver Legplates",
+    "slot": 6
+  },
+  {
+    "id": 24995,
+    "name": "Warmaul Legplates",
+    "slot": 6
+  },
+  {
+    "id": 24987,
+    "name": "Boulderfist Legplates",
+    "slot": 6
+  },
+  {
+    "id": 24963,
+    "name": "Khan\u0027aish Legplates",
+    "slot": 6
+  },
+  {
+    "id": 25003,
+    "name": "Bloodfist Legplates",
+    "slot": 6
+  },
+  {
+    "id": 25011,
+    "name": "Conqueror\u0027s Legplates",
+    "slot": 6
+  },
+  {
+    "id": 25019,
+    "name": "Shattered Hand Legplates",
+    "slot": 6
+  },
+  {
+    "id": 25027,
+    "name": "Warlord\u0027s Iron-Legplates",
+    "slot": 6
+  },
+  {
+    "id": 25387,
+    "name": "Tarnished Plate Pants",
+    "slot": 6
+  },
+  {
+    "id": 25395,
+    "name": "Deteriorating Plate Pants",
+    "slot": 6
+  },
+  {
+    "id": 25511,
+    "name": "Thunderforge Leggings",
+    "slot": 6
+  },
+  {
+    "id": 25580,
+    "name": "QR 9867 Warrior Legs",
+    "slot": 6
+  },
+  {
+    "id": 25585,
+    "name": "Murkblood Avenger\u0027s Legplates",
+    "slot": 6
+  },
+  {
+    "id": 25929,
+    "name": "Cenarion Thicket Legplates",
+    "slot": 6,
+    "sockets": 3
+  },
+  {
+    "id": 25979,
+    "name": "Flintlocke\u0027s Piloting Pants",
+    "slot": 6
+  },
+  {
+    "id": 27487,
+    "name": "Bloodlord Legplates",
+    "slot": 6,
+    "sockets": 3
+  },
+  {
+    "id": 27527,
+    "name": "Greaves of the Shatterer",
+    "slot": 6,
+    "sockets": 3
+  },
+  {
+    "id": 27654,
+    "name": "Avenger\u0027s Legplates",
+    "slot": 6,
+    "sockets": 1
+  },
+  {
+    "id": 27653,
+    "name": "Slayer\u0027s Leggings",
+    "slot": 6,
+    "sockets": 1
+  },
+  {
+    "id": 27705,
+    "name": "Gladiator\u0027s Lamellar Legguards",
+    "slot": 6
+  },
+  {
+    "id": 27718,
+    "name": "Aldor Defender\u0027s Legplates",
+    "slot": 6,
+    "sockets": 3
+  },
+  {
+    "id": 27748,
+    "name": "Cassock of the Loyal",
+    "slot": 6
+  },
+  {
+    "id": 27839,
+    "name": "Legplates of the Righteous",
+    "slot": 6
+  },
+  {
+    "id": 27893,
+    "name": "Ornate Leggings of the Venerated",
+    "slot": 6,
+    "sockets": 3
+  },
+  {
+    "id": 27882,
+    "name": "Gladiator\u0027s Scaled Legguards",
+    "slot": 6
+  },
+  {
+    "id": 27870,
+    "name": "Doomplate Legguards",
+    "slot": 6
+  },
+  {
+    "id": 27977,
+    "name": "Legplates of the Bold",
+    "slot": 6
+  },
+  {
+    "id": 28175,
+    "name": "Mag\u0027hari Warlord\u0027s Legplates",
+    "slot": 6
+  },
+  {
+    "id": 28621,
+    "name": "Wrynn Dynasty Greaves",
+    "slot": 6,
+    "sockets": 3
+  },
+  {
+    "id": 28702,
+    "name": "Grand Marshal\u0027s Plate Legguards",
+    "slot": 6
+  },
+  {
+    "id": 28724,
+    "name": "Grand Marshal\u0027s Lamellar Legguards",
+    "slot": 6
+  },
+  {
+    "id": 28712,
+    "name": "Grand Marshal\u0027s Scaled Legguards",
+    "slot": 6
+  },
+  {
+    "id": 28748,
+    "name": "Legplates of the Innocent",
+    "slot": 6,
+    "sockets": 3
+  },
+  {
+    "id": 28834,
+    "name": "High Warlord\u0027s Lamellar Legguards",
+    "slot": 6
+  },
+  {
+    "id": 28854,
+    "name": "High Warlord\u0027s Plate Legguards",
+    "slot": 6
+  },
+  {
+    "id": 28864,
+    "name": "High Warlord\u0027s Scaled Legguards",
+    "slot": 6
+  },
+  {
+    "id": 29022,
+    "name": "Warbringer Greaves",
+    "slot": 6
+  },
+  {
+    "id": 29015,
+    "name": "Warbringer Legguards",
+    "slot": 6
+  },
+  {
+    "id": 29069,
+    "name": "Justicar Legguards",
+    "slot": 6
+  },
+  {
+    "id": 29074,
+    "name": "Justicar Greaves",
+    "slot": 6
+  },
+  {
+    "id": 29063,
+    "name": "Justicar Leggings",
+    "slot": 6
+  },
+  {
+    "id": 29184,
+    "name": "Timewarden\u0027s Leggings",
+    "slot": 6,
+    "sockets": 3
+  },
+  {
+    "id": 29342,
+    "name": "Consortium Plated Legguards",
+    "slot": 6,
+    "sockets": 3
+  },
+  {
+    "id": 29603,
+    "name": "Legionnaire\u0027s Lamellar Leggings",
+    "slot": 6
+  },
+  {
+    "id": 29614,
+    "name": "General\u0027s Lamellar Legplates",
+    "slot": 6
+  },
+  {
+    "id": 29783,
+    "name": "Legguards of the Resolute Defender",
+    "slot": 6
+  },
+  {
+    "id": 29774,
+    "name": "Kirin\u0027Var Defender\u0027s Chausses",
+    "slot": 6
+  },
+  {
+    "id": 29936,
+    "name": "Skyfire Greaves",
+    "slot": 6
+  },
+  {
+    "id": 29945,
+    "name": "Magistrate\u0027s Greaves",
+    "slot": 6
+  },
+  {
+    "id": 29950,
+    "name": "Greaves of the Bloodwarder",
+    "slot": 6,
+    "sockets": 3
+  },
+  {
+    "id": 29980,
+    "name": "Midrealm Leggings",
+    "slot": 6
+  },
+  {
+    "id": 30069,
+    "name": "Earthforged Leggings",
+    "slot": 6
+  },
+  {
+    "id": 30116,
+    "name": "Destroyer Legguards",
+    "slot": 6,
+    "sockets": 1
+  },
+  {
+    "id": 30121,
+    "name": "Destroyer Greaves",
+    "slot": 6,
+    "sockets": 1
+  },
+  {
+    "id": 30132,
+    "name": "Crystalforge Greaves",
+    "slot": 6,
+    "sockets": 1
+  },
+  {
+    "id": 30137,
+    "name": "Crystalforge Leggings",
+    "slot": 6,
+    "sockets": 1
+  },
+  {
+    "id": 30126,
+    "name": "Crystalforge Legguards",
+    "slot": 6,
+    "sockets": 1
+  },
+  {
+    "id": 30299,
+    "name": "Starcaller\u0027s Plated Legguards",
+    "slot": 6
+  },
+  {
+    "id": 30489,
+    "name": "Merciless Gladiator\u0027s Plate Legguards",
+    "slot": 6
+  },
+  {
+    "id": 30498,
+    "name": "Outrider\u0027s Lamellar Legguards",
+    "slot": 6
+  },
+  {
+    "id": 30533,
+    "name": "Vanquisher\u0027s Legplates",
+    "slot": 6,
+    "sockets": 3
+  },
+  {
+    "id": 30536,
+    "name": "Greaves of the Martyr",
+    "slot": 6,
+    "sockets": 3
+  },
+  {
+    "id": 30766,
+    "name": "Inferno Tempered Leggings",
+    "slot": 6
+  },
+  {
+    "id": 30903,
+    "name": "Legguards of Endless Rage",
+    "slot": 6
+  },
+  {
+    "id": 30960,
+    "name": "Runed Sketh\u0027lon Legplates",
+    "slot": 6
+  },
+  {
+    "id": 30978,
+    "name": "Onslaught Legguards",
+    "slot": 6,
+    "sockets": 1
+  },
+  {
+    "id": 30977,
+    "name": "Onslaught Greaves",
+    "slot": 6,
+    "sockets": 1
+  },
+  {
+    "id": 30995,
+    "name": "Lightbringer Legguards",
+    "slot": 6,
+    "sockets": 1
+  },
+  {
+    "id": 30994,
+    "name": "Lightbringer Leggings",
+    "slot": 6,
+    "sockets": 1
+  },
+  {
+    "id": 30993,
+    "name": "Lightbringer Greaves",
+    "slot": 6,
+    "sockets": 1
+  },
+  {
+    "id": 31209,
+    "name": "Chimaerascale Legplates",
+    "slot": 6
+  },
+  {
+    "id": 31242,
+    "name": "Nagascale Legplates",
+    "slot": 6
+  },
+  {
+    "id": 31298,
+    "name": "Legguards of the Shattered Hand",
+    "slot": 6
+  },
+  {
+    "id": 31367,
+    "name": "Wildguard Leggings",
+    "slot": 6
+  },
+  {
+    "id": 31370,
+    "name": "Iceguard Leggings",
+    "slot": 6
+  },
+  {
+    "id": 31519,
+    "name": "Inkling\u0027s Leggings",
+    "slot": 6
+  },
+  {
+    "id": 31580,
+    "name": "Slatesteel Leggings",
+    "slot": 6
+  },
+  {
+    "id": 31618,
+    "name": "Gladiator\u0027s Ornamented Legplates",
+    "slot": 6
+  },
+  {
+    "id": 31633,
+    "name": "Grand Marshal\u0027s Ornamented Leggings",
+    "slot": 6
+  },
+  {
+    "id": 31638,
+    "name": "High Warlord\u0027s Ornamented Leggings",
+    "slot": 6
+  },
+  {
+    "id": 31794,
+    "name": "Sha\u0027tari Vindicator\u0027s Legplates",
+    "slot": 6
+  },
+  {
+    "id": 31995,
+    "name": "Merciless Gladiator\u0027s Lamellar Legguards",
+    "slot": 6
+  },
+  {
+    "id": 32023,
+    "name": "Merciless Gladiator\u0027s Ornamented Legplates",
+    "slot": 6
+  },
+  {
+    "id": 32042,
+    "name": "Merciless Gladiator\u0027s Scaled Legguards",
+    "slot": 6
+  },
+  {
+    "id": 32263,
+    "name": "Praetorian\u0027s Legguards",
+    "slot": 6,
+    "sockets": 3
+  },
+  {
+    "id": 32341,
+    "name": "Leggings of Divine Retribution",
+    "slot": 6
+  },
+  {
+    "id": 32415,
+    "name": "Tom\u0027s Legs B",
+    "slot": 6
+  },
+  {
+    "id": 32417,
+    "name": "Tom\u0027s Legs 1",
+    "slot": 6
+  },
+  {
+    "id": 32414,
+    "name": "Tom\u0027s Legs A",
+    "slot": 6
+  },
+  {
+    "id": 32416,
+    "name": "Tom\u0027s Legs C",
+    "slot": 6
+  },
+  {
+    "id": 32404,
+    "name": "Shadesteel Greaves",
+    "slot": 6
+  },
+  {
+    "id": 32419,
+    "name": "Tom\u0027s Legs 3",
+    "slot": 6
+  },
+  {
+    "id": 32418,
+    "name": "Tom\u0027s Legs 2",
+    "slot": 6
+  },
+  {
+    "id": 33501,
+    "name": "Bloodthirster\u0027s Wargreaves",
+    "slot": 6,
+    "sockets": 3
+  },
+  {
+    "id": 33515,
+    "name": "Unwavering Legguards",
+    "slot": 6,
+    "sockets": 3
+  },
+  {
+    "id": 33518,
+    "name": "High Justicar\u0027s Legplates",
+    "slot": 6,
+    "sockets": 3
+  },
+  {
+    "id": 33698,
+    "name": "Vengeful Gladiator\u0027s Lamellar Legguards",
+    "slot": 6
+  },
+  {
+    "id": 33725,
+    "name": "Vengeful Gladiator\u0027s Ornamented Legplates",
+    "slot": 6
+  },
+  {
+    "id": 33731,
+    "name": "Vengeful Gladiator\u0027s Plate Legguards",
+    "slot": 6
+  },
+  {
+    "id": 33752,
+    "name": "Vengeful Gladiator\u0027s Scaled Legguards",
+    "slot": 6
+  },
+  {
+    "id": 34167,
+    "name": "Legplates of the Holy Juggernaut",
+    "slot": 6,
+    "sockets": 3
+  },
+  {
+    "id": 34180,
+    "name": "Felfury Legplates",
+    "slot": 6,
+    "sockets": 3
+  },
+  {
+    "id": 34381,
+    "name": "Felstrength Legplates",
+    "slot": 6,
+    "sockets": 3
+  },
+  {
+    "id": 34382,
+    "name": "Judicator\u0027s Legguards",
+    "slot": 6,
+    "sockets": 3
+  },
+  {
+    "id": 34922,
+    "name": "Greaves of Pacification",
+    "slot": 6,
+    "sockets": 2
+  },
+  {
+    "id": 34943,
+    "name": "Legplates of Unending Fury",
+    "slot": 6,
+    "sockets": 2
+  },
+  {
+    "id": 34940,
+    "name": "Sunguard Legplates",
+    "slot": 6,
+    "sockets": 2
+  },
+  {
+    "id": 34946,
+    "name": "Inscribed Legplates of the Aldor",
+    "slot": 6,
+    "sockets": 2
+  },
+  {
+    "id": 35030,
+    "name": "Brutal Gladiator\u0027s Lamellar Legguards",
+    "slot": 6
+  },
+  {
+    "id": 35069,
+    "name": "Brutal Gladiator\u0027s Plate Legguards",
+    "slot": 6
+  },
+  {
+    "id": 35062,
+    "name": "Brutal Gladiator\u0027s Ornamented Legplates",
+    "slot": 6
+  },
+  {
+    "id": 35091,
+    "name": "Brutal Gladiator\u0027s Scaled Legguards",
+    "slot": 6
+  },
+  {
+    "id": 35410,
+    "name": "Savage Plate Legguards",
+    "slot": 6
+  },
+  {
+    "id": 35405,
+    "name": "Crusader\u0027s Ornamented Leggings",
+    "slot": 6
+  },
+  {
+    "id": 35415,
+    "name": "Crusader\u0027s Scaled Legguards",
+    "slot": 6
+  }
+]

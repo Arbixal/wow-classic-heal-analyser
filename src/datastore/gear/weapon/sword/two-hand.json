@@ -1,0 +1,449 @@
+[
+  {
+    "id": 647,
+    "name": "Destiny",
+    "slot": 15
+  },
+  {
+    "id": 2801,
+    "name": "Blade of Hanna",
+    "slot": 15
+  },
+  {
+    "id": 7960,
+    "name": "Truesilver Champion",
+    "slot": 15
+  },
+  {
+    "id": 9372,
+    "name": "Sul\u0027thraze the Lasher",
+    "slot": 15
+  },
+  {
+    "id": 11786,
+    "name": "Stone of the Earth",
+    "slot": 15
+  },
+  {
+    "id": 12463,
+    "name": "Drakefang Butcher",
+    "slot": 15
+  },
+  {
+    "id": 12592,
+    "name": "Blackblade of Shahram",
+    "slot": 15
+  },
+  {
+    "id": 12764,
+    "name": "Thorium Greatsword",
+    "slot": 15
+  },
+  {
+    "id": 12790,
+    "name": "Arcanite Champion",
+    "slot": 15
+  },
+  {
+    "id": 12782,
+    "name": "Corruption",
+    "slot": 15
+  },
+  {
+    "id": 13044,
+    "name": "Demonslayer",
+    "slot": 15
+  },
+  {
+    "id": 13053,
+    "name": "Doombringer",
+    "slot": 15
+  },
+  {
+    "id": 13052,
+    "name": "Warmonger",
+    "slot": 15
+  },
+  {
+    "id": 13163,
+    "name": "Relentless Scythe",
+    "slot": 15
+  },
+  {
+    "id": 13348,
+    "name": "Demonshear",
+    "slot": 15
+  },
+  {
+    "id": 13505,
+    "name": "Runeblade of Baron Rivendare",
+    "slot": 15
+  },
+  {
+    "id": 13817,
+    "name": "Tapered Greatsword",
+    "slot": 15
+  },
+  {
+    "id": 13982,
+    "name": "Warblade of Caer Darrow",
+    "slot": 15
+  },
+  {
+    "id": 14541,
+    "name": "Barovian Family Sword",
+    "slot": 15
+  },
+  {
+    "id": 15253,
+    "name": "Beheading Blade",
+    "slot": 15
+  },
+  {
+    "id": 15254,
+    "name": "Dark Espadon",
+    "slot": 15
+  },
+  {
+    "id": 15258,
+    "name": "Divine Warblade",
+    "slot": 15
+  },
+  {
+    "id": 15257,
+    "name": "Shin Blade",
+    "slot": 15
+  },
+  {
+    "id": 15256,
+    "name": "Massacre Sword",
+    "slot": 15
+  },
+  {
+    "id": 15255,
+    "name": "Gallant Flamberge",
+    "slot": 15
+  },
+  {
+    "id": 16039,
+    "name": "Ta\u0027Kierthan Songblade",
+    "slot": 15
+  },
+  {
+    "id": 17076,
+    "name": "Bonereaver\u0027s Edge",
+    "slot": 15
+  },
+  {
+    "id": 18410,
+    "name": "Sprinter\u0027s Sword",
+    "slot": 15
+  },
+  {
+    "id": 18520,
+    "name": "Barbarous Blade",
+    "slot": 15
+  },
+  {
+    "id": 18542,
+    "name": "Typhoon",
+    "slot": 15
+  },
+  {
+    "id": 18822,
+    "name": "Obsidian Edged Blade",
+    "slot": 15
+  },
+  {
+    "id": 18877,
+    "name": "High Warlord\u0027s Greatsword",
+    "slot": 15
+  },
+  {
+    "id": 18876,
+    "name": "Grand Marshal\u0027s Claymore",
+    "slot": 15
+  },
+  {
+    "id": 19334,
+    "name": "The Untamed Blade",
+    "slot": 15
+  },
+  {
+    "id": 19364,
+    "name": "Ashkandi, Greatsword of the Brotherhood",
+    "slot": 15
+  },
+  {
+    "id": 19854,
+    "name": "Zin\u0027rokh, Destroyer of Worlds",
+    "slot": 15
+  },
+  {
+    "id": 20504,
+    "name": "Lightforged Blade",
+    "slot": 15
+  },
+  {
+    "id": 20669,
+    "name": "Darkstone Claymore",
+    "slot": 15
+  },
+  {
+    "id": 21492,
+    "name": "Manslayer of the Qiraji",
+    "slot": 15
+  },
+  {
+    "id": 21679,
+    "name": "Kalimdor\u0027s Revenge",
+    "slot": 15
+  },
+  {
+    "id": 22691,
+    "name": "Corrupted Ashbringer",
+    "slot": 15
+  },
+  {
+    "id": 22813,
+    "name": "Claymore of Unholy Might",
+    "slot": 15
+  },
+  {
+    "id": 23499,
+    "name": "Fel Iron Greatsword",
+    "slot": 15
+  },
+  {
+    "id": 23541,
+    "name": "Khorium Champion",
+    "slot": 15
+  },
+  {
+    "id": 24550,
+    "name": "Gladiator\u0027s Greatsword",
+    "slot": 15
+  },
+  {
+    "id": 25159,
+    "name": "Thunderstrike Falchion",
+    "slot": 15
+  },
+  {
+    "id": 25160,
+    "name": "Vengeance Blade",
+    "slot": 15
+  },
+  {
+    "id": 25168,
+    "name": "Sha\u0027tari Longsword",
+    "slot": 15
+  },
+  {
+    "id": 25157,
+    "name": "Serpentlord Claymore",
+    "slot": 15
+  },
+  {
+    "id": 25161,
+    "name": "Dragon Wing Blade",
+    "slot": 15
+  },
+  {
+    "id": 25164,
+    "name": "Crude Umbrafen Blade",
+    "slot": 15
+  },
+  {
+    "id": 25169,
+    "name": "Fel Orc Brute Sword",
+    "slot": 15
+  },
+  {
+    "id": 25167,
+    "name": "Nethersteel Claymore",
+    "slot": 15
+  },
+  {
+    "id": 25162,
+    "name": "Darkened Broadsword",
+    "slot": 15
+  },
+  {
+    "id": 25156,
+    "name": "Royal Crusader Sword",
+    "slot": 15
+  },
+  {
+    "id": 25165,
+    "name": "Boulderfist Claymore",
+    "slot": 15
+  },
+  {
+    "id": 25166,
+    "name": "Mok\u0027Nathal Warblade",
+    "slot": 15
+  },
+  {
+    "id": 25163,
+    "name": "Elexorien Blade",
+    "slot": 15
+  },
+  {
+    "id": 25158,
+    "name": "Skeletal Broadsword",
+    "slot": 15
+  },
+  {
+    "id": 25400,
+    "name": "Tarnished Claymore",
+    "slot": 15
+  },
+  {
+    "id": 25944,
+    "name": "Shaarde the Greater",
+    "slot": 15
+  },
+  {
+    "id": 25987,
+    "name": "Helboar Carving Blade",
+    "slot": 15
+  },
+  {
+    "id": 27752,
+    "name": "Zangarmarsh Claymore",
+    "slot": 15
+  },
+  {
+    "id": 27769,
+    "name": "Endbringer",
+    "slot": 15
+  },
+  {
+    "id": 28293,
+    "name": "High Warlord\u0027s Claymore",
+    "slot": 15
+  },
+  {
+    "id": 28367,
+    "name": "Greatsword of Forlorn Visions",
+    "slot": 15
+  },
+  {
+    "id": 28428,
+    "name": "Lionheart Blade",
+    "slot": 15
+  },
+  {
+    "id": 28430,
+    "name": "Lionheart Executioner",
+    "slot": 15
+  },
+  {
+    "id": 28429,
+    "name": "Lionheart Champion",
+    "slot": 15
+  },
+  {
+    "id": 28573,
+    "name": "Despair",
+    "slot": 15
+  },
+  {
+    "id": 28943,
+    "name": "Grand Marshal\u0027s Warblade",
+    "slot": 15
+  },
+  {
+    "id": 29356,
+    "name": "Quantum Blade",
+    "slot": 15
+  },
+  {
+    "id": 29993,
+    "name": "Twinblade of the Phoenix",
+    "slot": 15,
+    "sockets": 3
+  },
+  {
+    "id": 30086,
+    "name": "Stoneforged Claymore",
+    "slot": 15
+  },
+  {
+    "id": 30394,
+    "name": "Sunfury Blade",
+    "slot": 15
+  },
+  {
+    "id": 30570,
+    "name": "Arkadian Claymore",
+    "slot": 15
+  },
+  {
+    "id": 30597,
+    "name": "Halaani Claymore",
+    "slot": 15
+  },
+  {
+    "id": 30750,
+    "name": "Draenic Warblade",
+    "slot": 15
+  },
+  {
+    "id": 30789,
+    "name": "Illidari-Bane Claymore",
+    "slot": 15
+  },
+  {
+    "id": 30902,
+    "name": "Cataclysm\u0027s Edge",
+    "slot": 15
+  },
+  {
+    "id": 31134,
+    "name": "Blade of Misfortune",
+    "slot": 15
+  },
+  {
+    "id": 31816,
+    "name": "Dragonbone Greatsword",
+    "slot": 15
+  },
+  {
+    "id": 31984,
+    "name": "Merciless Gladiator\u0027s Greatsword",
+    "slot": 15
+  },
+  {
+    "id": 32824,
+    "name": "Trashbringer",
+    "slot": 15
+  },
+  {
+    "id": 32951,
+    "name": "Unusually Slow Two-Hander",
+    "slot": 15
+  },
+  {
+    "id": 33478,
+    "name": "Jin\u0027rohk, The Great Apocalypse",
+    "slot": 15
+  },
+  {
+    "id": 33688,
+    "name": "Vengeful Gladiator\u0027s Greatsword",
+    "slot": 15
+  },
+  {
+    "id": 34247,
+    "name": "Apolyon, the Soul-Render",
+    "slot": 15,
+    "sockets": 3
+  },
+  {
+    "id": 35015,
+    "name": "Brutal Gladiator\u0027s Greatsword",
+    "slot": 15
+  }
+]

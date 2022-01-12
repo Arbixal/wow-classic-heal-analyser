@@ -1,0 +1,1060 @@
+[
+  {
+    "id": 3997,
+    "name": "Laminated Scale Pants",
+    "slot": 6
+  },
+  {
+    "id": 4013,
+    "name": "Sterling Chain Pants",
+    "slot": 6
+  },
+  {
+    "id": 8132,
+    "name": "Myrmidon\u0027s Leggings",
+    "slot": 6
+  },
+  {
+    "id": 8271,
+    "name": "Ebonhold Leggings",
+    "slot": 6
+  },
+  {
+    "id": 8309,
+    "name": "Hero\u0027s Leggings",
+    "slot": 6
+  },
+  {
+    "id": 10084,
+    "name": "Lord\u0027s Legguards",
+    "slot": 6
+  },
+  {
+    "id": 10124,
+    "name": "Ornate Legguards",
+    "slot": 6
+  },
+  {
+    "id": 10162,
+    "name": "Mercurial Legguards",
+    "slot": 6
+  },
+  {
+    "id": 10236,
+    "name": "Engraved Leggings",
+    "slot": 6
+  },
+  {
+    "id": 10199,
+    "name": "Crusader\u0027s Leggings",
+    "slot": 6
+  },
+  {
+    "id": 10273,
+    "name": "Masterwork Legplates",
+    "slot": 6
+  },
+  {
+    "id": 11728,
+    "name": "Savage Gladiator Leggings",
+    "slot": 6
+  },
+  {
+    "id": 11749,
+    "name": "Searingscale Leggings",
+    "slot": 6
+  },
+  {
+    "id": 11882,
+    "name": "Outrider Leggings",
+    "slot": 6
+  },
+  {
+    "id": 12105,
+    "name": "Pridemail Leggings",
+    "slot": 6
+  },
+  {
+    "id": 12420,
+    "name": "Radiant Leggings",
+    "slot": 6
+  },
+  {
+    "id": 12903,
+    "name": "Legguards of the Chromatic Defier",
+    "slot": 6
+  },
+  {
+    "id": 12945,
+    "name": "Legplates of the Chromatic Defier",
+    "slot": 6
+  },
+  {
+    "id": 12964,
+    "name": "Tristam Legguards",
+    "slot": 6
+  },
+  {
+    "id": 13130,
+    "name": "Windrunner Legguards",
+    "slot": 6
+  },
+  {
+    "id": 13383,
+    "name": "Woollies of the Prancing Minstrel",
+    "slot": 6
+  },
+  {
+    "id": 14522,
+    "name": "Maelstrom Leggings",
+    "slot": 6
+  },
+  {
+    "id": 14612,
+    "name": "Bloodmail Legguards",
+    "slot": 6
+  },
+  {
+    "id": 14796,
+    "name": "Protector Legguards",
+    "slot": 6
+  },
+  {
+    "id": 14816,
+    "name": "Warstrike Legguards",
+    "slot": 6
+  },
+  {
+    "id": 14805,
+    "name": "Bloodlust Britches",
+    "slot": 6
+  },
+  {
+    "id": 15046,
+    "name": "Green Dragonscale Leggings",
+    "slot": 6
+  },
+  {
+    "id": 15052,
+    "name": "Black Dragonscale Leggings",
+    "slot": 6
+  },
+  {
+    "id": 15079,
+    "name": "Heavy Scorpid Leggings",
+    "slot": 6
+  },
+  {
+    "id": 15637,
+    "name": "Formidable Legguards",
+    "slot": 6
+  },
+  {
+    "id": 15646,
+    "name": "Ironhide Legguards",
+    "slot": 6
+  },
+  {
+    "id": 15655,
+    "name": "Merciless Legguards",
+    "slot": 6
+  },
+  {
+    "id": 15665,
+    "name": "Impenetrable Legguards",
+    "slot": 6
+  },
+  {
+    "id": 15676,
+    "name": "Magnificent Leggings",
+    "slot": 6
+  },
+  {
+    "id": 15685,
+    "name": "Triumphant Legplates",
+    "slot": 6
+  },
+  {
+    "id": 16426,
+    "name": "Knight-Captain\u0027s Chain Leggings",
+    "slot": 6
+  },
+  {
+    "id": 16467,
+    "name": "Marshal\u0027s Chain Legguards",
+    "slot": 6
+  },
+  {
+    "id": 16523,
+    "name": "Legionnaire\u0027s Mail Leggings",
+    "slot": 6
+  },
+  {
+    "id": 16527,
+    "name": "Legionnaire\u0027s Chain Leggings",
+    "slot": 6
+  },
+  {
+    "id": 16567,
+    "name": "General\u0027s Chain Legguards",
+    "slot": 6
+  },
+  {
+    "id": 16579,
+    "name": "General\u0027s Mail Leggings",
+    "slot": 6
+  },
+  {
+    "id": 16668,
+    "name": "Kilt of Elements",
+    "slot": 6
+  },
+  {
+    "id": 16678,
+    "name": "Beaststalker\u0027s Pants",
+    "slot": 6
+  },
+  {
+    "id": 16843,
+    "name": "Earthfury Legguards",
+    "slot": 6
+  },
+  {
+    "id": 16847,
+    "name": "Giantstalker\u0027s Leggings",
+    "slot": 6
+  },
+  {
+    "id": 16938,
+    "name": "Dragonstalker\u0027s Legguards",
+    "slot": 6
+  },
+  {
+    "id": 16946,
+    "name": "Legplates of Ten Storms",
+    "slot": 6
+  },
+  {
+    "id": 18378,
+    "name": "Silvermoon Leggings",
+    "slot": 6
+  },
+  {
+    "id": 18524,
+    "name": "Leggings of Destruction",
+    "slot": 6
+  },
+  {
+    "id": 19401,
+    "name": "Primalist\u0027s Linked Legguards",
+    "slot": 6
+  },
+  {
+    "id": 19433,
+    "name": "Emberweave Leggings",
+    "slot": 6
+  },
+  {
+    "id": 19887,
+    "name": "Bloodstained Legplates",
+    "slot": 6
+  },
+  {
+    "id": 20260,
+    "name": "Seafury Leggings",
+    "slot": 6
+  },
+  {
+    "id": 20295,
+    "name": "Blue Dragonscale Leggings",
+    "slot": 6
+  },
+  {
+    "id": 20617,
+    "name": "Ancient Corroded Leggings",
+    "slot": 6
+  },
+  {
+    "id": 20638,
+    "name": "Leggings of the Demented Mind",
+    "slot": 6
+  },
+  {
+    "id": 20668,
+    "name": "Abyssal Mail Legguards",
+    "slot": 6
+  },
+  {
+    "id": 20701,
+    "name": "Cenarion Reservist\u0027s Legguards",
+    "slot": 6
+  },
+  {
+    "id": 20702,
+    "name": "Cenarion Reservist\u0027s Legguards",
+    "slot": 6
+  },
+  {
+    "id": 20779,
+    "name": "63 green shaman kilt",
+    "slot": 6
+  },
+  {
+    "id": 20791,
+    "name": "90 green shaman kilt",
+    "slot": 6
+  },
+  {
+    "id": 21375,
+    "name": "Stormcaller\u0027s Leggings",
+    "slot": 6
+  },
+  {
+    "id": 21368,
+    "name": "Striker\u0027s Leggings",
+    "slot": 6
+  },
+  {
+    "id": 21476,
+    "name": "Obsidian Scaled Leggings",
+    "slot": 6
+  },
+  {
+    "id": 21530,
+    "name": "Onyx Embedded Leggings",
+    "slot": 6
+  },
+  {
+    "id": 21626,
+    "name": "Slime-coated Leggings",
+    "slot": 6
+  },
+  {
+    "id": 21651,
+    "name": "Scaled Sand Reaver Leggings",
+    "slot": 6
+  },
+  {
+    "id": 21668,
+    "name": "Scaled Leggings of Qiraji Fury",
+    "slot": 6
+  },
+  {
+    "id": 22017,
+    "name": "Beastmaster\u0027s Pants",
+    "slot": 6
+  },
+  {
+    "id": 22100,
+    "name": "Kilt of The Five Thunders",
+    "slot": 6
+  },
+  {
+    "id": 22437,
+    "name": "Cryptstalker Legguards",
+    "slot": 6
+  },
+  {
+    "id": 22465,
+    "name": "Earthshatter Legguards",
+    "slot": 6
+  },
+  {
+    "id": 22673,
+    "name": "Outrider\u0027s Chain Leggings",
+    "slot": 6
+  },
+  {
+    "id": 22676,
+    "name": "Outrider\u0027s Mail Leggings",
+    "slot": 6
+  },
+  {
+    "id": 22690,
+    "name": "Leggings of the Plague Hunter",
+    "slot": 6
+  },
+  {
+    "id": 22702,
+    "name": "Icy Scale Leggings",
+    "slot": 6
+  },
+  {
+    "id": 22748,
+    "name": "Sentinel\u0027s Chain Leggings",
+    "slot": 6
+  },
+  {
+    "id": 22875,
+    "name": "Legionnaire\u0027s Chain Legguards",
+    "slot": 6
+  },
+  {
+    "id": 22887,
+    "name": "Legionnaire\u0027s Mail Legguards",
+    "slot": 6
+  },
+  {
+    "id": 23293,
+    "name": "Knight-Captain\u0027s Chain Legguards",
+    "slot": 6
+  },
+  {
+    "id": 23665,
+    "name": "Leggings of Elemental Fury",
+    "slot": 6
+  },
+  {
+    "id": 24022,
+    "name": "Scale Leggings of the Skirmisher",
+    "slot": 6,
+    "sockets": 3
+  },
+  {
+    "id": 24046,
+    "name": "Kilt of Rolling Thunders",
+    "slot": 6,
+    "sockets": 3
+  },
+  {
+    "id": 24811,
+    "name": "Unyielding Leggings",
+    "slot": 6
+  },
+  {
+    "id": 24827,
+    "name": "Netherstalker Legguards",
+    "slot": 6
+  },
+  {
+    "id": 24819,
+    "name": "Felstone Leggings",
+    "slot": 6
+  },
+  {
+    "id": 24851,
+    "name": "Fenclaw Legguards",
+    "slot": 6
+  },
+  {
+    "id": 24843,
+    "name": "Wrathfin Legguards",
+    "slot": 6
+  },
+  {
+    "id": 24835,
+    "name": "Nexus-Strider Legwraps",
+    "slot": 6
+  },
+  {
+    "id": 24859,
+    "name": "Marshcreeper Leggings",
+    "slot": 6
+  },
+  {
+    "id": 24875,
+    "name": "Ironspine Legguards",
+    "slot": 6
+  },
+  {
+    "id": 24883,
+    "name": "Der\u0027izu Legguards",
+    "slot": 6
+  },
+  {
+    "id": 24907,
+    "name": "Talhide Lined-Leggings",
+    "slot": 6
+  },
+  {
+    "id": 24891,
+    "name": "Skettis Legguards",
+    "slot": 6
+  },
+  {
+    "id": 24867,
+    "name": "Blood Knight Greaves",
+    "slot": 6
+  },
+  {
+    "id": 24899,
+    "name": "Sundered Legguards",
+    "slot": 6
+  },
+  {
+    "id": 24915,
+    "name": "Netherstorm Legguards",
+    "slot": 6
+  },
+  {
+    "id": 25371,
+    "name": "Eroded Mail Pants",
+    "slot": 6
+  },
+  {
+    "id": 25379,
+    "name": "Corroded Mail Pants",
+    "slot": 6
+  },
+  {
+    "id": 25551,
+    "name": "QR XXXX Hunter Legs",
+    "slot": 6
+  },
+  {
+    "id": 25568,
+    "name": "Warcaster\u0027s Scaled Leggings",
+    "slot": 6
+  },
+  {
+    "id": 25572,
+    "name": "QR 9863 Shaman Legs",
+    "slot": 6
+  },
+  {
+    "id": 25662,
+    "name": "Scaled Draenic Pants",
+    "slot": 6
+  },
+  {
+    "id": 25656,
+    "name": "Felscale Pants",
+    "slot": 6
+  },
+  {
+    "id": 25692,
+    "name": "Netherfury Leggings",
+    "slot": 6,
+    "sockets": 3
+  },
+  {
+    "id": 25702,
+    "name": "Scaled Legs of Ruination",
+    "slot": 6
+  },
+  {
+    "id": 25782,
+    "name": "Sunstrider Legguards",
+    "slot": 6
+  },
+  {
+    "id": 26001,
+    "name": "Gladiator\u0027s Linked Leggings",
+    "slot": 6
+  },
+  {
+    "id": 27430,
+    "name": "Scaled Greaves of Patience",
+    "slot": 6,
+    "sockets": 3
+  },
+  {
+    "id": 27472,
+    "name": "Gladiator\u0027s Mail Leggings",
+    "slot": 6
+  },
+  {
+    "id": 27458,
+    "name": "Oceansong Kilt",
+    "slot": 6
+  },
+  {
+    "id": 27647,
+    "name": "Marksman\u0027s Legguards",
+    "slot": 6,
+    "sockets": 1
+  },
+  {
+    "id": 27652,
+    "name": "Stormbreaker\u0027s Leggings",
+    "slot": 6,
+    "sockets": 1
+  },
+  {
+    "id": 27717,
+    "name": "Expedition Forager Leggings",
+    "slot": 6,
+    "sockets": 3
+  },
+  {
+    "id": 27773,
+    "name": "Barbaric Legstraps",
+    "slot": 6,
+    "sockets": 3
+  },
+  {
+    "id": 27874,
+    "name": "Beast Lord Leggings",
+    "slot": 6
+  },
+  {
+    "id": 27909,
+    "name": "Tidefury Kilt",
+    "slot": 6
+  },
+  {
+    "id": 27936,
+    "name": "Greaves of Desolation",
+    "slot": 6
+  },
+  {
+    "id": 28173,
+    "name": "Mag\u0027hari Huntsman\u0027s Leggings",
+    "slot": 6
+  },
+  {
+    "id": 28219,
+    "name": "Emerald-Scale Greaves",
+    "slot": 6,
+    "sockets": 3
+  },
+  {
+    "id": 28266,
+    "name": "Molten Earth Kilt",
+    "slot": 6
+  },
+  {
+    "id": 28332,
+    "name": "Gladiator\u0027s Chain Leggings",
+    "slot": 6
+  },
+  {
+    "id": 28616,
+    "name": "Grand Marshal\u0027s Chain Leggings",
+    "slot": 6
+  },
+  {
+    "id": 28697,
+    "name": "Grand Marshal\u0027s Mail Leggings",
+    "slot": 6
+  },
+  {
+    "id": 28692,
+    "name": "Grand Marshal\u0027s Linked Leggings",
+    "slot": 6
+  },
+  {
+    "id": 28740,
+    "name": "Rip-Flayer Leggings",
+    "slot": 6,
+    "sockets": 3
+  },
+  {
+    "id": 28751,
+    "name": "Heart-Flame Leggings",
+    "slot": 6,
+    "sockets": 3
+  },
+  {
+    "id": 28808,
+    "name": "High Warlord\u0027s Chain Leggings",
+    "slot": 6
+  },
+  {
+    "id": 28844,
+    "name": "High Warlord\u0027s Linked Leggings",
+    "slot": 6
+  },
+  {
+    "id": 28849,
+    "name": "High Warlord\u0027s Mail Leggings",
+    "slot": 6
+  },
+  {
+    "id": 29036,
+    "name": "Cyclone Legguards",
+    "slot": 6
+  },
+  {
+    "id": 29030,
+    "name": "Cyclone Kilt",
+    "slot": 6
+  },
+  {
+    "id": 29042,
+    "name": "Cyclone War-Kilt",
+    "slot": 6
+  },
+  {
+    "id": 29083,
+    "name": "Demon Stalker Greaves",
+    "slot": 6
+  },
+  {
+    "id": 29344,
+    "name": "Haramad\u0027s Linked Chain Pantaloons",
+    "slot": 6,
+    "sockets": 3
+  },
+  {
+    "id": 29492,
+    "name": "Flamescale Leggings",
+    "slot": 6,
+    "sockets": 3
+  },
+  {
+    "id": 29489,
+    "name": "Enchanted Felscale Leggings",
+    "slot": 6,
+    "sockets": 3
+  },
+  {
+    "id": 29597,
+    "name": "Knight-Captain\u0027s Mail Legguards",
+    "slot": 6
+  },
+  {
+    "id": 29608,
+    "name": "Marshal\u0027s Mail Leggings",
+    "slot": 6
+  },
+  {
+    "id": 29788,
+    "name": "Finely Wrought Scale Leggings",
+    "slot": 6
+  },
+  {
+    "id": 29933,
+    "name": "Arcane Ringed Greaves",
+    "slot": 6
+  },
+  {
+    "id": 29942,
+    "name": "Battle Scarred Leggings",
+    "slot": 6
+  },
+  {
+    "id": 29971,
+    "name": "Dragonstrike Leggings",
+    "slot": 6
+  },
+  {
+    "id": 29968,
+    "name": "Nether Leggings",
+    "slot": 6
+  },
+  {
+    "id": 29985,
+    "name": "Void Reaver Greaves",
+    "slot": 6,
+    "sockets": 3
+  },
+  {
+    "id": 29991,
+    "name": "Sunhawk Leggings",
+    "slot": 6,
+    "sockets": 3
+  },
+  {
+    "id": 30019,
+    "name": "Area 52 Defender\u0027s Pants",
+    "slot": 6
+  },
+  {
+    "id": 30070,
+    "name": "Windforged Leggings",
+    "slot": 6
+  },
+  {
+    "id": 30142,
+    "name": "Rift Stalker Leggings",
+    "slot": 6,
+    "sockets": 1
+  },
+  {
+    "id": 30172,
+    "name": "Cataclysm Leggings",
+    "slot": 6,
+    "sockets": 1
+  },
+  {
+    "id": 30167,
+    "name": "Cataclysm Legguards",
+    "slot": 6,
+    "sockets": 1
+  },
+  {
+    "id": 30192,
+    "name": "Cataclysm Legplates",
+    "slot": 6,
+    "sockets": 1
+  },
+  {
+    "id": 30497,
+    "name": "Sentinel\u0027s Mail Leggings",
+    "slot": 6
+  },
+  {
+    "id": 30541,
+    "name": "Stormsong Kilt",
+    "slot": 6,
+    "sockets": 3
+  },
+  {
+    "id": 30534,
+    "name": "Wyrmscale Greaves",
+    "slot": 6,
+    "sockets": 3
+  },
+  {
+    "id": 30739,
+    "name": "Scaled Greaves of the Marksman",
+    "slot": 6,
+    "sockets": 3
+  },
+  {
+    "id": 30772,
+    "name": "Inferno Forged Leggings",
+    "slot": 6
+  },
+  {
+    "id": 30893,
+    "name": "Sun-touched Chain Leggings",
+    "slot": 6,
+    "sockets": 3
+  },
+  {
+    "id": 30900,
+    "name": "Bow-stitched Leggings",
+    "slot": 6,
+    "sockets": 3
+  },
+  {
+    "id": 30948,
+    "name": "Sunfury Legguards",
+    "slot": 6
+  },
+  {
+    "id": 30957,
+    "name": "Oronok\u0027s Old Leggings",
+    "slot": 6
+  },
+  {
+    "id": 31021,
+    "name": "Skyshatter Pants",
+    "slot": 6,
+    "sockets": 1
+  },
+  {
+    "id": 31019,
+    "name": "Skyshatter Leggings",
+    "slot": 6,
+    "sockets": 1
+  },
+  {
+    "id": 31005,
+    "name": "Gronnstalker\u0027s Leggings",
+    "slot": 6,
+    "sockets": 1
+  },
+  {
+    "id": 31020,
+    "name": "Skyshatter Legguards",
+    "slot": 6,
+    "sockets": 1
+  },
+  {
+    "id": 31210,
+    "name": "Chimaerascale Legguards",
+    "slot": 6
+  },
+  {
+    "id": 31240,
+    "name": "Scales of the Beast",
+    "slot": 6
+  },
+  {
+    "id": 31243,
+    "name": "Nagascale Legguards",
+    "slot": 6
+  },
+  {
+    "id": 31328,
+    "name": "Leggings of Beast Mastery",
+    "slot": 6
+  },
+  {
+    "id": 31406,
+    "name": "Gladiator\u0027s Ringmail Leggings",
+    "slot": 6
+  },
+  {
+    "id": 31458,
+    "name": "Razaani-Buster Leggings",
+    "slot": 6
+  },
+  {
+    "id": 31572,
+    "name": "Mistshroud Pants",
+    "slot": 6
+  },
+  {
+    "id": 31649,
+    "name": "High Warlord\u0027s Ringmail Legguards",
+    "slot": 6
+  },
+  {
+    "id": 31643,
+    "name": "Grand Marshal\u0027s Ringmail Legguards",
+    "slot": 6
+  },
+  {
+    "id": 31685,
+    "name": "Brood Mother Leggings",
+    "slot": 6
+  },
+  {
+    "id": 31689,
+    "name": "Mok\u0027Nathal Hero\u0027s Pantaloons",
+    "slot": 6
+  },
+  {
+    "id": 31764,
+    "name": "Stillfire Leggings",
+    "slot": 6
+  },
+  {
+    "id": 31963,
+    "name": "Merciless Gladiator\u0027s Chain Leggings",
+    "slot": 6
+  },
+  {
+    "id": 32012,
+    "name": "Merciless Gladiator\u0027s Mail Leggings",
+    "slot": 6
+  },
+  {
+    "id": 32007,
+    "name": "Merciless Gladiator\u0027s Linked Leggings",
+    "slot": 6
+  },
+  {
+    "id": 32032,
+    "name": "Merciless Gladiator\u0027s Ringmail Leggings",
+    "slot": 6
+  },
+  {
+    "id": 32400,
+    "name": "Greaves of Shackled Souls",
+    "slot": 6
+  },
+  {
+    "id": 32870,
+    "name": "Legguards of Contemplation",
+    "slot": 6,
+    "sockets": 3
+  },
+  {
+    "id": 33530,
+    "name": "Natural Life Leggings",
+    "slot": 6,
+    "sockets": 3
+  },
+  {
+    "id": 33527,
+    "name": "Shifting Camouflage Pants",
+    "slot": 6
+  },
+  {
+    "id": 33533,
+    "name": "Avalanche Leggings",
+    "slot": 6,
+    "sockets": 3
+  },
+  {
+    "id": 33667,
+    "name": "Vengeful Gladiator\u0027s Chain Leggings",
+    "slot": 6
+  },
+  {
+    "id": 33709,
+    "name": "Vengeful Gladiator\u0027s Linked Leggings",
+    "slot": 6
+  },
+  {
+    "id": 33714,
+    "name": "Vengeful Gladiator\u0027s Mail Leggings",
+    "slot": 6
+  },
+  {
+    "id": 33741,
+    "name": "Vengeful Gladiator\u0027s Ringmail Leggings",
+    "slot": 6
+  },
+  {
+    "id": 34168,
+    "name": "Starstalker Legguards",
+    "slot": 6,
+    "sockets": 3
+  },
+  {
+    "id": 34186,
+    "name": "Chain Links of the Tumultuous Storm",
+    "slot": 6,
+    "sockets": 3
+  },
+  {
+    "id": 34383,
+    "name": "Kilt of Spiritual Reconstruction",
+    "slot": 6,
+    "sockets": 3
+  },
+  {
+    "id": 34914,
+    "name": "Leggings of the Pursuit",
+    "slot": 6,
+    "sockets": 2
+  },
+  {
+    "id": 34931,
+    "name": "Runed Scales of Antiquity",
+    "slot": 6,
+    "sockets": 2
+  },
+  {
+    "id": 34934,
+    "name": "Rushing Storm Kilt",
+    "slot": 6,
+    "sockets": 2
+  },
+  {
+    "id": 34993,
+    "name": "Brutal Gladiator\u0027s Chain Leggings",
+    "slot": 6
+  },
+  {
+    "id": 35045,
+    "name": "Brutal Gladiator\u0027s Linked Leggings",
+    "slot": 6
+  },
+  {
+    "id": 35051,
+    "name": "Brutal Gladiator\u0027s Mail Leggings",
+    "slot": 6
+  },
+  {
+    "id": 35080,
+    "name": "Brutal Gladiator\u0027s Ringmail Leggings",
+    "slot": 6
+  },
+  {
+    "id": 35379,
+    "name": "Stalker\u0027s Chain Leggings",
+    "slot": 6
+  },
+  {
+    "id": 35384,
+    "name": "Seer\u0027s Linked Leggings",
+    "slot": 6
+  },
+  {
+    "id": 35394,
+    "name": "Seer\u0027s Ringmail Legguards",
+    "slot": 6
+  },
+  {
+    "id": 35389,
+    "name": "Seer\u0027s Mail Leggings",
+    "slot": 6
+  }
+]

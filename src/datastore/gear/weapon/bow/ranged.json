@@ -1,0 +1,397 @@
+[
+  {
+    "id": 2824,
+    "name": "Hurricane",
+    "slot": 17
+  },
+  {
+    "id": 11628,
+    "name": "Houndmaster\u0027s Bow",
+    "slot": 17
+  },
+  {
+    "id": 12653,
+    "name": "Riphook",
+    "slot": 17
+  },
+  {
+    "id": 13023,
+    "name": "Eaglehorn Long Bow",
+    "slot": 17
+  },
+  {
+    "id": 13022,
+    "name": "Gryphonwing Long Bow",
+    "slot": 17
+  },
+  {
+    "id": 13175,
+    "name": "Voone\u0027s Twitchbow",
+    "slot": 17
+  },
+  {
+    "id": 13824,
+    "name": "Recurve Long Bow",
+    "slot": 17
+  },
+  {
+    "id": 15288,
+    "name": "Blasthorn Bow",
+    "slot": 17
+  },
+  {
+    "id": 15289,
+    "name": "Archstrike Bow",
+    "slot": 17
+  },
+  {
+    "id": 15291,
+    "name": "Harpy Needler",
+    "slot": 17
+  },
+  {
+    "id": 15294,
+    "name": "Siege Bow",
+    "slot": 17
+  },
+  {
+    "id": 15295,
+    "name": "Quillfire Bow",
+    "slot": 17
+  },
+  {
+    "id": 15296,
+    "name": "Hawkeye Bow",
+    "slot": 17
+  },
+  {
+    "id": 16622,
+    "name": "Thornflinger",
+    "slot": 17
+  },
+  {
+    "id": 16996,
+    "name": "Gorewood Bow",
+    "slot": 17
+  },
+  {
+    "id": 17069,
+    "name": "Striker\u0027s Mark",
+    "slot": 17
+  },
+  {
+    "id": 17753,
+    "name": "Verdant Keeper\u0027s Aim",
+    "slot": 17
+  },
+  {
+    "id": 18323,
+    "name": "Satyr\u0027s Bow",
+    "slot": 17
+  },
+  {
+    "id": 18482,
+    "name": "Ogre Toothpick Shooter",
+    "slot": 17
+  },
+  {
+    "id": 18680,
+    "name": "Ancient Bone Bow",
+    "slot": 17
+  },
+  {
+    "id": 18713,
+    "name": "Rhok\u0027delar, Longbow of the Ancient Keepers",
+    "slot": 17
+  },
+  {
+    "id": 18729,
+    "name": "Screeching Bow",
+    "slot": 17
+  },
+  {
+    "id": 18835,
+    "name": "High Warlord\u0027s Recurve",
+    "slot": 17
+  },
+  {
+    "id": 18833,
+    "name": "Grand Marshal\u0027s Bullseye",
+    "slot": 17
+  },
+  {
+    "id": 19114,
+    "name": "Highland Bow",
+    "slot": 17
+  },
+  {
+    "id": 19350,
+    "name": "Heartstriker",
+    "slot": 17
+  },
+  {
+    "id": 19562,
+    "name": "Outrunner\u0027s Bow",
+    "slot": 17
+  },
+  {
+    "id": 19563,
+    "name": "Outrunner\u0027s Bow",
+    "slot": 17
+  },
+  {
+    "id": 19559,
+    "name": "Outrider\u0027s Bow",
+    "slot": 17
+  },
+  {
+    "id": 19558,
+    "name": "Outrider\u0027s Bow",
+    "slot": 17
+  },
+  {
+    "id": 19993,
+    "name": "Hoodoo Hunting Bow",
+    "slot": 17
+  },
+  {
+    "id": 20038,
+    "name": "Mandokir\u0027s Sting",
+    "slot": 17
+  },
+  {
+    "id": 20646,
+    "name": "Sandstrider\u0027s Mark",
+    "slot": 17
+  },
+  {
+    "id": 20663,
+    "name": "Deep Strike Bow",
+    "slot": 17
+  },
+  {
+    "id": 21478,
+    "name": "Bow of Taut Sinew",
+    "slot": 17
+  },
+  {
+    "id": 21616,
+    "name": "Huhuran\u0027s Stinger",
+    "slot": 17
+  },
+  {
+    "id": 22318,
+    "name": "Malgen\u0027s Long Bow",
+    "slot": 17
+  },
+  {
+    "id": 22811,
+    "name": "Soulstring",
+    "slot": 17
+  },
+  {
+    "id": 25240,
+    "name": "Azerothian Longbow",
+    "slot": 17
+  },
+  {
+    "id": 25243,
+    "name": "Windtalker Bow",
+    "slot": 17
+  },
+  {
+    "id": 25242,
+    "name": "Telaari Longbow",
+    "slot": 17
+  },
+  {
+    "id": 25244,
+    "name": "Viper Bow",
+    "slot": 17
+  },
+  {
+    "id": 25241,
+    "name": "Ashenvale Longbow",
+    "slot": 17
+  },
+  {
+    "id": 25246,
+    "name": "Thalassian Compound Bow",
+    "slot": 17
+  },
+  {
+    "id": 25245,
+    "name": "Razorsong Bow",
+    "slot": 17
+  },
+  {
+    "id": 25247,
+    "name": "Expert\u0027s Bow",
+    "slot": 17
+  },
+  {
+    "id": 25249,
+    "name": "Ranger\u0027s Recurved Bow",
+    "slot": 17
+  },
+  {
+    "id": 25250,
+    "name": "Rocslayer Longbow",
+    "slot": 17
+  },
+  {
+    "id": 25253,
+    "name": "Windspear Longbow",
+    "slot": 17
+  },
+  {
+    "id": 25251,
+    "name": "Orc Flatbow",
+    "slot": 17
+  },
+  {
+    "id": 25248,
+    "name": "Talbuk Hunting Bow",
+    "slot": 17
+  },
+  {
+    "id": 25252,
+    "name": "Dream Catcher Bow",
+    "slot": 17
+  },
+  {
+    "id": 25406,
+    "name": "Broken Longbow",
+    "slot": 17
+  },
+  {
+    "id": 25496,
+    "name": "Mag\u0027har Bow",
+    "slot": 17
+  },
+  {
+    "id": 25953,
+    "name": "Ethereal Warp-Bow",
+    "slot": 17
+  },
+  {
+    "id": 25971,
+    "name": "Stout Oak Longbow",
+    "slot": 17
+  },
+  {
+    "id": 27526,
+    "name": "Skyfire Hawk-Bow",
+    "slot": 17
+  },
+  {
+    "id": 27817,
+    "name": "Starbolt Longbow",
+    "slot": 17
+  },
+  {
+    "id": 27931,
+    "name": "Splintermark",
+    "slot": 17
+  },
+  {
+    "id": 27930,
+    "name": "Splintermark",
+    "slot": 17
+  },
+  {
+    "id": 27987,
+    "name": "Melmorta\u0027s Twilight Longbow",
+    "slot": 17
+  },
+  {
+    "id": 28772,
+    "name": "Sunfury Bow of the Phoenix",
+    "slot": 17
+  },
+  {
+    "id": 29152,
+    "name": "Marksman\u0027s Bow",
+    "slot": 17
+  },
+  {
+    "id": 29351,
+    "name": "Wrathtide Longbow",
+    "slot": 17
+  },
+  {
+    "id": 30105,
+    "name": "Serpent Spine Longbow",
+    "slot": 17
+  },
+  {
+    "id": 30226,
+    "name": "Alley\u0027s Recurve",
+    "slot": 17
+  },
+  {
+    "id": 30318,
+    "name": "Netherstrand Longbow",
+    "slot": 17
+  },
+  {
+    "id": 30759,
+    "name": "Mag\u0027hari Light Recurve",
+    "slot": 17
+  },
+  {
+    "id": 30906,
+    "name": "Bristleblitz Striker",
+    "slot": 17
+  },
+  {
+    "id": 31072,
+    "name": "Lohn\u0027goron, Bow of the Torn-heart",
+    "slot": 17
+  },
+  {
+    "id": 31303,
+    "name": "Valanos\u0027 Longbow",
+    "slot": 17
+  },
+  {
+    "id": 31416,
+    "name": "Scorch Wood Bow",
+    "slot": 17
+  },
+  {
+    "id": 31762,
+    "name": "Feather-Wrapped Bow",
+    "slot": 17
+  },
+  {
+    "id": 32336,
+    "name": "Black Bow of the Betrayer",
+    "slot": 17
+  },
+  {
+    "id": 33474,
+    "name": "Ancient Amani Longbow",
+    "slot": 17
+  },
+  {
+    "id": 34196,
+    "name": "Golden Bow of Quel\u0027Thalas",
+    "slot": 17
+  },
+  {
+    "id": 34334,
+    "name": "Thori\u0027dal, the Stars\u0027 Fury",
+    "slot": 17
+  },
+  {
+    "id": 34529,
+    "name": "Vengeful Gladiator\u0027s Longbow",
+    "slot": 17
+  },
+  {
+    "id": 35047,
+    "name": "Brutal Gladiator\u0027s Longbow",
+    "slot": 17
+  }
+]

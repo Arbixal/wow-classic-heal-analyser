@@ -1,0 +1,475 @@
+[
+  {
+    "id": 2915,
+    "name": "Taran Icebreaker",
+    "slot": 15
+  },
+  {
+    "id": 11608,
+    "name": "Dark Iron Pulverizer",
+    "slot": 15
+  },
+  {
+    "id": 11803,
+    "name": "Force of Magma",
+    "slot": 15
+  },
+  {
+    "id": 11921,
+    "name": "Impervious Giant",
+    "slot": 15
+  },
+  {
+    "id": 12528,
+    "name": "The Judge\u0027s Gavel",
+    "slot": 15
+  },
+  {
+    "id": 12776,
+    "name": "Enchanted Battlehammer",
+    "slot": 15
+  },
+  {
+    "id": 12772,
+    "name": "Inlaid Thorium Hammer",
+    "slot": 15
+  },
+  {
+    "id": 12796,
+    "name": "Hammer of the Titans",
+    "slot": 15
+  },
+  {
+    "id": 12969,
+    "name": "Seeping Willow",
+    "slot": 15
+  },
+  {
+    "id": 13047,
+    "name": "Twig of the World Tree",
+    "slot": 15
+  },
+  {
+    "id": 13167,
+    "name": "Fist of Omokk",
+    "slot": 15
+  },
+  {
+    "id": 13393,
+    "name": "Malown\u0027s Slam",
+    "slot": 15
+  },
+  {
+    "id": 13821,
+    "name": "Bulky Maul",
+    "slot": 15
+  },
+  {
+    "id": 14531,
+    "name": "Frightskull Shaft",
+    "slot": 15
+  },
+  {
+    "id": 15264,
+    "name": "Backbreaker",
+    "slot": 15
+  },
+  {
+    "id": 15266,
+    "name": "Fierce Mauler",
+    "slot": 15
+  },
+  {
+    "id": 15267,
+    "name": "Brutehammer",
+    "slot": 15
+  },
+  {
+    "id": 15265,
+    "name": "Painbringer",
+    "slot": 15
+  },
+  {
+    "id": 15418,
+    "name": "Shimmering Platinum Warhammer",
+    "slot": 15
+  },
+  {
+    "id": 17073,
+    "name": "Earthshaker",
+    "slot": 15
+  },
+  {
+    "id": 17182,
+    "name": "Sulfuras, Hand of Ragnaros",
+    "slot": 15
+  },
+  {
+    "id": 17193,
+    "name": "Sulfuron Hammer",
+    "slot": 15
+  },
+  {
+    "id": 17766,
+    "name": "Princess Theradras\u0027 Scepter",
+    "slot": 15
+  },
+  {
+    "id": 18420,
+    "name": "Bonecrusher",
+    "slot": 15
+  },
+  {
+    "id": 18481,
+    "name": "Skullcracking Mace",
+    "slot": 15
+  },
+  {
+    "id": 18531,
+    "name": "Unyielding Maul",
+    "slot": 15
+  },
+  {
+    "id": 18717,
+    "name": "Hammer of the Grand Crusader",
+    "slot": 15
+  },
+  {
+    "id": 18803,
+    "name": "Finkle\u0027s Lava Dredger",
+    "slot": 15
+  },
+  {
+    "id": 18868,
+    "name": "High Warlord\u0027s Pulverizer",
+    "slot": 15
+  },
+  {
+    "id": 18867,
+    "name": "Grand Marshal\u0027s Battle Hammer",
+    "slot": 15
+  },
+  {
+    "id": 19323,
+    "name": "The Unstoppable Force",
+    "slot": 15
+  },
+  {
+    "id": 19358,
+    "name": "Draconic Maul",
+    "slot": 15
+  },
+  {
+    "id": 19357,
+    "name": "Herald of Woe",
+    "slot": 15
+  },
+  {
+    "id": 19918,
+    "name": "Jeklik\u0027s Crusher",
+    "slot": 15
+  },
+  {
+    "id": 20696,
+    "name": "Crystal Spiked Maul",
+    "slot": 15
+  },
+  {
+    "id": 21188,
+    "name": "Fist of Cenarius",
+    "slot": 15
+  },
+  {
+    "id": 21703,
+    "name": "Hammer of Ji\u0027zhi",
+    "slot": 15
+  },
+  {
+    "id": 21806,
+    "name": "Gavel of Qiraji Authority",
+    "slot": 15
+  },
+  {
+    "id": 22208,
+    "name": "Lavastone Hammer",
+    "slot": 15
+  },
+  {
+    "id": 22348,
+    "name": "Doomulus Prime",
+    "slot": 15
+  },
+  {
+    "id": 22333,
+    "name": "Hammer of Divine Might",
+    "slot": 15
+  },
+  {
+    "id": 22798,
+    "name": "Might of Menethil",
+    "slot": 15
+  },
+  {
+    "id": 22809,
+    "name": "Maul of the Redeemed Crusader",
+    "slot": 15
+  },
+  {
+    "id": 23455,
+    "name": "Grand Marshal\u0027s Demolisher",
+    "slot": 15
+  },
+  {
+    "id": 23457,
+    "name": "High Warlord\u0027s Destroyer",
+    "slot": 15
+  },
+  {
+    "id": 23465,
+    "name": "High Warlord\u0027s Destroyer",
+    "slot": 15
+  },
+  {
+    "id": 23502,
+    "name": "Adamantite Maul",
+    "slot": 15
+  },
+  {
+    "id": 23546,
+    "name": "Fel Hardened Maul",
+    "slot": 15
+  },
+  {
+    "id": 24094,
+    "name": "Heart Fire Warhammer",
+    "slot": 15
+  },
+  {
+    "id": 24461,
+    "name": "Hatebringer",
+    "slot": 15,
+    "sockets": 3
+  },
+  {
+    "id": 25129,
+    "name": "Giant\u0027s Leg Bone",
+    "slot": 15
+  },
+  {
+    "id": 25130,
+    "name": "Gronn-Bone Club",
+    "slot": 15
+  },
+  {
+    "id": 25131,
+    "name": "Hateful Bludgeon",
+    "slot": 15
+  },
+  {
+    "id": 25132,
+    "name": "Thrallmar War Hammer",
+    "slot": 15
+  },
+  {
+    "id": 25137,
+    "name": "Draenethyst Mallet",
+    "slot": 15
+  },
+  {
+    "id": 25128,
+    "name": "Shining Mace",
+    "slot": 15
+  },
+  {
+    "id": 25141,
+    "name": "Halaani Hammer",
+    "slot": 15
+  },
+  {
+    "id": 25138,
+    "name": "Blood Knight Maul",
+    "slot": 15
+  },
+  {
+    "id": 25133,
+    "name": "Stormwind Maul",
+    "slot": 15
+  },
+  {
+    "id": 25136,
+    "name": "Blood Stained Hammer",
+    "slot": 15
+  },
+  {
+    "id": 25139,
+    "name": "Algaz Battle Hammer",
+    "slot": 15
+  },
+  {
+    "id": 25134,
+    "name": "Highmountain Hammer",
+    "slot": 15
+  },
+  {
+    "id": 25140,
+    "name": "Commanding Mallet",
+    "slot": 15
+  },
+  {
+    "id": 25135,
+    "name": "Clefthoof Mace",
+    "slot": 15
+  },
+  {
+    "id": 25402,
+    "name": "The Stoppable Force",
+    "slot": 15
+  },
+  {
+    "id": 25934,
+    "name": "Spiked Destroyer",
+    "slot": 15
+  },
+  {
+    "id": 25986,
+    "name": "Dreadtusk\u0027s Fury",
+    "slot": 15
+  },
+  {
+    "id": 27524,
+    "name": "Firemaul of Destruction",
+    "slot": 15
+  },
+  {
+    "id": 27750,
+    "name": "Hammer of the Sporelings",
+    "slot": 15
+  },
+  {
+    "id": 27840,
+    "name": "Scepter of Sha\u0027tar",
+    "slot": 15
+  },
+  {
+    "id": 28299,
+    "name": "Gladiator\u0027s Bonegrinder",
+    "slot": 15
+  },
+  {
+    "id": 28393,
+    "name": "Warmaul of Infused Light",
+    "slot": 15,
+    "sockets": 3
+  },
+  {
+    "id": 28441,
+    "name": "Deep Thunder",
+    "slot": 15
+  },
+  {
+    "id": 28440,
+    "name": "Thunder",
+    "slot": 15
+  },
+  {
+    "id": 28442,
+    "name": "Stormherald",
+    "slot": 15
+  },
+  {
+    "id": 28476,
+    "name": "Gladiator\u0027s Maul",
+    "slot": 15
+  },
+  {
+    "id": 28800,
+    "name": "Hammer of the Naaru",
+    "slot": 15,
+    "sockets": 3
+  },
+  {
+    "id": 28917,
+    "name": "High Warlord\u0027s Bonegrinder",
+    "slot": 15
+  },
+  {
+    "id": 28919,
+    "name": "High Warlord\u0027s Maul",
+    "slot": 15
+  },
+  {
+    "id": 28948,
+    "name": "Grand Marshal\u0027s Maul",
+    "slot": 15
+  },
+  {
+    "id": 28942,
+    "name": "Grand Marshal\u0027s Bonegrinder",
+    "slot": 15
+  },
+  {
+    "id": 29138,
+    "name": "Arechron\u0027s Gift",
+    "slot": 15
+  },
+  {
+    "id": 29171,
+    "name": "Earthwarden",
+    "slot": 15
+  },
+  {
+    "id": 30090,
+    "name": "World Breaker",
+    "slot": 15
+  },
+  {
+    "id": 30093,
+    "name": "Great Earthforged Hammer",
+    "slot": 15
+  },
+  {
+    "id": 30395,
+    "name": "Warp-Master\u0027s Maul",
+    "slot": 15
+  },
+  {
+    "id": 31299,
+    "name": "The Oathkeeper",
+    "slot": 15
+  },
+  {
+    "id": 31322,
+    "name": "The Hammer of Destiny",
+    "slot": 15
+  },
+  {
+    "id": 31959,
+    "name": "Merciless Gladiator\u0027s Bonegrinder",
+    "slot": 15
+  },
+  {
+    "id": 32014,
+    "name": "Merciless Gladiator\u0027s Maul",
+    "slot": 15
+  },
+  {
+    "id": 32332,
+    "name": "Torch of the Damned",
+    "slot": 15
+  },
+  {
+    "id": 32854,
+    "name": "Hammer of Righteous Might",
+    "slot": 15
+  },
+  {
+    "id": 33663,
+    "name": "Vengeful Gladiator\u0027s Bonegrinder",
+    "slot": 15
+  },
+  {
+    "id": 34989,
+    "name": "Brutal Gladiator\u0027s Bonegrinder",
+    "slot": 15
+  }
+]

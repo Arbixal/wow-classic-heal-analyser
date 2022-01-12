@@ -1,0 +1,224 @@
+[
+  {
+    "id": 22399,
+    "name": "Idol of Health",
+    "slot": 17,
+    "notEnchantable": true
+  },
+  {
+    "id": 22397,
+    "name": "Idol of Ferocity",
+    "slot": 17,
+    "notEnchantable": true
+  },
+  {
+    "id": 22398,
+    "name": "Idol of Rejuvenation",
+    "slot": 17,
+    "notEnchantable": true
+  },
+  {
+    "id": 23004,
+    "name": "Idol of Longevity",
+    "slot": 17,
+    "notEnchantable": true
+  },
+  {
+    "id": 23197,
+    "name": "Idol of the Moon",
+    "slot": 17,
+    "notEnchantable": true
+  },
+  {
+    "id": 23198,
+    "name": "Idol of Brutality",
+    "slot": 17,
+    "notEnchantable": true
+  },
+  {
+    "id": 25643,
+    "name": "Harold\u0027s Rejuvenating Broach",
+    "slot": 17,
+    "notEnchantable": true
+  },
+  {
+    "id": 25667,
+    "name": "Idol of the Beast",
+    "slot": 17,
+    "notEnchantable": true
+  },
+  {
+    "id": 25940,
+    "name": "Idol of the Claw",
+    "slot": 17,
+    "notEnchantable": true
+  },
+  {
+    "id": 27518,
+    "name": "Ivory Idol of the Moongoddess",
+    "slot": 17,
+    "notEnchantable": true
+  },
+  {
+    "id": 27744,
+    "name": "Idol of Ursoc",
+    "slot": 17,
+    "notEnchantable": true
+  },
+  {
+    "id": 27886,
+    "name": "Idol of the Emerald Queen",
+    "slot": 17,
+    "notEnchantable": true
+  },
+  {
+    "id": 27990,
+    "name": "Idol of Savagery",
+    "slot": 17,
+    "notEnchantable": true
+  },
+  {
+    "id": 27989,
+    "name": "Idol of Savagery",
+    "slot": 17,
+    "notEnchantable": true
+  },
+  {
+    "id": 28064,
+    "name": "Idol of the Wild",
+    "slot": 17,
+    "notEnchantable": true
+  },
+  {
+    "id": 28355,
+    "name": "Gladiator\u0027s Idol of Tenacity",
+    "slot": 17,
+    "notEnchantable": true
+  },
+  {
+    "id": 28372,
+    "name": "Idol of Feral Shadows",
+    "slot": 17,
+    "notEnchantable": true
+  },
+  {
+    "id": 28568,
+    "name": "Idol of the Avian Heart",
+    "slot": 17,
+    "notEnchantable": true
+  },
+  {
+    "id": 29390,
+    "name": "Everbloom Idol",
+    "slot": 17,
+    "notEnchantable": true
+  },
+  {
+    "id": 30051,
+    "name": "Idol of the Crescent Goddess",
+    "slot": 17,
+    "notEnchantable": true
+  },
+  {
+    "id": 31025,
+    "name": "Idol of the Avenger",
+    "slot": 17,
+    "notEnchantable": true
+  },
+  {
+    "id": 32257,
+    "name": "Idol of the White Stag",
+    "slot": 17,
+    "notEnchantable": true
+  },
+  {
+    "id": 32387,
+    "name": "Idol of the Raven Goddess",
+    "slot": 17,
+    "notEnchantable": true
+  },
+  {
+    "id": 33076,
+    "name": "Merciless Gladiator\u0027s Idol of Tenacity",
+    "slot": 17,
+    "notEnchantable": true
+  },
+  {
+    "id": 33509,
+    "name": "Idol of Terror",
+    "slot": 17,
+    "notEnchantable": true
+  },
+  {
+    "id": 33510,
+    "name": "Idol of the Unseen Moon",
+    "slot": 17,
+    "notEnchantable": true
+  },
+  {
+    "id": 33508,
+    "name": "Idol of Budding Life",
+    "slot": 17,
+    "notEnchantable": true
+  },
+  {
+    "id": 33841,
+    "name": "Vengeful Gladiator\u0027s Idol of Tenacity",
+    "slot": 17,
+    "notEnchantable": true
+  },
+  {
+    "id": 33943,
+    "name": "Merciless Gladiator\u0027s Idol of Steadfastness",
+    "slot": 17,
+    "notEnchantable": true
+  },
+  {
+    "id": 33944,
+    "name": "Vengeful Gladiator\u0027s Idol of Steadfastness",
+    "slot": 17,
+    "notEnchantable": true
+  },
+  {
+    "id": 33942,
+    "name": "Gladiator\u0027s Idol of Steadfastness",
+    "slot": 17,
+    "notEnchantable": true
+  },
+  {
+    "id": 33945,
+    "name": "Gladiator\u0027s Idol of Resolve",
+    "slot": 17,
+    "notEnchantable": true
+  },
+  {
+    "id": 33946,
+    "name": "Merciless Gladiator\u0027s Idol of Resolve",
+    "slot": 17,
+    "notEnchantable": true
+  },
+  {
+    "id": 33947,
+    "name": "Vengeful Gladiator\u0027s Idol of Resolve",
+    "slot": 17,
+    "notEnchantable": true
+  },
+  {
+    "id": 35019,
+    "name": "Brutal Gladiator\u0027s Idol of Resolve",
+    "slot": 17,
+    "notEnchantable": true
+  },
+  {
+    "id": 35021,
+    "name": "Brutal Gladiator\u0027s Idol of Tenacity",
+    "slot": 17,
+    "notEnchantable": true
+  },
+  {
+    "id": 35020,
+    "name": "Brutal Gladiator\u0027s Idol of Steadfastness",
+    "slot": 17,
+    "notEnchantable": true
+  }
+]

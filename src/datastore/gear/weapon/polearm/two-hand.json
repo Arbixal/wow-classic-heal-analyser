@@ -1,0 +1,324 @@
+[
+  {
+    "id": 10799,
+    "name": "Headspike",
+    "slot": 15
+  },
+  {
+    "id": 11809,
+    "name": "Flame Wrath",
+    "slot": 15
+  },
+  {
+    "id": 11864,
+    "name": "White Bone Spear",
+    "slot": 15
+  },
+  {
+    "id": 12243,
+    "name": "Smoldering Claw",
+    "slot": 15
+  },
+  {
+    "id": 12583,
+    "name": "Blackhand Doomsaw",
+    "slot": 15
+  },
+  {
+    "id": 12802,
+    "name": "Darkspear",
+    "slot": 15
+  },
+  {
+    "id": 13059,
+    "name": "Stoneraven",
+    "slot": 15
+  },
+  {
+    "id": 13056,
+    "name": "Frenzied Striker",
+    "slot": 15
+  },
+  {
+    "id": 13060,
+    "name": "The Needler",
+    "slot": 15
+  },
+  {
+    "id": 13148,
+    "name": "Chillpike",
+    "slot": 15
+  },
+  {
+    "id": 17074,
+    "name": "Shadowstrike",
+    "slot": 15
+  },
+  {
+    "id": 17223,
+    "name": "Thunderstrike",
+    "slot": 15
+  },
+  {
+    "id": 18502,
+    "name": "Monstrous Glaive",
+    "slot": 15
+  },
+  {
+    "id": 18725,
+    "name": "Peacemaker",
+    "slot": 15
+  },
+  {
+    "id": 18869,
+    "name": "Grand Marshal\u0027s Glaive",
+    "slot": 15
+  },
+  {
+    "id": 18871,
+    "name": "High Warlord\u0027s Pig Sticker",
+    "slot": 15
+  },
+  {
+    "id": 19106,
+    "name": "Ice Barbed Spear",
+    "slot": 15
+  },
+  {
+    "id": 19167,
+    "name": "Blackfury",
+    "slot": 15
+  },
+  {
+    "id": 19874,
+    "name": "Halberd of Smiting",
+    "slot": 15
+  },
+  {
+    "id": 19946,
+    "name": "Tigule\u0027s Harpoon",
+    "slot": 15
+  },
+  {
+    "id": 19963,
+    "name": "Pitchfork of Madness",
+    "slot": 15
+  },
+  {
+    "id": 20083,
+    "name": "Hunting Spear",
+    "slot": 15
+  },
+  {
+    "id": 20660,
+    "name": "Stonecutting Glaive",
+    "slot": 15
+  },
+  {
+    "id": 21635,
+    "name": "Barb of the Sand Reaver",
+    "slot": 15
+  },
+  {
+    "id": 22314,
+    "name": "Huntsman\u0027s Harpoon",
+    "slot": 15
+  },
+  {
+    "id": 23039,
+    "name": "The Eye of Nerub",
+    "slot": 15
+  },
+  {
+    "id": 24044,
+    "name": "Hellreaver",
+    "slot": 15
+  },
+  {
+    "id": 25229,
+    "name": "Partisan Polearm",
+    "slot": 15
+  },
+  {
+    "id": 25227,
+    "name": "Sha\u0027tari Longspear",
+    "slot": 15
+  },
+  {
+    "id": 25232,
+    "name": "War Glaive",
+    "slot": 15
+  },
+  {
+    "id": 25230,
+    "name": "Voulge Blade",
+    "slot": 15
+  },
+  {
+    "id": 25237,
+    "name": "Nether Trident",
+    "slot": 15
+  },
+  {
+    "id": 25236,
+    "name": "Grim Scythe",
+    "slot": 15
+  },
+  {
+    "id": 25235,
+    "name": "Ethereal-Etched Glaive",
+    "slot": 15
+  },
+  {
+    "id": 25238,
+    "name": "Hellfire War Spear",
+    "slot": 15
+  },
+  {
+    "id": 25228,
+    "name": "Halberd Polearm",
+    "slot": 15
+  },
+  {
+    "id": 25231,
+    "name": "Fel-Wrought Halberd",
+    "slot": 15
+  },
+  {
+    "id": 25234,
+    "name": "Telaari Polearm",
+    "slot": 15
+  },
+  {
+    "id": 25239,
+    "name": "Legend\u0027s Glaive",
+    "slot": 15
+  },
+  {
+    "id": 25233,
+    "name": "Battle Scythe",
+    "slot": 15
+  },
+  {
+    "id": 25226,
+    "name": "War Scythe",
+    "slot": 15
+  },
+  {
+    "id": 25608,
+    "name": "Lantresor\u0027s Warblade",
+    "slot": 15
+  },
+  {
+    "id": 25603,
+    "name": "Lantresor\u0027s Warblade",
+    "slot": 15
+  },
+  {
+    "id": 27751,
+    "name": "Survivalist\u0027s Pike",
+    "slot": 15
+  },
+  {
+    "id": 27903,
+    "name": "Sonic Spear",
+    "slot": 15
+  },
+  {
+    "id": 28253,
+    "name": "Plasma Rat\u0027s Hyper-Scythe",
+    "slot": 15
+  },
+  {
+    "id": 28300,
+    "name": "Gladiator\u0027s Painsaw",
+    "slot": 15
+  },
+  {
+    "id": 28774,
+    "name": "Glaive of the Pit",
+    "slot": 15,
+    "sockets": 3
+  },
+  {
+    "id": 28923,
+    "name": "High Warlord\u0027s Painsaw",
+    "slot": 15
+  },
+  {
+    "id": 28949,
+    "name": "Grand Marshal\u0027s Painsaw",
+    "slot": 15
+  },
+  {
+    "id": 29166,
+    "name": "Hellforged Halberd",
+    "slot": 15
+  },
+  {
+    "id": 29167,
+    "name": "Blackened Spear",
+    "slot": 15
+  },
+  {
+    "id": 29329,
+    "name": "Terokk\u0027s Quill",
+    "slot": 15
+  },
+  {
+    "id": 29377,
+    "name": "Ethereum Phase-Spear",
+    "slot": 15
+  },
+  {
+    "id": 30396,
+    "name": "Jeweled Halberd",
+    "slot": 15
+  },
+  {
+    "id": 30418,
+    "name": "Darkspear (Purple Glow)",
+    "slot": 15
+  },
+  {
+    "id": 30753,
+    "name": "Warphorn Spear",
+    "slot": 15
+  },
+  {
+    "id": 30830,
+    "name": "Trident of the Outcast Tribe",
+    "slot": 15
+  },
+  {
+    "id": 32025,
+    "name": "Merciless Gladiator\u0027s Painsaw",
+    "slot": 15
+  },
+  {
+    "id": 32248,
+    "name": "Halberd of Desolation",
+    "slot": 15
+  },
+  {
+    "id": 32829,
+    "name": "Windcharger\u0027s Lance",
+    "slot": 15
+  },
+  {
+    "id": 33727,
+    "name": "Vengeful Gladiator\u0027s Painsaw",
+    "slot": 15
+  },
+  {
+    "id": 34183,
+    "name": "Shivering Felspine",
+    "slot": 15,
+    "sockets": 1
+  },
+  {
+    "id": 35064,
+    "name": "Brutal Gladiator\u0027s Painsaw",
+    "slot": 15
+  }
+]

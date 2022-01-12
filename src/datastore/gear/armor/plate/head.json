@@ -1,0 +1,838 @@
+[
+  {
+    "id": 8317,
+    "name": "Alabaster Plate Helmet"
+  },
+  {
+    "id": 8755,
+    "name": "Light Plate Helmet"
+  },
+  {
+    "id": 10132,
+    "name": "Revenant Helmet"
+  },
+  {
+    "id": 10168,
+    "name": "Templar Crown"
+  },
+  {
+    "id": 10241,
+    "name": "Heavy Lamellar Helm"
+  },
+  {
+    "id": 10279,
+    "name": "Emerald Helm"
+  },
+  {
+    "id": 10372,
+    "name": "Imbued Plate Helmet"
+  },
+  {
+    "id": 10379,
+    "name": "Commander\u0027s Helm"
+  },
+  {
+    "id": 10388,
+    "name": "Hyperion Helm"
+  },
+  {
+    "id": 10749,
+    "name": "Avenguard Helm"
+  },
+  {
+    "id": 11746,
+    "name": "Golem Skull Helm"
+  },
+  {
+    "id": 12427,
+    "name": "Imperial Plate Helm"
+  },
+  {
+    "id": 12410,
+    "name": "Thorium Helm"
+  },
+  {
+    "id": 12612,
+    "name": "Runic Plate Helm"
+  },
+  {
+    "id": 12620,
+    "name": "Enchanted Thorium Helm"
+  },
+  {
+    "id": 12633,
+    "name": "Whitesoul Helm"
+  },
+  {
+    "id": 12640,
+    "name": "Lionheart Helm"
+  },
+  {
+    "id": 12952,
+    "name": "Gyth\u0027s Skull"
+  },
+  {
+    "id": 13073,
+    "name": "Mugthol\u0027s Helm"
+  },
+  {
+    "id": 14849,
+    "name": "Sunscale Helmet"
+  },
+  {
+    "id": 14866,
+    "name": "Warleader\u0027s Crown"
+  },
+  {
+    "id": 14858,
+    "name": "Vanguard Headdress"
+  },
+  {
+    "id": 14919,
+    "name": "Jade Circlet"
+  },
+  {
+    "id": 14925,
+    "name": "Lofty Helm"
+  },
+  {
+    "id": 14935,
+    "name": "Heroic Skullcap"
+  },
+  {
+    "id": 14961,
+    "name": "High Chief\u0027s Crown"
+  },
+  {
+    "id": 14969,
+    "name": "Glorious Headdress"
+  },
+  {
+    "id": 14979,
+    "name": "Exalted Helmet"
+  },
+  {
+    "id": 16429,
+    "name": "Lieutenant Commander\u0027s Plate Helm"
+  },
+  {
+    "id": 16434,
+    "name": "Lieutenant Commander\u0027s Lamellar Headguard"
+  },
+  {
+    "id": 16474,
+    "name": "Field Marshal\u0027s Lamellar Faceguard"
+  },
+  {
+    "id": 16478,
+    "name": "Field Marshal\u0027s Plate Helm"
+  },
+  {
+    "id": 16514,
+    "name": "Champion\u0027s Plate Headguard"
+  },
+  {
+    "id": 16542,
+    "name": "Warlord\u0027s Plate Headpiece"
+  },
+  {
+    "id": 16727,
+    "name": "Lightforge Helm"
+  },
+  {
+    "id": 16731,
+    "name": "Helm of Valor"
+  },
+  {
+    "id": 16854,
+    "name": "Lawbringer Helm"
+  },
+  {
+    "id": 16866,
+    "name": "Helm of Might"
+  },
+  {
+    "id": 16963,
+    "name": "Helm of Wrath"
+  },
+  {
+    "id": 16955,
+    "name": "Judgement Crown"
+  },
+  {
+    "id": 17734,
+    "name": "Helm of the Mountain"
+  },
+  {
+    "id": 18313,
+    "name": "Helm of Awareness"
+  },
+  {
+    "id": 18480,
+    "name": "Scarab Plate Helm"
+  },
+  {
+    "id": 18718,
+    "name": "Grand Crusader\u0027s Helm"
+  },
+  {
+    "id": 19148,
+    "name": "Dark Iron Helm"
+  },
+  {
+    "id": 19372,
+    "name": "Helm of Endless Rage"
+  },
+  {
+    "id": 20263,
+    "name": "Gurubashi Helm"
+  },
+  {
+    "id": 20521,
+    "name": "Fury Visor"
+  },
+  {
+    "id": 20551,
+    "name": "Darkrune Helm"
+  },
+  {
+    "id": 21329,
+    "name": "Conqueror\u0027s Crown"
+  },
+  {
+    "id": 21387,
+    "name": "Avenger\u0027s Crown"
+  },
+  {
+    "id": 21460,
+    "name": "Helm of Domination"
+  },
+  {
+    "id": 21803,
+    "name": "Helm of the Holy Avenger"
+  },
+  {
+    "id": 21999,
+    "name": "Helm of Heroism"
+  },
+  {
+    "id": 22091,
+    "name": "Soulforge Helm"
+  },
+  {
+    "id": 22223,
+    "name": "Foreman\u0027s Head Protector"
+  },
+  {
+    "id": 22418,
+    "name": "Dreadnaught Helmet"
+  },
+  {
+    "id": 22428,
+    "name": "Redemption Headpiece"
+  },
+  {
+    "id": 22411,
+    "name": "Helm of the Executioner"
+  },
+  {
+    "id": 23019,
+    "name": "Icebane Helmet"
+  },
+  {
+    "id": 23244,
+    "name": "Champion\u0027s Plate Helm"
+  },
+  {
+    "id": 23276,
+    "name": "Lieutenant Commander\u0027s Lamellar Headguard"
+  },
+  {
+    "id": 23314,
+    "name": "Lieutenant Commander\u0027s Plate Helmet"
+  },
+  {
+    "id": 23521,
+    "name": "Ragesteel Helm"
+  },
+  {
+    "id": 23516,
+    "name": "Flamebane Helm",
+    "sockets": 3
+  },
+  {
+    "id": 23519,
+    "name": "Felsteel Helm",
+    "sockets": 3
+  },
+  {
+    "id": 23536,
+    "name": "Oathkeeper\u0027s Helm",
+    "sockets": 3
+  },
+  {
+    "id": 23535,
+    "name": "Helm of the Stalwart Defender",
+    "sockets": 3
+  },
+  {
+    "id": 24137,
+    "name": "PH Plate Ramparts Reward"
+  },
+  {
+    "id": 24545,
+    "name": "Gladiator\u0027s Plate Helm",
+    "sockets": 2
+  },
+  {
+    "id": 24922,
+    "name": "Grimscale Helm"
+  },
+  {
+    "id": 24930,
+    "name": "Ango\u0027rosh Helm"
+  },
+  {
+    "id": 24946,
+    "name": "Bloodscale Helm"
+  },
+  {
+    "id": 24938,
+    "name": "Darkcrest Helm"
+  },
+  {
+    "id": 24954,
+    "name": "Bogslayer Helm"
+  },
+  {
+    "id": 24962,
+    "name": "Khan\u0027aish Helmet"
+  },
+  {
+    "id": 24978,
+    "name": "Reaver Helmet"
+  },
+  {
+    "id": 24970,
+    "name": "Talonguard Helmet"
+  },
+  {
+    "id": 24994,
+    "name": "Warmaul Helmet"
+  },
+  {
+    "id": 25002,
+    "name": "Bloodfist Helmet"
+  },
+  {
+    "id": 24986,
+    "name": "Boulderfist Helm"
+  },
+  {
+    "id": 25010,
+    "name": "Conqueror\u0027s Helmet"
+  },
+  {
+    "id": 25018,
+    "name": "Shattered Hand Helmet"
+  },
+  {
+    "id": 25026,
+    "name": "Warlord\u0027s Iron-Helm"
+  },
+  {
+    "id": 25386,
+    "name": "Tarnished Plate Helmet"
+  },
+  {
+    "id": 25394,
+    "name": "Deteriorating Plate Helmet"
+  },
+  {
+    "id": 25530,
+    "name": "Helm of Natural Purity"
+  },
+  {
+    "id": 25589,
+    "name": "Clefthoof Helm"
+  },
+  {
+    "id": 25977,
+    "name": "Helm of Lupine Ferocity"
+  },
+  {
+    "id": 27408,
+    "name": "Hope Bearer Helm",
+    "sockets": 3
+  },
+  {
+    "id": 27455,
+    "name": "Irondrake Faceguard"
+  },
+  {
+    "id": 27486,
+    "name": "Alex Test BK Helm"
+  },
+  {
+    "id": 27505,
+    "name": "Ruby Helm of the Just"
+  },
+  {
+    "id": 27520,
+    "name": "Greathelm of the Unbreakable"
+  },
+  {
+    "id": 27704,
+    "name": "Gladiator\u0027s Lamellar Helm",
+    "sockets": 2
+  },
+  {
+    "id": 27715,
+    "name": "Circle\u0027s Stalwart Helmet",
+    "sockets": 3
+  },
+  {
+    "id": 27790,
+    "name": "Mask of Penance"
+  },
+  {
+    "id": 27881,
+    "name": "Gladiator\u0027s Scaled Helm",
+    "sockets": 2
+  },
+  {
+    "id": 28180,
+    "name": "Myrmidon\u0027s Headdress",
+    "sockets": 2
+  },
+  {
+    "id": 28225,
+    "name": "Doomplate Warhelm",
+    "sockets": 2
+  },
+  {
+    "id": 28285,
+    "name": "Helm of the Righteous",
+    "sockets": 2
+  },
+  {
+    "id": 28350,
+    "name": "Warhelm of the Bold",
+    "sockets": 2
+  },
+  {
+    "id": 28559,
+    "name": "Exorcist\u0027s Plate Helm",
+    "sockets": 1
+  },
+  {
+    "id": 28560,
+    "name": "Exorcist\u0027s Lamellar Helm",
+    "sockets": 1
+  },
+  {
+    "id": 28593,
+    "name": "Eternium Greathelm",
+    "sockets": 3
+  },
+  {
+    "id": 28681,
+    "name": "Grand Marshal\u0027s Lamellar Helm",
+    "sockets": 2
+  },
+  {
+    "id": 28701,
+    "name": "Grand Marshal\u0027s Plate Helm",
+    "sockets": 2
+  },
+  {
+    "id": 28711,
+    "name": "Grand Marshal\u0027s Scaled Helm",
+    "sockets": 2
+  },
+  {
+    "id": 28761,
+    "name": "Exorcist\u0027s Scaled Helm",
+    "sockets": 1
+  },
+  {
+    "id": 28775,
+    "name": "Thundering Greathelm"
+  },
+  {
+    "id": 28833,
+    "name": "High Warlord\u0027s Lamellar Helm",
+    "sockets": 2
+  },
+  {
+    "id": 28853,
+    "name": "High Warlord\u0027s Plate Helm",
+    "sockets": 2
+  },
+  {
+    "id": 28863,
+    "name": "High Warlord\u0027s Scaled Helm",
+    "sockets": 2
+  },
+  {
+    "id": 29011,
+    "name": "Warbringer Greathelm",
+    "sockets": 2
+  },
+  {
+    "id": 29021,
+    "name": "Warbringer Battle-Helm",
+    "sockets": 2
+  },
+  {
+    "id": 29061,
+    "name": "Justicar Diadem",
+    "sockets": 2
+  },
+  {
+    "id": 29068,
+    "name": "Justicar Faceguard",
+    "sockets": 2
+  },
+  {
+    "id": 29073,
+    "name": "Justicar Crown",
+    "sockets": 2
+  },
+  {
+    "id": 29312,
+    "name": "Cover of Righteous Fury"
+  },
+  {
+    "id": 29604,
+    "name": "Champion\u0027s Lamellar Headguard"
+  },
+  {
+    "id": 29616,
+    "name": "Warlord\u0027s Lamellar Faceguard"
+  },
+  {
+    "id": 29791,
+    "name": "Reinforced Heaume"
+  },
+  {
+    "id": 29946,
+    "name": "Invader\u0027s Greathelm"
+  },
+  {
+    "id": 29937,
+    "name": "Helm of Infinite Visions"
+  },
+  {
+    "id": 29969,
+    "name": "Sparky\u0027s Discarded Helmet"
+  },
+  {
+    "id": 29983,
+    "name": "Fel-Steel Warhelm"
+  },
+  {
+    "id": 30016,
+    "name": "X-52 Technician\u0027s Helm"
+  },
+  {
+    "id": 30048,
+    "name": "Brighthelm of Justice"
+  },
+  {
+    "id": 30115,
+    "name": "Destroyer Greathelm",
+    "sockets": 2
+  },
+  {
+    "id": 30125,
+    "name": "Crystalforge Faceguard",
+    "sockets": 2
+  },
+  {
+    "id": 30120,
+    "name": "Destroyer Battle-Helm",
+    "sockets": 2
+  },
+  {
+    "id": 30136,
+    "name": "Crystalforge Greathelm",
+    "sockets": 2
+  },
+  {
+    "id": 30131,
+    "name": "Crystalforge War-Helm",
+    "sockets": 2
+  },
+  {
+    "id": 30337,
+    "name": "Protectorate Headplate"
+  },
+  {
+    "id": 30488,
+    "name": "Merciless Gladiator\u0027s Plate Helm",
+    "sockets": 2
+  },
+  {
+    "id": 30731,
+    "name": "Faceguard of the Endless Watch",
+    "sockets": 3
+  },
+  {
+    "id": 30856,
+    "name": "Underworld Helm"
+  },
+  {
+    "id": 30961,
+    "name": "Ash-Covered Helm"
+  },
+  {
+    "id": 30974,
+    "name": "Onslaught Greathelm",
+    "sockets": 2
+  },
+  {
+    "id": 30972,
+    "name": "Onslaught Battle-Helm",
+    "sockets": 2
+  },
+  {
+    "id": 30989,
+    "name": "Lightbringer War-Helm",
+    "sockets": 2
+  },
+  {
+    "id": 30988,
+    "name": "Lightbringer Greathelm",
+    "sockets": 2
+  },
+  {
+    "id": 30987,
+    "name": "Lightbringer Faceguard",
+    "sockets": 2
+  },
+  {
+    "id": 31105,
+    "name": "Overlord\u0027s Helmet of Second Sight",
+    "sockets": 3
+  },
+  {
+    "id": 31182,
+    "name": "Legion Helm"
+  },
+  {
+    "id": 31217,
+    "name": "Crimson Beholder Eye"
+  },
+  {
+    "id": 31368,
+    "name": "Wildguard Helm"
+  },
+  {
+    "id": 31371,
+    "name": "Iceguard Helm"
+  },
+  {
+    "id": 31520,
+    "name": "Blackwing Helm"
+  },
+  {
+    "id": 31616,
+    "name": "Gladiator\u0027s Ornamented Headcover",
+    "sockets": 2
+  },
+  {
+    "id": 31576,
+    "name": "Slatesteel Helm"
+  },
+  {
+    "id": 31632,
+    "name": "Grand Marshal\u0027s Ornamented Headguard",
+    "sockets": 2
+  },
+  {
+    "id": 31637,
+    "name": "High Warlord\u0027s Ornamented Headguard",
+    "sockets": 2
+  },
+  {
+    "id": 31997,
+    "name": "Merciless Gladiator\u0027s Lamellar Helm",
+    "sockets": 2
+  },
+  {
+    "id": 32022,
+    "name": "Merciless Gladiator\u0027s Ornamented Headcover",
+    "sockets": 2
+  },
+  {
+    "id": 32041,
+    "name": "Merciless Gladiator\u0027s Scaled Helm",
+    "sockets": 2
+  },
+  {
+    "id": 32083,
+    "name": "Faceguard of Determination",
+    "sockets": 2
+  },
+  {
+    "id": 32084,
+    "name": "Helmet of the Steadfast Champion",
+    "sockets": 2
+  },
+  {
+    "id": 32354,
+    "name": "Crown of Empowered Fate",
+    "sockets": 2
+  },
+  {
+    "id": 32373,
+    "name": "Helm of the Illidari Shatterer",
+    "sockets": 2
+  },
+  {
+    "id": 32461,
+    "name": "Furious Gizmatic Goggles",
+    "sockets": 2
+  },
+  {
+    "id": 32473,
+    "name": "Tankatronic Goggles",
+    "sockets": 2
+  },
+  {
+    "id": 32472,
+    "name": "Justicebringer 2000 Specs",
+    "sockets": 2
+  },
+  {
+    "id": 32521,
+    "name": "Faceplate of the Impenetrable",
+    "sockets": 2
+  },
+  {
+    "id": 32871,
+    "name": "Horns of the Illidari",
+    "sockets": 3
+  },
+  {
+    "id": 33421,
+    "name": "Battleworn Tuskguard",
+    "sockets": 3
+  },
+  {
+    "id": 33327,
+    "name": "Mask of Introspection",
+    "sockets": 3
+  },
+  {
+    "id": 33697,
+    "name": "Vengeful Gladiator\u0027s Lamellar Helm",
+    "sockets": 2
+  },
+  {
+    "id": 33730,
+    "name": "Vengeful Gladiator\u0027s Plate Helm",
+    "sockets": 2
+  },
+  {
+    "id": 33724,
+    "name": "Vengeful Gladiator\u0027s Ornamented Headcover",
+    "sockets": 2
+  },
+  {
+    "id": 33751,
+    "name": "Vengeful Gladiator\u0027s Scaled Helm",
+    "sockets": 2
+  },
+  {
+    "id": 33808,
+    "name": "The Horseman\u0027s Helm",
+    "sockets": 3
+  },
+  {
+    "id": 33810,
+    "name": "Amani Mask of Death",
+    "sockets": 3
+  },
+  {
+    "id": 34243,
+    "name": "Helm of Burning Righteousness",
+    "sockets": 2
+  },
+  {
+    "id": 34345,
+    "name": "Crown of Anasterian",
+    "sockets": 2
+  },
+  {
+    "id": 34354,
+    "name": "Mayhem Projection Goggles",
+    "sockets": 2
+  },
+  {
+    "id": 34357,
+    "name": "Hard Khorium Goggles",
+    "sockets": 2
+  },
+  {
+    "id": 34401,
+    "name": "Helm of Uther\u0027s Resolve",
+    "sockets": 2
+  },
+  {
+    "id": 34400,
+    "name": "Crown of Dath\u0027Remar",
+    "sockets": 2
+  },
+  {
+    "id": 34795,
+    "name": "Helm of Sanctification",
+    "sockets": 3
+  },
+  {
+    "id": 35029,
+    "name": "Brutal Gladiator\u0027s Lamellar Helm",
+    "sockets": 2
+  },
+  {
+    "id": 35061,
+    "name": "Brutal Gladiator\u0027s Ornamented Headcover",
+    "sockets": 2
+  },
+  {
+    "id": 35068,
+    "name": "Brutal Gladiator\u0027s Plate Helm",
+    "sockets": 2
+  },
+  {
+    "id": 35090,
+    "name": "Brutal Gladiator\u0027s Scaled Helm",
+    "sockets": 2
+  },
+  {
+    "id": 35185,
+    "name": "Justicebringer 3000 Specs",
+    "sockets": 2
+  },
+  {
+    "id": 35409,
+    "name": "Savage Plate Helm",
+    "sockets": 2
+  },
+  {
+    "id": 35414,
+    "name": "Crusader\u0027s Scaled Helm",
+    "sockets": 2
+  },
+  {
+    "id": 35404,
+    "name": "Crusader\u0027s Ornamented Headguard",
+    "sockets": 2
+  },
+  {
+    "id": 35478,
+    "name": "Savage Plate Helm",
+    "sockets": 2
+  }
+]

@@ -1,0 +1,2478 @@
+[
+  {
+    "id": 942,
+    "name": "Freezing Band",
+    "slot": 10
+  },
+  {
+    "id": 2246,
+    "name": "Myrmidon\u0027s Signet",
+    "slot": 10
+  },
+  {
+    "id": 5266,
+    "name": "Eye of Adaegus",
+    "slot": 10
+  },
+  {
+    "id": 7337,
+    "name": "The Rock",
+    "slot": 10
+  },
+  {
+    "id": 10739,
+    "name": "Ring of Fortitude",
+    "slot": 10
+  },
+  {
+    "id": 10780,
+    "name": "Mark of Hakkar",
+    "slot": 10
+  },
+  {
+    "id": 10795,
+    "name": "Drakeclaw Band",
+    "slot": 10
+  },
+  {
+    "id": 11669,
+    "name": "Naglering",
+    "slot": 10
+  },
+  {
+    "id": 11824,
+    "name": "Cyclopean Band",
+    "slot": 10
+  },
+  {
+    "id": 11862,
+    "name": "White Bone Band",
+    "slot": 10
+  },
+  {
+    "id": 11868,
+    "name": "Choking Band",
+    "slot": 10
+  },
+  {
+    "id": 11869,
+    "name": "Sha\u0027ni\u0027s Ring",
+    "slot": 10
+  },
+  {
+    "id": 11934,
+    "name": "Emperor\u0027s Seal",
+    "slot": 10
+  },
+  {
+    "id": 11945,
+    "name": "Dark Iron Ring",
+    "slot": 10
+  },
+  {
+    "id": 11977,
+    "name": "Serpentine Loop",
+    "slot": 10
+  },
+  {
+    "id": 11976,
+    "name": "Sardonyx Knuckle",
+    "slot": 10
+  },
+  {
+    "id": 11992,
+    "name": "Vermilion Band",
+    "slot": 10
+  },
+  {
+    "id": 11980,
+    "name": "Opal Ring",
+    "slot": 10
+  },
+  {
+    "id": 11989,
+    "name": "Vanadium Loop",
+    "slot": 10
+  },
+  {
+    "id": 11979,
+    "name": "Peridot Circle",
+    "slot": 10
+  },
+  {
+    "id": 11978,
+    "name": "Jasper Link",
+    "slot": 10
+  },
+  {
+    "id": 12002,
+    "name": "Marble Circle",
+    "slot": 10
+  },
+  {
+    "id": 11991,
+    "name": "Quicksilver Ring",
+    "slot": 10
+  },
+  {
+    "id": 11990,
+    "name": "Selenium Loop",
+    "slot": 10
+  },
+  {
+    "id": 12005,
+    "name": "Granite Ring",
+    "slot": 10
+  },
+  {
+    "id": 12004,
+    "name": "Obsidian Band",
+    "slot": 10
+  },
+  {
+    "id": 12016,
+    "name": "Jungle Ring",
+    "slot": 10
+  },
+  {
+    "id": 12017,
+    "name": "Prismatic Band",
+    "slot": 10
+  },
+  {
+    "id": 12015,
+    "name": "Swamp Ring",
+    "slot": 10
+  },
+  {
+    "id": 12014,
+    "name": "Arctic Ring",
+    "slot": 10
+  },
+  {
+    "id": 12038,
+    "name": "Lagrave\u0027s Seal",
+    "slot": 10
+  },
+  {
+    "id": 12056,
+    "name": "Ring of the Heavens",
+    "slot": 10
+  },
+  {
+    "id": 12058,
+    "name": "Demonic Bone Ring",
+    "slot": 10
+  },
+  {
+    "id": 12055,
+    "name": "Stardust Band",
+    "slot": 10
+  },
+  {
+    "id": 12057,
+    "name": "Dragonscale Band",
+    "slot": 10
+  },
+  {
+    "id": 12102,
+    "name": "Ring of the Aristocrat",
+    "slot": 10
+  },
+  {
+    "id": 12344,
+    "name": "Seal of Ascension",
+    "slot": 10
+  },
+  {
+    "id": 12544,
+    "name": "Thrall\u0027s Resolve",
+    "slot": 10
+  },
+  {
+    "id": 12548,
+    "name": "Magni\u0027s Will",
+    "slot": 10
+  },
+  {
+    "id": 12545,
+    "name": "Eye of Orgrimmar",
+    "slot": 10
+  },
+  {
+    "id": 12543,
+    "name": "Songstone of Ironforge",
+    "slot": 10
+  },
+  {
+    "id": 12926,
+    "name": "Flaming Band",
+    "slot": 10
+  },
+  {
+    "id": 13001,
+    "name": "Maiden\u0027s Circle",
+    "slot": 10
+  },
+  {
+    "id": 13098,
+    "name": "Painweaver Band",
+    "slot": 10
+  },
+  {
+    "id": 13096,
+    "name": "Band of the Hierophant",
+    "slot": 10
+  },
+  {
+    "id": 13143,
+    "name": "Mark of the Dragon Lord",
+    "slot": 10
+  },
+  {
+    "id": 13178,
+    "name": "Rosewine Circle",
+    "slot": 10
+  },
+  {
+    "id": 13217,
+    "name": "Band of the Penitent",
+    "slot": 10
+  },
+  {
+    "id": 13283,
+    "name": "Magus Ring",
+    "slot": 10
+  },
+  {
+    "id": 13345,
+    "name": "Seal of Rivendare",
+    "slot": 10
+  },
+  {
+    "id": 13373,
+    "name": "Band of Flesh",
+    "slot": 10
+  },
+  {
+    "id": 13392,
+    "name": "The Postmaster\u0027s Seal",
+    "slot": 10
+  },
+  {
+    "id": 13475,
+    "name": "Dalson Family Wedding Ring",
+    "slot": 10
+  },
+  {
+    "id": 13812,
+    "name": "Ring of the Dawn",
+    "slot": 10
+  },
+  {
+    "id": 15702,
+    "name": "Chemist\u0027s Ring",
+    "slot": 10
+  },
+  {
+    "id": 15855,
+    "name": "Ring of Protection",
+    "slot": 10
+  },
+  {
+    "id": 16058,
+    "name": "Fordring\u0027s Seal",
+    "slot": 10
+  },
+  {
+    "id": 17000,
+    "name": "Band of the Wraith",
+    "slot": 10
+  },
+  {
+    "id": 17001,
+    "name": "Elemental Circle",
+    "slot": 10
+  },
+  {
+    "id": 17045,
+    "name": "Blood of the Martyr",
+    "slot": 10
+  },
+  {
+    "id": 17063,
+    "name": "Band of Accuria",
+    "slot": 10
+  },
+  {
+    "id": 17110,
+    "name": "Seal of the Archmagus",
+    "slot": 10
+  },
+  {
+    "id": 17713,
+    "name": "Blackstone Ring",
+    "slot": 10
+  },
+  {
+    "id": 17982,
+    "name": "Ragnaros Core",
+    "slot": 10
+  },
+  {
+    "id": 18022,
+    "name": "Royal Seal of Alexis",
+    "slot": 10
+  },
+  {
+    "id": 18103,
+    "name": "Band of Rumination",
+    "slot": 10
+  },
+  {
+    "id": 18302,
+    "name": "Band of Vigor",
+    "slot": 10
+  },
+  {
+    "id": 18314,
+    "name": "Ring of Demonic Guile",
+    "slot": 10
+  },
+  {
+    "id": 18315,
+    "name": "Ring of Demonic Potency",
+    "slot": 10
+  },
+  {
+    "id": 18343,
+    "name": "Petrified Band",
+    "slot": 10
+  },
+  {
+    "id": 18345,
+    "name": "Murmuring Ring",
+    "slot": 10
+  },
+  {
+    "id": 18395,
+    "name": "Emerald Flame Ring",
+    "slot": 10
+  },
+  {
+    "id": 18398,
+    "name": "Tidal Loop",
+    "slot": 10
+  },
+  {
+    "id": 18399,
+    "name": "Ocean\u0027s Breeze",
+    "slot": 10
+  },
+  {
+    "id": 18403,
+    "name": "Dragonslayer\u0027s Signet",
+    "slot": 10
+  },
+  {
+    "id": 18402,
+    "name": "Glowing Crystal Ring",
+    "slot": 10
+  },
+  {
+    "id": 18400,
+    "name": "Ring of Living Stone",
+    "slot": 10
+  },
+  {
+    "id": 18464,
+    "name": "Gordok Nose Ring",
+    "slot": 10
+  },
+  {
+    "id": 18500,
+    "name": "Tarnished Elven Ring",
+    "slot": 10
+  },
+  {
+    "id": 18522,
+    "name": "Band of the Ogre King",
+    "slot": 10
+  },
+  {
+    "id": 18543,
+    "name": "Ring of Entropy",
+    "slot": 10
+  },
+  {
+    "id": 18674,
+    "name": "Hardened Stone Band",
+    "slot": 10
+  },
+  {
+    "id": 18684,
+    "name": "Dimly Opalescent Ring",
+    "slot": 10
+  },
+  {
+    "id": 18679,
+    "name": "Frigid Ring",
+    "slot": 10
+  },
+  {
+    "id": 18701,
+    "name": "Innervating Band",
+    "slot": 10
+  },
+  {
+    "id": 18760,
+    "name": "Necromantic Band",
+    "slot": 10
+  },
+  {
+    "id": 18813,
+    "name": "Ring of Binding",
+    "slot": 10
+  },
+  {
+    "id": 18821,
+    "name": "Quick Strike Ring",
+    "slot": 10
+  },
+  {
+    "id": 18879,
+    "name": "Heavy Dark Iron Ring",
+    "slot": 10
+  },
+  {
+    "id": 19109,
+    "name": "Deep Rooted Ring",
+    "slot": 10
+  },
+  {
+    "id": 19140,
+    "name": "Cauterizing Band",
+    "slot": 10
+  },
+  {
+    "id": 19147,
+    "name": "Ring of Spell Power",
+    "slot": 10
+  },
+  {
+    "id": 19138,
+    "name": "Band of Sulfuras",
+    "slot": 10
+  },
+  {
+    "id": 19302,
+    "name": "Darkmoon Ring",
+    "slot": 10
+  },
+  {
+    "id": 19325,
+    "name": "Don Julio\u0027s Band",
+    "slot": 10
+  },
+  {
+    "id": 19376,
+    "name": "Archimtiros\u0027 Ring of Reckoning",
+    "slot": 10
+  },
+  {
+    "id": 19384,
+    "name": "Master Dragonslayer\u0027s Ring",
+    "slot": 10
+  },
+  {
+    "id": 19403,
+    "name": "Band of Forced Concentration",
+    "slot": 10
+  },
+  {
+    "id": 19382,
+    "name": "Pure Elementium Band",
+    "slot": 10
+  },
+  {
+    "id": 19397,
+    "name": "Ring of Blackrock",
+    "slot": 10
+  },
+  {
+    "id": 19434,
+    "name": "Band of Dark Dominion",
+    "slot": 10
+  },
+  {
+    "id": 19432,
+    "name": "Circle of Applied Force",
+    "slot": 10
+  },
+  {
+    "id": 19514,
+    "name": "Protector\u0027s Band",
+    "slot": 10
+  },
+  {
+    "id": 19510,
+    "name": "Legionnaire\u0027s Band",
+    "slot": 10
+  },
+  {
+    "id": 19519,
+    "name": "Advisor\u0027s Ring",
+    "slot": 10
+  },
+  {
+    "id": 19511,
+    "name": "Legionnaire\u0027s Band",
+    "slot": 10
+  },
+  {
+    "id": 19516,
+    "name": "Protector\u0027s Band",
+    "slot": 10
+  },
+  {
+    "id": 19518,
+    "name": "Advisor\u0027s Ring",
+    "slot": 10
+  },
+  {
+    "id": 19522,
+    "name": "Lorekeeper\u0027s Ring",
+    "slot": 10
+  },
+  {
+    "id": 19523,
+    "name": "Lorekeeper\u0027s Ring",
+    "slot": 10
+  },
+  {
+    "id": 19863,
+    "name": "Primalist\u0027s Seal",
+    "slot": 10
+  },
+  {
+    "id": 19873,
+    "name": "Overlord\u0027s Crimson Band",
+    "slot": 10
+  },
+  {
+    "id": 19893,
+    "name": "Zanzil\u0027s Seal",
+    "slot": 10
+  },
+  {
+    "id": 19898,
+    "name": "Seal of Jin",
+    "slot": 10
+  },
+  {
+    "id": 19905,
+    "name": "Zanzil\u0027s Band",
+    "slot": 10
+  },
+  {
+    "id": 19912,
+    "name": "Overlord\u0027s Onyx Band",
+    "slot": 10
+  },
+  {
+    "id": 19920,
+    "name": "Primalist\u0027s Band",
+    "slot": 10
+  },
+  {
+    "id": 19925,
+    "name": "Band of Jin",
+    "slot": 10
+  },
+  {
+    "id": 20006,
+    "name": "Circle of Hope",
+    "slot": 10
+  },
+  {
+    "id": 20505,
+    "name": "Chivalrous Signet",
+    "slot": 10
+  },
+  {
+    "id": 20600,
+    "name": "Malfurion\u0027s Signet Ring",
+    "slot": 10
+  },
+  {
+    "id": 20624,
+    "name": "Ring of the Unliving",
+    "slot": 10
+  },
+  {
+    "id": 20632,
+    "name": "Mindtear Band",
+    "slot": 10
+  },
+  {
+    "id": 20692,
+    "name": "Multicolored Band",
+    "slot": 10
+  },
+  {
+    "id": 20682,
+    "name": "Elemental Focus Band",
+    "slot": 10
+  },
+  {
+    "id": 20721,
+    "name": "Band of the Cultist",
+    "slot": 10
+  },
+  {
+    "id": 20783,
+    "name": "63 green shaman ring",
+    "slot": 10
+  },
+  {
+    "id": 20794,
+    "name": "90 green shaman ring",
+    "slot": 10
+  },
+  {
+    "id": 21179,
+    "name": "Band of Earthen Wrath",
+    "slot": 10
+  },
+  {
+    "id": 21196,
+    "name": "Signet Ring of the Bronze Dragonflight",
+    "slot": 10
+  },
+  {
+    "id": 21190,
+    "name": "Wrath of Cenarius",
+    "slot": 10
+  },
+  {
+    "id": 21203,
+    "name": "Signet Ring of the Bronze Dragonflight",
+    "slot": 10
+  },
+  {
+    "id": 21198,
+    "name": "Signet Ring of the Bronze Dragonflight",
+    "slot": 10
+  },
+  {
+    "id": 21182,
+    "name": "Band of Earthen Might",
+    "slot": 10
+  },
+  {
+    "id": 21205,
+    "name": "Signet Ring of the Bronze Dragonflight",
+    "slot": 10
+  },
+  {
+    "id": 21201,
+    "name": "Signet Ring of the Bronze Dragonflight",
+    "slot": 10
+  },
+  {
+    "id": 21208,
+    "name": "Signet Ring of the Bronze Dragonflight",
+    "slot": 10
+  },
+  {
+    "id": 21210,
+    "name": "Signet Ring of the Bronze Dragonflight",
+    "slot": 10
+  },
+  {
+    "id": 21189,
+    "name": "Might of Cenarius",
+    "slot": 10
+  },
+  {
+    "id": 21204,
+    "name": "Signet Ring of the Bronze Dragonflight",
+    "slot": 10
+  },
+  {
+    "id": 21202,
+    "name": "Signet Ring of the Bronze Dragonflight",
+    "slot": 10
+  },
+  {
+    "id": 21206,
+    "name": "Signet Ring of the Bronze Dragonflight",
+    "slot": 10
+  },
+  {
+    "id": 21207,
+    "name": "Signet Ring of the Bronze Dragonflight",
+    "slot": 10
+  },
+  {
+    "id": 21199,
+    "name": "Signet Ring of the Bronze Dragonflight",
+    "slot": 10
+  },
+  {
+    "id": 21209,
+    "name": "Signet Ring of the Bronze Dragonflight",
+    "slot": 10
+  },
+  {
+    "id": 21200,
+    "name": "Signet Ring of the Bronze Dragonflight",
+    "slot": 10
+  },
+  {
+    "id": 21197,
+    "name": "Signet Ring of the Bronze Dragonflight",
+    "slot": 10
+  },
+  {
+    "id": 21399,
+    "name": "Ring of the Gathering Storm",
+    "slot": 10
+  },
+  {
+    "id": 21393,
+    "name": "Signet of Unyielding Strength",
+    "slot": 10
+  },
+  {
+    "id": 21402,
+    "name": "Signet of the Unseen Path",
+    "slot": 10
+  },
+  {
+    "id": 21411,
+    "name": "Ring of Infinite Wisdom",
+    "slot": 10
+  },
+  {
+    "id": 21417,
+    "name": "Ring of Unspoken Names",
+    "slot": 10
+  },
+  {
+    "id": 21396,
+    "name": "Ring of Eternal Justice",
+    "slot": 10
+  },
+  {
+    "id": 21405,
+    "name": "Band of Veiled Shadows",
+    "slot": 10
+  },
+  {
+    "id": 21408,
+    "name": "Band of Unending Life",
+    "slot": 10
+  },
+  {
+    "id": 21414,
+    "name": "Band of Vaulted Secrets",
+    "slot": 10
+  },
+  {
+    "id": 21477,
+    "name": "Ring of Fury",
+    "slot": 10
+  },
+  {
+    "id": 21483,
+    "name": "Ring of the Desert Winds",
+    "slot": 10
+  },
+  {
+    "id": 21526,
+    "name": "Band of Icy Depths",
+    "slot": 10
+  },
+  {
+    "id": 21563,
+    "name": "Don Rodrigo\u0027s Band",
+    "slot": 10
+  },
+  {
+    "id": 21596,
+    "name": "Ring of the Godslayer",
+    "slot": 10
+  },
+  {
+    "id": 21601,
+    "name": "Ring of Emperor Vek\u0027lor",
+    "slot": 10
+  },
+  {
+    "id": 21620,
+    "name": "Ring of the Martyr",
+    "slot": 10
+  },
+  {
+    "id": 21677,
+    "name": "Ring of the Qiraji Fury",
+    "slot": 10
+  },
+  {
+    "id": 21681,
+    "name": "Ring of the Devoured",
+    "slot": 10
+  },
+  {
+    "id": 21687,
+    "name": "Ukko\u0027s Ring of Darkness",
+    "slot": 10
+  },
+  {
+    "id": 21709,
+    "name": "Ring of the Fallen God",
+    "slot": 10
+  },
+  {
+    "id": 21695,
+    "name": "Angelista\u0027s Touch",
+    "slot": 10
+  },
+  {
+    "id": 21707,
+    "name": "Ring of Swarming Thought",
+    "slot": 10
+  },
+  {
+    "id": 21768,
+    "name": "Sapphire Signet",
+    "slot": 10
+  },
+  {
+    "id": 21767,
+    "name": "Simple Opal Ring",
+    "slot": 10
+  },
+  {
+    "id": 21775,
+    "name": "Onslaught Ring",
+    "slot": 10
+  },
+  {
+    "id": 21779,
+    "name": "Band of Natural Fire",
+    "slot": 10
+  },
+  {
+    "id": 21778,
+    "name": "Ring of Bitter Shadows",
+    "slot": 10
+  },
+  {
+    "id": 21836,
+    "name": "Ritssyn\u0027s Ring of Chaos",
+    "slot": 10
+  },
+  {
+    "id": 22255,
+    "name": "Magma Forged Band",
+    "slot": 10
+  },
+  {
+    "id": 22257,
+    "name": "Bloodclot Band",
+    "slot": 10
+  },
+  {
+    "id": 22334,
+    "name": "Band of Mending",
+    "slot": 10
+  },
+  {
+    "id": 22331,
+    "name": "Band of the Steadfast Hero",
+    "slot": 10
+  },
+  {
+    "id": 22326,
+    "name": "Amalgam\u0027s Band",
+    "slot": 10
+  },
+  {
+    "id": 22339,
+    "name": "Rune Band of Wizardry",
+    "slot": 10
+  },
+  {
+    "id": 22433,
+    "name": "Don Mauricio\u0027s Band of Domination",
+    "slot": 10
+  },
+  {
+    "id": 22681,
+    "name": "Band of Piety",
+    "slot": 10
+  },
+  {
+    "id": 22680,
+    "name": "Band of Resolution",
+    "slot": 10
+  },
+  {
+    "id": 22722,
+    "name": "Seal of the Gurubashi Berserker",
+    "slot": 10
+  },
+  {
+    "id": 22721,
+    "name": "Band of Servitude",
+    "slot": 10
+  },
+  {
+    "id": 22725,
+    "name": "Band of Cenarius",
+    "slot": 10
+  },
+  {
+    "id": 22707,
+    "name": "Ramaladni\u0027s Icy Grasp",
+    "slot": 10
+  },
+  {
+    "id": 22939,
+    "name": "Band of Unanswered Prayers",
+    "slot": 10
+  },
+  {
+    "id": 22961,
+    "name": "Band of Reanimation",
+    "slot": 10
+  },
+  {
+    "id": 23018,
+    "name": "Signet of the Fallen Defender",
+    "slot": 10
+  },
+  {
+    "id": 23031,
+    "name": "Band of the Inevitable",
+    "slot": 10
+  },
+  {
+    "id": 23028,
+    "name": "Hailstone Band",
+    "slot": 10
+  },
+  {
+    "id": 23059,
+    "name": "Ring of the Dreadnaught",
+    "slot": 10
+  },
+  {
+    "id": 23037,
+    "name": "Ring of Spiritual Fervor",
+    "slot": 10
+  },
+  {
+    "id": 23025,
+    "name": "Seal of the Damned",
+    "slot": 10
+  },
+  {
+    "id": 23062,
+    "name": "Frostfire Ring",
+    "slot": 10
+  },
+  {
+    "id": 23063,
+    "name": "Plagueheart Ring",
+    "slot": 10
+  },
+  {
+    "id": 23064,
+    "name": "Ring of the Dreamwalker",
+    "slot": 10
+  },
+  {
+    "id": 23038,
+    "name": "Band of Unnatural Forces",
+    "slot": 10
+  },
+  {
+    "id": 23066,
+    "name": "Ring of Redemption",
+    "slot": 10
+  },
+  {
+    "id": 23061,
+    "name": "Ring of Faith",
+    "slot": 10
+  },
+  {
+    "id": 23065,
+    "name": "Ring of the Earthshatterer",
+    "slot": 10
+  },
+  {
+    "id": 23060,
+    "name": "Bonescythe Ring",
+    "slot": 10
+  },
+  {
+    "id": 23067,
+    "name": "Ring of the Cryptstalker",
+    "slot": 10
+  },
+  {
+    "id": 23237,
+    "name": "Ring of the Eternal Flame",
+    "slot": 10
+  },
+  {
+    "id": 24045,
+    "name": "Band of Renewal",
+    "slot": 10
+  },
+  {
+    "id": 24075,
+    "name": "Golden Draenite Ring",
+    "slot": 10
+  },
+  {
+    "id": 24076,
+    "name": "Azure Moonstone Ring",
+    "slot": 10
+  },
+  {
+    "id": 24082,
+    "name": "Khorium Inferno Band",
+    "slot": 10
+  },
+  {
+    "id": 24080,
+    "name": "Khorium Band of Frost",
+    "slot": 10
+  },
+  {
+    "id": 24079,
+    "name": "Khorium Band of Shadows",
+    "slot": 10
+  },
+  {
+    "id": 24085,
+    "name": "Khorium Band of Leaves",
+    "slot": 10
+  },
+  {
+    "id": 24074,
+    "name": "Fel Iron Blood Ring",
+    "slot": 10
+  },
+  {
+    "id": 24087,
+    "name": "Heavy Felsteel Ring",
+    "slot": 10
+  },
+  {
+    "id": 24088,
+    "name": "Delicate Eternium Ring",
+    "slot": 10
+  },
+  {
+    "id": 24086,
+    "name": "Arcane Khorium Band",
+    "slot": 10
+  },
+  {
+    "id": 24078,
+    "name": "Heavy Adamantite Ring",
+    "slot": 10
+  },
+  {
+    "id": 24089,
+    "name": "Blazing Eternium Band",
+    "slot": 10
+  },
+  {
+    "id": 24151,
+    "name": "Mok\u0027Nathal Clan Ring",
+    "slot": 10
+  },
+  {
+    "id": 24154,
+    "name": "Witching Band",
+    "slot": 10
+  },
+  {
+    "id": 25044,
+    "name": "Rubellite Ring",
+    "slot": 10
+  },
+  {
+    "id": 25049,
+    "name": "Scheelite Ring",
+    "slot": 10
+  },
+  {
+    "id": 25056,
+    "name": "Almandine Ring",
+    "slot": 10
+  },
+  {
+    "id": 25050,
+    "name": "Moldavite Ring",
+    "slot": 10
+  },
+  {
+    "id": 25051,
+    "name": "Blue Topaz Band",
+    "slot": 10
+  },
+  {
+    "id": 25045,
+    "name": "Azurite Ring",
+    "slot": 10
+  },
+  {
+    "id": 25055,
+    "name": "Alexandrite Ring",
+    "slot": 10
+  },
+  {
+    "id": 25057,
+    "name": "Amber Band",
+    "slot": 10
+  },
+  {
+    "id": 25048,
+    "name": "Smoky Quartz Ring",
+    "slot": 10
+  },
+  {
+    "id": 25052,
+    "name": "Hauyne Ring",
+    "slot": 10
+  },
+  {
+    "id": 25046,
+    "name": "Spined Ring",
+    "slot": 10
+  },
+  {
+    "id": 25047,
+    "name": "Tourmaline Loop",
+    "slot": 10
+  },
+  {
+    "id": 25053,
+    "name": "Lazuli Ring",
+    "slot": 10
+  },
+  {
+    "id": 25054,
+    "name": "Sodalite Band",
+    "slot": 10
+  },
+  {
+    "id": 25488,
+    "name": "Signet of Aeranas",
+    "slot": 10
+  },
+  {
+    "id": 25499,
+    "name": "Felblood Band",
+    "slot": 10
+  },
+  {
+    "id": 25505,
+    "name": "Carinda\u0027s Wedding Band",
+    "slot": 10
+  },
+  {
+    "id": 25485,
+    "name": "Amaan\u0027s Signet",
+    "slot": 10
+  },
+  {
+    "id": 25542,
+    "name": "Lucky Circle of the Fool",
+    "slot": 10
+  },
+  {
+    "id": 25541,
+    "name": "Cenarion Ring of Casting",
+    "slot": 10
+  },
+  {
+    "id": 25607,
+    "name": "Burning Blade Cultist Band",
+    "slot": 10
+  },
+  {
+    "id": 25606,
+    "name": "Burning Blade Cultist Band",
+    "slot": 10
+  },
+  {
+    "id": 25713,
+    "name": "Holy Healing Band",
+    "slot": 10
+  },
+  {
+    "id": 25775,
+    "name": "Ogre Slayer\u0027s Band",
+    "slot": 10
+  },
+  {
+    "id": 25785,
+    "name": "Adept\u0027s Band",
+    "slot": 10
+  },
+  {
+    "id": 25804,
+    "name": "Naliko\u0027s Revenge",
+    "slot": 10
+  },
+  {
+    "id": 25826,
+    "name": "Sage\u0027s Band",
+    "slot": 10
+  },
+  {
+    "id": 25824,
+    "name": "Farseer\u0027s Band",
+    "slot": 10
+  },
+  {
+    "id": 25779,
+    "name": "Warmaul Slayer\u0027s Band",
+    "slot": 10
+  },
+  {
+    "id": 25811,
+    "name": "Conquerer\u0027s Band",
+    "slot": 10
+  },
+  {
+    "id": 25913,
+    "name": "Ring of the Slain Anchorite",
+    "slot": 10
+  },
+  {
+    "id": 25921,
+    "name": "Sedai\u0027s Ring",
+    "slot": 10
+  },
+  {
+    "id": 25926,
+    "name": "Nexus-Stalker\u0027s Band",
+    "slot": 10
+  },
+  {
+    "id": 25962,
+    "name": "Longstrider\u0027s Loop",
+    "slot": 10
+  },
+  {
+    "id": 25963,
+    "name": "Kokorek\u0027s Signet",
+    "slot": 10
+  },
+  {
+    "id": 25991,
+    "name": "Seamless Stone Band",
+    "slot": 10
+  },
+  {
+    "id": 25990,
+    "name": "Smooth Soapstone Band",
+    "slot": 10
+  },
+  {
+    "id": 25988,
+    "name": "Glowing Alabaster Ring",
+    "slot": 10
+  },
+  {
+    "id": 27413,
+    "name": "Ring of the Exarchs",
+    "slot": 10
+  },
+  {
+    "id": 27432,
+    "name": "Broxigar\u0027s Ring of Valor",
+    "slot": 10
+  },
+  {
+    "id": 27436,
+    "name": "Iron Band of the Unbreakable",
+    "slot": 10
+  },
+  {
+    "id": 27460,
+    "name": "Reavers\u0027 Ring",
+    "slot": 10
+  },
+  {
+    "id": 27453,
+    "name": "Averinn\u0027s Ring of Slaying",
+    "slot": 10
+  },
+  {
+    "id": 27491,
+    "name": "Signet of Repose",
+    "slot": 10
+  },
+  {
+    "id": 27523,
+    "name": "Exarch\u0027s Diamond Band",
+    "slot": 10
+  },
+  {
+    "id": 27733,
+    "name": "Warden\u0027s Ring of Precision",
+    "slot": 10
+  },
+  {
+    "id": 27740,
+    "name": "Band of Ursol",
+    "slot": 10
+  },
+  {
+    "id": 27734,
+    "name": "Expedition Caster\u0027s Band",
+    "slot": 10
+  },
+  {
+    "id": 27762,
+    "name": "Weathered Band of the Swamplord",
+    "slot": 10
+  },
+  {
+    "id": 27780,
+    "name": "Ring of Fabled Hope",
+    "slot": 10
+  },
+  {
+    "id": 27761,
+    "name": "Ring of the Shadow Deeps",
+    "slot": 10
+  },
+  {
+    "id": 27784,
+    "name": "Scintillating Coral Band",
+    "slot": 10
+  },
+  {
+    "id": 27805,
+    "name": "Ring of the Silver Hand",
+    "slot": 10
+  },
+  {
+    "id": 27832,
+    "name": "Band of the Victor",
+    "slot": 10,
+    "sockets": 1
+  },
+  {
+    "id": 27830,
+    "name": "Circlet of the Victor",
+    "slot": 10,
+    "sockets": 1
+  },
+  {
+    "id": 27833,
+    "name": "Band of the Victor",
+    "slot": 10,
+    "sockets": 1
+  },
+  {
+    "id": 27822,
+    "name": "Crystal Band of Valor",
+    "slot": 10
+  },
+  {
+    "id": 27834,
+    "name": "Circlet of the Victor",
+    "slot": 10,
+    "sockets": 1
+  },
+  {
+    "id": 27869,
+    "name": "Soulpriest\u0027s Ring of Resolve",
+    "slot": 10
+  },
+  {
+    "id": 27904,
+    "name": "Resounding Ring of Glory",
+    "slot": 10
+  },
+  {
+    "id": 27895,
+    "name": "Band of Many Prisms",
+    "slot": 10
+  },
+  {
+    "id": 27925,
+    "name": "Ravenclaw Band",
+    "slot": 10
+  },
+  {
+    "id": 27996,
+    "name": "Ring of Spiritual Precision",
+    "slot": 10
+  },
+  {
+    "id": 28044,
+    "name": "Band of the Demon Stalker",
+    "slot": 10
+  },
+  {
+    "id": 28211,
+    "name": "Lieutenant\u0027s Signet of Lordaeron",
+    "slot": 10
+  },
+  {
+    "id": 28247,
+    "name": "Band of Dominance",
+    "slot": 10
+  },
+  {
+    "id": 28227,
+    "name": "Sparking Arcanite Ring",
+    "slot": 10
+  },
+  {
+    "id": 28246,
+    "name": "Band of Triumph",
+    "slot": 10
+  },
+  {
+    "id": 28265,
+    "name": "Dath\u0027Remar\u0027s Ring of Defense",
+    "slot": 10
+  },
+  {
+    "id": 28259,
+    "name": "Cosmic Lifeband",
+    "slot": 10
+  },
+  {
+    "id": 28323,
+    "name": "Ring of Umbral Doom",
+    "slot": 10
+  },
+  {
+    "id": 28327,
+    "name": "Arcane Netherband",
+    "slot": 10
+  },
+  {
+    "id": 28394,
+    "name": "Ryngo\u0027s Band of Ingenuity",
+    "slot": 10
+  },
+  {
+    "id": 28407,
+    "name": "Elementium Band of the Sentry",
+    "slot": 10
+  },
+  {
+    "id": 28510,
+    "name": "Spectral Band of Innervation",
+    "slot": 10
+  },
+  {
+    "id": 28555,
+    "name": "Seal of the Exorcist",
+    "slot": 10
+  },
+  {
+    "id": 28553,
+    "name": "Band of the Exorcist",
+    "slot": 10
+  },
+  {
+    "id": 28649,
+    "name": "Garona\u0027s Signet Ring",
+    "slot": 10
+  },
+  {
+    "id": 28661,
+    "name": "Mender\u0027s Heart-Ring",
+    "slot": 10
+  },
+  {
+    "id": 28675,
+    "name": "Shermanar Great-Ring",
+    "slot": 10
+  },
+  {
+    "id": 28730,
+    "name": "Mithril Band of the Unscarred",
+    "slot": 10
+  },
+  {
+    "id": 28757,
+    "name": "Ring of a Thousand Marks",
+    "slot": 10
+  },
+  {
+    "id": 28753,
+    "name": "Ring of Recurrence",
+    "slot": 10
+  },
+  {
+    "id": 28763,
+    "name": "Jade Ring of the Everliving",
+    "slot": 10
+  },
+  {
+    "id": 28792,
+    "name": "A\u0027dal\u0027s Signet of Defense",
+    "slot": 10
+  },
+  {
+    "id": 28793,
+    "name": "Band of Crimson Fury",
+    "slot": 10
+  },
+  {
+    "id": 28790,
+    "name": "Naaru Lightwarden\u0027s Band",
+    "slot": 10
+  },
+  {
+    "id": 28791,
+    "name": "Ring of the Recalcitrant",
+    "slot": 10
+  },
+  {
+    "id": 29126,
+    "name": "Seer\u0027s Signet",
+    "slot": 10
+  },
+  {
+    "id": 29128,
+    "name": "Lightwarden\u0027s Band",
+    "slot": 10
+  },
+  {
+    "id": 29146,
+    "name": "Band of Elemental Spirits",
+    "slot": 10
+  },
+  {
+    "id": 29160,
+    "name": "Emerald Lion Ring",
+    "slot": 10
+  },
+  {
+    "id": 29145,
+    "name": "Band of Ancestral Spirits",
+    "slot": 10
+  },
+  {
+    "id": 29159,
+    "name": "Glowing Thorium Band",
+    "slot": 10
+  },
+  {
+    "id": 29169,
+    "name": "Ring of Convalescence",
+    "slot": 10
+  },
+  {
+    "id": 29172,
+    "name": "Ashyen\u0027s Gift",
+    "slot": 10
+  },
+  {
+    "id": 29168,
+    "name": "Ancestral Band",
+    "slot": 10
+  },
+  {
+    "id": 29177,
+    "name": "A\u0027dal\u0027s Command",
+    "slot": 10
+  },
+  {
+    "id": 29277,
+    "name": "Violet Signet",
+    "slot": 10
+  },
+  {
+    "id": 29279,
+    "name": "Violet Signet of the Great Protector",
+    "slot": 10
+  },
+  {
+    "id": 29276,
+    "name": "Violet Signet",
+    "slot": 10
+  },
+  {
+    "id": 29278,
+    "name": "Violet Signet",
+    "slot": 10
+  },
+  {
+    "id": 29281,
+    "name": "Violet Signet",
+    "slot": 10
+  },
+  {
+    "id": 29280,
+    "name": "Violet Signet",
+    "slot": 10
+  },
+  {
+    "id": 29282,
+    "name": "Violet Signet",
+    "slot": 10
+  },
+  {
+    "id": 29284,
+    "name": "Violet Signet",
+    "slot": 10
+  },
+  {
+    "id": 29285,
+    "name": "Violet Signet",
+    "slot": 10
+  },
+  {
+    "id": 29286,
+    "name": "Violet Signet",
+    "slot": 10
+  },
+  {
+    "id": 29288,
+    "name": "Violet Signet",
+    "slot": 10
+  },
+  {
+    "id": 29291,
+    "name": "Violet Signet",
+    "slot": 10
+  },
+  {
+    "id": 29290,
+    "name": "Violet Signet of the Grand Restorer",
+    "slot": 10
+  },
+  {
+    "id": 29287,
+    "name": "Violet Signet of the Archmage",
+    "slot": 10
+  },
+  {
+    "id": 29289,
+    "name": "Violet Signet",
+    "slot": 10
+  },
+  {
+    "id": 29283,
+    "name": "Violet Signet of the Master Assassin",
+    "slot": 10
+  },
+  {
+    "id": 29295,
+    "name": "Band of Eternity",
+    "slot": 10
+  },
+  {
+    "id": 29298,
+    "name": "Band of Eternity",
+    "slot": 10
+  },
+  {
+    "id": 29300,
+    "name": "Band of Eternity",
+    "slot": 10
+  },
+  {
+    "id": 29302,
+    "name": "Band of Eternity",
+    "slot": 10
+  },
+  {
+    "id": 29303,
+    "name": "Band of Eternity",
+    "slot": 10
+  },
+  {
+    "id": 29294,
+    "name": "Band of Eternity",
+    "slot": 10
+  },
+  {
+    "id": 29296,
+    "name": "Band of Eternity",
+    "slot": 10
+  },
+  {
+    "id": 29306,
+    "name": "Band of Eternity",
+    "slot": 10
+  },
+  {
+    "id": 29297,
+    "name": "Band of the Eternal Defender",
+    "slot": 10
+  },
+  {
+    "id": 29305,
+    "name": "Band of the Eternal Sage",
+    "slot": 10
+  },
+  {
+    "id": 29304,
+    "name": "Band of Eternity",
+    "slot": 10
+  },
+  {
+    "id": 29301,
+    "name": "Band of the Eternal Champion",
+    "slot": 10
+  },
+  {
+    "id": 29299,
+    "name": "Band of Eternity",
+    "slot": 10
+  },
+  {
+    "id": 29308,
+    "name": "Band of Eternity",
+    "slot": 10
+  },
+  {
+    "id": 29307,
+    "name": "Band of Eternity",
+    "slot": 10
+  },
+  {
+    "id": 29320,
+    "name": "Band of the Guardian",
+    "slot": 10
+  },
+  {
+    "id": 29309,
+    "name": "Band of the Eternal Restorer",
+    "slot": 10
+  },
+  {
+    "id": 29321,
+    "name": "Time-bending Gem",
+    "slot": 10
+  },
+  {
+    "id": 29322,
+    "name": "Keeper\u0027s Ring of Piety",
+    "slot": 10
+  },
+  {
+    "id": 29323,
+    "name": "Andormu\u0027s Tear",
+    "slot": 10
+  },
+  {
+    "id": 29352,
+    "name": "Cobalt Band of Tyrigosa",
+    "slot": 10
+  },
+  {
+    "id": 29373,
+    "name": "Band of Halos",
+    "slot": 10
+  },
+  {
+    "id": 29384,
+    "name": "Ring of Unyielding Force",
+    "slot": 10
+  },
+  {
+    "id": 29367,
+    "name": "Ring of Cryptic Dreams",
+    "slot": 10
+  },
+  {
+    "id": 29379,
+    "name": "Ring of Arathi Warlords",
+    "slot": 10
+  },
+  {
+    "id": 29398,
+    "name": "Circle of Banishing",
+    "slot": 10
+  },
+  {
+    "id": 29793,
+    "name": "Signet of the Violet Tower",
+    "slot": 10
+  },
+  {
+    "id": 29814,
+    "name": "Celestial Jewel Ring",
+    "slot": 10
+  },
+  {
+    "id": 29922,
+    "name": "Band of Al\u0027ar",
+    "slot": 10
+  },
+  {
+    "id": 29920,
+    "name": "Phoenix-Ring of Rebirth",
+    "slot": 10
+  },
+  {
+    "id": 29997,
+    "name": "Band of the Ranger-General",
+    "slot": 10
+  },
+  {
+    "id": 30006,
+    "name": "Wind Trader\u0027s Band",
+    "slot": 10
+  },
+  {
+    "id": 30028,
+    "name": "Seventh Ring of the Tirisfalen",
+    "slot": 10
+  },
+  {
+    "id": 30061,
+    "name": "Ancestral Ring of Conquest",
+    "slot": 10
+  },
+  {
+    "id": 30052,
+    "name": "Ring of Lethality",
+    "slot": 10
+  },
+  {
+    "id": 30083,
+    "name": "Ring of Sundered Souls",
+    "slot": 10
+  },
+  {
+    "id": 30109,
+    "name": "Ring of Endless Coils",
+    "slot": 10
+  },
+  {
+    "id": 30110,
+    "name": "Coral Band of the Revived",
+    "slot": 10
+  },
+  {
+    "id": 30339,
+    "name": "Protectorate Assassin\u0027s Ring",
+    "slot": 10
+  },
+  {
+    "id": 30365,
+    "name": "Overseer\u0027s Signet",
+    "slot": 10
+  },
+  {
+    "id": 30366,
+    "name": "Manastorm Band",
+    "slot": 10
+  },
+  {
+    "id": 30422,
+    "name": "Diamond Focus Ring",
+    "slot": 10
+  },
+  {
+    "id": 30667,
+    "name": "Ring of Unrelenting Storms",
+    "slot": 10
+  },
+  {
+    "id": 30738,
+    "name": "Ring of Reciprocity",
+    "slot": 10
+  },
+  {
+    "id": 30736,
+    "name": "Ring of Flowing Light",
+    "slot": 10
+  },
+  {
+    "id": 30825,
+    "name": "Ring of Arcane Shielding",
+    "slot": 10
+  },
+  {
+    "id": 30834,
+    "name": "Shapeshifter\u0027s Signet",
+    "slot": 10
+  },
+  {
+    "id": 30860,
+    "name": "Kaylaan\u0027s Signet",
+    "slot": 10
+  },
+  {
+    "id": 30973,
+    "name": "Band of Anguish",
+    "slot": 10
+  },
+  {
+    "id": 31076,
+    "name": "Spellsword\u0027s Mark of the Redemption",
+    "slot": 10
+  },
+  {
+    "id": 31075,
+    "name": "Evoker\u0027s Mark of the Redemption",
+    "slot": 10
+  },
+  {
+    "id": 31077,
+    "name": "Slayer\u0027s Mark of the Redemption",
+    "slot": 10
+  },
+  {
+    "id": 31078,
+    "name": "Protector\u0027s Mark of the Redemption",
+    "slot": 10
+  },
+  {
+    "id": 31203,
+    "name": "Arcane Loop",
+    "slot": 10
+  },
+  {
+    "id": 31238,
+    "name": "Dragonbone Ring",
+    "slot": 10
+  },
+  {
+    "id": 31258,
+    "name": "Band of Sorrow",
+    "slot": 10
+  },
+  {
+    "id": 31277,
+    "name": "Pathfinder\u0027s Band",
+    "slot": 10
+  },
+  {
+    "id": 31290,
+    "name": "Band of Dominion",
+    "slot": 10
+  },
+  {
+    "id": 31319,
+    "name": "Band of Impenetrable Defenses",
+    "slot": 10
+  },
+  {
+    "id": 31326,
+    "name": "Truestrike Ring",
+    "slot": 10
+  },
+  {
+    "id": 31339,
+    "name": "Lola\u0027s Eve",
+    "slot": 10
+  },
+  {
+    "id": 31380,
+    "name": "Acrobat\u0027s Mark of the Sha\u0027tar",
+    "slot": 10
+  },
+  {
+    "id": 31381,
+    "name": "Aggressor\u0027s Mark of the Sha\u0027tar",
+    "slot": 10
+  },
+  {
+    "id": 31382,
+    "name": "Mage\u0027s Mark of the Sha\u0027tar",
+    "slot": 10
+  },
+  {
+    "id": 31383,
+    "name": "Spiritualist\u0027s Mark of the Sha\u0027tar",
+    "slot": 10
+  },
+  {
+    "id": 31399,
+    "name": "The Natural Ward",
+    "slot": 10
+  },
+  {
+    "id": 31398,
+    "name": "The Frozen Eye",
+    "slot": 10
+  },
+  {
+    "id": 31523,
+    "name": "Treebole\u0027s Hoop",
+    "slot": 10
+  },
+  {
+    "id": 31528,
+    "name": "Ring of the Stonebark",
+    "slot": 10
+  },
+  {
+    "id": 31526,
+    "name": "Raven\u0027s Wood Exorciser\u0027s Band",
+    "slot": 10
+  },
+  {
+    "id": 31527,
+    "name": "Leafbeard Ring",
+    "slot": 10
+  },
+  {
+    "id": 31728,
+    "name": "Heirloom Signet of Willpower",
+    "slot": 10
+  },
+  {
+    "id": 31730,
+    "name": "Heirloom Signet of Convalescence",
+    "slot": 10
+  },
+  {
+    "id": 31729,
+    "name": "Heirloom Signet of Valor",
+    "slot": 10
+  },
+  {
+    "id": 31746,
+    "name": "Phoenix-fire Band",
+    "slot": 10
+  },
+  {
+    "id": 31791,
+    "name": "Wildlord\u0027s Band",
+    "slot": 10
+  },
+  {
+    "id": 31820,
+    "name": "Blessed Signet Ring",
+    "slot": 10
+  },
+  {
+    "id": 31919,
+    "name": "Nexus-Prince\u0027s Ring of Balance",
+    "slot": 10
+  },
+  {
+    "id": 31920,
+    "name": "Shaffar\u0027s Band of Brutality",
+    "slot": 10
+  },
+  {
+    "id": 31923,
+    "name": "Band of the Crystalline Void",
+    "slot": 10
+  },
+  {
+    "id": 31929,
+    "name": "Enigmatic Band",
+    "slot": 10
+  },
+  {
+    "id": 31924,
+    "name": "Yor\u0027s Revenge",
+    "slot": 10
+  },
+  {
+    "id": 31927,
+    "name": "Living Band",
+    "slot": 10
+  },
+  {
+    "id": 31922,
+    "name": "Ring of Conflict Survival",
+    "slot": 10
+  },
+  {
+    "id": 31926,
+    "name": "Frigid Band",
+    "slot": 10
+  },
+  {
+    "id": 31943,
+    "name": "Ethereum Band",
+    "slot": 10
+  },
+  {
+    "id": 31925,
+    "name": "Fiery Band",
+    "slot": 10
+  },
+  {
+    "id": 31921,
+    "name": "Yor\u0027s Collapsing Band",
+    "slot": 10
+  },
+  {
+    "id": 31928,
+    "name": "Dark Band",
+    "slot": 10
+  },
+  {
+    "id": 32081,
+    "name": "Eye of the Stalker",
+    "slot": 10
+  },
+  {
+    "id": 32238,
+    "name": "Ring of Calming Waves",
+    "slot": 10
+  },
+  {
+    "id": 32247,
+    "name": "Ring of Captured Storms",
+    "slot": 10
+  },
+  {
+    "id": 32261,
+    "name": "Band of the Abyssal Lord",
+    "slot": 10
+  },
+  {
+    "id": 32266,
+    "name": "Ring of Deceitful Intent",
+    "slot": 10
+  },
+  {
+    "id": 32335,
+    "name": "Unstoppable Aggressor\u0027s Ring",
+    "slot": 10
+  },
+  {
+    "id": 32526,
+    "name": "Band of Devastation",
+    "slot": 10
+  },
+  {
+    "id": 32514,
+    "name": "Skettis Band",
+    "slot": 10
+  },
+  {
+    "id": 32497,
+    "name": "Stormrage Signet Ring",
+    "slot": 10
+  },
+  {
+    "id": 32528,
+    "name": "Blessed Band of Karabor",
+    "slot": 10
+  },
+  {
+    "id": 32535,
+    "name": "Gift of the Talonpriests",
+    "slot": 10
+  },
+  {
+    "id": 32527,
+    "name": "Ring of Ancient Knowledge",
+    "slot": 10
+  },
+  {
+    "id": 32664,
+    "name": "Dreamcrystal Band",
+    "slot": 10
+  },
+  {
+    "id": 32772,
+    "name": "Brilliant Pearl Band",
+    "slot": 10
+  },
+  {
+    "id": 32774,
+    "name": "The Black Pearl",
+    "slot": 10
+  },
+  {
+    "id": 32779,
+    "name": "Band of Frigid Elements",
+    "slot": 10
+  },
+  {
+    "id": 32942,
+    "name": "Ring of the Overseer",
+    "slot": 10
+  },
+  {
+    "id": 32941,
+    "name": "Corruptor\u0027s Signet",
+    "slot": 10
+  },
+  {
+    "id": 33054,
+    "name": "The Seal of Danzalar",
+    "slot": 10
+  },
+  {
+    "id": 33056,
+    "name": "Veteran\u0027s Band of Dominance",
+    "slot": 10
+  },
+  {
+    "id": 33064,
+    "name": "Veteran\u0027s Band of Salvation",
+    "slot": 10
+  },
+  {
+    "id": 33058,
+    "name": "Band of the Vigilant",
+    "slot": 10
+  },
+  {
+    "id": 33055,
+    "name": "Band of Vile Aggression",
+    "slot": 10
+  },
+  {
+    "id": 33057,
+    "name": "Veteran\u0027s Band of Triumph",
+    "slot": 10
+  },
+  {
+    "id": 33097,
+    "name": "Mushroom Ring",
+    "slot": 10
+  },
+  {
+    "id": 33194,
+    "name": "Ancient Ceremonial Band",
+    "slot": 10
+  },
+  {
+    "id": 33196,
+    "name": "Softly-Glowing Ring",
+    "slot": 10
+  },
+  {
+    "id": 33193,
+    "name": "Mossy Band",
+    "slot": 10
+  },
+  {
+    "id": 33195,
+    "name": "Cracked Stone Band",
+    "slot": 10
+  },
+  {
+    "id": 33293,
+    "name": "Signet of Ancient Magics",
+    "slot": 10,
+    "sockets": 1
+  },
+  {
+    "id": 33496,
+    "name": "Signet of Primal Wrath",
+    "slot": 10
+  },
+  {
+    "id": 33497,
+    "name": "Mana Attuned Band",
+    "slot": 10
+  },
+  {
+    "id": 33500,
+    "name": "Signet of Eternal Life",
+    "slot": 10
+  },
+  {
+    "id": 33498,
+    "name": "Signet of the Quiet Forest",
+    "slot": 10
+  },
+  {
+    "id": 33499,
+    "name": "Signet of the Last Defender",
+    "slot": 10
+  },
+  {
+    "id": 33853,
+    "name": "Vindicator\u0027s Band of Dominance",
+    "slot": 10
+  },
+  {
+    "id": 33919,
+    "name": "Vindicator\u0027s Band of Triumph",
+    "slot": 10
+  },
+  {
+    "id": 33918,
+    "name": "Vindicator\u0027s Band of Salvation",
+    "slot": 10
+  },
+  {
+    "id": 33957,
+    "name": "Witches Band",
+    "slot": 10
+  },
+  {
+    "id": 33959,
+    "name": "Ring of Ghoulish Delight",
+    "slot": 10
+  },
+  {
+    "id": 33958,
+    "name": "The Horseman\u0027s Signet Ring",
+    "slot": 10
+  },
+  {
+    "id": 34075,
+    "name": "Ring of Ghoulish Delight",
+    "slot": 10
+  },
+  {
+    "id": 34073,
+    "name": "The Horseman\u0027s Signet Ring",
+    "slot": 10
+  },
+  {
+    "id": 34074,
+    "name": "Witches Band",
+    "slot": 10
+  },
+  {
+    "id": 34166,
+    "name": "Band of Lucent Beams",
+    "slot": 10
+  },
+  {
+    "id": 34189,
+    "name": "Band of Ruinous Delight",
+    "slot": 10
+  },
+  {
+    "id": 34213,
+    "name": "Ring of Hardened Resolve",
+    "slot": 10
+  },
+  {
+    "id": 34230,
+    "name": "Ring of Omnipotence",
+    "slot": 10
+  },
+  {
+    "id": 34362,
+    "name": "Loop of Forged Power",
+    "slot": 10
+  },
+  {
+    "id": 34363,
+    "name": "Ring of Flowing Life",
+    "slot": 10
+  },
+  {
+    "id": 34361,
+    "name": "Hard Khorium Band",
+    "slot": 10
+  },
+  {
+    "id": 34625,
+    "name": "Kharmaa\u0027s Ring of Fate",
+    "slot": 10,
+    "sockets": 1
+  },
+  {
+    "id": 34704,
+    "name": "Band of Arcane Alacrity",
+    "slot": 10
+  },
+  {
+    "id": 34706,
+    "name": "Band of Determination",
+    "slot": 10
+  },
+  {
+    "id": 34712,
+    "name": "Prismatic Signet",
+    "slot": 10
+  },
+  {
+    "id": 34798,
+    "name": "Band of Celerity",
+    "slot": 10
+  },
+  {
+    "id": 34837,
+    "name": "The 2 Ring",
+    "slot": 10
+  },
+  {
+    "id": 34890,
+    "name": "Anveena\u0027s Touch",
+    "slot": 10
+  },
+  {
+    "id": 34887,
+    "name": "Angelista\u0027s Revenge",
+    "slot": 10
+  },
+  {
+    "id": 34889,
+    "name": "Fused Nethergon Band",
+    "slot": 10
+  },
+  {
+    "id": 34888,
+    "name": "Ring of the Stalwart Protector",
+    "slot": 10
+  },
+  {
+    "id": 35130,
+    "name": "Guardian\u0027s Band of Salvation",
+    "slot": 10
+  },
+  {
+    "id": 35129,
+    "name": "Guardian\u0027s Band of Dominance",
+    "slot": 10
+  },
+  {
+    "id": 35131,
+    "name": "Guardian\u0027s Band of Triumph",
+    "slot": 10
+  },
+  {
+    "id": 35282,
+    "name": "Sin\u0027dorei Band of Dominance",
+    "slot": 10
+  },
+  {
+    "id": 35283,
+    "name": "Sin\u0027dorei Band of Salvation",
+    "slot": 10
+  },
+  {
+    "id": 35284,
+    "name": "Sin\u0027dorei Band of Triumph",
+    "slot": 10
+  },
+  {
+    "id": 35320,
+    "name": "Vindicator\u0027s Band of Subjugation",
+    "slot": 10
+  },
+  {
+    "id": 35733,
+    "name": "Ring of Harmonic Beauty",
+    "slot": 10
+  },
+  {
+    "id": 37927,
+    "name": "Guardian\u0027s Band of Subjugation",
+    "slot": 10
+  }
+]

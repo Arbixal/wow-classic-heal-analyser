@@ -61,6 +61,7 @@ export class GridRow extends Component {
         characterData[DataPoints.Name] = character.name;
         characterData[DataPoints.Deaths] = this._getDeathCount(character);
 
+        characterData[DataPoints.GemsMissing] = this._getMissingGemCount(character);
         characterData[DataPoints.GemsCommon] = this._getGemCount(character, rarity.Common);
         characterData[DataPoints.GemsUncommon] = this._getGemCount(character, rarity.Uncommon);
         characterData[DataPoints.GemsRare] = this._getGemCount(character, rarity.Rare);
@@ -311,6 +312,16 @@ export class GridRow extends Component {
         return activeBuffs;
     }
 
+    _getMissingGemCount(character) {
+        const {gems} = character;
+
+        if (!gems) {
+            return null;
+        }
+
+        return gems[0].count;
+    }
+
     _getGemCount(character, rarity) {
         const {gems} = character;
 
@@ -338,7 +349,7 @@ export class GridRow extends Component {
             return [];
         }
 
-        let gemList = Object.values(gems);
+        let gemList = Object.values(gems).filter(x => x.id !== 0);
 
         return gemList.reduce((gemIcons, gem) => {
 

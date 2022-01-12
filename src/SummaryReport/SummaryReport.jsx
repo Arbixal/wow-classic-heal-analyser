@@ -328,6 +328,9 @@ class SummaryReport extends Component {
                                         cssClass="enchants" />
                         </GridColumnGroup>
                         <GridColumnGroup id={GroupKeys.Gems} label="Gems" cssClass="odd-colgroup">
+                            <GridColumn field={DataPoints.GemsMissing} label="Nil"
+                                        cssClass="gems empty"
+                                        visibility={(ctx) => ctx.collapsed === true} />
                             <GridColumn field={DataPoints.GemsCommon} label="Co"
                                         cssClass="gems common"
                                         visibility={(ctx) => ctx.collapsed === true} />

@@ -1,0 +1,1102 @@
+[
+  {
+    "id": 3999,
+    "name": "Laminated Scale Armor",
+    "slot": 4
+  },
+  {
+    "id": 4015,
+    "name": "Sterling Chain Armor",
+    "slot": 4
+  },
+  {
+    "id": 8126,
+    "name": "Myrmidon\u0027s Breastplate",
+    "slot": 4
+  },
+  {
+    "id": 8265,
+    "name": "Ebonhold Armor",
+    "slot": 4
+  },
+  {
+    "id": 8303,
+    "name": "Hero\u0027s Breastplate",
+    "slot": 4
+  },
+  {
+    "id": 8367,
+    "name": "Dragonscale Breastplate",
+    "slot": 4
+  },
+  {
+    "id": 9650,
+    "name": "Honorguard Chestpiece",
+    "slot": 4
+  },
+  {
+    "id": 10077,
+    "name": "Lord\u0027s Breastplate",
+    "slot": 4
+  },
+  {
+    "id": 10118,
+    "name": "Ornate Breastplate",
+    "slot": 4
+  },
+  {
+    "id": 10157,
+    "name": "Mercurial Breastplate",
+    "slot": 4
+  },
+  {
+    "id": 10193,
+    "name": "Crusader\u0027s Armor",
+    "slot": 4
+  },
+  {
+    "id": 10230,
+    "name": "Engraved Breastplate",
+    "slot": 4
+  },
+  {
+    "id": 10266,
+    "name": "Masterwork Breastplate",
+    "slot": 4
+  },
+  {
+    "id": 10784,
+    "name": "Atal\u0027ai Breastplate",
+    "slot": 4
+  },
+  {
+    "id": 11194,
+    "name": "Prismscale Hauberk",
+    "slot": 4
+  },
+  {
+    "id": 11606,
+    "name": "Dark Iron Mail",
+    "slot": 4
+  },
+  {
+    "id": 11726,
+    "name": "Savage Gladiator Chain",
+    "slot": 4
+  },
+  {
+    "id": 11820,
+    "name": "Royal Decorated Armor",
+    "slot": 4
+  },
+  {
+    "id": 11926,
+    "name": "Deathdealer Breastplate",
+    "slot": 4
+  },
+  {
+    "id": 12049,
+    "name": "Splintsteel Armor",
+    "slot": 4
+  },
+  {
+    "id": 12108,
+    "name": "Basaltscale Armor",
+    "slot": 4
+  },
+  {
+    "id": 12415,
+    "name": "Radiant Breastplate",
+    "slot": 4
+  },
+  {
+    "id": 12615,
+    "name": "Savage Mail Tunic",
+    "slot": 4
+  },
+  {
+    "id": 12624,
+    "name": "Wildthorn Mail",
+    "slot": 4
+  },
+  {
+    "id": 12641,
+    "name": "Invulnerable Mail",
+    "slot": 4
+  },
+  {
+    "id": 13090,
+    "name": "Breastplate of the Chosen",
+    "slot": 4
+  },
+  {
+    "id": 13123,
+    "name": "Dreamwalker Armor",
+    "slot": 4
+  },
+  {
+    "id": 14536,
+    "name": "Bonebrace Hauberk",
+    "slot": 4
+  },
+  {
+    "id": 14611,
+    "name": "Bloodmail Hauberk",
+    "slot": 4
+  },
+  {
+    "id": 14789,
+    "name": "Protector Breastplate",
+    "slot": 4
+  },
+  {
+    "id": 14798,
+    "name": "Bloodlust Breastplate",
+    "slot": 4
+  },
+  {
+    "id": 14811,
+    "name": "Warstrike Chestguard",
+    "slot": 4
+  },
+  {
+    "id": 15050,
+    "name": "Black Dragonscale Breastplate",
+    "slot": 4
+  },
+  {
+    "id": 15045,
+    "name": "Green Dragonscale Breastplate",
+    "slot": 4
+  },
+  {
+    "id": 15047,
+    "name": "Red Dragonscale Breastplate",
+    "slot": 4
+  },
+  {
+    "id": 15048,
+    "name": "Blue Dragonscale Breastplate",
+    "slot": 4
+  },
+  {
+    "id": 15076,
+    "name": "Heavy Scorpid Vest",
+    "slot": 4
+  },
+  {
+    "id": 15622,
+    "name": "Gryphon Mail Breastplate",
+    "slot": 4
+  },
+  {
+    "id": 15650,
+    "name": "Merciless Surcoat",
+    "slot": 4
+  },
+  {
+    "id": 15631,
+    "name": "Formidable Chestpiece",
+    "slot": 4
+  },
+  {
+    "id": 15640,
+    "name": "Ironhide Breastplate",
+    "slot": 4
+  },
+  {
+    "id": 15660,
+    "name": "Impenetrable Breastplate",
+    "slot": 4
+  },
+  {
+    "id": 15669,
+    "name": "Magnificent Breastplate",
+    "slot": 4
+  },
+  {
+    "id": 15680,
+    "name": "Triumphant Chestpiece",
+    "slot": 4
+  },
+  {
+    "id": 15787,
+    "name": "Willow Band Hauberk",
+    "slot": 4
+  },
+  {
+    "id": 15827,
+    "name": "Jadescale Breastplate",
+    "slot": 4
+  },
+  {
+    "id": 16425,
+    "name": "Knight-Captain\u0027s Chain Hauberk",
+    "slot": 4
+  },
+  {
+    "id": 16466,
+    "name": "Field Marshal\u0027s Chain Breastplate",
+    "slot": 4
+  },
+  {
+    "id": 16525,
+    "name": "Legionnaire\u0027s Chain Breastplate",
+    "slot": 4
+  },
+  {
+    "id": 16522,
+    "name": "Legionnaire\u0027s Mail Chestpiece",
+    "slot": 4
+  },
+  {
+    "id": 16577,
+    "name": "Warlord\u0027s Mail Armor",
+    "slot": 4
+  },
+  {
+    "id": 16565,
+    "name": "Warlord\u0027s Chain Chestpiece",
+    "slot": 4
+  },
+  {
+    "id": 16666,
+    "name": "Vest of Elements",
+    "slot": 4
+  },
+  {
+    "id": 16674,
+    "name": "Beaststalker\u0027s Tunic",
+    "slot": 4
+  },
+  {
+    "id": 16845,
+    "name": "Giantstalker\u0027s Breastplate",
+    "slot": 4
+  },
+  {
+    "id": 16841,
+    "name": "Earthfury Vestments",
+    "slot": 4
+  },
+  {
+    "id": 16950,
+    "name": "Breastplate of Ten Storms",
+    "slot": 4
+  },
+  {
+    "id": 16942,
+    "name": "Dragonstalker\u0027s Breastplate",
+    "slot": 4
+  },
+  {
+    "id": 18530,
+    "name": "Ogre Forged Hauberk",
+    "slot": 4
+  },
+  {
+    "id": 19690,
+    "name": "Bloodsoul Breastplate",
+    "slot": 4
+  },
+  {
+    "id": 19828,
+    "name": "Zandalar Augur\u0027s Hauberk",
+    "slot": 4
+  },
+  {
+    "id": 19904,
+    "name": "Runed Bloodstained Hauberk",
+    "slot": 4
+  },
+  {
+    "id": 20380,
+    "name": "Dreamscale Breastplate",
+    "slot": 4
+  },
+  {
+    "id": 20479,
+    "name": "Spitfire Breastplate",
+    "slot": 4
+  },
+  {
+    "id": 20478,
+    "name": "Sandstalker Breastplate",
+    "slot": 4
+  },
+  {
+    "id": 20775,
+    "name": "63 green shaman vest",
+    "slot": 4
+  },
+  {
+    "id": 20795,
+    "name": "90 green shaman vest",
+    "slot": 4
+  },
+  {
+    "id": 21320,
+    "name": "Vest of the Den Watcher",
+    "slot": 4
+  },
+  {
+    "id": 21374,
+    "name": "Stormcaller\u0027s Hauberk",
+    "slot": 4
+  },
+  {
+    "id": 21370,
+    "name": "Striker\u0027s Hauberk",
+    "slot": 4
+  },
+  {
+    "id": 22060,
+    "name": "Beastmaster\u0027s Tunic",
+    "slot": 4
+  },
+  {
+    "id": 22102,
+    "name": "Vest of The Five Thunders",
+    "slot": 4
+  },
+  {
+    "id": 22191,
+    "name": "Obsidian Mail Tunic",
+    "slot": 4
+  },
+  {
+    "id": 22436,
+    "name": "Cryptstalker Tunic",
+    "slot": 4
+  },
+  {
+    "id": 22464,
+    "name": "Earthshatter Tunic",
+    "slot": 4
+  },
+  {
+    "id": 22664,
+    "name": "Icy Scale Breastplate",
+    "slot": 4
+  },
+  {
+    "id": 22874,
+    "name": "Legionnaire\u0027s Chain Hauberk",
+    "slot": 4
+  },
+  {
+    "id": 22876,
+    "name": "Legionnaire\u0027s Mail Hauberk",
+    "slot": 4
+  },
+  {
+    "id": 23088,
+    "name": "Chestguard of Undead Slaying",
+    "slot": 4
+  },
+  {
+    "id": 23292,
+    "name": "Knight-Captain\u0027s Chain Hauberk",
+    "slot": 4
+  },
+  {
+    "id": 23490,
+    "name": "Fel Iron Chain Tunic",
+    "slot": 4
+  },
+  {
+    "id": 23527,
+    "name": "Earthpeace Breastplate",
+    "slot": 4
+  },
+  {
+    "id": 23564,
+    "name": "Twisting Nether Chain Shirt",
+    "slot": 4,
+    "sockets": 3
+  },
+  {
+    "id": 23563,
+    "name": "Nether Chain Shirt",
+    "slot": 4,
+    "sockets": 3
+  },
+  {
+    "id": 23565,
+    "name": "Embrace of the Twisting Nether",
+    "slot": 4,
+    "sockets": 3
+  },
+  {
+    "id": 24357,
+    "name": "Vest of Living Lightning",
+    "slot": 4,
+    "sockets": 3
+  },
+  {
+    "id": 24465,
+    "name": "Shamblehide Chestguard",
+    "slot": 4,
+    "sockets": 3
+  },
+  {
+    "id": 24808,
+    "name": "Unyielding Chain Vest",
+    "slot": 4
+  },
+  {
+    "id": 24816,
+    "name": "Felstone Chain Vest",
+    "slot": 4
+  },
+  {
+    "id": 24832,
+    "name": "Nexus-Strider Breastplate",
+    "slot": 4
+  },
+  {
+    "id": 24824,
+    "name": "Netherstalker Armor",
+    "slot": 4
+  },
+  {
+    "id": 24840,
+    "name": "Wrathfin Armor",
+    "slot": 4
+  },
+  {
+    "id": 24856,
+    "name": "Marshcreeper Fen-Vest",
+    "slot": 4
+  },
+  {
+    "id": 24872,
+    "name": "Ironspine Chain Vest",
+    "slot": 4
+  },
+  {
+    "id": 24896,
+    "name": "Sundered Chestpiece",
+    "slot": 4
+  },
+  {
+    "id": 24880,
+    "name": "Der\u0027izu Chestpiece",
+    "slot": 4
+  },
+  {
+    "id": 24888,
+    "name": "Skettis Chestpiece",
+    "slot": 4
+  },
+  {
+    "id": 24864,
+    "name": "Blood Knight Breastplate",
+    "slot": 4
+  },
+  {
+    "id": 24848,
+    "name": "Fenclaw Armor",
+    "slot": 4
+  },
+  {
+    "id": 24904,
+    "name": "Talhide Chestpiece",
+    "slot": 4
+  },
+  {
+    "id": 24912,
+    "name": "Netherstorm Chestpiece",
+    "slot": 4
+  },
+  {
+    "id": 25365,
+    "name": "Eroded Mail Armor",
+    "slot": 4
+  },
+  {
+    "id": 25373,
+    "name": "Corroded Mail Armor",
+    "slot": 4
+  },
+  {
+    "id": 25512,
+    "name": "Tribal Hauberk",
+    "slot": 4
+  },
+  {
+    "id": 25556,
+    "name": "Oversized Ogre Hauberk",
+    "slot": 4
+  },
+  {
+    "id": 25612,
+    "name": "Daggerfen Mail",
+    "slot": 4
+  },
+  {
+    "id": 25614,
+    "name": "Feralfen Beastmaster\u0027s Hauberk",
+    "slot": 4
+  },
+  {
+    "id": 25657,
+    "name": "Felscale Breastplate",
+    "slot": 4
+  },
+  {
+    "id": 25660,
+    "name": "Scaled Draenic Vest",
+    "slot": 4
+  },
+  {
+    "id": 25696,
+    "name": "Felstalker Breastplate",
+    "slot": 4,
+    "sockets": 3
+  },
+  {
+    "id": 25980,
+    "name": "Aerodynamic Scaled Vest",
+    "slot": 4
+  },
+  {
+    "id": 25997,
+    "name": "Gladiator\u0027s Linked Armor",
+    "slot": 4,
+    "sockets": 3
+  },
+  {
+    "id": 27469,
+    "name": "Gladiator\u0027s Mail Armor",
+    "slot": 4,
+    "sockets": 3
+  },
+  {
+    "id": 27823,
+    "name": "Shard Encrusted Breastplate",
+    "slot": 4
+  },
+  {
+    "id": 27912,
+    "name": "Harness of the Deep Currents",
+    "slot": 4
+  },
+  {
+    "id": 28057,
+    "name": "Bonechewer Berserker\u0027s Vest",
+    "slot": 4
+  },
+  {
+    "id": 28186,
+    "name": "Laughing Skull Battle-Harness",
+    "slot": 4,
+    "sockets": 3
+  },
+  {
+    "id": 28231,
+    "name": "Tidefury Chestpiece",
+    "slot": 4,
+    "sockets": 3
+  },
+  {
+    "id": 28228,
+    "name": "Beast Lord Cuirass",
+    "slot": 4,
+    "sockets": 3
+  },
+  {
+    "id": 28334,
+    "name": "Gladiator\u0027s Chain Armor",
+    "slot": 4,
+    "sockets": 3
+  },
+  {
+    "id": 28391,
+    "name": "Worldfire Chestguard",
+    "slot": 4
+  },
+  {
+    "id": 28401,
+    "name": "Hauberk of Desolation",
+    "slot": 4,
+    "sockets": 3
+  },
+  {
+    "id": 28599,
+    "name": "Scaled Breastplate of Carnage",
+    "slot": 4
+  },
+  {
+    "id": 28613,
+    "name": "Grand Marshal\u0027s Chain Armor",
+    "slot": 4,
+    "sockets": 3
+  },
+  {
+    "id": 28689,
+    "name": "Grand Marshal\u0027s Linked Armor",
+    "slot": 4,
+    "sockets": 3
+  },
+  {
+    "id": 28694,
+    "name": "Grand Marshal\u0027s Mail Armor",
+    "slot": 4,
+    "sockets": 3
+  },
+  {
+    "id": 28735,
+    "name": "Earthblood Chestguard",
+    "slot": 4
+  },
+  {
+    "id": 28805,
+    "name": "High Warlord\u0027s Chain Armor",
+    "slot": 4,
+    "sockets": 3
+  },
+  {
+    "id": 28846,
+    "name": "High Warlord\u0027s Mail Armor",
+    "slot": 4,
+    "sockets": 3
+  },
+  {
+    "id": 28841,
+    "name": "High Warlord\u0027s Linked Armor",
+    "slot": 4,
+    "sockets": 3
+  },
+  {
+    "id": 29038,
+    "name": "Cyclone Breastplate",
+    "slot": 4,
+    "sockets": 3
+  },
+  {
+    "id": 29033,
+    "name": "Cyclone Chestguard",
+    "slot": 4,
+    "sockets": 3
+  },
+  {
+    "id": 29029,
+    "name": "Cyclone Hauberk",
+    "slot": 4,
+    "sockets": 3
+  },
+  {
+    "id": 29082,
+    "name": "Demon Stalker Harness",
+    "slot": 4,
+    "sockets": 3
+  },
+  {
+    "id": 29339,
+    "name": "Auchenai Tracker\u0027s Hauberk",
+    "slot": 4,
+    "sockets": 3
+  },
+  {
+    "id": 29515,
+    "name": "Ebon Netherscale Breastplate",
+    "slot": 4,
+    "sockets": 3
+  },
+  {
+    "id": 29519,
+    "name": "Netherstrike Breastplate",
+    "slot": 4,
+    "sockets": 3
+  },
+  {
+    "id": 29514,
+    "name": "Thick Netherscale Breastplate",
+    "slot": 4
+  },
+  {
+    "id": 29596,
+    "name": "Knight-Captain\u0027s Mail Hauberk",
+    "slot": 4
+  },
+  {
+    "id": 29609,
+    "name": "Field Marshal\u0027s Mail Armor",
+    "slot": 4
+  },
+  {
+    "id": 29921,
+    "name": "Fire Crest Breastplate",
+    "slot": 4
+  },
+  {
+    "id": 29941,
+    "name": "Scale Brand Breastplate",
+    "slot": 4
+  },
+  {
+    "id": 29932,
+    "name": "Arcane Ringed Tunic",
+    "slot": 4
+  },
+  {
+    "id": 29975,
+    "name": "Golden Dragonstrike Breastplate",
+    "slot": 4
+  },
+  {
+    "id": 30054,
+    "name": "Ranger-General\u0027s Chestguard",
+    "slot": 4,
+    "sockets": 3
+  },
+  {
+    "id": 30076,
+    "name": "Stormforged Hauberk",
+    "slot": 4,
+    "sockets": 3
+  },
+  {
+    "id": 30139,
+    "name": "Rift Stalker Hauberk",
+    "slot": 4,
+    "sockets": 3
+  },
+  {
+    "id": 30164,
+    "name": "Cataclysm Chestguard",
+    "slot": 4,
+    "sockets": 3
+  },
+  {
+    "id": 30169,
+    "name": "Cataclysm Chestpiece",
+    "slot": 4,
+    "sockets": 3
+  },
+  {
+    "id": 30185,
+    "name": "Cataclysm Chestplate",
+    "slot": 4,
+    "sockets": 3
+  },
+  {
+    "id": 30255,
+    "name": "Chestguard of the Stormspire",
+    "slot": 4
+  },
+  {
+    "id": 30298,
+    "name": "Void Slayer\u0027s Tunic",
+    "slot": 4
+  },
+  {
+    "id": 30363,
+    "name": "Warp-Shielded Hauberk",
+    "slot": 4
+  },
+  {
+    "id": 30773,
+    "name": "Inferno Forged Hauberk",
+    "slot": 4
+  },
+  {
+    "id": 30781,
+    "name": "Mag\u0027hari Chain Vest",
+    "slot": 4
+  },
+  {
+    "id": 30835,
+    "name": "Salvager\u0027s Hauberk",
+    "slot": 4
+  },
+  {
+    "id": 30887,
+    "name": "Golden Links of Restoration",
+    "slot": 4
+  },
+  {
+    "id": 30907,
+    "name": "Mail of Fevered Pursuit",
+    "slot": 4
+  },
+  {
+    "id": 30947,
+    "name": "Crimson Mail Hauberk",
+    "slot": 4
+  },
+  {
+    "id": 31016,
+    "name": "Skyshatter Chestguard",
+    "slot": 4,
+    "sockets": 3
+  },
+  {
+    "id": 31018,
+    "name": "Skyshatter Tunic",
+    "slot": 4,
+    "sockets": 3
+  },
+  {
+    "id": 31017,
+    "name": "Skyshatter Breastplate",
+    "slot": 4,
+    "sockets": 3
+  },
+  {
+    "id": 31004,
+    "name": "Gronnstalker\u0027s Chestguard",
+    "slot": 4,
+    "sockets": 3
+  },
+  {
+    "id": 31127,
+    "name": "Hauberk of Totemic Rage",
+    "slot": 4
+  },
+  {
+    "id": 31156,
+    "name": "Drakescale Hauberk",
+    "slot": 4
+  },
+  {
+    "id": 31170,
+    "name": "Demon-Forged Hauberk",
+    "slot": 4
+  },
+  {
+    "id": 31286,
+    "name": "Breastplate of Rapid Striking",
+    "slot": 4
+  },
+  {
+    "id": 31396,
+    "name": "Gladiator\u0027s Ringmail Armor",
+    "slot": 4,
+    "sockets": 3
+  },
+  {
+    "id": 31514,
+    "name": "Dragonkin Shirt",
+    "slot": 4
+  },
+  {
+    "id": 31570,
+    "name": "Mistshroud Tunic",
+    "slot": 4
+  },
+  {
+    "id": 31640,
+    "name": "Grand Marshal\u0027s Ringmail Chestguard",
+    "slot": 4,
+    "sockets": 3
+  },
+  {
+    "id": 31646,
+    "name": "High Warlord\u0027s Ringmail Chestguard",
+    "slot": 4,
+    "sockets": 3
+  },
+  {
+    "id": 31719,
+    "name": "Stormstrike Vest",
+    "slot": 4
+  },
+  {
+    "id": 31782,
+    "name": "Warpstalker Breastplate",
+    "slot": 4
+  },
+  {
+    "id": 31960,
+    "name": "Merciless Gladiator\u0027s Chain Armor",
+    "slot": 4,
+    "sockets": 3
+  },
+  {
+    "id": 32004,
+    "name": "Merciless Gladiator\u0027s Linked Armor",
+    "slot": 4,
+    "sockets": 3
+  },
+  {
+    "id": 32009,
+    "name": "Merciless Gladiator\u0027s Mail Armor",
+    "slot": 4,
+    "sockets": 3
+  },
+  {
+    "id": 32029,
+    "name": "Merciless Gladiator\u0027s Ringmail Armor",
+    "slot": 4,
+    "sockets": 3
+  },
+  {
+    "id": 32334,
+    "name": "Vest of Mounting Assault",
+    "slot": 4
+  },
+  {
+    "id": 32592,
+    "name": "Chestguard of Relentless Storms",
+    "slot": 4
+  },
+  {
+    "id": 33005,
+    "name": "TEST CHEST MAIL HUNTER",
+    "slot": 4
+  },
+  {
+    "id": 33328,
+    "name": "Arrow-fall Chestguard",
+    "slot": 4
+  },
+  {
+    "id": 33469,
+    "name": "Hauberk of the Empire\u0027s Champion",
+    "slot": 4
+  },
+  {
+    "id": 33664,
+    "name": "Vengeful Gladiator\u0027s Chain Armor",
+    "slot": 4,
+    "sockets": 3
+  },
+  {
+    "id": 33706,
+    "name": "Vengeful Gladiator\u0027s Linked Armor",
+    "slot": 4,
+    "sockets": 3
+  },
+  {
+    "id": 33711,
+    "name": "Vengeful Gladiator\u0027s Mail Armor",
+    "slot": 4,
+    "sockets": 3
+  },
+  {
+    "id": 33738,
+    "name": "Vengeful Gladiator\u0027s Ringmail Armor",
+    "slot": 4,
+    "sockets": 3
+  },
+  {
+    "id": 33965,
+    "name": "Hauberk of the Furious Elements",
+    "slot": 4
+  },
+  {
+    "id": 34229,
+    "name": "Garments of Serene Shores",
+    "slot": 4,
+    "sockets": 3
+  },
+  {
+    "id": 34228,
+    "name": "Vicious Hawkstrider Hauberk",
+    "slot": 4,
+    "sockets": 3
+  },
+  {
+    "id": 34373,
+    "name": "Embrace of the Phoenix",
+    "slot": 4,
+    "sockets": 3
+  },
+  {
+    "id": 34375,
+    "name": "Sun-Drenched Scale Chestguard",
+    "slot": 4,
+    "sockets": 3
+  },
+  {
+    "id": 34396,
+    "name": "Garments of Crashing Shores",
+    "slot": 4,
+    "sockets": 3
+  },
+  {
+    "id": 34614,
+    "name": "Tunic of the Ranger Lord",
+    "slot": 4
+  },
+  {
+    "id": 34799,
+    "name": "Hauberk of the War Bringer",
+    "slot": 4,
+    "sockets": 3
+  },
+  {
+    "id": 34912,
+    "name": "Scaled Drakeskin Chestguard",
+    "slot": 4,
+    "sockets": 1
+  },
+  {
+    "id": 34930,
+    "name": "Wave of Life Chestguard",
+    "slot": 4,
+    "sockets": 1
+  },
+  {
+    "id": 34933,
+    "name": "Hauberk of Whirling Fury",
+    "slot": 4,
+    "sockets": 1
+  },
+  {
+    "id": 34990,
+    "name": "Brutal Gladiator\u0027s Chain Armor",
+    "slot": 4,
+    "sockets": 3
+  },
+  {
+    "id": 35042,
+    "name": "Brutal Gladiator\u0027s Linked Armor",
+    "slot": 4,
+    "sockets": 3
+  },
+  {
+    "id": 35048,
+    "name": "Brutal Gladiator\u0027s Mail Armor",
+    "slot": 4,
+    "sockets": 3
+  },
+  {
+    "id": 35077,
+    "name": "Brutal Gladiator\u0027s Ringmail Armor",
+    "slot": 4,
+    "sockets": 3
+  },
+  {
+    "id": 35376,
+    "name": "Stalker\u0027s Chain Armor",
+    "slot": 4,
+    "sockets": 3
+  },
+  {
+    "id": 35386,
+    "name": "Seer\u0027s Mail Armor",
+    "slot": 4,
+    "sockets": 3
+  },
+  {
+    "id": 35391,
+    "name": "Seer\u0027s Ringmail Chestguard",
+    "slot": 4,
+    "sockets": 3
+  },
+  {
+    "id": 35381,
+    "name": "Seer\u0027s Linked Armor",
+    "slot": 4,
+    "sockets": 3
+  },
+  {
+    "id": 35472,
+    "name": "Seer\u0027s Mail Armor",
+    "slot": 4,
+    "sockets": 3
+  }
+]

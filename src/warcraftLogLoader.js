@@ -1,5 +1,5 @@
 import {offhandFrills} from "./data";
-import {gemList} from "./datastore";
+import {itemList, gemList} from "./datastore";
 import {removeDuplicates} from "./utils";
 
 export class WarcraftLogLoader {
@@ -557,11 +557,12 @@ export class WarcraftLogLoader {
                     18: { enchantable: false, name: "Tabard" }
                 };
 
-                let enchants = obj.combatantInfo?.gear?.reduce((enchant, gear) => {
-                    
+                let gearInfo = obj.combatantInfo?.gear?.reduce((accum, gear) => {
+                    let gearItem = itemList[gear.id];
+
                     if (slots[gear.slot].enchantable && gear.id !== 0 && !offhandFrills[gear.id])
                     {
-                        enchant.permanentEnchants.push({
+                        accum.permanentEnchants.push({
                             slot: gear.slot, 
                             slotname: slots[gear.slot].name, 
                             id: gear.permanentEnchant, 
@@ -573,43 +574,45 @@ export class WarcraftLogLoader {
                     }
 
                     if (gear.slot === 15) {
-                        enchant.weaponEnchant.id = gear.temporaryEnchant;
-                        enchant.weaponEnchant.name = gear.temporaryEnchantName;
+                        accum.weaponEnchant.id = gear.temporaryEnchant;
+                        accum.weaponEnchant.name = gear.temporaryEnchantName;
                     }
 
                     if (gear.slot === 16) {
-                        enchant.offhandEnchant.id = gear.temporaryEnchant;
-                        enchant.offhandEnchant.name = gear.temporaryEnchantName;
+                        accum.offhandEnchant.id = gear.temporaryEnchant;
+                        accum.offhandEnchant.name = gear.temporaryEnchantName;
                     }
 
-                    return enchant;
-                }, { permanentEnchants: [], weaponEnchant: {}, offhandEnchant: {}});
+                    if (gear.gems) {
+                        gear.gems.forEach(gem => {
+                            if (accum.gems[gem.id]) {
+                                accum.gems[gem.id].count++;
+                            }
+                            else {
+                                let gemDetails = gemList[gem.id];
+                                accum.gems[gem.id] = {
+                                    id: gem.id,
+                                    itemLevel: gem.itemLevel,
+                                    icon: gemDetails?.icon || gem.icon,
+                                    rarity: gemDetails?.rarity,
+                                    colour: gemDetails?.colour,
+                                    label: gemDetails?.label,
+                                    description: gemDetails?.description,
+                                    count: 1
+                                };
+                            }
+                        });
+                    }
 
-                let gems = obj.combatantInfo?.gear?.reduce((gems, gear) => {
-                    
-                    gear?.gems?.reduce((gems, gem) => {
-                        if (gems[gem.id]) {
-                            gems[gem.id].count++;
+                    if (gearItem?.sockets) {
+                        let gemCount = gear.gems?.length ?? 0;
+                        if (gearItem.sockets > gemCount) {
+                            accum.gems[0].count += gearItem.sockets - gemCount;
                         }
-                        else {
-                            let gemDetails = gemList[gem.id];
-                            gems[gem.id] = {
-                                id: gem.id,
-                                itemLevel: gem.itemLevel,
-                                icon: gemDetails?.icon || gem.icon,
-                                rarity: gemDetails?.rarity,
-                                colour: gemDetails?.colour,
-                                label: gemDetails?.label,
-                                description: gemDetails?.description,
-                                count: 1
-                            };
-                        }
+                    }
 
-                        return gems;
-                    }, gems);
-
-                    return gems;
-                }, {});
+                    return accum;
+                }, { permanentEnchants: [], weaponEnchant: {}, offhandEnchant: {}, gems: { 0: {id: 0, count: 0} }});
 
                 if (!acc[playerId]) {
                     acc[playerId] = {
@@ -622,21 +625,21 @@ export class WarcraftLogLoader {
                         stamina: obj.combatantInfo?.stats?.Stamina?.max,
                         strength: obj.combatantInfo?.stats?.Strength?.max,
                         agility: obj.combatantInfo?.stats?.Agility?.max,
-                        weaponEnchant: enchants?.weaponEnchant,
-                        offhandEnchant: enchants?.offhandEnchant,
-                        enchants: enchants?.permanentEnchants,
-                        gems: gems
+                        weaponEnchant: gearInfo?.weaponEnchant,
+                        offhandEnchant: gearInfo?.offhandEnchant,
+                        enchants: gearInfo?.permanentEnchants,
+                        gems: gearInfo?.gems
                     };
                 }
                 else {
                     acc[playerId].roles.push(role);
-                    if (!acc[playerId].weaponEnchant?.id && enchants?.weaponEnchant) {
-                        acc[playerId].weaponEnchant = enchants?.weaponEnchant;
+                    if (!acc[playerId].weaponEnchant?.id && gearInfo?.weaponEnchant) {
+                        acc[playerId].weaponEnchant = gearInfo?.weaponEnchant;
                     }
-                    if (!acc[playerId].offhandEnchant?.id && enchants?.offhandEnchant) {
-                        acc[playerId].offhandEnchant = enchants?.offhandEnchant;
+                    if (!acc[playerId].offhandEnchant?.id && gearInfo?.offhandEnchant) {
+                        acc[playerId].offhandEnchant = gearInfo?.offhandEnchant;
                     }
-                    acc[playerId].enchants = removeDuplicates([...(acc[playerId].enchants || []), ...(enchants?.permanentEnchants || [])], x => x.key);
+                    acc[playerId].enchants = removeDuplicates([...(acc[playerId].enchants || []), ...(gearInfo?.permanentEnchants || [])], x => x.key);
 
                 }
 

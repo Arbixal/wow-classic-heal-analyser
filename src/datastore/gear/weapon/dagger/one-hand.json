@@ -1,0 +1,751 @@
+[
+  {
+    "id": 2163,
+    "name": "Shadowblade",
+    "slot": 16
+  },
+  {
+    "id": 5267,
+    "name": "Scarlet Kris",
+    "slot": 16
+  },
+  {
+    "id": 6660,
+    "name": "Julie\u0027s Dagger",
+    "slot": 16
+  },
+  {
+    "id": 7947,
+    "name": "Ebon Shiv",
+    "slot": 16
+  },
+  {
+    "id": 10697,
+    "name": "Enchanted Azsharite Felbane Dagger",
+    "slot": 16
+  },
+  {
+    "id": 10750,
+    "name": "Lifeforce Dirk",
+    "slot": 16
+  },
+  {
+    "id": 10828,
+    "name": "Dire Nail",
+    "slot": 16
+  },
+  {
+    "id": 11635,
+    "name": "Hookfang Shanker",
+    "slot": 16
+  },
+  {
+    "id": 12062,
+    "name": "Skilled Fighting Blade",
+    "slot": 16
+  },
+  {
+    "id": 12531,
+    "name": "Searing Needle",
+    "slot": 16
+  },
+  {
+    "id": 12582,
+    "name": "Keris of Zul\u0027Serak",
+    "slot": 16
+  },
+  {
+    "id": 12590,
+    "name": "Felstriker",
+    "slot": 16
+  },
+  {
+    "id": 12709,
+    "name": "Finkle\u0027s Skinner",
+    "slot": 16
+  },
+  {
+    "id": 12783,
+    "name": "Heartseeker",
+    "slot": 16
+  },
+  {
+    "id": 12791,
+    "name": "Barman Shanker",
+    "slot": 16
+  },
+  {
+    "id": 13218,
+    "name": "Fang of the Crystal Spider",
+    "slot": 16
+  },
+  {
+    "id": 13360,
+    "name": "Gift of the Elven Magi",
+    "slot": 16
+  },
+  {
+    "id": 13368,
+    "name": "Bonescraper",
+    "slot": 16
+  },
+  {
+    "id": 13822,
+    "name": "Spiked Dagger",
+    "slot": 16
+  },
+  {
+    "id": 13984,
+    "name": "Darrowspike",
+    "slot": 16
+  },
+  {
+    "id": 14024,
+    "name": "Frightalon",
+    "slot": 16
+  },
+  {
+    "id": 14555,
+    "name": "Alcor\u0027s Sunrazor",
+    "slot": 16
+  },
+  {
+    "id": 15246,
+    "name": "Demon Blade",
+    "slot": 16
+  },
+  {
+    "id": 15247,
+    "name": "Bloodstrike Dagger",
+    "slot": 16
+  },
+  {
+    "id": 15706,
+    "name": "Hunt Tracker Blade",
+    "slot": 16
+  },
+  {
+    "id": 15783,
+    "name": "Beasthunter Dagger",
+    "slot": 16
+  },
+  {
+    "id": 17071,
+    "name": "Gutgore Ripper",
+    "slot": 16
+  },
+  {
+    "id": 17710,
+    "name": "Charstone Dirk",
+    "slot": 16
+  },
+  {
+    "id": 17780,
+    "name": "Blade of Eternal Darkness",
+    "slot": 16
+  },
+  {
+    "id": 18372,
+    "name": "Blade of the New Moon",
+    "slot": 16
+  },
+  {
+    "id": 18491,
+    "name": "Lorespinner",
+    "slot": 16
+  },
+  {
+    "id": 18758,
+    "name": "Specter\u0027s Blade",
+    "slot": 16
+  },
+  {
+    "id": 18805,
+    "name": "Core Hound Tooth",
+    "slot": 16
+  },
+  {
+    "id": 18816,
+    "name": "Perdition\u0027s Blade",
+    "slot": 16
+  },
+  {
+    "id": 18838,
+    "name": "Grand Marshal\u0027s Dirk",
+    "slot": 16
+  },
+  {
+    "id": 18840,
+    "name": "High Warlord\u0027s Razor",
+    "slot": 16
+  },
+  {
+    "id": 19099,
+    "name": "Glacial Blade",
+    "slot": 16
+  },
+  {
+    "id": 19100,
+    "name": "Electrified Dagger",
+    "slot": 16
+  },
+  {
+    "id": 19166,
+    "name": "Black Amnesty",
+    "slot": 16
+  },
+  {
+    "id": 19346,
+    "name": "Dragonfang Blade",
+    "slot": 16
+  },
+  {
+    "id": 19324,
+    "name": "The Lobotomizer",
+    "slot": 16
+  },
+  {
+    "id": 19542,
+    "name": "Scout\u0027s Blade",
+    "slot": 16
+  },
+  {
+    "id": 19546,
+    "name": "Sentinel\u0027s Blade",
+    "slot": 16
+  },
+  {
+    "id": 19543,
+    "name": "Scout\u0027s Blade",
+    "slot": 16
+  },
+  {
+    "id": 19547,
+    "name": "Sentinel\u0027s Blade",
+    "slot": 16
+  },
+  {
+    "id": 19859,
+    "name": "Fang of the Faceless",
+    "slot": 16
+  },
+  {
+    "id": 20035,
+    "name": "Glacial Spike",
+    "slot": 16
+  },
+  {
+    "id": 20578,
+    "name": "Emerald Dragonfang",
+    "slot": 16
+  },
+  {
+    "id": 20657,
+    "name": "Crystal Tipped Stiletto",
+    "slot": 16
+  },
+  {
+    "id": 21126,
+    "name": "Death\u0027s Sting",
+    "slot": 16
+  },
+  {
+    "id": 21244,
+    "name": "Blessed Qiraji Pugio",
+    "slot": 16
+  },
+  {
+    "id": 21404,
+    "name": "Dagger of Veiled Shadows",
+    "slot": 16
+  },
+  {
+    "id": 21498,
+    "name": "Qiraji Sacrificial Dagger",
+    "slot": 16
+  },
+  {
+    "id": 21522,
+    "name": "Shadowsong\u0027s Sorrow",
+    "slot": 16
+  },
+  {
+    "id": 22266,
+    "name": "Flarethorn",
+    "slot": 16
+  },
+  {
+    "id": 22377,
+    "name": "The Thunderwood Poker",
+    "slot": 16
+  },
+  {
+    "id": 22804,
+    "name": "Maexxna\u0027s Fang",
+    "slot": 16
+  },
+  {
+    "id": 22802,
+    "name": "Kingsfall",
+    "slot": 16
+  },
+  {
+    "id": 23044,
+    "name": "Harbinger of Doom",
+    "slot": 16
+  },
+  {
+    "id": 23504,
+    "name": "Adamantite Dagger",
+    "slot": 16
+  },
+  {
+    "id": 23555,
+    "name": "Dirge",
+    "slot": 16
+  },
+  {
+    "id": 23650,
+    "name": "Deprecated: Keanna\u0027s Will",
+    "slot": 16
+  },
+  {
+    "id": 23917,
+    "name": "Deprecated: Keanna\u0027s Will",
+    "slot": 16
+  },
+  {
+    "id": 23916,
+    "name": "Deprecated: Keanna\u0027s Will",
+    "slot": 16
+  },
+  {
+    "id": 23905,
+    "name": "Deprecated: Keanna\u0027s Will",
+    "slot": 16
+  },
+  {
+    "id": 23911,
+    "name": "Deprecated: Keanna\u0027s Will",
+    "slot": 16
+  },
+  {
+    "id": 24222,
+    "name": "The Shadowfoot Stabber",
+    "slot": 16
+  },
+  {
+    "id": 24464,
+    "name": "The Stalker\u0027s Fangs",
+    "slot": 16
+  },
+  {
+    "id": 25103,
+    "name": "Nightstalker Dagger",
+    "slot": 16
+  },
+  {
+    "id": 25104,
+    "name": "Anzac Dagger",
+    "slot": 16
+  },
+  {
+    "id": 25107,
+    "name": "Draconic Dagger",
+    "slot": 16
+  },
+  {
+    "id": 25108,
+    "name": "Grave Keeper Knife",
+    "slot": 16
+  },
+  {
+    "id": 25102,
+    "name": "Jaedenis Dagger",
+    "slot": 16
+  },
+  {
+    "id": 25110,
+    "name": "Sharp Bowie Knife",
+    "slot": 16
+  },
+  {
+    "id": 25109,
+    "name": "Moon Blade",
+    "slot": 16
+  },
+  {
+    "id": 25100,
+    "name": "Liege Blade",
+    "slot": 16
+  },
+  {
+    "id": 25112,
+    "name": "Fel Ripper",
+    "slot": 16
+  },
+  {
+    "id": 25111,
+    "name": "Lionhead Dagger",
+    "slot": 16
+  },
+  {
+    "id": 25105,
+    "name": "Arachnid Dagger",
+    "slot": 16
+  },
+  {
+    "id": 25101,
+    "name": "Cross Pommel Dagger",
+    "slot": 16
+  },
+  {
+    "id": 25113,
+    "name": "Phantom Dagger",
+    "slot": 16
+  },
+  {
+    "id": 25106,
+    "name": "Cobra Shortblade",
+    "slot": 16
+  },
+  {
+    "id": 25403,
+    "name": "Sharpened Stilleto",
+    "slot": 16
+  },
+  {
+    "id": 25495,
+    "name": "Wolfrider\u0027s Dagger",
+    "slot": 16
+  },
+  {
+    "id": 25545,
+    "name": "Talbuk Dirk",
+    "slot": 16
+  },
+  {
+    "id": 25763,
+    "name": "Ceremonial Warmaul Blood-blade",
+    "slot": 16
+  },
+  {
+    "id": 25918,
+    "name": "Blood-Guided Knife",
+    "slot": 16
+  },
+  {
+    "id": 27463,
+    "name": "Terror Flame Dagger",
+    "slot": 16
+  },
+  {
+    "id": 27814,
+    "name": "Twinblade of Mastery",
+    "slot": 16
+  },
+  {
+    "id": 27913,
+    "name": "Whispering Blade of Slaying",
+    "slot": 16
+  },
+  {
+    "id": 28226,
+    "name": "Timeslicer",
+    "slot": 16
+  },
+  {
+    "id": 28312,
+    "name": "Gladiator\u0027s Shanker",
+    "slot": 16
+  },
+  {
+    "id": 28345,
+    "name": "Warp Splinter\u0027s Thorn",
+    "slot": 16
+  },
+  {
+    "id": 28416,
+    "name": "Hungering Spineripper",
+    "slot": 16
+  },
+  {
+    "id": 28524,
+    "name": "Emerald Ripper",
+    "slot": 16
+  },
+  {
+    "id": 28572,
+    "name": "Blade of the Unrequited",
+    "slot": 16,
+    "sockets": 3
+  },
+  {
+    "id": 28768,
+    "name": "Malchazeen",
+    "slot": 16
+  },
+  {
+    "id": 28929,
+    "name": "High Warlord\u0027s Shanker",
+    "slot": 16
+  },
+  {
+    "id": 28930,
+    "name": "High Warlord\u0027s Shiv",
+    "slot": 16
+  },
+  {
+    "id": 28954,
+    "name": "Grand Marshal\u0027s Shanker",
+    "slot": 16
+  },
+  {
+    "id": 28955,
+    "name": "Grand Marshal\u0027s Shiv",
+    "slot": 16
+  },
+  {
+    "id": 29125,
+    "name": "Retainer\u0027s Blade",
+    "slot": 16
+  },
+  {
+    "id": 29121,
+    "name": "Guile of Khoraazi",
+    "slot": 16
+  },
+  {
+    "id": 29150,
+    "name": "Hardened Stone Shard",
+    "slot": 16
+  },
+  {
+    "id": 29182,
+    "name": "Riftmaker",
+    "slot": 16
+  },
+  {
+    "id": 29360,
+    "name": "Vileblade of the Betrayer",
+    "slot": 16
+  },
+  {
+    "id": 29346,
+    "name": "Feltooth Eviscerator",
+    "slot": 16
+  },
+  {
+    "id": 29391,
+    "name": "Pulse Dagger",
+    "slot": 16
+  },
+  {
+    "id": 29909,
+    "name": "Screaming Dagger",
+    "slot": 16
+  },
+  {
+    "id": 29962,
+    "name": "Heartrazor",
+    "slot": 16
+  },
+  {
+    "id": 30013,
+    "name": "Twin-Bladed Ripper",
+    "slot": 16
+  },
+  {
+    "id": 30103,
+    "name": "Fang of Vashj",
+    "slot": 16
+  },
+  {
+    "id": 30312,
+    "name": "Infinity Blade",
+    "slot": 16
+  },
+  {
+    "id": 30865,
+    "name": "Tracker\u0027s Blade",
+    "slot": 16
+  },
+  {
+    "id": 30901,
+    "name": "Boundless Agony",
+    "slot": 16
+  },
+  {
+    "id": 30999,
+    "name": "Ashtongue Blade",
+    "slot": 16
+  },
+  {
+    "id": 31073,
+    "name": "Borak\u0027s Reminder",
+    "slot": 16
+  },
+  {
+    "id": 31193,
+    "name": "Blade of Unquenched Thirst",
+    "slot": 16
+  },
+  {
+    "id": 31305,
+    "name": "Ced\u0027s Carver",
+    "slot": 16
+  },
+  {
+    "id": 31331,
+    "name": "The Night Blade",
+    "slot": 16
+  },
+  {
+    "id": 31422,
+    "name": "Heavy Elven Dirk",
+    "slot": 16
+  },
+  {
+    "id": 31446,
+    "name": "Vibro Shanker",
+    "slot": 16
+  },
+  {
+    "id": 31476,
+    "name": "Slow Death Dirk",
+    "slot": 16
+  },
+  {
+    "id": 31492,
+    "name": "Claw of the Netherwing Flight",
+    "slot": 16
+  },
+  {
+    "id": 31703,
+    "name": "Nether-Stalker\u0027s Blade",
+    "slot": 16
+  },
+  {
+    "id": 31723,
+    "name": "Madman\u0027s Blade",
+    "slot": 16
+  },
+  {
+    "id": 31733,
+    "name": "Akuno\u0027s Blade",
+    "slot": 16
+  },
+  {
+    "id": 31745,
+    "name": "Illidari-Bane Dagger",
+    "slot": 16
+  },
+  {
+    "id": 31756,
+    "name": "Dib\u0027Muad\u0027s Crysknife",
+    "slot": 16
+  },
+  {
+    "id": 31759,
+    "name": "Shani\u0027s Crysknife",
+    "slot": 16
+  },
+  {
+    "id": 32044,
+    "name": "Merciless Gladiator\u0027s Shanker",
+    "slot": 16
+  },
+  {
+    "id": 32269,
+    "name": "Messenger of Fate",
+    "slot": 16
+  },
+  {
+    "id": 32471,
+    "name": "Shard of Azzinoth",
+    "slot": 16
+  },
+  {
+    "id": 32659,
+    "name": "Crystal-Infused Shiv",
+    "slot": 16
+  },
+  {
+    "id": 32781,
+    "name": "Talon of Anzu",
+    "slot": 16,
+    "sockets": 1
+  },
+  {
+    "id": 32914,
+    "name": "Bland Shiv",
+    "slot": 16
+  },
+  {
+    "id": 33298,
+    "name": "Prowler\u0027s Strikeblade",
+    "slot": 16
+  },
+  {
+    "id": 33389,
+    "name": "Dagger of Bad Mojo",
+    "slot": 16
+  },
+  {
+    "id": 33493,
+    "name": "Umbral Shiv",
+    "slot": 16,
+    "sockets": 2
+  },
+  {
+    "id": 33754,
+    "name": "Vengeful Gladiator\u0027s Shanker",
+    "slot": 16
+  },
+  {
+    "id": 34165,
+    "name": "Fang of Kalecgos",
+    "slot": 16
+  },
+  {
+    "id": 34197,
+    "name": "Shiv of Exsanguination",
+    "slot": 16
+  },
+  {
+    "id": 34329,
+    "name": "Crux of the Apocalypse",
+    "slot": 16,
+    "sockets": 1
+  },
+  {
+    "id": 34606,
+    "name": "Edge of Oppression",
+    "slot": 16
+  },
+  {
+    "id": 34665,
+    "name": "Bombardier\u0027s Blade",
+    "slot": 16
+  },
+  {
+    "id": 34859,
+    "name": "Razor Sharp Fillet Knife",
+    "slot": 16
+  },
+  {
+    "id": 34894,
+    "name": "Blade of Serration",
+    "slot": 16
+  },
+  {
+    "id": 35093,
+    "name": "Brutal Gladiator\u0027s Shanker",
+    "slot": 16
+  },
+  {
+    "id": 37597,
+    "name": "Direbrew\u0027s Shanker",
+    "slot": 16
+  }
+]

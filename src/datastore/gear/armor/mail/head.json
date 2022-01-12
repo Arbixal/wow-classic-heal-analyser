@@ -1,0 +1,843 @@
+[
+  {
+    "id": 2245,
+    "name": "Helm of Narv"
+  },
+  {
+    "id": 8270,
+    "name": "Ebonhold Helmet"
+  },
+  {
+    "id": 8308,
+    "name": "Hero\u0027s Band"
+  },
+  {
+    "id": 8752,
+    "name": "Laminated Scale Circlet"
+  },
+  {
+    "id": 10083,
+    "name": "Lord\u0027s Crown"
+  },
+  {
+    "id": 10123,
+    "name": "Ornate Circlet"
+  },
+  {
+    "id": 10160,
+    "name": "Mercurial Circlet"
+  },
+  {
+    "id": 10198,
+    "name": "Crusader\u0027s Helm"
+  },
+  {
+    "id": 10235,
+    "name": "Engraved Helm"
+  },
+  {
+    "id": 10272,
+    "name": "Masterwork Circlet"
+  },
+  {
+    "id": 10743,
+    "name": "Drakefire Headguard"
+  },
+  {
+    "id": 10833,
+    "name": "Horns of Eranikus"
+  },
+  {
+    "id": 11124,
+    "name": "Helm of Exile"
+  },
+  {
+    "id": 11729,
+    "name": "Savage Gladiator Helm"
+  },
+  {
+    "id": 11913,
+    "name": "Clayridge Helm"
+  },
+  {
+    "id": 12018,
+    "name": "Conservator Helm"
+  },
+  {
+    "id": 12417,
+    "name": "Radiant Circlet"
+  },
+  {
+    "id": 12549,
+    "name": "Braincage"
+  },
+  {
+    "id": 12636,
+    "name": "Helm of the Great Chief"
+  },
+  {
+    "id": 12953,
+    "name": "Dragoneye Coif"
+  },
+  {
+    "id": 13359,
+    "name": "Crown of Tyranny"
+  },
+  {
+    "id": 14795,
+    "name": "Protector Helm"
+  },
+  {
+    "id": 14804,
+    "name": "Bloodlust Helm"
+  },
+  {
+    "id": 14814,
+    "name": "Warstrike Helmet"
+  },
+  {
+    "id": 15080,
+    "name": "Heavy Scorpid Helm"
+  },
+  {
+    "id": 15645,
+    "name": "Ironhide Helmet"
+  },
+  {
+    "id": 15634,
+    "name": "Formidable Circlet"
+  },
+  {
+    "id": 15651,
+    "name": "Merciless Crown"
+  },
+  {
+    "id": 15670,
+    "name": "Magnificent Helmet"
+  },
+  {
+    "id": 15664,
+    "name": "Impenetrable Helmet"
+  },
+  {
+    "id": 15684,
+    "name": "Triumphant Skullcap"
+  },
+  {
+    "id": 16428,
+    "name": "Lieutenant Commander\u0027s Chain Helmet"
+  },
+  {
+    "id": 16465,
+    "name": "Field Marshal\u0027s Chain Helm"
+  },
+  {
+    "id": 16521,
+    "name": "Champion\u0027s Mail Helm"
+  },
+  {
+    "id": 16526,
+    "name": "Champion\u0027s Chain Headguard"
+  },
+  {
+    "id": 16566,
+    "name": "Warlord\u0027s Chain Helmet"
+  },
+  {
+    "id": 16578,
+    "name": "Warlord\u0027s Mail Helm"
+  },
+  {
+    "id": 16667,
+    "name": "Coif of Elements"
+  },
+  {
+    "id": 16677,
+    "name": "Beaststalker\u0027s Cap"
+  },
+  {
+    "id": 16842,
+    "name": "Earthfury Helmet"
+  },
+  {
+    "id": 16846,
+    "name": "Giantstalker\u0027s Helmet"
+  },
+  {
+    "id": 16947,
+    "name": "Helmet of Ten Storms"
+  },
+  {
+    "id": 16939,
+    "name": "Dragonstalker\u0027s Helm"
+  },
+  {
+    "id": 17767,
+    "name": "Bloomsprout Headpiece"
+  },
+  {
+    "id": 18319,
+    "name": "Fervent Helm"
+  },
+  {
+    "id": 18421,
+    "name": "Backwood Helm"
+  },
+  {
+    "id": 18479,
+    "name": "Carrion Scorpid Helm"
+  },
+  {
+    "id": 18546,
+    "name": "Infernal Headcage"
+  },
+  {
+    "id": 18807,
+    "name": "Helm of Latent Power"
+  },
+  {
+    "id": 18817,
+    "name": "Crown of Destruction"
+  },
+  {
+    "id": 18870,
+    "name": "Helm of the Lifegiver"
+  },
+  {
+    "id": 19875,
+    "name": "Bloodstained Coif"
+  },
+  {
+    "id": 20134,
+    "name": "Skyfury Helm"
+  },
+  {
+    "id": 20773,
+    "name": "63 green shaman coif"
+  },
+  {
+    "id": 20788,
+    "name": "90 green shaman coif"
+  },
+  {
+    "id": 21372,
+    "name": "Stormcaller\u0027s Diadem"
+  },
+  {
+    "id": 21366,
+    "name": "Striker\u0027s Diadem"
+  },
+  {
+    "id": 21804,
+    "name": "Coif of Elemental Fury"
+  },
+  {
+    "id": 22013,
+    "name": "Beastmaster\u0027s Cap"
+  },
+  {
+    "id": 22097,
+    "name": "Coif of The Five Thunders"
+  },
+  {
+    "id": 22438,
+    "name": "Cryptstalker Headpiece"
+  },
+  {
+    "id": 22466,
+    "name": "Earthshatter Headpiece"
+  },
+  {
+    "id": 23033,
+    "name": "Icy Scale Coif"
+  },
+  {
+    "id": 23259,
+    "name": "Champion\u0027s Mail Headguard"
+  },
+  {
+    "id": 23306,
+    "name": "Lieutenant Commander\u0027s Chain Helm"
+  },
+  {
+    "id": 23251,
+    "name": "Champion\u0027s Chain Helm"
+  },
+  {
+    "id": 23493,
+    "name": "Fel Iron Chain Coif"
+  },
+  {
+    "id": 23534,
+    "name": "Storm Helm",
+    "sockets": 3
+  },
+  {
+    "id": 23839,
+    "name": "Foreman\u0027s Reinforced Helmet"
+  },
+  {
+    "id": 24810,
+    "name": "Unyielding Helm"
+  },
+  {
+    "id": 24834,
+    "name": "Nexus-Strider Helmet"
+  },
+  {
+    "id": 24826,
+    "name": "Netherstalker Helmet"
+  },
+  {
+    "id": 24858,
+    "name": "Marshcreeper Helm"
+  },
+  {
+    "id": 24874,
+    "name": "Ironspine Helm"
+  },
+  {
+    "id": 24850,
+    "name": "Fenclaw Helm"
+  },
+  {
+    "id": 24898,
+    "name": "Sundered Helmet"
+  },
+  {
+    "id": 24882,
+    "name": "Der\u0027izu Helm"
+  },
+  {
+    "id": 24906,
+    "name": "Talhide Helmet"
+  },
+  {
+    "id": 24890,
+    "name": "Skettis Helmet"
+  },
+  {
+    "id": 24914,
+    "name": "Netherstorm Helm"
+  },
+  {
+    "id": 24842,
+    "name": "Wrathfin Helmet"
+  },
+  {
+    "id": 24866,
+    "name": "Blood Knight Helm"
+  },
+  {
+    "id": 24818,
+    "name": "Felstone Helm"
+  },
+  {
+    "id": 25377,
+    "name": "Corroded Mail Circlet"
+  },
+  {
+    "id": 25369,
+    "name": "Eroded Mail Circlet"
+  },
+  {
+    "id": 25506,
+    "name": "Vindicator\u0027s Chain Helm"
+  },
+  {
+    "id": 25579,
+    "name": "Dark Shaman\u0027s Cover"
+  },
+  {
+    "id": 25575,
+    "name": "Thunderbringer\u0027s Guard"
+  },
+  {
+    "id": 25683,
+    "name": "Stylin\u0027 Crimson Hat"
+  },
+  {
+    "id": 25681,
+    "name": "Stylin\u0027 Adventure Hat"
+  },
+  {
+    "id": 25820,
+    "name": "Metallic Headband of Simm\u0027onz"
+  },
+  {
+    "id": 25930,
+    "name": "Cenarion Thicket Helm",
+    "sockets": 3
+  },
+  {
+    "id": 25955,
+    "name": "Mask of the Howling Storm",
+    "sockets": 3
+  },
+  {
+    "id": 25976,
+    "name": "Helm of Lupine Grace"
+  },
+  {
+    "id": 25998,
+    "name": "Gladiator\u0027s Linked Helm",
+    "sockets": 2
+  },
+  {
+    "id": 27414,
+    "name": "Mok\u0027Nathal Beast-Mask",
+    "sockets": 3
+  },
+  {
+    "id": 27471,
+    "name": "Gladiator\u0027s Mail Helm",
+    "sockets": 2
+  },
+  {
+    "id": 27759,
+    "name": "Headdress of the Tides"
+  },
+  {
+    "id": 27888,
+    "name": "Dream-Wing Helm"
+  },
+  {
+    "id": 27993,
+    "name": "Mask of Inner Fire"
+  },
+  {
+    "id": 28181,
+    "name": "Earthwarden\u0027s Coif",
+    "sockets": 2
+  },
+  {
+    "id": 28192,
+    "name": "Helm of Desolation",
+    "sockets": 2
+  },
+  {
+    "id": 28215,
+    "name": "Mok\u0027Nathal Mask of Battle"
+  },
+  {
+    "id": 28275,
+    "name": "Beast Lord Helm",
+    "sockets": 2
+  },
+  {
+    "id": 28331,
+    "name": "Gladiator\u0027s Chain Helm",
+    "sockets": 2
+  },
+  {
+    "id": 28349,
+    "name": "Tidefury Helm",
+    "sockets": 2
+  },
+  {
+    "id": 28576,
+    "name": "Exorcist\u0027s Chain Helm",
+    "sockets": 1
+  },
+  {
+    "id": 28583,
+    "name": "Big Bad Wolf\u0027s Head"
+  },
+  {
+    "id": 28577,
+    "name": "Exorcist\u0027s Linked Helm",
+    "sockets": 1
+  },
+  {
+    "id": 28615,
+    "name": "Grand Marshal\u0027s Chain Helm",
+    "sockets": 2
+  },
+  {
+    "id": 28671,
+    "name": "Steelspine Faceguard"
+  },
+  {
+    "id": 28691,
+    "name": "Grand Marshal\u0027s Linked Helm",
+    "sockets": 2
+  },
+  {
+    "id": 28696,
+    "name": "Grand Marshal\u0027s Mail Helm",
+    "sockets": 2
+  },
+  {
+    "id": 28758,
+    "name": "Exorcist\u0027s Mail Helm",
+    "sockets": 1
+  },
+  {
+    "id": 28801,
+    "name": "Maulgar\u0027s Warhelm"
+  },
+  {
+    "id": 28807,
+    "name": "High Warlord\u0027s Chain Helm",
+    "sockets": 2
+  },
+  {
+    "id": 28848,
+    "name": "High Warlord\u0027s Mail Helm",
+    "sockets": 2
+  },
+  {
+    "id": 28843,
+    "name": "High Warlord\u0027s Linked Helm",
+    "sockets": 2
+  },
+  {
+    "id": 29028,
+    "name": "Cyclone Headdress",
+    "sockets": 2
+  },
+  {
+    "id": 29035,
+    "name": "Cyclone Faceguard",
+    "sockets": 2
+  },
+  {
+    "id": 29040,
+    "name": "Cyclone Helm",
+    "sockets": 2
+  },
+  {
+    "id": 29081,
+    "name": "Demon Stalker Greathelm",
+    "sockets": 2
+  },
+  {
+    "id": 29136,
+    "name": "Far Seer\u0027s Helm",
+    "sockets": 3
+  },
+  {
+    "id": 29135,
+    "name": "Earthcaller\u0027s Headdress",
+    "sockets": 3
+  },
+  {
+    "id": 29510,
+    "name": "Netherdrake Helm"
+  },
+  {
+    "id": 29508,
+    "name": "Living Dragonscale Helm"
+  },
+  {
+    "id": 29598,
+    "name": "Lieutenant Commander\u0027s Mail Headguard"
+  },
+  {
+    "id": 29610,
+    "name": "Field Marshal\u0027s Mail Helm"
+  },
+  {
+    "id": 29773,
+    "name": "Battle-Mage\u0027s Helmet"
+  },
+  {
+    "id": 29782,
+    "name": "Coif of the Wicked"
+  },
+  {
+    "id": 29943,
+    "name": "Legionnaire\u0027s Studded Helm"
+  },
+  {
+    "id": 29934,
+    "name": "Helm of Affinity"
+  },
+  {
+    "id": 30141,
+    "name": "Rift Stalker Helm",
+    "sockets": 2
+  },
+  {
+    "id": 30166,
+    "name": "Cataclysm Headguard",
+    "sockets": 2
+  },
+  {
+    "id": 30171,
+    "name": "Cataclysm Headpiece",
+    "sockets": 2
+  },
+  {
+    "id": 30190,
+    "name": "Cataclysm Helm",
+    "sockets": 2
+  },
+  {
+    "id": 30329,
+    "name": "Flesh Handler\u0027s Headpiece"
+  },
+  {
+    "id": 30728,
+    "name": "Fathom-Helm of the Deeps",
+    "sockets": 3
+  },
+  {
+    "id": 30949,
+    "name": "QR 10574 Mail Hunter Helm"
+  },
+  {
+    "id": 30955,
+    "name": "Crown of Cinders"
+  },
+  {
+    "id": 31015,
+    "name": "Skyshatter Cover",
+    "sockets": 2
+  },
+  {
+    "id": 31003,
+    "name": "Gronnstalker\u0027s Helmet",
+    "sockets": 2
+  },
+  {
+    "id": 31014,
+    "name": "Skyshatter Headguard",
+    "sockets": 2
+  },
+  {
+    "id": 31012,
+    "name": "Skyshatter Helmet",
+    "sockets": 2
+  },
+  {
+    "id": 31106,
+    "name": "Stalker\u0027s Helmet of Second Sight",
+    "sockets": 3
+  },
+  {
+    "id": 31107,
+    "name": "Shamanistic Helmet of Second Sight",
+    "sockets": 3
+  },
+  {
+    "id": 31183,
+    "name": "Legion Coif"
+  },
+  {
+    "id": 31218,
+    "name": "Fiery Beholder Eye"
+  },
+  {
+    "id": 31222,
+    "name": "Headdress of Inner Rage"
+  },
+  {
+    "id": 31330,
+    "name": "Lightning Crown"
+  },
+  {
+    "id": 31400,
+    "name": "Gladiator\u0027s Ringmail Helm",
+    "sockets": 2
+  },
+  {
+    "id": 31444,
+    "name": "Party Hat Mistake"
+  },
+  {
+    "id": 31435,
+    "name": "Gurn\u0027s Horned Helmet"
+  },
+  {
+    "id": 31487,
+    "name": "Wild Horned Helm"
+  },
+  {
+    "id": 31547,
+    "name": "Malefactor\u0027s Eyepatch"
+  },
+  {
+    "id": 31568,
+    "name": "Mistshroud Helm"
+  },
+  {
+    "id": 31648,
+    "name": "High Warlord\u0027s Ringmail Headpiece",
+    "sockets": 2
+  },
+  {
+    "id": 31642,
+    "name": "Grand Marshal\u0027s Ringmail Headpiece",
+    "sockets": 2
+  },
+  {
+    "id": 31713,
+    "name": "Ritualist\u0027s Helm"
+  },
+  {
+    "id": 31962,
+    "name": "Merciless Gladiator\u0027s Chain Helm",
+    "sockets": 2
+  },
+  {
+    "id": 32011,
+    "name": "Merciless Gladiator\u0027s Mail Helm",
+    "sockets": 2
+  },
+  {
+    "id": 32031,
+    "name": "Merciless Gladiator\u0027s Ringmail Helm",
+    "sockets": 2
+  },
+  {
+    "id": 32006,
+    "name": "Merciless Gladiator\u0027s Linked Helm",
+    "sockets": 2
+  },
+  {
+    "id": 32086,
+    "name": "Storm Master\u0027s Helmet",
+    "sockets": 2
+  },
+  {
+    "id": 32085,
+    "name": "Warpstalker Helm",
+    "sockets": 2
+  },
+  {
+    "id": 32241,
+    "name": "Helm of Soothing Currents",
+    "sockets": 2
+  },
+  {
+    "id": 32376,
+    "name": "Forest Prowler\u0027s Helm",
+    "sockets": 2
+  },
+  {
+    "id": 32475,
+    "name": "Living Replicator Specs",
+    "sockets": 2
+  },
+  {
+    "id": 32474,
+    "name": "Surestrike Goggles v2.0",
+    "sockets": 2
+  },
+  {
+    "id": 32476,
+    "name": "Gadgetstorm Goggles",
+    "sockets": 2
+  },
+  {
+    "id": 33286,
+    "name": "Mojo-mender\u0027s Mask",
+    "sockets": 3
+  },
+  {
+    "id": 33432,
+    "name": "Coif of the Jungle Stalker",
+    "sockets": 3
+  },
+  {
+    "id": 33713,
+    "name": "Vengeful Gladiator\u0027s Mail Helm",
+    "sockets": 2
+  },
+  {
+    "id": 33708,
+    "name": "Vengeful Gladiator\u0027s Linked Helm",
+    "sockets": 2
+  },
+  {
+    "id": 33666,
+    "name": "Vengeful Gladiator\u0027s Chain Helm",
+    "sockets": 2
+  },
+  {
+    "id": 33740,
+    "name": "Vengeful Gladiator\u0027s Ringmail Helm",
+    "sockets": 2
+  },
+  {
+    "id": 33964,
+    "name": "Helm of the Stormcaller",
+    "sockets": 3
+  },
+  {
+    "id": 34332,
+    "name": "Cowl of Gul\u0027dan",
+    "sockets": 2
+  },
+  {
+    "id": 34333,
+    "name": "Coif of Alleria",
+    "sockets": 2
+  },
+  {
+    "id": 34355,
+    "name": "Lightning Etched Specs",
+    "sockets": 2
+  },
+  {
+    "id": 34356,
+    "name": "Surestrike Goggles v3.0",
+    "sockets": 2
+  },
+  {
+    "id": 34402,
+    "name": "Shroud of Chieftain Ner\u0027zhul",
+    "sockets": 2
+  },
+  {
+    "id": 34992,
+    "name": "Brutal Gladiator\u0027s Chain Helm",
+    "sockets": 2
+  },
+  {
+    "id": 35044,
+    "name": "Brutal Gladiator\u0027s Linked Helm",
+    "sockets": 2
+  },
+  {
+    "id": 35050,
+    "name": "Brutal Gladiator\u0027s Mail Helm",
+    "sockets": 2
+  },
+  {
+    "id": 35079,
+    "name": "Brutal Gladiator\u0027s Ringmail Helm",
+    "sockets": 2
+  },
+  {
+    "id": 35184,
+    "name": "Primal-Attuned Goggles",
+    "sockets": 2
+  },
+  {
+    "id": 35378,
+    "name": "Stalker\u0027s Chain Helm",
+    "sockets": 2
+  },
+  {
+    "id": 35388,
+    "name": "Seer\u0027s Mail Helm",
+    "sockets": 2
+  },
+  {
+    "id": 35383,
+    "name": "Seer\u0027s Linked Helm",
+    "sockets": 2
+  },
+  {
+    "id": 35393,
+    "name": "Seer\u0027s Ringmail Headpiece",
+    "sockets": 2
+  },
+  {
+    "id": 35474,
+    "name": "Seer\u0027s Linked Helm",
+    "sockets": 2
+  }
+]

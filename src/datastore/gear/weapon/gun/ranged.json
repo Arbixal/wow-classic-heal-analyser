@@ -1,0 +1,354 @@
+[
+  {
+    "id": 2099,
+    "name": "Dwarven Hand Cannon",
+    "slot": 17
+  },
+  {
+    "id": 11629,
+    "name": "Houndmaster\u0027s Rifle",
+    "slot": 17
+  },
+  {
+    "id": 13146,
+    "name": "Shell Launcher Shotgun",
+    "slot": 17
+  },
+  {
+    "id": 13248,
+    "name": "Burstshot Harquebus",
+    "slot": 17
+  },
+  {
+    "id": 13380,
+    "name": "Willey\u0027s Portable Howitzer",
+    "slot": 17
+  },
+  {
+    "id": 13474,
+    "name": "Farmer Dalson\u0027s Shotgun",
+    "slot": 17
+  },
+  {
+    "id": 13825,
+    "name": "Primed Musket",
+    "slot": 17
+  },
+  {
+    "id": 15325,
+    "name": "Sharpshooter Harquebus",
+    "slot": 17
+  },
+  {
+    "id": 15324,
+    "name": "Burnside Rifle",
+    "slot": 17
+  },
+  {
+    "id": 15995,
+    "name": "Thorium Rifle",
+    "slot": 17
+  },
+  {
+    "id": 16007,
+    "name": "Flawless Arcanite Rifle",
+    "slot": 17
+  },
+  {
+    "id": 16004,
+    "name": "Dark Iron Rifle",
+    "slot": 17
+  },
+  {
+    "id": 16992,
+    "name": "Smokey\u0027s Explosive Launcher",
+    "slot": 17
+  },
+  {
+    "id": 17072,
+    "name": "Blastershot Launcher",
+    "slot": 17
+  },
+  {
+    "id": 17717,
+    "name": "Megashot Rifle",
+    "slot": 17
+  },
+  {
+    "id": 18282,
+    "name": "Core Marksman Rifle",
+    "slot": 17
+  },
+  {
+    "id": 18460,
+    "name": "Unsophisticated Hand Cannon",
+    "slot": 17
+  },
+  {
+    "id": 18755,
+    "name": "Xorothian Firestick",
+    "slot": 17
+  },
+  {
+    "id": 18860,
+    "name": "High Warlord\u0027s Street Sweeper",
+    "slot": 17
+  },
+  {
+    "id": 18855,
+    "name": "Grand Marshal\u0027s Hand Cannon",
+    "slot": 17
+  },
+  {
+    "id": 19368,
+    "name": "Dragonbreath Hand Cannon",
+    "slot": 17
+  },
+  {
+    "id": 19853,
+    "name": "Gurubashi Dwarf Destroyer",
+    "slot": 17
+  },
+  {
+    "id": 20722,
+    "name": "Crystal Slugthrower",
+    "slot": 17
+  },
+  {
+    "id": 21272,
+    "name": "Blessed Qiraji Musket",
+    "slot": 17
+  },
+  {
+    "id": 21800,
+    "name": "Silithid Husked Launcher",
+    "slot": 17
+  },
+  {
+    "id": 22656,
+    "name": "The Purifier",
+    "slot": 17
+  },
+  {
+    "id": 22810,
+    "name": "Toxin Injector",
+    "slot": 17
+  },
+  {
+    "id": 23557,
+    "name": "Larvae of the Great Worm",
+    "slot": 17
+  },
+  {
+    "id": 23742,
+    "name": "Fel Iron Musket",
+    "slot": 17
+  },
+  {
+    "id": 23746,
+    "name": "Adamantite Rifle",
+    "slot": 17
+  },
+  {
+    "id": 23747,
+    "name": "Felsteel Boomstick",
+    "slot": 17
+  },
+  {
+    "id": 23748,
+    "name": "Ornate Khorium Rifle",
+    "slot": 17
+  },
+  {
+    "id": 24389,
+    "name": "Legion Blunderbuss",
+    "slot": 17
+  },
+  {
+    "id": 25270,
+    "name": "Gnomish Assault Rifle",
+    "slot": 17
+  },
+  {
+    "id": 25272,
+    "name": "PC-54 Shotgun",
+    "slot": 17
+  },
+  {
+    "id": 25273,
+    "name": "Sawed-Off Shotgun",
+    "slot": 17
+  },
+  {
+    "id": 25268,
+    "name": "Lead-Slug Shotgun",
+    "slot": 17
+  },
+  {
+    "id": 25279,
+    "name": "Sen\u0027jin Longrifle",
+    "slot": 17
+  },
+  {
+    "id": 25280,
+    "name": "Game Hunter Musket",
+    "slot": 17
+  },
+  {
+    "id": 25274,
+    "name": "Cliffjumper Shotgun",
+    "slot": 17
+  },
+  {
+    "id": 25276,
+    "name": "Tauren Runed Musket",
+    "slot": 17
+  },
+  {
+    "id": 25269,
+    "name": "Longbeard Rifle",
+    "slot": 17
+  },
+  {
+    "id": 25271,
+    "name": "Croc-Hunter\u0027s Rifle",
+    "slot": 17
+  },
+  {
+    "id": 25278,
+    "name": "Nessingwary Longrifle",
+    "slot": 17
+  },
+  {
+    "id": 25277,
+    "name": "Sporting Rifle",
+    "slot": 17
+  },
+  {
+    "id": 25281,
+    "name": "Big-Boar Battle Rifle",
+    "slot": 17
+  },
+  {
+    "id": 25275,
+    "name": "Dragonbreath Musket",
+    "slot": 17
+  },
+  {
+    "id": 25405,
+    "name": "Rusted Musket",
+    "slot": 17
+  },
+  {
+    "id": 25544,
+    "name": "Zerid\u0027s Vintage Musket",
+    "slot": 17
+  },
+  {
+    "id": 25639,
+    "name": "Hemet\u0027s Elekk Gun",
+    "slot": 17
+  },
+  {
+    "id": 25972,
+    "name": "Deadeye\u0027s Piece",
+    "slot": 17
+  },
+  {
+    "id": 27794,
+    "name": "Recoilless Rocket Ripper X-54",
+    "slot": 17
+  },
+  {
+    "id": 27898,
+    "name": "Wrathfire Hand-Cannon",
+    "slot": 17
+  },
+  {
+    "id": 28286,
+    "name": "Telescopic Sharprifle",
+    "slot": 17
+  },
+  {
+    "id": 28581,
+    "name": "Wolfslayer Sniper Rifle",
+    "slot": 17
+  },
+  {
+    "id": 29115,
+    "name": "Consortium Blaster",
+    "slot": 17
+  },
+  {
+    "id": 29151,
+    "name": "Veteran\u0027s Musket",
+    "slot": 17
+  },
+  {
+    "id": 29949,
+    "name": "Arcanite Steam-Pistol",
+    "slot": 17
+  },
+  {
+    "id": 30279,
+    "name": "Mama\u0027s Insurance",
+    "slot": 17
+  },
+  {
+    "id": 30724,
+    "name": "Barrel-Blade Longrifle",
+    "slot": 17,
+    "sockets": 2
+  },
+  {
+    "id": 30758,
+    "name": "Aldor Guardian Rifle",
+    "slot": 17
+  },
+  {
+    "id": 31000,
+    "name": "Bloodwarder\u0027s Rifle",
+    "slot": 17
+  },
+  {
+    "id": 31204,
+    "name": "The Gunblade",
+    "slot": 17
+  },
+  {
+    "id": 31323,
+    "name": "Don Santos\u0027 Famous Hunting Rifle",
+    "slot": 17
+  },
+  {
+    "id": 32325,
+    "name": "Rifle of the Stoic Guardian",
+    "slot": 17
+  },
+  {
+    "id": 32756,
+    "name": "Gyro-Balanced Khorium Destroyer",
+    "slot": 17,
+    "sockets": 1
+  },
+  {
+    "id": 32780,
+    "name": "The Boomstick",
+    "slot": 17
+  },
+  {
+    "id": 33491,
+    "name": "Tuskbreaker",
+    "slot": 17
+  },
+  {
+    "id": 34530,
+    "name": "Vengeful Gladiator\u0027s Rifle",
+    "slot": 17
+  },
+  {
+    "id": 35075,
+    "name": "Brutal Gladiator\u0027s Rifle",
+    "slot": 17
+  }
+]

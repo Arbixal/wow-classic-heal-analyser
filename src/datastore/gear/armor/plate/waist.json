@@ -1,0 +1,859 @@
+[
+  {
+    "id": 8081,
+    "name": "Light Plate Belt",
+    "slot": 5
+  },
+  {
+    "id": 8315,
+    "name": "Alabaster Plate Girdle",
+    "slot": 5
+  },
+  {
+    "id": 10166,
+    "name": "Templar Girdle",
+    "slot": 5
+  },
+  {
+    "id": 10243,
+    "name": "Heavy Lamellar Girdle",
+    "slot": 5
+  },
+  {
+    "id": 10278,
+    "name": "Emerald Girdle",
+    "slot": 5
+  },
+  {
+    "id": 10381,
+    "name": "Commander\u0027s Girdle",
+    "slot": 5
+  },
+  {
+    "id": 10387,
+    "name": "Hyperion Girdle",
+    "slot": 5
+  },
+  {
+    "id": 10370,
+    "name": "Imbued Plate Girdle",
+    "slot": 5
+  },
+  {
+    "id": 10798,
+    "name": "Atal\u0027alarion\u0027s Tusk Ring",
+    "slot": 5
+  },
+  {
+    "id": 10788,
+    "name": "Atal\u0027ai Girdle",
+    "slot": 5
+  },
+  {
+    "id": 11703,
+    "name": "Stonewall Girdle",
+    "slot": 5
+  },
+  {
+    "id": 12115,
+    "name": "Stalwart Clutch",
+    "slot": 5
+  },
+  {
+    "id": 12424,
+    "name": "Imperial Plate Belt",
+    "slot": 5
+  },
+  {
+    "id": 13077,
+    "name": "Girdle of Uther",
+    "slot": 5
+  },
+  {
+    "id": 13142,
+    "name": "Brigam Girdle",
+    "slot": 5
+  },
+  {
+    "id": 13384,
+    "name": "Rainbow Girdle",
+    "slot": 5
+  },
+  {
+    "id": 13502,
+    "name": "Handcrafted Mastersmith Girdle",
+    "slot": 5
+  },
+  {
+    "id": 13959,
+    "name": "Omokk\u0027s Girth Restrainer",
+    "slot": 5
+  },
+  {
+    "id": 14620,
+    "name": "Deathbone Girdle",
+    "slot": 5
+  },
+  {
+    "id": 14864,
+    "name": "Warleader\u0027s Belt",
+    "slot": 5
+  },
+  {
+    "id": 14856,
+    "name": "Vanguard Girdle",
+    "slot": 5
+  },
+  {
+    "id": 14927,
+    "name": "Lofty Belt",
+    "slot": 5
+  },
+  {
+    "id": 14934,
+    "name": "Heroic Girdle",
+    "slot": 5
+  },
+  {
+    "id": 14960,
+    "name": "High Chief\u0027s Belt",
+    "slot": 5
+  },
+  {
+    "id": 14968,
+    "name": "Glorious Belt",
+    "slot": 5
+  },
+  {
+    "id": 14977,
+    "name": "Exalted Girdle",
+    "slot": 5
+  },
+  {
+    "id": 15709,
+    "name": "Gearforge Girdle",
+    "slot": 5
+  },
+  {
+    "id": 16723,
+    "name": "Lightforge Belt",
+    "slot": 5
+  },
+  {
+    "id": 16736,
+    "name": "Belt of Valor",
+    "slot": 5
+  },
+  {
+    "id": 16858,
+    "name": "Lawbringer Belt",
+    "slot": 5
+  },
+  {
+    "id": 16864,
+    "name": "Belt of Might",
+    "slot": 5
+  },
+  {
+    "id": 16952,
+    "name": "Judgement Belt",
+    "slot": 5
+  },
+  {
+    "id": 16960,
+    "name": "Waistband of Wrath",
+    "slot": 5
+  },
+  {
+    "id": 18529,
+    "name": "Elemental Plate Girdle",
+    "slot": 5
+  },
+  {
+    "id": 18547,
+    "name": "Unmelting Ice Girdle",
+    "slot": 5
+  },
+  {
+    "id": 18702,
+    "name": "Belt of the Ordained",
+    "slot": 5
+  },
+  {
+    "id": 19051,
+    "name": "Girdle of the Dawn",
+    "slot": 5
+  },
+  {
+    "id": 19087,
+    "name": "Frostwolf Plate Belt",
+    "slot": 5
+  },
+  {
+    "id": 19091,
+    "name": "Stormpike Plate Girdle",
+    "slot": 5
+  },
+  {
+    "id": 19137,
+    "name": "Onslaught Girdle",
+    "slot": 5
+  },
+  {
+    "id": 19392,
+    "name": "Girdle of the Fallen Crusader",
+    "slot": 5
+  },
+  {
+    "id": 19826,
+    "name": "Zandalar Freethinker\u0027s Belt",
+    "slot": 5
+  },
+  {
+    "id": 19823,
+    "name": "Zandalar Vindicator\u0027s Belt",
+    "slot": 5
+  },
+  {
+    "id": 20042,
+    "name": "Highlander\u0027s Lamellar Girdle",
+    "slot": 5
+  },
+  {
+    "id": 20041,
+    "name": "Highlander\u0027s Plate Girdle",
+    "slot": 5
+  },
+  {
+    "id": 20106,
+    "name": "Highlander\u0027s Lamellar Girdle",
+    "slot": 5
+  },
+  {
+    "id": 20124,
+    "name": "Highlander\u0027s Plate Girdle",
+    "slot": 5
+  },
+  {
+    "id": 20179,
+    "name": "Defiler\u0027s Lamellar Girdle",
+    "slot": 5
+  },
+  {
+    "id": 20177,
+    "name": "Defiler\u0027s Lamellar Girdle",
+    "slot": 5
+  },
+  {
+    "id": 20204,
+    "name": "Defiler\u0027s Plate Girdle",
+    "slot": 5
+  },
+  {
+    "id": 20205,
+    "name": "Defiler\u0027s Plate Girdle",
+    "slot": 5
+  },
+  {
+    "id": 20213,
+    "name": "Belt of Shrunken Heads",
+    "slot": 5
+  },
+  {
+    "id": 20673,
+    "name": "Abyssal Plate Girdle",
+    "slot": 5
+  },
+  {
+    "id": 21503,
+    "name": "Belt of the Sand Reaver",
+    "slot": 5
+  },
+  {
+    "id": 21598,
+    "name": "Royal Qiraji Belt",
+    "slot": 5
+  },
+  {
+    "id": 21606,
+    "name": "Belt of the Fallen Emperor",
+    "slot": 5
+  },
+  {
+    "id": 21692,
+    "name": "Triad Girdle",
+    "slot": 5
+  },
+  {
+    "id": 21994,
+    "name": "Belt of Heroism",
+    "slot": 5
+  },
+  {
+    "id": 22086,
+    "name": "Soulforge Belt",
+    "slot": 5
+  },
+  {
+    "id": 22197,
+    "name": "Heavy Obsidian Belt",
+    "slot": 5
+  },
+  {
+    "id": 22422,
+    "name": "Dreadnaught Waistguard",
+    "slot": 5
+  },
+  {
+    "id": 22431,
+    "name": "Redemption Girdle",
+    "slot": 5
+  },
+  {
+    "id": 22764,
+    "name": "Ironvine Belt",
+    "slot": 5
+  },
+  {
+    "id": 23219,
+    "name": "Girdle of the Mentor",
+    "slot": 5
+  },
+  {
+    "id": 23484,
+    "name": "Fel Iron Plate Belt",
+    "slot": 5
+  },
+  {
+    "id": 23510,
+    "name": "Enchanted Adamantite Belt",
+    "slot": 5,
+    "sockets": 2
+  },
+  {
+    "id": 23524,
+    "name": "Khorium Belt",
+    "slot": 5
+  },
+  {
+    "id": 23666,
+    "name": "Belt of the Grand Crusader",
+    "slot": 5
+  },
+  {
+    "id": 24091,
+    "name": "Tenacious Defender",
+    "slot": 5,
+    "sockets": 2
+  },
+  {
+    "id": 24458,
+    "name": "Studded Girdle of Virtue",
+    "slot": 5,
+    "sockets": 2
+  },
+  {
+    "id": 24934,
+    "name": "Darkcrest Belt",
+    "slot": 5
+  },
+  {
+    "id": 24918,
+    "name": "Grimscale Belt",
+    "slot": 5
+  },
+  {
+    "id": 24926,
+    "name": "Ango\u0027rosh Belt",
+    "slot": 5
+  },
+  {
+    "id": 24942,
+    "name": "Bloodscale Belt",
+    "slot": 5
+  },
+  {
+    "id": 24950,
+    "name": "Bogslayer Belt",
+    "slot": 5
+  },
+  {
+    "id": 24966,
+    "name": "Talonguard Girdle",
+    "slot": 5
+  },
+  {
+    "id": 24982,
+    "name": "Boulderfist Belt",
+    "slot": 5
+  },
+  {
+    "id": 24990,
+    "name": "Warmaul Belt",
+    "slot": 5
+  },
+  {
+    "id": 24958,
+    "name": "Khan\u0027aish Girdle",
+    "slot": 5
+  },
+  {
+    "id": 24998,
+    "name": "Bloodfist Girdle",
+    "slot": 5
+  },
+  {
+    "id": 24974,
+    "name": "Reaver Girdle",
+    "slot": 5
+  },
+  {
+    "id": 25014,
+    "name": "Shattered Hand Belt",
+    "slot": 5
+  },
+  {
+    "id": 25006,
+    "name": "Conqueror\u0027s Girdle",
+    "slot": 5
+  },
+  {
+    "id": 25022,
+    "name": "Warlord\u0027s Iron-Girdle",
+    "slot": 5
+  },
+  {
+    "id": 25381,
+    "name": "Tarnished Plate Belt",
+    "slot": 5
+  },
+  {
+    "id": 25389,
+    "name": "Deteriorating Plate Belt",
+    "slot": 5
+  },
+  {
+    "id": 25597,
+    "name": "Vindicator\u0027s Cinch",
+    "slot": 5
+  },
+  {
+    "id": 25602,
+    "name": "Bog Walker\u0027s Belt",
+    "slot": 5
+  },
+  {
+    "id": 25922,
+    "name": "Fearless Girdle",
+    "slot": 5,
+    "sockets": 2
+  },
+  {
+    "id": 25948,
+    "name": "Girdle of the Penitent",
+    "slot": 5
+  },
+  {
+    "id": 27548,
+    "name": "Girdle of Many Blessings",
+    "slot": 5
+  },
+  {
+    "id": 27644,
+    "name": "Avenger\u0027s Waistguard",
+    "slot": 5
+  },
+  {
+    "id": 27639,
+    "name": "Slayer\u0027s Waistguard",
+    "slot": 5
+  },
+  {
+    "id": 27672,
+    "name": "Girdle of the Immovable",
+    "slot": 5,
+    "sockets": 2
+  },
+  {
+    "id": 27755,
+    "name": "Girdle of Gallantry",
+    "slot": 5,
+    "sockets": 2
+  },
+  {
+    "id": 27985,
+    "name": "Deathforge Girdle",
+    "slot": 5,
+    "sockets": 2
+  },
+  {
+    "id": 28385,
+    "name": "General\u0027s Plate Belt",
+    "slot": 5
+  },
+  {
+    "id": 28375,
+    "name": "Rubium War-Girdle",
+    "slot": 5
+  },
+  {
+    "id": 28498,
+    "name": "Ravenguard\u0027s Baldric",
+    "slot": 5
+  },
+  {
+    "id": 28566,
+    "name": "Crimson Girdle of the Indomitable",
+    "slot": 5,
+    "sockets": 2
+  },
+  {
+    "id": 28644,
+    "name": "General\u0027s Scaled Belt",
+    "slot": 5
+  },
+  {
+    "id": 28641,
+    "name": "General\u0027s Lamellar Belt",
+    "slot": 5
+  },
+  {
+    "id": 28733,
+    "name": "Girdle of Truth",
+    "slot": 5
+  },
+  {
+    "id": 28779,
+    "name": "Girdle of the Endless Pit",
+    "slot": 5,
+    "sockets": 2
+  },
+  {
+    "id": 28995,
+    "name": "Marshal\u0027s Plate Belt",
+    "slot": 5
+  },
+  {
+    "id": 28983,
+    "name": "Marshal\u0027s Lamellar Belt",
+    "slot": 5
+  },
+  {
+    "id": 28998,
+    "name": "Marshal\u0027s Scaled Belt",
+    "slot": 5
+  },
+  {
+    "id": 29238,
+    "name": "Lion\u0027s Heart Girdle",
+    "slot": 5
+  },
+  {
+    "id": 29253,
+    "name": "Girdle of Valorous Deeds",
+    "slot": 5
+  },
+  {
+    "id": 29807,
+    "name": "Engraved Cattleman\u0027s Buckle",
+    "slot": 5
+  },
+  {
+    "id": 29965,
+    "name": "Girdle of the Righteous Path",
+    "slot": 5
+  },
+  {
+    "id": 30032,
+    "name": "Red Belt of Battle",
+    "slot": 5,
+    "sockets": 2
+  },
+  {
+    "id": 30034,
+    "name": "Belt of the Guardian",
+    "slot": 5,
+    "sockets": 2
+  },
+  {
+    "id": 30096,
+    "name": "Girdle of the Invulnerable",
+    "slot": 5,
+    "sockets": 2
+  },
+  {
+    "id": 30254,
+    "name": "Zephyrion\u0027s Belt",
+    "slot": 5
+  },
+  {
+    "id": 30330,
+    "name": "Starcaller\u0027s Plated Belt",
+    "slot": 5
+  },
+  {
+    "id": 30371,
+    "name": "Lightwarden\u0027s Girdle",
+    "slot": 5
+  },
+  {
+    "id": 30380,
+    "name": "Girdle of the Lost Vindicator",
+    "slot": 5
+  },
+  {
+    "id": 30678,
+    "name": "Lurker\u0027s Girdle",
+    "slot": 5
+  },
+  {
+    "id": 30777,
+    "name": "Aldor Heavy Belt",
+    "slot": 5
+  },
+  {
+    "id": 30897,
+    "name": "Girdle of Hope",
+    "slot": 5,
+    "sockets": 2
+  },
+  {
+    "id": 30915,
+    "name": "Belt of Seething Fury",
+    "slot": 5
+  },
+  {
+    "id": 30962,
+    "name": "Borak\u0027s Belt of Bravery",
+    "slot": 5
+  },
+  {
+    "id": 31151,
+    "name": "Girdle of Siege",
+    "slot": 5
+  },
+  {
+    "id": 31195,
+    "name": "Voidplate Girdle",
+    "slot": 5
+  },
+  {
+    "id": 31202,
+    "name": "Girdle of Divine Blessing",
+    "slot": 5
+  },
+  {
+    "id": 31227,
+    "name": "Feathered Girdle",
+    "slot": 5
+  },
+  {
+    "id": 31315,
+    "name": "Goblin Girdle",
+    "slot": 5
+  },
+  {
+    "id": 31445,
+    "name": "Last Year\u0027s \u0022In\u0022 Belt",
+    "slot": 5
+  },
+  {
+    "id": 31460,
+    "name": "Sha\u0027tari Vindicator\u0027s Waistguard",
+    "slot": 5
+  },
+  {
+    "id": 31455,
+    "name": "Muscle Toning Belt",
+    "slot": 5
+  },
+  {
+    "id": 31480,
+    "name": "Ogre Beater\u0027s Belt",
+    "slot": 5
+  },
+  {
+    "id": 31579,
+    "name": "Slatesteel Girdle",
+    "slot": 5
+  },
+  {
+    "id": 31690,
+    "name": "Belt of the Soul Saver",
+    "slot": 5
+  },
+  {
+    "id": 31787,
+    "name": "Stalwart Girdle",
+    "slot": 5
+  },
+  {
+    "id": 32333,
+    "name": "Girdle of Stability",
+    "slot": 5,
+    "sockets": 2
+  },
+  {
+    "id": 32342,
+    "name": "Girdle of Mighty Resolve",
+    "slot": 5,
+    "sockets": 2
+  },
+  {
+    "id": 32401,
+    "name": "Shadesteel Girdle",
+    "slot": 5
+  },
+  {
+    "id": 32512,
+    "name": "Girdle of Lordaeron\u0027s Fallen",
+    "slot": 5
+  },
+  {
+    "id": 32606,
+    "name": "Girdle of the Lightbearer",
+    "slot": 5
+  },
+  {
+    "id": 32806,
+    "name": "Veteran\u0027s Scaled Belt",
+    "slot": 5
+  },
+  {
+    "id": 32801,
+    "name": "Veteran\u0027s Lamellar Belt",
+    "slot": 5
+  },
+  {
+    "id": 32805,
+    "name": "Veteran\u0027s Plate Belt",
+    "slot": 5
+  },
+  {
+    "id": 32982,
+    "name": "General\u0027s Ornamented Belt",
+    "slot": 5
+  },
+  {
+    "id": 32988,
+    "name": "Veteran\u0027s Ornamented Belt",
+    "slot": 5
+  },
+  {
+    "id": 32985,
+    "name": "Marshal\u0027s Ornamented Belt",
+    "slot": 5
+  },
+  {
+    "id": 33279,
+    "name": "Iron-tusk Girdle",
+    "slot": 5,
+    "sockets": 2
+  },
+  {
+    "id": 33331,
+    "name": "Chain of Unleashed Rage",
+    "slot": 5,
+    "sockets": 2
+  },
+  {
+    "id": 33446,
+    "name": "Girdle of Stromgarde\u0027s Hope",
+    "slot": 5,
+    "sockets": 2
+  },
+  {
+    "id": 33524,
+    "name": "Girdle of the Protector",
+    "slot": 5,
+    "sockets": 2
+  },
+  {
+    "id": 33811,
+    "name": "Vindicator\u0027s Plate Belt",
+    "slot": 5
+  },
+  {
+    "id": 33888,
+    "name": "Vindicator\u0027s Lamellar Belt",
+    "slot": 5
+  },
+  {
+    "id": 33903,
+    "name": "Vindicator\u0027s Ornamented Belt",
+    "slot": 5
+  },
+  {
+    "id": 33909,
+    "name": "Vindicator\u0027s Scaled Belt",
+    "slot": 5
+  },
+  {
+    "id": 34487,
+    "name": "Lightbringer Belt",
+    "slot": 5,
+    "sockets": 1
+  },
+  {
+    "id": 34485,
+    "name": "Lightbringer Girdle",
+    "slot": 5,
+    "sockets": 1
+  },
+  {
+    "id": 34547,
+    "name": "Onslaught Waistguard",
+    "slot": 5,
+    "sockets": 1
+  },
+  {
+    "id": 34546,
+    "name": "Onslaught Belt",
+    "slot": 5,
+    "sockets": 1
+  },
+  {
+    "id": 34488,
+    "name": "Lightbringer Waistguard",
+    "slot": 5,
+    "sockets": 1
+  },
+  {
+    "id": 34923,
+    "name": "Waistguard of Reparation",
+    "slot": 5,
+    "sockets": 1
+  },
+  {
+    "id": 34944,
+    "name": "Girdle of Seething Rage",
+    "slot": 5,
+    "sockets": 1
+  },
+  {
+    "id": 34941,
+    "name": "Girdle of the Fearless",
+    "slot": 5,
+    "sockets": 1
+  },
+  {
+    "id": 35161,
+    "name": "Guardian\u0027s Plate Belt",
+    "slot": 5
+  },
+  {
+    "id": 35160,
+    "name": "Guardian\u0027s Ornamented Belt",
+    "slot": 5
+  },
+  {
+    "id": 35155,
+    "name": "Guardian\u0027s Lamellar Belt",
+    "slot": 5
+  },
+  {
+    "id": 35163,
+    "name": "Guardian\u0027s Scaled Belt",
+    "slot": 5
+  }
+]

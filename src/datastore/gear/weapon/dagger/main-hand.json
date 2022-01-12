@@ -1,0 +1,333 @@
+[
+  {
+    "id": 11922,
+    "name": "Blood-etched Blade",
+    "slot": 15
+  },
+  {
+    "id": 13964,
+    "name": "Witchblade",
+    "slot": 15
+  },
+  {
+    "id": 17070,
+    "name": "Fang of the Mystics",
+    "slot": 15
+  },
+  {
+    "id": 18878,
+    "name": "Sorcerous Dagger",
+    "slot": 15
+  },
+  {
+    "id": 19347,
+    "name": "Claw of Chromaggus",
+    "slot": 15
+  },
+  {
+    "id": 19903,
+    "name": "Fang of Venoxis",
+    "slot": 15
+  },
+  {
+    "id": 19965,
+    "name": "Wushoolay\u0027s Poker",
+    "slot": 15
+  },
+  {
+    "id": 20070,
+    "name": "Sageclaw",
+    "slot": 15
+  },
+  {
+    "id": 20214,
+    "name": "Mindfang",
+    "slot": 15
+  },
+  {
+    "id": 20647,
+    "name": "Black Crystal Dagger",
+    "slot": 15
+  },
+  {
+    "id": 20720,
+    "name": "Dark Whisper Blade",
+    "slot": 15
+  },
+  {
+    "id": 21416,
+    "name": "Kris of Unspoken Names",
+    "slot": 15
+  },
+  {
+    "id": 21523,
+    "name": "Fang of Korialstrasz",
+    "slot": 15
+  },
+  {
+    "id": 21802,
+    "name": "The Lost Kris of Zedd",
+    "slot": 15
+  },
+  {
+    "id": 22379,
+    "name": "Shivsprocket\u0027s Shiv",
+    "slot": 15
+  },
+  {
+    "id": 22688,
+    "name": "Verimonde\u0027s Last Resort",
+    "slot": 15
+  },
+  {
+    "id": 22803,
+    "name": "Midnight Haze",
+    "slot": 15
+  },
+  {
+    "id": 23458,
+    "name": "High Warlord\u0027s Spellblade",
+    "slot": 15
+  },
+  {
+    "id": 23451,
+    "name": "Grand Marshal\u0027s Mageblade",
+    "slot": 15
+  },
+  {
+    "id": 23466,
+    "name": "High Warlord\u0027s Spellblade",
+    "slot": 15
+  },
+  {
+    "id": 23554,
+    "name": "Eternium Runed Blade",
+    "slot": 15
+  },
+  {
+    "id": 23912,
+    "name": "Deprecated: Keanna\u0027s Will",
+    "slot": 15
+  },
+  {
+    "id": 24356,
+    "name": "Wastewalker Shiv",
+    "slot": 15
+  },
+  {
+    "id": 24453,
+    "name": "Zangartooth Shortblade",
+    "slot": 15
+  },
+  {
+    "id": 25297,
+    "name": "Tuning Knife",
+    "slot": 15
+  },
+  {
+    "id": 25298,
+    "name": "Combustion Dagger",
+    "slot": 15
+  },
+  {
+    "id": 25296,
+    "name": "Absorption Dagger",
+    "slot": 15
+  },
+  {
+    "id": 25305,
+    "name": "Elemental Dagger",
+    "slot": 15
+  },
+  {
+    "id": 25301,
+    "name": "Shattering Dagger",
+    "slot": 15
+  },
+  {
+    "id": 25299,
+    "name": "Siphoning Dagger",
+    "slot": 15
+  },
+  {
+    "id": 25307,
+    "name": "Shadow Dagger",
+    "slot": 15
+  },
+  {
+    "id": 25302,
+    "name": "Soul-Drain Dagger",
+    "slot": 15
+  },
+  {
+    "id": 25300,
+    "name": "Lightning Dagger",
+    "slot": 15
+  },
+  {
+    "id": 25303,
+    "name": "Amplifying Blade",
+    "slot": 15
+  },
+  {
+    "id": 25304,
+    "name": "Destructo-Blade",
+    "slot": 15
+  },
+  {
+    "id": 25306,
+    "name": "Permafrost Dagger",
+    "slot": 15
+  },
+  {
+    "id": 25309,
+    "name": "Warpdagger",
+    "slot": 15
+  },
+  {
+    "id": 25308,
+    "name": "Thunder Spike",
+    "slot": 15
+  },
+  {
+    "id": 25543,
+    "name": "Talbuk Sticker",
+    "slot": 15
+  },
+  {
+    "id": 25774,
+    "name": "Azure Lightblade",
+    "slot": 15
+  },
+  {
+    "id": 27431,
+    "name": "Time-Shifted Dagger",
+    "slot": 15
+  },
+  {
+    "id": 27543,
+    "name": "Starlight Dagger",
+    "slot": 15
+  },
+  {
+    "id": 27753,
+    "name": "Ensorcelled Marshfang Blade",
+    "slot": 15
+  },
+  {
+    "id": 27868,
+    "name": "Runesong Dagger",
+    "slot": 15
+  },
+  {
+    "id": 28297,
+    "name": "Gladiator\u0027s Spellblade",
+    "slot": 15
+  },
+  {
+    "id": 28322,
+    "name": "Runed Dagger of Solace",
+    "slot": 15
+  },
+  {
+    "id": 28770,
+    "name": "Nathrezim Mindblade",
+    "slot": 15
+  },
+  {
+    "id": 28931,
+    "name": "High Warlord\u0027s Spellblade",
+    "slot": 15
+  },
+  {
+    "id": 28957,
+    "name": "Grand Marshal\u0027s Spellblade",
+    "slot": 15
+  },
+  {
+    "id": 29457,
+    "name": "Nethershard",
+    "slot": 15
+  },
+  {
+    "id": 30723,
+    "name": "Talon of the Tempest",
+    "slot": 15,
+    "sockets": 2
+  },
+  {
+    "id": 30787,
+    "name": "Illidari-Bane Mageblade",
+    "slot": 15
+  },
+  {
+    "id": 31013,
+    "name": "Ceremonial Kris",
+    "slot": 15
+  },
+  {
+    "id": 31142,
+    "name": "Blade of Trapped Knowledge",
+    "slot": 15
+  },
+  {
+    "id": 31447,
+    "name": "Vibro Dagger",
+    "slot": 15
+  },
+  {
+    "id": 31475,
+    "name": "Thunderlord Scalpel",
+    "slot": 15
+  },
+  {
+    "id": 31758,
+    "name": "Revered Mother\u0027s Crysknife",
+    "slot": 15
+  },
+  {
+    "id": 32053,
+    "name": "Merciless Gladiator\u0027s Spellblade",
+    "slot": 15
+  },
+  {
+    "id": 32237,
+    "name": "The Maelstrom\u0027s Fury",
+    "slot": 15
+  },
+  {
+    "id": 33354,
+    "name": "Wub\u0027s Cursed Hexblade",
+    "slot": 15
+  },
+  {
+    "id": 33763,
+    "name": "Vengeful Gladiator\u0027s Spellblade",
+    "slot": 15
+  },
+  {
+    "id": 34336,
+    "name": "Sunflare",
+    "slot": 15
+  },
+  {
+    "id": 34604,
+    "name": "Jaded Crystal Dagger",
+    "slot": 15
+  },
+  {
+    "id": 34895,
+    "name": "Scryer\u0027s Blade of Focus",
+    "slot": 15
+  },
+  {
+    "id": 35102,
+    "name": "Brutal Gladiator\u0027s Spellblade",
+    "slot": 15
+  },
+  {
+    "id": 37739,
+    "name": "Brutal Gladiator\u0027s Blade of Alacrity",
+    "slot": 15
+  }
+]

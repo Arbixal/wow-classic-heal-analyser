@@ -1,0 +1,830 @@
+[
+  {
+    "id": 1168,
+    "name": "Skullflame Shield",
+    "slot": 16
+  },
+  {
+    "id": 1203,
+    "name": "Aegis of Stormwind",
+    "slot": 16
+  },
+  {
+    "id": 3987,
+    "name": "Deflecting Tower",
+    "slot": 16
+  },
+  {
+    "id": 3990,
+    "name": "Crested Buckler",
+    "slot": 16
+  },
+  {
+    "id": 3988,
+    "name": "Plate Wall Shield",
+    "slot": 16
+  },
+  {
+    "id": 3991,
+    "name": "Plated Buckler",
+    "slot": 16
+  },
+  {
+    "id": 8134,
+    "name": "Myrmidon\u0027s Defender",
+    "slot": 16
+  },
+  {
+    "id": 8282,
+    "name": "Valorous Shield",
+    "slot": 16
+  },
+  {
+    "id": 8275,
+    "name": "Ebonhold Buckler",
+    "slot": 16
+  },
+  {
+    "id": 8313,
+    "name": "Hero\u0027s Buckler",
+    "slot": 16
+  },
+  {
+    "id": 8320,
+    "name": "Alabaster Shield",
+    "slot": 16
+  },
+  {
+    "id": 9643,
+    "name": "Optomatic Deflector",
+    "slot": 16
+  },
+  {
+    "id": 9974,
+    "name": "Overlord\u0027s Shield",
+    "slot": 16
+  },
+  {
+    "id": 10078,
+    "name": "Lord\u0027s Crest",
+    "slot": 16
+  },
+  {
+    "id": 10093,
+    "name": "Revenant Deflector",
+    "slot": 16
+  },
+  {
+    "id": 10158,
+    "name": "Mercurial Guard",
+    "slot": 16
+  },
+  {
+    "id": 10195,
+    "name": "Crusader\u0027s Shield",
+    "slot": 16
+  },
+  {
+    "id": 10204,
+    "name": "Heavy Lamellar Shield",
+    "slot": 16
+  },
+  {
+    "id": 10271,
+    "name": "Masterwork Shield",
+    "slot": 16
+  },
+  {
+    "id": 10363,
+    "name": "Engraved Wall",
+    "slot": 16
+  },
+  {
+    "id": 10366,
+    "name": "Demon Guard",
+    "slot": 16
+  },
+  {
+    "id": 10365,
+    "name": "Emerald Shield",
+    "slot": 16
+  },
+  {
+    "id": 10364,
+    "name": "Templar Shield",
+    "slot": 16
+  },
+  {
+    "id": 10362,
+    "name": "Ornate Shield",
+    "slot": 16
+  },
+  {
+    "id": 10367,
+    "name": "Hyperion Shield",
+    "slot": 16
+  },
+  {
+    "id": 10686,
+    "name": "Aegis of Battle",
+    "slot": 16
+  },
+  {
+    "id": 10835,
+    "name": "Crest of Supremacy",
+    "slot": 16
+  },
+  {
+    "id": 11631,
+    "name": "Stoneshell Guard",
+    "slot": 16
+  },
+  {
+    "id": 11785,
+    "name": "Rock Golem Bulwark",
+    "slot": 16
+  },
+  {
+    "id": 11915,
+    "name": "Shizzle\u0027s Drizzle Blocker",
+    "slot": 16
+  },
+  {
+    "id": 12602,
+    "name": "Draconian Deflector",
+    "slot": 16
+  },
+  {
+    "id": 13083,
+    "name": "Garrett Family Crest",
+    "slot": 16
+  },
+  {
+    "id": 13205,
+    "name": "Rhombeard Protector",
+    "slot": 16
+  },
+  {
+    "id": 13243,
+    "name": "Argent Defender",
+    "slot": 16
+  },
+  {
+    "id": 13254,
+    "name": "Astral Guard",
+    "slot": 16
+  },
+  {
+    "id": 13375,
+    "name": "Crest of Retribution",
+    "slot": 16
+  },
+  {
+    "id": 13529,
+    "name": "Husk of Nerub\u0027enkan",
+    "slot": 16
+  },
+  {
+    "id": 14002,
+    "name": "Darrowshire Strongguard",
+    "slot": 16
+  },
+  {
+    "id": 14528,
+    "name": "Rattlecage Buckler",
+    "slot": 16
+  },
+  {
+    "id": 14790,
+    "name": "Protector Buckler",
+    "slot": 16
+  },
+  {
+    "id": 14800,
+    "name": "Bloodlust Buckler",
+    "slot": 16
+  },
+  {
+    "id": 14812,
+    "name": "Warstrike Buckler",
+    "slot": 16
+  },
+  {
+    "id": 14852,
+    "name": "Sunscale Shield",
+    "slot": 16
+  },
+  {
+    "id": 14916,
+    "name": "Jade Deflector",
+    "slot": 16
+  },
+  {
+    "id": 14930,
+    "name": "Lofty Shield",
+    "slot": 16
+  },
+  {
+    "id": 14964,
+    "name": "High Chief\u0027s Shield",
+    "slot": 16
+  },
+  {
+    "id": 14954,
+    "name": "Bloodforged Shield",
+    "slot": 16
+  },
+  {
+    "id": 14973,
+    "name": "Glorious Shield",
+    "slot": 16
+  },
+  {
+    "id": 14982,
+    "name": "Exalted Shield",
+    "slot": 16
+  },
+  {
+    "id": 15621,
+    "name": "Gryphon Mail Buckler",
+    "slot": 16
+  },
+  {
+    "id": 15633,
+    "name": "Formidable Crest",
+    "slot": 16
+  },
+  {
+    "id": 15648,
+    "name": "Ironhide Shield",
+    "slot": 16
+  },
+  {
+    "id": 15667,
+    "name": "Impenetrable Wall",
+    "slot": 16
+  },
+  {
+    "id": 15657,
+    "name": "Merciless Shield",
+    "slot": 16
+  },
+  {
+    "id": 15675,
+    "name": "Magnificent Guard",
+    "slot": 16
+  },
+  {
+    "id": 15687,
+    "name": "Triumphant Shield",
+    "slot": 16
+  },
+  {
+    "id": 15890,
+    "name": "Vanguard Shield",
+    "slot": 16
+  },
+  {
+    "id": 15887,
+    "name": "Heroic Guard",
+    "slot": 16
+  },
+  {
+    "id": 15943,
+    "name": "Imbued Shield",
+    "slot": 16
+  },
+  {
+    "id": 15991,
+    "name": "Warleader\u0027s Shield",
+    "slot": 16
+  },
+  {
+    "id": 16998,
+    "name": "Sacred Protector",
+    "slot": 16
+  },
+  {
+    "id": 17066,
+    "name": "Drillborer Disk",
+    "slot": 16
+  },
+  {
+    "id": 17106,
+    "name": "Malistar\u0027s Defender",
+    "slot": 16
+  },
+  {
+    "id": 17718,
+    "name": "Gizlock\u0027s Hypertech Buckler",
+    "slot": 16
+  },
+  {
+    "id": 18168,
+    "name": "Force Reactive Disk",
+    "slot": 16
+  },
+  {
+    "id": 18352,
+    "name": "Petrified Bark Shield",
+    "slot": 16
+  },
+  {
+    "id": 18485,
+    "name": "Observer\u0027s Shield",
+    "slot": 16
+  },
+  {
+    "id": 18499,
+    "name": "Barrier Shield",
+    "slot": 16
+  },
+  {
+    "id": 18535,
+    "name": "Milli\u0027s Shield",
+    "slot": 16
+  },
+  {
+    "id": 18673,
+    "name": "Avalanchion\u0027s Stony Hide",
+    "slot": 16
+  },
+  {
+    "id": 18696,
+    "name": "Intricately Runed Shield",
+    "slot": 16
+  },
+  {
+    "id": 18756,
+    "name": "Dreadguard\u0027s Protector",
+    "slot": 16
+  },
+  {
+    "id": 18826,
+    "name": "High Warlord\u0027s Shield Wall",
+    "slot": 16
+  },
+  {
+    "id": 18825,
+    "name": "Grand Marshal\u0027s Aegis",
+    "slot": 16
+  },
+  {
+    "id": 19321,
+    "name": "The Immovable Object",
+    "slot": 16
+  },
+  {
+    "id": 19348,
+    "name": "Red Dragonscale Protector",
+    "slot": 16
+  },
+  {
+    "id": 19349,
+    "name": "Elementium Reinforced Bulwark",
+    "slot": 16
+  },
+  {
+    "id": 19862,
+    "name": "Aegis of the Blood God",
+    "slot": 16
+  },
+  {
+    "id": 19915,
+    "name": "Zulian Defender",
+    "slot": 16
+  },
+  {
+    "id": 20688,
+    "name": "Earthen Guard",
+    "slot": 16
+  },
+  {
+    "id": 21269,
+    "name": "Blessed Qiraji Bulwark",
+    "slot": 16
+  },
+  {
+    "id": 21485,
+    "name": "Buru\u0027s Skull Fragment",
+    "slot": 16
+  },
+  {
+    "id": 21610,
+    "name": "Wormscale Blocker",
+    "slot": 16
+  },
+  {
+    "id": 22198,
+    "name": "Jagged Obsidian Shield",
+    "slot": 16
+  },
+  {
+    "id": 22336,
+    "name": "Draconian Aegis of the Legion",
+    "slot": 16
+  },
+  {
+    "id": 22818,
+    "name": "The Plague Bearer",
+    "slot": 16
+  },
+  {
+    "id": 22819,
+    "name": "Shield of Condemnation",
+    "slot": 16
+  },
+  {
+    "id": 23043,
+    "name": "The Face of Death",
+    "slot": 16
+  },
+  {
+    "id": 23075,
+    "name": "Death\u0027s Bargain",
+    "slot": 16
+  },
+  {
+    "id": 23139,
+    "name": "Lord Blackwood\u0027s Buckler",
+    "slot": 16
+  },
+  {
+    "id": 23238,
+    "name": "Stygian Buckler",
+    "slot": 16
+  },
+  {
+    "id": 25075,
+    "name": "Hardened Steel Shield",
+    "slot": 16
+  },
+  {
+    "id": 25073,
+    "name": "Emperor Shield",
+    "slot": 16
+  },
+  {
+    "id": 25078,
+    "name": "Zangari Shield",
+    "slot": 16
+  },
+  {
+    "id": 25077,
+    "name": "Modani War-Shield",
+    "slot": 16
+  },
+  {
+    "id": 25082,
+    "name": "Fel-Iron Shield",
+    "slot": 16
+  },
+  {
+    "id": 25079,
+    "name": "Outland Shield",
+    "slot": 16
+  },
+  {
+    "id": 25074,
+    "name": "Telaari Shield",
+    "slot": 16
+  },
+  {
+    "id": 25072,
+    "name": "Northman\u0027s Shield",
+    "slot": 16
+  },
+  {
+    "id": 25076,
+    "name": "Screaming Shield",
+    "slot": 16
+  },
+  {
+    "id": 25080,
+    "name": "Spell-Breaker Shield",
+    "slot": 16
+  },
+  {
+    "id": 25083,
+    "name": "Smouldering Shield",
+    "slot": 16
+  },
+  {
+    "id": 25081,
+    "name": "Bayeaux Shield",
+    "slot": 16
+  },
+  {
+    "id": 25084,
+    "name": "Zeth\u0027Gor Shield",
+    "slot": 16
+  },
+  {
+    "id": 25085,
+    "name": "Dragonscale Shield",
+    "slot": 16
+  },
+  {
+    "id": 25407,
+    "name": "The Movable Object",
+    "slot": 16
+  },
+  {
+    "id": 25627,
+    "name": "QR 9922 Shield",
+    "slot": 16
+  },
+  {
+    "id": 25624,
+    "name": "King\u0027s Bulwark",
+    "slot": 16
+  },
+  {
+    "id": 25828,
+    "name": "Petrified Lichen Guard",
+    "slot": 16
+  },
+  {
+    "id": 27449,
+    "name": "Blood Knight Defender",
+    "slot": 16
+  },
+  {
+    "id": 27772,
+    "name": "Stormshield of Renewal",
+    "slot": 16
+  },
+  {
+    "id": 27887,
+    "name": "Platinum Shield of the Valorous",
+    "slot": 16
+  },
+  {
+    "id": 27910,
+    "name": "Silvermoon Crest Shield",
+    "slot": 16
+  },
+  {
+    "id": 28166,
+    "name": "Shield of the Void",
+    "slot": 16
+  },
+  {
+    "id": 28316,
+    "name": "Aegis of the Sunbird",
+    "slot": 16
+  },
+  {
+    "id": 28358,
+    "name": "Gladiator\u0027s Shield Wall",
+    "slot": 16
+  },
+  {
+    "id": 28606,
+    "name": "Shield of Impenetrable Darkness",
+    "slot": 16
+  },
+  {
+    "id": 28611,
+    "name": "Dragonheart Flameshield",
+    "slot": 16
+  },
+  {
+    "id": 28754,
+    "name": "Triptych Shield of the Ancients",
+    "slot": 16
+  },
+  {
+    "id": 28825,
+    "name": "Aldori Legacy Defender",
+    "slot": 16,
+    "sockets": 1
+  },
+  {
+    "id": 28940,
+    "name": "Grand Marshal\u0027s Barricade",
+    "slot": 16
+  },
+  {
+    "id": 28939,
+    "name": "High Warlord\u0027s Barricade",
+    "slot": 16
+  },
+  {
+    "id": 29176,
+    "name": "Crest of the Sha\u0027tar",
+    "slot": 16,
+    "sockets": 2
+  },
+  {
+    "id": 29266,
+    "name": "Azure-Shield of Coldarra",
+    "slot": 16
+  },
+  {
+    "id": 29267,
+    "name": "Light-Bearer\u0027s Faith Shield",
+    "slot": 16
+  },
+  {
+    "id": 29268,
+    "name": "Mazthoril Honor Shield",
+    "slot": 16
+  },
+  {
+    "id": 29458,
+    "name": "Aegis of the Vindicator",
+    "slot": 16
+  },
+  {
+    "id": 29917,
+    "name": "Landslide Buckler",
+    "slot": 16
+  },
+  {
+    "id": 29919,
+    "name": "Adamantine Kite Shield",
+    "slot": 16
+  },
+  {
+    "id": 30314,
+    "name": "Phaseshift Bulwark",
+    "slot": 16
+  },
+  {
+    "id": 30775,
+    "name": "Layered Bone Shield",
+    "slot": 16
+  },
+  {
+    "id": 30882,
+    "name": "Bastion of Light",
+    "slot": 16,
+    "sockets": 1
+  },
+  {
+    "id": 30889,
+    "name": "Kaz\u0027rogal\u0027s Hardened Heart",
+    "slot": 16,
+    "sockets": 1
+  },
+  {
+    "id": 30909,
+    "name": "Antonidas\u0027s Aegis of Rapt Concentration",
+    "slot": 16
+  },
+  {
+    "id": 30986,
+    "name": "Bloodforged Guard",
+    "slot": 16
+  },
+  {
+    "id": 30984,
+    "name": "Spellbreaker\u0027s Buckler",
+    "slot": 16
+  },
+  {
+    "id": 31200,
+    "name": "Shield of the Wayward Footman",
+    "slot": 16
+  },
+  {
+    "id": 31292,
+    "name": "Crystal Pulse Shield",
+    "slot": 16
+  },
+  {
+    "id": 31287,
+    "name": "Draenei Honor Guard Shield",
+    "slot": 16
+  },
+  {
+    "id": 31415,
+    "name": "Iron Oak Shield",
+    "slot": 16
+  },
+  {
+    "id": 31491,
+    "name": "Netherwing Defender\u0027s Shield",
+    "slot": 16
+  },
+  {
+    "id": 31490,
+    "name": "Netherwing Protector\u0027s Shield",
+    "slot": 16
+  },
+  {
+    "id": 31734,
+    "name": "Ancient Draenei Crest",
+    "slot": 16
+  },
+  {
+    "id": 32045,
+    "name": "Merciless Gladiator\u0027s Shield Wall",
+    "slot": 16
+  },
+  {
+    "id": 32082,
+    "name": "The Fel Barrier",
+    "slot": 16
+  },
+  {
+    "id": 32255,
+    "name": "Felstone Bulwark",
+    "slot": 16
+  },
+  {
+    "id": 32375,
+    "name": "Bulwark of Azzinoth",
+    "slot": 16
+  },
+  {
+    "id": 32522,
+    "name": "Demonic Bulwark",
+    "slot": 16
+  },
+  {
+    "id": 32652,
+    "name": "Ogri\u0027la Aegis",
+    "slot": 16,
+    "sockets": 2
+  },
+  {
+    "id": 33309,
+    "name": "Merciless Gladiator\u0027s Redoubt",
+    "slot": 16
+  },
+  {
+    "id": 33313,
+    "name": "Merciless Gladiator\u0027s Barrier",
+    "slot": 16
+  },
+  {
+    "id": 33326,
+    "name": "Bulwark of the Amani Empire",
+    "slot": 16,
+    "sockets": 1
+  },
+  {
+    "id": 33332,
+    "name": "Enamelled Disc of Mojo",
+    "slot": 16,
+    "sockets": 1
+  },
+  {
+    "id": 33661,
+    "name": "Vengeful Gladiator\u0027s Barrier",
+    "slot": 16
+  },
+  {
+    "id": 33735,
+    "name": "Vengeful Gladiator\u0027s Redoubt",
+    "slot": 16
+  },
+  {
+    "id": 33755,
+    "name": "Vengeful Gladiator\u0027s Shield Wall",
+    "slot": 16
+  },
+  {
+    "id": 34011,
+    "name": "Illidari Runeshield",
+    "slot": 16
+  },
+  {
+    "id": 34185,
+    "name": "Sword Breaker\u0027s Bulwark",
+    "slot": 16,
+    "sockets": 1
+  },
+  {
+    "id": 34231,
+    "name": "Aegis of Angelic Fortune",
+    "slot": 16
+  },
+  {
+    "id": 34675,
+    "name": "Sunward Crest",
+    "slot": 16
+  },
+  {
+    "id": 34676,
+    "name": "Dawnforged Defender",
+    "slot": 16
+  },
+  {
+    "id": 34986,
+    "name": "Brutal Gladiator\u0027s Barrier",
+    "slot": 16
+  },
+  {
+    "id": 35073,
+    "name": "Brutal Gladiator\u0027s Redoubt",
+    "slot": 16
+  },
+  {
+    "id": 35094,
+    "name": "Brutal Gladiator\u0027s Shield Wall",
+    "slot": 16
+  }
+]

@@ -1,0 +1,982 @@
+[
+  {
+    "id": 8084,
+    "name": "Light Plate Gloves",
+    "slot": 9
+  },
+  {
+    "id": 8314,
+    "name": "Alabaster Plate Gauntlets",
+    "slot": 9
+  },
+  {
+    "id": 10165,
+    "name": "Templar Gauntlets",
+    "slot": 9
+  },
+  {
+    "id": 10242,
+    "name": "Heavy Lamellar Gauntlets",
+    "slot": 9
+  },
+  {
+    "id": 10277,
+    "name": "Emerald Gauntlets",
+    "slot": 9
+  },
+  {
+    "id": 10369,
+    "name": "Imbued Plate Gauntlets",
+    "slot": 9
+  },
+  {
+    "id": 10380,
+    "name": "Commander\u0027s Gauntlets",
+    "slot": 9
+  },
+  {
+    "id": 10386,
+    "name": "Hyperion Gauntlets",
+    "slot": 9
+  },
+  {
+    "id": 11745,
+    "name": "Fists of Phalanx",
+    "slot": 9
+  },
+  {
+    "id": 12111,
+    "name": "Lavaplate Gauntlets",
+    "slot": 9
+  },
+  {
+    "id": 12631,
+    "name": "Fiery Plate Gauntlets",
+    "slot": 9
+  },
+  {
+    "id": 12639,
+    "name": "Stronghold Gauntlets",
+    "slot": 9
+  },
+  {
+    "id": 12637,
+    "name": "Backusarian Gauntlets",
+    "slot": 9
+  },
+  {
+    "id": 13072,
+    "name": "Stonegrip Gauntlets",
+    "slot": 9
+  },
+  {
+    "id": 13162,
+    "name": "Reiver Claws",
+    "slot": 9
+  },
+  {
+    "id": 13539,
+    "name": "Banshee\u0027s Touch",
+    "slot": 9
+  },
+  {
+    "id": 14525,
+    "name": "Boneclenched Gauntlets",
+    "slot": 9
+  },
+  {
+    "id": 14622,
+    "name": "Deathbone Gauntlets",
+    "slot": 9
+  },
+  {
+    "id": 14855,
+    "name": "Vanguard Gauntlets",
+    "slot": 9
+  },
+  {
+    "id": 14863,
+    "name": "Warleader\u0027s Gauntlets",
+    "slot": 9
+  },
+  {
+    "id": 14933,
+    "name": "Heroic Gauntlets",
+    "slot": 9
+  },
+  {
+    "id": 14926,
+    "name": "Lofty Gauntlets",
+    "slot": 9
+  },
+  {
+    "id": 14967,
+    "name": "Glorious Gauntlets",
+    "slot": 9
+  },
+  {
+    "id": 14959,
+    "name": "High Chief\u0027s Gauntlets",
+    "slot": 9
+  },
+  {
+    "id": 14976,
+    "name": "Exalted Gauntlets",
+    "slot": 9
+  },
+  {
+    "id": 15795,
+    "name": "Emerald Mist Gauntlets",
+    "slot": 9
+  },
+  {
+    "id": 16406,
+    "name": "Knight-Lieutenant\u0027s Plate Gauntlets",
+    "slot": 9
+  },
+  {
+    "id": 16410,
+    "name": "Knight-Lieutenant\u0027s Lamellar Gauntlets",
+    "slot": 9
+  },
+  {
+    "id": 16471,
+    "name": "Marshal\u0027s Lamellar Gloves",
+    "slot": 9
+  },
+  {
+    "id": 16484,
+    "name": "Marshal\u0027s Plate Gauntlets",
+    "slot": 9
+  },
+  {
+    "id": 16510,
+    "name": "Blood Guard\u0027s Plate Gloves",
+    "slot": 9
+  },
+  {
+    "id": 16548,
+    "name": "General\u0027s Plate Gauntlets",
+    "slot": 9
+  },
+  {
+    "id": 16724,
+    "name": "Lightforge Gauntlets",
+    "slot": 9
+  },
+  {
+    "id": 16737,
+    "name": "Gauntlets of Valor",
+    "slot": 9
+  },
+  {
+    "id": 16860,
+    "name": "Lawbringer Gauntlets",
+    "slot": 9
+  },
+  {
+    "id": 16863,
+    "name": "Gauntlets of Might",
+    "slot": 9
+  },
+  {
+    "id": 16956,
+    "name": "Judgement Gauntlets",
+    "slot": 9
+  },
+  {
+    "id": 16964,
+    "name": "Gauntlets of Wrath",
+    "slot": 9
+  },
+  {
+    "id": 18326,
+    "name": "Razor Gauntlets",
+    "slot": 9
+  },
+  {
+    "id": 18366,
+    "name": "Gordok\u0027s Handguards",
+    "slot": 9
+  },
+  {
+    "id": 18383,
+    "name": "Force Imbued Gauntlets",
+    "slot": 9
+  },
+  {
+    "id": 18722,
+    "name": "Death Grips",
+    "slot": 9
+  },
+  {
+    "id": 19057,
+    "name": "Gloves of the Dawn",
+    "slot": 9
+  },
+  {
+    "id": 19143,
+    "name": "Flameguard Gauntlets",
+    "slot": 9
+  },
+  {
+    "id": 19164,
+    "name": "Dark Iron Gauntlets",
+    "slot": 9
+  },
+  {
+    "id": 19894,
+    "name": "Bloodsoaked Gauntlets",
+    "slot": 9
+  },
+  {
+    "id": 20264,
+    "name": "Peacekeeper Gauntlets",
+    "slot": 9
+  },
+  {
+    "id": 20549,
+    "name": "Darkrune Gauntlets",
+    "slot": 9
+  },
+  {
+    "id": 20630,
+    "name": "Gauntlets of the Shining Light",
+    "slot": 9
+  },
+  {
+    "id": 20650,
+    "name": "Desert Wind Gauntlets",
+    "slot": 9
+  },
+  {
+    "id": 20653,
+    "name": "Abyssal Plate Gauntlets",
+    "slot": 9
+  },
+  {
+    "id": 21479,
+    "name": "Gauntlets of the Immovable",
+    "slot": 9
+  },
+  {
+    "id": 21486,
+    "name": "Gloves of the Swarm",
+    "slot": 9
+  },
+  {
+    "id": 21581,
+    "name": "Gauntlets of Annihilation",
+    "slot": 9
+  },
+  {
+    "id": 21623,
+    "name": "Gauntlets of the Righteous Champion",
+    "slot": 9
+  },
+  {
+    "id": 21674,
+    "name": "Gauntlets of Steadfast Determination",
+    "slot": 9
+  },
+  {
+    "id": 21691,
+    "name": "Ooze-ridden Gauntlets",
+    "slot": 9
+  },
+  {
+    "id": 21889,
+    "name": "Gloves of the Redeemed Prophecy",
+    "slot": 9
+  },
+  {
+    "id": 21998,
+    "name": "Gauntlets of Heroism",
+    "slot": 9
+  },
+  {
+    "id": 22090,
+    "name": "Soulforge Gauntlets",
+    "slot": 9
+  },
+  {
+    "id": 22426,
+    "name": "Redemption Handguards",
+    "slot": 9
+  },
+  {
+    "id": 22421,
+    "name": "Dreadnaught Gauntlets",
+    "slot": 9
+  },
+  {
+    "id": 22670,
+    "name": "Icebane Gauntlets",
+    "slot": 9
+  },
+  {
+    "id": 22714,
+    "name": "Sacrificial Gauntlets",
+    "slot": 9
+  },
+  {
+    "id": 22763,
+    "name": "Ironvine Gloves",
+    "slot": 9
+  },
+  {
+    "id": 22868,
+    "name": "Blood Guard\u0027s Plate Gauntlets",
+    "slot": 9
+  },
+  {
+    "id": 23078,
+    "name": "Gauntlets of Undead Slaying",
+    "slot": 9
+  },
+  {
+    "id": 23274,
+    "name": "Knight-Lieutenant\u0027s Lamellar Gauntlets",
+    "slot": 9
+  },
+  {
+    "id": 23286,
+    "name": "Knight-Lieutenant\u0027s Plate Gauntlets",
+    "slot": 9
+  },
+  {
+    "id": 23508,
+    "name": "Adamantite Plate Gloves",
+    "slot": 9,
+    "sockets": 2
+  },
+  {
+    "id": 23482,
+    "name": "Fel Iron Plate Gloves",
+    "slot": 9
+  },
+  {
+    "id": 23517,
+    "name": "Felsteel Gloves",
+    "slot": 9,
+    "sockets": 2
+  },
+  {
+    "id": 23514,
+    "name": "Flamebane Gloves",
+    "slot": 9,
+    "sockets": 2
+  },
+  {
+    "id": 23520,
+    "name": "Ragesteel Gloves",
+    "slot": 9
+  },
+  {
+    "id": 23533,
+    "name": "Steelgrip Gauntlets",
+    "slot": 9,
+    "sockets": 2
+  },
+  {
+    "id": 23532,
+    "name": "Gauntlets of the Iron Tower",
+    "slot": 9,
+    "sockets": 2
+  },
+  {
+    "id": 24387,
+    "name": "Ironblade Gauntlets",
+    "slot": 9,
+    "sockets": 2
+  },
+  {
+    "id": 24549,
+    "name": "Gladiator\u0027s Plate Gauntlets",
+    "slot": 9
+  },
+  {
+    "id": 24548,
+    "name": "zzOLDbrokenitem",
+    "slot": 9
+  },
+  {
+    "id": 24929,
+    "name": "Ango\u0027rosh Gauntlets",
+    "slot": 9
+  },
+  {
+    "id": 24921,
+    "name": "Grimscale Gauntlets",
+    "slot": 9
+  },
+  {
+    "id": 24937,
+    "name": "Darkcrest Gauntlets",
+    "slot": 9
+  },
+  {
+    "id": 24945,
+    "name": "Bloodscale Gauntlets",
+    "slot": 9
+  },
+  {
+    "id": 24969,
+    "name": "Talonguard Gloves",
+    "slot": 9
+  },
+  {
+    "id": 24953,
+    "name": "Bogslayer Gauntlets",
+    "slot": 9
+  },
+  {
+    "id": 24985,
+    "name": "Boulderfist Gloves",
+    "slot": 9
+  },
+  {
+    "id": 24977,
+    "name": "Reaver Gloves",
+    "slot": 9
+  },
+  {
+    "id": 24993,
+    "name": "Warmaul Gloves",
+    "slot": 9
+  },
+  {
+    "id": 25009,
+    "name": "Conqueror\u0027s Gauntlets",
+    "slot": 9
+  },
+  {
+    "id": 25001,
+    "name": "Bloodfist Gloves",
+    "slot": 9
+  },
+  {
+    "id": 24961,
+    "name": "Khan\u0027aish Gloves",
+    "slot": 9
+  },
+  {
+    "id": 25025,
+    "name": "Warlord\u0027s Iron-Gauntlets",
+    "slot": 9
+  },
+  {
+    "id": 25017,
+    "name": "Shattered Hand Gauntlets",
+    "slot": 9
+  },
+  {
+    "id": 25393,
+    "name": "Deteriorating Plate Gloves",
+    "slot": 9
+  },
+  {
+    "id": 25385,
+    "name": "Tarnished Plate Gloves",
+    "slot": 9
+  },
+  {
+    "id": 25478,
+    "name": "Defender\u0027s Gauntlets",
+    "slot": 9
+  },
+  {
+    "id": 25481,
+    "name": "Suntrider\u0027s Gauntlets",
+    "slot": 9
+  },
+  {
+    "id": 25502,
+    "name": "Lightbearer\u0027s Gauntlets",
+    "slot": 9
+  },
+  {
+    "id": 25566,
+    "name": "Judicator\u0027s Gauntlets",
+    "slot": 9
+  },
+  {
+    "id": 25797,
+    "name": "Crushing Grasp",
+    "slot": 9
+  },
+  {
+    "id": 25788,
+    "name": "Dauntless Handguards",
+    "slot": 9
+  },
+  {
+    "id": 25942,
+    "name": "Faith Bearer\u0027s Gauntlets",
+    "slot": 9,
+    "sockets": 2
+  },
+  {
+    "id": 27457,
+    "name": "Life Bearer\u0027s Gauntlets",
+    "slot": 9
+  },
+  {
+    "id": 27475,
+    "name": "Gauntlets of the Bold",
+    "slot": 9,
+    "sockets": 2
+  },
+  {
+    "id": 27497,
+    "name": "Doomplate Gauntlets",
+    "slot": 9,
+    "sockets": 3
+  },
+  {
+    "id": 27535,
+    "name": "Gauntlets of the Righteous",
+    "slot": 9
+  },
+  {
+    "id": 27703,
+    "name": "Gladiator\u0027s Lamellar Gauntlets",
+    "slot": 9
+  },
+  {
+    "id": 27798,
+    "name": "Gauntlets of Vindication",
+    "slot": 9,
+    "sockets": 2
+  },
+  {
+    "id": 27880,
+    "name": "Gladiator\u0027s Scaled Gauntlets",
+    "slot": 9
+  },
+  {
+    "id": 28324,
+    "name": "Gauntlets of Cruel Intention",
+    "slot": 9
+  },
+  {
+    "id": 28390,
+    "name": "Thatia\u0027s Self-Correcting Gauntlets",
+    "slot": 9
+  },
+  {
+    "id": 28518,
+    "name": "Iron Gauntlets of the Maiden",
+    "slot": 9,
+    "sockets": 2
+  },
+  {
+    "id": 28505,
+    "name": "Gauntlets of Renewed Hope",
+    "slot": 9,
+    "sockets": 2
+  },
+  {
+    "id": 28680,
+    "name": "Grand Marshal\u0027s Lamellar Gauntlets",
+    "slot": 9
+  },
+  {
+    "id": 28700,
+    "name": "Grand Marshal\u0027s Plate Gauntlets",
+    "slot": 9
+  },
+  {
+    "id": 28710,
+    "name": "Grand Marshal\u0027s Scaled Gauntlets",
+    "slot": 9
+  },
+  {
+    "id": 28824,
+    "name": "Gauntlets of Martial Perfection",
+    "slot": 9,
+    "sockets": 2
+  },
+  {
+    "id": 28832,
+    "name": "High Warlord\u0027s Lamellar Gauntlets",
+    "slot": 9
+  },
+  {
+    "id": 28852,
+    "name": "High Warlord\u0027s Plate Gauntlets",
+    "slot": 9
+  },
+  {
+    "id": 28862,
+    "name": "High Warlord\u0027s Scaled Gauntlets",
+    "slot": 9
+  },
+  {
+    "id": 29017,
+    "name": "Warbringer Handguards",
+    "slot": 9
+  },
+  {
+    "id": 29020,
+    "name": "Warbringer Gauntlets",
+    "slot": 9
+  },
+  {
+    "id": 29067,
+    "name": "Justicar Handguards",
+    "slot": 9
+  },
+  {
+    "id": 29065,
+    "name": "Justicar Gloves",
+    "slot": 9
+  },
+  {
+    "id": 29072,
+    "name": "Justicar Gauntlets",
+    "slot": 9
+  },
+  {
+    "id": 29134,
+    "name": "Gauntlets of the Chosen",
+    "slot": 9
+  },
+  {
+    "id": 29600,
+    "name": "Blood Guard\u0027s Lamellar Gauntlets",
+    "slot": 9
+  },
+  {
+    "id": 29613,
+    "name": "General\u0027s Lamellar Gloves",
+    "slot": 9
+  },
+  {
+    "id": 29812,
+    "name": "Blued Steel Gauntlets",
+    "slot": 9
+  },
+  {
+    "id": 29959,
+    "name": "Spiritualist\u0027s Gauntlets",
+    "slot": 9
+  },
+  {
+    "id": 29998,
+    "name": "Royal Gauntlets of Silvermoon",
+    "slot": 9,
+    "sockets": 2
+  },
+  {
+    "id": 30112,
+    "name": "Glorious Gauntlets of Crestfall",
+    "slot": 9,
+    "sockets": 2
+  },
+  {
+    "id": 30119,
+    "name": "Destroyer Gauntlets",
+    "slot": 9
+  },
+  {
+    "id": 30114,
+    "name": "Destroyer Handguards",
+    "slot": 9
+  },
+  {
+    "id": 30135,
+    "name": "Crystalforge Gloves",
+    "slot": 9
+  },
+  {
+    "id": 30124,
+    "name": "Crystalforge Handguards",
+    "slot": 9
+  },
+  {
+    "id": 30130,
+    "name": "Crystalforge Gauntlets",
+    "slot": 9
+  },
+  {
+    "id": 30267,
+    "name": "Zaxxis Gloves",
+    "slot": 9
+  },
+  {
+    "id": 30264,
+    "name": "Area 52 Engineering Gloves",
+    "slot": 9
+  },
+  {
+    "id": 30375,
+    "name": "Gauntlets of the Vanquisher",
+    "slot": 9
+  },
+  {
+    "id": 30487,
+    "name": "Merciless Gladiator\u0027s Plate Gauntlets",
+    "slot": 9
+  },
+  {
+    "id": 30741,
+    "name": "Topaz-Studded Battlegrips",
+    "slot": 9,
+    "sockets": 2
+  },
+  {
+    "id": 30767,
+    "name": "Inferno Tempered Gauntlets",
+    "slot": 9
+  },
+  {
+    "id": 30967,
+    "name": "The Hands of Fate",
+    "slot": 9
+  },
+  {
+    "id": 30969,
+    "name": "Onslaught Gauntlets",
+    "slot": 9,
+    "sockets": 1
+  },
+  {
+    "id": 30963,
+    "name": "QR 10574 Plate Warrior Gloves",
+    "slot": 9
+  },
+  {
+    "id": 30970,
+    "name": "Onslaught Handguards",
+    "slot": 9,
+    "sockets": 1
+  },
+  {
+    "id": 30982,
+    "name": "Lightbringer Gauntlets",
+    "slot": 9,
+    "sockets": 1
+  },
+  {
+    "id": 30983,
+    "name": "Lightbringer Gloves",
+    "slot": 9,
+    "sockets": 1
+  },
+  {
+    "id": 30985,
+    "name": "Lightbringer Handguards",
+    "slot": 9,
+    "sockets": 1
+  },
+  {
+    "id": 31137,
+    "name": "Gauntlets of Purification",
+    "slot": 9
+  },
+  {
+    "id": 31163,
+    "name": "Nethersteel Handguards",
+    "slot": 9
+  },
+  {
+    "id": 31176,
+    "name": "Rockwurm Plate Handguards",
+    "slot": 9
+  },
+  {
+    "id": 31180,
+    "name": "Gauntlets of the Skullsplitter",
+    "slot": 9
+  },
+  {
+    "id": 31428,
+    "name": "Commander Skyshadow\u0027s Gloves",
+    "slot": 9
+  },
+  {
+    "id": 31473,
+    "name": "Ogre Defiler\u0027s Handguards",
+    "slot": 9
+  },
+  {
+    "id": 31534,
+    "name": "Whiteknuckle Gauntlets",
+    "slot": 9
+  },
+  {
+    "id": 31583,
+    "name": "Slatesteel Gauntlets",
+    "slot": 9
+  },
+  {
+    "id": 31614,
+    "name": "Gladiator\u0027s Ornamented Gloves",
+    "slot": 9
+  },
+  {
+    "id": 31631,
+    "name": "Grand Marshal\u0027s Ornamented Gloves",
+    "slot": 9
+  },
+  {
+    "id": 31636,
+    "name": "High Warlord\u0027s Ornamented Gloves",
+    "slot": 9
+  },
+  {
+    "id": 31993,
+    "name": "Merciless Gladiator\u0027s Lamellar Gauntlets",
+    "slot": 9
+  },
+  {
+    "id": 32021,
+    "name": "Merciless Gladiator\u0027s Ornamented Gloves",
+    "slot": 9
+  },
+  {
+    "id": 32040,
+    "name": "Merciless Gladiator\u0027s Scaled Gauntlets",
+    "slot": 9
+  },
+  {
+    "id": 32072,
+    "name": "Gauntlets of Dissension",
+    "slot": 9
+  },
+  {
+    "id": 32278,
+    "name": "Grips of Silent Justice",
+    "slot": 9,
+    "sockets": 2
+  },
+  {
+    "id": 32280,
+    "name": "Gauntlets of Enforcement",
+    "slot": 9
+  },
+  {
+    "id": 32529,
+    "name": "Heretic\u0027s Gauntlets",
+    "slot": 9
+  },
+  {
+    "id": 32608,
+    "name": "Pillager\u0027s Gauntlets",
+    "slot": 9
+  },
+  {
+    "id": 33512,
+    "name": "Furious Deathgrips",
+    "slot": 9,
+    "sockets": 2
+  },
+  {
+    "id": 33519,
+    "name": "Handguards of the Templar",
+    "slot": 9
+  },
+  {
+    "id": 33517,
+    "name": "Bonefist Gauntlets",
+    "slot": 9,
+    "sockets": 2
+  },
+  {
+    "id": 33696,
+    "name": "Vengeful Gladiator\u0027s Lamellar Gauntlets",
+    "slot": 9
+  },
+  {
+    "id": 33729,
+    "name": "Vengeful Gladiator\u0027s Plate Gauntlets",
+    "slot": 9
+  },
+  {
+    "id": 33723,
+    "name": "Vengeful Gladiator\u0027s Ornamented Gloves",
+    "slot": 9
+  },
+  {
+    "id": 33750,
+    "name": "Vengeful Gladiator\u0027s Scaled Gauntlets",
+    "slot": 9
+  },
+  {
+    "id": 34240,
+    "name": "Gauntlets of the Soothed Soul",
+    "slot": 9,
+    "sockets": 2
+  },
+  {
+    "id": 34352,
+    "name": "Borderland Fortress Grips",
+    "slot": 9,
+    "sockets": 2
+  },
+  {
+    "id": 34341,
+    "name": "Borderland Paingrips",
+    "slot": 9,
+    "sockets": 2
+  },
+  {
+    "id": 34380,
+    "name": "Sunblessed Gauntlets",
+    "slot": 9,
+    "sockets": 2
+  },
+  {
+    "id": 34378,
+    "name": "Hard Khorium Battlefists",
+    "slot": 9,
+    "sockets": 2
+  },
+  {
+    "id": 34700,
+    "name": "Gauntlets of Divine Blessings",
+    "slot": 9,
+    "sockets": 2
+  },
+  {
+    "id": 35028,
+    "name": "Brutal Gladiator\u0027s Lamellar Gauntlets",
+    "slot": 9
+  },
+  {
+    "id": 35060,
+    "name": "Brutal Gladiator\u0027s Ornamented Gloves",
+    "slot": 9
+  },
+  {
+    "id": 35067,
+    "name": "Brutal Gladiator\u0027s Plate Gauntlets",
+    "slot": 9
+  },
+  {
+    "id": 35089,
+    "name": "Brutal Gladiator\u0027s Scaled Gauntlets",
+    "slot": 9
+  },
+  {
+    "id": 35408,
+    "name": "Savage Plate Gauntlets",
+    "slot": 9
+  },
+  {
+    "id": 35413,
+    "name": "Crusader\u0027s Scaled Gauntlets",
+    "slot": 9
+  },
+  {
+    "id": 35403,
+    "name": "Crusader\u0027s Ornamented Gloves",
+    "slot": 9
+  },
+  {
+    "id": 35477,
+    "name": "Crusader\u0027s Scaled Gauntlets",
+    "slot": 9
+  }
+]

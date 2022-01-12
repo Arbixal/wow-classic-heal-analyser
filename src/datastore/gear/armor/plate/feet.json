@@ -1,0 +1,937 @@
+[
+  {
+    "id": 8082,
+    "name": "Light Plate Boots",
+    "slot": 7
+  },
+  {
+    "id": 8316,
+    "name": "Alabaster Plate Greaves",
+    "slot": 7
+  },
+  {
+    "id": 10167,
+    "name": "Templar Boots",
+    "slot": 7
+  },
+  {
+    "id": 10238,
+    "name": "Heavy Lamellar Boots",
+    "slot": 7
+  },
+  {
+    "id": 10276,
+    "name": "Emerald Sabatons",
+    "slot": 7
+  },
+  {
+    "id": 10371,
+    "name": "Imbued Plate Greaves",
+    "slot": 7
+  },
+  {
+    "id": 10385,
+    "name": "Hyperion Greaves",
+    "slot": 7
+  },
+  {
+    "id": 10376,
+    "name": "Commander\u0027s Boots",
+    "slot": 7
+  },
+  {
+    "id": 10707,
+    "name": "Steelsmith Greaves",
+    "slot": 7
+  },
+  {
+    "id": 11787,
+    "name": "Shalehusk Boots",
+    "slot": 7
+  },
+  {
+    "id": 11872,
+    "name": "Eschewal Greaves",
+    "slot": 7
+  },
+  {
+    "id": 11919,
+    "name": "Cragplate Greaves",
+    "slot": 7
+  },
+  {
+    "id": 12021,
+    "name": "Shieldplate Sabatons",
+    "slot": 7
+  },
+  {
+    "id": 12409,
+    "name": "Thorium Boots",
+    "slot": 7
+  },
+  {
+    "id": 12426,
+    "name": "Imperial Plate Boots",
+    "slot": 7
+  },
+  {
+    "id": 12555,
+    "name": "Battlechaser\u0027s Greaves",
+    "slot": 7
+  },
+  {
+    "id": 12611,
+    "name": "Runic Plate Boots",
+    "slot": 7
+  },
+  {
+    "id": 13070,
+    "name": "Sapphiron\u0027s Scale Boots",
+    "slot": 7
+  },
+  {
+    "id": 13259,
+    "name": "Ribsteel Footguards",
+    "slot": 7
+  },
+  {
+    "id": 13381,
+    "name": "Master Cannoneer Boots",
+    "slot": 7
+  },
+  {
+    "id": 13527,
+    "name": "Lavawalker Greaves",
+    "slot": 7
+  },
+  {
+    "id": 14537,
+    "name": "Corpselight Greaves",
+    "slot": 7
+  },
+  {
+    "id": 14621,
+    "name": "Deathbone Sabatons",
+    "slot": 7
+  },
+  {
+    "id": 14857,
+    "name": "Vanguard Sabatons",
+    "slot": 7
+  },
+  {
+    "id": 14865,
+    "name": "Warleader\u0027s Greaves",
+    "slot": 7
+  },
+  {
+    "id": 14932,
+    "name": "Heroic Greaves",
+    "slot": 7
+  },
+  {
+    "id": 14922,
+    "name": "Lofty Sabatons",
+    "slot": 7
+  },
+  {
+    "id": 14972,
+    "name": "Glorious Sabatons",
+    "slot": 7
+  },
+  {
+    "id": 14957,
+    "name": "High Chief\u0027s Sabatons",
+    "slot": 7
+  },
+  {
+    "id": 14978,
+    "name": "Exalted Sabatons",
+    "slot": 7
+  },
+  {
+    "id": 16409,
+    "name": "Knight-Lieutenant\u0027s Lamellar Sabatons",
+    "slot": 7
+  },
+  {
+    "id": 16405,
+    "name": "Knight-Lieutenant\u0027s Plate Boots",
+    "slot": 7
+  },
+  {
+    "id": 16472,
+    "name": "Marshal\u0027s Lamellar Boots",
+    "slot": 7
+  },
+  {
+    "id": 16483,
+    "name": "Marshal\u0027s Plate Boots",
+    "slot": 7
+  },
+  {
+    "id": 16509,
+    "name": "Blood Guard\u0027s Plate Boots",
+    "slot": 7
+  },
+  {
+    "id": 16545,
+    "name": "General\u0027s Plate Boots",
+    "slot": 7
+  },
+  {
+    "id": 16725,
+    "name": "Lightforge Boots",
+    "slot": 7
+  },
+  {
+    "id": 16734,
+    "name": "Boots of Valor",
+    "slot": 7
+  },
+  {
+    "id": 16859,
+    "name": "Lawbringer Boots",
+    "slot": 7
+  },
+  {
+    "id": 16862,
+    "name": "Sabatons of Might",
+    "slot": 7
+  },
+  {
+    "id": 16965,
+    "name": "Sabatons of Wrath",
+    "slot": 7
+  },
+  {
+    "id": 16957,
+    "name": "Judgement Sabatons",
+    "slot": 7
+  },
+  {
+    "id": 18521,
+    "name": "Grimy Metal Boots",
+    "slot": 7
+  },
+  {
+    "id": 18692,
+    "name": "Death Knight Sabatons",
+    "slot": 7
+  },
+  {
+    "id": 18806,
+    "name": "Core Forged Greaves",
+    "slot": 7
+  },
+  {
+    "id": 18824,
+    "name": "Magma Tempered Boots",
+    "slot": 7
+  },
+  {
+    "id": 19387,
+    "name": "Chromatic Boots",
+    "slot": 7
+  },
+  {
+    "id": 19913,
+    "name": "Bloodsoaked Greaves",
+    "slot": 7
+  },
+  {
+    "id": 20039,
+    "name": "Dark Iron Boots",
+    "slot": 7
+  },
+  {
+    "id": 20049,
+    "name": "Highlander\u0027s Lamellar Greaves",
+    "slot": 7
+  },
+  {
+    "id": 20048,
+    "name": "Highlander\u0027s Plate Greaves",
+    "slot": 7
+  },
+  {
+    "id": 20109,
+    "name": "Highlander\u0027s Lamellar Greaves",
+    "slot": 7
+  },
+  {
+    "id": 20127,
+    "name": "Highlander\u0027s Plate Greaves",
+    "slot": 7
+  },
+  {
+    "id": 20181,
+    "name": "Defiler\u0027s Lamellar Greaves",
+    "slot": 7
+  },
+  {
+    "id": 20185,
+    "name": "Defiler\u0027s Lamellar Greaves",
+    "slot": 7
+  },
+  {
+    "id": 20211,
+    "name": "Defiler\u0027s Plate Greaves",
+    "slot": 7
+  },
+  {
+    "id": 20208,
+    "name": "Defiler\u0027s Plate Greaves",
+    "slot": 7
+  },
+  {
+    "id": 20265,
+    "name": "Peacekeeper Boots",
+    "slot": 7
+  },
+  {
+    "id": 20619,
+    "name": "Acid Inscribed Greaves",
+    "slot": 7
+  },
+  {
+    "id": 20662,
+    "name": "Abyssal Plate Greaves",
+    "slot": 7
+  },
+  {
+    "id": 20710,
+    "name": "Crystal Encrusted Greaves",
+    "slot": 7
+  },
+  {
+    "id": 20711,
+    "name": "Crystal Lined Greaves",
+    "slot": 7
+  },
+  {
+    "id": 21333,
+    "name": "Conqueror\u0027s Greaves",
+    "slot": 7
+  },
+  {
+    "id": 21388,
+    "name": "Avenger\u0027s Greaves",
+    "slot": 7
+  },
+  {
+    "id": 21481,
+    "name": "Boots of the Desert Protector",
+    "slot": 7
+  },
+  {
+    "id": 21490,
+    "name": "Slime Kickers",
+    "slot": 7
+  },
+  {
+    "id": 21688,
+    "name": "Boots of the Fallen Hero",
+    "slot": 7
+  },
+  {
+    "id": 21704,
+    "name": "Boots of the Redeemed Prophecy",
+    "slot": 7
+  },
+  {
+    "id": 21706,
+    "name": "Boots of the Unwavering Will",
+    "slot": 7
+  },
+  {
+    "id": 21995,
+    "name": "Boots of Heroism",
+    "slot": 7
+  },
+  {
+    "id": 22087,
+    "name": "Soulforge Boots",
+    "slot": 7
+  },
+  {
+    "id": 22270,
+    "name": "Entrenching Boots",
+    "slot": 7
+  },
+  {
+    "id": 22420,
+    "name": "Dreadnaught Sabatons",
+    "slot": 7
+  },
+  {
+    "id": 22430,
+    "name": "Redemption Boots",
+    "slot": 7
+  },
+  {
+    "id": 22858,
+    "name": "Blood Guard\u0027s Plate Greaves",
+    "slot": 7
+  },
+  {
+    "id": 23275,
+    "name": "Knight-Lieutenant\u0027s Lamellar Sabatons",
+    "slot": 7
+  },
+  {
+    "id": 23287,
+    "name": "Knight-Lieutenant\u0027s Plate Greaves",
+    "slot": 7
+  },
+  {
+    "id": 23487,
+    "name": "Fel Iron Plate Boots",
+    "slot": 7
+  },
+  {
+    "id": 23511,
+    "name": "Enchanted Adamantite Boots",
+    "slot": 7,
+    "sockets": 2
+  },
+  {
+    "id": 23525,
+    "name": "Khorium Boots",
+    "slot": 7
+  },
+  {
+    "id": 24064,
+    "name": "Ironsole Clompers",
+    "slot": 7,
+    "sockets": 2
+  },
+  {
+    "id": 24927,
+    "name": "Ango\u0027rosh Sabatons",
+    "slot": 7
+  },
+  {
+    "id": 24943,
+    "name": "Bloodscale Sabatons",
+    "slot": 7
+  },
+  {
+    "id": 24935,
+    "name": "Darkcrest Sabatons",
+    "slot": 7
+  },
+  {
+    "id": 24919,
+    "name": "Grimscale Sabatons",
+    "slot": 7
+  },
+  {
+    "id": 24951,
+    "name": "Bogslayer Sabatons",
+    "slot": 7
+  },
+  {
+    "id": 24959,
+    "name": "Khan\u0027aish Greaves",
+    "slot": 7
+  },
+  {
+    "id": 24967,
+    "name": "Talonguard Greaves",
+    "slot": 7
+  },
+  {
+    "id": 24983,
+    "name": "Boulderfist Greaves",
+    "slot": 7
+  },
+  {
+    "id": 24991,
+    "name": "Warmaul Greaves",
+    "slot": 7
+  },
+  {
+    "id": 24999,
+    "name": "Bloodfist Greaves",
+    "slot": 7
+  },
+  {
+    "id": 25007,
+    "name": "Conqueror\u0027s Greaves",
+    "slot": 7
+  },
+  {
+    "id": 25015,
+    "name": "Shattered Hand Sabatons",
+    "slot": 7
+  },
+  {
+    "id": 24975,
+    "name": "Reaver Greaves",
+    "slot": 7
+  },
+  {
+    "id": 25023,
+    "name": "Warlord\u0027s Sabatons",
+    "slot": 7
+  },
+  {
+    "id": 25382,
+    "name": "Tarnished Plate Boots",
+    "slot": 7
+  },
+  {
+    "id": 25390,
+    "name": "Deteriorating Plate Boots",
+    "slot": 7
+  },
+  {
+    "id": 25561,
+    "name": "Muck-ridden Galoshes",
+    "slot": 7
+  },
+  {
+    "id": 25593,
+    "name": "Windroc Greaves",
+    "slot": 7
+  },
+  {
+    "id": 25610,
+    "name": "Fen Strider\u0027s Footguards",
+    "slot": 7
+  },
+  {
+    "id": 25615,
+    "name": "Feralfen Champion\u0027s Boots",
+    "slot": 7
+  },
+  {
+    "id": 27420,
+    "name": "Uther\u0027s Ceremonial Warboots",
+    "slot": 7
+  },
+  {
+    "id": 27721,
+    "name": "Expedition Footgear",
+    "slot": 7
+  },
+  {
+    "id": 27788,
+    "name": "Bloodsworn Warboots",
+    "slot": 7
+  },
+  {
+    "id": 27813,
+    "name": "Boots of the Colossus",
+    "slot": 7,
+    "sockets": 2
+  },
+  {
+    "id": 27884,
+    "name": "Ornate Boots of the Sanctified",
+    "slot": 7
+  },
+  {
+    "id": 28069,
+    "name": "Golden Cenarion Greaves",
+    "slot": 7
+  },
+  {
+    "id": 28176,
+    "name": "Sha\u0027tari Wrought Greaves",
+    "slot": 7,
+    "sockets": 2
+  },
+  {
+    "id": 28221,
+    "name": "Boots of the Watchful Heart",
+    "slot": 7
+  },
+  {
+    "id": 28318,
+    "name": "Obsidian Clodstompers",
+    "slot": 7,
+    "sockets": 2
+  },
+  {
+    "id": 28383,
+    "name": "General\u0027s Plate Greaves",
+    "slot": 7
+  },
+  {
+    "id": 28494,
+    "name": "Ravenguard\u0027s Greaves",
+    "slot": 7
+  },
+  {
+    "id": 28569,
+    "name": "Boots of Valiance",
+    "slot": 7
+  },
+  {
+    "id": 28608,
+    "name": "Ironstriders of Urgency",
+    "slot": 7,
+    "sockets": 2
+  },
+  {
+    "id": 28642,
+    "name": "General\u0027s Lamellar Greaves",
+    "slot": 7
+  },
+  {
+    "id": 28645,
+    "name": "General\u0027s Scaled Greaves",
+    "slot": 7
+  },
+  {
+    "id": 28747,
+    "name": "Battlescar Boots",
+    "slot": 7,
+    "sockets": 2
+  },
+  {
+    "id": 28985,
+    "name": "Marshal\u0027s Lamellar Greaves",
+    "slot": 7
+  },
+  {
+    "id": 28997,
+    "name": "Marshal\u0027s Plate Greaves",
+    "slot": 7
+  },
+  {
+    "id": 29000,
+    "name": "Marshal\u0027s Scaled Greaves",
+    "slot": 7
+  },
+  {
+    "id": 29239,
+    "name": "Eaglecrest Warboots",
+    "slot": 7
+  },
+  {
+    "id": 29254,
+    "name": "Boots of the Righteous Path",
+    "slot": 7
+  },
+  {
+    "id": 29325,
+    "name": "Flesh Beast\u0027s Metal Greaves",
+    "slot": 7
+  },
+  {
+    "id": 29601,
+    "name": "Blood Guard\u0027s Lamellar Sabatons",
+    "slot": 7
+  },
+  {
+    "id": 29612,
+    "name": "General\u0027s Lamellar Boots",
+    "slot": 7
+  },
+  {
+    "id": 29786,
+    "name": "Kirin\u0027Var Defender\u0027s Greaves",
+    "slot": 7
+  },
+  {
+    "id": 30002,
+    "name": "Boot\u0027s Boots",
+    "slot": 7
+  },
+  {
+    "id": 30031,
+    "name": "Red Havoc Boots",
+    "slot": 7
+  },
+  {
+    "id": 30027,
+    "name": "Boots of Courage Unending",
+    "slot": 7
+  },
+  {
+    "id": 30033,
+    "name": "Boots of the Protector",
+    "slot": 7
+  },
+  {
+    "id": 30081,
+    "name": "Warboots of Obliteration",
+    "slot": 7
+  },
+  {
+    "id": 30334,
+    "name": "Starcaller\u0027s Plated Stompers",
+    "slot": 7
+  },
+  {
+    "id": 30386,
+    "name": "Bloodguard\u0027s Greaves",
+    "slot": 7
+  },
+  {
+    "id": 30491,
+    "name": "General\u0027s Plate Greaves Tier 2",
+    "slot": 7
+  },
+  {
+    "id": 30641,
+    "name": "Boots of Elusion",
+    "slot": 7
+  },
+  {
+    "id": 30683,
+    "name": "Glider\u0027s Greaves",
+    "slot": 7
+  },
+  {
+    "id": 30768,
+    "name": "Inferno Tempered Boots",
+    "slot": 7
+  },
+  {
+    "id": 30968,
+    "name": "Earthmender\u0027s Plated Boots",
+    "slot": 7
+  },
+  {
+    "id": 30965,
+    "name": "QR 10637 Plate Warrior Boots",
+    "slot": 7
+  },
+  {
+    "id": 31125,
+    "name": "Boots of the Decimator",
+    "slot": 7
+  },
+  {
+    "id": 31213,
+    "name": "Abyssal Plate Sabatons",
+    "slot": 7
+  },
+  {
+    "id": 31232,
+    "name": "Grim Sabatons",
+    "slot": 7
+  },
+  {
+    "id": 31276,
+    "name": "Boots of Zealotry",
+    "slot": 7
+  },
+  {
+    "id": 31432,
+    "name": "Explorer\u0027s Boots",
+    "slot": 7
+  },
+  {
+    "id": 31441,
+    "name": "Clocktock\u0027s Jumpers",
+    "slot": 7
+  },
+  {
+    "id": 31488,
+    "name": "Boots of the Ancient-Killer",
+    "slot": 7
+  },
+  {
+    "id": 31581,
+    "name": "Slatesteel Boots",
+    "slot": 7
+  },
+  {
+    "id": 32243,
+    "name": "Pearl Inlaid Boots",
+    "slot": 7
+  },
+  {
+    "id": 32245,
+    "name": "Tide-stomper\u0027s Greaves",
+    "slot": 7,
+    "sockets": 2
+  },
+  {
+    "id": 32267,
+    "name": "Boots of the Resilient",
+    "slot": 7,
+    "sockets": 2
+  },
+  {
+    "id": 32268,
+    "name": "Myrmidon\u0027s Treads",
+    "slot": 7,
+    "sockets": 2
+  },
+  {
+    "id": 32345,
+    "name": "Dreadboots of the Legion",
+    "slot": 7,
+    "sockets": 2
+  },
+  {
+    "id": 32402,
+    "name": "Shadesteel Sabots",
+    "slot": 7
+  },
+  {
+    "id": 32648,
+    "name": "Vortex Walking Boots",
+    "slot": 7,
+    "sockets": 2
+  },
+  {
+    "id": 32778,
+    "name": "Boots of Righteous Fortitude",
+    "slot": 7
+  },
+  {
+    "id": 32793,
+    "name": "Veteran\u0027s Plate Greaves",
+    "slot": 7
+  },
+  {
+    "id": 32789,
+    "name": "Veteran\u0027s Lamellar Greaves",
+    "slot": 7
+  },
+  {
+    "id": 32794,
+    "name": "Veteran\u0027s Scaled Greaves",
+    "slot": 7
+  },
+  {
+    "id": 32866,
+    "name": "Ascendant\u0027s Boots",
+    "slot": 7,
+    "sockets": 2
+  },
+  {
+    "id": 32984,
+    "name": "General\u0027s Ornamented Greaves",
+    "slot": 7
+  },
+  {
+    "id": 32987,
+    "name": "Marshal\u0027s Ornamented Greaves",
+    "slot": 7
+  },
+  {
+    "id": 32990,
+    "name": "Veteran\u0027s Ornamented Greaves",
+    "slot": 7
+  },
+  {
+    "id": 33191,
+    "name": "Jungle Stompers",
+    "slot": 7,
+    "sockets": 1
+  },
+  {
+    "id": 33207,
+    "name": "Implacable Guardian Sabatons",
+    "slot": 7,
+    "sockets": 2
+  },
+  {
+    "id": 33303,
+    "name": "Skullshatter Warboots",
+    "slot": 7,
+    "sockets": 2
+  },
+  {
+    "id": 33523,
+    "name": "Sabatons of the Righteous Defender",
+    "slot": 7,
+    "sockets": 2
+  },
+  {
+    "id": 33812,
+    "name": "Vindicator\u0027s Plate Greaves",
+    "slot": 7
+  },
+  {
+    "id": 33890,
+    "name": "Vindicator\u0027s Lamellar Greaves",
+    "slot": 7
+  },
+  {
+    "id": 33905,
+    "name": "Vindicator\u0027s Ornamented Greaves",
+    "slot": 7
+  },
+  {
+    "id": 33911,
+    "name": "Vindicator\u0027s Scaled Greaves",
+    "slot": 7
+  },
+  {
+    "id": 34559,
+    "name": "Lightbringer Treads",
+    "slot": 7,
+    "sockets": 1
+  },
+  {
+    "id": 34561,
+    "name": "Lightbringer Boots",
+    "slot": 7,
+    "sockets": 1
+  },
+  {
+    "id": 34560,
+    "name": "Lightbringer Stompers",
+    "slot": 7,
+    "sockets": 1
+  },
+  {
+    "id": 34569,
+    "name": "Onslaught Treads",
+    "slot": 7,
+    "sockets": 1
+  },
+  {
+    "id": 34568,
+    "name": "Onslaught Boots",
+    "slot": 7,
+    "sockets": 1
+  },
+  {
+    "id": 34612,
+    "name": "Greaves of the Penitent Knight",
+    "slot": 7,
+    "sockets": 2
+  },
+  {
+    "id": 34807,
+    "name": "Sunstrider Warboots",
+    "slot": 7,
+    "sockets": 2
+  },
+  {
+    "id": 34947,
+    "name": "Blue\u0027s Greaves of the Righteous Guardian",
+    "slot": 7,
+    "sockets": 1
+  },
+  {
+    "id": 35146,
+    "name": "Guardian\u0027s Plate Greaves",
+    "slot": 7
+  },
+  {
+    "id": 35145,
+    "name": "Guardian\u0027s Ornamented Greaves",
+    "slot": 7
+  },
+  {
+    "id": 35140,
+    "name": "Guardian\u0027s Lamellar Greaves",
+    "slot": 7
+  },
+  {
+    "id": 35148,
+    "name": "Guardian\u0027s Scaled Greaves",
+    "slot": 7
+  }
+]

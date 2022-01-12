@@ -1,0 +1,998 @@
+[
+  {
+    "id": 3945,
+    "name": "Twill Boots",
+    "slot": 7
+  },
+  {
+    "id": 3953,
+    "name": "Mesh Boots",
+    "slot": 7
+  },
+  {
+    "id": 8246,
+    "name": "Imperial Red Boots",
+    "slot": 7
+  },
+  {
+    "id": 8284,
+    "name": "Arcane Boots",
+    "slot": 7
+  },
+  {
+    "id": 10095,
+    "name": "Councillor\u0027s Boots",
+    "slot": 7
+  },
+  {
+    "id": 10137,
+    "name": "High Councillor\u0027s Boots",
+    "slot": 7
+  },
+  {
+    "id": 10179,
+    "name": "Mystical Boots",
+    "slot": 7
+  },
+  {
+    "id": 10211,
+    "name": "Elegant Boots",
+    "slot": 7
+  },
+  {
+    "id": 10247,
+    "name": "Master\u0027s Boots",
+    "slot": 7
+  },
+  {
+    "id": 11822,
+    "name": "Omnicast Boots",
+    "slot": 7
+  },
+  {
+    "id": 11865,
+    "name": "Rancor Boots",
+    "slot": 7
+  },
+  {
+    "id": 11908,
+    "name": "Archaeologist\u0027s Quarry Boots",
+    "slot": 7
+  },
+  {
+    "id": 12050,
+    "name": "Hazecover Boots",
+    "slot": 7
+  },
+  {
+    "id": 12556,
+    "name": "High Priestess Boots",
+    "slot": 7
+  },
+  {
+    "id": 13101,
+    "name": "Wolfrunner Shoes",
+    "slot": 7
+  },
+  {
+    "id": 13282,
+    "name": "Ogreseer Tower Boots",
+    "slot": 7
+  },
+  {
+    "id": 13391,
+    "name": "The Postmaster\u0027s Treads",
+    "slot": 7
+  },
+  {
+    "id": 13369,
+    "name": "Fire Striders",
+    "slot": 7
+  },
+  {
+    "id": 13530,
+    "name": "Fangdrip Runners",
+    "slot": 7
+  },
+  {
+    "id": 13864,
+    "name": "Runecloth Boots",
+    "slot": 7
+  },
+  {
+    "id": 14108,
+    "name": "Felcloth Boots",
+    "slot": 7
+  },
+  {
+    "id": 14290,
+    "name": "Arachnidian Footpads",
+    "slot": 7
+  },
+  {
+    "id": 14299,
+    "name": "Bonecaster\u0027s Boots",
+    "slot": 7
+  },
+  {
+    "id": 14319,
+    "name": "Resplendent Boots",
+    "slot": 7
+  },
+  {
+    "id": 14310,
+    "name": "Celestial Slippers",
+    "slot": 7
+  },
+  {
+    "id": 14329,
+    "name": "Eternal Boots",
+    "slot": 7
+  },
+  {
+    "id": 14447,
+    "name": "Highborne Footpads",
+    "slot": 7
+  },
+  {
+    "id": 14458,
+    "name": "Elunarian Boots",
+    "slot": 7
+  },
+  {
+    "id": 14631,
+    "name": "Necropile Boots",
+    "slot": 7
+  },
+  {
+    "id": 15802,
+    "name": "Mooncloth Boots",
+    "slot": 7
+  },
+  {
+    "id": 16369,
+    "name": "Knight-Lieutenant\u0027s Silk Boots",
+    "slot": 7
+  },
+  {
+    "id": 16437,
+    "name": "Marshal\u0027s Silk Footwraps",
+    "slot": 7
+  },
+  {
+    "id": 16485,
+    "name": "Blood Guard\u0027s Silk Footwraps",
+    "slot": 7
+  },
+  {
+    "id": 16539,
+    "name": "General\u0027s Silk Boots",
+    "slot": 7
+  },
+  {
+    "id": 16682,
+    "name": "Magister\u0027s Boots",
+    "slot": 7
+  },
+  {
+    "id": 16691,
+    "name": "Devout Sandals",
+    "slot": 7
+  },
+  {
+    "id": 16704,
+    "name": "Dreadmist Sandals",
+    "slot": 7
+  },
+  {
+    "id": 16811,
+    "name": "Boots of Prophecy",
+    "slot": 7
+  },
+  {
+    "id": 16803,
+    "name": "Felheart Slippers",
+    "slot": 7
+  },
+  {
+    "id": 16800,
+    "name": "Arcanist Boots",
+    "slot": 7
+  },
+  {
+    "id": 16919,
+    "name": "Boots of Transcendence",
+    "slot": 7
+  },
+  {
+    "id": 16912,
+    "name": "Netherwind Boots",
+    "slot": 7
+  },
+  {
+    "id": 16927,
+    "name": "Nemesis Boots",
+    "slot": 7
+  },
+  {
+    "id": 17562,
+    "name": "Knight-Lieutenant\u0027s Dreadweave Boots",
+    "slot": 7
+  },
+  {
+    "id": 17586,
+    "name": "General\u0027s Dreadweave Boots",
+    "slot": 7
+  },
+  {
+    "id": 17583,
+    "name": "Marshal\u0027s Dreadweave Boots",
+    "slot": 7
+  },
+  {
+    "id": 17576,
+    "name": "Blood Guard\u0027s Dreadweave Boots",
+    "slot": 7
+  },
+  {
+    "id": 17594,
+    "name": "Knight-Lieutenant\u0027s Satin Boots",
+    "slot": 7
+  },
+  {
+    "id": 17618,
+    "name": "General\u0027s Satin Boots",
+    "slot": 7
+  },
+  {
+    "id": 17607,
+    "name": "Marshal\u0027s Satin Sandals",
+    "slot": 7
+  },
+  {
+    "id": 17616,
+    "name": "Blood Guard\u0027s Satin Boots",
+    "slot": 7
+  },
+  {
+    "id": 17748,
+    "name": "Vinerot Sandals",
+    "slot": 7
+  },
+  {
+    "id": 18102,
+    "name": "Dragonrider Boots",
+    "slot": 7
+  },
+  {
+    "id": 18295,
+    "name": "Phasing Boots",
+    "slot": 7
+  },
+  {
+    "id": 18307,
+    "name": "Riptide Shoes",
+    "slot": 7
+  },
+  {
+    "id": 18507,
+    "name": "Boots of the Full Moon",
+    "slot": 7
+  },
+  {
+    "id": 18697,
+    "name": "Coldstone Slippers",
+    "slot": 7
+  },
+  {
+    "id": 18735,
+    "name": "Maleki\u0027s Footwraps",
+    "slot": 7
+  },
+  {
+    "id": 19056,
+    "name": "Argent Boots",
+    "slot": 7
+  },
+  {
+    "id": 19131,
+    "name": "Snowblind Shoes",
+    "slot": 7
+  },
+  {
+    "id": 19391,
+    "name": "Shimmering Geta",
+    "slot": 7
+  },
+  {
+    "id": 19437,
+    "name": "Boots of Pure Thought",
+    "slot": 7
+  },
+  {
+    "id": 19438,
+    "name": "Ringo\u0027s Blizzard Boots",
+    "slot": 7
+  },
+  {
+    "id": 19684,
+    "name": "Bloodvine Boots",
+    "slot": 7
+  },
+  {
+    "id": 19897,
+    "name": "Betrayer\u0027s Boots",
+    "slot": 7
+  },
+  {
+    "id": 20054,
+    "name": "Highlander\u0027s Cloth Boots",
+    "slot": 7
+  },
+  {
+    "id": 20094,
+    "name": "Highlander\u0027s Cloth Boots",
+    "slot": 7
+  },
+  {
+    "id": 20160,
+    "name": "Defiler\u0027s Cloth Boots",
+    "slot": 7
+  },
+  {
+    "id": 20159,
+    "name": "Defiler\u0027s Cloth Boots",
+    "slot": 7
+  },
+  {
+    "id": 20537,
+    "name": "Runed Stygian Boots",
+    "slot": 7
+  },
+  {
+    "id": 20631,
+    "name": "Mendicant\u0027s Slippers",
+    "slot": 7
+  },
+  {
+    "id": 20652,
+    "name": "Abyssal Cloth Slippers",
+    "slot": 7
+  },
+  {
+    "id": 21075,
+    "name": "63 Blue Shadow Boots",
+    "slot": 7
+  },
+  {
+    "id": 21088,
+    "name": "66 Epic Shadow Boots",
+    "slot": 7
+  },
+  {
+    "id": 21060,
+    "name": "66 Epic Fire Boots",
+    "slot": 7
+  },
+  {
+    "id": 21047,
+    "name": "63 Blue Fire Boots",
+    "slot": 7
+  },
+  {
+    "id": 21338,
+    "name": "Doomcaller\u0027s Footwraps",
+    "slot": 7
+  },
+  {
+    "id": 21349,
+    "name": "Footwraps of the Oracle",
+    "slot": 7
+  },
+  {
+    "id": 21344,
+    "name": "Enigma Boots",
+    "slot": 7
+  },
+  {
+    "id": 21489,
+    "name": "Quicksand Waders",
+    "slot": 7
+  },
+  {
+    "id": 21600,
+    "name": "Boots of Epiphany",
+    "slot": 7
+  },
+  {
+    "id": 21648,
+    "name": "Recomposed Boots",
+    "slot": 7
+  },
+  {
+    "id": 21810,
+    "name": "Treads of the Wandering Nomad",
+    "slot": 7
+  },
+  {
+    "id": 21853,
+    "name": "Netherweave Boots",
+    "slot": 7
+  },
+  {
+    "id": 21867,
+    "name": "Arcanoweave Boots",
+    "slot": 7
+  },
+  {
+    "id": 21870,
+    "name": "Frozen Shadoweave Boots",
+    "slot": 7,
+    "sockets": 2
+  },
+  {
+    "id": 21860,
+    "name": "Imbued Netherweave Boots",
+    "slot": 7
+  },
+  {
+    "id": 22064,
+    "name": "Sorcerer\u0027s Boots",
+    "slot": 7
+  },
+  {
+    "id": 22084,
+    "name": "Virtuous Sandals",
+    "slot": 7
+  },
+  {
+    "id": 22076,
+    "name": "Deathmist Sandals",
+    "slot": 7
+  },
+  {
+    "id": 22231,
+    "name": "Kayser\u0027s Boots of Precision",
+    "slot": 7
+  },
+  {
+    "id": 22245,
+    "name": "Soot Encrusted Footwear",
+    "slot": 7
+  },
+  {
+    "id": 22247,
+    "name": "Faith Healer\u0027s Boots",
+    "slot": 7
+  },
+  {
+    "id": 22311,
+    "name": "Ironweave Boots",
+    "slot": 7
+  },
+  {
+    "id": 22500,
+    "name": "Frostfire Sandals",
+    "slot": 7
+  },
+  {
+    "id": 22508,
+    "name": "Plagueheart Sandals",
+    "slot": 7
+  },
+  {
+    "id": 22516,
+    "name": "Sandals of Faith",
+    "slot": 7
+  },
+  {
+    "id": 22855,
+    "name": "Blood Guard\u0027s Dreadweave Walkers",
+    "slot": 7
+  },
+  {
+    "id": 22859,
+    "name": "Blood Guard\u0027s Satin Walkers",
+    "slot": 7
+  },
+  {
+    "id": 22860,
+    "name": "Blood Guard\u0027s Silk Walkers",
+    "slot": 7
+  },
+  {
+    "id": 23283,
+    "name": "Knight-Lieutenant\u0027s Dreadweave Walkers",
+    "slot": 7
+  },
+  {
+    "id": 23289,
+    "name": "Knight-Lieutenant\u0027s Satin Walkers",
+    "slot": 7
+  },
+  {
+    "id": 23291,
+    "name": "Knight-Lieutenant\u0027s Silk Walkers",
+    "slot": 7
+  },
+  {
+    "id": 24577,
+    "name": "Loosely Threaded Boots",
+    "slot": 7
+  },
+  {
+    "id": 24590,
+    "name": "Fireheart Boots",
+    "slot": 7
+  },
+  {
+    "id": 24582,
+    "name": "Outlander\u0027s Boots",
+    "slot": 7
+  },
+  {
+    "id": 24606,
+    "name": "Laughing Skull Boot",
+    "slot": 7
+  },
+  {
+    "id": 24598,
+    "name": "Starfire Sandals",
+    "slot": 7
+  },
+  {
+    "id": 24614,
+    "name": "Vindicator Boots",
+    "slot": 7
+  },
+  {
+    "id": 24622,
+    "name": "Slavehandler Footpads",
+    "slot": 7
+  },
+  {
+    "id": 24630,
+    "name": "Feralfen Sandals",
+    "slot": 7
+  },
+  {
+    "id": 24638,
+    "name": "Mistyreed Boot",
+    "slot": 7
+  },
+  {
+    "id": 24654,
+    "name": "Consortium Boot",
+    "slot": 7
+  },
+  {
+    "id": 24646,
+    "name": "Astralaan Boots",
+    "slot": 7
+  },
+  {
+    "id": 24670,
+    "name": "Eldr\u0027naan Boot",
+    "slot": 7
+  },
+  {
+    "id": 24662,
+    "name": "Shadow Council Boots",
+    "slot": 7
+  },
+  {
+    "id": 24686,
+    "name": "Elementalist Boots",
+    "slot": 7
+  },
+  {
+    "id": 24678,
+    "name": "Archmage Slippers",
+    "slot": 7
+  },
+  {
+    "id": 25342,
+    "name": "Dilapidated Cloth Boots",
+    "slot": 7
+  },
+  {
+    "id": 25516,
+    "name": "Ikeyen\u0027s Boots",
+    "slot": 7
+  },
+  {
+    "id": 25631,
+    "name": "Boots of the Specialist",
+    "slot": 7
+  },
+  {
+    "id": 25630,
+    "name": "Ogre Basher\u0027s Slippers",
+    "slot": 7
+  },
+  {
+    "id": 25793,
+    "name": "Curate\u0027s Footwraps",
+    "slot": 7
+  },
+  {
+    "id": 25792,
+    "name": "Curate\u0027s Boots",
+    "slot": 7
+  },
+  {
+    "id": 25970,
+    "name": "Shalassi Oracle\u0027s Sandals",
+    "slot": 7,
+    "sockets": 2
+  },
+  {
+    "id": 25957,
+    "name": "Ethereal Boots of the Skystrider",
+    "slot": 7
+  },
+  {
+    "id": 27411,
+    "name": "Slippers of Serenity",
+    "slot": 7,
+    "sockets": 2
+  },
+  {
+    "id": 27451,
+    "name": "Boots of the Darkwalker",
+    "slot": 7
+  },
+  {
+    "id": 27525,
+    "name": "Jeweled Boots of Sanctification",
+    "slot": 7
+  },
+  {
+    "id": 27728,
+    "name": "Cushy Cenarion Walkers",
+    "slot": 7
+  },
+  {
+    "id": 27821,
+    "name": "Extravagant Boots of Malice",
+    "slot": 7
+  },
+  {
+    "id": 27848,
+    "name": "Embroidered Spellpyre Boots",
+    "slot": 7
+  },
+  {
+    "id": 27902,
+    "name": "Silent Slippers of Meditation",
+    "slot": 7
+  },
+  {
+    "id": 27919,
+    "name": "Light-Woven Slippers",
+    "slot": 7
+  },
+  {
+    "id": 28179,
+    "name": "Shattrath Jumpers",
+    "slot": 7,
+    "sockets": 2
+  },
+  {
+    "id": 28402,
+    "name": "General\u0027s Dreadweave Stalkers",
+    "slot": 7
+  },
+  {
+    "id": 28410,
+    "name": "General\u0027s Silk Footguards",
+    "slot": 7
+  },
+  {
+    "id": 28406,
+    "name": "Sigil-Laced Boots",
+    "slot": 7,
+    "sockets": 2
+  },
+  {
+    "id": 28491,
+    "name": "Windwalker\u0027s Footwraps",
+    "slot": 7
+  },
+  {
+    "id": 28517,
+    "name": "Boots of Foretelling",
+    "slot": 7,
+    "sockets": 2
+  },
+  {
+    "id": 28585,
+    "name": "Ruby Slippers",
+    "slot": 7
+  },
+  {
+    "id": 28663,
+    "name": "Boots of the Incorrupt",
+    "slot": 7
+  },
+  {
+    "id": 28670,
+    "name": "Boots of the Infernal Coven",
+    "slot": 7
+  },
+  {
+    "id": 28982,
+    "name": "Marshal\u0027s Dreadweave Stalkers",
+    "slot": 7
+  },
+  {
+    "id": 29003,
+    "name": "Marshal\u0027s Silk Footguards",
+    "slot": 7
+  },
+  {
+    "id": 29251,
+    "name": "Boots of the Pious",
+    "slot": 7
+  },
+  {
+    "id": 29242,
+    "name": "Boots of Blasphemy",
+    "slot": 7
+  },
+  {
+    "id": 29258,
+    "name": "Boots of Ethereal Manipulation",
+    "slot": 7
+  },
+  {
+    "id": 29808,
+    "name": "Shimmering Azure Boots",
+    "slot": 7
+  },
+  {
+    "id": 30035,
+    "name": "Boots of the Long Road",
+    "slot": 7
+  },
+  {
+    "id": 30037,
+    "name": "Boots of Blasting",
+    "slot": 7
+  },
+  {
+    "id": 30050,
+    "name": "Boots of the Shifting Nightmare",
+    "slot": 7
+  },
+  {
+    "id": 30067,
+    "name": "Velvet Boots of the Guardian",
+    "slot": 7
+  },
+  {
+    "id": 30100,
+    "name": "Soul-Strider Boots",
+    "slot": 7,
+    "sockets": 2
+  },
+  {
+    "id": 30284,
+    "name": "Audi\u0027s Embroidered Boots",
+    "slot": 7
+  },
+  {
+    "id": 30368,
+    "name": "Slippers of the High Priestess",
+    "slot": 7
+  },
+  {
+    "id": 30398,
+    "name": "Boots of the Beneficent",
+    "slot": 7
+  },
+  {
+    "id": 30461,
+    "name": "Netherflame Boots",
+    "slot": 7
+  },
+  {
+    "id": 30519,
+    "name": "Boots of the Nexus Warden",
+    "slot": 7
+  },
+  {
+    "id": 30680,
+    "name": "Glider\u0027s Foot-Wraps",
+    "slot": 7
+  },
+  {
+    "id": 30763,
+    "name": "Infernoweave Boots",
+    "slot": 7
+  },
+  {
+    "id": 30885,
+    "name": "Archbishop\u0027s Slippers",
+    "slot": 7
+  },
+  {
+    "id": 30894,
+    "name": "Blue Suede Shoes",
+    "slot": 7
+  },
+  {
+    "id": 30926,
+    "name": "Ashwalker\u0027s Footwraps",
+    "slot": 7
+  },
+  {
+    "id": 31216,
+    "name": "Abyssal Cloth Footwraps",
+    "slot": 7
+  },
+  {
+    "id": 31230,
+    "name": "Abyss Walker\u0027s Boots",
+    "slot": 7
+  },
+  {
+    "id": 31236,
+    "name": "Grim Slippers",
+    "slot": 7
+  },
+  {
+    "id": 31312,
+    "name": "Sinister Area 52 Boots",
+    "slot": 7
+  },
+  {
+    "id": 31456,
+    "name": "Gnomish Casting Boots",
+    "slot": 7
+  },
+  {
+    "id": 31537,
+    "name": "Darktread Boots",
+    "slot": 7
+  },
+  {
+    "id": 31557,
+    "name": "Windchanneller\u0027s Boots",
+    "slot": 7
+  },
+  {
+    "id": 31711,
+    "name": "Nether-Empowered Footgear",
+    "slot": 7
+  },
+  {
+    "id": 31789,
+    "name": "Marshfang Boots",
+    "slot": 7
+  },
+  {
+    "id": 32239,
+    "name": "Slippers of the Seacaller",
+    "slot": 7,
+    "sockets": 2
+  },
+  {
+    "id": 32391,
+    "name": "Soulguard Slippers",
+    "slot": 7
+  },
+  {
+    "id": 32609,
+    "name": "Boots of the Divine Light",
+    "slot": 7,
+    "sockets": 2
+  },
+  {
+    "id": 32787,
+    "name": "Veteran\u0027s Dreadweave Stalkers",
+    "slot": 7
+  },
+  {
+    "id": 32795,
+    "name": "Veteran\u0027s Silk Footguards",
+    "slot": 7
+  },
+  {
+    "id": 32975,
+    "name": "General\u0027s Mooncloth Slippers",
+    "slot": 7
+  },
+  {
+    "id": 32978,
+    "name": "Marshal\u0027s Mooncloth Slippers",
+    "slot": 7
+  },
+  {
+    "id": 32981,
+    "name": "Veteran\u0027s Mooncloth Slippers",
+    "slot": 7
+  },
+  {
+    "id": 33357,
+    "name": "Footpads of Madness",
+    "slot": 7
+  },
+  {
+    "id": 33471,
+    "name": "Two-toed Sandals",
+    "slot": 7,
+    "sockets": 2
+  },
+  {
+    "id": 33884,
+    "name": "Vindicator\u0027s Dreadweave Stalkers",
+    "slot": 7
+  },
+  {
+    "id": 33902,
+    "name": "Vindicator\u0027s Mooncloth Slippers",
+    "slot": 7
+  },
+  {
+    "id": 33914,
+    "name": "Vindicator\u0027s Silk Footguards",
+    "slot": 7
+  },
+  {
+    "id": 34563,
+    "name": "Treads of Absolution",
+    "slot": 7,
+    "sockets": 1
+  },
+  {
+    "id": 34562,
+    "name": "Boots of Absolution",
+    "slot": 7,
+    "sockets": 1
+  },
+  {
+    "id": 34564,
+    "name": "Boots of the Malefic",
+    "slot": 7,
+    "sockets": 1
+  },
+  {
+    "id": 34574,
+    "name": "Boots of the Tempest",
+    "slot": 7,
+    "sockets": 1
+  },
+  {
+    "id": 34919,
+    "name": "Boots of Incantations",
+    "slot": 7,
+    "sockets": 1
+  },
+  {
+    "id": 34926,
+    "name": "Slippers of Dutiful Mending",
+    "slot": 7,
+    "sockets": 1
+  },
+  {
+    "id": 35138,
+    "name": "Guardian\u0027s Dreadweave Stalkers",
+    "slot": 7
+  },
+  {
+    "id": 35144,
+    "name": "Guardian\u0027s Mooncloth Slippers",
+    "slot": 7
+  },
+  {
+    "id": 35149,
+    "name": "Guardian\u0027s Silk Footguards",
+    "slot": 7
+  },
+  {
+    "id": 35581,
+    "name": "Rocket Boots Xtreme Lite",
+    "slot": 7
+  }
+]

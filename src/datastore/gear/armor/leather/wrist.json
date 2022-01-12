@@ -1,0 +1,753 @@
+[
+  {
+    "id": 3979,
+    "name": "Strapped Bracers",
+    "slot": 8
+  },
+  {
+    "id": 3971,
+    "name": "Smooth Leather Bracers",
+    "slot": 8
+  },
+  {
+    "id": 8295,
+    "name": "Traveler\u0027s Bracers",
+    "slot": 8
+  },
+  {
+    "id": 10107,
+    "name": "Wanderer\u0027s Bracers",
+    "slot": 8
+  },
+  {
+    "id": 10147,
+    "name": "Mighty Armsplints",
+    "slot": 8
+  },
+  {
+    "id": 10184,
+    "name": "Swashbuckler\u0027s Bracers",
+    "slot": 8
+  },
+  {
+    "id": 10223,
+    "name": "Nightshade Armguards",
+    "slot": 8
+  },
+  {
+    "id": 10256,
+    "name": "Adventurer\u0027s Bracers",
+    "slot": 8
+  },
+  {
+    "id": 10800,
+    "name": "Darkwater Bracers",
+    "slot": 8
+  },
+  {
+    "id": 11764,
+    "name": "Cinderhide Armsplints",
+    "slot": 8
+  },
+  {
+    "id": 12966,
+    "name": "Blackmist Armguards",
+    "slot": 8
+  },
+  {
+    "id": 13120,
+    "name": "Deepfury Bracers",
+    "slot": 8
+  },
+  {
+    "id": 13208,
+    "name": "Bleak Howler Armguards",
+    "slot": 8
+  },
+  {
+    "id": 13537,
+    "name": "Chillhide Bracers",
+    "slot": 8
+  },
+  {
+    "id": 14672,
+    "name": "Pridelord Bands",
+    "slot": 8
+  },
+  {
+    "id": 14682,
+    "name": "Indomitable Armguards",
+    "slot": 8
+  },
+  {
+    "id": 15084,
+    "name": "Wicked Leather Bracers",
+    "slot": 8
+  },
+  {
+    "id": 15092,
+    "name": "Runic Leather Bracers",
+    "slot": 8
+  },
+  {
+    "id": 15182,
+    "name": "Praetorian Wristbands",
+    "slot": 8
+  },
+  {
+    "id": 15188,
+    "name": "Grand Armguards",
+    "slot": 8
+  },
+  {
+    "id": 15436,
+    "name": "Supreme Bracers",
+    "slot": 8
+  },
+  {
+    "id": 15425,
+    "name": "Peerless Bracers",
+    "slot": 8
+  },
+  {
+    "id": 16497,
+    "name": "First Sergeant\u0027s Leather Armguards",
+    "slot": 8
+  },
+  {
+    "id": 16710,
+    "name": "Shadowcraft Bracers",
+    "slot": 8
+  },
+  {
+    "id": 16714,
+    "name": "Wildheart Bracers",
+    "slot": 8
+  },
+  {
+    "id": 16830,
+    "name": "Cenarion Bracers",
+    "slot": 8
+  },
+  {
+    "id": 16825,
+    "name": "Nightslayer Bracelets",
+    "slot": 8
+  },
+  {
+    "id": 16904,
+    "name": "Stormrage Bracers",
+    "slot": 8
+  },
+  {
+    "id": 16911,
+    "name": "Bloodfang Bracers",
+    "slot": 8
+  },
+  {
+    "id": 18375,
+    "name": "Bracers of the Eclipse",
+    "slot": 8
+  },
+  {
+    "id": 18434,
+    "name": "First Sergeant\u0027s Dragonhide Armguards",
+    "slot": 8
+  },
+  {
+    "id": 18454,
+    "name": "Sergeant Major\u0027s Dragonhide Armsplints",
+    "slot": 8
+  },
+  {
+    "id": 18452,
+    "name": "Sergeant Major\u0027s Leather Armsplints",
+    "slot": 8
+  },
+  {
+    "id": 18525,
+    "name": "Bracers of Prosperity",
+    "slot": 8
+  },
+  {
+    "id": 18700,
+    "name": "Malefic Bracers",
+    "slot": 8
+  },
+  {
+    "id": 18726,
+    "name": "Magistrate\u0027s Cuffs",
+    "slot": 8
+  },
+  {
+    "id": 19113,
+    "name": "Yeti Hide Bracers",
+    "slot": 8
+  },
+  {
+    "id": 19146,
+    "name": "Wristguards of Stability",
+    "slot": 8
+  },
+  {
+    "id": 19587,
+    "name": "Forest Stalker\u0027s Bracers",
+    "slot": 8
+  },
+  {
+    "id": 19589,
+    "name": "Forest Stalker\u0027s Bracers",
+    "slot": 8
+  },
+  {
+    "id": 19687,
+    "name": "Primal Batskin Bracers",
+    "slot": 8
+  },
+  {
+    "id": 19840,
+    "name": "Zandalar Haruspex\u0027s Bracers",
+    "slot": 8
+  },
+  {
+    "id": 19836,
+    "name": "Zandalar Madcap\u0027s Bracers",
+    "slot": 8
+  },
+  {
+    "id": 20615,
+    "name": "Dragonspur Wraps",
+    "slot": 8
+  },
+  {
+    "id": 20681,
+    "name": "Abyssal Leather Bracers",
+    "slot": 8
+  },
+  {
+    "id": 21491,
+    "name": "Scaled Bracers of the Gorger",
+    "slot": 8
+  },
+  {
+    "id": 21602,
+    "name": "Qiraji Execution Bracers",
+    "slot": 8
+  },
+  {
+    "id": 21708,
+    "name": "Beetle Scaled Wristguards",
+    "slot": 8
+  },
+  {
+    "id": 22004,
+    "name": "Darkmantle Bracers",
+    "slot": 8
+  },
+  {
+    "id": 22108,
+    "name": "Feralheart Bracers",
+    "slot": 8
+  },
+  {
+    "id": 22204,
+    "name": "Wristguards of Renown",
+    "slot": 8
+  },
+  {
+    "id": 22483,
+    "name": "Bonescythe Bracers",
+    "slot": 8
+  },
+  {
+    "id": 22495,
+    "name": "Dreamwalker Wristguards",
+    "slot": 8
+  },
+  {
+    "id": 22668,
+    "name": "Bracers of Subterfuge",
+    "slot": 8
+  },
+  {
+    "id": 22663,
+    "name": "Polar Bracers",
+    "slot": 8
+  },
+  {
+    "id": 23093,
+    "name": "Wristwraps of Undead Slaying",
+    "slot": 8
+  },
+  {
+    "id": 24023,
+    "name": "Bracers of Finesse",
+    "slot": 8
+  },
+  {
+    "id": 24700,
+    "name": "Bonechewer Bands",
+    "slot": 8
+  },
+  {
+    "id": 24708,
+    "name": "Haal\u0027eshi Bindings",
+    "slot": 8
+  },
+  {
+    "id": 24732,
+    "name": "Dementia Armguards",
+    "slot": 8
+  },
+  {
+    "id": 24724,
+    "name": "Dreghood Bands",
+    "slot": 8
+  },
+  {
+    "id": 24716,
+    "name": "Vengeance Bands",
+    "slot": 8
+  },
+  {
+    "id": 24748,
+    "name": "Ranger Armguards",
+    "slot": 8
+  },
+  {
+    "id": 24756,
+    "name": "Daggerfen Bindings",
+    "slot": 8
+  },
+  {
+    "id": 24764,
+    "name": "Umbrafen Bindings",
+    "slot": 8
+  },
+  {
+    "id": 24740,
+    "name": "Sunroc Armguards",
+    "slot": 8
+  },
+  {
+    "id": 24772,
+    "name": "Clefthoof Bracers",
+    "slot": 8
+  },
+  {
+    "id": 24780,
+    "name": "Boneshredder Wristguards",
+    "slot": 8
+  },
+  {
+    "id": 24789,
+    "name": "Murkblood Bracers",
+    "slot": 8
+  },
+  {
+    "id": 24805,
+    "name": "Dragonhawk Bands",
+    "slot": 8
+  },
+  {
+    "id": 24797,
+    "name": "Expedition Bracers",
+    "slot": 8
+  },
+  {
+    "id": 25352,
+    "name": "Moldy Leather Bracers",
+    "slot": 8
+  },
+  {
+    "id": 25360,
+    "name": "Decaying Leather Bracers",
+    "slot": 8
+  },
+  {
+    "id": 25486,
+    "name": "Demonslayer\u0027s Wristguards",
+    "slot": 8
+  },
+  {
+    "id": 25600,
+    "name": "Bog Walker\u0027s Bands",
+    "slot": 8
+  },
+  {
+    "id": 25599,
+    "name": "Explorer\u0027s Bands",
+    "slot": 8
+  },
+  {
+    "id": 25960,
+    "name": "Talonstalker Bracers",
+    "slot": 8
+  },
+  {
+    "id": 27483,
+    "name": "Moon-Touched Bands",
+    "slot": 8
+  },
+  {
+    "id": 27712,
+    "name": "Shackles of Quagmirran",
+    "slot": 8
+  },
+  {
+    "id": 27765,
+    "name": "Armwraps of Disdain",
+    "slot": 8
+  },
+  {
+    "id": 27827,
+    "name": "Lucid Dream Bracers",
+    "slot": 8
+  },
+  {
+    "id": 28028,
+    "name": "Moonstruck Bands",
+    "slot": 8
+  },
+  {
+    "id": 28171,
+    "name": "Spymistress\u0027s Wristguards",
+    "slot": 8,
+    "sockets": 1
+  },
+  {
+    "id": 28424,
+    "name": "General\u0027s Leather Bracers",
+    "slot": 8,
+    "sockets": 1
+  },
+  {
+    "id": 28445,
+    "name": "General\u0027s Dragonhide Bracers",
+    "slot": 8,
+    "sockets": 1
+  },
+  {
+    "id": 28453,
+    "name": "Bracers of the White Stag",
+    "slot": 8
+  },
+  {
+    "id": 28448,
+    "name": "General\u0027s Wyrmhide Bracers",
+    "slot": 8,
+    "sockets": 1
+  },
+  {
+    "id": 28514,
+    "name": "Bracers of Maliciousness",
+    "slot": 8
+  },
+  {
+    "id": 28978,
+    "name": "Marshal\u0027s Dragonhide Bracers",
+    "slot": 8,
+    "sockets": 1
+  },
+  {
+    "id": 28988,
+    "name": "Marshal\u0027s Leather Bracers",
+    "slot": 8,
+    "sockets": 1
+  },
+  {
+    "id": 29006,
+    "name": "Marshal\u0027s Wyrmhide Bracers",
+    "slot": 8,
+    "sockets": 1
+  },
+  {
+    "id": 29246,
+    "name": "Nightfall Wristguards",
+    "slot": 8
+  },
+  {
+    "id": 29263,
+    "name": "Forestheart Bracers",
+    "slot": 8
+  },
+  {
+    "id": 29527,
+    "name": "Primalstrike Bracers",
+    "slot": 8
+  },
+  {
+    "id": 29523,
+    "name": "Windhawk Bracers",
+    "slot": 8,
+    "sockets": 1
+  },
+  {
+    "id": 29955,
+    "name": "Mana Infused Wristguards",
+    "slot": 8
+  },
+  {
+    "id": 29966,
+    "name": "Vambraces of Ending",
+    "slot": 8,
+    "sockets": 1
+  },
+  {
+    "id": 30062,
+    "name": "Grove-Bands of Remulos",
+    "slot": 8
+  },
+  {
+    "id": 30332,
+    "name": "Ferocious Bands",
+    "slot": 8
+  },
+  {
+    "id": 30384,
+    "name": "Brightdawn Bracers",
+    "slot": 8
+  },
+  {
+    "id": 30399,
+    "name": "Nightstalker\u0027s Wristguards",
+    "slot": 8
+  },
+  {
+    "id": 30685,
+    "name": "Ravager\u0027s Wrist-Wraps",
+    "slot": 8
+  },
+  {
+    "id": 30863,
+    "name": "Deadly Cuffs",
+    "slot": 8,
+    "sockets": 1
+  },
+  {
+    "id": 30868,
+    "name": "Rejuvenating Bracers",
+    "slot": 8,
+    "sockets": 1
+  },
+  {
+    "id": 30940,
+    "name": "Aged Leather Bindings",
+    "slot": 8
+  },
+  {
+    "id": 30944,
+    "name": "Umberhowl\u0027s Collar",
+    "slot": 8
+  },
+  {
+    "id": 31175,
+    "name": "Blade Dancer\u0027s Wristguards",
+    "slot": 8
+  },
+  {
+    "id": 31191,
+    "name": "Crocolisk Hide Bracers",
+    "slot": 8
+  },
+  {
+    "id": 31224,
+    "name": "Illidari Bracers",
+    "slot": 8
+  },
+  {
+    "id": 31426,
+    "name": "Agile Mountain Bracers",
+    "slot": 8
+  },
+  {
+    "id": 31566,
+    "name": "Skystalker\u0027s Bracers",
+    "slot": 8
+  },
+  {
+    "id": 31599,
+    "name": "Marshal\u0027s Kodohide Bracers",
+    "slot": 8,
+    "sockets": 1
+  },
+  {
+    "id": 31598,
+    "name": "General\u0027s Kodohide Bracers",
+    "slot": 8,
+    "sockets": 1
+  },
+  {
+    "id": 31661,
+    "name": "Leesa\u0027oh\u0027s Wristbands",
+    "slot": 8
+  },
+  {
+    "id": 31793,
+    "name": "Ruuan Weald Wristguards",
+    "slot": 8
+  },
+  {
+    "id": 32324,
+    "name": "Insidious Bands",
+    "slot": 8,
+    "sockets": 1
+  },
+  {
+    "id": 32351,
+    "name": "Elunite Empowered Bracers",
+    "slot": 8
+  },
+  {
+    "id": 32395,
+    "name": "Redeemed Soul Wristguards",
+    "slot": 8
+  },
+  {
+    "id": 32532,
+    "name": "Windrager\u0027s Coils",
+    "slot": 8
+  },
+  {
+    "id": 32582,
+    "name": "Bracers of Renewed Life",
+    "slot": 8
+  },
+  {
+    "id": 32580,
+    "name": "Swiftstrike Bracers",
+    "slot": 8
+  },
+  {
+    "id": 32647,
+    "name": "Shard-bound Bracers",
+    "slot": 8,
+    "sockets": 1
+  },
+  {
+    "id": 32810,
+    "name": "Veteran\u0027s Dragonhide Bracers",
+    "slot": 8,
+    "sockets": 1
+  },
+  {
+    "id": 32812,
+    "name": "Veteran\u0027s Kodohide Bracers",
+    "slot": 8,
+    "sockets": 1
+  },
+  {
+    "id": 32821,
+    "name": "Veteran\u0027s Wyrmhide Bracers",
+    "slot": 8,
+    "sockets": 1
+  },
+  {
+    "id": 32814,
+    "name": "Veteran\u0027s Leather Bracers",
+    "slot": 8,
+    "sockets": 1
+  },
+  {
+    "id": 33557,
+    "name": "Gargon\u0027s Bracers of Peaceful Slumber",
+    "slot": 8,
+    "sockets": 1
+  },
+  {
+    "id": 33540,
+    "name": "Master Assassin Wristwraps",
+    "slot": 8,
+    "sockets": 1
+  },
+  {
+    "id": 33578,
+    "name": "Armwraps of the Kaldorei Protector",
+    "slot": 8,
+    "sockets": 1
+  },
+  {
+    "id": 33580,
+    "name": "Band of the Swift Paw",
+    "slot": 8,
+    "sockets": 1
+  },
+  {
+    "id": 33881,
+    "name": "Vindicator\u0027s Dragonhide Bracers",
+    "slot": 8,
+    "sockets": 1
+  },
+  {
+    "id": 33893,
+    "name": "Vindicator\u0027s Leather Bracers",
+    "slot": 8,
+    "sockets": 1
+  },
+  {
+    "id": 33887,
+    "name": "Vindicator\u0027s Kodohide Bracers",
+    "slot": 8,
+    "sockets": 1
+  },
+  {
+    "id": 33917,
+    "name": "Vindicator\u0027s Wyrmhide Bracers",
+    "slot": 8,
+    "sockets": 1
+  },
+  {
+    "id": 34446,
+    "name": "Thunderheart Bands",
+    "slot": 8,
+    "sockets": 1
+  },
+  {
+    "id": 34444,
+    "name": "Thunderheart Wristguards",
+    "slot": 8,
+    "sockets": 1
+  },
+  {
+    "id": 34445,
+    "name": "Thunderheart Bracers",
+    "slot": 8,
+    "sockets": 1
+  },
+  {
+    "id": 34448,
+    "name": "Slayer\u0027s Bracers",
+    "slot": 8,
+    "sockets": 1
+  },
+  {
+    "id": 34602,
+    "name": "Eversong Cuffs",
+    "slot": 8,
+    "sockets": 1
+  },
+  {
+    "id": 35171,
+    "name": "Guardian\u0027s Leather Bracers",
+    "slot": 8,
+    "sockets": 1
+  },
+  {
+    "id": 35167,
+    "name": "Guardian\u0027s Dragonhide Bracers",
+    "slot": 8,
+    "sockets": 1
+  },
+  {
+    "id": 35169,
+    "name": "Guardian\u0027s Kodohide Bracers",
+    "slot": 8,
+    "sockets": 1
+  },
+  {
+    "id": 35180,
+    "name": "Guardian\u0027s Wyrmhide Bracers",
+    "slot": 8,
+    "sockets": 1
+  }
+]
