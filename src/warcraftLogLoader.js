@@ -298,21 +298,21 @@ export class WarcraftLogLoader {
             return new Promise(resolve => resolve(this));
         }
 
-        return new Promise((resolve, reject) => fetch(this.domain + "report/tables/damage-taken/" + this.reportId 
+        return new Promise((resolve, reject) => fetch(this.domain + "report/events/damage-taken/" + this.reportId 
         + "?api_key=" + this.key 
         + "&start=" + this.Results.startTime
         + "&end=" + this.Results.endTime
         + "&sourceid=" + playerid)
         .then(response => response.json())
         .then(data => {
-            data.entries.forEach((obj) => {
+            data.events.forEach((obj) => {
                 let character = this.Results.Characters[playerid];
 
                 if (!character) {
                     return;
                 }
 
-                character.damageTaken = {...character.damageTaken, [obj.guid]: obj};
+                character.damageTaken = {...character.damageTaken, [obj.ability.guid]: [...(!character.damageTaken || !character.damageTaken[obj.ability.guid] ? [] : character.damageTaken[obj.ability.guid]), obj]};
             })
 
             this._loadedStatus.character.damageTaken[playerid] = true;
@@ -453,7 +453,16 @@ export class WarcraftLogLoader {
         if (character.casts) {
             filteredCharacter.casts = character.casts.filter(x => fightIds.includes(x.fight));
         }
-        // damageTaken???
+        // damageTaken
+        if (character.damageTaken) {
+            filteredCharacter.damageTaken = {};
+            Object.entries(character.damageTaken).forEach(([key,value]) => {
+                let validEvents = value.filter(y => fightIds.includes(y.fight));
+                if (validEvents.length > 0) {
+                    filteredCharacter.damageTaken[key] = validEvents;
+                }
+            });
+        }
         // deaths
         if (character.deaths) {
             filteredCharacter.deaths = character.deaths.filter(x => fightIds.includes(x.fight));

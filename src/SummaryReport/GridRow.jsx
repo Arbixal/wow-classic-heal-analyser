@@ -553,36 +553,48 @@ export class GridRow extends Component {
     }
 
     _getTankStats(character, characterData) {
-        const meleeDamage = character.damageTaken[1];
-        if (!meleeDamage)
+        let meleeDamage = [];
+        Object.values(character.damageTaken).forEach(value => {
+            if (value.length > 0 && value[0].ability.type === 1) {
+                meleeDamage = [...meleeDamage,...value];
+            }
+        });
+        if (meleeDamage.length === 0)
             return;
 
-        let totalHits = meleeDamage.hitCount + meleeDamage.missCount;
-        let hitMap = {
-            "Hit": DataPoints.DamageTakenHit,
-            "Blocked Hit": DataPoints.DamageTakenBlocked,
-            "Crushing Blow": DataPoints.DamageTakenCrushed,
-            "Critical Hit": DataPoints.DamageTakenCrit,
-            "Miss": DataPoints.DamageTakenMiss,
-            "Dodge": DataPoints.DamageTakenDodge,
-            "Parry": DataPoints.DamageTakenParry,
-        }
+        let totalHits = meleeDamage.length;
+        const hitMap = {
+            "0": DataPoints.DamageTakenMiss,
+            "1": DataPoints.DamageTakenHit,
+            "2": DataPoints.DamageTakenCrit,
+            "4": DataPoints.DamageTakenBlocked,
+            "7": DataPoints.DamageTakenDodge,
+            "8": DataPoints.DamageTakenParry,
+            "15": DataPoints.DamageTakenCrushed,
+        };
 
-        meleeDamage.hitdetails.forEach(hit => {
+        let breakdown = meleeDamage.reduce((accum, obj) => {
+            let hitType = obj.hitType.toString();
+            if (!accum[hitType]) {
+                accum[hitType] = {
+                    type: hitType,
+                    count: 1,
+                }
+            }
+            else {
+                accum[hitType].count += 1;
+            }
+
+            return accum;
+        }, {})
+
+        Object.values(breakdown).forEach(hit => {
             let hitType = hitMap[hit.type];
             if (!hitType)
                 return;
 
             characterData[hitType] = hit.count / totalHits;
-        })
-
-        meleeDamage.missdetails.forEach(miss => {
-            let hitType = hitMap[miss.type];
-            if (!hitType)
-                return;
-
-            characterData[hitType] = miss.count / totalHits;
-        })
+        });
     }
 
     render() {
