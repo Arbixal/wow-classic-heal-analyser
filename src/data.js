@@ -1550,7 +1550,16 @@ export const enchants = {
         name: "Glyph of Power",
         itemId: 29191,
         score: {
-            "Paladin-Protection": 1
+            "Paladin-Protection": 1,
+            "Druid-Balance": 1,
+            "Mage-Arcane": 1,
+            "Mage-Fire": 1,
+            "Mage-Frost": 1,
+            "Shaman-Elemental": 1,
+            "Priest-Shadow": 1,
+            "Warlock-Destruction": 1,
+            "Warlock-Affliction": 1,
+            "Warlock-Demonology": 1,
         }
     },
     2999: {
@@ -1559,6 +1568,7 @@ export const enchants = {
         score: {
             "Paladin-Protection": 1,
             "Warrior-Protection": 1,
+            "Druid-Guardian": 1,
         }
     },
     2583: {
@@ -1710,6 +1720,7 @@ export const enchants = {
         score: {
             "Paladin-Protection": 1,
             "Warrior-Protection": 1,
+            "Druid-Guardian": 1,
         }
     },
     2977: {
@@ -1718,6 +1729,7 @@ export const enchants = {
         score: {
             "Paladin-Protection": 0.5,
             "Warrior-Protection": 0.5,
+            "Druid-Guardian": 0.5,
         }
     },
     2978: {
@@ -1726,6 +1738,7 @@ export const enchants = {
         score: {
             "Paladin-Protection": 1,
             "Warrior-Protection": 1,
+            "Druid-Guardian": 1,
         }
     },
     2990: {
@@ -1734,6 +1747,7 @@ export const enchants = {
         score: {
             "Paladin-Protection": 0.5,
             "Warrior-Protection": 0.5,
+            "Druid-Guardian": 0.5,
         }
     },
     2991: {
@@ -1742,6 +1756,7 @@ export const enchants = {
         score: {
             "Paladin-Protection": 1,
             "Warrior-Protection": 1,
+            "Druid-Guardian": 1,
         }
     },
     2986: {
@@ -1766,35 +1781,77 @@ export const enchants = {
         name: "Inscription of Discipline",
         itemId: 28881,
         score: {
-
+            "Druid-Balance": 0.5,
+            "Mage-Arcane": 0.5,
+            "Mage-Fire": 0.5,
+            "Mage-Frost": 0.5,
+            "Shaman-Elemental": 0.5,
+            "Priest-Shadow": 0.5,
+            "Warlock-Destruction": 0.5,
+            "Warlock-Affliction": 0.5,
+            "Warlock-Demonology": 0.5,
         }
     },
     2982: {
         name: "Greater Inscription of Discipline",
         itemId: 28886,
         score: {
-
+            "Druid-Balance": 1,
+            "Mage-Arcane": 1,
+            "Mage-Fire": 1,
+            "Mage-Frost": 1,
+            "Shaman-Elemental": 1,
+            "Priest-Shadow": 1,
+            "Warlock-Destruction": 1,
+            "Warlock-Affliction": 1,
+            "Warlock-Demonology": 1,
         }
     },
     2994: {
         name: "Inscription of the Orb",
         itemId: 28903,
         score: {
-
+            "Druid-Balance": 0.5,
+            "Mage-Arcane": 0.5,
+            "Mage-Fire": 0.5,
+            "Mage-Frost": 0.5,
+            "Shaman-Elemental": 0.5,
+            "Priest-Shadow": 0.5,
+            "Warlock-Destruction": 0.5,
+            "Warlock-Affliction": 0.5,
+            "Warlock-Demonology": 0.5,
         }
     },
     2995: {
         name: "Greater Inscription of the Orb",
         itemId: 28909,
         score: {
-
+            "Druid-Balance": 1,
+            "Mage-Arcane": 1,
+            "Mage-Fire": 1,
+            "Mage-Frost": 1,
+            "Shaman-Elemental": 1,
+            "Priest-Shadow": 1,
+            "Warlock-Destruction": 1,
+            "Warlock-Affliction": 1,
+            "Warlock-Demonology": 1,
+        }
+    },
+    2721: {
+        name: "Power of the Scourge",
+        itemId: 23545,
+        score: {
+            "Shaman-Elemental": 1,
+            "Warlock-Destruction": 1,
+            "Warlock-Affliction": 1,
+            "Warlock-Demonology": 1,
         }
     },
     2605: {
         name: "Zandalar Signet of Mojo",
         itemId: 20076,
         score: {
-
+            "Priest-Shadow": 1,
         }
     },
     368: {
@@ -1839,6 +1896,15 @@ export const enchants = {
             "Priest-Discipline": 1,
             "Druid-Restoration": 1,
             "Paladin-Retribution": 1,
+            "Druid-Balance": 1,
+            "Mage-Arcane": 1,
+            "Mage-Fire": 1,
+            "Mage-Frost": 1,
+            "Shaman-Elemental": 1,
+            "Priest-Shadow": 1,
+            "Warlock-Destruction": 1,
+            "Warlock-Affliction": 1,
+            "Warlock-Demonology": 1,
         }
     },
     2664: {
@@ -1857,6 +1923,7 @@ export const enchants = {
             "Priest-Holy": 1,
             "Priest-Discipline": 1,
             "Paladin-Holy": 1,
+            "Priest-Shadow": 1,
         }
     },
     1889: {
@@ -1897,6 +1964,15 @@ export const enchants = {
             "Hunter-BeastMastery": 1,
             "Hunter-Survival": 1,
             "Hunter-Marksmanship": 1,
+            "Druid-Balance": 1,
+            "Mage-Arcane": 1,
+            "Mage-Fire": 1,
+            "Mage-Frost": 1,
+            "Shaman-Elemental": 1,
+            "Priest-Shadow": 1,
+            "Warlock-Destruction": 1,
+            "Warlock-Affliction": 1,
+            "Warlock-Demonology": 1,
         }
     },
     1144: {
@@ -1906,12 +1982,14 @@ export const enchants = {
             "Priest-Holy": 1,
             "Priest-Discipline": 1,
             "Druid-Restoration": 1,
+            "Priest-Shadow": 1,
         }
     },
     2933: {
         name: "Enchant Chest - Resilience Rating",
         spellId: 33992,
         score: {
+            "Paladin-Protection": 1,
             "Warrior-Protection": 1,
             "Druid-Guardian": 1,
         }
@@ -1959,6 +2037,7 @@ export const enchants = {
             "Druid-Guardian": 1,
             "Paladin-Protection": 1,
             "Warrior-Protection": 1,
+            "Priest-Shadow": 1,
         }
     },
     2648: {
@@ -1966,6 +2045,8 @@ export const enchants = {
         spellId: 27906,
         score: {
             "Paladin-Protection": 1,
+            "Druid-Guardian": 1,
+            "Warrior-Protection": 1,
         }
     },
     2650: {
@@ -1973,6 +2054,15 @@ export const enchants = {
         spellId: 27917,
         score: {
             "Paladin-Protection": 1,
+            "Druid-Balance": 1,
+            "Mage-Arcane": 1,
+            "Mage-Fire": 1,
+            "Mage-Frost": 1,
+            "Shaman-Elemental": 1,
+            "Priest-Shadow": 1,
+            "Warlock-Destruction": 1,
+            "Warlock-Affliction": 1,
+            "Warlock-Demonology": 1,
         }
     },
     2647: {
@@ -2012,6 +2102,22 @@ export const enchants = {
         spellId: 33997,
         score: {
             "Paladin-Protection": 1,
+            "Druid-Balance": 1,
+            "Mage-Arcane": 1,
+            "Mage-Fire": 1,
+            "Mage-Frost": 1,
+            "Shaman-Elemental": 1,
+            "Priest-Shadow": 1,
+            "Warlock-Destruction": 1,
+            "Warlock-Affliction": 1,
+            "Warlock-Demonology": 1,
+        }
+    },
+    2614: {
+        name: "Enchant Gloves - Shadow Power",
+        spellId: 25073,
+        score: {
+            "Priest-Shadow": 1,
         }
     },
     2564: {
@@ -2043,7 +2149,9 @@ export const enchants = {
         name: "Enchant Gloves - Spell Strike",
         spellId: 33994,
         score: {
-            
+            "Warlock-Destruction": 1,
+            "Warlock-Affliction": 1,
+            "Warlock-Demonology": 1,
         }
     },
     1594: {
@@ -2089,7 +2197,16 @@ export const enchants = {
         name: "Mystic Spellthread",
         itemId: 24273,
         score: {
-
+            "Paladin-Protection": 0.5,
+            "Druid-Balance": 0.5,
+            "Mage-Arcane": 0.5,
+            "Mage-Fire": 0.5,
+            "Mage-Frost": 0.5,
+            "Shaman-Elemental": 0.5,
+            "Priest-Shadow": 0.5,
+            "Warlock-Destruction": 0.5,
+            "Warlock-Affliction": 0.5,
+            "Warlock-Demonology": 0.5,
         }
     },
     2748: {
@@ -2097,6 +2214,15 @@ export const enchants = {
         itemId: 24274,
         score: {
             "Paladin-Protection": 1,
+            "Druid-Balance": 1,
+            "Mage-Arcane": 1,
+            "Mage-Fire": 1,
+            "Mage-Frost": 1,
+            "Shaman-Elemental": 1,
+            "Priest-Shadow": 1,
+            "Warlock-Destruction": 1,
+            "Warlock-Affliction": 1,
+            "Warlock-Demonology": 1,
         }
     },
     3011: {
@@ -2163,6 +2289,15 @@ export const enchants = {
             "Druid-Guardian": 1,
             "Paladin-Protection": 1,
             "Warrior-Protection": 1,
+            "Druid-Balance": 1,
+            "Mage-Arcane": 1,
+            "Mage-Fire": 1,
+            "Mage-Frost": 1,
+            "Shaman-Elemental": 1,
+            "Priest-Shadow": 1,
+            "Warlock-Destruction": 1,
+            "Warlock-Affliction": 1,
+            "Warlock-Demonology": 1,
         }
     },
     911: {
@@ -2175,6 +2310,15 @@ export const enchants = {
             "Paladin-Holy": 0.5,
             "Druid-Restoration": 0.5,
             "Shaman-Enhancement": 0.5,
+            "Druid-Balance": 0.5,
+            "Mage-Arcane": 0.5,
+            "Mage-Fire": 0.5,
+            "Mage-Frost": 0.5,
+            "Shaman-Elemental": 0.5,
+            "Priest-Shadow": 0.5,
+            "Warlock-Destruction": 0.5,
+            "Warlock-Affliction": 0.5,
+            "Warlock-Demonology": 0.5,
         }
     },
     2657: {
@@ -2185,6 +2329,12 @@ export const enchants = {
             "Hunter-BeastMastery": 1,
             "Hunter-Survival": 1,
             "Hunter-Marksmanship": 1,
+            "Druid-Guardian": 1,
+            "Druid-Feral": 1,
+            "Rogue-Combat": 1,
+            "Rogue-Subtlety": 1,
+            "Rogue-Assassination": 1,
+            "Shaman-Enhancement": 1,
         }
     },
     2658: {
@@ -2206,6 +2356,13 @@ export const enchants = {
             "Paladin-Retribution": 1,
             "Warrior-Arms": 1,
             "Warrior-Fury": 1,
+        }
+    },
+    2656: {
+        name: "Enchant Boots - Vitality",
+        spellId: 27948,
+        score: {
+            "Priest-Shadow": 1,
         }
     },
     2343: {
@@ -2235,6 +2392,15 @@ export const enchants = {
         spellId: 27975,
         score: {
             "Paladin-Protection": 1,
+            "Mage-Arcane": 1,
+            "Mage-Fire": 1,
+            "Mage-Frost": 1,
+            "Shaman-Elemental": 1,
+            "Priest-Shadow": 1,
+            "Warlock-Destruction": 1,
+            "Warlock-Affliction": 1,
+            "Warlock-Demonology": 1,
+            "Druid-Balance": 1,
         }
     },
     2673: {
@@ -2251,12 +2417,33 @@ export const enchants = {
             "Warrior-Fury": 1,
         }
     },
+    2671: {
+        name: "Enchant Weapon - Sunfire",
+        spellId: 27981,
+        score: {
+            "Druid-Balance": 1,
+            "Mage-Arcane": 1,
+            "Warlock-Destruction": 1,
+        }
+    },
+    2672: {
+        name: "Enchant Weapon - Soulfrost",
+        spellId: 27982,
+        score: {
+            "Mage-Frost": 1,
+            "Priest-Shadow": 1,
+            "Warlock-Destruction": 1,
+            "Warlock-Affliction": 1,
+            "Warlock-Demonology": 1,
+        }
+    },
     2654: {
         name: "Enchant Shield - Intellect",
         spellId: 27945,
         score: {
             "Shaman-Restoration": 1,
             "Paladin-Holy": 1,
+            "Shaman-Elemental": 1,
         }
     },
     1071: {

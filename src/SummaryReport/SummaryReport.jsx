@@ -324,8 +324,22 @@ class SummaryReport extends Component {
                                         cssClass="name" />
                         </GridColumnGroup>
                         <GridColumnGroup id={GroupKeys.Enchants} label="Enchants" cssClass="even-colgroup">
-                            <GridColumn field={DataPoints.Enchants} 
-                                        cssClass="enchants" />
+                            <GridColumn field={DataPoints.EnchantMissing}
+                                        label="&#9033;"
+                                        cssClass="enchants missing"
+                                        visibility={(ctx) => ctx.collapsed === true} />
+                            <GridColumn field={DataPoints.EnchantBad}
+                                        label="&#128078;"
+                                        cssClass="enchants bad"
+                                        visibility={(ctx) => ctx.collapsed === true} />
+                            <GridColumn field={DataPoints.EnchantAverage}
+                                        label="&#128074;"
+                                        cssClass="enchants average"
+                                        visibility={(ctx) => ctx.collapsed === true} />
+                            <GridColumn field={DataPoints.EnchantGood}
+                                        label="&#128077;"
+                                        cssClass="enchants good"
+                                        visibility={(ctx) => ctx.collapsed === true} />
                             <GridIconListColumn field={DataPoints.EnchantList}
                                         label=" "
                                         visibility={(ctx) => ctx.collapsed === false} />

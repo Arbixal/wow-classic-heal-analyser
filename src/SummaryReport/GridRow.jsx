@@ -653,7 +653,7 @@ export class GridRow extends Component {
                             score = specScore;
                         }
                     });
-                    accum += score;
+                    //accum += score;
 
                     if (enchantInfo.itemId) {
                         enchantIcon.itemId = enchantInfo.itemId;
@@ -667,13 +667,17 @@ export class GridRow extends Component {
                 }
 
                 if (score === 1) {
+                    accum.good += 1;
                     enchantIcon.highlight = "good";
                 } else if (score > 0) {
+                    accum.average += 1;
                     enchantIcon.highlight = "average";
                 } else {
+                    accum.bad += 1;
                     enchantIcon.highlight = "bad";
                 }
             } else {
+                accum.missing += 1;
                 enchantIcon.itemId = enchant.gearId;
                 enchantIcon.highlight = "missing";
             }
@@ -681,9 +685,13 @@ export class GridRow extends Component {
             enchantList.push(enchantIcon);
 
             return accum;
-        }, 0);
+        }, { good: 0, bad: 0, average: 0, missing: 0});
 
-        characterData[DataPoints.Enchants] = enchantScore + '/' + character.enchants.length;
+        characterData[DataPoints.Enchants] = (enchantScore.good + (0.5 * enchantScore.average)) + '/' + character.enchants.length;
+        characterData[DataPoints.EnchantGood] = enchantScore.good;
+        characterData[DataPoints.EnchantAverage] = enchantScore.average;
+        characterData[DataPoints.EnchantBad] = enchantScore.bad;
+        characterData[DataPoints.EnchantMissing] = enchantScore.missing;
         characterData[DataPoints.EnchantList] = enchantList;
     }
 

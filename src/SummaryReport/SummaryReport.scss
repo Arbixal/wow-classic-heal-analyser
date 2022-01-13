@@ -24,8 +24,25 @@
     }
 
     td.enchants {
-        width: 65px;
+        //width: 65px;
+        color: $class-color;
         text-align: center;
+
+        &.good {
+            color: #1eff00;
+        }
+
+        &.average {
+            color: #FFFF00;
+        }
+
+        &.bad {
+            color: #FF7700;
+        }
+
+        &.missing {
+            color: #FF0000;
+        }
     }
 
     td.gems {
@@ -575,6 +592,22 @@ a {
     color: #BBBBBB;
 }
 
+th.enchants.good {
+    color: #1eff00;
+}
+
+th.enchants.bad {
+    color: #FF7700;
+}
+
+th.enchants.average {
+    color: #FFFF00;
+}
+
+th.enchants.missing {
+    color: #FF0000;
+}
+
 .icon_count {
     position: relative;
     margin-right: 2px;
@@ -618,19 +651,19 @@ a {
 
     &.average {
         &:after {
-            background-color: #FFFF0033;
+            background-color: #FFFF0055;
         }
     }
 
     &.bad {
         &:after {
-            background-color: #ff000033;
+            background-color: #ff990055;
         }
     }
 
     &.missing {
         &:after {
-            //background-color: #FF000033;
+            background-color: #FF000033;
         }
     }
 }

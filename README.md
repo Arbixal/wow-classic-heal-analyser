@@ -6,5 +6,4 @@ The purpose is to make many calls to warcraft logs apis to retrieve information 
 
 ## TODO
 * Check for consumable buffs on combat start to include pre-pull consumes in counts.
-* Fill in the enchants column with useful data.
 * Healing stats (Effective Heal, Overheal, Wasted Heal)
