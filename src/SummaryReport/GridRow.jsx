@@ -1,5 +1,5 @@
 import {Component, Children, isValidElement, cloneElement} from "react";
-import {protectionPotionEnum, rarity} from "../data";
+import {protectionPotionEnum, rarity, enchants} from "../data";
 import {battleElixirBuffs, cooldownList, flaskBuffs, foodBuffs, guardianElixirBuffs, scrollBuffs, seasonBuffs, tempWeaponEnchants} from "../datastore";
 import {DataPoints, emptyData} from "./GridContexts";
 import {sumNonNull} from "../utils";
@@ -60,6 +60,8 @@ export class GridRow extends Component {
 
         characterData[DataPoints.Name] = character.name;
         characterData[DataPoints.Deaths] = this._getDeathCount(character);
+
+        this._getEnchantInfo(character, characterData);
 
         characterData[DataPoints.GemsMissing] = this._getMissingGemCount(character);
         characterData[DataPoints.GemsCommon] = this._getGemCount(character, rarity.Common);
@@ -607,6 +609,82 @@ export class GridRow extends Component {
 
             characterData[hitType] = hit.count / totalHits;
         });
+    }
+
+    _getEnchantInfo(character, characterData) {
+        let enchantList = [];
+
+        const slotToIconMapping = {
+            0: "https://wow.zamimg.com/images/wow/icons/large/inventoryslot_head.jpg",
+            1: "https://wow.zamimg.com/images/wow/icons/large/inventoryslot_neck.jpg",
+            2: "https://wow.zamimg.com/images/wow/icons/large/inventoryslot_shoulder.jpg",
+            3: "https://wow.zamimg.com/images/wow/icons/large/inventoryslot_shirt.jpg",
+            4: "https://wow.zamimg.com/images/wow/icons/large/inventoryslot_chest.jpg",
+            5: "https://wow.zamimg.com/images/wow/icons/large/inventoryslot_waist.jpg",
+            6: "https://wow.zamimg.com/images/wow/icons/large/inventoryslot_legs.jpg",
+            7: "https://wow.zamimg.com/images/wow/icons/large/inventoryslot_feet.jpg",
+            8: "https://wow.zamimg.com/images/wow/icons/large/inventoryslot_wrists.jpg",
+            9: "https://wow.zamimg.com/images/wow/icons/large/inventoryslot_hands.jpg",
+            10: "https://wow.zamimg.com/images/wow/icons/large/inventoryslot_finger.jpg",
+            11: "https://wow.zamimg.com/images/wow/icons/large/inventoryslot_finger.jpg",
+            12: "https://wow.zamimg.com/images/wow/icons/large/inventoryslot_trinket.jpg",
+            13: "https://wow.zamimg.com/images/wow/icons/large/inventoryslot_trinket.jpg",
+            14: "https://wow.zamimg.com/images/wow/icons/large/inventoryslot_chest.jpg",
+            15: "https://wow.zamimg.com/images/wow/icons/large/inventoryslot_mainhand.jpg",
+            16: "https://wow.zamimg.com/images/wow/icons/large/inventoryslot_offhand.jpg",
+            17: "https://wow.zamimg.com/images/wow/icons/large/inventoryslot_ranged.jpg",
+            19: "https://wow.zamimg.com/images/wow/icons/large/inventoryslot_tabard.jpg",
+        }
+
+        let enchantScore = character.enchants.reduce((accum, enchant) => {
+            let enchantIcon = {
+                id: enchant.gearId,
+                name: enchant.name,
+                icon_url: slotToIconMapping[enchant.slot],
+            }
+
+            if (enchant.id) {
+                let enchantInfo = enchants[enchant.id];
+                let score = 0;
+                if (enchantInfo) {
+                    character.specs.forEach(spec => {
+                        let specScore = enchantInfo.score[character.type + "-" + spec] ?? 0;
+                        if (specScore > score) {
+                            score = specScore;
+                        }
+                    });
+                    accum += score;
+
+                    if (enchantInfo.itemId) {
+                        enchantIcon.itemId = enchantInfo.itemId;
+                    }
+
+                    if (enchantInfo.spellId) {
+                        enchantIcon.spellId = enchantInfo.spellId;
+                    }
+                }else {
+                    enchantIcon.itemId = enchant.gearId;
+                }
+
+                if (score === 1) {
+                    enchantIcon.highlight = "good";
+                } else if (score > 0) {
+                    enchantIcon.highlight = "average";
+                } else {
+                    enchantIcon.highlight = "bad";
+                }
+            } else {
+                enchantIcon.itemId = enchant.gearId;
+                enchantIcon.highlight = "missing";
+            }
+
+            enchantList.push(enchantIcon);
+
+            return accum;
+        }, 0);
+
+        characterData[DataPoints.Enchants] = enchantScore + '/' + character.enchants.length;
+        characterData[DataPoints.EnchantList] = enchantList;
     }
 
     render() {

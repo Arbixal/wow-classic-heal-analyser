@@ -20,9 +20,15 @@ export class GridIconListColumn extends Component {
 
         return (
             <>
-            { value.map(x => (
-                <a href={"https://tbc.wowhead.com/" + (x.itemId ? "item=" + x.itemId : (x.spellId ? "spell=" + x.spellId : ""))} target="_blank" rel="noreferrer"><span key={x.name} className="icon_count" data-count={x.count}><img className="spell_icon" src={"https://assets.rpglogs.com/img/warcraft/abilities/" + x.icon} alt={x.name} /></span></a>
-            ))}
+            { value.map(x => {
+                if (x.count)
+                    return <a href={"https://tbc.wowhead.com/" + (x.itemId ? "item=" + x.itemId : (x.spellId ? "spell=" + x.spellId : ""))} target="_blank" rel="noreferrer"><span key={x.name} className="icon_count" data-count={x.count}><img className="spell_icon" src={x.icon_url ? x.icon_url : "https://assets.rpglogs.com/img/warcraft/abilities/" + x.icon} alt={x.name} /></span></a>
+                
+                if (x.highlight)
+                    return <a href={"https://tbc.wowhead.com/" + (x.itemId ? "item=" + x.itemId : (x.spellId ? "spell=" + x.spellId : ""))} target="_blank" rel="noreferrer"><span key={x.name} className={"icon_highlight " + x.highlight}><img className="spell_icon" src={x.icon_url ? x.icon_url : "https://assets.rpglogs.com/img/warcraft/abilities/" + x.icon} alt={x.name} /></span></a>
+                
+                return <a href={"https://tbc.wowhead.com/" + (x.itemId ? "item=" + x.itemId : (x.spellId ? "spell=" + x.spellId : ""))} target="_blank" rel="noreferrer"><img className="spell_icon" src={x.icon_url ? x.icon_url : "https://assets.rpglogs.com/img/warcraft/abilities/" + x.icon} alt={x.name} /></a>
+            })}
             </>
         );
     }

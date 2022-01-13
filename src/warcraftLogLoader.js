@@ -1,4 +1,3 @@
-import {offhandFrills} from "./data";
 import {itemList, gemList} from "./datastore";
 import {removeDuplicates} from "./utils";
 
@@ -109,6 +108,7 @@ export class WarcraftLogLoader {
                 let playerInfo = this.Results.Characters[key];
 
                 playerInfo.roles = value.roles;
+                playerInfo.specs = value.specs;
                 playerInfo.intellect = value.intellect;
                 playerInfo.armor = value.armor;
                 playerInfo.stamina = value.stamina;
@@ -553,14 +553,14 @@ export class WarcraftLogLoader {
                     14: { enchantable: true, name: "Back" },
                     15: { enchantable: true, name: "Main Hand" },
                     16: { enchantable: true, name: "Off Hand" },
-                    17: { enchantable: false, name: "Ranged" },
+                    17: { enchantable: true, name: "Ranged" },
                     18: { enchantable: false, name: "Tabard" }
                 };
 
                 let gearInfo = obj.combatantInfo?.gear?.reduce((accum, gear) => {
                     let gearItem = itemList[gear.id];
 
-                    if (slots[gear.slot].enchantable && gear.id !== 0 && !offhandFrills[gear.id])
+                    if (slots[gear.slot].enchantable && gear.id !== 0 && (!gearItem || !gearItem.notEnchantable))
                     {
                         accum.permanentEnchants.push({
                             slot: gear.slot, 
@@ -620,6 +620,7 @@ export class WarcraftLogLoader {
                         name: obj.name,
                         type: obj.type,
                         roles: [role],
+                        specs: obj.specs ? [...obj.specs] : [],
                         intellect: obj.combatantInfo?.stats?.Intellect?.max,
                         armor: obj.combatantInfo?.stats?.Armor?.max,
                         stamina: obj.combatantInfo?.stats?.Stamina?.max,
@@ -633,6 +634,9 @@ export class WarcraftLogLoader {
                 }
                 else {
                     acc[playerId].roles.push(role);
+                    if (obj.specs) {
+                        acc[playerId].specs = [...acc[playerId].specs, ...obj.specs];
+                    }
                     if (!acc[playerId].weaponEnchant?.id && gearInfo?.weaponEnchant) {
                         acc[playerId].weaponEnchant = gearInfo?.weaponEnchant;
                     }
