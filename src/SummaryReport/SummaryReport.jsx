@@ -739,8 +739,15 @@ class SummaryReport extends Component {
                                             aggregate={true} />
                             <GridIconColumn field={DataPoints.ConsumesFelIronBombs} 
                                             label="Fel Iron Bomb" 
-                                            icon_name="spell_fire_selfdestruct.jpg" 
+                                            icon_name="spell_shadow_mindbomb.jpg" 
                                             item_id={23736}
+                                            cssClass="protection_potion fire"
+                                            visibility={(ctx) => ctx.collapsed === false}
+                                            aggregate={true} />
+                            <GridIconColumn field={DataPoints.ConsumesArcaneBombs} 
+                                            label="Arcane Bomb" 
+                                            icon_name="spell_fire_selfdestruct.jpg" 
+                                            item_id={16040}
                                             cssClass="protection_potion fire"
                                             visibility={(ctx) => ctx.collapsed === false}
                                             aggregate={true} />
