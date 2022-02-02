@@ -22,27 +22,32 @@
   {
     "id": 10103,
     "name": "Councillor\u0027s Sash",
-    "slot": 5
+    "slot": 5,
+    "randomEnchantment": true
   },
   {
     "id": 10144,
     "name": "High Councillor\u0027s Sash",
-    "slot": 5
+    "slot": 5,
+    "randomEnchantment": true
   },
   {
     "id": 10180,
     "name": "Mystical Belt",
-    "slot": 5
+    "slot": 5,
+    "randomEnchantment": true
   },
   {
     "id": 10216,
     "name": "Elegant Belt",
-    "slot": 5
+    "slot": 5,
+    "randomEnchantment": true
   },
   {
     "id": 10255,
     "name": "Master\u0027s Belt",
-    "slot": 5
+    "slot": 5,
+    "randomEnchantment": true
   },
   {
     "id": 11662,
@@ -97,27 +102,32 @@
   {
     "id": 14289,
     "name": "Arachnidian Girdle",
-    "slot": 5
+    "slot": 5,
+    "randomEnchantment": true
   },
   {
     "id": 14304,
     "name": "Bonecaster\u0027s Belt",
-    "slot": 5
+    "slot": 5,
+    "randomEnchantment": true
   },
   {
     "id": 14309,
     "name": "Celestial Belt",
-    "slot": 5
-  },
-  {
-    "id": 14327,
-    "name": "Resplendent Belt",
-    "slot": 5
+    "slot": 5,
+    "randomEnchantment": true
   },
   {
     "id": 14337,
     "name": "Eternal Cord",
-    "slot": 5
+    "slot": 5,
+    "randomEnchantment": true
+  },
+  {
+    "id": 14327,
+    "name": "Resplendent Belt",
+    "slot": 5,
+    "randomEnchantment": true
   },
   {
     "id": 14454,
@@ -145,44 +155,62 @@
     "slot": 5
   },
   {
-    "id": 16696,
-    "name": "Devout Belt",
-    "slot": 5
-  },
-  {
     "id": 16702,
     "name": "Dreadmist Belt",
     "slot": 5
   },
   {
-    "id": 16806,
-    "name": "Felheart Belt",
+    "id": 16696,
+    "name": "Devout Belt",
     "slot": 5
   },
   {
     "id": 16818,
     "name": "Netherwind Belt",
-    "slot": 5
+    "slot": 5,
+    "resistances": {
+      "Shadow": 10
+    }
   },
   {
     "id": 16817,
     "name": "Girdle of Prophecy",
-    "slot": 5
+    "slot": 5,
+    "resistances": {
+      "Fire": 7
+    }
   },
   {
     "id": 16802,
     "name": "Arcanist Belt",
-    "slot": 5
+    "slot": 5,
+    "resistances": {
+      "Fire": 10
+    }
   },
   {
-    "id": 16925,
-    "name": "Belt of Transcendence",
-    "slot": 5
+    "id": 16806,
+    "name": "Felheart Belt",
+    "slot": 5,
+    "resistances": {
+      "Fire": 7
+    }
   },
   {
     "id": 16933,
     "name": "Nemesis Belt",
-    "slot": 5
+    "slot": 5,
+    "resistances": {
+      "Shadow": 10
+    }
+  },
+  {
+    "id": 16925,
+    "name": "Belt of Transcendence",
+    "slot": 5,
+    "resistances": {
+      "Shadow": 10
+    }
   },
   {
     "id": 17750,
@@ -220,14 +248,20 @@
     "slot": 5
   },
   {
-    "id": 19090,
-    "name": "Frostwolf Cloth Belt",
-    "slot": 5
-  },
-  {
     "id": 19094,
     "name": "Stormpike Cloth Girdle",
-    "slot": 5
+    "slot": 5,
+    "resistances": {
+      "Frost": 5
+    }
+  },
+  {
+    "id": 19090,
+    "name": "Frostwolf Cloth Belt",
+    "slot": 5,
+    "resistances": {
+      "Frost": 5
+    }
   },
   {
     "id": 19136,
@@ -235,13 +269,13 @@
     "slot": 5
   },
   {
-    "id": 19388,
-    "name": "Angelista\u0027s Grasp",
+    "id": 19400,
+    "name": "Firemaw\u0027s Clutch",
     "slot": 5
   },
   {
-    "id": 19400,
-    "name": "Firemaw\u0027s Clutch",
+    "id": 19388,
+    "name": "Angelista\u0027s Grasp",
     "slot": 5
   },
   {
@@ -260,12 +294,12 @@
     "slot": 5
   },
   {
-    "id": 20163,
+    "id": 20165,
     "name": "Defiler\u0027s Cloth Girdle",
     "slot": 5
   },
   {
-    "id": 20165,
+    "id": 20163,
     "name": "Defiler\u0027s Cloth Girdle",
     "slot": 5
   },
@@ -277,17 +311,24 @@
   {
     "id": 20539,
     "name": "Runed Stygian Belt",
-    "slot": 5
-  },
-  {
-    "id": 20625,
-    "name": "Belt of the Dark Bog",
-    "slot": 5
+    "slot": 5,
+    "resistances": {
+      "Shadow": 20
+    }
   },
   {
     "id": 20664,
     "name": "Abyssal Cloth Sash",
-    "slot": 5
+    "slot": 5,
+    "randomEnchantment": true
+  },
+  {
+    "id": 20625,
+    "name": "Belt of the Dark Bog",
+    "slot": 5,
+    "resistances": {
+      "Nature": 25
+    }
   },
   {
     "id": 21500,
@@ -317,8 +358,8 @@
     "sockets": 2
   },
   {
-    "id": 22062,
-    "name": "Sorcerer\u0027s Belt",
+    "id": 22070,
+    "name": "Deathmist Belt",
     "slot": 5
   },
   {
@@ -327,8 +368,8 @@
     "slot": 5
   },
   {
-    "id": 22070,
-    "name": "Deathmist Belt",
+    "id": 22062,
+    "name": "Sorcerer\u0027s Belt",
     "slot": 5
   },
   {
@@ -337,8 +378,8 @@
     "slot": 5
   },
   {
-    "id": 22502,
-    "name": "Frostfire Belt",
+    "id": 22510,
+    "name": "Plagueheart Belt",
     "slot": 5
   },
   {
@@ -347,18 +388,18 @@
     "slot": 5
   },
   {
-    "id": 22510,
-    "name": "Plagueheart Belt",
-    "slot": 5
-  },
-  {
-    "id": 22716,
-    "name": "Belt of Untapped Power",
+    "id": 22502,
+    "name": "Frostfire Belt",
     "slot": 5
   },
   {
     "id": 22730,
     "name": "Eyestalk Waist Cord",
+    "slot": 5
+  },
+  {
+    "id": 22716,
+    "name": "Belt of Untapped Power",
     "slot": 5
   },
   {
@@ -372,8 +413,8 @@
     "slot": 5
   },
   {
-    "id": 24257,
-    "name": "Black Belt of Knowledge",
+    "id": 24256,
+    "name": "Girdle of Ruination",
     "slot": 5,
     "sockets": 2
   },
@@ -384,8 +425,8 @@
     "sockets": 2
   },
   {
-    "id": 24256,
-    "name": "Girdle of Ruination",
+    "id": 24257,
+    "name": "Black Belt of Knowledge",
     "slot": 5,
     "sockets": 2
   },
@@ -398,12 +439,8 @@
   {
     "id": 24575,
     "name": "Outlander\u0027s Girdle",
-    "slot": 5
-  },
-  {
-    "id": 24589,
-    "name": "Fireheart Girdle",
-    "slot": 5
+    "slot": 5,
+    "randomEnchantment": true
   },
   {
     "id": 24576,
@@ -413,62 +450,80 @@
   {
     "id": 24597,
     "name": "Starfire Sash",
-    "slot": 5
-  },
-  {
-    "id": 24613,
-    "name": "Vindicator Belt",
-    "slot": 5
-  },
-  {
-    "id": 24605,
-    "name": "Laughing Skull Waistguard",
-    "slot": 5
+    "slot": 5,
+    "randomEnchantment": true
   },
   {
     "id": 24621,
     "name": "Slavehandler Belt",
-    "slot": 5
+    "slot": 5,
+    "randomEnchantment": true
+  },
+  {
+    "id": 24613,
+    "name": "Vindicator Belt",
+    "slot": 5,
+    "randomEnchantment": true
+  },
+  {
+    "id": 24605,
+    "name": "Laughing Skull Waistguard",
+    "slot": 5,
+    "randomEnchantment": true
+  },
+  {
+    "id": 24589,
+    "name": "Fireheart Girdle",
+    "slot": 5,
+    "randomEnchantment": true
   },
   {
     "id": 24629,
     "name": "Feralfen Sash",
-    "slot": 5
+    "slot": 5,
+    "randomEnchantment": true
   },
   {
     "id": 24637,
     "name": "Mistyreed Belt",
-    "slot": 5
-  },
-  {
-    "id": 24653,
-    "name": "Consortium Sash",
-    "slot": 5
+    "slot": 5,
+    "randomEnchantment": true
   },
   {
     "id": 24645,
     "name": "Astralaan Belt",
-    "slot": 5
+    "slot": 5,
+    "randomEnchantment": true
+  },
+  {
+    "id": 24653,
+    "name": "Consortium Sash",
+    "slot": 5,
+    "randomEnchantment": true
   },
   {
     "id": 24661,
     "name": "Shadow Council Chain",
-    "slot": 5
-  },
-  {
-    "id": 24669,
-    "name": "Eldr\u0027naan Belt",
-    "slot": 5
-  },
-  {
-    "id": 24677,
-    "name": "Archmage Belt",
-    "slot": 5
+    "slot": 5,
+    "randomEnchantment": true
   },
   {
     "id": 24685,
     "name": "Elementalist Belt",
-    "slot": 5
+    "slot": 5,
+    "randomEnchantment": true
+  },
+  {
+    "id": 24669,
+    "name": "Eldr\u0027naan Belt",
+    "slot": 5,
+    "randomEnchantment": true
+  },
+  {
+    "id": 24677,
+    "name": "Archmage Belt",
+    "slot": 5,
+    "randomEnchantment": true
   },
   {
     "id": 25341,
@@ -476,13 +531,13 @@
     "slot": 5
   },
   {
-    "id": 25480,
-    "name": "Wastewalker\u0027s Sash",
+    "id": 25483,
+    "name": "Fine Sash",
     "slot": 5
   },
   {
-    "id": 25483,
-    "name": "Fine Sash",
+    "id": 25480,
+    "name": "Wastewalker\u0027s Sash",
     "slot": 5
   },
   {
@@ -496,13 +551,13 @@
     "slot": 5
   },
   {
-    "id": 27547,
-    "name": "Coldwhisper Cord",
+    "id": 27542,
+    "name": "Cord of Belief",
     "slot": 5
   },
   {
-    "id": 27542,
-    "name": "Cord of Belief",
+    "id": 27547,
+    "name": "Coldwhisper Cord",
     "slot": 5
   },
   {
@@ -516,13 +571,13 @@
     "slot": 5
   },
   {
-    "id": 27795,
-    "name": "Sash of Serpentra",
+    "id": 27768,
+    "name": "Oracle Belt of Timeless Mystery",
     "slot": 5
   },
   {
-    "id": 27768,
-    "name": "Oracle Belt of Timeless Mystery",
+    "id": 27795,
+    "name": "Sash of Serpentra",
     "slot": 5
   },
   {
@@ -544,7 +599,8 @@
   {
     "id": 28495,
     "name": "Windwalker\u0027s Sash",
-    "slot": 5
+    "slot": 5,
+    "randomEnchantment": true
   },
   {
     "id": 28565,
@@ -578,13 +634,13 @@
     "slot": 5
   },
   {
-    "id": 29241,
-    "name": "Belt of Depravity",
+    "id": 29257,
+    "name": "Sash of Arcane Visions",
     "slot": 5
   },
   {
-    "id": 29257,
-    "name": "Sash of Arcane Visions",
+    "id": 29241,
+    "name": "Belt of Depravity",
     "slot": 5
   },
   {
@@ -608,14 +664,14 @@
     "slot": 5
   },
   {
-    "id": 30036,
-    "name": "Belt of the Long Road",
+    "id": 30038,
+    "name": "Belt of Blasting",
     "slot": 5,
     "sockets": 2
   },
   {
-    "id": 30038,
-    "name": "Belt of Blasting",
+    "id": 30036,
+    "name": "Belt of the Long Road",
     "slot": 5,
     "sockets": 2
   },
@@ -636,13 +692,13 @@
     "slot": 5
   },
   {
-    "id": 30460,
-    "name": "Netherflame Belt",
+    "id": 30463,
+    "name": "Lifeblood Belt",
     "slot": 5
   },
   {
-    "id": 30463,
-    "name": "Lifeblood Belt",
+    "id": 30460,
+    "name": "Netherflame Belt",
     "slot": 5
   },
   {
@@ -651,25 +707,20 @@
     "slot": 5
   },
   {
-    "id": 30673,
-    "name": "Inferno Waist Cord",
-    "slot": 5
-  },
-  {
     "id": 30675,
     "name": "Lurker\u0027s Cord",
+    "slot": 5,
+    "randomEnchantment": true
+  },
+  {
+    "id": 30673,
+    "name": "Inferno Waist Cord",
     "slot": 5
   },
   {
     "id": 30895,
     "name": "Angelista\u0027s Sash",
     "slot": 5
-  },
-  {
-    "id": 30888,
-    "name": "Anetheron\u0027s Noose",
-    "slot": 5,
-    "sockets": 2
   },
   {
     "id": 30923,
@@ -682,14 +733,22 @@
     "slot": 5
   },
   {
-    "id": 31199,
-    "name": "Voidweave Cilice",
-    "slot": 5
+    "id": 30888,
+    "name": "Anetheron\u0027s Noose",
+    "slot": 5,
+    "sockets": 2
   },
   {
     "id": 31231,
     "name": "Feathered Sash",
-    "slot": 5
+    "slot": 5,
+    "randomEnchantment": true
+  },
+  {
+    "id": 31199,
+    "name": "Voidweave Cilice",
+    "slot": 5,
+    "randomEnchantment": true
   },
   {
     "id": 31283,
@@ -709,7 +768,8 @@
   {
     "id": 31555,
     "name": "Windchanneller\u0027s Ceinture",
-    "slot": 5
+    "slot": 5,
+    "randomEnchantment": true
   },
   {
     "id": 31683,
@@ -729,7 +789,10 @@
   {
     "id": 32390,
     "name": "Soulguard Girdle",
-    "slot": 5
+    "slot": 5,
+    "resistances": {
+      "Shadow": 54
+    }
   },
   {
     "id": 32519,
@@ -738,13 +801,13 @@
     "sockets": 2
   },
   {
-    "id": 32807,
-    "name": "Veteran\u0027s Silk Belt",
+    "id": 32799,
+    "name": "Veteran\u0027s Dreadweave Belt",
     "slot": 5
   },
   {
-    "id": 32799,
-    "name": "Veteran\u0027s Dreadweave Belt",
+    "id": 32807,
+    "name": "Veteran\u0027s Silk Belt",
     "slot": 5
   },
   {
@@ -754,13 +817,13 @@
     "sockets": 2
   },
   {
-    "id": 32974,
-    "name": "General\u0027s Mooncloth Belt",
+    "id": 32976,
+    "name": "Marshal\u0027s Mooncloth Belt",
     "slot": 5
   },
   {
-    "id": 32976,
-    "name": "Marshal\u0027s Mooncloth Belt",
+    "id": 32974,
+    "name": "General\u0027s Mooncloth Belt",
     "slot": 5
   },
   {
@@ -780,8 +843,8 @@
     "sockets": 2
   },
   {
-    "id": 33882,
-    "name": "Vindicator\u0027s Dreadweave Belt",
+    "id": 33912,
+    "name": "Vindicator\u0027s Silk Belt",
     "slot": 5
   },
   {
@@ -790,19 +853,19 @@
     "slot": 5
   },
   {
-    "id": 33912,
-    "name": "Vindicator\u0027s Silk Belt",
+    "id": 33882,
+    "name": "Vindicator\u0027s Dreadweave Belt",
     "slot": 5
-  },
-  {
-    "id": 34528,
-    "name": "Cord of Absolution",
-    "slot": 5,
-    "sockets": 1
   },
   {
     "id": 34527,
     "name": "Belt of Absolution",
+    "slot": 5,
+    "sockets": 1
+  },
+  {
+    "id": 34528,
+    "name": "Cord of Absolution",
     "slot": 5,
     "sockets": 1
   },
@@ -825,11 +888,6 @@
     "sockets": 2
   },
   {
-    "id": 35159,
-    "name": "Guardian\u0027s Mooncloth Belt",
-    "slot": 5
-  },
-  {
     "id": 35153,
     "name": "Guardian\u0027s Dreadweave Belt",
     "slot": 5
@@ -837,6 +895,11 @@
   {
     "id": 35164,
     "name": "Guardian\u0027s Silk Belt",
+    "slot": 5
+  },
+  {
+    "id": 35159,
+    "name": "Guardian\u0027s Mooncloth Belt",
     "slot": 5
   }
 ]

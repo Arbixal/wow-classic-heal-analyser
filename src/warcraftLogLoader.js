@@ -1,3 +1,4 @@
+import { resistanceEnchants, resistanceGems, resistRandomEnchantBySlot } from "./data";
 import {itemList, gemList} from "./datastore";
 import {removeDuplicates} from "./utils";
 
@@ -44,7 +45,9 @@ export class WarcraftLogLoader {
 
                     return acc;
                 }, {})
-                this.Results.Characters = res.friendlies.reduce((acc,obj) => {
+                this.Results.Characters = res.friendlies
+                    .filter(character => character.type !== "NPC" && character.type !== "Pet" && character.type !== "Boss")
+                    .reduce((acc,obj) => {
                     acc[obj.id] = obj;
 
                     acc[obj.id].raidStartTime = res.fights[obj.fights[0].id-1].start_time;
@@ -75,6 +78,68 @@ export class WarcraftLogLoader {
             });
     }
 
+    _getPlayerData(data) {
+        let playerData = [];
+
+        if (data.playerDetails?.tanks) {
+            playerData = data.playerDetails.tanks.reduce(this._reducePlayerDetails("tank"), {});
+        }
+
+        if (data.playerDetails?.healers) {
+            playerData = data.playerDetails.healers.reduce(this._reducePlayerDetails("healer"), playerData);
+        }
+
+        if (data.playerDetails?.dps) {
+            playerData = data.playerDetails.dps.reduce(this._reducePlayerDetails("dps"), playerData);
+        }
+
+        return playerData;
+    }
+
+    _getCharacterSummaryPromise(fight) {
+        return new Promise((resolve, reject) => fetch(this.domain + "report/tables/summary/" + this.reportId
+            + "?api_key=" + this.key 
+            + "&start=" + (fight?.start_time ?? this.Results.startTime)
+            + "&end=" + (fight?.end_time ?? this.Results.endTime)
+            + (fight ? "&fight=" + fight.id : ""))
+            .then(response => response.json())
+            .then(data => {
+                let playerData = this._getPlayerData(data);
+
+                Object.entries(playerData).forEach(([key,value]) => {
+                    let playerInfo = this.Results.Characters[key];
+            
+                    if (fight) {
+                        if (!playerInfo.perFight) {
+                            playerInfo.perFight = {};
+                        }
+
+                        playerInfo.perFight[fight.id] = {};
+                        playerInfo = playerInfo.perFight[fight.id];
+                    }
+                    else {
+                        playerInfo.summary = {};
+                        playerInfo = playerInfo.summary;
+                    }
+
+                    playerInfo.roles = value.roles;
+                    playerInfo.specs = value.specs;
+                    playerInfo.intellect = value.intellect;
+                    playerInfo.armor = value.armor;
+                    playerInfo.stamina = value.stamina;
+                    playerInfo.strength = value.strength;
+                    playerInfo.agility = value.agility;
+                    playerInfo.weaponEnchant = value.weaponEnchant;
+                    playerInfo.offhandEnchant = value.offhandEnchant;
+                    playerInfo.enchants = value.enchants;
+                    playerInfo.gems = value.gems;
+                    playerInfo.resistances = value.resistances;
+                });
+
+                resolve(this);
+            }).catch(reject));
+    }
+
     loadCharacterSummary() {
         if (!this._loadedStatus.fights) {
             return new Promise((_resolve, reject) => reject("Fights have not yet been loaded."));
@@ -84,46 +149,15 @@ export class WarcraftLogLoader {
             return new Promise(resolve => resolve(this));
         }
 
-        return new Promise((resolve, reject) => fetch(this.domain + "report/tables/summary/" + this.reportId
-        + "?api_key=" + this.key 
-        + "&start=" + this.Results.startTime
-        + "&end=" + this.Results.endTime)
-        .then(response => response.json())
-        .then(data => {
-            let playerData = [];
+        let taskList = [this._getCharacterSummaryPromise(null),
+            ...this.Results.Fights
+                .filter(fight => fight.boss > 0)
+                .map(fight => this._getCharacterSummaryPromise(fight))];
 
-            if (data.playerDetails?.tanks) {
-                playerData = data.playerDetails.tanks.reduce(this._reducePlayerDetails("tank"), {});
-            }
-
-            if (data.playerDetails?.healers) {
-                playerData = data.playerDetails.healers.reduce(this._reducePlayerDetails("healer"), playerData);
-            }
-
-            if (data.playerDetails?.dps) {
-                playerData = data.playerDetails.dps.reduce(this._reducePlayerDetails("dps"), playerData);
-            }
-
-            for (const [key,value] of Object.entries(playerData)) {
-                let playerInfo = this.Results.Characters[key];
-
-                playerInfo.roles = value.roles;
-                playerInfo.specs = value.specs;
-                playerInfo.intellect = value.intellect;
-                playerInfo.armor = value.armor;
-                playerInfo.stamina = value.stamina;
-                playerInfo.strength = value.strength;
-                playerInfo.agility = value.agility;
-                playerInfo.weaponEnchant = value.weaponEnchant;
-                playerInfo.offhandEnchant = value.offhandEnchant;
-                playerInfo.enchants = value.enchants;
-                playerInfo.gems = value.gems;
-            }
-
+        return Promise.all(taskList).then(_ => {
             this._loadedStatus.characterSummaries = true;
-
-            resolve(this);
-        }).catch(reject));
+            return new Promise((resolve, _reject) => resolve(this));
+        });
     }
 
     loadDeaths() {
@@ -421,7 +455,7 @@ export class WarcraftLogLoader {
 
         character.fights.forEach(characterFight => {
             if (fightIds.includes(characterFight.id)) {
-                filteredCharacter = {...character};
+                filteredCharacter = {...character, summary: character.perFight[characterFight.id]};
             }
         })
 
@@ -560,6 +594,26 @@ export class WarcraftLogLoader {
                 let gearInfo = obj.combatantInfo?.gear?.reduce((accum, gear) => {
                     let gearItem = itemList[gear.id];
 
+                    if (!gearItem && gear.id > 0 && gear.slot !== 3 && gear.slot !== 18) {
+                        console.log("Couldn't find item '" + gear.name + "' (" + gear.id + ")");
+                    }
+
+                    if (gearItem?.resistances) {
+                        Object.entries(gearItem.resistances).forEach(([key, value]) => {
+                            accum.resistances[key.toLowerCase()] = accum.resistances[key.toLowerCase()] + value;
+                        })
+                    }
+
+                    if (gearItem?.randomEnchantment && resistRandomEnchantBySlot[gear.slot] && resistRandomEnchantBySlot[gear.slot][gear.itemLevel]) {
+                        const resistAmount = resistRandomEnchantBySlot[gear.slot][gear.itemLevel];
+                        accum.resistances.arcane = accum.resistances.arcane + resistAmount;
+                        accum.resistances.fire = accum.resistances.fire + resistAmount;
+                        accum.resistances.frost = accum.resistances.frost + resistAmount;
+                        accum.resistances.nature = accum.resistances.nature + resistAmount;
+                        accum.resistances.shadow = accum.resistances.shadow + resistAmount;
+                        accum.resistances.includesGreens = true;
+                    }
+
                     if (slots[gear.slot].enchantable && gear.id !== 0 && (!gearItem || !gearItem.notEnchantable))
                     {
                         accum.permanentEnchants.push({
@@ -571,6 +625,14 @@ export class WarcraftLogLoader {
                             gearId: gear.id,
                             gearName: gear.name,
                         })
+
+                        if (resistanceEnchants[gear.permanentEnchant]) {
+                            accum.resistances.arcane = accum.resistances.arcane + resistanceEnchants[gear.permanentEnchant].arcane ?? 0;
+                            accum.resistances.fire = accum.resistances.fire + resistanceEnchants[gear.permanentEnchant].fire ?? 0;
+                            accum.resistances.frost = accum.resistances.frost + resistanceEnchants[gear.permanentEnchant].frost ?? 0;
+                            accum.resistances.nature = accum.resistances.nature + resistanceEnchants[gear.permanentEnchant].nature ?? 0;
+                            accum.resistances.shadow = accum.resistances.shadow + resistanceEnchants[gear.permanentEnchant].shadow ?? 0;
+                        }
                     }
 
                     if (gear.slot === 15) {
@@ -601,6 +663,14 @@ export class WarcraftLogLoader {
                                     count: 1
                                 };
                             }
+
+                            if (resistanceGems[gem.id]) {
+                                accum.resistances.arcane = accum.resistances.arcane + resistanceGems[gem.id].arcane ?? 0;
+                                accum.resistances.fire = accum.resistances.fire + resistanceGems[gem.id].fire ?? 0;
+                                accum.resistances.frost = accum.resistances.frost + resistanceGems[gem.id].frost ?? 0;
+                                accum.resistances.nature = accum.resistances.nature + resistanceGems[gem.id].nature ?? 0;
+                                accum.resistances.shadow = accum.resistances.shadow + resistanceGems[gem.id].shadow ?? 0;
+                            }
                         });
                     }
 
@@ -612,7 +682,22 @@ export class WarcraftLogLoader {
                     }
 
                     return accum;
-                }, { permanentEnchants: [], weaponEnchant: {}, offhandEnchant: {}, gems: { 0: {id: 0, count: 0} }});
+                }, { 
+                    permanentEnchants: [], 
+                    weaponEnchant: {}, 
+                    offhandEnchant: {}, 
+                    gems: { 
+                        0: {id: 0, count: 0},
+                    },
+                    resistances: { 
+                        arcane: 0,
+                        fire: 0,
+                        frost: 0,
+                        nature: 0,
+                        shadow: 0,
+                        includesGreens: false,
+                    }
+                });
 
                 if (!acc[playerId]) {
                     acc[playerId] = {
@@ -629,7 +714,8 @@ export class WarcraftLogLoader {
                         weaponEnchant: gearInfo?.weaponEnchant,
                         offhandEnchant: gearInfo?.offhandEnchant,
                         enchants: gearInfo?.permanentEnchants,
-                        gems: gearInfo?.gems
+                        gems: gearInfo?.gems,
+                        resistances: gearInfo?.resistances,
                     };
                 }
                 else {

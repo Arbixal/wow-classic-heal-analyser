@@ -20,13 +20,13 @@
     "slot": 17
   },
   {
-    "id": 18837,
-    "name": "High Warlord\u0027s Crossbow",
+    "id": 18836,
+    "name": "Grand Marshal\u0027s Repeater",
     "slot": 17
   },
   {
-    "id": 18836,
-    "name": "Grand Marshal\u0027s Repeater",
+    "id": 18837,
+    "name": "High Warlord\u0027s Crossbow",
     "slot": 17
   },
   {
@@ -42,7 +42,10 @@
   {
     "id": 20599,
     "name": "Polished Ironwood Crossbow",
-    "slot": 17
+    "slot": 17,
+    "resistances": {
+      "Nature": 7
+    }
   },
   {
     "id": 21459,
@@ -65,74 +68,88 @@
     "slot": 17
   },
   {
-    "id": 25258,
-    "name": "Repeater Crossbow",
-    "slot": 17
-  },
-  {
-    "id": 25262,
-    "name": "Battle Damaged Crossbow",
-    "slot": 17
-  },
-  {
-    "id": 25260,
-    "name": "Archer\u0027s Crossbow",
-    "slot": 17
-  },
-  {
     "id": 25254,
     "name": "Tower Crossbow",
-    "slot": 17
-  },
-  {
-    "id": 25259,
-    "name": "Collapsible Crossbow",
-    "slot": 17
-  },
-  {
-    "id": 25264,
-    "name": "Pocket Ballista",
-    "slot": 17
-  },
-  {
-    "id": 25263,
-    "name": "Assassins\u0027 Silent Crossbow",
-    "slot": 17
-  },
-  {
-    "id": 25261,
-    "name": "Mighty Crossbow",
-    "slot": 17
-  },
-  {
-    "id": 25255,
-    "name": "Ram\u0027s Head Crossbow",
-    "slot": 17
-  },
-  {
-    "id": 25265,
-    "name": "Barreled Crossbow",
-    "slot": 17
+    "slot": 17,
+    "randomEnchantment": true
   },
   {
     "id": 25256,
     "name": "Stronghold Crossbow",
-    "slot": 17
+    "slot": 17,
+    "randomEnchantment": true
+  },
+  {
+    "id": 25258,
+    "name": "Repeater Crossbow",
+    "slot": 17,
+    "randomEnchantment": true
+  },
+  {
+    "id": 25255,
+    "name": "Ram\u0027s Head Crossbow",
+    "slot": 17,
+    "randomEnchantment": true
+  },
+  {
+    "id": 25260,
+    "name": "Archer\u0027s Crossbow",
+    "slot": 17,
+    "randomEnchantment": true
+  },
+  {
+    "id": 25264,
+    "name": "Pocket Ballista",
+    "slot": 17,
+    "randomEnchantment": true
+  },
+  {
+    "id": 25262,
+    "name": "Battle Damaged Crossbow",
+    "slot": 17,
+    "randomEnchantment": true
+  },
+  {
+    "id": 25261,
+    "name": "Mighty Crossbow",
+    "slot": 17,
+    "randomEnchantment": true
+  },
+  {
+    "id": 25263,
+    "name": "Assassins\u0027 Silent Crossbow",
+    "slot": 17,
+    "randomEnchantment": true
   },
   {
     "id": 25257,
     "name": "Citadel Crossbow",
-    "slot": 17
+    "slot": 17,
+    "randomEnchantment": true
+  },
+  {
+    "id": 25259,
+    "name": "Collapsible Crossbow",
+    "slot": 17,
+    "randomEnchantment": true
   },
   {
     "id": 25266,
     "name": "Well-Balanced Crossbow",
-    "slot": 17
+    "slot": 17,
+    "randomEnchantment": true
   },
   {
     "id": 25267,
     "name": "Rampant Crossbow",
-    "slot": 17
+    "slot": 17,
+    "randomEnchantment": true
+  },
+  {
+    "id": 25265,
+    "name": "Barreled Crossbow",
+    "slot": 17,
+    "randomEnchantment": true
   },
   {
     "id": 27507,
@@ -160,13 +177,13 @@
     "slot": 17
   },
   {
-    "id": 28933,
-    "name": "High Warlord\u0027s Heavy Crossbow",
+    "id": 28960,
+    "name": "Grand Marshal\u0027s Heavy Crossbow",
     "slot": 17
   },
   {
-    "id": 28960,
-    "name": "Grand Marshal\u0027s Heavy Crossbow",
+    "id": 28933,
+    "name": "High Warlord\u0027s Heavy Crossbow",
     "slot": 17
   },
   {

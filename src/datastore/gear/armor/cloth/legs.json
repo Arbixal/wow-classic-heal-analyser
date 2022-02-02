@@ -22,32 +22,38 @@
   {
     "id": 10064,
     "name": "Duskwoven Pants",
-    "slot": 6
-  },
-  {
-    "id": 10101,
-    "name": "Councillor\u0027s Pants",
-    "slot": 6
+    "slot": 6,
+    "randomEnchantment": true
   },
   {
     "id": 10141,
     "name": "High Councillor\u0027s Pants",
-    "slot": 6
+    "slot": 6,
+    "randomEnchantment": true
   },
   {
     "id": 10177,
     "name": "Mystical Leggings",
-    "slot": 6
+    "slot": 6,
+    "randomEnchantment": true
+  },
+  {
+    "id": 10101,
+    "name": "Councillor\u0027s Pants",
+    "slot": 6,
+    "randomEnchantment": true
   },
   {
     "id": 10217,
     "name": "Elegant Leggings",
-    "slot": 6
+    "slot": 6,
+    "randomEnchantment": true
   },
   {
     "id": 10252,
     "name": "Master\u0027s Leggings",
-    "slot": 6
+    "slot": 6,
+    "randomEnchantment": true
   },
   {
     "id": 10742,
@@ -70,13 +76,13 @@
     "slot": 6
   },
   {
-    "id": 11911,
-    "name": "Treetop Leggings",
+    "id": 11929,
+    "name": "Haunting Specter Leggings",
     "slot": 6
   },
   {
-    "id": 11929,
-    "name": "Haunting Specter Leggings",
+    "id": 11911,
+    "name": "Treetop Leggings",
     "slot": 6
   },
   {
@@ -102,26 +108,14 @@
   {
     "id": 13206,
     "name": "Wolfshear Leggings",
-    "slot": 6
+    "slot": 6,
+    "resistances": {
+      "Nature": 10
+    }
   },
   {
     "id": 13389,
     "name": "The Postmaster\u0027s Trousers",
-    "slot": 6
-  },
-  {
-    "id": 13775,
-    "name": "[PH] Cloth Leggings of the Rising Dawn",
-    "slot": 6
-  },
-  {
-    "id": 13776,
-    "name": "[PH] Cloth Leggings of the Shining Dawn",
-    "slot": 6
-  },
-  {
-    "id": 13865,
-    "name": "Runecloth Pants",
     "slot": 6
   },
   {
@@ -130,8 +124,27 @@
     "slot": 6
   },
   {
+    "id": 13865,
+    "name": "Runecloth Pants",
+    "slot": 6
+  },
+  {
     "id": 14045,
     "name": "Cindercloth Pants",
+    "slot": 6
+  },
+  {
+    "id": 14104,
+    "name": "Brightcloth Pants",
+    "slot": 6,
+    "resistances": {
+      "Frost": 17,
+      "Shadow": 16
+    }
+  },
+  {
+    "id": 14137,
+    "name": "Mooncloth Leggings",
     "slot": 6
   },
   {
@@ -140,64 +153,68 @@
     "slot": 6
   },
   {
-    "id": 14104,
-    "name": "Brightcloth Pants",
-    "slot": 6
-  },
-  {
-    "id": 14137,
-    "name": "Mooncloth Leggings",
-    "slot": 6
-  },
-  {
-    "id": 14132,
-    "name": "Wizardweave Leggings",
-    "slot": 6
-  },
-  {
     "id": 14144,
     "name": "Ghostweave Pants",
     "slot": 6
   },
   {
-    "id": 14283,
-    "name": "Opulent Leggings",
-    "slot": 6
+    "id": 14132,
+    "name": "Wizardweave Leggings",
+    "slot": 6,
+    "resistances": {
+      "Arcane": 16,
+      "Fire": 16
+    }
   },
   {
     "id": 14274,
     "name": "Gaea\u0027s Leggings",
-    "slot": 6
+    "slot": 6,
+    "randomEnchantment": true
+  },
+  {
+    "id": 14283,
+    "name": "Opulent Leggings",
+    "slot": 6,
+    "randomEnchantment": true
   },
   {
     "id": 14295,
     "name": "Arachnidian Legguards",
-    "slot": 6
-  },
-  {
-    "id": 14305,
-    "name": "Bonecaster\u0027s Sarong",
-    "slot": 6
-  },
-  {
-    "id": 14324,
-    "name": "Resplendent Sarong",
-    "slot": 6
+    "slot": 6,
+    "randomEnchantment": true
   },
   {
     "id": 14315,
     "name": "Celestial Kilt",
-    "slot": 6
+    "slot": 6,
+    "randomEnchantment": true
+  },
+  {
+    "id": 14305,
+    "name": "Bonecaster\u0027s Sarong",
+    "slot": 6,
+    "randomEnchantment": true
+  },
+  {
+    "id": 14324,
+    "name": "Resplendent Sarong",
+    "slot": 6,
+    "randomEnchantment": true
   },
   {
     "id": 14334,
     "name": "Eternal Sarong",
-    "slot": 6
+    "slot": 6,
+    "randomEnchantment": true
   },
   {
     "id": 14444,
     "name": "Venomshroud Leggings",
-    "slot": 6
+    "slot": 6,
+    "resistances": {
+      "Nature": 6
+    }
   },
   {
     "id": 14462,
@@ -207,7 +224,11 @@
   {
     "id": 14577,
     "name": "Skullsmoke Pants",
-    "slot": 6
+    "slot": 6,
+    "resistances": {
+      "Fire": 10,
+      "Shadow": 5
+    }
   },
   {
     "id": 14632,
@@ -240,11 +261,6 @@
     "slot": 6
   },
   {
-    "id": 16699,
-    "name": "Dreadmist Leggings",
-    "slot": 6
-  },
-  {
     "id": 16694,
     "name": "Devout Skirt",
     "slot": 6
@@ -255,33 +271,64 @@
     "slot": 6
   },
   {
-    "id": 16814,
-    "name": "Pants of Prophecy",
-    "slot": 6
-  },
-  {
-    "id": 16796,
-    "name": "Arcanist Leggings",
+    "id": 16699,
+    "name": "Dreadmist Leggings",
     "slot": 6
   },
   {
     "id": 16810,
     "name": "Felheart Pants",
-    "slot": 6
+    "slot": 6,
+    "resistances": {
+      "Shadow": 10
+    }
+  },
+  {
+    "id": 16796,
+    "name": "Arcanist Leggings",
+    "slot": 6,
+    "resistances": {
+      "Shadow": 10
+    }
+  },
+  {
+    "id": 16814,
+    "name": "Pants of Prophecy",
+    "slot": 6,
+    "resistances": {
+      "Shadow": 10
+    }
   },
   {
     "id": 16915,
     "name": "Netherwind Pants",
-    "slot": 6
-  },
-  {
-    "id": 16922,
-    "name": "Leggings of Transcendence",
-    "slot": 6
+    "slot": 6,
+    "resistances": {
+      "Arcane": 10,
+      "Fire": 10
+    }
   },
   {
     "id": 16930,
     "name": "Nemesis Leggings",
+    "slot": 6,
+    "resistances": {
+      "Arcane": 10,
+      "Fire": 10
+    }
+  },
+  {
+    "id": 16922,
+    "name": "Leggings of Transcendence",
+    "slot": 6,
+    "resistances": {
+      "Arcane": 10,
+      "Shadow": 10
+    }
+  },
+  {
+    "id": 17571,
+    "name": "Legionnaire\u0027s Dreadweave Leggings",
     "slot": 6
   },
   {
@@ -290,13 +337,8 @@
     "slot": 6
   },
   {
-    "id": 17571,
-    "name": "Legionnaire\u0027s Dreadweave Leggings",
-    "slot": 6
-  },
-  {
-    "id": 17593,
-    "name": "General\u0027s Dreadweave Pants",
+    "id": 17579,
+    "name": "Marshal\u0027s Dreadweave Leggings",
     "slot": 6
   },
   {
@@ -305,8 +347,8 @@
     "slot": 6
   },
   {
-    "id": 17599,
-    "name": "Knight-Captain\u0027s Satin Leggings",
+    "id": 17625,
+    "name": "General\u0027s Satin Leggings",
     "slot": 6
   },
   {
@@ -315,13 +357,13 @@
     "slot": 6
   },
   {
-    "id": 17625,
-    "name": "General\u0027s Satin Leggings",
+    "id": 17599,
+    "name": "Knight-Captain\u0027s Satin Leggings",
     "slot": 6
   },
   {
-    "id": 17579,
-    "name": "Marshal\u0027s Dreadweave Leggings",
+    "id": 17593,
+    "name": "General\u0027s Dreadweave Pants",
     "slot": 6
   },
   {
@@ -337,7 +379,11 @@
   {
     "id": 18545,
     "name": "Leggings of Arcane Supremacy",
-    "slot": 6
+    "slot": 6,
+    "resistances": {
+      "Arcane": 10,
+      "Frost": 10
+    }
   },
   {
     "id": 18745,
@@ -357,7 +403,10 @@
   {
     "id": 19165,
     "name": "Flarecore Leggings",
-    "slot": 6
+    "slot": 6,
+    "resistances": {
+      "Fire": 16
+    }
   },
   {
     "id": 19385,
@@ -382,32 +431,40 @@
   {
     "id": 20538,
     "name": "Runed Stygian Leggings",
-    "slot": 6
+    "slot": 6,
+    "resistances": {
+      "Shadow": 25
+    }
   },
   {
     "id": 20674,
     "name": "Abyssal Cloth Pants",
-    "slot": 6
+    "slot": 6,
+    "randomEnchantment": true
   },
   {
     "id": 20706,
     "name": "Cenarion Reservist\u0027s Pants",
-    "slot": 6
+    "slot": 6,
+    "resistances": {
+      "Nature": 25
+    }
   },
   {
     "id": 20705,
     "name": "Cenarion Reservist\u0027s Pants",
-    "slot": 6
+    "slot": 6,
+    "resistances": {
+      "Nature": 25
+    }
   },
   {
     "id": 20707,
     "name": "Cenarion Reservist\u0027s Pants",
-    "slot": 6
-  },
-  {
-    "id": 21336,
-    "name": "Doomcaller\u0027s Trousers",
-    "slot": 6
+    "slot": 6,
+    "resistances": {
+      "Nature": 25
+    }
   },
   {
     "id": 21346,
@@ -417,6 +474,11 @@
   {
     "id": 21352,
     "name": "Trousers of the Oracle",
+    "slot": 6
+  },
+  {
+    "id": 21336,
+    "name": "Doomcaller\u0027s Trousers",
     "slot": 6
   },
   {
@@ -430,18 +492,13 @@
     "slot": 6
   },
   {
-    "id": 21852,
-    "name": "Netherweave Pants",
-    "slot": 6
-  },
-  {
     "id": 21859,
     "name": "Imbued Netherweave Pants",
     "slot": 6
   },
   {
-    "id": 22072,
-    "name": "Deathmist Leggings",
+    "id": 21852,
+    "name": "Netherweave Pants",
     "slot": 6
   },
   {
@@ -455,8 +512,8 @@
     "slot": 6
   },
   {
-    "id": 22303,
-    "name": "Ironweave Pants",
+    "id": 22072,
+    "name": "Deathmist Leggings",
     "slot": 6
   },
   {
@@ -465,13 +522,18 @@
     "slot": 6
   },
   {
-    "id": 22497,
-    "name": "Frostfire Leggings",
+    "id": 22303,
+    "name": "Ironweave Pants",
     "slot": 6
   },
   {
     "id": 22505,
     "name": "Plagueheart Leggings",
+    "slot": 6
+  },
+  {
+    "id": 22497,
+    "name": "Frostfire Leggings",
     "slot": 6
   },
   {
@@ -482,7 +544,10 @@
   {
     "id": 22700,
     "name": "Glacial Leggings",
-    "slot": 6
+    "slot": 6,
+    "resistances": {
+      "Frost": 40
+    }
   },
   {
     "id": 22747,
@@ -492,6 +557,11 @@
   {
     "id": 22752,
     "name": "Sentinel\u0027s Silk Leggings",
+    "slot": 6
+  },
+  {
+    "id": 22881,
+    "name": "Legionnaire\u0027s Dreadweave Legguards",
     "slot": 6
   },
   {
@@ -505,11 +575,6 @@
     "slot": 6
   },
   {
-    "id": 22881,
-    "name": "Legionnaire\u0027s Dreadweave Legguards",
-    "slot": 6
-  },
-  {
     "id": 23070,
     "name": "Leggings of Polarity",
     "slot": 6
@@ -520,13 +585,13 @@
     "slot": 6
   },
   {
-    "id": 23296,
-    "name": "Knight-Captain\u0027s Dreadweave Legguards",
+    "id": 23304,
+    "name": "Knight-Captain\u0027s Silk Legguards",
     "slot": 6
   },
   {
-    "id": 23304,
-    "name": "Knight-Captain\u0027s Silk Legguards",
+    "id": 23296,
+    "name": "Knight-Captain\u0027s Dreadweave Legguards",
     "slot": 6
   },
   {
@@ -542,16 +607,16 @@
     "sockets": 3
   },
   {
-    "id": 24262,
-    "name": "Spellstrike Pants",
-    "slot": 6,
-    "sockets": 3
-  },
-  {
     "id": 24263,
     "name": "Battlecast Pants",
     "slot": 6,
     "sockets": 2
+  },
+  {
+    "id": 24262,
+    "name": "Spellstrike Pants",
+    "slot": 6,
+    "sockets": 3
   },
   {
     "id": 24359,
@@ -566,72 +631,86 @@
   {
     "id": 24586,
     "name": "Outlander\u0027s Leggings",
-    "slot": 6
+    "slot": 6,
+    "randomEnchantment": true
   },
   {
     "id": 24594,
     "name": "Fireheart Leggings",
-    "slot": 6
-  },
-  {
-    "id": 24602,
-    "name": "Starfire Trousers",
-    "slot": 6
+    "slot": 6,
+    "randomEnchantment": true
   },
   {
     "id": 24610,
     "name": "Laughing Skull Pants",
-    "slot": 6
-  },
-  {
-    "id": 24626,
-    "name": "Slavehandler Pants",
-    "slot": 6
+    "slot": 6,
+    "randomEnchantment": true
   },
   {
     "id": 24618,
     "name": "Vindicator Pants",
-    "slot": 6
+    "slot": 6,
+    "randomEnchantment": true
+  },
+  {
+    "id": 24602,
+    "name": "Starfire Trousers",
+    "slot": 6,
+    "randomEnchantment": true
   },
   {
     "id": 24634,
     "name": "Feralfen Pants",
-    "slot": 6
+    "slot": 6,
+    "randomEnchantment": true
+  },
+  {
+    "id": 24626,
+    "name": "Slavehandler Pants",
+    "slot": 6,
+    "randomEnchantment": true
   },
   {
     "id": 24642,
     "name": "Mistyreed Pants",
-    "slot": 6
-  },
-  {
-    "id": 24650,
-    "name": "Astralaan Pants",
-    "slot": 6
-  },
-  {
-    "id": 24666,
-    "name": "Shadow Council Pants",
-    "slot": 6
+    "slot": 6,
+    "randomEnchantment": true
   },
   {
     "id": 24658,
     "name": "Consortium Pants",
-    "slot": 6
+    "slot": 6,
+    "randomEnchantment": true
   },
   {
-    "id": 24674,
-    "name": "Eldr\u0027naan Pants",
-    "slot": 6
-  },
-  {
-    "id": 24682,
-    "name": "Archmage Pants",
-    "slot": 6
+    "id": 24650,
+    "name": "Astralaan Pants",
+    "slot": 6,
+    "randomEnchantment": true
   },
   {
     "id": 24690,
     "name": "Elementalist Leggings",
-    "slot": 6
+    "slot": 6,
+    "randomEnchantment": true
+  },
+  {
+    "id": 24674,
+    "name": "Eldr\u0027naan Pants",
+    "slot": 6,
+    "randomEnchantment": true
+  },
+  {
+    "id": 24682,
+    "name": "Archmage Pants",
+    "slot": 6,
+    "randomEnchantment": true
+  },
+  {
+    "id": 24666,
+    "name": "Shadow Council Pants",
+    "slot": 6,
+    "randomEnchantment": true
   },
   {
     "id": 25338,
@@ -700,6 +779,12 @@
     "slot": 6
   },
   {
+    "id": 28218,
+    "name": "Pontiff\u0027s Pantaloons of Prophecy",
+    "slot": 6,
+    "sockets": 3
+  },
+  {
     "id": 28185,
     "name": "Khadgar\u0027s Kilt of Abjuration",
     "slot": 6,
@@ -708,12 +793,6 @@
   {
     "id": 28212,
     "name": "Aran\u0027s Sorcerous Slacks",
-    "slot": 6,
-    "sockets": 3
-  },
-  {
-    "id": 28218,
-    "name": "Pontiff\u0027s Pantaloons of Prophecy",
     "slot": 6,
     "sockets": 3
   },
@@ -740,15 +819,15 @@
     "slot": 6
   },
   {
-    "id": 28718,
-    "name": "Grand Marshal\u0027s Silk Trousers",
-    "slot": 6
-  },
-  {
     "id": 28742,
     "name": "Pantaloons of Repentance",
     "slot": 6,
     "sockets": 3
+  },
+  {
+    "id": 28718,
+    "name": "Grand Marshal\u0027s Silk Trousers",
+    "slot": 6
   },
   {
     "id": 28819,
@@ -761,13 +840,13 @@
     "slot": 6
   },
   {
-    "id": 28870,
-    "name": "High Warlord\u0027s Silk Trousers",
+    "id": 28966,
+    "name": "Voidheart Leggings",
     "slot": 6
   },
   {
-    "id": 28966,
-    "name": "Voidheart Leggings",
+    "id": 28870,
+    "name": "High Warlord\u0027s Silk Trousers",
     "slot": 6
   },
   {
@@ -776,13 +855,13 @@
     "slot": 6
   },
   {
-    "id": 29059,
-    "name": "Leggings of the Incarnate",
+    "id": 29078,
+    "name": "Legwraps of the Aldor",
     "slot": 6
   },
   {
-    "id": 29078,
-    "name": "Legwraps of the Aldor",
+    "id": 29059,
+    "name": "Leggings of the Incarnate",
     "slot": 6
   },
   {
@@ -797,15 +876,15 @@
     "slot": 6
   },
   {
-    "id": 29977,
-    "name": "Star-Soul Breeches",
-    "slot": 6
-  },
-  {
     "id": 29972,
     "name": "Trousers of the Astromancer",
     "slot": 6,
     "sockets": 3
+  },
+  {
+    "id": 29977,
+    "name": "Star-Soul Breeches",
+    "slot": 6
   },
   {
     "id": 30153,
@@ -826,6 +905,16 @@
     "sockets": 1
   },
   {
+    "id": 30268,
+    "name": "Heap Leggings",
+    "slot": 6
+  },
+  {
+    "id": 30256,
+    "name": "Pants of the Naaru",
+    "slot": 6
+  },
+  {
     "id": 30201,
     "name": "Gladiator\u0027s Felweave Trousers",
     "slot": 6
@@ -837,24 +926,10 @@
     "sockets": 1
   },
   {
-    "id": 30256,
-    "name": "Pants of the Naaru",
-    "slot": 6
-  },
-  {
-    "id": 30268,
-    "name": "Heap Leggings",
-    "slot": 6
-  },
-  {
-    "id": 30465,
-    "name": "Lifeblood Leggings",
-    "slot": 6
-  },
-  {
-    "id": 30517,
-    "name": "Netherfarer\u0027s Leggings",
-    "slot": 6
+    "id": 30543,
+    "name": "Pontifex Kilt",
+    "slot": 6,
+    "sockets": 3
   },
   {
     "id": 30531,
@@ -863,14 +938,13 @@
     "sockets": 3
   },
   {
-    "id": 30532,
-    "name": "Kirin Tor Master\u0027s Trousers",
-    "slot": 6,
-    "sockets": 3
+    "id": 30517,
+    "name": "Netherfarer\u0027s Leggings",
+    "slot": 6
   },
   {
-    "id": 30543,
-    "name": "Pontifex Kilt",
+    "id": 30532,
+    "name": "Kirin Tor Master\u0027s Trousers",
     "slot": 6,
     "sockets": 3
   },
@@ -894,24 +968,15 @@
   {
     "id": 30761,
     "name": "Infernoweave Leggings",
-    "slot": 6
+    "slot": 6,
+    "resistances": {
+      "Fire": 55
+    }
   },
   {
     "id": 30836,
     "name": "Leggings of the Skettis Exile",
     "slot": 6
-  },
-  {
-    "id": 30916,
-    "name": "Leggings of Channeled Elements",
-    "slot": 6,
-    "sockets": 3
-  },
-  {
-    "id": 30912,
-    "name": "Leggings of Eternity",
-    "slot": 6,
-    "sockets": 3
   },
   {
     "id": 30921,
@@ -924,8 +989,20 @@
     "slot": 6
   },
   {
-    "id": 31053,
-    "name": "Leggings of the Malefic",
+    "id": 30912,
+    "name": "Leggings of Eternity",
+    "slot": 6,
+    "sockets": 3
+  },
+  {
+    "id": 30916,
+    "name": "Leggings of Channeled Elements",
+    "slot": 6,
+    "sockets": 3
+  },
+  {
+    "id": 31067,
+    "name": "Leggings of Absolution",
     "slot": 6,
     "sockets": 1
   },
@@ -936,31 +1013,33 @@
     "sockets": 1
   },
   {
+    "id": 31133,
+    "name": "Leggings of Concentrated Darkness",
+    "slot": 6
+  },
+  {
     "id": 31058,
     "name": "Leggings of the Tempest",
     "slot": 6,
     "sockets": 1
   },
   {
-    "id": 31067,
-    "name": "Leggings of Absolution",
+    "id": 31053,
+    "name": "Leggings of the Malefic",
     "slot": 6,
     "sockets": 1
   },
   {
-    "id": 31133,
-    "name": "Leggings of Concentrated Darkness",
-    "slot": 6
-  },
-  {
     "id": 31212,
     "name": "Chimaerahide Leggings",
-    "slot": 6
+    "slot": 6,
+    "randomEnchantment": true
   },
   {
     "id": 31246,
     "name": "Nagahide Leggings",
-    "slot": 6
+    "slot": 6,
+    "randomEnchantment": true
   },
   {
     "id": 31306,
@@ -995,16 +1074,17 @@
   {
     "id": 31556,
     "name": "Windchanneller\u0027s Leggings",
+    "slot": 6,
+    "randomEnchantment": true
+  },
+  {
+    "id": 31627,
+    "name": "High Warlord\u0027s Mooncloth Legguards",
     "slot": 6
   },
   {
     "id": 31623,
     "name": "Grand Marshal\u0027s Mooncloth Legguards",
-    "slot": 6
-  },
-  {
-    "id": 31627,
-    "name": "High Warlord\u0027s Mooncloth Legguards",
     "slot": 6
   },
   {
@@ -1023,11 +1103,6 @@
     "slot": 6
   },
   {
-    "id": 32017,
-    "name": "Merciless Gladiator\u0027s Mooncloth Leggings",
-    "slot": 6
-  },
-  {
     "id": 32036,
     "name": "Merciless Gladiator\u0027s Satin Leggings",
     "slot": 6
@@ -1035,6 +1110,11 @@
   {
     "id": 32051,
     "name": "Merciless Gladiator\u0027s Silk Trousers",
+    "slot": 6
+  },
+  {
+    "id": 32017,
+    "name": "Merciless Gladiator\u0027s Mooncloth Leggings",
     "slot": 6
   },
   {
@@ -1046,16 +1126,19 @@
   {
     "id": 32389,
     "name": "Soulguard Leggings",
+    "slot": 6,
+    "resistances": {
+      "Shadow": 72
+    }
+  },
+  {
+    "id": 33585,
+    "name": "Achromic Trousers of the Naaru",
     "slot": 6
   },
   {
     "id": 33584,
     "name": "Pantaloons of Arcane Annihilation",
-    "slot": 6
-  },
-  {
-    "id": 33585,
-    "name": "Achromic Trousers of the Naaru",
     "slot": 6
   },
   {
@@ -1102,20 +1185,14 @@
     "sockets": 3
   },
   {
-    "id": 34918,
-    "name": "Legwraps of Sweltering Flame",
-    "slot": 6,
-    "sockets": 2
-  },
-  {
-    "id": 34925,
-    "name": "Adorned Supernal Legwraps",
-    "slot": 6,
-    "sockets": 2
-  },
-  {
     "id": 34937,
     "name": "Corrupted Soulcloth Pantaloons",
+    "slot": 6,
+    "sockets": 2
+  },
+  {
+    "id": 34918,
+    "name": "Legwraps of Sweltering Flame",
     "slot": 6,
     "sockets": 2
   },
@@ -1128,6 +1205,12 @@
     "id": 35013,
     "name": "Brutal Gladiator\u0027s Felweave Trousers",
     "slot": 6
+  },
+  {
+    "id": 34925,
+    "name": "Adorned Supernal Legwraps",
+    "slot": 6,
+    "sockets": 2
   },
   {
     "id": 35055,
@@ -1155,13 +1238,13 @@
     "slot": 6
   },
   {
-    "id": 35340,
-    "name": "Satin Leggings",
+    "id": 35334,
+    "name": "Mooncloth Legguards",
     "slot": 6
   },
   {
-    "id": 35334,
-    "name": "Mooncloth Legguards",
+    "id": 35340,
+    "name": "Satin Leggings",
     "slot": 6
   }
 ]

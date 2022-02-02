@@ -17,27 +17,32 @@
   {
     "id": 10128,
     "name": "Revenant Chestplate",
-    "slot": 4
+    "slot": 4,
+    "randomEnchantment": true
   },
   {
     "id": 10164,
     "name": "Templar Chestplate",
-    "slot": 4
+    "slot": 4,
+    "randomEnchantment": true
   },
   {
     "id": 10203,
     "name": "Overlord\u0027s Chestplate",
-    "slot": 4
+    "slot": 4,
+    "randomEnchantment": true
   },
   {
     "id": 10240,
     "name": "Heavy Lamellar Chestpiece",
-    "slot": 4
+    "slot": 4,
+    "randomEnchantment": true
   },
   {
     "id": 10275,
     "name": "Emerald Breastplate",
-    "slot": 4
+    "slot": 4,
+    "randomEnchantment": true
   },
   {
     "id": 10368,
@@ -47,12 +52,14 @@
   {
     "id": 10378,
     "name": "Commander\u0027s Armor",
-    "slot": 4
+    "slot": 4,
+    "randomEnchantment": true
   },
   {
     "id": 10384,
     "name": "Hyperion Armor",
-    "slot": 4
+    "slot": 4,
+    "randomEnchantment": true
   },
   {
     "id": 10845,
@@ -67,7 +74,10 @@
   {
     "id": 11604,
     "name": "Dark Iron Plate",
-    "slot": 4
+    "slot": 4,
+    "resistances": {
+      "Fire": 19
+    }
   },
   {
     "id": 11633,
@@ -90,13 +100,17 @@
     "slot": 4
   },
   {
-    "id": 12618,
-    "name": "Enchanted Thorium Breastplate",
-    "slot": 4
-  },
-  {
     "id": 12613,
     "name": "Runic Breastplate",
+    "slot": 4,
+    "resistances": {
+      "Fire": 15,
+      "Nature": 15
+    }
+  },
+  {
+    "id": 12618,
+    "name": "Enchanted Thorium Breastplate",
     "slot": 4
   },
   {
@@ -107,12 +121,18 @@
   {
     "id": 12895,
     "name": "Breastplate of the Chromatic Flight",
-    "slot": 4
+    "slot": 4,
+    "resistances": {
+      "Fire": 15
+    }
   },
   {
     "id": 13067,
     "name": "Hydralick Armor",
-    "slot": 4
+    "slot": 4,
+    "resistances": {
+      "Fire": 10
+    }
   },
   {
     "id": 13168,
@@ -122,21 +142,14 @@
   {
     "id": 13394,
     "name": "Skul\u0027s Cold Embrace",
-    "slot": 4
+    "slot": 4,
+    "resistances": {
+      "Frost": 10
+    }
   },
   {
     "id": 14624,
     "name": "Deathbone Chestplate",
-    "slot": 4
-  },
-  {
-    "id": 14854,
-    "name": "Vanguard Breastplate",
-    "slot": 4
-  },
-  {
-    "id": 14844,
-    "name": "Sunscale Chestguard",
     "slot": 4
   },
   {
@@ -145,39 +158,56 @@
     "slot": 4
   },
   {
+    "id": 14844,
+    "name": "Sunscale Chestguard",
+    "slot": 4
+  },
+  {
+    "id": 14854,
+    "name": "Vanguard Breastplate",
+    "slot": 4
+  },
+  {
     "id": 14915,
     "name": "Jade Breastplate",
-    "slot": 4
+    "slot": 4,
+    "randomEnchantment": true
   },
   {
     "id": 14924,
     "name": "Lofty Breastplate",
-    "slot": 4
+    "slot": 4,
+    "randomEnchantment": true
   },
   {
     "id": 14931,
     "name": "Heroic Armor",
-    "slot": 4
+    "slot": 4,
+    "randomEnchantment": true
   },
   {
     "id": 14948,
     "name": "Bloodforged Chestpiece",
-    "slot": 4
-  },
-  {
-    "id": 14958,
-    "name": "High Chief\u0027s Armor",
-    "slot": 4
+    "slot": 4,
+    "randomEnchantment": true
   },
   {
     "id": 14975,
     "name": "Exalted Harness",
-    "slot": 4
+    "slot": 4,
+    "randomEnchantment": true
+  },
+  {
+    "id": 14958,
+    "name": "High Chief\u0027s Armor",
+    "slot": 4,
+    "randomEnchantment": true
   },
   {
     "id": 14966,
     "name": "Glorious Breastplate",
-    "slot": 4
+    "slot": 4,
+    "randomEnchantment": true
   },
   {
     "id": 15413,
@@ -195,13 +225,13 @@
     "slot": 4
   },
   {
-    "id": 16477,
-    "name": "Field Marshal\u0027s Plate Armor",
+    "id": 16473,
+    "name": "Field Marshal\u0027s Lamellar Chestplate",
     "slot": 4
   },
   {
-    "id": 16473,
-    "name": "Field Marshal\u0027s Lamellar Chestplate",
+    "id": 16477,
+    "name": "Field Marshal\u0027s Plate Armor",
     "slot": 4
   },
   {
@@ -215,34 +245,48 @@
     "slot": 4
   },
   {
-    "id": 16730,
-    "name": "Breastplate of Valor",
-    "slot": 4
-  },
-  {
     "id": 16726,
     "name": "Lightforge Breastplate",
     "slot": 4
   },
   {
+    "id": 16730,
+    "name": "Breastplate of Valor",
+    "slot": 4
+  },
+  {
     "id": 16853,
     "name": "Lawbringer Chestguard",
-    "slot": 4
+    "slot": 4,
+    "resistances": {
+      "Fire": 10
+    }
   },
   {
     "id": 16865,
     "name": "Breastplate of Might",
-    "slot": 4
+    "slot": 4,
+    "resistances": {
+      "Fire": 10
+    }
   },
   {
     "id": 16958,
     "name": "Judgement Breastplate",
-    "slot": 4
+    "slot": 4,
+    "resistances": {
+      "Fire": 10,
+      "Nature": 10
+    }
   },
   {
     "id": 16966,
     "name": "Breastplate of Wrath",
-    "slot": 4
+    "slot": 4,
+    "resistances": {
+      "Fire": 10,
+      "Nature": 10
+    }
   },
   {
     "id": 18312,
@@ -272,16 +316,19 @@
   {
     "id": 20550,
     "name": "Darkrune Breastplate",
+    "slot": 4,
+    "resistances": {
+      "Shadow": 25
+    }
+  },
+  {
+    "id": 21331,
+    "name": "Conqueror\u0027s Breastplate",
     "slot": 4
   },
   {
     "id": 21322,
     "name": "Ursa\u0027s Embrace",
-    "slot": 4
-  },
-  {
-    "id": 21331,
-    "name": "Conqueror\u0027s Breastplate",
     "slot": 4
   },
   {
@@ -292,7 +339,10 @@
   {
     "id": 21652,
     "name": "Silithid Carapace Chestguard",
-    "slot": 4
+    "slot": 4,
+    "resistances": {
+      "Nature": 35
+    }
   },
   {
     "id": 21814,
@@ -327,12 +377,18 @@
   {
     "id": 22669,
     "name": "Icebane Breastplate",
-    "slot": 4
+    "slot": 4,
+    "resistances": {
+      "Frost": 42
+    }
   },
   {
     "id": 22762,
     "name": "Ironvine Breastplate",
-    "slot": 4
+    "slot": 4,
+    "resistances": {
+      "Nature": 30
+    }
   },
   {
     "id": 22872,
@@ -363,12 +419,11 @@
     "id": 23363,
     "name": "Titanic Breastplate",
     "slot": 4,
-    "sockets": 3
-  },
-  {
-    "id": 23489,
-    "name": "Fel Iron Breastplate",
-    "slot": 4
+    "sockets": 3,
+    "resistances": {
+      "Arcane": 10,
+      "Nature": 10
+    }
   },
   {
     "id": 23507,
@@ -377,20 +432,31 @@
     "sockets": 3
   },
   {
-    "id": 23509,
-    "name": "Enchanted Adamantite Breastplate",
-    "slot": 4,
-    "sockets": 3
-  },
-  {
     "id": 23513,
     "name": "Flamebane Breastplate",
     "slot": 4,
-    "sockets": 3
+    "sockets": 3,
+    "resistances": {
+      "Fire": 40
+    }
+  },
+  {
+    "id": 23509,
+    "name": "Enchanted Adamantite Breastplate",
+    "slot": 4,
+    "sockets": 3,
+    "resistances": {
+      "Arcane": 40
+    }
   },
   {
     "id": 23522,
     "name": "Ragesteel Breastplate",
+    "slot": 4
+  },
+  {
+    "id": 23489,
+    "name": "Fel Iron Breastplate",
     "slot": 4
   },
   {
@@ -412,74 +478,88 @@
     "sockets": 3
   },
   {
-    "id": 24920,
-    "name": "Grimscale Armor",
-    "slot": 4
-  },
-  {
     "id": 24928,
     "name": "Ango\u0027rosh Breastplate",
-    "slot": 4
+    "slot": 4,
+    "randomEnchantment": true
   },
   {
     "id": 24936,
     "name": "Darkcrest Breastplate",
-    "slot": 4
-  },
-  {
-    "id": 24952,
-    "name": "Bogslayer Breastplate",
-    "slot": 4
+    "slot": 4,
+    "randomEnchantment": true
   },
   {
     "id": 24944,
     "name": "Bloodscale Breastplate",
-    "slot": 4
+    "slot": 4,
+    "randomEnchantment": true
   },
   {
-    "id": 24968,
-    "name": "Talonguard Armor",
-    "slot": 4
+    "id": 24920,
+    "name": "Grimscale Armor",
+    "slot": 4,
+    "randomEnchantment": true
   },
   {
-    "id": 24976,
-    "name": "Reaver Armor",
-    "slot": 4
-  },
-  {
-    "id": 24984,
-    "name": "Boulderfist Armor",
-    "slot": 4
-  },
-  {
-    "id": 25000,
-    "name": "Bloodfist Breastplate",
-    "slot": 4
-  },
-  {
-    "id": 25008,
-    "name": "Conqueror\u0027s Breastplate",
-    "slot": 4
+    "id": 24952,
+    "name": "Bogslayer Breastplate",
+    "slot": 4,
+    "randomEnchantment": true
   },
   {
     "id": 24960,
     "name": "Khan\u0027aish Breastplate",
-    "slot": 4
+    "slot": 4,
+    "randomEnchantment": true
+  },
+  {
+    "id": 24968,
+    "name": "Talonguard Armor",
+    "slot": 4,
+    "randomEnchantment": true
+  },
+  {
+    "id": 24976,
+    "name": "Reaver Armor",
+    "slot": 4,
+    "randomEnchantment": true
+  },
+  {
+    "id": 24984,
+    "name": "Boulderfist Armor",
+    "slot": 4,
+    "randomEnchantment": true
+  },
+  {
+    "id": 25000,
+    "name": "Bloodfist Breastplate",
+    "slot": 4,
+    "randomEnchantment": true
   },
   {
     "id": 24992,
     "name": "Warmaul Breastplate",
-    "slot": 4
+    "slot": 4,
+    "randomEnchantment": true
+  },
+  {
+    "id": 25008,
+    "name": "Conqueror\u0027s Breastplate",
+    "slot": 4,
+    "randomEnchantment": true
   },
   {
     "id": 25016,
     "name": "Shattered Hand Breastplate",
-    "slot": 4
+    "slot": 4,
+    "randomEnchantment": true
   },
   {
     "id": 25024,
     "name": "Warlord\u0027s Iron-Breastplate",
-    "slot": 4
+    "slot": 4,
+    "randomEnchantment": true
   },
   {
     "id": 25392,
@@ -497,13 +577,13 @@
     "slot": 4
   },
   {
-    "id": 25573,
-    "name": "QR 9863 Warrior Chest",
+    "id": 25569,
+    "name": "Murkblood Avenger\u0027s Chestplate",
     "slot": 4
   },
   {
-    "id": 25569,
-    "name": "Murkblood Avenger\u0027s Chestplate",
+    "id": 25573,
+    "name": "QR 9863 Warrior Chest",
     "slot": 4
   },
   {
@@ -539,6 +619,11 @@
     "slot": 4
   },
   {
+    "id": 27906,
+    "name": "Crimsonforge Breastplate",
+    "slot": 4
+  },
+  {
     "id": 27879,
     "name": "Gladiator\u0027s Scaled Chestpiece",
     "slot": 4,
@@ -547,11 +632,6 @@
   {
     "id": 27897,
     "name": "Breastplate of Many Graces",
-    "slot": 4
-  },
-  {
-    "id": 27906,
-    "name": "Crimsonforge Breastplate",
     "slot": 4
   },
   {
@@ -565,14 +645,14 @@
     "slot": 4
   },
   {
-    "id": 28205,
-    "name": "Breastplate of the Bold",
+    "id": 28203,
+    "name": "Breastplate of the Righteous",
     "slot": 4,
     "sockets": 3
   },
   {
-    "id": 28203,
-    "name": "Breastplate of the Righteous",
+    "id": 28205,
+    "name": "Breastplate of the Bold",
     "slot": 4,
     "sockets": 3
   },
@@ -594,6 +674,12 @@
     "sockets": 3
   },
   {
+    "id": 28485,
+    "name": "Bulwark of the Ancient Kings",
+    "slot": 4,
+    "sockets": 3
+  },
+  {
     "id": 28483,
     "name": "Breastplate of Kings",
     "slot": 4,
@@ -606,21 +692,10 @@
     "sockets": 3
   },
   {
-    "id": 28485,
-    "name": "Bulwark of the Ancient Kings",
-    "slot": 4,
-    "sockets": 3
-  },
-  {
     "id": 28597,
     "name": "Panzar\u0027Thar Breastplate",
     "slot": 4,
     "sockets": 3
-  },
-  {
-    "id": 28662,
-    "name": "Breastplate of the Lightbinder",
-    "slot": 4
   },
   {
     "id": 28679,
@@ -635,20 +710,25 @@
     "sockets": 3
   },
   {
+    "id": 28662,
+    "name": "Breastplate of the Lightbinder",
+    "slot": 4
+  },
+  {
     "id": 28709,
     "name": "Grand Marshal\u0027s Scaled Chestpiece",
     "slot": 4,
     "sockets": 3
   },
   {
-    "id": 28831,
-    "name": "High Warlord\u0027s Lamellar Chestpiece",
+    "id": 28851,
+    "name": "High Warlord\u0027s Plate Chestpiece",
     "slot": 4,
     "sockets": 3
   },
   {
-    "id": 28851,
-    "name": "High Warlord\u0027s Plate Chestpiece",
+    "id": 28831,
+    "name": "High Warlord\u0027s Lamellar Chestpiece",
     "slot": 4,
     "sockets": 3
   },
@@ -671,6 +751,12 @@
     "sockets": 3
   },
   {
+    "id": 29071,
+    "name": "Justicar Breastplate",
+    "slot": 4,
+    "sockets": 3
+  },
+  {
     "id": 29066,
     "name": "Justicar Chestguard",
     "slot": 4,
@@ -679,12 +765,6 @@
   {
     "id": 29062,
     "name": "Justicar Chestpiece",
-    "slot": 4,
-    "sockets": 3
-  },
-  {
-    "id": 29071,
-    "name": "Justicar Breastplate",
     "slot": 4,
     "sockets": 3
   },
@@ -715,13 +795,13 @@
     "slot": 4
   },
   {
-    "id": 29935,
-    "name": "Fire Scarred Breastplate",
+    "id": 29944,
+    "name": "Protectorate Breastplate",
     "slot": 4
   },
   {
-    "id": 29944,
-    "name": "Protectorate Breastplate",
+    "id": 29935,
+    "name": "Fire Scarred Breastplate",
     "slot": 4
   },
   {
@@ -736,25 +816,13 @@
     "sockets": 3
   },
   {
-    "id": 30113,
-    "name": "Destroyer Chestguard",
-    "slot": 4,
-    "sockets": 3
-  },
-  {
     "id": 30102,
     "name": "Krakken-Heart Breastplate",
     "slot": 4
   },
   {
-    "id": 30118,
-    "name": "Destroyer Breastplate",
-    "slot": 4,
-    "sockets": 3
-  },
-  {
-    "id": 30123,
-    "name": "Crystalforge Chestguard",
+    "id": 30129,
+    "name": "Crystalforge Breastplate",
     "slot": 4,
     "sockets": 3
   },
@@ -765,8 +833,20 @@
     "sockets": 3
   },
   {
-    "id": 30129,
-    "name": "Crystalforge Breastplate",
+    "id": 30123,
+    "name": "Crystalforge Chestguard",
+    "slot": 4,
+    "sockets": 3
+  },
+  {
+    "id": 30118,
+    "name": "Destroyer Breastplate",
+    "slot": 4,
+    "sockets": 3
+  },
+  {
+    "id": 30113,
+    "name": "Destroyer Chestguard",
     "slot": 4,
     "sockets": 3
   },
@@ -792,13 +872,16 @@
     "sockets": 3
   },
   {
-    "id": 30765,
-    "name": "Heavy Draenic Breastplate",
-    "slot": 4
-  },
-  {
     "id": 30769,
     "name": "Inferno Tempered Chestguard",
+    "slot": 4,
+    "resistances": {
+      "Fire": 60
+    }
+  },
+  {
+    "id": 30765,
+    "name": "Heavy Draenic Breastplate",
     "slot": 4
   },
   {
@@ -817,14 +900,20 @@
     "slot": 4
   },
   {
-    "id": 30975,
-    "name": "Onslaught Breastplate",
+    "id": 30991,
+    "name": "Lightbringer Chestguard",
     "slot": 4,
     "sockets": 3
   },
   {
-    "id": 30976,
-    "name": "Onslaught Chestguard",
+    "id": 30992,
+    "name": "Lightbringer Chestpiece",
+    "slot": 4,
+    "sockets": 3
+  },
+  {
+    "id": 30975,
+    "name": "Onslaught Breastplate",
     "slot": 4,
     "sockets": 3
   },
@@ -835,14 +924,8 @@
     "sockets": 3
   },
   {
-    "id": 30991,
-    "name": "Lightbringer Chestguard",
-    "slot": 4,
-    "sockets": 3
-  },
-  {
-    "id": 30992,
-    "name": "Lightbringer Chestpiece",
+    "id": 30976,
+    "name": "Onslaught Chestguard",
     "slot": 4,
     "sockets": 3
   },
@@ -859,12 +942,14 @@
   {
     "id": 31155,
     "name": "Drakescale Breastplate",
-    "slot": 4
+    "slot": 4,
+    "randomEnchantment": true
   },
   {
     "id": 31168,
     "name": "Demon-Forged Chestguard",
-    "slot": 4
+    "slot": 4,
+    "randomEnchantment": true
   },
   {
     "id": 31320,
@@ -874,21 +959,22 @@
   {
     "id": 31369,
     "name": "Iceguard Breastplate",
-    "slot": 4
+    "slot": 4,
+    "resistances": {
+      "Frost": 60
+    }
   },
   {
     "id": 31364,
     "name": "Wildguard Breastplate",
-    "slot": 4
+    "slot": 4,
+    "resistances": {
+      "Nature": 60
+    }
   },
   {
     "id": 31459,
     "name": "Soul Saver\u0027s Chest Plate",
-    "slot": 4
-  },
-  {
-    "id": 31548,
-    "name": "Blackened Chestplate",
     "slot": 4
   },
   {
@@ -897,9 +983,15 @@
     "slot": 4
   },
   {
+    "id": 31548,
+    "name": "Blackened Chestplate",
+    "slot": 4
+  },
+  {
     "id": 31578,
     "name": "Slatesteel Breastplate",
-    "slot": 4
+    "slot": 4,
+    "randomEnchantment": true
   },
   {
     "id": 31613,
@@ -914,15 +1006,15 @@
     "sockets": 3
   },
   {
+    "id": 31686,
+    "name": "Nether Protector\u0027s Chest",
+    "slot": 4
+  },
+  {
     "id": 31635,
     "name": "High Warlord\u0027s Ornamented Chestplate",
     "slot": 4,
     "sockets": 3
-  },
-  {
-    "id": 31686,
-    "name": "Nether Protector\u0027s Chest",
-    "slot": 4
   },
   {
     "id": 31720,
@@ -958,15 +1050,15 @@
     "slot": 4
   },
   {
+    "id": 33215,
+    "name": "Bloodstained Elven Battlevest",
+    "slot": 4
+  },
+  {
     "id": 33216,
     "name": "Chestguard of Hidden Purpose",
     "slot": 4,
     "sockets": 3
-  },
-  {
-    "id": 33215,
-    "name": "Bloodstained Elven Battlevest",
-    "slot": 4
   },
   {
     "id": 33473,
@@ -981,12 +1073,6 @@
     "sockets": 3
   },
   {
-    "id": 33695,
-    "name": "Vengeful Gladiator\u0027s Lamellar Chestpiece",
-    "slot": 4,
-    "sockets": 3
-  },
-  {
     "id": 33722,
     "name": "Vengeful Gladiator\u0027s Ornamented Chestguard",
     "slot": 4,
@@ -995,6 +1081,12 @@
   {
     "id": 33728,
     "name": "Vengeful Gladiator\u0027s Plate Chestpiece",
+    "slot": 4,
+    "sockets": 3
+  },
+  {
+    "id": 33695,
+    "name": "Vengeful Gladiator\u0027s Lamellar Chestpiece",
     "slot": 4,
     "sockets": 3
   },
@@ -1017,26 +1109,26 @@
     "sockets": 3
   },
   {
-    "id": 34379,
-    "name": "Sunblessed Breastplate",
-    "slot": 4,
-    "sockets": 3
-  },
-  {
-    "id": 34377,
-    "name": "Hard Khorium Battleplate",
-    "slot": 4,
-    "sockets": 3
-  },
-  {
     "id": 34394,
     "name": "Breastplate of Agony\u0027s Aversion",
     "slot": 4,
     "sockets": 3
   },
   {
+    "id": 34379,
+    "name": "Sunblessed Breastplate",
+    "slot": 4,
+    "sockets": 3
+  },
+  {
     "id": 34395,
     "name": "Noble Judicator\u0027s Chestguard",
+    "slot": 4,
+    "sockets": 3
+  },
+  {
+    "id": 34377,
+    "name": "Hard Khorium Battleplate",
     "slot": 4,
     "sockets": 3
   },
@@ -1065,32 +1157,20 @@
     "sockets": 1
   },
   {
-    "id": 34945,
-    "name": "Shattrath Protectorate\u0027s Breastplate",
-    "slot": 4,
-    "sockets": 1
-  },
-  {
     "id": 34939,
     "name": "Chestplate of Stoicism",
     "slot": 4,
     "sockets": 1
   },
   {
-    "id": 35027,
-    "name": "Brutal Gladiator\u0027s Lamellar Chestpiece",
+    "id": 34945,
+    "name": "Shattrath Protectorate\u0027s Breastplate",
     "slot": 4,
-    "sockets": 3
+    "sockets": 1
   },
   {
     "id": 35059,
     "name": "Brutal Gladiator\u0027s Ornamented Chestguard",
-    "slot": 4,
-    "sockets": 3
-  },
-  {
-    "id": 35066,
-    "name": "Brutal Gladiator\u0027s Plate Chestpiece",
     "slot": 4,
     "sockets": 3
   },
@@ -1101,8 +1181,20 @@
     "sockets": 3
   },
   {
-    "id": 35402,
-    "name": "Crusader\u0027s Ornamented Chestplate",
+    "id": 35066,
+    "name": "Brutal Gladiator\u0027s Plate Chestpiece",
+    "slot": 4,
+    "sockets": 3
+  },
+  {
+    "id": 35027,
+    "name": "Brutal Gladiator\u0027s Lamellar Chestpiece",
+    "slot": 4,
+    "sockets": 3
+  },
+  {
+    "id": 35412,
+    "name": "Crusader\u0027s Scaled Chestpiece",
     "slot": 4,
     "sockets": 3
   },
@@ -1113,8 +1205,8 @@
     "sockets": 3
   },
   {
-    "id": 35412,
-    "name": "Crusader\u0027s Scaled Chestpiece",
+    "id": 35402,
+    "name": "Crusader\u0027s Ornamented Chestplate",
     "slot": 4,
     "sockets": 3
   }

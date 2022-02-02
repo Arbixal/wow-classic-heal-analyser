@@ -12,27 +12,20 @@
   {
     "id": 10166,
     "name": "Templar Girdle",
-    "slot": 5
+    "slot": 5,
+    "randomEnchantment": true
   },
   {
     "id": 10243,
     "name": "Heavy Lamellar Girdle",
-    "slot": 5
+    "slot": 5,
+    "randomEnchantment": true
   },
   {
     "id": 10278,
     "name": "Emerald Girdle",
-    "slot": 5
-  },
-  {
-    "id": 10381,
-    "name": "Commander\u0027s Girdle",
-    "slot": 5
-  },
-  {
-    "id": 10387,
-    "name": "Hyperion Girdle",
-    "slot": 5
+    "slot": 5,
+    "randomEnchantment": true
   },
   {
     "id": 10370,
@@ -40,13 +33,26 @@
     "slot": 5
   },
   {
-    "id": 10798,
-    "name": "Atal\u0027alarion\u0027s Tusk Ring",
-    "slot": 5
+    "id": 10381,
+    "name": "Commander\u0027s Girdle",
+    "slot": 5,
+    "randomEnchantment": true
+  },
+  {
+    "id": 10387,
+    "name": "Hyperion Girdle",
+    "slot": 5,
+    "randomEnchantment": true
   },
   {
     "id": 10788,
     "name": "Atal\u0027ai Girdle",
+    "slot": 5,
+    "randomEnchantment": true
+  },
+  {
+    "id": 10798,
+    "name": "Atal\u0027alarion\u0027s Tusk Ring",
     "slot": 5
   },
   {
@@ -95,39 +101,44 @@
     "slot": 5
   },
   {
-    "id": 14864,
-    "name": "Warleader\u0027s Belt",
-    "slot": 5
-  },
-  {
     "id": 14856,
     "name": "Vanguard Girdle",
     "slot": 5
   },
   {
+    "id": 14864,
+    "name": "Warleader\u0027s Belt",
+    "slot": 5
+  },
+  {
     "id": 14927,
     "name": "Lofty Belt",
-    "slot": 5
+    "slot": 5,
+    "randomEnchantment": true
   },
   {
     "id": 14934,
     "name": "Heroic Girdle",
-    "slot": 5
+    "slot": 5,
+    "randomEnchantment": true
   },
   {
     "id": 14960,
     "name": "High Chief\u0027s Belt",
-    "slot": 5
+    "slot": 5,
+    "randomEnchantment": true
   },
   {
     "id": 14968,
     "name": "Glorious Belt",
-    "slot": 5
+    "slot": 5,
+    "randomEnchantment": true
   },
   {
     "id": 14977,
     "name": "Exalted Girdle",
-    "slot": 5
+    "slot": 5,
+    "randomEnchantment": true
   },
   {
     "id": 15709,
@@ -145,34 +156,50 @@
     "slot": 5
   },
   {
-    "id": 16858,
-    "name": "Lawbringer Belt",
-    "slot": 5
-  },
-  {
     "id": 16864,
     "name": "Belt of Might",
-    "slot": 5
+    "slot": 5,
+    "resistances": {
+      "Fire": 7
+    }
+  },
+  {
+    "id": 16858,
+    "name": "Lawbringer Belt",
+    "slot": 5,
+    "resistances": {
+      "Fire": 7
+    }
   },
   {
     "id": 16952,
     "name": "Judgement Belt",
-    "slot": 5
+    "slot": 5,
+    "resistances": {
+      "Shadow": 10
+    }
   },
   {
     "id": 16960,
     "name": "Waistband of Wrath",
-    "slot": 5
+    "slot": 5,
+    "resistances": {
+      "Shadow": 10
+    }
   },
   {
     "id": 18529,
     "name": "Elemental Plate Girdle",
-    "slot": 5
+    "slot": 5,
+    "randomEnchantment": true
   },
   {
     "id": 18547,
     "name": "Unmelting Ice Girdle",
-    "slot": 5
+    "slot": 5,
+    "resistances": {
+      "Frost": 16
+    }
   },
   {
     "id": 18702,
@@ -187,12 +214,18 @@
   {
     "id": 19087,
     "name": "Frostwolf Plate Belt",
-    "slot": 5
+    "slot": 5,
+    "resistances": {
+      "Frost": 5
+    }
   },
   {
     "id": 19091,
     "name": "Stormpike Plate Girdle",
-    "slot": 5
+    "slot": 5,
+    "resistances": {
+      "Frost": 5
+    }
   },
   {
     "id": 19137,
@@ -205,13 +238,13 @@
     "slot": 5
   },
   {
-    "id": 19826,
-    "name": "Zandalar Freethinker\u0027s Belt",
+    "id": 19823,
+    "name": "Zandalar Vindicator\u0027s Belt",
     "slot": 5
   },
   {
-    "id": 19823,
-    "name": "Zandalar Vindicator\u0027s Belt",
+    "id": 19826,
+    "name": "Zandalar Freethinker\u0027s Belt",
     "slot": 5
   },
   {
@@ -235,12 +268,17 @@
     "slot": 5
   },
   {
-    "id": 20179,
+    "id": 20177,
     "name": "Defiler\u0027s Lamellar Girdle",
     "slot": 5
   },
   {
-    "id": 20177,
+    "id": 20213,
+    "name": "Belt of Shrunken Heads",
+    "slot": 5
+  },
+  {
+    "id": 20179,
     "name": "Defiler\u0027s Lamellar Girdle",
     "slot": 5
   },
@@ -255,14 +293,10 @@
     "slot": 5
   },
   {
-    "id": 20213,
-    "name": "Belt of Shrunken Heads",
-    "slot": 5
-  },
-  {
     "id": 20673,
     "name": "Abyssal Plate Girdle",
-    "slot": 5
+    "slot": 5,
+    "randomEnchantment": true
   },
   {
     "id": 21503,
@@ -312,7 +346,10 @@
   {
     "id": 22764,
     "name": "Ironvine Belt",
-    "slot": 5
+    "slot": 5,
+    "resistances": {
+      "Nature": 15
+    }
   },
   {
     "id": 23219,
@@ -320,19 +357,22 @@
     "slot": 5
   },
   {
-    "id": 23484,
-    "name": "Fel Iron Plate Belt",
+    "id": 23524,
+    "name": "Khorium Belt",
     "slot": 5
   },
   {
     "id": 23510,
     "name": "Enchanted Adamantite Belt",
     "slot": 5,
-    "sockets": 2
+    "sockets": 2,
+    "resistances": {
+      "Arcane": 30
+    }
   },
   {
-    "id": 23524,
-    "name": "Khorium Belt",
+    "id": 23484,
+    "name": "Fel Iron Plate Belt",
     "slot": 5
   },
   {
@@ -353,83 +393,97 @@
     "sockets": 2
   },
   {
-    "id": 24934,
-    "name": "Darkcrest Belt",
-    "slot": 5
-  },
-  {
-    "id": 24918,
-    "name": "Grimscale Belt",
-    "slot": 5
-  },
-  {
     "id": 24926,
     "name": "Ango\u0027rosh Belt",
-    "slot": 5
+    "slot": 5,
+    "randomEnchantment": true
   },
   {
     "id": 24942,
     "name": "Bloodscale Belt",
-    "slot": 5
+    "slot": 5,
+    "randomEnchantment": true
+  },
+  {
+    "id": 24918,
+    "name": "Grimscale Belt",
+    "slot": 5,
+    "randomEnchantment": true
+  },
+  {
+    "id": 24934,
+    "name": "Darkcrest Belt",
+    "slot": 5,
+    "randomEnchantment": true
   },
   {
     "id": 24950,
     "name": "Bogslayer Belt",
-    "slot": 5
-  },
-  {
-    "id": 24966,
-    "name": "Talonguard Girdle",
-    "slot": 5
-  },
-  {
-    "id": 24982,
-    "name": "Boulderfist Belt",
-    "slot": 5
-  },
-  {
-    "id": 24990,
-    "name": "Warmaul Belt",
-    "slot": 5
+    "slot": 5,
+    "randomEnchantment": true
   },
   {
     "id": 24958,
     "name": "Khan\u0027aish Girdle",
-    "slot": 5
+    "slot": 5,
+    "randomEnchantment": true
   },
   {
-    "id": 24998,
-    "name": "Bloodfist Girdle",
-    "slot": 5
+    "id": 24966,
+    "name": "Talonguard Girdle",
+    "slot": 5,
+    "randomEnchantment": true
   },
   {
     "id": 24974,
     "name": "Reaver Girdle",
-    "slot": 5
+    "slot": 5,
+    "randomEnchantment": true
   },
   {
-    "id": 25014,
-    "name": "Shattered Hand Belt",
-    "slot": 5
+    "id": 24982,
+    "name": "Boulderfist Belt",
+    "slot": 5,
+    "randomEnchantment": true
   },
   {
-    "id": 25006,
-    "name": "Conqueror\u0027s Girdle",
-    "slot": 5
+    "id": 24990,
+    "name": "Warmaul Belt",
+    "slot": 5,
+    "randomEnchantment": true
+  },
+  {
+    "id": 24998,
+    "name": "Bloodfist Girdle",
+    "slot": 5,
+    "randomEnchantment": true
   },
   {
     "id": 25022,
     "name": "Warlord\u0027s Iron-Girdle",
+    "slot": 5,
+    "randomEnchantment": true
+  },
+  {
+    "id": 25006,
+    "name": "Conqueror\u0027s Girdle",
+    "slot": 5,
+    "randomEnchantment": true
+  },
+  {
+    "id": 25014,
+    "name": "Shattered Hand Belt",
+    "slot": 5,
+    "randomEnchantment": true
+  },
+  {
+    "id": 25389,
+    "name": "Deteriorating Plate Belt",
     "slot": 5
   },
   {
     "id": 25381,
     "name": "Tarnished Plate Belt",
-    "slot": 5
-  },
-  {
-    "id": 25389,
-    "name": "Deteriorating Plate Belt",
     "slot": 5
   },
   {
@@ -454,18 +508,13 @@
     "slot": 5
   },
   {
-    "id": 27548,
-    "name": "Girdle of Many Blessings",
-    "slot": 5
-  },
-  {
     "id": 27644,
     "name": "Avenger\u0027s Waistguard",
     "slot": 5
   },
   {
-    "id": 27639,
-    "name": "Slayer\u0027s Waistguard",
+    "id": 27548,
+    "name": "Girdle of Many Blessings",
     "slot": 5
   },
   {
@@ -473,6 +522,11 @@
     "name": "Girdle of the Immovable",
     "slot": 5,
     "sockets": 2
+  },
+  {
+    "id": 27639,
+    "name": "Slayer\u0027s Waistguard",
+    "slot": 5
   },
   {
     "id": 27755,
@@ -487,19 +541,20 @@
     "sockets": 2
   },
   {
-    "id": 28385,
-    "name": "General\u0027s Plate Belt",
-    "slot": 5
-  },
-  {
     "id": 28375,
     "name": "Rubium War-Girdle",
     "slot": 5
   },
   {
+    "id": 28385,
+    "name": "General\u0027s Plate Belt",
+    "slot": 5
+  },
+  {
     "id": 28498,
     "name": "Ravenguard\u0027s Baldric",
-    "slot": 5
+    "slot": 5,
+    "randomEnchantment": true
   },
   {
     "id": 28566,
@@ -508,13 +563,13 @@
     "sockets": 2
   },
   {
-    "id": 28644,
-    "name": "General\u0027s Scaled Belt",
+    "id": 28641,
+    "name": "General\u0027s Lamellar Belt",
     "slot": 5
   },
   {
-    "id": 28641,
-    "name": "General\u0027s Lamellar Belt",
+    "id": 28644,
+    "name": "General\u0027s Scaled Belt",
     "slot": 5
   },
   {
@@ -529,13 +584,13 @@
     "sockets": 2
   },
   {
-    "id": 28995,
-    "name": "Marshal\u0027s Plate Belt",
+    "id": 28983,
+    "name": "Marshal\u0027s Lamellar Belt",
     "slot": 5
   },
   {
-    "id": 28983,
-    "name": "Marshal\u0027s Lamellar Belt",
+    "id": 28995,
+    "name": "Marshal\u0027s Plate Belt",
     "slot": 5
   },
   {
@@ -544,13 +599,13 @@
     "slot": 5
   },
   {
-    "id": 29238,
-    "name": "Lion\u0027s Heart Girdle",
+    "id": 29253,
+    "name": "Girdle of Valorous Deeds",
     "slot": 5
   },
   {
-    "id": 29253,
-    "name": "Girdle of Valorous Deeds",
+    "id": 29238,
+    "name": "Lion\u0027s Heart Girdle",
     "slot": 5
   },
   {
@@ -604,7 +659,8 @@
   {
     "id": 30678,
     "name": "Lurker\u0027s Girdle",
-    "slot": 5
+    "slot": 5,
+    "randomEnchantment": true
   },
   {
     "id": 30777,
@@ -633,19 +689,21 @@
     "slot": 5
   },
   {
-    "id": 31195,
-    "name": "Voidplate Girdle",
-    "slot": 5
-  },
-  {
     "id": 31202,
     "name": "Girdle of Divine Blessing",
     "slot": 5
   },
   {
+    "id": 31195,
+    "name": "Voidplate Girdle",
+    "slot": 5,
+    "randomEnchantment": true
+  },
+  {
     "id": 31227,
     "name": "Feathered Girdle",
-    "slot": 5
+    "slot": 5,
+    "randomEnchantment": true
   },
   {
     "id": 31315,
@@ -658,13 +716,13 @@
     "slot": 5
   },
   {
-    "id": 31460,
-    "name": "Sha\u0027tari Vindicator\u0027s Waistguard",
+    "id": 31455,
+    "name": "Muscle Toning Belt",
     "slot": 5
   },
   {
-    "id": 31455,
-    "name": "Muscle Toning Belt",
+    "id": 31460,
+    "name": "Sha\u0027tari Vindicator\u0027s Waistguard",
     "slot": 5
   },
   {
@@ -675,7 +733,8 @@
   {
     "id": 31579,
     "name": "Slatesteel Girdle",
-    "slot": 5
+    "slot": 5,
+    "randomEnchantment": true
   },
   {
     "id": 31690,
@@ -702,7 +761,10 @@
   {
     "id": 32401,
     "name": "Shadesteel Girdle",
-    "slot": 5
+    "slot": 5,
+    "resistances": {
+      "Shadow": 54
+    }
   },
   {
     "id": 32512,
@@ -715,8 +777,8 @@
     "slot": 5
   },
   {
-    "id": 32806,
-    "name": "Veteran\u0027s Scaled Belt",
+    "id": 32805,
+    "name": "Veteran\u0027s Plate Belt",
     "slot": 5
   },
   {
@@ -725,8 +787,8 @@
     "slot": 5
   },
   {
-    "id": 32805,
-    "name": "Veteran\u0027s Plate Belt",
+    "id": 32806,
+    "name": "Veteran\u0027s Scaled Belt",
     "slot": 5
   },
   {
@@ -774,13 +836,13 @@
     "slot": 5
   },
   {
-    "id": 33888,
-    "name": "Vindicator\u0027s Lamellar Belt",
+    "id": 33903,
+    "name": "Vindicator\u0027s Ornamented Belt",
     "slot": 5
   },
   {
-    "id": 33903,
-    "name": "Vindicator\u0027s Ornamented Belt",
+    "id": 33888,
+    "name": "Vindicator\u0027s Lamellar Belt",
     "slot": 5
   },
   {
@@ -789,8 +851,20 @@
     "slot": 5
   },
   {
+    "id": 34546,
+    "name": "Onslaught Belt",
+    "slot": 5,
+    "sockets": 1
+  },
+  {
     "id": 34487,
     "name": "Lightbringer Belt",
+    "slot": 5,
+    "sockets": 1
+  },
+  {
+    "id": 34488,
+    "name": "Lightbringer Waistguard",
     "slot": 5,
     "sockets": 1
   },
@@ -807,24 +881,6 @@
     "sockets": 1
   },
   {
-    "id": 34546,
-    "name": "Onslaught Belt",
-    "slot": 5,
-    "sockets": 1
-  },
-  {
-    "id": 34488,
-    "name": "Lightbringer Waistguard",
-    "slot": 5,
-    "sockets": 1
-  },
-  {
-    "id": 34923,
-    "name": "Waistguard of Reparation",
-    "slot": 5,
-    "sockets": 1
-  },
-  {
     "id": 34944,
     "name": "Girdle of Seething Rage",
     "slot": 5,
@@ -837,14 +893,10 @@
     "sockets": 1
   },
   {
-    "id": 35161,
-    "name": "Guardian\u0027s Plate Belt",
-    "slot": 5
-  },
-  {
-    "id": 35160,
-    "name": "Guardian\u0027s Ornamented Belt",
-    "slot": 5
+    "id": 34923,
+    "name": "Waistguard of Reparation",
+    "slot": 5,
+    "sockets": 1
   },
   {
     "id": 35155,
@@ -854,6 +906,16 @@
   {
     "id": 35163,
     "name": "Guardian\u0027s Scaled Belt",
+    "slot": 5
+  },
+  {
+    "id": 35160,
+    "name": "Guardian\u0027s Ornamented Belt",
+    "slot": 5
+  },
+  {
+    "id": 35161,
+    "name": "Guardian\u0027s Plate Belt",
     "slot": 5
   }
 ]

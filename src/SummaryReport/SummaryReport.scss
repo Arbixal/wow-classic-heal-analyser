@@ -520,7 +520,7 @@ div.nav_bar {
 }
 
 tr.loading {
-    td:after {
+    td:not(.name):after {
     overflow: hidden;
     display: inline-block;
     vertical-align: bottom;
@@ -606,6 +606,26 @@ th.enchants.average {
 
 th.enchants.missing {
     color: #FF0000;
+}
+
+th.arcane {
+    color: $arcane;
+}
+
+th.fire {
+    color: $fire;
+}
+
+th.frost {
+    color: $frost;
+}
+
+th.nature {
+    color: $nature;
+}
+
+th.shadow {
+    color: $shadow;
 }
 
 .icon_count {

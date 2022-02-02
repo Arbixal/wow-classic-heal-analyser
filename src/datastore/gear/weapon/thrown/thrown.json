@@ -1,5 +1,11 @@
 [
   {
+    "id": 25877,
+    "name": "Master\u0027s Throwing Dagger",
+    "slot": 16,
+    "notEnchantable": true
+  },
+  {
     "id": 25871,
     "name": "Standard Thrown Weapon",
     "slot": 16,
@@ -12,14 +18,14 @@
     "notEnchantable": true
   },
   {
-    "id": 25877,
-    "name": "Master\u0027s Throwing Dagger",
+    "id": 27631,
+    "name": "Needle Shrike",
     "slot": 16,
     "notEnchantable": true
   },
   {
-    "id": 27631,
-    "name": "Needle Shrike",
+    "id": 27928,
+    "name": "Terminal Edge",
     "slot": 16,
     "notEnchantable": true
   },
@@ -31,12 +37,6 @@
   },
   {
     "id": 27929,
-    "name": "Terminal Edge",
-    "slot": 16,
-    "notEnchantable": true
-  },
-  {
-    "id": 27928,
     "name": "Terminal Edge",
     "slot": 16,
     "notEnchantable": true
@@ -54,87 +54,101 @@
     "notEnchantable": true
   },
   {
-    "id": 28531,
-    "name": "Barbed Shrike",
-    "slot": 16,
-    "notEnchantable": true
-  },
-  {
-    "id": 28534,
-    "name": "Fel Tipped Dart",
-    "slot": 16,
-    "notEnchantable": true
-  },
-  {
-    "id": 28533,
-    "name": "Wooden Boomerang",
-    "slot": 16,
-    "notEnchantable": true
-  },
-  {
     "id": 28532,
     "name": "Silver Throwing Knifes",
     "slot": 16,
+    "randomEnchantment": true,
     "notEnchantable": true
   },
   {
-    "id": 28535,
-    "name": "Amani Throwing Axe",
+    "id": 28531,
+    "name": "Barbed Shrike",
     "slot": 16,
-    "notEnchantable": true
-  },
-  {
-    "id": 28536,
-    "name": "Jagged Guillotine",
-    "slot": 16,
-    "notEnchantable": true
-  },
-  {
-    "id": 28539,
-    "name": "Razor-Edged Boomerang",
-    "slot": 16,
-    "notEnchantable": true
-  },
-  {
-    "id": 28540,
-    "name": "Arakkoa Talon-Axe",
-    "slot": 16,
-    "notEnchantable": true
-  },
-  {
-    "id": 28538,
-    "name": "Forked Shuriken",
-    "slot": 16,
+    "randomEnchantment": true,
     "notEnchantable": true
   },
   {
     "id": 28541,
     "name": "Sawshrike",
     "slot": 16,
+    "randomEnchantment": true,
     "notEnchantable": true
   },
   {
-    "id": 28542,
-    "name": "Heartseeker Knives",
+    "id": 28538,
+    "name": "Forked Shuriken",
     "slot": 16,
+    "randomEnchantment": true,
+    "notEnchantable": true
+  },
+  {
+    "id": 28534,
+    "name": "Fel Tipped Dart",
+    "slot": 16,
+    "randomEnchantment": true,
+    "notEnchantable": true
+  },
+  {
+    "id": 28539,
+    "name": "Razor-Edged Boomerang",
+    "slot": 16,
+    "randomEnchantment": true,
+    "notEnchantable": true
+  },
+  {
+    "id": 28533,
+    "name": "Wooden Boomerang",
+    "slot": 16,
+    "randomEnchantment": true,
+    "notEnchantable": true
+  },
+  {
+    "id": 28535,
+    "name": "Amani Throwing Axe",
+    "slot": 16,
+    "randomEnchantment": true,
     "notEnchantable": true
   },
   {
     "id": 28537,
     "name": "Wildhammer Throwing Axe",
     "slot": 16,
+    "randomEnchantment": true,
+    "notEnchantable": true
+  },
+  {
+    "id": 28536,
+    "name": "Jagged Guillotine",
+    "slot": 16,
+    "randomEnchantment": true,
+    "notEnchantable": true
+  },
+  {
+    "id": 28540,
+    "name": "Arakkoa Talon-Axe",
+    "slot": 16,
+    "randomEnchantment": true,
     "notEnchantable": true
   },
   {
     "id": 28543,
     "name": "Dreghood Throwing Axe",
     "slot": 16,
+    "randomEnchantment": true,
+    "notEnchantable": true
+  },
+  {
+    "id": 28542,
+    "name": "Heartseeker Knives",
+    "slot": 16,
+    "randomEnchantment": true,
     "notEnchantable": true
   },
   {
     "id": 28544,
     "name": "Assassin\u0027s Shuriken",
     "slot": 16,
+    "randomEnchantment": true,
     "notEnchantable": true
   },
   {
@@ -156,14 +170,20 @@
     "notEnchantable": true
   },
   {
+    "id": 29013,
+    "name": "Jagged Throwing Axe",
+    "slot": 16,
+    "notEnchantable": true
+  },
+  {
     "id": 29014,
     "name": "Blacksteel Throwing Dagger",
     "slot": 16,
     "notEnchantable": true
   },
   {
-    "id": 29013,
-    "name": "Jagged Throwing Axe",
+    "id": 29204,
+    "name": "Felsteel Whisper Knives",
     "slot": 16,
     "notEnchantable": true
   },
@@ -176,12 +196,6 @@
   {
     "id": 29212,
     "name": "Balanced Stone Dirk",
-    "slot": 16,
-    "notEnchantable": true
-  },
-  {
-    "id": 29204,
-    "name": "Felsteel Whisper Knives",
     "slot": 16,
     "notEnchantable": true
   },
@@ -259,14 +273,14 @@
     "notEnchantable": true
   },
   {
-    "id": 34622,
-    "name": "Spinesever",
+    "id": 34783,
+    "name": "Nightstrike",
     "slot": 16,
     "notEnchantable": true
   },
   {
-    "id": 34783,
-    "name": "Nightstrike",
+    "id": 34622,
+    "name": "Spinesever",
     "slot": 16,
     "notEnchantable": true
   },

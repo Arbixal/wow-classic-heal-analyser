@@ -60,13 +60,13 @@
     "slot": 15
   },
   {
-    "id": 21410,
-    "name": "Gavel of Infinite Wisdom",
+    "id": 21407,
+    "name": "Mace of Unending Life",
     "slot": 15
   },
   {
-    "id": 21407,
-    "name": "Mace of Unending Life",
+    "id": 21410,
+    "name": "Gavel of Infinite Wisdom",
     "slot": 15
   },
   {
@@ -85,13 +85,13 @@
     "slot": 15
   },
   {
-    "id": 22380,
-    "name": "Simone\u0027s Cultivating Hammer",
+    "id": 22384,
+    "name": "Persuader",
     "slot": 15
   },
   {
-    "id": 22384,
-    "name": "Persuader",
+    "id": 22380,
+    "name": "Simone\u0027s Cultivating Hammer",
     "slot": 15
   },
   {
@@ -113,12 +113,6 @@
     "id": 23056,
     "name": "Hammer of the Twisting Nether",
     "slot": 15
-  },
-  {
-    "id": 23362,
-    "name": "Hammer of the Sun",
-    "slot": 15,
-    "sockets": 3
   },
   {
     "id": 23454,
@@ -151,74 +145,88 @@
     "slot": 15
   },
   {
-    "id": 25311,
-    "name": "Revitalizing Hammer",
-    "slot": 15
-  },
-  {
-    "id": 25314,
-    "name": "Ceremonial Hammer",
-    "slot": 15
-  },
-  {
     "id": 25310,
     "name": "Naaru Lightmace",
-    "slot": 15
-  },
-  {
-    "id": 25315,
-    "name": "Restorative Mace",
-    "slot": 15
-  },
-  {
-    "id": 25312,
-    "name": "Glorious Scepter",
-    "slot": 15
-  },
-  {
-    "id": 25313,
-    "name": "Cold-Iron Scepter",
-    "slot": 15
-  },
-  {
-    "id": 25317,
-    "name": "Lesser Sledgemace",
-    "slot": 15
-  },
-  {
-    "id": 25322,
-    "name": "Lordly Scepter",
-    "slot": 15
-  },
-  {
-    "id": 25318,
-    "name": "Ancestral Hammer",
-    "slot": 15
-  },
-  {
-    "id": 25316,
-    "name": "Spirit-Clad Mace",
-    "slot": 15
-  },
-  {
-    "id": 25320,
-    "name": "Queen\u0027s Insignia",
-    "slot": 15
-  },
-  {
-    "id": 25319,
-    "name": "Tranquility Mace",
-    "slot": 15
-  },
-  {
-    "id": 25321,
-    "name": "Divine Hammer",
-    "slot": 15
+    "slot": 15,
+    "randomEnchantment": true
   },
   {
     "id": 25323,
     "name": "Ascendant\u0027s Scepter",
-    "slot": 15
+    "slot": 15,
+    "randomEnchantment": true
+  },
+  {
+    "id": 25312,
+    "name": "Glorious Scepter",
+    "slot": 15,
+    "randomEnchantment": true
+  },
+  {
+    "id": 25313,
+    "name": "Cold-Iron Scepter",
+    "slot": 15,
+    "randomEnchantment": true
+  },
+  {
+    "id": 25320,
+    "name": "Queen\u0027s Insignia",
+    "slot": 15,
+    "randomEnchantment": true
+  },
+  {
+    "id": 25316,
+    "name": "Spirit-Clad Mace",
+    "slot": 15,
+    "randomEnchantment": true
+  },
+  {
+    "id": 25314,
+    "name": "Ceremonial Hammer",
+    "slot": 15,
+    "randomEnchantment": true
+  },
+  {
+    "id": 25315,
+    "name": "Restorative Mace",
+    "slot": 15,
+    "randomEnchantment": true
+  },
+  {
+    "id": 25321,
+    "name": "Divine Hammer",
+    "slot": 15,
+    "randomEnchantment": true
+  },
+  {
+    "id": 25322,
+    "name": "Lordly Scepter",
+    "slot": 15,
+    "randomEnchantment": true
+  },
+  {
+    "id": 25311,
+    "name": "Revitalizing Hammer",
+    "slot": 15,
+    "randomEnchantment": true
+  },
+  {
+    "id": 25319,
+    "name": "Tranquility Mace",
+    "slot": 15,
+    "randomEnchantment": true
+  },
+  {
+    "id": 25318,
+    "name": "Ancestral Hammer",
+    "slot": 15,
+    "randomEnchantment": true
+  },
+  {
+    "id": 25317,
+    "name": "Lesser Sledgemace",
+    "slot": 15,
+    "randomEnchantment": true
   },
   {
     "id": 25401,
@@ -286,13 +294,13 @@
     "slot": 15
   },
   {
-    "id": 28439,
-    "name": "Dragonstrike",
+    "id": 28437,
+    "name": "Drakefist Hammer",
     "slot": 15
   },
   {
-    "id": 28437,
-    "name": "Drakefist Hammer",
+    "id": 28439,
+    "name": "Dragonstrike",
     "slot": 15
   },
   {
@@ -327,13 +335,13 @@
     "slot": 15
   },
   {
-    "id": 30073,
-    "name": "Light Emberforged Hammer",
+    "id": 30089,
+    "name": "Lavaforged Warhammer",
     "slot": 15
   },
   {
-    "id": 30089,
-    "name": "Lavaforged Warhammer",
+    "id": 30073,
+    "name": "Light Emberforged Hammer",
     "slot": 15
   },
   {
@@ -384,16 +392,17 @@
   {
     "id": 32537,
     "name": "Terokk\u0027s Gavel",
+    "slot": 15,
+    "randomEnchantment": true
+  },
+  {
+    "id": 32963,
+    "name": "Merciless Gladiator\u0027s Gavel",
     "slot": 15
   },
   {
     "id": 32964,
     "name": "Merciless Gladiator\u0027s Salvation",
-    "slot": 15
-  },
-  {
-    "id": 32963,
-    "name": "Merciless Gladiator\u0027s Gavel",
     "slot": 15
   },
   {
@@ -450,15 +459,15 @@
     "slot": 15
   },
   {
-    "id": 34671,
-    "name": "K\u0027iru\u0027s Presage",
-    "slot": 15
-  },
-  {
     "id": 34790,
     "name": "Battle-mace of the High Priestess",
     "slot": 15,
     "sockets": 1
+  },
+  {
+    "id": 34671,
+    "name": "K\u0027iru\u0027s Presage",
+    "slot": 15
   },
   {
     "id": 34896,

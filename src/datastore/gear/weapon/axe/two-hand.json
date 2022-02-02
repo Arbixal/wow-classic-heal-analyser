@@ -40,13 +40,13 @@
     "slot": 15
   },
   {
-    "id": 12784,
-    "name": "Arcanite Reaper",
+    "id": 12769,
+    "name": "Bleakwood Hew",
     "slot": 15
   },
   {
-    "id": 12769,
-    "name": "Bleakwood Hew",
+    "id": 12784,
+    "name": "Arcanite Reaper",
     "slot": 15
   },
   {
@@ -70,19 +70,22 @@
     "slot": 15
   },
   {
-    "id": 15271,
-    "name": "Colossal Great Axe",
-    "slot": 15
-  },
-  {
     "id": 15272,
     "name": "Razor Axe",
-    "slot": 15
+    "slot": 15,
+    "randomEnchantment": true
+  },
+  {
+    "id": 15271,
+    "name": "Colossal Great Axe",
+    "slot": 15,
+    "randomEnchantment": true
   },
   {
     "id": 15273,
     "name": "Death Striker",
-    "slot": 15
+    "slot": 15,
+    "randomEnchantment": true
   },
   {
     "id": 17104,
@@ -145,16 +148,6 @@
     "slot": 15
   },
   {
-    "id": 20784,
-    "name": "63 green shaman weapon",
-    "slot": 15
-  },
-  {
-    "id": 20796,
-    "name": "90 green shaman weapon",
-    "slot": 15
-  },
-  {
     "id": 21134,
     "name": "Dark Edge of Insanity",
     "slot": 15
@@ -185,74 +178,88 @@
     "slot": 15
   },
   {
-    "id": 25213,
-    "name": "Fel-Touched Axe",
-    "slot": 15
-  },
-  {
-    "id": 25214,
-    "name": "Mok\u0027Nathal Battleaxe",
-    "slot": 15
-  },
-  {
-    "id": 25215,
-    "name": "Spiked Battle Axe",
-    "slot": 15
-  },
-  {
     "id": 25212,
     "name": "Lucky Strike Axe",
-    "slot": 15
+    "slot": 15,
+    "randomEnchantment": true
   },
   {
     "id": 25218,
     "name": "Silver-Edged Axe",
-    "slot": 15
+    "slot": 15,
+    "randomEnchantment": true
+  },
+  {
+    "id": 25215,
+    "name": "Spiked Battle Axe",
+    "slot": 15,
+    "randomEnchantment": true
   },
   {
     "id": 25217,
     "name": "Sundering Axe",
-    "slot": 15
+    "slot": 15,
+    "randomEnchantment": true
+  },
+  {
+    "id": 25214,
+    "name": "Mok\u0027Nathal Battleaxe",
+    "slot": 15,
+    "randomEnchantment": true
+  },
+  {
+    "id": 25213,
+    "name": "Fel-Touched Axe",
+    "slot": 15,
+    "randomEnchantment": true
   },
   {
     "id": 25225,
     "name": "Deepforge Broadaxe",
-    "slot": 15
-  },
-  {
-    "id": 25219,
-    "name": "Rending Claw",
-    "slot": 15
-  },
-  {
-    "id": 25222,
-    "name": "Ceremonial Slayer\u0027s Axe",
-    "slot": 15
-  },
-  {
-    "id": 25220,
-    "name": "Glorious War-Axe",
-    "slot": 15
-  },
-  {
-    "id": 25224,
-    "name": "Slavemaster Axe",
-    "slot": 15
-  },
-  {
-    "id": 25223,
-    "name": "Windcaller Hatchet",
-    "slot": 15
-  },
-  {
-    "id": 25216,
-    "name": "Ogre Splitting Axe",
-    "slot": 15
+    "slot": 15,
+    "randomEnchantment": true
   },
   {
     "id": 25221,
     "name": "Ghostly Battle Axe",
-    "slot": 15
+    "slot": 15,
+    "randomEnchantment": true
+  },
+  {
+    "id": 25222,
+    "name": "Ceremonial Slayer\u0027s Axe",
+    "slot": 15,
+    "randomEnchantment": true
+  },
+  {
+    "id": 25224,
+    "name": "Slavemaster Axe",
+    "slot": 15,
+    "randomEnchantment": true
+  },
+  {
+    "id": 25220,
+    "name": "Glorious War-Axe",
+    "slot": 15,
+    "randomEnchantment": true
+  },
+  {
+    "id": 25223,
+    "name": "Windcaller Hatchet",
+    "slot": 15,
+    "randomEnchantment": true
+  },
+  {
+    "id": 25216,
+    "name": "Ogre Splitting Axe",
+    "slot": 15,
+    "randomEnchantment": true
+  },
+  {
+    "id": 25219,
+    "name": "Rending Claw",
+    "slot": 15,
+    "randomEnchantment": true
   },
   {
     "id": 25398,
@@ -292,13 +299,13 @@
     "slot": 15
   },
   {
-    "id": 28434,
-    "name": "Lunar Crescent",
+    "id": 28436,
+    "name": "Bloodmoon",
     "slot": 15
   },
   {
-    "id": 28436,
-    "name": "Bloodmoon",
+    "id": 28434,
+    "name": "Lunar Crescent",
     "slot": 15
   },
   {
@@ -413,13 +420,13 @@
     "slot": 15
   },
   {
-    "id": 32421,
-    "name": "Tom\u0027s Axe A",
+    "id": 32422,
+    "name": "Tom\u0027s Axe B",
     "slot": 15
   },
   {
-    "id": 32422,
-    "name": "Tom\u0027s Axe B",
+    "id": 32421,
+    "name": "Tom\u0027s Axe A",
     "slot": 15
   },
   {

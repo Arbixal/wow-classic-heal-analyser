@@ -22,41 +22,48 @@
   {
     "id": 10062,
     "name": "Duskwoven Gloves",
-    "slot": 9
+    "slot": 9,
+    "randomEnchantment": true
   },
   {
     "id": 10099,
     "name": "Councillor\u0027s Gloves",
-    "slot": 9
+    "slot": 9,
+    "randomEnchantment": true
   },
   {
     "id": 10140,
     "name": "High Councillor\u0027s Gloves",
-    "slot": 9
+    "slot": 9,
+    "randomEnchantment": true
   },
   {
     "id": 10176,
     "name": "Mystical Gloves",
-    "slot": 9
-  },
-  {
-    "id": 10214,
-    "name": "Elegant Gloves",
-    "slot": 9
+    "slot": 9,
+    "randomEnchantment": true
   },
   {
     "id": 10251,
     "name": "Master\u0027s Gloves",
-    "slot": 9
+    "slot": 9,
+    "randomEnchantment": true
   },
   {
-    "id": 10808,
-    "name": "Gloves of the Atal\u0027ai Prophet",
-    "slot": 9
+    "id": 10214,
+    "name": "Elegant Gloves",
+    "slot": 9,
+    "randomEnchantment": true
   },
   {
     "id": 10787,
     "name": "Atal\u0027ai Gloves",
+    "slot": 9,
+    "randomEnchantment": true
+  },
+  {
+    "id": 10808,
+    "name": "Gloves of the Atal\u0027ai Prophet",
     "slot": 9
   },
   {
@@ -82,7 +89,10 @@
   {
     "id": 13525,
     "name": "Darkbind Fingers",
-    "slot": 9
+    "slot": 9,
+    "resistances": {
+      "Shadow": 20
+    }
   },
   {
     "id": 13863,
@@ -102,6 +112,15 @@
   {
     "id": 14101,
     "name": "Brightcloth Gloves",
+    "slot": 9,
+    "resistances": {
+      "Frost": 12,
+      "Shadow": 11
+    }
+  },
+  {
+    "id": 14146,
+    "name": "Gloves of Spell Mastery",
     "slot": 9
   },
   {
@@ -110,34 +129,34 @@
     "slot": 9
   },
   {
-    "id": 14146,
-    "name": "Gloves of Spell Mastery",
-    "slot": 9
+    "id": 14302,
+    "name": "Bonecaster\u0027s Gloves",
+    "slot": 9,
+    "randomEnchantment": true
   },
   {
     "id": 14294,
     "name": "Arachnidian Gloves",
-    "slot": 9
+    "slot": 9,
+    "randomEnchantment": true
   },
   {
     "id": 14314,
     "name": "Celestial Handwraps",
-    "slot": 9
-  },
-  {
-    "id": 14302,
-    "name": "Bonecaster\u0027s Gloves",
-    "slot": 9
+    "slot": 9,
+    "randomEnchantment": true
   },
   {
     "id": 14323,
     "name": "Resplendent Gauntlets",
-    "slot": 9
+    "slot": 9,
+    "randomEnchantment": true
   },
   {
     "id": 14333,
     "name": "Eternal Gloves",
-    "slot": 9
+    "slot": 9,
+    "randomEnchantment": true
   },
   {
     "id": 14451,
@@ -152,7 +171,11 @@
   {
     "id": 14543,
     "name": "Darkshade Gloves",
-    "slot": 9
+    "slot": 9,
+    "resistances": {
+      "Arcane": 15,
+      "Shadow": 10
+    }
   },
   {
     "id": 15858,
@@ -180,11 +203,6 @@
     "slot": 9
   },
   {
-    "id": 16684,
-    "name": "Magister\u0027s Gloves",
-    "slot": 9
-  },
-  {
     "id": 16692,
     "name": "Devout Gloves",
     "slot": 9
@@ -195,48 +213,74 @@
     "slot": 9
   },
   {
+    "id": 16684,
+    "name": "Magister\u0027s Gloves",
+    "slot": 9
+  },
+  {
     "id": 16805,
     "name": "Felheart Gloves",
-    "slot": 9
+    "slot": 9,
+    "resistances": {
+      "Fire": 7
+    }
   },
   {
     "id": 16801,
     "name": "Arcanist Gloves",
-    "slot": 9
+    "slot": 9,
+    "resistances": {
+      "Fire": 7
+    }
   },
   {
     "id": 16812,
     "name": "Gloves of Prophecy",
-    "slot": 9
-  },
-  {
-    "id": 16920,
-    "name": "Handguards of Transcendence",
-    "slot": 9
+    "slot": 9,
+    "resistances": {
+      "Fire": 7
+    }
   },
   {
     "id": 16913,
     "name": "Netherwind Gloves",
-    "slot": 9
+    "slot": 9,
+    "resistances": {
+      "Shadow": 10
+    }
   },
   {
-    "id": 16928,
-    "name": "Nemesis Gloves",
-    "slot": 9
+    "id": 16920,
+    "name": "Handguards of Transcendence",
+    "slot": 9,
+    "resistances": {
+      "Shadow": 10
+    }
   },
   {
     "id": 16979,
     "name": "Flarecore Gloves",
+    "slot": 9,
+    "resistances": {
+      "Fire": 25
+    }
+  },
+  {
+    "id": 16928,
+    "name": "Nemesis Gloves",
+    "slot": 9,
+    "resistances": {
+      "Shadow": 10
+    }
+  },
+  {
+    "id": 17577,
+    "name": "Blood Guard\u0027s Dreadweave Gloves",
     "slot": 9
   },
   {
     "id": 17564,
     "name": "Knight-Lieutenant\u0027s Dreadweave Gloves",
-    "slot": 9
-  },
-  {
-    "id": 17577,
-    "name": "Blood Guard\u0027s Dreadweave Gloves",
     "slot": 9
   },
   {
@@ -250,11 +294,6 @@
     "slot": 9
   },
   {
-    "id": 17617,
-    "name": "Blood Guard\u0027s Satin Gloves",
-    "slot": 9
-  },
-  {
     "id": 17620,
     "name": "General\u0027s Satin Gloves",
     "slot": 9
@@ -262,6 +301,11 @@
   {
     "id": 17588,
     "name": "General\u0027s Dreadweave Gloves",
+    "slot": 9
+  },
+  {
+    "id": 17617,
+    "name": "Blood Guard\u0027s Satin Gloves",
     "slot": 9
   },
   {
@@ -275,21 +319,6 @@
     "slot": 9
   },
   {
-    "id": 18369,
-    "name": "Gordok\u0027s Handwraps",
-    "slot": 9
-  },
-  {
-    "id": 18387,
-    "name": "Brightspark Gloves",
-    "slot": 9
-  },
-  {
-    "id": 18407,
-    "name": "Felcloth Gloves",
-    "slot": 9
-  },
-  {
     "id": 18408,
     "name": "Inferno Gloves",
     "slot": 9
@@ -300,6 +329,21 @@
     "slot": 9
   },
   {
+    "id": 18407,
+    "name": "Felcloth Gloves",
+    "slot": 9
+  },
+  {
+    "id": 18387,
+    "name": "Brightspark Gloves",
+    "slot": 9
+  },
+  {
+    "id": 18369,
+    "name": "Gordok\u0027s Handwraps",
+    "slot": 9
+  },
+  {
     "id": 18693,
     "name": "Shivery Handwraps",
     "slot": 9
@@ -307,7 +351,10 @@
   {
     "id": 18730,
     "name": "Shadowy Laced Handwraps",
-    "slot": 9
+    "slot": 9,
+    "resistances": {
+      "Shadow": 12
+    }
   },
   {
     "id": 18808,
@@ -337,7 +384,8 @@
   {
     "id": 20655,
     "name": "Abyssal Cloth Handwraps",
-    "slot": 9
+    "slot": 9,
+    "randomEnchantment": true
   },
   {
     "id": 20716,
@@ -370,10 +418,13 @@
     "slot": 9
   },
   {
-    "id": 21847,
-    "name": "Spellfire Gloves",
+    "id": 21863,
+    "name": "Soulcloth Gloves",
     "slot": 9,
-    "sockets": 2
+    "sockets": 2,
+    "resistances": {
+      "Arcane": 35
+    }
   },
   {
     "id": 21851,
@@ -381,8 +432,8 @@
     "slot": 9
   },
   {
-    "id": 21863,
-    "name": "Soulcloth Gloves",
+    "id": 21847,
+    "name": "Spellfire Gloves",
     "slot": 9,
     "sockets": 2
   },
@@ -392,8 +443,8 @@
     "slot": 9
   },
   {
-    "id": 22081,
-    "name": "Virtuous Gloves",
+    "id": 22077,
+    "name": "Deathmist Wraps",
     "slot": 9
   },
   {
@@ -402,8 +453,8 @@
     "slot": 9
   },
   {
-    "id": 22077,
-    "name": "Deathmist Wraps",
+    "id": 22081,
+    "name": "Virtuous Gloves",
     "slot": 9
   },
   {
@@ -422,24 +473,22 @@
     "slot": 9
   },
   {
-    "id": 22509,
-    "name": "Plagueheart Gloves",
-    "slot": 9
-  },
-  {
     "id": 22517,
     "name": "Gloves of Faith",
     "slot": 9
   },
   {
-    "id": 22654,
-    "name": "Glacial Gloves",
+    "id": 22509,
+    "name": "Plagueheart Gloves",
     "slot": 9
   },
   {
-    "id": 22869,
-    "name": "Blood Guard\u0027s Satin Handwraps",
-    "slot": 9
+    "id": 22654,
+    "name": "Glacial Gloves",
+    "slot": 9,
+    "resistances": {
+      "Frost": 30
+    }
   },
   {
     "id": 22865,
@@ -449,6 +498,11 @@
   {
     "id": 22870,
     "name": "Blood Guard\u0027s Silk Handwraps",
+    "slot": 9
+  },
+  {
+    "id": 22869,
+    "name": "Blood Guard\u0027s Satin Handwraps",
     "slot": 9
   },
   {
@@ -489,79 +543,93 @@
     "sockets": 2
   },
   {
-    "id": 24584,
-    "name": "Outlander\u0027s Gloves",
-    "slot": 9
-  },
-  {
     "id": 24556,
     "name": "Gladiator\u0027s Dreadweave Gloves",
     "slot": 9
   },
   {
-    "id": 24592,
-    "name": "Fireheart Gloves",
-    "slot": 9
-  },
-  {
-    "id": 24600,
-    "name": "Starfire Gloves",
-    "slot": 9
+    "id": 24584,
+    "name": "Outlander\u0027s Gloves",
+    "slot": 9,
+    "randomEnchantment": true
   },
   {
     "id": 24608,
     "name": "Laughing Skull Gloves",
-    "slot": 9
+    "slot": 9,
+    "randomEnchantment": true
   },
   {
-    "id": 24624,
-    "name": "Slavehandler Handwraps",
-    "slot": 9
+    "id": 24592,
+    "name": "Fireheart Gloves",
+    "slot": 9,
+    "randomEnchantment": true
+  },
+  {
+    "id": 24600,
+    "name": "Starfire Gloves",
+    "slot": 9,
+    "randomEnchantment": true
   },
   {
     "id": 24616,
     "name": "Vindicator Gloves",
-    "slot": 9
+    "slot": 9,
+    "randomEnchantment": true
   },
   {
     "id": 24632,
     "name": "Feralfen Hand",
-    "slot": 9
+    "slot": 9,
+    "randomEnchantment": true
+  },
+  {
+    "id": 24624,
+    "name": "Slavehandler Handwraps",
+    "slot": 9,
+    "randomEnchantment": true
   },
   {
     "id": 24640,
     "name": "Mistyreed Gloves",
-    "slot": 9
-  },
-  {
-    "id": 24656,
-    "name": "Consortium Gloves",
-    "slot": 9
+    "slot": 9,
+    "randomEnchantment": true
   },
   {
     "id": 24648,
     "name": "Astralaan Gloves",
-    "slot": 9
+    "slot": 9,
+    "randomEnchantment": true
+  },
+  {
+    "id": 24656,
+    "name": "Consortium Gloves",
+    "slot": 9,
+    "randomEnchantment": true
   },
   {
     "id": 24664,
     "name": "Shadow Council Gloves",
-    "slot": 9
+    "slot": 9,
+    "randomEnchantment": true
   },
   {
     "id": 24688,
     "name": "Elementalist Gloves",
-    "slot": 9
+    "slot": 9,
+    "randomEnchantment": true
   },
   {
     "id": 24672,
     "name": "Eldr\u0027naan Gloves",
-    "slot": 9
+    "slot": 9,
+    "randomEnchantment": true
   },
   {
     "id": 24680,
     "name": "Archmage Gloves",
-    "slot": 9
+    "slot": 9,
+    "randomEnchantment": true
   },
   {
     "id": 24782,
@@ -635,24 +703,24 @@
     "slot": 9
   },
   {
-    "id": 28304,
-    "name": "Prismatic Mittens of Mending",
-    "slot": 9
-  },
-  {
     "id": 28317,
     "name": "Energis Armwraps",
     "slot": 9
   },
   {
-    "id": 28508,
-    "name": "Gloves of Saintly Blessings",
-    "slot": 9,
-    "sockets": 2
+    "id": 28304,
+    "name": "Prismatic Mittens of Mending",
+    "slot": 9
   },
   {
     "id": 28507,
     "name": "Handwraps of Flowing Thought",
+    "slot": 9,
+    "sockets": 2
+  },
+  {
+    "id": 28508,
+    "name": "Gloves of Saintly Blessings",
     "slot": 9,
     "sockets": 2
   },
@@ -688,18 +756,13 @@
     "slot": 9
   },
   {
-    "id": 28868,
-    "name": "High Warlord\u0027s Silk Handguards",
-    "slot": 9
-  },
-  {
     "id": 28968,
     "name": "Voidheart Gloves",
     "slot": 9
   },
   {
-    "id": 29055,
-    "name": "Handwraps of the Incarnate",
+    "id": 28868,
+    "name": "High Warlord\u0027s Silk Handguards",
     "slot": 9
   },
   {
@@ -710,6 +773,11 @@
   {
     "id": 29080,
     "name": "Gloves of the Aldor",
+    "slot": 9
+  },
+  {
+    "id": 29055,
+    "name": "Handwraps of the Incarnate",
     "slot": 9
   },
   {
@@ -734,23 +802,18 @@
     "slot": 9
   },
   {
-    "id": 30151,
-    "name": "Gloves of the Avatar",
-    "slot": 9
-  },
-  {
     "id": 30160,
     "name": "Handguards of the Avatar",
     "slot": 9
   },
   {
-    "id": 30188,
-    "name": "Gladiator\u0027s Felweave Handguards",
+    "id": 30151,
+    "name": "Gloves of the Avatar",
     "slot": 9
   },
   {
-    "id": 30205,
-    "name": "Gloves of Tirisfal",
+    "id": 30188,
+    "name": "Gladiator\u0027s Felweave Handguards",
     "slot": 9
   },
   {
@@ -761,6 +824,11 @@
   {
     "id": 30253,
     "name": "Ethereal Gloves",
+    "slot": 9
+  },
+  {
+    "id": 30205,
+    "name": "Gloves of Tirisfal",
     "slot": 9
   },
   {
@@ -782,12 +850,18 @@
   {
     "id": 30764,
     "name": "Infernoweave Gloves",
-    "slot": 9
+    "slot": 9,
+    "resistances": {
+      "Fire": 40
+    }
   },
   {
     "id": 30838,
     "name": "Flameheart Gloves",
-    "slot": 9
+    "slot": 9,
+    "resistances": {
+      "Fire": 40
+    }
   },
   {
     "id": 30930,
@@ -800,20 +874,24 @@
     "slot": 9
   },
   {
-    "id": 31060,
-    "name": "Gloves of Absolution",
-    "slot": 9,
-    "sockets": 1
-  },
-  {
     "id": 31061,
     "name": "Handguards of Absolution",
     "slot": 9,
     "sockets": 1
   },
   {
-    "id": 31055,
-    "name": "Gloves of the Tempest",
+    "id": 31111,
+    "name": "Uvuros Hide Gloves",
+    "slot": 9
+  },
+  {
+    "id": 31150,
+    "name": "Gloves of Piety",
+    "slot": 9
+  },
+  {
+    "id": 31060,
+    "name": "Gloves of Absolution",
     "slot": 9,
     "sockets": 1
   },
@@ -824,29 +902,27 @@
     "sockets": 1
   },
   {
-    "id": 31111,
-    "name": "Uvuros Hide Gloves",
-    "slot": 9
-  },
-  {
     "id": 31149,
     "name": "Gloves of Pandemonium",
     "slot": 9
   },
   {
-    "id": 31150,
-    "name": "Gloves of Piety",
-    "slot": 9
+    "id": 31055,
+    "name": "Gloves of the Tempest",
+    "slot": 9,
+    "sockets": 1
   },
   {
     "id": 31166,
     "name": "Nethersteel-Lined Handwraps",
-    "slot": 9
+    "slot": 9,
+    "randomEnchantment": true
   },
   {
     "id": 31181,
     "name": "Rockwurm Hide Handwraps",
-    "slot": 9
+    "slot": 9,
+    "randomEnchantment": true
   },
   {
     "id": 31409,
@@ -871,16 +947,17 @@
   {
     "id": 31559,
     "name": "Windchanneller\u0027s Gloves",
+    "slot": 9,
+    "randomEnchantment": true
+  },
+  {
+    "id": 31620,
+    "name": "Grand Marshal\u0027s Mooncloth Mitts",
     "slot": 9
   },
   {
     "id": 31621,
     "name": "High Warlord\u0027s Mooncloth Mitts",
-    "slot": 9
-  },
-  {
-    "id": 31620,
-    "name": "Grand Marshal\u0027s Mooncloth Mitts",
     "slot": 9
   },
   {
@@ -915,12 +992,6 @@
     "sockets": 2
   },
   {
-    "id": 33587,
-    "name": "Light-Blessed Bonds",
-    "slot": 9,
-    "sockets": 2
-  },
-  {
     "id": 33586,
     "name": "Studious Wraps",
     "slot": 9,
@@ -930,6 +1001,12 @@
     "id": 33676,
     "name": "Vengeful Gladiator\u0027s Dreadweave Gloves",
     "slot": 9
+  },
+  {
+    "id": 33587,
+    "name": "Light-Blessed Bonds",
+    "slot": 9,
+    "sockets": 2
   },
   {
     "id": 33684,
@@ -942,13 +1019,13 @@
     "slot": 9
   },
   {
-    "id": 33744,
-    "name": "Vengeful Gladiator\u0027s Satin Gloves",
+    "id": 33759,
+    "name": "Vengeful Gladiator\u0027s Silk Handguards",
     "slot": 9
   },
   {
-    "id": 33759,
-    "name": "Vengeful Gladiator\u0027s Silk Handguards",
+    "id": 33744,
+    "name": "Vengeful Gladiator\u0027s Satin Gloves",
     "slot": 9
   },
   {
@@ -964,6 +1041,12 @@
     "sockets": 2
   },
   {
+    "id": 34406,
+    "name": "Gloves of Tyri\u0027s Power",
+    "slot": 9,
+    "sockets": 2
+  },
+  {
     "id": 34367,
     "name": "Hands of Eternal Light",
     "slot": 9,
@@ -972,12 +1055,6 @@
   {
     "id": 34366,
     "name": "Sunfire Handwraps",
-    "slot": 9,
-    "sockets": 2
-  },
-  {
-    "id": 34406,
-    "name": "Gloves of Tyri\u0027s Power",
     "slot": 9,
     "sockets": 2
   },
@@ -1004,6 +1081,11 @@
     "slot": 9
   },
   {
+    "id": 35098,
+    "name": "Brutal Gladiator\u0027s Silk Handguards",
+    "slot": 9
+  },
+  {
     "id": 35053,
     "name": "Brutal Gladiator\u0027s Mooncloth Gloves",
     "slot": 9
@@ -1014,18 +1096,13 @@
     "slot": 9
   },
   {
-    "id": 35098,
-    "name": "Brutal Gladiator\u0027s Silk Handguards",
+    "id": 35338,
+    "name": "Satin Gloves",
     "slot": 9
   },
   {
     "id": 35328,
     "name": "Dreadweave Gloves",
-    "slot": 9
-  },
-  {
-    "id": 35338,
-    "name": "Satin Gloves",
     "slot": 9
   },
   {

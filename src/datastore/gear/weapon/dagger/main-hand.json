@@ -85,13 +85,13 @@
     "slot": 15
   },
   {
-    "id": 23458,
-    "name": "High Warlord\u0027s Spellblade",
+    "id": 23451,
+    "name": "Grand Marshal\u0027s Mageblade",
     "slot": 15
   },
   {
-    "id": 23451,
-    "name": "Grand Marshal\u0027s Mageblade",
+    "id": 23458,
+    "name": "High Warlord\u0027s Spellblade",
     "slot": 15
   },
   {
@@ -102,11 +102,6 @@
   {
     "id": 23554,
     "name": "Eternium Runed Blade",
-    "slot": 15
-  },
-  {
-    "id": 23912,
-    "name": "Deprecated: Keanna\u0027s Will",
     "slot": 15
   },
   {
@@ -122,72 +117,86 @@
   {
     "id": 25297,
     "name": "Tuning Knife",
-    "slot": 15
-  },
-  {
-    "id": 25298,
-    "name": "Combustion Dagger",
-    "slot": 15
-  },
-  {
-    "id": 25296,
-    "name": "Absorption Dagger",
-    "slot": 15
-  },
-  {
-    "id": 25305,
-    "name": "Elemental Dagger",
-    "slot": 15
-  },
-  {
-    "id": 25301,
-    "name": "Shattering Dagger",
-    "slot": 15
-  },
-  {
-    "id": 25299,
-    "name": "Siphoning Dagger",
-    "slot": 15
+    "slot": 15,
+    "randomEnchantment": true
   },
   {
     "id": 25307,
     "name": "Shadow Dagger",
-    "slot": 15
+    "slot": 15,
+    "randomEnchantment": true
   },
   {
-    "id": 25302,
-    "name": "Soul-Drain Dagger",
-    "slot": 15
+    "id": 25298,
+    "name": "Combustion Dagger",
+    "slot": 15,
+    "randomEnchantment": true
   },
   {
-    "id": 25300,
-    "name": "Lightning Dagger",
-    "slot": 15
+    "id": 25299,
+    "name": "Siphoning Dagger",
+    "slot": 15,
+    "randomEnchantment": true
   },
   {
-    "id": 25303,
-    "name": "Amplifying Blade",
-    "slot": 15
-  },
-  {
-    "id": 25304,
-    "name": "Destructo-Blade",
-    "slot": 15
-  },
-  {
-    "id": 25306,
-    "name": "Permafrost Dagger",
-    "slot": 15
-  },
-  {
-    "id": 25309,
-    "name": "Warpdagger",
-    "slot": 15
+    "id": 25296,
+    "name": "Absorption Dagger",
+    "slot": 15,
+    "randomEnchantment": true
   },
   {
     "id": 25308,
     "name": "Thunder Spike",
-    "slot": 15
+    "slot": 15,
+    "randomEnchantment": true
+  },
+  {
+    "id": 25305,
+    "name": "Elemental Dagger",
+    "slot": 15,
+    "randomEnchantment": true
+  },
+  {
+    "id": 25304,
+    "name": "Destructo-Blade",
+    "slot": 15,
+    "randomEnchantment": true
+  },
+  {
+    "id": 25303,
+    "name": "Amplifying Blade",
+    "slot": 15,
+    "randomEnchantment": true
+  },
+  {
+    "id": 25302,
+    "name": "Soul-Drain Dagger",
+    "slot": 15,
+    "randomEnchantment": true
+  },
+  {
+    "id": 25309,
+    "name": "Warpdagger",
+    "slot": 15,
+    "randomEnchantment": true
+  },
+  {
+    "id": 25300,
+    "name": "Lightning Dagger",
+    "slot": 15,
+    "randomEnchantment": true
+  },
+  {
+    "id": 25301,
+    "name": "Shattering Dagger",
+    "slot": 15,
+    "randomEnchantment": true
+  },
+  {
+    "id": 25306,
+    "name": "Permafrost Dagger",
+    "slot": 15,
+    "randomEnchantment": true
   },
   {
     "id": 25543,
@@ -220,13 +229,13 @@
     "slot": 15
   },
   {
-    "id": 28297,
-    "name": "Gladiator\u0027s Spellblade",
+    "id": 28322,
+    "name": "Runed Dagger of Solace",
     "slot": 15
   },
   {
-    "id": 28322,
-    "name": "Runed Dagger of Solace",
+    "id": 28297,
+    "name": "Gladiator\u0027s Spellblade",
     "slot": 15
   },
   {
@@ -235,13 +244,13 @@
     "slot": 15
   },
   {
-    "id": 28931,
-    "name": "High Warlord\u0027s Spellblade",
+    "id": 28957,
+    "name": "Grand Marshal\u0027s Spellblade",
     "slot": 15
   },
   {
-    "id": 28957,
-    "name": "Grand Marshal\u0027s Spellblade",
+    "id": 28931,
+    "name": "High Warlord\u0027s Spellblade",
     "slot": 15
   },
   {

@@ -1,12 +1,12 @@
 [
   {
-    "id": 3992,
-    "name": "Laminated Scale Belt",
+    "id": 4008,
+    "name": "Sterling Chain Belt",
     "slot": 5
   },
   {
-    "id": 4008,
-    "name": "Sterling Chain Belt",
+    "id": 3992,
+    "name": "Laminated Scale Belt",
     "slot": 5
   },
   {
@@ -22,27 +22,32 @@
   {
     "id": 10122,
     "name": "Ornate Girdle",
-    "slot": 5
+    "slot": 5,
+    "randomEnchantment": true
   },
   {
     "id": 10154,
     "name": "Mercurial Girdle",
-    "slot": 5
-  },
-  {
-    "id": 10233,
-    "name": "Engraved Girdle",
-    "slot": 5
+    "slot": 5,
+    "randomEnchantment": true
   },
   {
     "id": 10197,
     "name": "Crusader\u0027s Belt",
-    "slot": 5
+    "slot": 5,
+    "randomEnchantment": true
+  },
+  {
+    "id": 10233,
+    "name": "Engraved Girdle",
+    "slot": 5,
+    "randomEnchantment": true
   },
   {
     "id": 10269,
     "name": "Masterwork Girdle",
-    "slot": 5
+    "slot": 5,
+    "randomEnchantment": true
   },
   {
     "id": 11783,
@@ -52,7 +57,11 @@
   {
     "id": 12416,
     "name": "Radiant Belt",
-    "slot": 5
+    "slot": 5,
+    "resistances": {
+      "Frost": 12,
+      "Shadow": 12
+    }
   },
   {
     "id": 12634,
@@ -62,7 +71,8 @@
   {
     "id": 13387,
     "name": "Foresight Girdle",
-    "slot": 5
+    "slot": 5,
+    "randomEnchantment": true
   },
   {
     "id": 13950,
@@ -75,13 +85,13 @@
     "slot": 5
   },
   {
-    "id": 14808,
-    "name": "Warstrike Belt",
+    "id": 14803,
+    "name": "Bloodlust Belt",
     "slot": 5
   },
   {
-    "id": 14803,
-    "name": "Bloodlust Belt",
+    "id": 14808,
+    "name": "Warstrike Belt",
     "slot": 5
   },
   {
@@ -90,29 +100,34 @@
     "slot": 5
   },
   {
-    "id": 15641,
-    "name": "Ironhide Belt",
-    "slot": 5
-  },
-  {
     "id": 15654,
     "name": "Merciless Belt",
-    "slot": 5
-  },
-  {
-    "id": 15663,
-    "name": "Impenetrable Belt",
-    "slot": 5
+    "slot": 5,
+    "randomEnchantment": true
   },
   {
     "id": 15673,
     "name": "Magnificent Belt",
-    "slot": 5
+    "slot": 5,
+    "randomEnchantment": true
+  },
+  {
+    "id": 15641,
+    "name": "Ironhide Belt",
+    "slot": 5,
+    "randomEnchantment": true
+  },
+  {
+    "id": 15663,
+    "name": "Impenetrable Belt",
+    "slot": 5,
+    "randomEnchantment": true
   },
   {
     "id": 15683,
     "name": "Triumphant Girdle",
-    "slot": 5
+    "slot": 5,
+    "randomEnchantment": true
   },
   {
     "id": 15813,
@@ -135,29 +150,44 @@
     "slot": 5
   },
   {
-    "id": 16838,
-    "name": "Earthfury Belt",
-    "slot": 5
-  },
-  {
     "id": 16851,
     "name": "Giantstalker\u0027s Belt",
-    "slot": 5
+    "slot": 5,
+    "resistances": {
+      "Fire": 7
+    }
   },
   {
-    "id": 16944,
-    "name": "Belt of Ten Storms",
-    "slot": 5
+    "id": 16838,
+    "name": "Earthfury Belt",
+    "slot": 5,
+    "resistances": {
+      "Fire": 7
+    }
   },
   {
     "id": 16936,
     "name": "Dragonstalker\u0027s Belt",
-    "slot": 5
+    "slot": 5,
+    "resistances": {
+      "Shadow": 10
+    }
+  },
+  {
+    "id": 16944,
+    "name": "Belt of Ten Storms",
+    "slot": 5,
+    "resistances": {
+      "Shadow": 10
+    }
   },
   {
     "id": 16989,
     "name": "Fiery Chain Girdle",
-    "slot": 5
+    "slot": 5,
+    "resistances": {
+      "Fire": 24
+    }
   },
   {
     "id": 18104,
@@ -187,12 +217,18 @@
   {
     "id": 19088,
     "name": "Frostwolf Mail Belt",
-    "slot": 5
+    "slot": 5,
+    "resistances": {
+      "Frost": 5
+    }
   },
   {
     "id": 19092,
     "name": "Stormpike Mail Girdle",
-    "slot": 5
+    "slot": 5,
+    "resistances": {
+      "Frost": 5
+    }
   },
   {
     "id": 19380,
@@ -225,13 +261,13 @@
     "slot": 5
   },
   {
-    "id": 20088,
-    "name": "Highlander\u0027s Chain Girdle",
+    "id": 20118,
+    "name": "Highlander\u0027s Mail Girdle",
     "slot": 5
   },
   {
-    "id": 20118,
-    "name": "Highlander\u0027s Mail Girdle",
+    "id": 20088,
+    "name": "Highlander\u0027s Chain Girdle",
     "slot": 5
   },
   {
@@ -245,6 +281,11 @@
     "slot": 5
   },
   {
+    "id": 20215,
+    "name": "Belt of Shriveled Heads",
+    "slot": 5
+  },
+  {
     "id": 20195,
     "name": "Defiler\u0027s Mail Girdle",
     "slot": 5
@@ -255,24 +296,10 @@
     "slot": 5
   },
   {
-    "id": 20215,
-    "name": "Belt of Shriveled Heads",
-    "slot": 5
-  },
-  {
     "id": 20670,
     "name": "Abyssal Mail Clutch",
-    "slot": 5
-  },
-  {
-    "id": 20778,
-    "name": "63 green shaman cord",
-    "slot": 5
-  },
-  {
-    "id": 20789,
-    "name": "90 green shaman cord",
-    "slot": 5
+    "slot": 5,
+    "randomEnchantment": true
   },
   {
     "id": 21463,
@@ -295,23 +322,23 @@
     "slot": 5
   },
   {
-    "id": 22195,
-    "name": "Light Obsidian Belt",
-    "slot": 5
-  },
-  {
     "id": 22207,
     "name": "Sash of the Grand Hunt",
     "slot": 5
   },
   {
-    "id": 22232,
-    "name": "Marksman\u0027s Girdle",
+    "id": 22195,
+    "name": "Light Obsidian Belt",
     "slot": 5
   },
   {
     "id": 22242,
     "name": "Verek\u0027s Leash",
+    "slot": 5
+  },
+  {
+    "id": 22232,
+    "name": "Marksman\u0027s Girdle",
     "slot": 5
   },
   {
@@ -341,74 +368,88 @@
     "sockets": 2
   },
   {
-    "id": 24806,
-    "name": "Unyielding Waistband",
-    "slot": 5
-  },
-  {
-    "id": 24814,
-    "name": "Felstone Waistband",
-    "slot": 5
-  },
-  {
-    "id": 24830,
-    "name": "Nexus-Strider Belt",
-    "slot": 5
-  },
-  {
     "id": 24822,
     "name": "Netherstalker Belt",
-    "slot": 5
+    "slot": 5,
+    "randomEnchantment": true
   },
   {
     "id": 24838,
     "name": "Wrathfin Waistband",
-    "slot": 5
+    "slot": 5,
+    "randomEnchantment": true
   },
   {
-    "id": 24862,
-    "name": "Blood Knight Girdle",
-    "slot": 5
+    "id": 24830,
+    "name": "Nexus-Strider Belt",
+    "slot": 5,
+    "randomEnchantment": true
   },
   {
-    "id": 24870,
-    "name": "Ironspine Belt",
-    "slot": 5
+    "id": 24814,
+    "name": "Felstone Waistband",
+    "slot": 5,
+    "randomEnchantment": true
   },
   {
-    "id": 24878,
-    "name": "Der\u0027izu Belt",
-    "slot": 5
-  },
-  {
-    "id": 24886,
-    "name": "Skettis Belt",
-    "slot": 5
+    "id": 24806,
+    "name": "Unyielding Waistband",
+    "slot": 5,
+    "randomEnchantment": true
   },
   {
     "id": 24854,
     "name": "Marshcreeper Belt",
-    "slot": 5
+    "slot": 5,
+    "randomEnchantment": true
+  },
+  {
+    "id": 24862,
+    "name": "Blood Knight Girdle",
+    "slot": 5,
+    "randomEnchantment": true
   },
   {
     "id": 24846,
     "name": "Fenclaw Waistband",
-    "slot": 5
+    "slot": 5,
+    "randomEnchantment": true
   },
   {
-    "id": 24902,
-    "name": "Talhide Stitched-Belt",
-    "slot": 5
+    "id": 24870,
+    "name": "Ironspine Belt",
+    "slot": 5,
+    "randomEnchantment": true
   },
   {
-    "id": 24910,
-    "name": "Netherstorm Belt",
-    "slot": 5
+    "id": 24878,
+    "name": "Der\u0027izu Belt",
+    "slot": 5,
+    "randomEnchantment": true
+  },
+  {
+    "id": 24886,
+    "name": "Skettis Belt",
+    "slot": 5,
+    "randomEnchantment": true
   },
   {
     "id": 24894,
     "name": "Sundered Waistband",
-    "slot": 5
+    "slot": 5,
+    "randomEnchantment": true
+  },
+  {
+    "id": 24902,
+    "name": "Talhide Stitched-Belt",
+    "slot": 5,
+    "randomEnchantment": true
+  },
+  {
+    "id": 24910,
+    "name": "Netherstorm Belt",
+    "slot": 5,
+    "randomEnchantment": true
   },
   {
     "id": 25366,
@@ -431,14 +472,14 @@
     "slot": 5
   },
   {
-    "id": 25695,
-    "name": "Felstalker Belt",
+    "id": 25694,
+    "name": "Netherfury Belt",
     "slot": 5,
     "sockets": 2
   },
   {
-    "id": 25694,
-    "name": "Netherfury Belt",
+    "id": 25695,
+    "name": "Felstalker Belt",
     "slot": 5,
     "sockets": 2
   },
@@ -458,15 +499,15 @@
     "slot": 5
   },
   {
+    "id": 27521,
+    "name": "Telaari Hunting Girdle",
+    "slot": 5
+  },
+  {
     "id": 27478,
     "name": "Girdle of the Blasted Reaches",
     "slot": 5,
     "sockets": 2
-  },
-  {
-    "id": 27521,
-    "name": "Telaari Hunting Girdle",
-    "slot": 5
   },
   {
     "id": 27541,
@@ -474,13 +515,13 @@
     "slot": 5
   },
   {
-    "id": 27646,
-    "name": "Marksman\u0027s Belt",
+    "id": 27643,
+    "name": "Stormbreaker\u0027s Girdle",
     "slot": 5
   },
   {
-    "id": 27643,
-    "name": "Stormbreaker\u0027s Girdle",
+    "id": 27646,
+    "name": "Marksman\u0027s Belt",
     "slot": 5
   },
   {
@@ -507,7 +548,8 @@
   {
     "id": 28497,
     "name": "Dreadhawk\u0027s Girdle",
-    "slot": 5
+    "slot": 5,
+    "randomEnchantment": true
   },
   {
     "id": 28567,
@@ -541,13 +583,13 @@
     "slot": 5
   },
   {
-    "id": 28993,
-    "name": "Marshal\u0027s Mail Girdle",
+    "id": 28990,
+    "name": "Marshal\u0027s Linked Girdle",
     "slot": 5
   },
   {
-    "id": 28990,
-    "name": "Marshal\u0027s Linked Girdle",
+    "id": 28993,
+    "name": "Marshal\u0027s Mail Girdle",
     "slot": 5
   },
   {
@@ -575,6 +617,15 @@
     "id": 29494,
     "name": "Flamescale Belt",
     "slot": 5,
+    "sockets": 2,
+    "resistances": {
+      "Fire": 30
+    }
+  },
+  {
+    "id": 29516,
+    "name": "Ebon Netherscale Belt",
+    "slot": 5,
     "sockets": 2
   },
   {
@@ -584,25 +635,19 @@
     "sockets": 2
   },
   {
-    "id": 29516,
-    "name": "Ebon Netherscale Belt",
-    "slot": 5,
-    "sockets": 2
-  },
-  {
     "id": 30001,
     "name": "Doc\u0027s Belt",
     "slot": 5
   },
   {
-    "id": 30030,
-    "name": "Girdle of Fallen Stars",
+    "id": 30046,
+    "name": "Belt of the Black Eagle",
     "slot": 5,
     "sockets": 2
   },
   {
-    "id": 30046,
-    "name": "Belt of the Black Eagle",
+    "id": 30030,
+    "name": "Girdle of Fallen Stars",
     "slot": 5,
     "sockets": 2
   },
@@ -628,13 +673,14 @@
     "slot": 5
   },
   {
-    "id": 30643,
-    "name": "Belt of the Tracker",
-    "slot": 5
-  },
-  {
     "id": 30677,
     "name": "Lurker\u0027s Belt",
+    "slot": 5,
+    "randomEnchantment": true
+  },
+  {
+    "id": 30643,
+    "name": "Belt of the Tracker",
     "slot": 5
   },
   {
@@ -653,24 +699,26 @@
     "slot": 5
   },
   {
-    "id": 31114,
-    "name": "Uvuros Hide Cinch",
-    "slot": 5
-  },
-  {
     "id": 31138,
     "name": "Storm Lord\u0027s Girdle",
     "slot": 5
   },
   {
+    "id": 31114,
+    "name": "Uvuros Hide Cinch",
+    "slot": 5
+  },
+  {
     "id": 31197,
     "name": "Voidscale Belt",
-    "slot": 5
+    "slot": 5,
+    "randomEnchantment": true
   },
   {
     "id": 31228,
     "name": "Feathered Belt",
-    "slot": 5
+    "slot": 5,
+    "randomEnchantment": true
   },
   {
     "id": 31293,
@@ -683,13 +731,13 @@
     "slot": 5
   },
   {
-    "id": 31462,
-    "name": "Shattrath\u0027s Champion Belt",
+    "id": 31472,
+    "name": "Hexxer\u0027s Belt",
     "slot": 5
   },
   {
-    "id": 31472,
-    "name": "Hexxer\u0027s Belt",
+    "id": 31462,
+    "name": "Shattrath\u0027s Champion Belt",
     "slot": 5
   },
   {
@@ -705,16 +753,17 @@
   {
     "id": 31571,
     "name": "Mistshroud Belt",
+    "slot": 5,
+    "randomEnchantment": true
+  },
+  {
+    "id": 32276,
+    "name": "Flashfire Girdle",
     "slot": 5
   },
   {
     "id": 32258,
     "name": "Naturalist\u0027s Preserving Cinch",
-    "slot": 5
-  },
-  {
-    "id": 32276,
-    "name": "Flashfire Girdle",
     "slot": 5
   },
   {
@@ -725,7 +774,10 @@
   {
     "id": 32397,
     "name": "Waistguard of Shackled Souls",
-    "slot": 5
+    "slot": 5,
+    "resistances": {
+      "Shadow": 54
+    }
   },
   {
     "id": 32804,
@@ -748,13 +800,13 @@
     "slot": 5
   },
   {
-    "id": 32992,
-    "name": "General\u0027s Ringmail Girdle",
+    "id": 32995,
+    "name": "Marshal\u0027s Ringmail Girdle",
     "slot": 5
   },
   {
-    "id": 32995,
-    "name": "Marshal\u0027s Ringmail Girdle",
+    "id": 32992,
+    "name": "General\u0027s Ringmail Girdle",
     "slot": 5
   },
   {
@@ -800,12 +852,6 @@
     "sockets": 1
   },
   {
-    "id": 34549,
-    "name": "Gronnstalker\u0027s Belt",
-    "slot": 5,
-    "sockets": 1
-  },
-  {
     "id": 34545,
     "name": "Skyshatter Girdle",
     "slot": 5,
@@ -818,8 +864,8 @@
     "sockets": 1
   },
   {
-    "id": 34935,
-    "name": "Aftershock Waistguard",
+    "id": 34549,
+    "name": "Gronnstalker\u0027s Belt",
     "slot": 5,
     "sockets": 1
   },
@@ -830,9 +876,10 @@
     "sockets": 1
   },
   {
-    "id": 35151,
-    "name": "Guardian\u0027s Chain Girdle",
-    "slot": 5
+    "id": 34935,
+    "name": "Aftershock Waistguard",
+    "slot": 5,
+    "sockets": 1
   },
   {
     "id": 35158,
@@ -842,6 +889,11 @@
   {
     "id": 35162,
     "name": "Guardian\u0027s Ringmail Girdle",
+    "slot": 5
+  },
+  {
+    "id": 35151,
+    "name": "Guardian\u0027s Chain Girdle",
     "slot": 5
   },
   {

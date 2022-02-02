@@ -45,29 +45,34 @@
     "slot": 15
   },
   {
-    "id": 25188,
-    "name": "Spleenripper Claws",
-    "slot": 15
-  },
-  {
-    "id": 25196,
-    "name": "Boneshredder Claws",
-    "slot": 15
-  },
-  {
     "id": 25184,
     "name": "Ravager Claws",
-    "slot": 15
+    "slot": 15,
+    "randomEnchantment": true
   },
   {
     "id": 25186,
     "name": "Vampiric Handscythes",
-    "slot": 15
+    "slot": 15,
+    "randomEnchantment": true
   },
   {
     "id": 25190,
     "name": "Wight\u0027s Claws",
-    "slot": 15
+    "slot": 15,
+    "randomEnchantment": true
+  },
+  {
+    "id": 25196,
+    "name": "Boneshredder Claws",
+    "slot": 15,
+    "randomEnchantment": true
+  },
+  {
+    "id": 25188,
+    "name": "Spleenripper Claws",
+    "slot": 15,
+    "randomEnchantment": true
   },
   {
     "id": 25943,
@@ -111,13 +116,13 @@
     "slot": 15
   },
   {
-    "id": 29348,
-    "name": "The Bladefist",
+    "id": 29371,
+    "name": "Nexus-Claw",
     "slot": 15
   },
   {
-    "id": 29371,
-    "name": "Nexus-Claw",
+    "id": 29348,
+    "name": "The Bladefist",
     "slot": 15
   },
   {
@@ -136,13 +141,13 @@
     "slot": 15
   },
   {
-    "id": 32946,
-    "name": "Claw of Molten Fury",
+    "id": 32944,
+    "name": "Talon of the Phoenix",
     "slot": 15
   },
   {
-    "id": 32944,
-    "name": "Talon of the Phoenix",
+    "id": 32946,
+    "name": "Claw of Molten Fury",
     "slot": 15
   },
   {

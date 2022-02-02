@@ -60,12 +60,6 @@
     "notEnchantable": true
   },
   {
-    "id": 27983,
-    "name": "Libram of Zeal",
-    "slot": 17,
-    "notEnchantable": true
-  },
-  {
     "id": 27949,
     "name": "Libram of Zeal",
     "slot": 17,
@@ -74,6 +68,12 @@
   {
     "id": 28065,
     "name": "Libram of Wracking",
+    "slot": 17,
+    "notEnchantable": true
+  },
+  {
+    "id": 27983,
+    "name": "Libram of Zeal",
     "slot": 17,
     "notEnchantable": true
   },
@@ -132,14 +132,14 @@
     "notEnchantable": true
   },
   {
-    "id": 33504,
-    "name": "Libram of Divine Purpose",
+    "id": 33503,
+    "name": "Libram of Divine Judgement",
     "slot": 17,
     "notEnchantable": true
   },
   {
-    "id": 33503,
-    "name": "Libram of Divine Judgement",
+    "id": 33504,
+    "name": "Libram of Divine Purpose",
     "slot": 17,
     "notEnchantable": true
   },
@@ -150,20 +150,14 @@
     "notEnchantable": true
   },
   {
-    "id": 33936,
-    "name": "Gladiator\u0027s Libram of Fortitude",
-    "slot": 17,
-    "notEnchantable": true
-  },
-  {
     "id": 33937,
     "name": "Merciless Gladiator\u0027s Libram of Fortitude",
     "slot": 17,
     "notEnchantable": true
   },
   {
-    "id": 33938,
-    "name": "Vengeful Gladiator\u0027s Libram of Fortitude",
+    "id": 33936,
+    "name": "Gladiator\u0027s Libram of Fortitude",
     "slot": 17,
     "notEnchantable": true
   },
@@ -180,20 +174,26 @@
     "notEnchantable": true
   },
   {
+    "id": 33938,
+    "name": "Vengeful Gladiator\u0027s Libram of Fortitude",
+    "slot": 17,
+    "notEnchantable": true
+  },
+  {
     "id": 33948,
     "name": "Gladiator\u0027s Libram of Vengeance",
     "slot": 17,
     "notEnchantable": true
   },
   {
-    "id": 35039,
-    "name": "Brutal Gladiator\u0027s Libram of Fortitude",
+    "id": 35040,
+    "name": "Brutal Gladiator\u0027s Libram of Justice",
     "slot": 17,
     "notEnchantable": true
   },
   {
-    "id": 35040,
-    "name": "Brutal Gladiator\u0027s Libram of Justice",
+    "id": 35039,
+    "name": "Brutal Gladiator\u0027s Libram of Fortitude",
     "slot": 17,
     "notEnchantable": true
   },

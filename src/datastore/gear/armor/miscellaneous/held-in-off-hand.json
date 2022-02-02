@@ -21,12 +21,7 @@
     "id": 9944,
     "name": "Abjurer\u0027s Crystal",
     "slot": 16,
-    "notEnchantable": true
-  },
-  {
-    "id": 10708,
-    "name": "Skullspell Orb",
-    "slot": 16,
+    "randomEnchantment": true,
     "notEnchantable": true
   },
   {
@@ -36,9 +31,16 @@
     "notEnchantable": true
   },
   {
+    "id": 10708,
+    "name": "Skullspell Orb",
+    "slot": 16,
+    "notEnchantable": true
+  },
+  {
     "id": 10796,
     "name": "Drakestone",
     "slot": 16,
+    "randomEnchantment": true,
     "notEnchantable": true
   },
   {
@@ -48,14 +50,14 @@
     "notEnchantable": true
   },
   {
-    "id": 11904,
-    "name": "Spirit of Aquementas",
+    "id": 11870,
+    "name": "Oblivion Orb",
     "slot": 16,
     "notEnchantable": true
   },
   {
-    "id": 11870,
-    "name": "Oblivion Orb",
+    "id": 11904,
+    "name": "Spirit of Aquementas",
     "slot": 16,
     "notEnchantable": true
   },
@@ -75,6 +77,13 @@
     "id": 13030,
     "name": "Basilisk Bone",
     "slot": 16,
+    "resistances": {
+      "Arcane": 6,
+      "Fire": 6,
+      "Nature": 6,
+      "Frost": 6,
+      "Shadow": 6
+    },
     "notEnchantable": true
   },
   {
@@ -93,6 +102,9 @@
     "id": 13371,
     "name": "Father Flame",
     "slot": 16,
+    "resistances": {
+      "Fire": 10
+    },
     "notEnchantable": true
   },
   {
@@ -105,6 +117,10 @@
     "id": 13524,
     "name": "Skull of Burning Shadows",
     "slot": 16,
+    "resistances": {
+      "Fire": 15,
+      "Shadow": 10
+    },
     "notEnchantable": true
   },
   {
@@ -117,12 +133,18 @@
     "id": 15857,
     "name": "Magebane Scion",
     "slot": 16,
+    "resistances": {
+      "Arcane": 10,
+      "Fire": 10,
+      "Frost": 10
+    },
     "notEnchantable": true
   },
   {
-    "id": 15938,
-    "name": "Mystical Orb",
+    "id": 15936,
+    "name": "Duskwoven Branch",
     "slot": 16,
+    "randomEnchantment": true,
     "notEnchantable": true
   },
   {
@@ -132,15 +154,30 @@
     "notEnchantable": true
   },
   {
+    "id": 15940,
+    "name": "Elegant Scepter",
+    "slot": 16,
+    "randomEnchantment": true,
+    "notEnchantable": true
+  },
+  {
+    "id": 15939,
+    "name": "Councillor\u0027s Scepter",
+    "slot": 16,
+    "randomEnchantment": true,
+    "notEnchantable": true
+  },
+  {
     "id": 15931,
     "name": "Arcane Star",
     "slot": 16,
     "notEnchantable": true
   },
   {
-    "id": 15936,
-    "name": "Duskwoven Branch",
+    "id": 15938,
+    "name": "Mystical Orb",
     "slot": 16,
+    "randomEnchantment": true,
     "notEnchantable": true
   },
   {
@@ -150,45 +187,10 @@
     "notEnchantable": true
   },
   {
-    "id": 15940,
-    "name": "Elegant Scepter",
-    "slot": 16,
-    "notEnchantable": true
-  },
-  {
-    "id": 15941,
-    "name": "High Councillor\u0027s Scepter",
-    "slot": 16,
-    "notEnchantable": true
-  },
-  {
-    "id": 15966,
-    "name": "Venomshroud Orb",
-    "slot": 16,
-    "notEnchantable": true
-  },
-  {
-    "id": 15939,
-    "name": "Councillor\u0027s Scepter",
-    "slot": 16,
-    "notEnchantable": true
-  },
-  {
     "id": 15942,
     "name": "Master\u0027s Rod",
     "slot": 16,
-    "notEnchantable": true
-  },
-  {
-    "id": 15986,
-    "name": "Bonecaster\u0027s Star",
-    "slot": 16,
-    "notEnchantable": true
-  },
-  {
-    "id": 15968,
-    "name": "Elunarian Sphere",
-    "slot": 16,
+    "randomEnchantment": true,
     "notEnchantable": true
   },
   {
@@ -198,38 +200,24 @@
     "notEnchantable": true
   },
   {
-    "id": 15982,
-    "name": "Bloodwoven Rod",
+    "id": 15966,
+    "name": "Venomshroud Orb",
     "slot": 16,
+    "resistances": {
+      "Nature": 3
+    },
     "notEnchantable": true
   },
   {
-    "id": 15987,
-    "name": "Astral Orb",
+    "id": 15941,
+    "name": "High Councillor\u0027s Scepter",
     "slot": 16,
+    "randomEnchantment": true,
     "notEnchantable": true
   },
   {
-    "id": 15989,
-    "name": "Eternal Rod",
-    "slot": 16,
-    "notEnchantable": true
-  },
-  {
-    "id": 15983,
-    "name": "Gaea\u0027s Scepter",
-    "slot": 16,
-    "notEnchantable": true
-  },
-  {
-    "id": 15985,
-    "name": "Arachnidian Branch",
-    "slot": 16,
-    "notEnchantable": true
-  },
-  {
-    "id": 15988,
-    "name": "Resplendent Orb",
+    "id": 15968,
+    "name": "Elunarian Sphere",
     "slot": 16,
     "notEnchantable": true
   },
@@ -237,6 +225,56 @@
     "id": 15984,
     "name": "Opulent Scepter",
     "slot": 16,
+    "randomEnchantment": true,
+    "notEnchantable": true
+  },
+  {
+    "id": 15983,
+    "name": "Gaea\u0027s Scepter",
+    "slot": 16,
+    "randomEnchantment": true,
+    "notEnchantable": true
+  },
+  {
+    "id": 15988,
+    "name": "Resplendent Orb",
+    "slot": 16,
+    "randomEnchantment": true,
+    "notEnchantable": true
+  },
+  {
+    "id": 15986,
+    "name": "Bonecaster\u0027s Star",
+    "slot": 16,
+    "randomEnchantment": true,
+    "notEnchantable": true
+  },
+  {
+    "id": 15989,
+    "name": "Eternal Rod",
+    "slot": 16,
+    "randomEnchantment": true,
+    "notEnchantable": true
+  },
+  {
+    "id": 15982,
+    "name": "Bloodwoven Rod",
+    "slot": 16,
+    "randomEnchantment": true,
+    "notEnchantable": true
+  },
+  {
+    "id": 15985,
+    "name": "Arachnidian Branch",
+    "slot": 16,
+    "randomEnchantment": true,
+    "notEnchantable": true
+  },
+  {
+    "id": 15987,
+    "name": "Astral Orb",
+    "slot": 16,
+    "randomEnchantment": true,
     "notEnchantable": true
   },
   {
@@ -276,14 +314,14 @@
     "notEnchantable": true
   },
   {
-    "id": 18602,
-    "name": "Tome of Sacrifice",
+    "id": 18672,
+    "name": "Elemental Ember",
     "slot": 16,
     "notEnchantable": true
   },
   {
-    "id": 18672,
-    "name": "Elemental Ember",
+    "id": 18602,
+    "name": "Tome of Sacrifice",
     "slot": 16,
     "notEnchantable": true
   },
@@ -312,8 +350,8 @@
     "notEnchantable": true
   },
   {
-    "id": 19310,
-    "name": "Tome of the Ice Lord",
+    "id": 19315,
+    "name": "Therazane\u0027s Touch",
     "slot": 16,
     "notEnchantable": true
   },
@@ -324,20 +362,8 @@
     "notEnchantable": true
   },
   {
-    "id": 19315,
-    "name": "Therazane\u0027s Touch",
-    "slot": 16,
-    "notEnchantable": true
-  },
-  {
     "id": 19309,
     "name": "Tome of Shadow Force",
-    "slot": 16,
-    "notEnchantable": true
-  },
-  {
-    "id": 19311,
-    "name": "Tome of Fiery Arcana",
     "slot": 16,
     "notEnchantable": true
   },
@@ -348,20 +374,32 @@
     "notEnchantable": true
   },
   {
+    "id": 19311,
+    "name": "Tome of Fiery Arcana",
+    "slot": 16,
+    "notEnchantable": true
+  },
+  {
+    "id": 19310,
+    "name": "Tome of the Ice Lord",
+    "slot": 16,
+    "notEnchantable": true
+  },
+  {
     "id": 19366,
     "name": "Master Dragonslayer\u0027s Orb",
     "slot": 16,
     "notEnchantable": true
   },
   {
-    "id": 19891,
-    "name": "Jin\u0027do\u0027s Bag of Whammies",
+    "id": 19922,
+    "name": "Arlokk\u0027s Hoodoo Stick",
     "slot": 16,
     "notEnchantable": true
   },
   {
-    "id": 19922,
-    "name": "Arlokk\u0027s Hoodoo Stick",
+    "id": 19891,
+    "name": "Jin\u0027do\u0027s Bag of Whammies",
     "slot": 16,
     "notEnchantable": true
   },
@@ -408,14 +446,14 @@
     "notEnchantable": true
   },
   {
-    "id": 22319,
-    "name": "Tome of Divine Right",
+    "id": 22329,
+    "name": "Scepter of Interminable Focus",
     "slot": 16,
     "notEnchantable": true
   },
   {
-    "id": 22329,
-    "name": "Scepter of Interminable Focus",
+    "id": 22319,
+    "name": "Tome of Divine Right",
     "slot": 16,
     "notEnchantable": true
   },
@@ -432,14 +470,14 @@
     "notEnchantable": true
   },
   {
-    "id": 23029,
-    "name": "Noth\u0027s Frigid Heart",
+    "id": 23048,
+    "name": "Sapphiron\u0027s Right Eye",
     "slot": 16,
     "notEnchantable": true
   },
   {
-    "id": 23048,
-    "name": "Sapphiron\u0027s Right Eye",
+    "id": 23029,
+    "name": "Noth\u0027s Frigid Heart",
     "slot": 16,
     "notEnchantable": true
   },
@@ -456,20 +494,8 @@
     "notEnchantable": true
   },
   {
-    "id": 23453,
-    "name": "Grand Marshal\u0027s Tome of Restoration",
-    "slot": 16,
-    "notEnchantable": true
-  },
-  {
     "id": 23452,
     "name": "Grand Marshal\u0027s Tome of Power",
-    "slot": 16,
-    "notEnchantable": true
-  },
-  {
-    "id": 23463,
-    "name": "High Warlord\u0027s Tome of Mending",
     "slot": 16,
     "notEnchantable": true
   },
@@ -480,8 +506,8 @@
     "notEnchantable": true
   },
   {
-    "id": 23468,
-    "name": "High Warlord\u0027s Tome of Destruction",
+    "id": 23463,
+    "name": "High Warlord\u0027s Tome of Mending",
     "slot": 16,
     "notEnchantable": true
   },
@@ -492,44 +518,14 @@
     "notEnchantable": true
   },
   {
-    "id": 25087,
-    "name": "Bleeding Eye",
+    "id": 23468,
+    "name": "High Warlord\u0027s Tome of Destruction",
     "slot": 16,
     "notEnchantable": true
   },
   {
-    "id": 25089,
-    "name": "Supplicant\u0027s Rod",
-    "slot": 16,
-    "notEnchantable": true
-  },
-  {
-    "id": 25092,
-    "name": "Consortium Crystal",
-    "slot": 16,
-    "notEnchantable": true
-  },
-  {
-    "id": 25086,
-    "name": "Dreamseeker Dandelion",
-    "slot": 16,
-    "notEnchantable": true
-  },
-  {
-    "id": 25091,
-    "name": "Mistyreed Torch",
-    "slot": 16,
-    "notEnchantable": true
-  },
-  {
-    "id": 25090,
-    "name": "Slavehandler Rod",
-    "slot": 16,
-    "notEnchantable": true
-  },
-  {
-    "id": 25098,
-    "name": "Tuurik Torch",
+    "id": 23453,
+    "name": "Grand Marshal\u0027s Tome of Restoration",
     "slot": 16,
     "notEnchantable": true
   },
@@ -537,42 +533,98 @@
     "id": 25088,
     "name": "Laughing Skull Orb",
     "slot": 16,
+    "randomEnchantment": true,
+    "notEnchantable": true
+  },
+  {
+    "id": 25092,
+    "name": "Consortium Crystal",
+    "slot": 16,
+    "randomEnchantment": true,
     "notEnchantable": true
   },
   {
     "id": 25094,
     "name": "Eldr\u0027naan Scepter",
     "slot": 16,
-    "notEnchantable": true
-  },
-  {
-    "id": 25096,
-    "name": "Elementalist Star",
-    "slot": 16,
-    "notEnchantable": true
-  },
-  {
-    "id": 25095,
-    "name": "Archmage Orb",
-    "slot": 16,
+    "randomEnchantment": true,
     "notEnchantable": true
   },
   {
     "id": 25097,
     "name": "Astralaan Orb",
     "slot": 16,
+    "randomEnchantment": true,
     "notEnchantable": true
   },
   {
     "id": 25099,
     "name": "Draenei Crystal Rod",
     "slot": 16,
+    "randomEnchantment": true,
+    "notEnchantable": true
+  },
+  {
+    "id": 25095,
+    "name": "Archmage Orb",
+    "slot": 16,
+    "randomEnchantment": true,
+    "notEnchantable": true
+  },
+  {
+    "id": 25089,
+    "name": "Supplicant\u0027s Rod",
+    "slot": 16,
+    "randomEnchantment": true,
     "notEnchantable": true
   },
   {
     "id": 25093,
     "name": "Shadow Council Orb",
     "slot": 16,
+    "randomEnchantment": true,
+    "notEnchantable": true
+  },
+  {
+    "id": 25098,
+    "name": "Tuurik Torch",
+    "slot": 16,
+    "randomEnchantment": true,
+    "notEnchantable": true
+  },
+  {
+    "id": 25086,
+    "name": "Dreamseeker Dandelion",
+    "slot": 16,
+    "randomEnchantment": true,
+    "notEnchantable": true
+  },
+  {
+    "id": 25091,
+    "name": "Mistyreed Torch",
+    "slot": 16,
+    "randomEnchantment": true,
+    "notEnchantable": true
+  },
+  {
+    "id": 25090,
+    "name": "Slavehandler Rod",
+    "slot": 16,
+    "randomEnchantment": true,
+    "notEnchantable": true
+  },
+  {
+    "id": 25096,
+    "name": "Elementalist Star",
+    "slot": 16,
+    "randomEnchantment": true,
+    "notEnchantable": true
+  },
+  {
+    "id": 25087,
+    "name": "Bleeding Eye",
+    "slot": 16,
+    "randomEnchantment": true,
     "notEnchantable": true
   },
   {
@@ -642,14 +694,14 @@
     "notEnchantable": true
   },
   {
-    "id": 28728,
-    "name": "Aran\u0027s Soothing Sapphire",
+    "id": 28734,
+    "name": "Jewel of Infinite Possibilities",
     "slot": 16,
     "notEnchantable": true
   },
   {
-    "id": 28734,
-    "name": "Jewel of Infinite Possibilities",
+    "id": 28728,
+    "name": "Aran\u0027s Soothing Sapphire",
     "slot": 16,
     "notEnchantable": true
   },
@@ -660,14 +712,14 @@
     "notEnchantable": true
   },
   {
-    "id": 28941,
-    "name": "Grand Marshal\u0027s Battletome",
+    "id": 28938,
+    "name": "High Warlord\u0027s Battletome",
     "slot": 16,
     "notEnchantable": true
   },
   {
-    "id": 28938,
-    "name": "High Warlord\u0027s Battletome",
+    "id": 28941,
+    "name": "Grand Marshal\u0027s Battletome",
     "slot": 16,
     "notEnchantable": true
   },
@@ -684,20 +736,8 @@
     "notEnchantable": true
   },
   {
-    "id": 29273,
-    "name": "Khadgar\u0027s Knapsack",
-    "slot": 16,
-    "notEnchantable": true
-  },
-  {
-    "id": 29272,
-    "name": "Orb of the Soul-Eater",
-    "slot": 16,
-    "notEnchantable": true
-  },
-  {
-    "id": 29269,
-    "name": "Sapphiron\u0027s Wing Bone",
+    "id": 29270,
+    "name": "Flametongue Seal",
     "slot": 16,
     "notEnchantable": true
   },
@@ -708,8 +748,20 @@
     "notEnchantable": true
   },
   {
-    "id": 29270,
-    "name": "Flametongue Seal",
+    "id": 29273,
+    "name": "Khadgar\u0027s Knapsack",
+    "slot": 16,
+    "notEnchantable": true
+  },
+  {
+    "id": 29269,
+    "name": "Sapphiron\u0027s Wing Bone",
+    "slot": 16,
+    "notEnchantable": true
+  },
+  {
+    "id": 29272,
+    "name": "Orb of the Soul-Eater",
     "slot": 16,
     "notEnchantable": true
   },
@@ -798,14 +850,14 @@
     "notEnchantable": true
   },
   {
-    "id": 32350,
-    "name": "Touch of Inspiration",
+    "id": 32361,
+    "name": "Blind-Seers Icon",
     "slot": 16,
     "notEnchantable": true
   },
   {
-    "id": 32361,
-    "name": "Blind-Seers Icon",
+    "id": 32350,
+    "name": "Touch of Inspiration",
     "slot": 16,
     "notEnchantable": true
   },
@@ -819,6 +871,7 @@
     "id": 32520,
     "name": "Manaforged Sphere",
     "slot": 16,
+    "randomEnchantment": true,
     "notEnchantable": true
   },
   {
@@ -864,14 +917,14 @@
     "notEnchantable": true
   },
   {
-    "id": 34033,
-    "name": "Vengeful Gladiator\u0027s Grimoire",
+    "id": 34140,
+    "name": "Dark Iron Tankard",
     "slot": 16,
     "notEnchantable": true
   },
   {
-    "id": 34140,
-    "name": "Dark Iron Tankard",
+    "id": 34033,
+    "name": "Vengeful Gladiator\u0027s Grimoire",
     "slot": 16,
     "notEnchantable": true
   },
@@ -888,14 +941,14 @@
     "notEnchantable": true
   },
   {
-    "id": 35008,
-    "name": "Brutal Gladiator\u0027s Endgame",
+    "id": 35016,
+    "name": "Brutal Gladiator\u0027s Grimoire",
     "slot": 16,
     "notEnchantable": true
   },
   {
-    "id": 35016,
-    "name": "Brutal Gladiator\u0027s Grimoire",
+    "id": 35008,
+    "name": "Brutal Gladiator\u0027s Endgame",
     "slot": 16,
     "notEnchantable": true
   },

@@ -35,13 +35,13 @@
     "slot": 15
   },
   {
-    "id": 13056,
-    "name": "Frenzied Striker",
+    "id": 13060,
+    "name": "The Needler",
     "slot": 15
   },
   {
-    "id": 13060,
-    "name": "The Needler",
+    "id": 13056,
+    "name": "Frenzied Striker",
     "slot": 15
   },
   {
@@ -70,13 +70,13 @@
     "slot": 15
   },
   {
-    "id": 18869,
-    "name": "Grand Marshal\u0027s Glaive",
+    "id": 18871,
+    "name": "High Warlord\u0027s Pig Sticker",
     "slot": 15
   },
   {
-    "id": 18871,
-    "name": "High Warlord\u0027s Pig Sticker",
+    "id": 18869,
+    "name": "Grand Marshal\u0027s Glaive",
     "slot": 15
   },
   {
@@ -87,7 +87,10 @@
   {
     "id": 19167,
     "name": "Blackfury",
-    "slot": 15
+    "slot": 15,
+    "resistances": {
+      "Fire": 10
+    }
   },
   {
     "id": 19874,
@@ -135,82 +138,96 @@
     "slot": 15
   },
   {
-    "id": 25229,
-    "name": "Partisan Polearm",
-    "slot": 15
-  },
-  {
     "id": 25227,
     "name": "Sha\u0027tari Longspear",
-    "slot": 15
-  },
-  {
-    "id": 25232,
-    "name": "War Glaive",
-    "slot": 15
-  },
-  {
-    "id": 25230,
-    "name": "Voulge Blade",
-    "slot": 15
-  },
-  {
-    "id": 25237,
-    "name": "Nether Trident",
-    "slot": 15
-  },
-  {
-    "id": 25236,
-    "name": "Grim Scythe",
-    "slot": 15
-  },
-  {
-    "id": 25235,
-    "name": "Ethereal-Etched Glaive",
-    "slot": 15
-  },
-  {
-    "id": 25238,
-    "name": "Hellfire War Spear",
-    "slot": 15
-  },
-  {
-    "id": 25228,
-    "name": "Halberd Polearm",
-    "slot": 15
-  },
-  {
-    "id": 25231,
-    "name": "Fel-Wrought Halberd",
-    "slot": 15
-  },
-  {
-    "id": 25234,
-    "name": "Telaari Polearm",
-    "slot": 15
-  },
-  {
-    "id": 25239,
-    "name": "Legend\u0027s Glaive",
-    "slot": 15
-  },
-  {
-    "id": 25233,
-    "name": "Battle Scythe",
-    "slot": 15
+    "slot": 15,
+    "randomEnchantment": true
   },
   {
     "id": 25226,
     "name": "War Scythe",
-    "slot": 15
+    "slot": 15,
+    "randomEnchantment": true
   },
   {
-    "id": 25608,
+    "id": 25239,
+    "name": "Legend\u0027s Glaive",
+    "slot": 15,
+    "randomEnchantment": true
+  },
+  {
+    "id": 25232,
+    "name": "War Glaive",
+    "slot": 15,
+    "randomEnchantment": true
+  },
+  {
+    "id": 25235,
+    "name": "Ethereal-Etched Glaive",
+    "slot": 15,
+    "randomEnchantment": true
+  },
+  {
+    "id": 25238,
+    "name": "Hellfire War Spear",
+    "slot": 15,
+    "randomEnchantment": true
+  },
+  {
+    "id": 25229,
+    "name": "Partisan Polearm",
+    "slot": 15,
+    "randomEnchantment": true
+  },
+  {
+    "id": 25228,
+    "name": "Halberd Polearm",
+    "slot": 15,
+    "randomEnchantment": true
+  },
+  {
+    "id": 25234,
+    "name": "Telaari Polearm",
+    "slot": 15,
+    "randomEnchantment": true
+  },
+  {
+    "id": 25230,
+    "name": "Voulge Blade",
+    "slot": 15,
+    "randomEnchantment": true
+  },
+  {
+    "id": 25236,
+    "name": "Grim Scythe",
+    "slot": 15,
+    "randomEnchantment": true
+  },
+  {
+    "id": 25237,
+    "name": "Nether Trident",
+    "slot": 15,
+    "randomEnchantment": true
+  },
+  {
+    "id": 25233,
+    "name": "Battle Scythe",
+    "slot": 15,
+    "randomEnchantment": true
+  },
+  {
+    "id": 25231,
+    "name": "Fel-Wrought Halberd",
+    "slot": 15,
+    "randomEnchantment": true
+  },
+  {
+    "id": 25603,
     "name": "Lantresor\u0027s Warblade",
     "slot": 15
   },
   {
-    "id": 25603,
+    "id": 25608,
     "name": "Lantresor\u0027s Warblade",
     "slot": 15
   },
@@ -251,13 +268,13 @@
     "slot": 15
   },
   {
-    "id": 29166,
-    "name": "Hellforged Halberd",
+    "id": 29167,
+    "name": "Blackened Spear",
     "slot": 15
   },
   {
-    "id": 29167,
-    "name": "Blackened Spear",
+    "id": 29166,
+    "name": "Hellforged Halberd",
     "slot": 15
   },
   {

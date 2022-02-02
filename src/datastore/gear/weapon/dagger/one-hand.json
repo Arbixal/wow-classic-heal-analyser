@@ -32,7 +32,8 @@
   {
     "id": 10828,
     "name": "Dire Nail",
-    "slot": 16
+    "slot": 16,
+    "randomEnchantment": true
   },
   {
     "id": 11635,
@@ -61,17 +62,17 @@
   },
   {
     "id": 12709,
-    "name": "Finkle\u0027s Skinner",
-    "slot": 16
-  },
-  {
-    "id": 12783,
-    "name": "Heartseeker",
+    "name": "Pip\u0027s Skinner",
     "slot": 16
   },
   {
     "id": 12791,
     "name": "Barman Shanker",
+    "slot": 16
+  },
+  {
+    "id": 12783,
+    "name": "Heartseeker",
     "slot": 16
   },
   {
@@ -107,17 +108,22 @@
   {
     "id": 14555,
     "name": "Alcor\u0027s Sunrazor",
-    "slot": 16
-  },
-  {
-    "id": 15246,
-    "name": "Demon Blade",
-    "slot": 16
+    "slot": 16,
+    "resistances": {
+      "Fire": 10
+    }
   },
   {
     "id": 15247,
     "name": "Bloodstrike Dagger",
-    "slot": 16
+    "slot": 16,
+    "randomEnchantment": true
+  },
+  {
+    "id": 15246,
+    "name": "Demon Blade",
+    "slot": 16,
+    "randomEnchantment": true
   },
   {
     "id": 15706,
@@ -195,17 +201,17 @@
     "slot": 16
   },
   {
-    "id": 19346,
-    "name": "Dragonfang Blade",
-    "slot": 16
-  },
-  {
     "id": 19324,
     "name": "The Lobotomizer",
     "slot": 16
   },
   {
-    "id": 19542,
+    "id": 19346,
+    "name": "Dragonfang Blade",
+    "slot": 16
+  },
+  {
+    "id": 19543,
     "name": "Scout\u0027s Blade",
     "slot": 16
   },
@@ -215,7 +221,7 @@
     "slot": 16
   },
   {
-    "id": 19543,
+    "id": 19542,
     "name": "Scout\u0027s Blade",
     "slot": 16
   },
@@ -305,31 +311,6 @@
     "slot": 16
   },
   {
-    "id": 23650,
-    "name": "Deprecated: Keanna\u0027s Will",
-    "slot": 16
-  },
-  {
-    "id": 23917,
-    "name": "Deprecated: Keanna\u0027s Will",
-    "slot": 16
-  },
-  {
-    "id": 23916,
-    "name": "Deprecated: Keanna\u0027s Will",
-    "slot": 16
-  },
-  {
-    "id": 23905,
-    "name": "Deprecated: Keanna\u0027s Will",
-    "slot": 16
-  },
-  {
-    "id": 23911,
-    "name": "Deprecated: Keanna\u0027s Will",
-    "slot": 16
-  },
-  {
     "id": 24222,
     "name": "The Shadowfoot Stabber",
     "slot": 16
@@ -342,72 +323,86 @@
   {
     "id": 25103,
     "name": "Nightstalker Dagger",
-    "slot": 16
-  },
-  {
-    "id": 25104,
-    "name": "Anzac Dagger",
-    "slot": 16
-  },
-  {
-    "id": 25107,
-    "name": "Draconic Dagger",
-    "slot": 16
-  },
-  {
-    "id": 25108,
-    "name": "Grave Keeper Knife",
-    "slot": 16
-  },
-  {
-    "id": 25102,
-    "name": "Jaedenis Dagger",
-    "slot": 16
-  },
-  {
-    "id": 25110,
-    "name": "Sharp Bowie Knife",
-    "slot": 16
-  },
-  {
-    "id": 25109,
-    "name": "Moon Blade",
-    "slot": 16
-  },
-  {
-    "id": 25100,
-    "name": "Liege Blade",
-    "slot": 16
-  },
-  {
-    "id": 25112,
-    "name": "Fel Ripper",
-    "slot": 16
+    "slot": 16,
+    "randomEnchantment": true
   },
   {
     "id": 25111,
     "name": "Lionhead Dagger",
-    "slot": 16
+    "slot": 16,
+    "randomEnchantment": true
   },
   {
-    "id": 25105,
-    "name": "Arachnid Dagger",
-    "slot": 16
+    "id": 25102,
+    "name": "Jaedenis Dagger",
+    "slot": 16,
+    "randomEnchantment": true
+  },
+  {
+    "id": 25104,
+    "name": "Anzac Dagger",
+    "slot": 16,
+    "randomEnchantment": true
   },
   {
     "id": 25101,
     "name": "Cross Pommel Dagger",
-    "slot": 16
-  },
-  {
-    "id": 25113,
-    "name": "Phantom Dagger",
-    "slot": 16
+    "slot": 16,
+    "randomEnchantment": true
   },
   {
     "id": 25106,
     "name": "Cobra Shortblade",
-    "slot": 16
+    "slot": 16,
+    "randomEnchantment": true
+  },
+  {
+    "id": 25100,
+    "name": "Liege Blade",
+    "slot": 16,
+    "randomEnchantment": true
+  },
+  {
+    "id": 25105,
+    "name": "Arachnid Dagger",
+    "slot": 16,
+    "randomEnchantment": true
+  },
+  {
+    "id": 25108,
+    "name": "Grave Keeper Knife",
+    "slot": 16,
+    "randomEnchantment": true
+  },
+  {
+    "id": 25110,
+    "name": "Sharp Bowie Knife",
+    "slot": 16,
+    "randomEnchantment": true
+  },
+  {
+    "id": 25107,
+    "name": "Draconic Dagger",
+    "slot": 16,
+    "randomEnchantment": true
+  },
+  {
+    "id": 25112,
+    "name": "Fel Ripper",
+    "slot": 16,
+    "randomEnchantment": true
+  },
+  {
+    "id": 25113,
+    "name": "Phantom Dagger",
+    "slot": 16,
+    "randomEnchantment": true
+  },
+  {
+    "id": 25109,
+    "name": "Moon Blade",
+    "slot": 16,
+    "randomEnchantment": true
   },
   {
     "id": 25403,
@@ -486,6 +481,16 @@
     "slot": 16
   },
   {
+    "id": 28955,
+    "name": "Grand Marshal\u0027s Shiv",
+    "slot": 16
+  },
+  {
+    "id": 28954,
+    "name": "Grand Marshal\u0027s Shanker",
+    "slot": 16
+  },
+  {
     "id": 28929,
     "name": "High Warlord\u0027s Shanker",
     "slot": 16
@@ -496,23 +501,13 @@
     "slot": 16
   },
   {
-    "id": 28954,
-    "name": "Grand Marshal\u0027s Shanker",
-    "slot": 16
-  },
-  {
-    "id": 28955,
-    "name": "Grand Marshal\u0027s Shiv",
+    "id": 29121,
+    "name": "Guile of Khoraazi",
     "slot": 16
   },
   {
     "id": 29125,
     "name": "Retainer\u0027s Blade",
-    "slot": 16
-  },
-  {
-    "id": 29121,
-    "name": "Guile of Khoraazi",
     "slot": 16
   },
   {
@@ -526,13 +521,13 @@
     "slot": 16
   },
   {
-    "id": 29360,
-    "name": "Vileblade of the Betrayer",
+    "id": 29346,
+    "name": "Feltooth Eviscerator",
     "slot": 16
   },
   {
-    "id": 29346,
-    "name": "Feltooth Eviscerator",
+    "id": 29360,
+    "name": "Vileblade of the Betrayer",
     "slot": 16
   },
   {
@@ -566,13 +561,13 @@
     "slot": 16
   },
   {
-    "id": 30865,
-    "name": "Tracker\u0027s Blade",
+    "id": 30901,
+    "name": "Boundless Agony",
     "slot": 16
   },
   {
-    "id": 30901,
-    "name": "Boundless Agony",
+    "id": 30865,
+    "name": "Tracker\u0027s Blade",
     "slot": 16
   },
   {
@@ -591,13 +586,13 @@
     "slot": 16
   },
   {
-    "id": 31305,
-    "name": "Ced\u0027s Carver",
+    "id": 31331,
+    "name": "The Night Blade",
     "slot": 16
   },
   {
-    "id": 31331,
-    "name": "The Night Blade",
+    "id": 31305,
+    "name": "Ced\u0027s Carver",
     "slot": 16
   },
   {
@@ -621,18 +616,23 @@
     "slot": 16
   },
   {
-    "id": 31703,
-    "name": "Nether-Stalker\u0027s Blade",
-    "slot": 16
-  },
-  {
     "id": 31723,
     "name": "Madman\u0027s Blade",
     "slot": 16
   },
   {
+    "id": 31703,
+    "name": "Nether-Stalker\u0027s Blade",
+    "slot": 16
+  },
+  {
     "id": 31733,
     "name": "Akuno\u0027s Blade",
+    "slot": 16
+  },
+  {
+    "id": 31759,
+    "name": "Shani\u0027s Crysknife",
     "slot": 16
   },
   {
@@ -643,11 +643,6 @@
   {
     "id": 31756,
     "name": "Dib\u0027Muad\u0027s Crysknife",
-    "slot": 16
-  },
-  {
-    "id": 31759,
-    "name": "Shani\u0027s Crysknife",
     "slot": 16
   },
   {
@@ -724,13 +719,13 @@
     "slot": 16
   },
   {
-    "id": 34665,
-    "name": "Bombardier\u0027s Blade",
+    "id": 34859,
+    "name": "Razor Sharp Fillet Knife",
     "slot": 16
   },
   {
-    "id": 34859,
-    "name": "Razor Sharp Fillet Knife",
+    "id": 34665,
+    "name": "Bombardier\u0027s Blade",
     "slot": 16
   },
   {

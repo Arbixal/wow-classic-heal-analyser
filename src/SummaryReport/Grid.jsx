@@ -81,10 +81,10 @@ export class Grid extends Component {
     }
 
     render() {
-        const {data, children, fightId, classFilter, roleFilter} = this.props;
+        const {data, children, fightId, classFilter, roleFilter, boss} = this.props;
         const {collapsed, summaryRow} = this.state;
 
-        let ctx = {collapsed: collapsed, classFilter: classFilter, roleFilter: roleFilter};
+        let ctx = {collapsed: collapsed, classFilter: classFilter, roleFilter: roleFilter, boss: boss};
 
         return (
         <table className="grid_table">

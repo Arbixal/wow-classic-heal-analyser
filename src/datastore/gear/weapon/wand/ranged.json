@@ -27,6 +27,9 @@
     "id": 13004,
     "name": "Torch of Austen",
     "slot": 17,
+    "resistances": {
+      "Fire": 10
+    },
     "notEnchantable": true
   },
   {
@@ -39,6 +42,9 @@
     "id": 13534,
     "name": "Banshee Finger",
     "slot": 17,
+    "resistances": {
+      "Frost": 10
+    },
     "notEnchantable": true
   },
   {
@@ -48,33 +54,38 @@
     "notEnchantable": true
   },
   {
-    "id": 15282,
-    "name": "Dragon Finger",
-    "slot": 17,
-    "notEnchantable": true
-  },
-  {
-    "id": 15281,
-    "name": "Glowstar Rod",
-    "slot": 17,
-    "notEnchantable": true
-  },
-  {
     "id": 15279,
     "name": "Ivory Wand",
     "slot": 17,
-    "notEnchantable": true
-  },
-  {
-    "id": 15283,
-    "name": "Lunar Wand",
-    "slot": 17,
+    "randomEnchantment": true,
     "notEnchantable": true
   },
   {
     "id": 15280,
     "name": "Wizard\u0027s Hand",
     "slot": 17,
+    "randomEnchantment": true,
+    "notEnchantable": true
+  },
+  {
+    "id": 15281,
+    "name": "Glowstar Rod",
+    "slot": 17,
+    "randomEnchantment": true,
+    "notEnchantable": true
+  },
+  {
+    "id": 15283,
+    "name": "Lunar Wand",
+    "slot": 17,
+    "randomEnchantment": true,
+    "notEnchantable": true
+  },
+  {
+    "id": 15282,
+    "name": "Dragon Finger",
+    "slot": 17,
+    "randomEnchantment": true,
     "notEnchantable": true
   },
   {
@@ -93,6 +104,9 @@
     "id": 17077,
     "name": "Crimson Shocker",
     "slot": 17,
+    "resistances": {
+      "Fire": 10
+    },
     "notEnchantable": true
   },
   {
@@ -204,14 +218,14 @@
     "notEnchantable": true
   },
   {
-    "id": 22821,
-    "name": "Doomfinger",
+    "id": 22820,
+    "name": "Wand of Fates",
     "slot": 17,
     "notEnchantable": true
   },
   {
-    "id": 22820,
-    "name": "Wand of Fates",
+    "id": 22821,
+    "name": "Doomfinger",
     "slot": 17,
     "notEnchantable": true
   },
@@ -228,87 +242,101 @@
     "notEnchantable": true
   },
   {
-    "id": 25284,
-    "name": "Purpleheart Wand",
-    "slot": 17,
-    "notEnchantable": true
-  },
-  {
-    "id": 25287,
-    "name": "Magician\u0027s Wand",
-    "slot": 17,
-    "notEnchantable": true
-  },
-  {
-    "id": 25289,
-    "name": "Majestic Wand",
-    "slot": 17,
-    "notEnchantable": true
-  },
-  {
-    "id": 25288,
-    "name": "Conjurer\u0027s Wand",
-    "slot": 17,
-    "notEnchantable": true
-  },
-  {
-    "id": 25292,
-    "name": "Mechano-Wand",
-    "slot": 17,
-    "notEnchantable": true
-  },
-  {
-    "id": 25290,
-    "name": "Solitaire Wand",
-    "slot": 17,
-    "notEnchantable": true
-  },
-  {
-    "id": 25293,
-    "name": "Draenethyst Wand",
-    "slot": 17,
-    "notEnchantable": true
-  },
-  {
-    "id": 25294,
-    "name": "Dragonscale Wand",
-    "slot": 17,
-    "notEnchantable": true
-  },
-  {
-    "id": 25285,
-    "name": "Bloodwood Wand",
-    "slot": 17,
-    "notEnchantable": true
-  },
-  {
     "id": 25282,
     "name": "Mahogany Wand",
     "slot": 17,
-    "notEnchantable": true
-  },
-  {
-    "id": 25286,
-    "name": "Yew Wand",
-    "slot": 17,
-    "notEnchantable": true
-  },
-  {
-    "id": 25295,
-    "name": "Flawless Wand",
-    "slot": 17,
+    "randomEnchantment": true,
     "notEnchantable": true
   },
   {
     "id": 25291,
     "name": "Nobility Torch",
     "slot": 17,
+    "randomEnchantment": true,
+    "notEnchantable": true
+  },
+  {
+    "id": 25284,
+    "name": "Purpleheart Wand",
+    "slot": 17,
+    "randomEnchantment": true,
+    "notEnchantable": true
+  },
+  {
+    "id": 25295,
+    "name": "Flawless Wand",
+    "slot": 17,
+    "randomEnchantment": true,
+    "notEnchantable": true
+  },
+  {
+    "id": 25286,
+    "name": "Yew Wand",
+    "slot": 17,
+    "randomEnchantment": true,
+    "notEnchantable": true
+  },
+  {
+    "id": 25288,
+    "name": "Conjurer\u0027s Wand",
+    "slot": 17,
+    "randomEnchantment": true,
+    "notEnchantable": true
+  },
+  {
+    "id": 25287,
+    "name": "Magician\u0027s Wand",
+    "slot": 17,
+    "randomEnchantment": true,
+    "notEnchantable": true
+  },
+  {
+    "id": 25289,
+    "name": "Majestic Wand",
+    "slot": 17,
+    "randomEnchantment": true,
+    "notEnchantable": true
+  },
+  {
+    "id": 25293,
+    "name": "Draenethyst Wand",
+    "slot": 17,
+    "randomEnchantment": true,
+    "notEnchantable": true
+  },
+  {
+    "id": 25292,
+    "name": "Mechano-Wand",
+    "slot": 17,
+    "randomEnchantment": true,
+    "notEnchantable": true
+  },
+  {
+    "id": 25294,
+    "name": "Dragonscale Wand",
+    "slot": 17,
+    "randomEnchantment": true,
+    "notEnchantable": true
+  },
+  {
+    "id": 25285,
+    "name": "Bloodwood Wand",
+    "slot": 17,
+    "randomEnchantment": true,
+    "notEnchantable": true
+  },
+  {
+    "id": 25290,
+    "name": "Solitaire Wand",
+    "slot": 17,
+    "randomEnchantment": true,
     "notEnchantable": true
   },
   {
     "id": 25283,
     "name": "Crystallized Ebony Wand",
     "slot": 17,
+    "randomEnchantment": true,
     "notEnchantable": true
   },
   {
@@ -360,25 +388,25 @@
     "notEnchantable": true
   },
   {
-    "id": 27885,
-    "name": "Soul-Wand of the Aldor",
-    "slot": 17,
-    "notEnchantable": true
-  },
-  {
     "id": 27890,
     "name": "Wand of the Netherwing",
     "slot": 17,
     "notEnchantable": true
   },
   {
-    "id": 27942,
-    "name": "Incendic Rod",
+    "id": 27885,
+    "name": "Soul-Wand of the Aldor",
     "slot": 17,
     "notEnchantable": true
   },
   {
     "id": 27939,
+    "name": "Incendic Rod",
+    "slot": 17,
+    "notEnchantable": true
+  },
+  {
+    "id": 27942,
     "name": "Incendic Rod",
     "slot": 17,
     "notEnchantable": true
@@ -492,14 +520,14 @@
     "notEnchantable": true
   },
   {
-    "id": 31724,
-    "name": "Arakkoa Divining Rod",
+    "id": 31761,
+    "name": "Talonbranch Wand",
     "slot": 17,
     "notEnchantable": true
   },
   {
-    "id": 31761,
-    "name": "Talonbranch Wand",
+    "id": 31724,
+    "name": "Arakkoa Divining Rod",
     "slot": 17,
     "notEnchantable": true
   },
@@ -560,27 +588,27 @@
     "notEnchantable": true
   },
   {
-    "id": 34059,
-    "name": "Vengeful Gladiator\u0027s Baton of Light",
-    "slot": 17,
-    "notEnchantable": true
-  },
-  {
     "id": 34066,
     "name": "Vengeful Gladiator\u0027s Piercing Touch",
     "slot": 17,
     "notEnchantable": true
   },
   {
-    "id": 34348,
-    "name": "Wand of Cleansing Light",
+    "id": 34059,
+    "name": "Vengeful Gladiator\u0027s Baton of Light",
     "slot": 17,
-    "sockets": 1,
     "notEnchantable": true
   },
   {
     "id": 34347,
     "name": "Wand of the Demonsoul",
+    "slot": 17,
+    "sockets": 1,
+    "notEnchantable": true
+  },
+  {
+    "id": 34348,
+    "name": "Wand of Cleansing Light",
     "slot": 17,
     "sockets": 1,
     "notEnchantable": true
@@ -592,14 +620,14 @@
     "notEnchantable": true
   },
   {
-    "id": 35065,
-    "name": "Brutal Gladiator\u0027s Piercing Touch",
+    "id": 35107,
+    "name": "Brutal Gladiator\u0027s Touch of Defeat",
     "slot": 17,
     "notEnchantable": true
   },
   {
-    "id": 35107,
-    "name": "Brutal Gladiator\u0027s Touch of Defeat",
+    "id": 35065,
+    "name": "Brutal Gladiator\u0027s Piercing Touch",
     "slot": 17,
     "notEnchantable": true
   }

@@ -35,18 +35,20 @@
     "slot": 17
   },
   {
-    "id": 15325,
-    "name": "Sharpshooter Harquebus",
-    "slot": 17
-  },
-  {
     "id": 15324,
     "name": "Burnside Rifle",
-    "slot": 17
+    "slot": 17,
+    "randomEnchantment": true
   },
   {
-    "id": 15995,
-    "name": "Thorium Rifle",
+    "id": 15325,
+    "name": "Sharpshooter Harquebus",
+    "slot": 17,
+    "randomEnchantment": true
+  },
+  {
+    "id": 16004,
+    "name": "Dark Iron Rifle",
     "slot": 17
   },
   {
@@ -55,8 +57,8 @@
     "slot": 17
   },
   {
-    "id": 16004,
-    "name": "Dark Iron Rifle",
+    "id": 15995,
+    "name": "Thorium Rifle",
     "slot": 17
   },
   {
@@ -87,16 +89,19 @@
   {
     "id": 18755,
     "name": "Xorothian Firestick",
+    "slot": 17,
+    "resistances": {
+      "Shadow": 6
+    }
+  },
+  {
+    "id": 18855,
+    "name": "Grand Marshal\u0027s Hand Cannon",
     "slot": 17
   },
   {
     "id": 18860,
     "name": "High Warlord\u0027s Street Sweeper",
-    "slot": 17
-  },
-  {
-    "id": 18855,
-    "name": "Grand Marshal\u0027s Hand Cannon",
     "slot": 17
   },
   {
@@ -145,6 +150,11 @@
     "slot": 17
   },
   {
+    "id": 23748,
+    "name": "Ornate Khorium Rifle",
+    "slot": 17
+  },
+  {
     "id": 23746,
     "name": "Adamantite Rifle",
     "slot": 17
@@ -155,84 +165,93 @@
     "slot": 17
   },
   {
-    "id": 23748,
-    "name": "Ornate Khorium Rifle",
-    "slot": 17
-  },
-  {
     "id": 24389,
     "name": "Legion Blunderbuss",
     "slot": 17
   },
   {
-    "id": 25270,
-    "name": "Gnomish Assault Rifle",
-    "slot": 17
-  },
-  {
-    "id": 25272,
-    "name": "PC-54 Shotgun",
-    "slot": 17
-  },
-  {
-    "id": 25273,
-    "name": "Sawed-Off Shotgun",
-    "slot": 17
-  },
-  {
     "id": 25268,
     "name": "Lead-Slug Shotgun",
-    "slot": 17
-  },
-  {
-    "id": 25279,
-    "name": "Sen\u0027jin Longrifle",
-    "slot": 17
-  },
-  {
-    "id": 25280,
-    "name": "Game Hunter Musket",
-    "slot": 17
-  },
-  {
-    "id": 25274,
-    "name": "Cliffjumper Shotgun",
-    "slot": 17
-  },
-  {
-    "id": 25276,
-    "name": "Tauren Runed Musket",
-    "slot": 17
+    "slot": 17,
+    "randomEnchantment": true
   },
   {
     "id": 25269,
     "name": "Longbeard Rifle",
-    "slot": 17
+    "slot": 17,
+    "randomEnchantment": true
+  },
+  {
+    "id": 25270,
+    "name": "Gnomish Assault Rifle",
+    "slot": 17,
+    "randomEnchantment": true
   },
   {
     "id": 25271,
     "name": "Croc-Hunter\u0027s Rifle",
-    "slot": 17
+    "slot": 17,
+    "randomEnchantment": true
   },
   {
-    "id": 25278,
-    "name": "Nessingwary Longrifle",
-    "slot": 17
+    "id": 25272,
+    "name": "PC-54 Shotgun",
+    "slot": 17,
+    "randomEnchantment": true
   },
   {
-    "id": 25277,
-    "name": "Sporting Rifle",
-    "slot": 17
+    "id": 25276,
+    "name": "Tauren Runed Musket",
+    "slot": 17,
+    "randomEnchantment": true
   },
   {
     "id": 25281,
     "name": "Big-Boar Battle Rifle",
-    "slot": 17
+    "slot": 17,
+    "randomEnchantment": true
+  },
+  {
+    "id": 25278,
+    "name": "Nessingwary Longrifle",
+    "slot": 17,
+    "randomEnchantment": true
+  },
+  {
+    "id": 25277,
+    "name": "Sporting Rifle",
+    "slot": 17,
+    "randomEnchantment": true
+  },
+  {
+    "id": 25274,
+    "name": "Cliffjumper Shotgun",
+    "slot": 17,
+    "randomEnchantment": true
   },
   {
     "id": 25275,
     "name": "Dragonbreath Musket",
-    "slot": 17
+    "slot": 17,
+    "randomEnchantment": true
+  },
+  {
+    "id": 25273,
+    "name": "Sawed-Off Shotgun",
+    "slot": 17,
+    "randomEnchantment": true
+  },
+  {
+    "id": 25279,
+    "name": "Sen\u0027jin Longrifle",
+    "slot": 17,
+    "randomEnchantment": true
+  },
+  {
+    "id": 25280,
+    "name": "Game Hunter Musket",
+    "slot": 17,
+    "randomEnchantment": true
   },
   {
     "id": 25405,

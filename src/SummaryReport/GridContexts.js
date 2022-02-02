@@ -15,6 +15,7 @@ export const GroupKeys = {
     Tank: "Tank",
     Healer: "Healer",
     Dps: "Dps",
+    Resistance: "Resistance",
 }
 
 export const DataPoints = {
@@ -147,6 +148,11 @@ export const DataPoints = {
     DamageTakenMiss: "DamageTakenMiss",
     DamageTakenDodge: "DamageTakenDodge",
     DamageTakenParry: "DamageTakenParry",
+    ResistanceNature: "ResistanceNature",
+    ResistanceFire: "ResistanceFire",
+    ResistanceFrost: "ResistanceFrost",
+    ResistanceShadow: "ResistanceShadow",
+    ResistanceArcane: "ResistanceArcane",
 };
 
 export const emptyData = {
@@ -280,4 +286,9 @@ export const emptyData = {
     [DataPoints.DamageTakenParry]: " ",
     [DataPoints.DamageTakenDodge]: " ",
     [DataPoints.DamageTakenMiss]: " ",
+    [DataPoints.ResistanceArcane]: " ",
+    [DataPoints.ResistanceFire]: " ",
+    [DataPoints.ResistanceFrost]: " ",
+    [DataPoints.ResistanceNature]: " ",
+    [DataPoints.ResistanceShadow]: " ",
 }

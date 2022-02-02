@@ -2489,3 +2489,248 @@ export const enchants = {
         }
     }
 }
+
+export const resistanceGems = {
+    22459: {   // Void sphere
+        arcane: 4,
+        fire: 4,
+        frost: 4,
+        nature: 4,
+        shadow: 4,
+    },
+
+    22460: {   // Prismatic sphere
+        arcane: 3,
+        fire: 3,
+        frost: 3,
+        nature: 3,
+        shadow: 3,
+    }
+};
+
+export const resistanceEnchants = {
+    1441: { // Enchant Cloak - Greater Shadow Resistance
+        shadow: 15
+    },
+    1257: { // Enchant Cloak - Greater Arcane Resistance
+        arcane: 15
+    },
+    2664: { // Enchant Cloak - Major Resistance
+        arcane: 7,
+        fire: 7,
+        frost: 7,
+        nature: 7,
+        shadow: 7
+    },
+    1888: { // Enchant Shield - Resistance (Enchant Cloak - Greater Resistance)
+        arcane: 5,
+        fire: 5,
+        frost: 5,
+        nature: 5,
+        shadow: 5
+    },
+    2620: { // Enchant Cloak - Greater Nature Resistance
+        nature: 15
+    },
+    2619: { // Enchant Cloak - Greater Fire Resistance
+        fire: 15
+    },
+    926: {  // Enchant Shield - Frost Resistance
+        frost: 8
+    },
+    903: {  // Enchant Cloak - Resistance
+        arcane: 3,
+        fire: 3,
+        frost: 3,
+        nature: 3,
+        shadow: 3
+    },
+    2463: { // Enchant Cloak - Fire Resistance
+        fire: 7
+    },
+    804: {  // Enchant Cloak - Lesser Shadow Resistance
+        shadow: 10
+    },
+    256: {  // Enchant Cloak - Lesser Fire Resistance
+        fire: 5
+    },
+    65: {   // Enchant Cloak - Minor Resistance
+        arcane: 1,
+        fire: 1,
+        frost: 1,
+        nature: 1,
+        shadow: 1
+    },
+    2984: { // Shadow Armor Kit
+        shadow: 8
+    },
+    3009: { // Glyph of Shadow Warding
+        shadow: 20
+    },
+    2683: { // Shadow Guard
+        shadow: 10
+    },
+    2998: { // Inscription of Endurance
+        arcane: 7,
+        fire: 7,
+        frost: 7,
+        nature: 7,
+        shadow: 7
+    },
+    2985: { // Flame Armor Kit
+        fire: 8
+    },
+    2487: { // Shadow Mantle of the Dawn
+        shadow: 5
+    },
+    1505: { // Lesser Arcanum of Resilience
+        fire: 20
+    },
+    3007: { // Glyph of Fire Warding
+        fire: 20
+    },
+    2988: { // Nature Armor Kit
+        nature: 8
+    },
+    2987: { // Frost Armor Kit
+        frost: 8
+    },
+    3008: { // Glyph of Frost Warding
+        frost: 20
+    },
+    2488: { // Chromatic Mandle of the Dawn
+        arcane: 5,
+        fire: 5,
+        frost: 5,
+        nature: 5,
+        shadow: 5
+    },
+    2989: { // Arcane Armor Kit
+        arcane: 8
+    },
+    2681: { // Savage Guard
+        nature: 10
+    },
+    3095: { // Glyph of Chromatic Warding
+        arcane: 8,
+        fire: 8,
+        frost: 8,
+        nature: 8,
+        shadow: 8
+    },
+    2483: { // Flame Mantle of the Dawn
+        fire: 5
+    },
+    3006: { // Glyph of Arcane Warding
+        arcane: 20
+    },
+    2485: { // Arcane Mantle of the Dawn
+        arcane: 5
+    },
+    2682: { // Ice Guard
+        frost: 10
+    },
+    2484: { // Frost Guard
+        frost: 5
+    },
+    2486: { // Nature Mantle of the Dawn
+        nature: 5
+    }
+}
+
+/*
+const slots = {
+    0: { enchantable: true, name: "Head" },
+    1: { enchantable: false, name: "Neck" },
+    2: { enchantable: true, name: "Shoulders" },
+    3: { enchantable: false, name: "Shirt" },
+    4: { enchantable: true, name: "Chest" },
+    5: { enchantable: false, name: "Waist" },
+    6: { enchantable: true, name: "Legs" },
+    7: { enchantable: true, name: "Feet" },
+    8: { enchantable: true, name: "Arms" },
+    9: { enchantable: true, name: "Hands" },
+    10: { enchantable: false, name: "Ring 1" },
+    11: { enchantable: false, name: "Ring 2" },
+    12: { enchantable: false, name: "Trinket 1" },
+    13: { enchantable: false, name: "Trinket 2" },
+    14: { enchantable: true, name: "Back" },
+    15: { enchantable: true, name: "Main Hand" },
+    16: { enchantable: true, name: "Off Hand" },
+    17: { enchantable: true, name: "Ranged" },
+    18: { enchantable: false, name: "Tabard" }
+};
+*/
+const highResist = {
+    120: 37,
+    117: 36,
+    114: 35,
+    111: 34,
+    109: 39,    // rare
+    108: 33,
+    105: 32,
+    102: 31,
+    99: 30,
+    96: 29,
+    93: 28,
+    90: 27,
+    87: 26,
+    84: 25,
+    82: 31,     // rare
+    81: 24,
+};
+
+const medResist = {
+    120: 27,
+    117: 27,
+    114: 26,
+    111: 25,
+    109: 30,    // rare
+    108: 25,
+    105: 23,
+    102: 23,
+    99: 22,
+    96: 21,
+    93: 21,
+    91: 26,     // rare
+    90: 20,
+    87: 19,
+    84: 19,
+    81: 17,
+};
+
+const lowResist = {
+    120: 21,
+    117: 20,
+    115: 27,    // epic
+    114: 19,
+    111: 19,
+    108: 18,
+    105: 17,
+    103: 21,    // rare
+    102: 17,
+    99: 17,
+    96: 16,
+    94: 19,     // rare
+    93: 15,
+    90: 15,
+    87: 14,
+    84: 13,
+    81: 13,
+};
+
+export const resistRandomEnchantBySlot = {
+    0: highResist,
+    1: lowResist,
+    2: medResist,
+    4: highResist,
+    5: medResist,
+    6: highResist,
+    7: medResist,
+    8: lowResist,
+    9: medResist,
+    10: lowResist,
+    11: lowResist,
+    14: lowResist,
+    16: lowResist,
+}

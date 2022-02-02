@@ -6,14 +6,14 @@
     "notEnchantable": true
   },
   {
-    "id": 22396,
-    "name": "Totem of Life",
+    "id": 22395,
+    "name": "Totem of Rage",
     "slot": 17,
     "notEnchantable": true
   },
   {
-    "id": 22395,
-    "name": "Totem of Rage",
+    "id": 22396,
+    "name": "Totem of Life",
     "slot": 17,
     "notEnchantable": true
   },
@@ -66,14 +66,14 @@
     "notEnchantable": true
   },
   {
-    "id": 27947,
-    "name": "Totem of Impact",
+    "id": 28066,
+    "name": "Totem of Lightning",
     "slot": 17,
     "notEnchantable": true
   },
   {
-    "id": 28066,
-    "name": "Totem of Lightning",
+    "id": 27947,
+    "name": "Totem of Impact",
     "slot": 17,
     "notEnchantable": true
   },
@@ -126,14 +126,14 @@
     "notEnchantable": true
   },
   {
-    "id": 33506,
-    "name": "Skycall Totem",
+    "id": 33507,
+    "name": "Stonebreaker\u0027s Totem",
     "slot": 17,
     "notEnchantable": true
   },
   {
-    "id": 33507,
-    "name": "Stonebreaker\u0027s Totem",
+    "id": 33506,
+    "name": "Skycall Totem",
     "slot": 17,
     "notEnchantable": true
   },
@@ -150,8 +150,8 @@
     "notEnchantable": true
   },
   {
-    "id": 33940,
-    "name": "Merciless Gladiator\u0027s Totem of Indomitability",
+    "id": 33951,
+    "name": "Gladiator\u0027s Totem of Survival",
     "slot": 17,
     "notEnchantable": true
   },
@@ -162,8 +162,8 @@
     "notEnchantable": true
   },
   {
-    "id": 33952,
-    "name": "Merciless Gladiator\u0027s Totem of Survival",
+    "id": 33941,
+    "name": "Vengeful Gladiator\u0027s Totem of Indomitability",
     "slot": 17,
     "notEnchantable": true
   },
@@ -174,26 +174,26 @@
     "notEnchantable": true
   },
   {
-    "id": 33941,
-    "name": "Vengeful Gladiator\u0027s Totem of Indomitability",
+    "id": 33940,
+    "name": "Merciless Gladiator\u0027s Totem of Indomitability",
     "slot": 17,
     "notEnchantable": true
   },
   {
-    "id": 33951,
-    "name": "Gladiator\u0027s Totem of Survival",
-    "slot": 17,
-    "notEnchantable": true
-  },
-  {
-    "id": 35106,
-    "name": "Brutal Gladiator\u0027s Totem of the Third Wind",
+    "id": 33952,
+    "name": "Merciless Gladiator\u0027s Totem of Survival",
     "slot": 17,
     "notEnchantable": true
   },
   {
     "id": 35105,
     "name": "Brutal Gladiator\u0027s Totem of Survival",
+    "slot": 17,
+    "notEnchantable": true
+  },
+  {
+    "id": 35106,
+    "name": "Brutal Gladiator\u0027s Totem of the Third Wind",
     "slot": 17,
     "notEnchantable": true
   },

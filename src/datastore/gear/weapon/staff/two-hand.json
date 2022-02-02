@@ -2,12 +2,19 @@
   {
     "id": 812,
     "name": "Glowing Brightwood Staff",
-    "slot": 15
+    "slot": 15,
+    "resistances": {
+      "Nature": 15
+    }
   },
   {
     "id": 944,
     "name": "Elemental Mage Staff",
-    "slot": 15
+    "slot": 15,
+    "resistances": {
+      "Fire": 20,
+      "Frost": 20
+    }
   },
   {
     "id": 1607,
@@ -37,7 +44,10 @@
   {
     "id": 11932,
     "name": "Guiding Stave of Wisdom",
-    "slot": 15
+    "slot": 15,
+    "resistances": {
+      "Frost": 10
+    }
   },
   {
     "id": 12532,
@@ -77,22 +87,26 @@
   {
     "id": 15278,
     "name": "Solstice Staff",
-    "slot": 15
-  },
-  {
-    "id": 15276,
-    "name": "Magus Long Staff",
-    "slot": 15
+    "slot": 15,
+    "randomEnchantment": true
   },
   {
     "id": 15274,
     "name": "Diviner Long Staff",
-    "slot": 15
+    "slot": 15,
+    "randomEnchantment": true
   },
   {
     "id": 15275,
     "name": "Thaumaturgist Staff",
-    "slot": 15
+    "slot": 15,
+    "randomEnchantment": true
+  },
+  {
+    "id": 15276,
+    "name": "Magus Long Staff",
+    "slot": 15,
+    "randomEnchantment": true
   },
   {
     "id": 15854,
@@ -107,7 +121,14 @@
   {
     "id": 17113,
     "name": "Amberseal Keeper",
-    "slot": 15
+    "slot": 15,
+    "resistances": {
+      "Arcane": 5,
+      "Fire": 5,
+      "Nature": 5,
+      "Frost": 5,
+      "Shadow": 5
+    }
   },
   {
     "id": 17743,
@@ -130,19 +151,28 @@
     "slot": 15
   },
   {
-    "id": 18608,
-    "name": "Benediction",
-    "slot": 15
-  },
-  {
     "id": 18609,
     "name": "Anathema",
-    "slot": 15
+    "slot": 15,
+    "resistances": {
+      "Shadow": 20
+    }
+  },
+  {
+    "id": 18608,
+    "name": "Benediction",
+    "slot": 15,
+    "resistances": {
+      "Shadow": 20
+    }
   },
   {
     "id": 18715,
     "name": "Lok\u0027delar, Stave of the Ancient Keepers",
-    "slot": 15
+    "slot": 15,
+    "resistances": {
+      "Nature": 10
+    }
   },
   {
     "id": 18842,
@@ -150,13 +180,13 @@
     "slot": 15
   },
   {
-    "id": 18873,
-    "name": "Grand Marshal\u0027s Stave",
+    "id": 18874,
+    "name": "High Warlord\u0027s War Staff",
     "slot": 15
   },
   {
-    "id": 18874,
-    "name": "High Warlord\u0027s War Staff",
+    "id": 18873,
+    "name": "Grand Marshal\u0027s Stave",
     "slot": 15
   },
   {
@@ -170,22 +200,22 @@
     "slot": 15
   },
   {
-    "id": 19355,
-    "name": "Shadow Wing Focus Staff",
-    "slot": 15
-  },
-  {
     "id": 19356,
     "name": "Staff of the Shadow Flame",
     "slot": 15
   },
   {
-    "id": 19566,
-    "name": "Advisor\u0027s Gnarled Staff",
+    "id": 19355,
+    "name": "Shadow Wing Focus Staff",
     "slot": 15
   },
   {
     "id": 19567,
+    "name": "Advisor\u0027s Gnarled Staff",
+    "slot": 15
+  },
+  {
+    "id": 19566,
     "name": "Advisor\u0027s Gnarled Staff",
     "slot": 15
   },
@@ -232,11 +262,14 @@
   {
     "id": 20487,
     "name": "Lok\u0027delar, Stave of the Ancient Keepers DEP",
-    "slot": 15
+    "slot": 15,
+    "resistances": {
+      "Nature": 10
+    }
   },
   {
-    "id": 20536,
-    "name": "Soul Harvester",
+    "id": 20556,
+    "name": "Wildstaff",
     "slot": 15
   },
   {
@@ -245,14 +278,17 @@
     "slot": 15
   },
   {
-    "id": 20556,
-    "name": "Wildstaff",
+    "id": 20536,
+    "name": "Soul Harvester",
     "slot": 15
   },
   {
     "id": 20581,
     "name": "Staff of Rampant Growth",
-    "slot": 15
+    "slot": 15,
+    "resistances": {
+      "Nature": 20
+    }
   },
   {
     "id": 20654,
@@ -267,21 +303,23 @@
   {
     "id": 21128,
     "name": "Staff of the Qiraji Prophets",
-    "slot": 15
+    "slot": 15,
+    "resistances": {
+      "Arcane": 10,
+      "Fire": 10,
+      "Nature": 10,
+      "Frost": 10,
+      "Shadow": 10
+    }
   },
   {
-    "id": 21125,
-    "name": "Ahn\u0027Qiraj Staff [PH]",
+    "id": 21273,
+    "name": "Blessed Qiraji Acolyte Staff",
     "slot": 15
   },
   {
     "id": 21275,
     "name": "Blessed Qiraji Augur Staff",
-    "slot": 15
-  },
-  {
-    "id": 21273,
-    "name": "Blessed Qiraji Acolyte Staff",
     "slot": 15
   },
   {
@@ -295,13 +333,13 @@
     "slot": 15
   },
   {
-    "id": 22394,
-    "name": "Staff of Metanoia",
+    "id": 22406,
+    "name": "Redemption",
     "slot": 15
   },
   {
-    "id": 22406,
-    "name": "Redemption",
+    "id": 22394,
+    "name": "Staff of Metanoia",
     "slot": 15
   },
   {
@@ -310,12 +348,12 @@
     "slot": 15
   },
   {
-    "id": 22589,
+    "id": 22631,
     "name": "Atiesh, Greatstaff of the Guardian",
     "slot": 15
   },
   {
-    "id": 22631,
+    "id": 22589,
     "name": "Atiesh, Greatstaff of the Guardian",
     "slot": 15
   },
@@ -335,13 +373,13 @@
     "slot": 15
   },
   {
-    "id": 22799,
-    "name": "Soulseeker",
+    "id": 22801,
+    "name": "Spire of Twilight",
     "slot": 15
   },
   {
-    "id": 22801,
-    "name": "Spire of Twilight",
+    "id": 22799,
+    "name": "Soulseeker",
     "slot": 15
   },
   {
@@ -365,144 +403,172 @@
     "slot": 15
   },
   {
+    "id": 25170,
+    "name": "Rattan Bo Staff",
+    "slot": 15,
+    "randomEnchantment": true
+  },
+  {
     "id": 25172,
     "name": "Jinbali Warp-Staff",
-    "slot": 15
-  },
-  {
-    "id": 25175,
-    "name": "Demoniac Longstaff",
-    "slot": 15
-  },
-  {
-    "id": 25177,
-    "name": "Tanjo Staff",
-    "slot": 15
+    "slot": 15,
+    "randomEnchantment": true
   },
   {
     "id": 25171,
     "name": "Straight Hardwood Staff",
-    "slot": 15
-  },
-  {
-    "id": 25170,
-    "name": "Rattan Bo Staff",
-    "slot": 15
-  },
-  {
-    "id": 25181,
-    "name": "Tapered Staff",
-    "slot": 15
-  },
-  {
-    "id": 25178,
-    "name": "Bata Staff",
-    "slot": 15
-  },
-  {
-    "id": 25180,
-    "name": "Calenda Fighting Stick",
-    "slot": 15
-  },
-  {
-    "id": 25174,
-    "name": "Hanbo Staff",
-    "slot": 15
-  },
-  {
-    "id": 25183,
-    "name": "Voodoo Hex-Staff",
-    "slot": 15
-  },
-  {
-    "id": 25182,
-    "name": "Crystal-Etched Warstaff",
-    "slot": 15
-  },
-  {
-    "id": 25176,
-    "name": "Taiji Quarterstaff",
-    "slot": 15
-  },
-  {
-    "id": 25179,
-    "name": "Nguni Stick",
-    "slot": 15
+    "slot": 15,
+    "randomEnchantment": true
   },
   {
     "id": 25173,
     "name": "Master\u0027s Bo Staff",
-    "slot": 15
+    "slot": 15,
+    "randomEnchantment": true
   },
   {
-    "id": 25329,
-    "name": "Tranquility Staff",
-    "slot": 15
+    "id": 25176,
+    "name": "Taiji Quarterstaff",
+    "slot": 15,
+    "randomEnchantment": true
   },
   {
-    "id": 25327,
-    "name": "Frenzied Staff",
-    "slot": 15
+    "id": 25177,
+    "name": "Tanjo Staff",
+    "slot": 15,
+    "randomEnchantment": true
   },
   {
-    "id": 25331,
-    "name": "Vengeance Staff",
-    "slot": 15
+    "id": 25179,
+    "name": "Nguni Stick",
+    "slot": 15,
+    "randomEnchantment": true
+  },
+  {
+    "id": 25180,
+    "name": "Calenda Fighting Stick",
+    "slot": 15,
+    "randomEnchantment": true
+  },
+  {
+    "id": 25181,
+    "name": "Tapered Staff",
+    "slot": 15,
+    "randomEnchantment": true
+  },
+  {
+    "id": 25182,
+    "name": "Crystal-Etched Warstaff",
+    "slot": 15,
+    "randomEnchantment": true
+  },
+  {
+    "id": 25183,
+    "name": "Voodoo Hex-Staff",
+    "slot": 15,
+    "randomEnchantment": true
+  },
+  {
+    "id": 25178,
+    "name": "Bata Staff",
+    "slot": 15,
+    "randomEnchantment": true
+  },
+  {
+    "id": 25174,
+    "name": "Hanbo Staff",
+    "slot": 15,
+    "randomEnchantment": true
+  },
+  {
+    "id": 25175,
+    "name": "Demoniac Longstaff",
+    "slot": 15,
+    "randomEnchantment": true
   },
   {
     "id": 25326,
     "name": "Primal Lore-Staff",
-    "slot": 15
-  },
-  {
-    "id": 25335,
-    "name": "Feral Warp-Staff",
-    "slot": 15
-  },
-  {
-    "id": 25330,
-    "name": "Starshine Staff",
-    "slot": 15
+    "slot": 15,
+    "randomEnchantment": true
   },
   {
     "id": 25325,
     "name": "Brutal Scar-Limb",
-    "slot": 15
+    "slot": 15,
+    "randomEnchantment": true
+  },
+  {
+    "id": 25327,
+    "name": "Frenzied Staff",
+    "slot": 15,
+    "randomEnchantment": true
+  },
+  {
+    "id": 25329,
+    "name": "Tranquility Staff",
+    "slot": 15,
+    "randomEnchantment": true
   },
   {
     "id": 25332,
     "name": "Reflective Staff",
-    "slot": 15
+    "slot": 15,
+    "randomEnchantment": true
   },
   {
-    "id": 25337,
-    "name": "Swarming Sting-Staff",
-    "slot": 15
+    "id": 25331,
+    "name": "Vengeance Staff",
+    "slot": 15,
+    "randomEnchantment": true
   },
   {
-    "id": 25328,
-    "name": "Faerie-Kind Staff",
-    "slot": 15
+    "id": 25330,
+    "name": "Starshine Staff",
+    "slot": 15,
+    "randomEnchantment": true
   },
   {
     "id": 25334,
     "name": "Intimidating Greatstaff",
-    "slot": 15
+    "slot": 15,
+    "randomEnchantment": true
   },
   {
-    "id": 25336,
-    "name": "Splintering Greatstaff",
-    "slot": 15
+    "id": 25328,
+    "name": "Faerie-Kind Staff",
+    "slot": 15,
+    "randomEnchantment": true
   },
   {
-    "id": 25324,
-    "name": "Angerstaff",
-    "slot": 15
+    "id": 25335,
+    "name": "Feral Warp-Staff",
+    "slot": 15,
+    "randomEnchantment": true
   },
   {
     "id": 25333,
     "name": "Purification Staff",
-    "slot": 15
+    "slot": 15,
+    "randomEnchantment": true
+  },
+  {
+    "id": 25324,
+    "name": "Angerstaff",
+    "slot": 15,
+    "randomEnchantment": true
+  },
+  {
+    "id": 25337,
+    "name": "Swarming Sting-Staff",
+    "slot": 15,
+    "randomEnchantment": true
+  },
+  {
+    "id": 25336,
+    "name": "Splintering Greatstaff",
+    "slot": 15,
+    "randomEnchantment": true
   },
   {
     "id": 25404,
@@ -515,18 +581,13 @@
     "slot": 15
   },
   {
-    "id": 25622,
-    "name": "Staff of the Four Golden Coins",
-    "slot": 15
-  },
-  {
     "id": 25625,
     "name": "QR 9922 Feral Druid Staff",
     "slot": 15
   },
   {
-    "id": 25761,
-    "name": "Staff of Beasts",
+    "id": 25622,
+    "name": "Staff of the Four Golden Coins",
     "slot": 15
   },
   {
@@ -535,18 +596,23 @@
     "slot": 15
   },
   {
+    "id": 25761,
+    "name": "Staff of Beasts",
+    "slot": 15
+  },
+  {
     "id": 25835,
     "name": "Explorer\u0027s Walking Stick",
     "slot": 15
   },
   {
-    "id": 25917,
-    "name": "Healer\u0027s Staff of the Forest",
+    "id": 25935,
+    "name": "Invincible Stave",
     "slot": 15
   },
   {
-    "id": 25935,
-    "name": "Invincible Stave",
+    "id": 25917,
+    "name": "Healer\u0027s Staff of the Forest",
     "slot": 15
   },
   {
@@ -565,13 +631,13 @@
     "slot": 15
   },
   {
-    "id": 27749,
-    "name": "Staff of the Wild",
+    "id": 27757,
+    "name": "Greatstaff of the Leviathan",
     "slot": 15
   },
   {
-    "id": 27757,
-    "name": "Greatstaff of the Leviathan",
+    "id": 27749,
+    "name": "Staff of the Wild",
     "slot": 15
   },
   {
@@ -640,11 +706,6 @@
     "slot": 15
   },
   {
-    "id": 29109,
-    "name": "Rod of the Unyielding",
-    "slot": 15
-  },
-  {
     "id": 29130,
     "name": "Auchenai Staff",
     "slot": 15
@@ -652,6 +713,11 @@
   {
     "id": 29133,
     "name": "Seer\u0027s Cane",
+    "slot": 15
+  },
+  {
+    "id": 29109,
+    "name": "Rod of the Unyielding",
     "slot": 15
   },
   {
@@ -690,6 +756,11 @@
     "slot": 15
   },
   {
+    "id": 30010,
+    "name": "Fleshling Simulation Staff",
+    "slot": 15
+  },
+  {
     "id": 30011,
     "name": "Ameer\u0027s Impulse Taser",
     "slot": 15
@@ -697,11 +768,6 @@
   {
     "id": 30012,
     "name": "Ameer\u0027s Judgement",
-    "slot": 15
-  },
-  {
-    "id": 30010,
-    "name": "Fleshling Simulation Staff",
     "slot": 15
   },
   {
@@ -741,13 +807,13 @@
     "slot": 15
   },
   {
-    "id": 31038,
-    "name": "Staff of the Redeemer",
+    "id": 31036,
+    "name": "Oronok\u0027s Ancient Scepter",
     "slot": 15
   },
   {
-    "id": 31036,
-    "name": "Oronok\u0027s Ancient Scepter",
+    "id": 31038,
+    "name": "Staff of the Redeemer",
     "slot": 15
   },
   {
@@ -756,13 +822,13 @@
     "slot": 15
   },
   {
-    "id": 31308,
-    "name": "The Bringer of Death",
+    "id": 31289,
+    "name": "Staff of Divine Infusion",
     "slot": 15
   },
   {
-    "id": 31289,
-    "name": "Staff of Divine Infusion",
+    "id": 31308,
+    "name": "The Bringer of Death",
     "slot": 15
   },
   {
@@ -771,13 +837,13 @@
     "slot": 15
   },
   {
-    "id": 31414,
-    "name": "Wild Wood Staff",
+    "id": 31417,
+    "name": "Staff of the Ashtongue Deathsworn",
     "slot": 15
   },
   {
-    "id": 31417,
-    "name": "Staff of the Ashtongue Deathsworn",
+    "id": 31414,
+    "name": "Wild Wood Staff",
     "slot": 15
   },
   {
@@ -796,13 +862,13 @@
     "slot": 15
   },
   {
-    "id": 32344,
-    "name": "Staff of Immaculate Recovery",
+    "id": 32374,
+    "name": "Zhar\u0027doom, Greatstaff of the Devourer",
     "slot": 15
   },
   {
-    "id": 32374,
-    "name": "Zhar\u0027doom, Greatstaff of the Devourer",
+    "id": 32344,
+    "name": "Staff of Immaculate Recovery",
     "slot": 15
   },
   {
@@ -843,15 +909,15 @@
     "slot": 15
   },
   {
+    "id": 34198,
+    "name": "Stanchion of Primal Instinct",
+    "slot": 15
+  },
+  {
     "id": 34182,
     "name": "Grand Magister\u0027s Staff of Torrents",
     "slot": 15,
     "sockets": 3
-  },
-  {
-    "id": 34198,
-    "name": "Stanchion of Primal Instinct",
-    "slot": 15
   },
   {
     "id": 34337,
@@ -877,23 +943,23 @@
     "sockets": 3
   },
   {
-    "id": 34898,
-    "name": "Staff of the Forest Lord",
-    "slot": 15
-  },
-  {
     "id": 34987,
     "name": "Brutal Gladiator\u0027s Battle Staff",
     "slot": 15
   },
   {
-    "id": 35109,
-    "name": "Brutal Gladiator\u0027s War Staff",
+    "id": 34898,
+    "name": "Staff of the Forest Lord",
     "slot": 15
   },
   {
     "id": 35103,
     "name": "Brutal Gladiator\u0027s Staff",
+    "slot": 15
+  },
+  {
+    "id": 35109,
+    "name": "Brutal Gladiator\u0027s War Staff",
     "slot": 15
   },
   {

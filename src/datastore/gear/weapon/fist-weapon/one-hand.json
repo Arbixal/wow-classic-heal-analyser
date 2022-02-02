@@ -1,12 +1,12 @@
 [
   {
-    "id": 11744,
-    "name": "Bloodfist",
+    "id": 11743,
+    "name": "Rockfist",
     "slot": 16
   },
   {
-    "id": 11743,
-    "name": "Rockfist",
+    "id": 11744,
+    "name": "Bloodfist",
     "slot": 16
   },
   {
@@ -25,24 +25,28 @@
     "slot": 16
   },
   {
+    "id": 25193,
+    "name": "Deathclaw Talons",
+    "slot": 16,
+    "randomEnchantment": true
+  },
+  {
     "id": 25194,
     "name": "Serpent\u0027s Fangs",
-    "slot": 16
+    "slot": 16,
+    "randomEnchantment": true
   },
   {
     "id": 25195,
     "name": "Diamond Tipped Claws",
-    "slot": 16
-  },
-  {
-    "id": 25193,
-    "name": "Deathclaw Talons",
-    "slot": 16
+    "slot": 16,
+    "randomEnchantment": true
   },
   {
     "id": 25192,
     "name": "Gutrippers",
-    "slot": 16
+    "slot": 16,
+    "randomEnchantment": true
   },
   {
     "id": 25538,

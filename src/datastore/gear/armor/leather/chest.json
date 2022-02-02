@@ -27,37 +27,44 @@
   {
     "id": 9950,
     "name": "Chieftain\u0027s Breastplate",
-    "slot": 4
+    "slot": 4,
+    "randomEnchantment": true
   },
   {
     "id": 10070,
     "name": "Righteous Armor",
-    "slot": 4
+    "slot": 4,
+    "randomEnchantment": true
   },
   {
     "id": 10105,
     "name": "Wanderer\u0027s Armor",
-    "slot": 4
+    "slot": 4,
+    "randomEnchantment": true
   },
   {
     "id": 10151,
     "name": "Mighty Tunic",
-    "slot": 4
+    "slot": 4,
+    "randomEnchantment": true
   },
   {
     "id": 10182,
     "name": "Swashbuckler\u0027s Breastplate",
-    "slot": 4
+    "slot": 4,
+    "randomEnchantment": true
   },
   {
     "id": 10220,
     "name": "Nightshade Tunic",
-    "slot": 4
+    "slot": 4,
+    "randomEnchantment": true
   },
   {
     "id": 10264,
     "name": "Adventurer\u0027s Tunic",
-    "slot": 4
+    "slot": 4,
+    "randomEnchantment": true
   },
   {
     "id": 10781,
@@ -102,7 +109,14 @@
   {
     "id": 13009,
     "name": "Cow King\u0027s Hide",
-    "slot": 4
+    "slot": 4,
+    "resistances": {
+      "Arcane": 10,
+      "Fire": 10,
+      "Nature": 10,
+      "Frost": 10,
+      "Shadow": 10
+    }
   },
   {
     "id": 13378,
@@ -125,19 +139,22 @@
     "slot": 4
   },
   {
-    "id": 14670,
-    "name": "Pridelord Armor",
-    "slot": 4
-  },
-  {
     "id": 14680,
     "name": "Indomitable Vest",
     "slot": 4
   },
   {
+    "id": 14670,
+    "name": "Pridelord Armor",
+    "slot": 4
+  },
+  {
     "id": 15053,
     "name": "Volcanic Breastplate",
-    "slot": 4
+    "slot": 4,
+    "resistances": {
+      "Fire": 20
+    }
   },
   {
     "id": 15056,
@@ -147,7 +164,10 @@
   {
     "id": 15059,
     "name": "Living Breastplate",
-    "slot": 4
+    "slot": 4,
+    "resistances": {
+      "Nature": 5
+    }
   },
   {
     "id": 15064,
@@ -157,11 +177,24 @@
   {
     "id": 15068,
     "name": "Frostsaber Tunic",
-    "slot": 4
+    "slot": 4,
+    "resistances": {
+      "Frost": 18,
+      "Shadow": 18
+    }
   },
   {
     "id": 15075,
     "name": "Chimeric Vest",
+    "slot": 4,
+    "resistances": {
+      "Arcane": 16,
+      "Nature": 17
+    }
+  },
+  {
+    "id": 15066,
+    "name": "Ironfeather Breastplate",
     "slot": 4
   },
   {
@@ -175,44 +208,46 @@
     "slot": 4
   },
   {
-    "id": 15066,
-    "name": "Ironfeather Breastplate",
-    "slot": 4
-  },
-  {
     "id": 15170,
     "name": "Potent Armor",
-    "slot": 4
+    "slot": 4,
+    "randomEnchantment": true
   },
   {
     "id": 15179,
     "name": "Praetorian Padded Armor",
-    "slot": 4
+    "slot": 4,
+    "randomEnchantment": true
   },
   {
     "id": 15195,
     "name": "Grand Breastplate",
-    "slot": 4
+    "slot": 4,
+    "randomEnchantment": true
   },
   {
     "id": 15381,
     "name": "Rageclaw Chestguard",
-    "slot": 4
+    "slot": 4,
+    "randomEnchantment": true
   },
   {
     "id": 15390,
     "name": "Jadefire Chestguard",
-    "slot": 4
+    "slot": 4,
+    "randomEnchantment": true
   },
   {
     "id": 15433,
     "name": "Peerless Armor",
-    "slot": 4
+    "slot": 4,
+    "randomEnchantment": true
   },
   {
     "id": 15442,
     "name": "Supreme Breastplate",
-    "slot": 4
+    "slot": 4,
+    "randomEnchantment": true
   },
   {
     "id": 15786,
@@ -230,6 +265,11 @@
     "slot": 4
   },
   {
+    "id": 16421,
+    "name": "Knight-Captain\u0027s Dragonhide Tunic",
+    "slot": 4
+  },
+  {
     "id": 16452,
     "name": "Field Marshal\u0027s Dragonhide Breastplate",
     "slot": 4
@@ -240,18 +280,13 @@
     "slot": 4
   },
   {
-    "id": 16421,
-    "name": "Knight-Captain\u0027s Dragonhide Tunic",
+    "id": 16504,
+    "name": "Legionnaire\u0027s Dragonhide Breastplate",
     "slot": 4
   },
   {
     "id": 16505,
     "name": "Legionnaire\u0027s Leather Hauberk",
-    "slot": 4
-  },
-  {
-    "id": 16504,
-    "name": "Legionnaire\u0027s Dragonhide Breastplate",
     "slot": 4
   },
   {
@@ -277,22 +312,36 @@
   {
     "id": 16820,
     "name": "Nightslayer Chestpiece",
-    "slot": 4
+    "slot": 4,
+    "resistances": {
+      "Fire": 10
+    }
   },
   {
     "id": 16833,
     "name": "Cenarion Vestments",
-    "slot": 4
+    "slot": 4,
+    "resistances": {
+      "Fire": 10
+    }
   },
   {
     "id": 16897,
     "name": "Stormrage Chestguard",
-    "slot": 4
+    "slot": 4,
+    "resistances": {
+      "Fire": 10,
+      "Nature": 10
+    }
   },
   {
     "id": 16905,
     "name": "Bloodfang Chestpiece",
-    "slot": 4
+    "slot": 4,
+    "resistances": {
+      "Fire": 10,
+      "Nature": 10
+    }
   },
   {
     "id": 17742,
@@ -317,16 +366,19 @@
   {
     "id": 19439,
     "name": "Interlaced Shadow Jerkin",
+    "slot": 4,
+    "resistances": {
+      "Shadow": 30
+    }
+  },
+  {
+    "id": 19685,
+    "name": "Primal Batskin Jerkin",
     "slot": 4
   },
   {
     "id": 19688,
     "name": "Blood Tiger Breastplate",
-    "slot": 4
-  },
-  {
-    "id": 19685,
-    "name": "Primal Batskin Jerkin",
     "slot": 4
   },
   {
@@ -352,7 +404,14 @@
   {
     "id": 21467,
     "name": "Thick Silithid Chestguard",
-    "slot": 4
+    "slot": 4,
+    "resistances": {
+      "Arcane": 5,
+      "Fire": 5,
+      "Nature": 5,
+      "Frost": 5,
+      "Shadow": 5
+    }
   },
   {
     "id": 21680,
@@ -370,13 +429,13 @@
     "slot": 4
   },
   {
-    "id": 22272,
-    "name": "Forest\u0027s Embrace",
+    "id": 22274,
+    "name": "Grizzled Pelt",
     "slot": 4
   },
   {
-    "id": 22274,
-    "name": "Grizzled Pelt",
+    "id": 22272,
+    "name": "Forest\u0027s Embrace",
     "slot": 4
   },
   {
@@ -385,19 +444,22 @@
     "slot": 4
   },
   {
-    "id": 22488,
-    "name": "Dreamwalker Tunic",
-    "slot": 4
-  },
-  {
     "id": 22476,
     "name": "Bonescythe Breastplate",
     "slot": 4
   },
   {
+    "id": 22488,
+    "name": "Dreamwalker Tunic",
+    "slot": 4
+  },
+  {
     "id": 22661,
     "name": "Polar Tunic",
-    "slot": 4
+    "slot": 4,
+    "resistances": {
+      "Frost": 40
+    }
   },
   {
     "id": 22877,
@@ -420,13 +482,13 @@
     "slot": 4
   },
   {
-    "id": 23298,
-    "name": "Knight-Captain\u0027s Leather Chestpiece",
+    "id": 23294,
+    "name": "Knight-Captain\u0027s Dragonhide Chestpiece",
     "slot": 4
   },
   {
-    "id": 23294,
-    "name": "Knight-Captain\u0027s Dragonhide Chestpiece",
+    "id": 23298,
+    "name": "Knight-Captain\u0027s Leather Chestpiece",
     "slot": 4
   },
   {
@@ -444,72 +506,86 @@
   {
     "id": 24695,
     "name": "Bonechewer Chestpiece",
-    "slot": 4
+    "slot": 4,
+    "randomEnchantment": true
   },
   {
     "id": 24703,
     "name": "Haal\u0027eshi Jerkin",
-    "slot": 4
-  },
-  {
-    "id": 24711,
-    "name": "Vengeance Chestpiece",
-    "slot": 4
-  },
-  {
-    "id": 24727,
-    "name": "Dementia Vest",
-    "slot": 4
-  },
-  {
-    "id": 24735,
-    "name": "Sunroc Chestpiece",
-    "slot": 4
-  },
-  {
-    "id": 24743,
-    "name": "Ranger Jerkin",
-    "slot": 4
-  },
-  {
-    "id": 24751,
-    "name": "Daggerfen Battlevest",
-    "slot": 4
-  },
-  {
-    "id": 24767,
-    "name": "Clefthoof Hidemantle",
-    "slot": 4
+    "slot": 4,
+    "randomEnchantment": true
   },
   {
     "id": 24719,
     "name": "Dreghood Chestpiece",
-    "slot": 4
+    "slot": 4,
+    "randomEnchantment": true
   },
   {
-    "id": 24775,
-    "name": "Boneshredder Jerkin",
-    "slot": 4
+    "id": 24711,
+    "name": "Vengeance Chestpiece",
+    "slot": 4,
+    "randomEnchantment": true
+  },
+  {
+    "id": 24727,
+    "name": "Dementia Vest",
+    "slot": 4,
+    "randomEnchantment": true
   },
   {
     "id": 24759,
     "name": "Umbrafen Tunic",
-    "slot": 4
+    "slot": 4,
+    "randomEnchantment": true
   },
   {
-    "id": 24792,
-    "name": "Expedition Tunic",
-    "slot": 4
+    "id": 24735,
+    "name": "Sunroc Chestpiece",
+    "slot": 4,
+    "randomEnchantment": true
+  },
+  {
+    "id": 24751,
+    "name": "Daggerfen Battlevest",
+    "slot": 4,
+    "randomEnchantment": true
+  },
+  {
+    "id": 24743,
+    "name": "Ranger Jerkin",
+    "slot": 4,
+    "randomEnchantment": true
+  },
+  {
+    "id": 24775,
+    "name": "Boneshredder Jerkin",
+    "slot": 4,
+    "randomEnchantment": true
   },
   {
     "id": 24784,
     "name": "Murkblood Chestpiece",
-    "slot": 4
+    "slot": 4,
+    "randomEnchantment": true
   },
   {
     "id": 24800,
     "name": "Dragonhawk Tunic",
-    "slot": 4
+    "slot": 4,
+    "randomEnchantment": true
+  },
+  {
+    "id": 24792,
+    "name": "Expedition Tunic",
+    "slot": 4,
+    "randomEnchantment": true
+  },
+  {
+    "id": 24767,
+    "name": "Clefthoof Hidemantle",
+    "slot": 4,
+    "randomEnchantment": true
   },
   {
     "id": 25349,
@@ -576,23 +652,23 @@
     "slot": 4
   },
   {
-    "id": 27787,
-    "name": "Chestguard of No Remorse",
-    "slot": 4
-  },
-  {
     "id": 27818,
     "name": "Starry Robes of the Crescent",
     "slot": 4
   },
   {
-    "id": 28051,
-    "name": "Jerkin of the Untamed Spirit",
+    "id": 27787,
+    "name": "Chestguard of No Remorse",
     "slot": 4
   },
   {
     "id": 28050,
     "name": "Sacred Feather Vest",
+    "slot": 4
+  },
+  {
+    "id": 28051,
+    "name": "Jerkin of the Untamed Spirit",
     "slot": 4
   },
   {
@@ -608,9 +684,10 @@
     "sockets": 3
   },
   {
-    "id": 28172,
-    "name": "Mag\u0027hari Scout\u0027s Tunic",
-    "slot": 4
+    "id": 28202,
+    "name": "Moonglade Robe",
+    "slot": 4,
+    "sockets": 3
   },
   {
     "id": 28204,
@@ -619,10 +696,9 @@
     "sockets": 3
   },
   {
-    "id": 28202,
-    "name": "Moonglade Robe",
-    "slot": 4,
-    "sockets": 3
+    "id": 28172,
+    "name": "Mag\u0027hari Scout\u0027s Tunic",
+    "slot": 4
   },
   {
     "id": 28264,
@@ -636,15 +712,15 @@
     "slot": 4
   },
   {
-    "id": 28600,
-    "name": "Stonebough Jerkin",
-    "slot": 4
-  },
-  {
     "id": 28623,
     "name": "Grand Marshal\u0027s Dragonhide Tunic",
     "slot": 4,
     "sockets": 3
+  },
+  {
+    "id": 28600,
+    "name": "Stonebough Jerkin",
+    "slot": 4
   },
   {
     "id": 28688,
@@ -659,14 +735,14 @@
     "sockets": 3
   },
   {
-    "id": 28815,
-    "name": "High Warlord\u0027s Dragonhide Tunic",
+    "id": 28840,
+    "name": "High Warlord\u0027s Leather Tunic",
     "slot": 4,
     "sockets": 3
   },
   {
-    "id": 28840,
-    "name": "High Warlord\u0027s Leather Tunic",
+    "id": 28815,
+    "name": "High Warlord\u0027s Dragonhide Tunic",
     "slot": 4,
     "sockets": 3
   },
@@ -689,14 +765,14 @@
     "sockets": 3
   },
   {
-    "id": 29096,
-    "name": "Breastplate of Malorne",
+    "id": 29091,
+    "name": "Chestpiece of Malorne",
     "slot": 4,
     "sockets": 3
   },
   {
-    "id": 29091,
-    "name": "Chestpiece of Malorne",
+    "id": 29096,
+    "name": "Breastplate of Malorne",
     "slot": 4,
     "sockets": 3
   },
@@ -707,24 +783,19 @@
     "sockets": 3
   },
   {
+    "id": 29525,
+    "name": "Primalstrike Vest",
+    "slot": 4
+  },
+  {
     "id": 29522,
     "name": "Windhawk Hauberk",
     "slot": 4,
     "sockets": 3
   },
   {
-    "id": 29525,
-    "name": "Primalstrike Vest",
-    "slot": 4
-  },
-  {
     "id": 29781,
     "name": "Lifewarden\u0027s Breastplate",
-    "slot": 4
-  },
-  {
-    "id": 29929,
-    "name": "Raging Spirit Harness",
     "slot": 4
   },
   {
@@ -733,18 +804,23 @@
     "slot": 4
   },
   {
+    "id": 29929,
+    "name": "Raging Spirit Harness",
+    "slot": 4
+  },
+  {
     "id": 29967,
     "name": "Nether Vest",
     "slot": 4
   },
   {
-    "id": 29974,
-    "name": "Living Crystal Breastplate",
+    "id": 29973,
+    "name": "Primalstorm Breastplate",
     "slot": 4
   },
   {
-    "id": 29973,
-    "name": "Primalstorm Breastplate",
+    "id": 29974,
+    "name": "Living Crystal Breastplate",
     "slot": 4
   },
   {
@@ -783,13 +859,13 @@
     "sockets": 3
   },
   {
-    "id": 30328,
-    "name": "Protectorate Assassin\u0027s Tunic",
+    "id": 30379,
+    "name": "Vindicator\u0027s Light Vest",
     "slot": 4
   },
   {
-    "id": 30379,
-    "name": "Vindicator\u0027s Light Vest",
+    "id": 30328,
+    "name": "Protectorate Assassin\u0027s Tunic",
     "slot": 4
   },
   {
@@ -801,6 +877,14 @@
   {
     "id": 30776,
     "name": "Inferno Hardened Chestguard",
+    "slot": 4,
+    "resistances": {
+      "Fire": 60
+    }
+  },
+  {
+    "id": 30945,
+    "name": "Grom\u0027tor\u0027s Friend\u0027s Cousin\u0027s Tunic",
     "slot": 4
   },
   {
@@ -820,13 +904,14 @@
     "slot": 4
   },
   {
-    "id": 30945,
-    "name": "Grom\u0027tor\u0027s Friend\u0027s Cousin\u0027s Tunic",
-    "slot": 4
-  },
-  {
     "id": 31028,
     "name": "Slayer\u0027s Chestguard",
+    "slot": 4,
+    "sockets": 3
+  },
+  {
+    "id": 31042,
+    "name": "Thunderheart Chestguard",
     "slot": 4,
     "sockets": 3
   },
@@ -843,20 +928,16 @@
     "sockets": 3
   },
   {
-    "id": 31042,
-    "name": "Thunderheart Chestguard",
+    "id": 31172,
+    "name": "Demon-Cured Tunic",
     "slot": 4,
-    "sockets": 3
+    "randomEnchantment": true
   },
   {
     "id": 31157,
     "name": "Drakehide Tunic",
-    "slot": 4
-  },
-  {
-    "id": 31172,
-    "name": "Demon-Cured Tunic",
-    "slot": 4
+    "slot": 4,
+    "randomEnchantment": true
   },
   {
     "id": 31285,
@@ -892,17 +973,18 @@
   {
     "id": 31562,
     "name": "Skystalker\u0027s Tunic",
-    "slot": 4
-  },
-  {
-    "id": 31588,
-    "name": "High Warlord\u0027s Kodohide Tunic",
     "slot": 4,
-    "sockets": 3
+    "randomEnchantment": true
   },
   {
     "id": 31593,
     "name": "Grand Marshal\u0027s Kodohide Tunic",
+    "slot": 4,
+    "sockets": 3
+  },
+  {
+    "id": 31588,
+    "name": "High Warlord\u0027s Kodohide Tunic",
     "slot": 4,
     "sockets": 3
   },
@@ -964,6 +1046,12 @@
     "slot": 4
   },
   {
+    "id": 33675,
+    "name": "Vengeful Gladiator\u0027s Dragonhide Tunic",
+    "slot": 4,
+    "sockets": 3
+  },
+  {
     "id": 33566,
     "name": "Blessed Elunite Coverings",
     "slot": 4,
@@ -975,8 +1063,8 @@
     "slot": 4
   },
   {
-    "id": 33675,
-    "name": "Vengeful Gladiator\u0027s Dragonhide Tunic",
+    "id": 33704,
+    "name": "Vengeful Gladiator\u0027s Leather Tunic",
     "slot": 4,
     "sockets": 3
   },
@@ -987,20 +1075,8 @@
     "sockets": 3
   },
   {
-    "id": 33704,
-    "name": "Vengeful Gladiator\u0027s Leather Tunic",
-    "slot": 4,
-    "sockets": 3
-  },
-  {
     "id": 33771,
     "name": "Vengeful Gladiator\u0027s Wyrmhide Tunic",
-    "slot": 4,
-    "sockets": 3
-  },
-  {
-    "id": 34212,
-    "name": "Sunglow Vest",
     "slot": 4,
     "sockets": 3
   },
@@ -1011,20 +1087,26 @@
     "sockets": 3
   },
   {
+    "id": 34212,
+    "name": "Sunglow Vest",
+    "slot": 4,
+    "sockets": 3
+  },
+  {
     "id": 34369,
     "name": "Carapace of Sun and Shadow",
     "slot": 4,
     "sockets": 3
   },
   {
-    "id": 34371,
-    "name": "Leather Chestguard of the Sun",
+    "id": 34397,
+    "name": "Bladed Chaos Tunic",
     "slot": 4,
     "sockets": 3
   },
   {
-    "id": 34397,
-    "name": "Bladed Chaos Tunic",
+    "id": 34371,
+    "name": "Leather Chestguard of the Sun",
     "slot": 4,
     "sockets": 3
   },
@@ -1041,14 +1123,14 @@
     "sockets": 3
   },
   {
-    "id": 34900,
-    "name": "Shroud of Nature\u0027s Harmony",
+    "id": 34927,
+    "name": "Tunic of the Dark Hour",
     "slot": 4,
     "sockets": 1
   },
   {
-    "id": 34903,
-    "name": "Embrace of Starlight",
+    "id": 34900,
+    "name": "Shroud of Nature\u0027s Harmony",
     "slot": 4,
     "sockets": 1
   },
@@ -1059,22 +1141,16 @@
     "sockets": 1
   },
   {
-    "id": 34927,
-    "name": "Tunic of the Dark Hour",
-    "slot": 4,
-    "sockets": 1
-  },
-  {
     "id": 35002,
     "name": "Brutal Gladiator\u0027s Dragonhide Tunic",
     "slot": 4,
     "sockets": 3
   },
   {
-    "id": 35036,
-    "name": "Brutal Gladiator\u0027s Leather Tunic",
+    "id": 34903,
+    "name": "Embrace of Starlight",
     "slot": 4,
-    "sockets": 3
+    "sockets": 1
   },
   {
     "id": 35026,
@@ -1089,8 +1165,14 @@
     "sockets": 3
   },
   {
-    "id": 35365,
-    "name": "Kodohide Robe",
+    "id": 35036,
+    "name": "Brutal Gladiator\u0027s Leather Tunic",
+    "slot": 4,
+    "sockets": 3
+  },
+  {
+    "id": 35360,
+    "name": "Dragonhide Robe",
     "slot": 4,
     "sockets": 3
   },
@@ -1101,14 +1183,14 @@
     "sockets": 3
   },
   {
-    "id": 35375,
-    "name": "Wyrmhide Robe",
+    "id": 35365,
+    "name": "Kodohide Robe",
     "slot": 4,
     "sockets": 3
   },
   {
-    "id": 35360,
-    "name": "Dragonhide Robe",
+    "id": 35375,
+    "name": "Wyrmhide Robe",
     "slot": 4,
     "sockets": 3
   },

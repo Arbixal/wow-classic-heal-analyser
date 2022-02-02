@@ -1,12 +1,12 @@
 [
   {
-    "id": 4014,
-    "name": "Sterling Chain Shoulderpads",
+    "id": 3998,
+    "name": "Laminated Scale Shoulderpads",
     "slot": 2
   },
   {
-    "id": 3998,
-    "name": "Laminated Scale Shoulderpads",
+    "id": 4014,
+    "name": "Sterling Chain Shoulderpads",
     "slot": 2
   },
   {
@@ -22,32 +22,38 @@
   {
     "id": 10085,
     "name": "Lord\u0027s Pauldrons",
-    "slot": 2
+    "slot": 2,
+    "randomEnchantment": true
   },
   {
     "id": 10125,
     "name": "Ornate Pauldrons",
-    "slot": 2
+    "slot": 2,
+    "randomEnchantment": true
   },
   {
     "id": 10163,
     "name": "Mercurial Pauldrons",
-    "slot": 2
+    "slot": 2,
+    "randomEnchantment": true
   },
   {
     "id": 10200,
     "name": "Crusader\u0027s Pauldrons",
-    "slot": 2
-  },
-  {
-    "id": 10237,
-    "name": "Engraved Pauldrons",
-    "slot": 2
+    "slot": 2,
+    "randomEnchantment": true
   },
   {
     "id": 10274,
     "name": "Masterwork Pauldrons",
-    "slot": 2
+    "slot": 2,
+    "randomEnchantment": true
+  },
+  {
+    "id": 10237,
+    "name": "Engraved Pauldrons",
+    "slot": 2,
+    "randomEnchantment": true
   },
   {
     "id": 11722,
@@ -72,12 +78,18 @@
   {
     "id": 13133,
     "name": "Drakesfire Epaulets",
-    "slot": 2
+    "slot": 2,
+    "resistances": {
+      "Fire": 10
+    }
   },
   {
     "id": 13538,
     "name": "Windshrieker Pauldrons",
-    "slot": 2
+    "slot": 2,
+    "resistances": {
+      "Arcane": 20
+    }
   },
   {
     "id": 14548,
@@ -100,14 +112,20 @@
     "slot": 2
   },
   {
-    "id": 15049,
-    "name": "Blue Dragonscale Shoulders",
-    "slot": 2
-  },
-  {
     "id": 15051,
     "name": "Black Dragonscale Shoulders",
-    "slot": 2
+    "slot": 2,
+    "resistances": {
+      "Fire": 6
+    }
+  },
+  {
+    "id": 15049,
+    "name": "Blue Dragonscale Shoulders",
+    "slot": 2,
+    "resistances": {
+      "Arcane": 6
+    }
   },
   {
     "id": 15081,
@@ -115,29 +133,34 @@
     "slot": 2
   },
   {
-    "id": 15647,
-    "name": "Ironhide Pauldrons",
-    "slot": 2
+    "id": 15677,
+    "name": "Magnificent Shoulders",
+    "slot": 2,
+    "randomEnchantment": true
   },
   {
     "id": 15656,
     "name": "Merciless Epaulets",
-    "slot": 2
+    "slot": 2,
+    "randomEnchantment": true
   },
   {
-    "id": 15677,
-    "name": "Magnificent Shoulders",
-    "slot": 2
+    "id": 15647,
+    "name": "Ironhide Pauldrons",
+    "slot": 2,
+    "randomEnchantment": true
   },
   {
     "id": 15666,
     "name": "Impenetrable Pauldrons",
-    "slot": 2
+    "slot": 2,
+    "randomEnchantment": true
   },
   {
     "id": 15686,
     "name": "Triumphant Shoulder Pads",
-    "slot": 2
+    "slot": 2,
+    "randomEnchantment": true
   },
   {
     "id": 16427,
@@ -180,29 +203,44 @@
     "slot": 2
   },
   {
-    "id": 16848,
-    "name": "Giantstalker\u0027s Epaulets",
-    "slot": 2
-  },
-  {
     "id": 16844,
     "name": "Earthfury Epaulets",
-    "slot": 2
+    "slot": 2,
+    "resistances": {
+      "Shadow": 7
+    }
+  },
+  {
+    "id": 16848,
+    "name": "Giantstalker\u0027s Epaulets",
+    "slot": 2,
+    "resistances": {
+      "Shadow": 7
+    }
   },
   {
     "id": 16937,
     "name": "Dragonstalker\u0027s Spaulders",
-    "slot": 2
+    "slot": 2,
+    "resistances": {
+      "Fire": 10
+    }
   },
   {
     "id": 16945,
     "name": "Epaulets of Ten Storms",
-    "slot": 2
+    "slot": 2,
+    "resistances": {
+      "Fire": 10
+    }
   },
   {
     "id": 16988,
     "name": "Fiery Chain Shoulders",
-    "slot": 2
+    "slot": 2,
+    "resistances": {
+      "Fire": 25
+    }
   },
   {
     "id": 18494,
@@ -267,17 +305,8 @@
   {
     "id": 20680,
     "name": "Abyssal Mail Pauldrons",
-    "slot": 2
-  },
-  {
-    "id": 20774,
-    "name": "63 green shaman pauldrons",
-    "slot": 2
-  },
-  {
-    "id": 20793,
-    "name": "90 green shaman pauldrons",
-    "slot": 2
+    "slot": 2,
+    "randomEnchantment": true
   },
   {
     "id": 21376,
@@ -332,7 +361,10 @@
   {
     "id": 22967,
     "name": "Icy Scale Spaulders",
-    "slot": 2
+    "slot": 2,
+    "resistances": {
+      "Frost": 33
+    }
   },
   {
     "id": 23252,
@@ -340,13 +372,13 @@
     "slot": 2
   },
   {
-    "id": 23260,
-    "name": "Champion\u0027s Mail Pauldrons",
+    "id": 23307,
+    "name": "Lieutenant Commander\u0027s Chain Shoulders",
     "slot": 2
   },
   {
-    "id": 23307,
-    "name": "Lieutenant Commander\u0027s Chain Shoulders",
+    "id": 23260,
+    "name": "Champion\u0027s Mail Pauldrons",
     "slot": 2
   },
   {
@@ -363,81 +395,95 @@
   {
     "id": 24812,
     "name": "Unyielding Spaulders",
-    "slot": 2
-  },
-  {
-    "id": 24836,
-    "name": "Nexus-Strider Mantle",
-    "slot": 2
+    "slot": 2,
+    "randomEnchantment": true
   },
   {
     "id": 24828,
     "name": "Netherstalker Mantle",
-    "slot": 2
+    "slot": 2,
+    "randomEnchantment": true
   },
   {
     "id": 24844,
     "name": "Wrathfin Mantle",
-    "slot": 2
+    "slot": 2,
+    "randomEnchantment": true
   },
   {
-    "id": 24868,
-    "name": "Blood Knight Pauldrons",
-    "slot": 2
-  },
-  {
-    "id": 24852,
-    "name": "Fenclaw Mantle",
-    "slot": 2
-  },
-  {
-    "id": 24884,
-    "name": "Der\u0027izu Spaulders",
-    "slot": 2
-  },
-  {
-    "id": 24876,
-    "name": "Ironspine Shoulderguards",
-    "slot": 2
-  },
-  {
-    "id": 24908,
-    "name": "Talhide Shoulderguards",
-    "slot": 2
-  },
-  {
-    "id": 24860,
-    "name": "Marshcreeper Mantle",
-    "slot": 2
-  },
-  {
-    "id": 24892,
-    "name": "Skettis Spaulders",
-    "slot": 2
+    "id": 24836,
+    "name": "Nexus-Strider Mantle",
+    "slot": 2,
+    "randomEnchantment": true
   },
   {
     "id": 24820,
     "name": "Felstone Spaulders",
-    "slot": 2
+    "slot": 2,
+    "randomEnchantment": true
+  },
+  {
+    "id": 24860,
+    "name": "Marshcreeper Mantle",
+    "slot": 2,
+    "randomEnchantment": true
+  },
+  {
+    "id": 24852,
+    "name": "Fenclaw Mantle",
+    "slot": 2,
+    "randomEnchantment": true
+  },
+  {
+    "id": 24868,
+    "name": "Blood Knight Pauldrons",
+    "slot": 2,
+    "randomEnchantment": true
+  },
+  {
+    "id": 24876,
+    "name": "Ironspine Shoulderguards",
+    "slot": 2,
+    "randomEnchantment": true
+  },
+  {
+    "id": 24884,
+    "name": "Der\u0027izu Spaulders",
+    "slot": 2,
+    "randomEnchantment": true
+  },
+  {
+    "id": 24892,
+    "name": "Skettis Spaulders",
+    "slot": 2,
+    "randomEnchantment": true
   },
   {
     "id": 24900,
     "name": "Sundered Spaulders",
-    "slot": 2
+    "slot": 2,
+    "randomEnchantment": true
   },
   {
     "id": 24916,
     "name": "Netherstorm Shoulderguards",
+    "slot": 2,
+    "randomEnchantment": true
+  },
+  {
+    "id": 24908,
+    "name": "Talhide Shoulderguards",
+    "slot": 2,
+    "randomEnchantment": true
+  },
+  {
+    "id": 25380,
+    "name": "Corroded Mail Shoulderpads",
     "slot": 2
   },
   {
     "id": 25372,
     "name": "Eroded Mail Shoulderpads",
-    "slot": 2
-  },
-  {
-    "id": 25380,
-    "name": "Corroded Mail Shoulderpads",
     "slot": 2
   },
   {
@@ -457,15 +503,15 @@
     "sockets": 2
   },
   {
-    "id": 25947,
-    "name": "Lightning-Rod Pauldrons",
-    "slot": 2
-  },
-  {
     "id": 25968,
     "name": "Shalassi Sentry\u0027s Epaulets",
     "slot": 2,
     "sockets": 2
+  },
+  {
+    "id": 25947,
+    "name": "Lightning-Rod Pauldrons",
+    "slot": 2
   },
   {
     "id": 25999,
@@ -491,14 +537,14 @@
     "sockets": 2
   },
   {
-    "id": 27802,
-    "name": "Tidefury Shoulderguards",
+    "id": 27801,
+    "name": "Beast Lord Mantle",
     "slot": 2,
     "sockets": 2
   },
   {
-    "id": 27801,
-    "name": "Beast Lord Mantle",
+    "id": 27802,
+    "name": "Tidefury Shoulderguards",
     "slot": 2,
     "sockets": 2
   },
@@ -524,15 +570,15 @@
     "slot": 2
   },
   {
-    "id": 28589,
-    "name": "Beastmaw Pauldrons",
-    "slot": 2
-  },
-  {
     "id": 28617,
     "name": "Grand Marshal\u0027s Chain Spaulders",
     "slot": 2,
     "sockets": 2
+  },
+  {
+    "id": 28589,
+    "name": "Beastmaw Pauldrons",
+    "slot": 2
   },
   {
     "id": 28631,
@@ -558,20 +604,14 @@
     "sockets": 2
   },
   {
-    "id": 28845,
-    "name": "High Warlord\u0027s Linked Spaulders",
-    "slot": 2,
-    "sockets": 2
-  },
-  {
     "id": 28850,
     "name": "High Warlord\u0027s Mail Spaulders",
     "slot": 2,
     "sockets": 2
   },
   {
-    "id": 29037,
-    "name": "Cyclone Shoulderguards",
+    "id": 28845,
+    "name": "High Warlord\u0027s Linked Spaulders",
     "slot": 2,
     "sockets": 2
   },
@@ -588,6 +628,12 @@
     "sockets": 2
   },
   {
+    "id": 29037,
+    "name": "Cyclone Shoulderguards",
+    "slot": 2,
+    "sockets": 2
+  },
+  {
     "id": 29084,
     "name": "Demon Stalker Shoulderguards",
     "slot": 2,
@@ -599,13 +645,13 @@
     "slot": 2
   },
   {
-    "id": 29599,
-    "name": "Lieutenant Commander\u0027s Mail Pauldrons",
+    "id": 29611,
+    "name": "Field Marshal\u0027s Mail Spaulders",
     "slot": 2
   },
   {
-    "id": 29611,
-    "name": "Field Marshal\u0027s Mail Spaulders",
+    "id": 29599,
+    "name": "Lieutenant Commander\u0027s Mail Pauldrons",
     "slot": 2
   },
   {
@@ -626,12 +672,6 @@
     "sockets": 2
   },
   {
-    "id": 30173,
-    "name": "Cataclysm Shoulderpads",
-    "slot": 2,
-    "sockets": 2
-  },
-  {
     "id": 30168,
     "name": "Cataclysm Shoulderguards",
     "slot": 2,
@@ -644,18 +684,24 @@
     "sockets": 2
   },
   {
+    "id": 30173,
+    "name": "Cataclysm Shoulderpads",
+    "slot": 2,
+    "sockets": 2
+  },
+  {
     "id": 30295,
     "name": "Exotic Spiked Shoulders",
     "slot": 2
   },
   {
-    "id": 30286,
-    "name": "Otherworldly Pauldrons",
+    "id": 30333,
+    "name": "Spaulders of the Protectorate",
     "slot": 2
   },
   {
-    "id": 30333,
-    "name": "Spaulders of the Protectorate",
+    "id": 30286,
+    "name": "Otherworldly Pauldrons",
     "slot": 2
   },
   {
@@ -667,6 +713,12 @@
     "id": 30952,
     "name": "Earthmender\u0027s Crimson Spaulders",
     "slot": 2
+  },
+  {
+    "id": 31024,
+    "name": "Skyshatter Pauldrons",
+    "slot": 2,
+    "sockets": 2
   },
   {
     "id": 31006,
@@ -687,20 +739,16 @@
     "sockets": 2
   },
   {
-    "id": 31024,
-    "name": "Skyshatter Pauldrons",
-    "slot": 2,
-    "sockets": 2
-  },
-  {
     "id": 31160,
     "name": "Felstone Epaulets",
-    "slot": 2
+    "slot": 2,
+    "randomEnchantment": true
   },
   {
     "id": 31248,
     "name": "Bog Epaulets",
-    "slot": 2
+    "slot": 2,
+    "randomEnchantment": true
   },
   {
     "id": 31294,
@@ -713,15 +761,15 @@
     "slot": 2
   },
   {
+    "id": 31427,
+    "name": "Sylvanaar Defender\u0027s Pauldrons",
+    "slot": 2
+  },
+  {
     "id": 31407,
     "name": "Gladiator\u0027s Ringmail Spaulders",
     "slot": 2,
     "sockets": 2
-  },
-  {
-    "id": 31427,
-    "name": "Sylvanaar Defender\u0027s Pauldrons",
-    "slot": 2
   },
   {
     "id": 31533,
@@ -731,17 +779,18 @@
   {
     "id": 31569,
     "name": "Mistshroud Shoulders",
-    "slot": 2
-  },
-  {
-    "id": 31644,
-    "name": "Grand Marshal\u0027s Ringmail Shoulders",
     "slot": 2,
-    "sockets": 2
+    "randomEnchantment": true
   },
   {
     "id": 31650,
     "name": "High Warlord\u0027s Ringmail Shoulderpads",
+    "slot": 2,
+    "sockets": 2
+  },
+  {
+    "id": 31644,
+    "name": "Grand Marshal\u0027s Ringmail Shoulders",
     "slot": 2,
     "sockets": 2
   },
@@ -762,6 +811,17 @@
     "sockets": 2
   },
   {
+    "id": 32033,
+    "name": "Merciless Gladiator\u0027s Ringmail Spaulders",
+    "slot": 2,
+    "sockets": 2
+  },
+  {
+    "id": 32078,
+    "name": "Pauldrons of Wild Magic",
+    "slot": 2
+  },
+  {
     "id": 32013,
     "name": "Merciless Gladiator\u0027s Mail Spaulders",
     "slot": 2,
@@ -774,17 +834,6 @@
     "sockets": 2
   },
   {
-    "id": 32033,
-    "name": "Merciless Gladiator\u0027s Ringmail Spaulders",
-    "slot": 2,
-    "sockets": 2
-  },
-  {
-    "id": 32078,
-    "name": "Pauldrons of Wild Magic",
-    "slot": 2
-  },
-  {
     "id": 32264,
     "name": "Shoulders of the Hidden Predator",
     "slot": 2
@@ -795,13 +844,13 @@
     "slot": 2
   },
   {
-    "id": 32575,
-    "name": "Shoulders of Lightning Reflexes",
+    "id": 32579,
+    "name": "Living Earth Shoulders",
     "slot": 2
   },
   {
-    "id": 32579,
-    "name": "Living Earth Shoulders",
+    "id": 32575,
+    "name": "Shoulders of Lightning Reflexes",
     "slot": 2
   },
   {
@@ -828,14 +877,14 @@
     "sockets": 2
   },
   {
-    "id": 33710,
-    "name": "Vengeful Gladiator\u0027s Linked Spaulders",
+    "id": 33715,
+    "name": "Vengeful Gladiator\u0027s Mail Spaulders",
     "slot": 2,
     "sockets": 2
   },
   {
-    "id": 33715,
-    "name": "Vengeful Gladiator\u0027s Mail Spaulders",
+    "id": 33710,
+    "name": "Vengeful Gladiator\u0027s Linked Spaulders",
     "slot": 2,
     "sockets": 2
   },
@@ -851,14 +900,14 @@
     "slot": 2
   },
   {
-    "id": 34208,
-    "name": "Equilibrium Epaulets",
+    "id": 34194,
+    "name": "Mantle of the Golden Forest",
     "slot": 2,
     "sockets": 2
   },
   {
-    "id": 34194,
-    "name": "Mantle of the Golden Forest",
+    "id": 34208,
+    "name": "Equilibrium Epaulets",
     "slot": 2,
     "sockets": 2
   },
@@ -893,14 +942,8 @@
     "sockets": 2
   },
   {
-    "id": 35380,
-    "name": "Stalker\u0027s Chain Spaulders",
-    "slot": 2,
-    "sockets": 2
-  },
-  {
-    "id": 35390,
-    "name": "Seer\u0027s Mail Spaulders",
+    "id": 35385,
+    "name": "Seer\u0027s Linked Spaulders",
     "slot": 2,
     "sockets": 2
   },
@@ -911,8 +954,14 @@
     "sockets": 2
   },
   {
-    "id": 35385,
-    "name": "Seer\u0027s Linked Spaulders",
+    "id": 35390,
+    "name": "Seer\u0027s Mail Spaulders",
+    "slot": 2,
+    "sockets": 2
+  },
+  {
+    "id": 35380,
+    "name": "Stalker\u0027s Chain Spaulders",
     "slot": 2,
     "sockets": 2
   }

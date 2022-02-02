@@ -27,12 +27,16 @@
   {
     "id": 15220,
     "name": "Battlefell Sabre",
-    "slot": 15
+    "slot": 15,
+    "randomEnchantment": true
   },
   {
     "id": 17015,
     "name": "Dark Iron Reaver",
-    "slot": 15
+    "slot": 15,
+    "resistances": {
+      "Fire": 6
+    }
   },
   {
     "id": 17103,
@@ -95,21 +99,6 @@
     "slot": 15
   },
   {
-    "id": 23652,
-    "name": "Deprecated: Keanna\u0027s Will",
-    "slot": 15
-  },
-  {
-    "id": 23653,
-    "name": "Deprecated: Keanna\u0027s Will",
-    "slot": 15
-  },
-  {
-    "id": 23914,
-    "name": "Deprecated: Keanna\u0027s Will",
-    "slot": 15
-  },
-  {
     "id": 24020,
     "name": "Shadowrend Longblade",
     "slot": 15
@@ -125,13 +114,13 @@
     "slot": 15
   },
   {
-    "id": 25915,
-    "name": "Fallen Vindicator\u0027s Blade",
+    "id": 25920,
+    "name": "Sedai\u0027s Blade",
     "slot": 15
   },
   {
-    "id": 25920,
-    "name": "Sedai\u0027s Blade",
+    "id": 25915,
+    "name": "Fallen Vindicator\u0027s Blade",
     "slot": 15
   },
   {
@@ -145,13 +134,13 @@
     "slot": 15
   },
   {
-    "id": 27899,
-    "name": "Mana Wrath",
+    "id": 27905,
+    "name": "Greatsword of Horrid Dreams",
     "slot": 15
   },
   {
-    "id": 27905,
-    "name": "Greatsword of Horrid Dreams",
+    "id": 27899,
+    "name": "Mana Wrath",
     "slot": 15
   },
   {

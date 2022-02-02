@@ -37,7 +37,8 @@
   {
     "id": 12527,
     "name": "Ribsplitter",
-    "slot": 16
+    "slot": 16,
+    "randomEnchantment": true
   },
   {
     "id": 12621,
@@ -50,13 +51,13 @@
     "slot": 16
   },
   {
-    "id": 13015,
-    "name": "Serathil",
+    "id": 13014,
+    "name": "Axe of Rin\u0027ji",
     "slot": 16
   },
   {
-    "id": 13014,
-    "name": "Axe of Rin\u0027ji",
+    "id": 13015,
+    "name": "Serathil",
     "slot": 16
   },
   {
@@ -75,29 +76,34 @@
     "slot": 16
   },
   {
-    "id": 15239,
-    "name": "Felstone Reaver",
-    "slot": 16
-  },
-  {
-    "id": 15240,
-    "name": "Demon\u0027s Claw",
-    "slot": 16
-  },
-  {
     "id": 15236,
     "name": "Moon Cleaver",
-    "slot": 16
-  },
-  {
-    "id": 15237,
-    "name": "Corpse Harvester",
-    "slot": 16
+    "slot": 16,
+    "randomEnchantment": true
   },
   {
     "id": 15238,
     "name": "Warlord\u0027s Axe",
-    "slot": 16
+    "slot": 16,
+    "randomEnchantment": true
+  },
+  {
+    "id": 15240,
+    "name": "Demon\u0027s Claw",
+    "slot": 16,
+    "randomEnchantment": true
+  },
+  {
+    "id": 15237,
+    "name": "Corpse Harvester",
+    "slot": 16,
+    "randomEnchantment": true
+  },
+  {
+    "id": 15239,
+    "name": "Felstone Reaver",
+    "slot": 16,
+    "randomEnchantment": true
   },
   {
     "id": 15853,
@@ -167,7 +173,8 @@
   {
     "id": 19921,
     "name": "Zulian Hacker",
-    "slot": 16
+    "slot": 16,
+    "randomEnchantment": true
   },
   {
     "id": 20675,
@@ -211,79 +218,88 @@
     "sockets": 1
   },
   {
-    "id": 25201,
-    "name": "Reaver\u0027s Sickle",
-    "slot": 16
-  },
-  {
-    "id": 25207,
-    "name": "Shadowmoon Cleaver",
-    "slot": 16
-  },
-  {
-    "id": 25202,
-    "name": "Kingly Axe",
-    "slot": 16
-  },
-  {
-    "id": 25205,
-    "name": "Silvermoon Crescent Axe",
-    "slot": 16
-  },
-  {
-    "id": 25210,
-    "name": "Double-Bladed Axe",
-    "slot": 16
-  },
-  {
-    "id": 25208,
-    "name": "Bladespire Broadaxe",
-    "slot": 16
-  },
-  {
-    "id": 25204,
-    "name": "Colossal War Axe",
-    "slot": 16
-  },
-  {
-    "id": 25203,
-    "name": "Chipped Woodchopper",
-    "slot": 16
+    "id": 25199,
+    "name": "Knight\u0027s War Axe",
+    "slot": 16,
+    "randomEnchantment": true
   },
   {
     "id": 25200,
     "name": "Jagged Broadaxe",
-    "slot": 16
+    "slot": 16,
+    "randomEnchantment": true
   },
   {
-    "id": 25198,
-    "name": "Karaborian Battle Axe",
-    "slot": 16
-  },
-  {
-    "id": 25199,
-    "name": "Knight\u0027s War Axe",
-    "slot": 16
-  },
-  {
-    "id": 25206,
-    "name": "Berserker Axe",
-    "slot": 16
+    "id": 25202,
+    "name": "Kingly Axe",
+    "slot": 16,
+    "randomEnchantment": true
   },
   {
     "id": 25211,
     "name": "Rockbiter Cutter",
-    "slot": 16
+    "slot": 16,
+    "randomEnchantment": true
+  },
+  {
+    "id": 25201,
+    "name": "Reaver\u0027s Sickle",
+    "slot": 16,
+    "randomEnchantment": true
+  },
+  {
+    "id": 25203,
+    "name": "Chipped Woodchopper",
+    "slot": 16,
+    "randomEnchantment": true
+  },
+  {
+    "id": 25204,
+    "name": "Colossal War Axe",
+    "slot": 16,
+    "randomEnchantment": true
+  },
+  {
+    "id": 25208,
+    "name": "Bladespire Broadaxe",
+    "slot": 16,
+    "randomEnchantment": true
+  },
+  {
+    "id": 25210,
+    "name": "Double-Bladed Axe",
+    "slot": 16,
+    "randomEnchantment": true
+  },
+  {
+    "id": 25198,
+    "name": "Karaborian Battle Axe",
+    "slot": 16,
+    "randomEnchantment": true
+  },
+  {
+    "id": 25205,
+    "name": "Silvermoon Crescent Axe",
+    "slot": 16,
+    "randomEnchantment": true
   },
   {
     "id": 25209,
     "name": "Amani Tomahawk",
-    "slot": 16
+    "slot": 16,
+    "randomEnchantment": true
   },
   {
-    "id": 25799,
-    "name": "130 Epic Warrior 1H Axe",
-    "slot": 16
+    "id": 25207,
+    "name": "Shadowmoon Cleaver",
+    "slot": 16,
+    "randomEnchantment": true
+  },
+  {
+    "id": 25206,
+    "name": "Berserker Axe",
+    "slot": 16,
+    "randomEnchantment": true
   },
   {
     "id": 25823,
@@ -293,11 +309,6 @@
   {
     "id": 25916,
     "name": "Terokkar Axe",
-    "slot": 16
-  },
-  {
-    "id": 26672,
-    "name": "59 TEST Green Axe1H",
     "slot": 16
   },
   {
@@ -396,13 +407,13 @@
     "slot": 16
   },
   {
-    "id": 32236,
-    "name": "Rising Tide",
+    "id": 32254,
+    "name": "The Brutalizer",
     "slot": 16
   },
   {
-    "id": 32254,
-    "name": "The Brutalizer",
+    "id": 32236,
+    "name": "Rising Tide",
     "slot": 16
   },
   {
@@ -417,15 +428,15 @@
     "slot": 16
   },
   {
+    "id": 34699,
+    "name": "Sun-forged Cleaver",
+    "slot": 16
+  },
+  {
     "id": 34616,
     "name": "Breeching Comet",
     "slot": 16,
     "sockets": 1
-  },
-  {
-    "id": 34699,
-    "name": "Sun-forged Cleaver",
-    "slot": 16
   },
   {
     "id": 34996,

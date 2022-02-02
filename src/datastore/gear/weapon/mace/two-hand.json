@@ -25,8 +25,8 @@
     "slot": 15
   },
   {
-    "id": 12776,
-    "name": "Enchanted Battlehammer",
+    "id": 12796,
+    "name": "Hammer of the Titans",
     "slot": 15
   },
   {
@@ -35,8 +35,8 @@
     "slot": 15
   },
   {
-    "id": 12796,
-    "name": "Hammer of the Titans",
+    "id": 12776,
+    "name": "Enchanted Battlehammer",
     "slot": 15
   },
   {
@@ -72,22 +72,26 @@
   {
     "id": 15264,
     "name": "Backbreaker",
-    "slot": 15
+    "slot": 15,
+    "randomEnchantment": true
   },
   {
     "id": 15266,
     "name": "Fierce Mauler",
-    "slot": 15
-  },
-  {
-    "id": 15267,
-    "name": "Brutehammer",
-    "slot": 15
+    "slot": 15,
+    "randomEnchantment": true
   },
   {
     "id": 15265,
     "name": "Painbringer",
-    "slot": 15
+    "slot": 15,
+    "randomEnchantment": true
+  },
+  {
+    "id": 15267,
+    "name": "Brutehammer",
+    "slot": 15,
+    "randomEnchantment": true
   },
   {
     "id": 15418,
@@ -102,7 +106,10 @@
   {
     "id": 17182,
     "name": "Sulfuras, Hand of Ragnaros",
-    "slot": 15
+    "slot": 15,
+    "resistances": {
+      "Fire": 30
+    }
   },
   {
     "id": 17193,
@@ -136,8 +143,11 @@
   },
   {
     "id": 18803,
-    "name": "Finkle\u0027s Lava Dredger",
-    "slot": 15
+    "name": "Hyperthermically Insulated Lava Dredger",
+    "slot": 15,
+    "resistances": {
+      "Fire": 15
+    }
   },
   {
     "id": 18868,
@@ -155,13 +165,13 @@
     "slot": 15
   },
   {
-    "id": 19358,
-    "name": "Draconic Maul",
+    "id": 19357,
+    "name": "Herald of Woe",
     "slot": 15
   },
   {
-    "id": 19357,
-    "name": "Herald of Woe",
+    "id": 19358,
+    "name": "Draconic Maul",
     "slot": 15
   },
   {
@@ -195,18 +205,13 @@
     "slot": 15
   },
   {
-    "id": 22348,
-    "name": "Doomulus Prime",
-    "slot": 15
-  },
-  {
     "id": 22333,
     "name": "Hammer of Divine Might",
     "slot": 15
   },
   {
-    "id": 22798,
-    "name": "Might of Menethil",
+    "id": 22348,
+    "name": "Doomulus Prime",
     "slot": 15
   },
   {
@@ -215,13 +220,18 @@
     "slot": 15
   },
   {
-    "id": 23455,
-    "name": "Grand Marshal\u0027s Demolisher",
+    "id": 22798,
+    "name": "Might of Menethil",
     "slot": 15
   },
   {
     "id": 23457,
     "name": "High Warlord\u0027s Destroyer",
+    "slot": 15
+  },
+  {
+    "id": 23455,
+    "name": "Grand Marshal\u0027s Demolisher",
     "slot": 15
   },
   {
@@ -251,74 +261,88 @@
     "sockets": 3
   },
   {
-    "id": 25129,
-    "name": "Giant\u0027s Leg Bone",
-    "slot": 15
-  },
-  {
-    "id": 25130,
-    "name": "Gronn-Bone Club",
-    "slot": 15
-  },
-  {
-    "id": 25131,
-    "name": "Hateful Bludgeon",
-    "slot": 15
-  },
-  {
-    "id": 25132,
-    "name": "Thrallmar War Hammer",
-    "slot": 15
+    "id": 25141,
+    "name": "Halaani Hammer",
+    "slot": 15,
+    "randomEnchantment": true
   },
   {
     "id": 25137,
     "name": "Draenethyst Mallet",
-    "slot": 15
-  },
-  {
-    "id": 25128,
-    "name": "Shining Mace",
-    "slot": 15
-  },
-  {
-    "id": 25141,
-    "name": "Halaani Hammer",
-    "slot": 15
-  },
-  {
-    "id": 25138,
-    "name": "Blood Knight Maul",
-    "slot": 15
-  },
-  {
-    "id": 25133,
-    "name": "Stormwind Maul",
-    "slot": 15
-  },
-  {
-    "id": 25136,
-    "name": "Blood Stained Hammer",
-    "slot": 15
-  },
-  {
-    "id": 25139,
-    "name": "Algaz Battle Hammer",
-    "slot": 15
-  },
-  {
-    "id": 25134,
-    "name": "Highmountain Hammer",
-    "slot": 15
-  },
-  {
-    "id": 25140,
-    "name": "Commanding Mallet",
-    "slot": 15
+    "slot": 15,
+    "randomEnchantment": true
   },
   {
     "id": 25135,
     "name": "Clefthoof Mace",
-    "slot": 15
+    "slot": 15,
+    "randomEnchantment": true
+  },
+  {
+    "id": 25128,
+    "name": "Shining Mace",
+    "slot": 15,
+    "randomEnchantment": true
+  },
+  {
+    "id": 25134,
+    "name": "Highmountain Hammer",
+    "slot": 15,
+    "randomEnchantment": true
+  },
+  {
+    "id": 25132,
+    "name": "Thrallmar War Hammer",
+    "slot": 15,
+    "randomEnchantment": true
+  },
+  {
+    "id": 25133,
+    "name": "Stormwind Maul",
+    "slot": 15,
+    "randomEnchantment": true
+  },
+  {
+    "id": 25138,
+    "name": "Blood Knight Maul",
+    "slot": 15,
+    "randomEnchantment": true
+  },
+  {
+    "id": 25136,
+    "name": "Blood Stained Hammer",
+    "slot": 15,
+    "randomEnchantment": true
+  },
+  {
+    "id": 25129,
+    "name": "Giant\u0027s Leg Bone",
+    "slot": 15,
+    "randomEnchantment": true
+  },
+  {
+    "id": 25131,
+    "name": "Hateful Bludgeon",
+    "slot": 15,
+    "randomEnchantment": true
+  },
+  {
+    "id": 25130,
+    "name": "Gronn-Bone Club",
+    "slot": 15,
+    "randomEnchantment": true
+  },
+  {
+    "id": 25140,
+    "name": "Commanding Mallet",
+    "slot": 15,
+    "randomEnchantment": true
+  },
+  {
+    "id": 25139,
+    "name": "Algaz Battle Hammer",
+    "slot": 15,
+    "randomEnchantment": true
   },
   {
     "id": 25402,
@@ -388,13 +412,13 @@
     "sockets": 3
   },
   {
-    "id": 28917,
-    "name": "High Warlord\u0027s Bonegrinder",
+    "id": 28919,
+    "name": "High Warlord\u0027s Maul",
     "slot": 15
   },
   {
-    "id": 28919,
-    "name": "High Warlord\u0027s Maul",
+    "id": 28942,
+    "name": "Grand Marshal\u0027s Bonegrinder",
     "slot": 15
   },
   {
@@ -403,8 +427,8 @@
     "slot": 15
   },
   {
-    "id": 28942,
-    "name": "Grand Marshal\u0027s Bonegrinder",
+    "id": 28917,
+    "name": "High Warlord\u0027s Bonegrinder",
     "slot": 15
   },
   {

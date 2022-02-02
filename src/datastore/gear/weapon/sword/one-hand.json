@@ -25,13 +25,13 @@
     "slot": 16
   },
   {
-    "id": 10803,
-    "name": "Blade of the Wretched",
+    "id": 10847,
+    "name": "Dragon\u0027s Call",
     "slot": 16
   },
   {
-    "id": 10847,
-    "name": "Dragon\u0027s Call",
+    "id": 10803,
+    "name": "Blade of the Wretched",
     "slot": 16
   },
   {
@@ -97,27 +97,32 @@
   {
     "id": 15221,
     "name": "Holy War Sword",
-    "slot": 16
-  },
-  {
-    "id": 15218,
-    "name": "Crystal Sword",
-    "slot": 16
-  },
-  {
-    "id": 15216,
-    "name": "Rune Sword",
-    "slot": 16
+    "slot": 16,
+    "randomEnchantment": true
   },
   {
     "id": 15219,
     "name": "Dimensional Blade",
-    "slot": 16
+    "slot": 16,
+    "randomEnchantment": true
+  },
+  {
+    "id": 15216,
+    "name": "Rune Sword",
+    "slot": 16,
+    "randomEnchantment": true
+  },
+  {
+    "id": 15218,
+    "name": "Crystal Sword",
+    "slot": 16,
+    "randomEnchantment": true
   },
   {
     "id": 15217,
     "name": "Widow Blade",
-    "slot": 16
+    "slot": 16,
+    "randomEnchantment": true
   },
   {
     "id": 15705,
@@ -130,6 +135,11 @@
     "slot": 16
   },
   {
+    "id": 15800,
+    "name": "Intrepid Shortsword",
+    "slot": 16
+  },
+  {
     "id": 15801,
     "name": "Valiant Shortsword",
     "slot": 16
@@ -137,11 +147,6 @@
   {
     "id": 15806,
     "name": "Mirah\u0027s Song",
-    "slot": 16
-  },
-  {
-    "id": 15800,
-    "name": "Intrepid Shortsword",
     "slot": 16
   },
   {
@@ -197,7 +202,11 @@
   {
     "id": 19019,
     "name": "Thunderfury, Blessed Blade of the Windseeker",
-    "slot": 16
+    "slot": 16,
+    "resistances": {
+      "Fire": 8,
+      "Nature": 9
+    }
   },
   {
     "id": 19110,
@@ -220,7 +229,7 @@
     "slot": 16
   },
   {
-    "id": 19551,
+    "id": 19550,
     "name": "Legionnaire\u0027s Sword",
     "slot": 16
   },
@@ -230,13 +239,13 @@
     "slot": 16
   },
   {
-    "id": 19550,
-    "name": "Legionnaire\u0027s Sword",
+    "id": 19555,
+    "name": "Protector\u0027s Sword",
     "slot": 16
   },
   {
-    "id": 19555,
-    "name": "Protector\u0027s Sword",
+    "id": 19551,
+    "name": "Legionnaire\u0027s Sword",
     "slot": 16
   },
   {
@@ -305,11 +314,6 @@
     "slot": 16
   },
   {
-    "id": 23456,
-    "name": "Grand Marshal\u0027s Swiftblade",
-    "slot": 16
-  },
-  {
     "id": 23461,
     "name": "High Warlord\u0027s Quickblade",
     "slot": 16
@@ -320,13 +324,18 @@
     "slot": 16
   },
   {
-    "id": 23505,
-    "name": "Adamantite Rapier",
+    "id": 23540,
+    "name": "Felsteel Longblade",
     "slot": 16
   },
   {
-    "id": 23540,
-    "name": "Felsteel Longblade",
+    "id": 23456,
+    "name": "Grand Marshal\u0027s Swiftblade",
+    "slot": 16
+  },
+  {
+    "id": 23505,
+    "name": "Adamantite Rapier",
     "slot": 16
   },
   {
@@ -335,99 +344,88 @@
     "slot": 16
   },
   {
-    "id": 23649,
-    "name": "Deprecated: Keanna\u0027s Will",
-    "slot": 16
-  },
-  {
-    "id": 23647,
-    "name": "Deprecated: Keanna\u0027s Will",
-    "slot": 16
-  },
-  {
-    "id": 23651,
-    "name": "Deprecated: Keanna\u0027s Will",
-    "slot": 16
-  },
-  {
-    "id": 23648,
-    "name": "Deprecated: Keanna\u0027s Will",
-    "slot": 16
-  },
-  {
-    "id": 23918,
-    "name": "Deprecated: Keanna\u0027s Will",
-    "slot": 16
-  },
-  {
-    "id": 25144,
-    "name": "Skettis Curved Blade",
-    "slot": 16
-  },
-  {
     "id": 25142,
     "name": "Telaari Longblade",
-    "slot": 16
-  },
-  {
-    "id": 25148,
-    "name": "Bone Collector Sword",
-    "slot": 16
-  },
-  {
-    "id": 25147,
-    "name": "Skystrider Katana",
-    "slot": 16
-  },
-  {
-    "id": 25145,
-    "name": "Wisdom Blade",
-    "slot": 16
-  },
-  {
-    "id": 25149,
-    "name": "Baron\u0027s Broadsword",
-    "slot": 16
-  },
-  {
-    "id": 25154,
-    "name": "Blood Groove Blade",
-    "slot": 16
-  },
-  {
-    "id": 25151,
-    "name": "Assassins\u0027 Short Blade",
-    "slot": 16
+    "slot": 16,
+    "randomEnchantment": true
   },
   {
     "id": 25153,
     "name": "Gladiator Greatblade",
-    "slot": 16
+    "slot": 16,
+    "randomEnchantment": true
   },
   {
     "id": 25146,
     "name": "Light-Etched Longsword",
-    "slot": 16
-  },
-  {
-    "id": 25143,
-    "name": "Silver Hand Blade",
-    "slot": 16
-  },
-  {
-    "id": 25155,
-    "name": "Iron Skull Sword",
-    "slot": 16
-  },
-  {
-    "id": 25150,
-    "name": "Honor Hold Saber",
-    "slot": 16
+    "slot": 16,
+    "randomEnchantment": true
   },
   {
     "id": 25152,
     "name": "Howling Sword",
-    "slot": 16
+    "slot": 16,
+    "randomEnchantment": true
+  },
+  {
+    "id": 25144,
+    "name": "Skettis Curved Blade",
+    "slot": 16,
+    "randomEnchantment": true
+  },
+  {
+    "id": 25147,
+    "name": "Skystrider Katana",
+    "slot": 16,
+    "randomEnchantment": true
+  },
+  {
+    "id": 25149,
+    "name": "Baron\u0027s Broadsword",
+    "slot": 16,
+    "randomEnchantment": true
+  },
+  {
+    "id": 25143,
+    "name": "Silver Hand Blade",
+    "slot": 16,
+    "randomEnchantment": true
+  },
+  {
+    "id": 25151,
+    "name": "Assassins\u0027 Short Blade",
+    "slot": 16,
+    "randomEnchantment": true
+  },
+  {
+    "id": 25145,
+    "name": "Wisdom Blade",
+    "slot": 16,
+    "randomEnchantment": true
+  },
+  {
+    "id": 25154,
+    "name": "Blood Groove Blade",
+    "slot": 16,
+    "randomEnchantment": true
+  },
+  {
+    "id": 25155,
+    "name": "Iron Skull Sword",
+    "slot": 16,
+    "randomEnchantment": true
+  },
+  {
+    "id": 25148,
+    "name": "Bone Collector Sword",
+    "slot": 16,
+    "randomEnchantment": true
+  },
+  {
+    "id": 25150,
+    "name": "Honor Hold Saber",
+    "slot": 16,
+    "randomEnchantment": true
   },
   {
     "id": 25772,
@@ -490,11 +488,6 @@
     "slot": 16
   },
   {
-    "id": 28425,
-    "name": "Fireguard",
-    "slot": 16
-  },
-  {
     "id": 28427,
     "name": "Blazefury",
     "slot": 16
@@ -505,8 +498,8 @@
     "slot": 16
   },
   {
-    "id": 28729,
-    "name": "Spiteblade",
+    "id": 28425,
+    "name": "Fireguard",
     "slot": 16
   },
   {
@@ -515,18 +508,8 @@
     "slot": 16
   },
   {
-    "id": 28926,
-    "name": "High Warlord\u0027s Quickblade",
-    "slot": 16
-  },
-  {
-    "id": 28952,
-    "name": "Grand Marshal\u0027s Quickblade",
-    "slot": 16
-  },
-  {
-    "id": 28937,
-    "name": "High Warlord\u0027s Slicer",
+    "id": 28729,
+    "name": "Spiteblade",
     "slot": 16
   },
   {
@@ -535,13 +518,28 @@
     "slot": 16
   },
   {
-    "id": 29124,
-    "name": "Vindicator\u0027s Brand",
+    "id": 28952,
+    "name": "Grand Marshal\u0027s Quickblade",
+    "slot": 16
+  },
+  {
+    "id": 28926,
+    "name": "High Warlord\u0027s Quickblade",
+    "slot": 16
+  },
+  {
+    "id": 28937,
+    "name": "High Warlord\u0027s Slicer",
     "slot": 16
   },
   {
     "id": 29108,
     "name": "Blade of the Unyielding",
+    "slot": 16
+  },
+  {
+    "id": 29124,
+    "name": "Vindicator\u0027s Brand",
     "slot": 16
   },
   {
@@ -590,13 +588,13 @@
     "slot": 16
   },
   {
-    "id": 30749,
-    "name": "Draenic Sparring Blade",
+    "id": 30788,
+    "name": "Illidari-Bane Broadsword",
     "slot": 16
   },
   {
-    "id": 30788,
-    "name": "Illidari-Bane Broadsword",
+    "id": 30749,
+    "name": "Draenic Sparring Blade",
     "slot": 16
   },
   {
@@ -680,13 +678,13 @@
     "slot": 16
   },
   {
-    "id": 34672,
-    "name": "Inuuro\u0027s Blade",
+    "id": 34703,
+    "name": "Latro\u0027s Dancing Blade",
     "slot": 16
   },
   {
-    "id": 34703,
-    "name": "Latro\u0027s Dancing Blade",
+    "id": 34672,
+    "name": "Inuuro\u0027s Blade",
     "slot": 16
   },
   {

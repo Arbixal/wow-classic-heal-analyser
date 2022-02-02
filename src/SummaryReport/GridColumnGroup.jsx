@@ -98,6 +98,7 @@ export class GridColumnGroup extends Component {
             collapsed: context?.collapsed[id] || false,
             classFilter: context?.classFilter,
             roleFilter: context?.roleFilter,
+            boss: context?.boss,
         };
     }
 

@@ -52,7 +52,7 @@ export class GridRow extends Component {
     }
 
     _flattenCharacterData(character) {
-        let characterData = {...emptyData, name: this.props.character.name};
+        let characterData = {...emptyData, Name: this.props.character.name};
 
         if (!character) {
             return characterData;
@@ -271,11 +271,21 @@ export class GridRow extends Component {
         characterData[DataPoints.CooldownsAbility] = this._getCooldownList(character, "Ability");
         characterData[DataPoints.CooldownsItems] = this._getCooldownList(character, "Trinket");
 
+        characterData[DataPoints.ResistanceArcane] = this._cleanResistanceValue(character.summary.resistances?.arcane, character.summary.resistances?.includesGreens);
+        characterData[DataPoints.ResistanceFire] = this._cleanResistanceValue(character.summary.resistances?.fire, character.summary.resistances?.includesGreens);
+        characterData[DataPoints.ResistanceFrost] = this._cleanResistanceValue(character.summary.resistances?.frost, character.summary.resistances?.includesGreens);
+        characterData[DataPoints.ResistanceNature] = this._cleanResistanceValue(character.summary.resistances?.nature, character.summary.resistances?.includesGreens);
+        characterData[DataPoints.ResistanceShadow] = this._cleanResistanceValue(character.summary.resistances?.shadow, character.summary.resistances?.includesGreens);
+
         this._getTankStats(character, characterData);
         
         this.props.onDataUpdate(characterData);
 
         return characterData;
+    }
+
+    _cleanResistanceValue(value, includesGreens) {
+        return value ? value + (includesGreens ? "*" : "") : 0
     }
 
     _getBuffs(character, options) {
@@ -296,7 +306,7 @@ export class GridRow extends Component {
     }
 
     _getWeaponImbue(character, options) {
-        const {weaponEnchant, offhandEnchant} = character;
+        const {weaponEnchant, offhandEnchant} = character.summary;
 
         if (!weaponEnchant) {
             return [];
@@ -317,7 +327,7 @@ export class GridRow extends Component {
     }
 
     _getMissingGemCount(character) {
-        const {gems} = character;
+        const {gems} = character.summary;
 
         if (!gems) {
             return null;
@@ -327,7 +337,7 @@ export class GridRow extends Component {
     }
 
     _getGemCount(character, rarity) {
-        const {gems} = character;
+        const {gems} = character.summary;
 
         if (!gems) {
             return null;
@@ -347,7 +357,7 @@ export class GridRow extends Component {
     }
 
     _getGemList(character) {
-        const {gems} = character;
+        const {gems} = character.summary;
 
         if (!gems) {
             return [];
@@ -638,7 +648,7 @@ export class GridRow extends Component {
             19: "https://wow.zamimg.com/images/wow/icons/large/inventoryslot_tabard.jpg",
         }
 
-        let enchantScore = character.enchants.reduce((accum, enchant) => {
+        let enchantScore = character.summary.enchants.reduce((accum, enchant) => {
             let enchantIcon = {
                 id: enchant.gearId,
                 name: enchant.name,
@@ -649,7 +659,7 @@ export class GridRow extends Component {
                 let enchantInfo = enchants[enchant.id];
                 let score = 0;
                 if (enchantInfo) {
-                    character.specs.forEach(spec => {
+                    character.summary.specs.forEach(spec => {
                         let specScore = enchantInfo.score[character.type + "-" + spec] ?? 0;
                         if (specScore > score) {
                             score = specScore;
@@ -689,7 +699,7 @@ export class GridRow extends Component {
             return accum;
         }, { good: 0, bad: 0, average: 0, missing: 0});
 
-        characterData[DataPoints.Enchants] = (enchantScore.good + (0.5 * enchantScore.average)) + '/' + character.enchants.length;
+        characterData[DataPoints.Enchants] = (enchantScore.good + (0.5 * enchantScore.average)) + '/' + character.summary.enchants.length;
         characterData[DataPoints.EnchantGood] = enchantScore.good;
         characterData[DataPoints.EnchantAverage] = enchantScore.average;
         characterData[DataPoints.EnchantBad] = enchantScore.bad;

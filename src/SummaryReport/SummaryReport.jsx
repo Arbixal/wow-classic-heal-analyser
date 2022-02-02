@@ -222,7 +222,7 @@ class SummaryReport extends Component {
         let data = [...Object.values(characters)
         .filter((character) => character.type !== "NPC" && character.type !== "Pet" && character.type !== "Boss")
         .filter((character) => classFilter == null || character.type === classFilter)
-        .filter((character) => roleFilter == null || character.roles.includes(roleFilter))
+        .filter((character) => roleFilter == null || character.summary.roles.includes(roleFilter))
         .sort((aValue, bValue) => {
              let classCompare = classSortOrder[aValue.type] - classSortOrder[bValue.type];
 
@@ -240,6 +240,7 @@ class SummaryReport extends Component {
         const { fightId, filter } = this.props.match.params;
 
         let selectedFight = fightId == null || isNaN(parseInt(fightId)) ? -1 : parseInt(fightId);
+        let boss = null;
 
         let fightIds = this._getFightIds(selectedFight);
 
@@ -250,19 +251,6 @@ class SummaryReport extends Component {
         } else if (!isLoaded) {
             return <div>Loading ...</div>;
         } else {
-/*             let data = Object.values(characters)
-                .filter((character) => character.type !== "NPC" && character.type !== "Pet" && character.type !== "Boss")
-                .filter((character) => classFilter == null || character.type === classFilter)
-                .filter((character) => roleFilter == null || character.roles.includes(roleFilter))
-                .sort((aValue, bValue) => {
-                     let classCompare = classSortOrder[aValue.type] - classSortOrder[bValue.type];
-
-                     if (classCompare !== 0)
-                         return classCompare;
-
-                     return aValue.name.localeCompare(bValue.name);
-                    }); */
-            
             let duration = intervalToDuration({start: reportDetails.startTime, end: reportDetails.endTime});
             return (
                 <>
@@ -303,6 +291,10 @@ class SummaryReport extends Component {
                                         accum.push({ id: fight.boss, fights: [fight] });
                                     }
 
+                                    if (fight.id === selectedFight) {
+                                        boss = fight.boss;
+                                    }
+
                                     return accum;
                                },[])
                                .map(boss => (
@@ -318,7 +310,7 @@ class SummaryReport extends Component {
                         {Object.values(classes).map(role => <NavLink key={role.slug} to={"/" + reportId + "/" + selectedFight + "/" + role.slug} activeClassName="selected"><div className={"class_nav " + role.name}><img className="spell_icon" src={role.icon} alt={role.name} />{role.name}</div></NavLink>)}
                     </div>
 
-                    <Grid data={data} logLoader={this._logLoader} classFilter={classFilter} roleFilter={roleFilter} fightId={selectedFight}>
+                    <Grid data={data} logLoader={this._logLoader} classFilter={classFilter} roleFilter={roleFilter} fightId={selectedFight} boss={boss}>
                         <GridColumnGroup id={GroupKeys.Name} label="Name" cssClass="odd-colgroup">
                             <GridColumn field={DataPoints.Name} 
                                         cssClass="name" />
@@ -1019,6 +1011,18 @@ class SummaryReport extends Component {
                                         label=" "
                                         cssClass="cooldowns center" />
                         </GridColumnGroup>
+                        <GridColumnGroup id={GroupKeys.Resistance} label="Resistance" cssClass="even-colgroup">
+                            <GridColumn field={DataPoints.ResistanceArcane} label="A"
+                                        cssClass="protection_potion arcane" />
+                            <GridColumn field={DataPoints.ResistanceFire} label="F"
+                                        cssClass="protection_potion fire" />
+                            <GridColumn field={DataPoints.ResistanceFrost} label="Fr"
+                                        cssClass="protection_potion frost" />
+                            <GridColumn field={DataPoints.ResistanceNature} label="N"
+                                        cssClass="protection_potion nature" />
+                            <GridColumn field={DataPoints.ResistanceShadow} label="S"
+                                        cssClass="protection_potion shadow" />
+                        </GridColumnGroup>
                         <GridColumnGroup id={GroupKeys.Tank} label="Tank Stats" cssClass="even-colgroup">
                             <GridBarColumn label="Damage Taken" width="270" visibility={(ctx) => ctx.roleFilter === "tank"}>
                                 <GridBarColumnSection field={DataPoints.DamageTakenHit} label="Hit" cssClass="class-colour1" />
@@ -1039,6 +1043,7 @@ class SummaryReport extends Component {
                         </GridColumnGroup>
                     </Grid>
                     <ReactTooltip />
+                    <p>* Resistance calculations include "random enchantment" items that can may or may not be "of [School] Protection"</p>
                 </>
             )
         }

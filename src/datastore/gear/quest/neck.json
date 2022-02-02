@@ -1,0 +1,18 @@
+[
+  {
+    "id": 32649,
+    "name": "Medallion of Karabor",
+    "slot": 1,
+    "resistances": {
+      "Shadow": 40
+    }
+  },
+  {
+    "id": 32757,
+    "name": "Blessed Medallion of Karabor",
+    "slot": 1,
+    "resistances": {
+      "Shadow": 40
+    }
+  }
+]

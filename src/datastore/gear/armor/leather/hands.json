@@ -22,32 +22,38 @@
   {
     "id": 10072,
     "name": "Righteous Gloves",
-    "slot": 9
+    "slot": 9,
+    "randomEnchantment": true
   },
   {
     "id": 10110,
     "name": "Wanderer\u0027s Gloves",
-    "slot": 9
+    "slot": 9,
+    "randomEnchantment": true
   },
   {
     "id": 10149,
     "name": "Mighty Gauntlets",
-    "slot": 9
+    "slot": 9,
+    "randomEnchantment": true
   },
   {
     "id": 10186,
     "name": "Swashbuckler\u0027s Gloves",
-    "slot": 9
+    "slot": 9,
+    "randomEnchantment": true
   },
   {
     "id": 10225,
     "name": "Nightshade Gloves",
-    "slot": 9
+    "slot": 9,
+    "randomEnchantment": true
   },
   {
     "id": 10260,
     "name": "Adventurer\u0027s Gloves",
-    "slot": 9
+    "slot": 9,
+    "randomEnchantment": true
   },
   {
     "id": 11665,
@@ -77,7 +83,8 @@
   {
     "id": 13258,
     "name": "Slaghide Gauntlets",
-    "slot": 9
+    "slot": 9,
+    "randomEnchantment": true
   },
   {
     "id": 13395,
@@ -110,14 +117,22 @@
     "slot": 9
   },
   {
-    "id": 15070,
-    "name": "Frostsaber Gloves",
-    "slot": 9
-  },
-  {
     "id": 15074,
     "name": "Chimeric Gloves",
-    "slot": 9
+    "slot": 9,
+    "resistances": {
+      "Arcane": 11,
+      "Nature": 12
+    }
+  },
+  {
+    "id": 15070,
+    "name": "Frostsaber Gloves",
+    "slot": 9,
+    "resistances": {
+      "Frost": 13,
+      "Shadow": 12
+    }
   },
   {
     "id": 15063,
@@ -137,27 +152,32 @@
   {
     "id": 15184,
     "name": "Praetorian Gloves",
-    "slot": 9
+    "slot": 9,
+    "randomEnchantment": true
   },
   {
     "id": 15192,
     "name": "Grand Gauntlets",
-    "slot": 9
+    "slot": 9,
+    "randomEnchantment": true
   },
   {
     "id": 15393,
     "name": "Jadefire Gloves",
-    "slot": 9
+    "slot": 9,
+    "randomEnchantment": true
   },
   {
     "id": 15429,
     "name": "Peerless Gloves",
-    "slot": 9
+    "slot": 9,
+    "randomEnchantment": true
   },
   {
     "id": 15438,
     "name": "Supreme Gloves",
-    "slot": 9
+    "slot": 9,
+    "randomEnchantment": true
   },
   {
     "id": 15708,
@@ -175,18 +195,13 @@
     "slot": 9
   },
   {
-    "id": 16448,
-    "name": "Marshal\u0027s Dragonhide Gauntlets",
-    "slot": 9
-  },
-  {
     "id": 16454,
     "name": "Marshal\u0027s Leather Handgrips",
     "slot": 9
   },
   {
-    "id": 16499,
-    "name": "Blood Guard\u0027s Leather Vices",
+    "id": 16448,
+    "name": "Marshal\u0027s Dragonhide Gauntlets",
     "slot": 9
   },
   {
@@ -195,13 +210,18 @@
     "slot": 9
   },
   {
-    "id": 16555,
-    "name": "General\u0027s Dragonhide Gloves",
+    "id": 16499,
+    "name": "Blood Guard\u0027s Leather Vices",
     "slot": 9
   },
   {
     "id": 16560,
     "name": "General\u0027s Leather Mitts",
+    "slot": 9
+  },
+  {
+    "id": 16555,
+    "name": "General\u0027s Dragonhide Gloves",
     "slot": 9
   },
   {
@@ -215,24 +235,36 @@
     "slot": 9
   },
   {
-    "id": 16826,
-    "name": "Nightslayer Gloves",
-    "slot": 9
-  },
-  {
     "id": 16831,
     "name": "Cenarion Gloves",
-    "slot": 9
+    "slot": 9,
+    "resistances": {
+      "Fire": 7
+    }
+  },
+  {
+    "id": 16826,
+    "name": "Nightslayer Gloves",
+    "slot": 9,
+    "resistances": {
+      "Fire": 7
+    }
   },
   {
     "id": 16899,
     "name": "Stormrage Handguards",
-    "slot": 9
+    "slot": 9,
+    "resistances": {
+      "Shadow": 10
+    }
   },
   {
     "id": 16907,
     "name": "Bloodfang Gloves",
-    "slot": 9
+    "slot": 9,
+    "resistances": {
+      "Shadow": 10
+    }
   },
   {
     "id": 16994,
@@ -247,7 +279,10 @@
   {
     "id": 18344,
     "name": "Stonebark Gauntlets",
-    "slot": 9
+    "slot": 9,
+    "resistances": {
+      "Nature": 16
+    }
   },
   {
     "id": 18377,
@@ -262,17 +297,28 @@
   {
     "id": 18544,
     "name": "Doomhide Gauntlets",
-    "slot": 9
+    "slot": 9,
+    "resistances": {
+      "Fire": 8,
+      "Shadow": 8
+    }
   },
   {
     "id": 18744,
     "name": "Plaguebat Fur Gloves",
-    "slot": 9
+    "slot": 9,
+    "resistances": {
+      "Shadow": 10
+    }
   },
   {
     "id": 18823,
     "name": "Aged Core Leather Gloves",
-    "slot": 9
+    "slot": 9,
+    "resistances": {
+      "Fire": 8,
+      "Shadow": 5
+    }
   },
   {
     "id": 19049,
@@ -302,7 +348,8 @@
   {
     "id": 20661,
     "name": "Abyssal Leather Gloves",
-    "slot": 9
+    "slot": 9,
+    "randomEnchantment": true
   },
   {
     "id": 21178,
@@ -320,13 +367,13 @@
     "slot": 9
   },
   {
-    "id": 21458,
-    "name": "Gauntlets of New Life",
+    "id": 21469,
+    "name": "Gauntlets of Southwind",
     "slot": 9
   },
   {
-    "id": 21469,
-    "name": "Gauntlets of Southwind",
+    "id": 21458,
+    "name": "Gauntlets of New Life",
     "slot": 9
   },
   {
@@ -337,7 +384,10 @@
   {
     "id": 21605,
     "name": "Gloves of the Hidden Temple",
-    "slot": 9
+    "slot": 9,
+    "resistances": {
+      "Shadow": 6
+    }
   },
   {
     "id": 21617,
@@ -345,8 +395,8 @@
     "slot": 9
   },
   {
-    "id": 21682,
-    "name": "Bile-Covered Gauntlets",
+    "id": 21689,
+    "name": "Gloves of Ebru",
     "slot": 9
   },
   {
@@ -355,9 +405,12 @@
     "slot": 9
   },
   {
-    "id": 21689,
-    "name": "Gloves of Ebru",
-    "slot": 9
+    "id": 21682,
+    "name": "Bile-Covered Gauntlets",
+    "slot": 9,
+    "resistances": {
+      "Nature": 20
+    }
   },
   {
     "id": 22006,
@@ -382,7 +435,10 @@
   {
     "id": 22662,
     "name": "Polar Gloves",
-    "slot": 9
+    "slot": 9,
+    "resistances": {
+      "Frost": 30
+    }
   },
   {
     "id": 22864,
@@ -400,13 +456,13 @@
     "slot": 9
   },
   {
-    "id": 23280,
-    "name": "Knight-Lieutenant\u0027s Dragonhide Grips",
+    "id": 23284,
+    "name": "Knight-Lieutenant\u0027s Leather Grips",
     "slot": 9
   },
   {
-    "id": 23284,
-    "name": "Knight-Lieutenant\u0027s Leather Grips",
+    "id": 23280,
+    "name": "Knight-Lieutenant\u0027s Dragonhide Grips",
     "slot": 9
   },
   {
@@ -422,73 +478,92 @@
     "sockets": 2
   },
   {
-    "id": 24712,
-    "name": "Vengeance Gloves",
-    "slot": 9
-  },
-  {
     "id": 24696,
     "name": "Bonechewer Spikegloves",
-    "slot": 9
+    "slot": 9,
+    "randomEnchantment": true
   },
   {
-    "id": 24704,
-    "name": "Haal\u0027eshi Gloves",
-    "slot": 9
-  },
-  {
-    "id": 24720,
-    "name": "Dreghood Gloves",
-    "slot": 9
+    "id": 24712,
+    "name": "Vengeance Gloves",
+    "slot": 9,
+    "randomEnchantment": true
   },
   {
     "id": 24728,
     "name": "Dementia Gloves",
-    "slot": 9
+    "slot": 9,
+    "randomEnchantment": true
   },
   {
-    "id": 24736,
-    "name": "Sunroc Gloves",
-    "slot": 9
-  },
-  {
-    "id": 24744,
-    "name": "Ranger Gloves",
-    "slot": 9
-  },
-  {
-    "id": 24752,
-    "name": "Daggerfen Gloves",
-    "slot": 9
-  },
-  {
-    "id": 24768,
-    "name": "Clefthoof Gloves",
-    "slot": 9
-  },
-  {
-    "id": 24776,
-    "name": "Boneshredder Gloves",
-    "slot": 9
+    "id": 24720,
+    "name": "Dreghood Gloves",
+    "slot": 9,
+    "randomEnchantment": true
   },
   {
     "id": 24760,
     "name": "Umbrafen Gloves",
-    "slot": 9
+    "slot": 9,
+    "randomEnchantment": true
   },
   {
-    "id": 24785,
-    "name": "Murkblood Gloves",
-    "slot": 9
+    "id": 24744,
+    "name": "Ranger Gloves",
+    "slot": 9,
+    "randomEnchantment": true
   },
   {
-    "id": 24801,
-    "name": "Dragonhawk Gloves",
-    "slot": 9
+    "id": 24736,
+    "name": "Sunroc Gloves",
+    "slot": 9,
+    "randomEnchantment": true
+  },
+  {
+    "id": 24752,
+    "name": "Daggerfen Gloves",
+    "slot": 9,
+    "randomEnchantment": true
+  },
+  {
+    "id": 24704,
+    "name": "Haal\u0027eshi Gloves",
+    "slot": 9,
+    "randomEnchantment": true
   },
   {
     "id": 24793,
     "name": "Expedition Gloves",
+    "slot": 9,
+    "randomEnchantment": true
+  },
+  {
+    "id": 24801,
+    "name": "Dragonhawk Gloves",
+    "slot": 9,
+    "randomEnchantment": true
+  },
+  {
+    "id": 24776,
+    "name": "Boneshredder Gloves",
+    "slot": 9,
+    "randomEnchantment": true
+  },
+  {
+    "id": 24768,
+    "name": "Clefthoof Gloves",
+    "slot": 9,
+    "randomEnchantment": true
+  },
+  {
+    "id": 24785,
+    "name": "Murkblood Gloves",
+    "slot": 9,
+    "randomEnchantment": true
+  },
+  {
+    "id": 25361,
+    "name": "Decaying Leather Gloves",
     "slot": 9
   },
   {
@@ -497,18 +572,13 @@
     "slot": 9
   },
   {
-    "id": 25361,
-    "name": "Decaying Leather Gloves",
+    "id": 25576,
+    "name": "Smuggler\u0027s Mitts",
     "slot": 9
   },
   {
     "id": 25578,
     "name": "Caustic Feelers",
-    "slot": 9
-  },
-  {
-    "id": 25576,
-    "name": "Smuggler\u0027s Mitts",
     "slot": 9
   },
   {
@@ -533,12 +603,12 @@
     "sockets": 2
   },
   {
-    "id": 25791,
+    "id": 25795,
     "name": "Gloves of Preservation",
     "slot": 9
   },
   {
-    "id": 25795,
+    "id": 25791,
     "name": "Gloves of Preservation",
     "slot": 9
   },
@@ -551,12 +621,6 @@
     "id": 25949,
     "name": "Gloves of the Afterlife",
     "slot": 9
-  },
-  {
-    "id": 25969,
-    "name": "Rapscallion\u0027s Touch",
-    "slot": 9,
-    "sockets": 2
   },
   {
     "id": 27468,
@@ -585,13 +649,13 @@
     "slot": 9
   },
   {
-    "id": 28136,
-    "name": "Gladiator\u0027s Wyrmhide Gloves",
+    "id": 28214,
+    "name": "Grips of the Lunar Eclipse",
     "slot": 9
   },
   {
-    "id": 28214,
-    "name": "Grips of the Lunar Eclipse",
+    "id": 28136,
+    "name": "Gladiator\u0027s Wyrmhide Gloves",
     "slot": 9
   },
   {
@@ -639,13 +703,13 @@
     "sockets": 2
   },
   {
-    "id": 28811,
-    "name": "High Warlord\u0027s Dragonhide Gloves",
+    "id": 28836,
+    "name": "High Warlord\u0027s Leather Gloves",
     "slot": 9
   },
   {
-    "id": 28836,
-    "name": "High Warlord\u0027s Leather Gloves",
+    "id": 28811,
+    "name": "High Warlord\u0027s Dragonhide Gloves",
     "slot": 9
   },
   {
@@ -684,10 +748,9 @@
     "slot": 9
   },
   {
-    "id": 29496,
-    "name": "Enchanted Clefthoof Gloves",
-    "slot": 9,
-    "sockets": 2
+    "id": 29507,
+    "name": "Windslayer Wraps",
+    "slot": 9
   },
   {
     "id": 29503,
@@ -695,13 +758,17 @@
     "slot": 9
   },
   {
-    "id": 29506,
-    "name": "Gloves of the Living Touch",
-    "slot": 9
+    "id": 29496,
+    "name": "Enchanted Clefthoof Gloves",
+    "slot": 9,
+    "sockets": 2,
+    "resistances": {
+      "Arcane": 30
+    }
   },
   {
-    "id": 29507,
-    "name": "Windslayer Wraps",
+    "id": 29506,
+    "name": "Gloves of the Living Touch",
     "slot": 9
   },
   {
@@ -730,8 +797,8 @@
     "slot": 9
   },
   {
-    "id": 30223,
-    "name": "Nordrassil Handgrips",
+    "id": 30232,
+    "name": "Nordrassil Gauntlets",
     "slot": 9
   },
   {
@@ -740,8 +807,8 @@
     "slot": 9
   },
   {
-    "id": 30232,
-    "name": "Nordrassil Gauntlets",
+    "id": 30223,
+    "name": "Nordrassil Handgrips",
     "slot": 9
   },
   {
@@ -762,16 +829,19 @@
   {
     "id": 30780,
     "name": "Inferno Hardened Gloves",
+    "slot": 9,
+    "resistances": {
+      "Fire": 40
+    }
+  },
+  {
+    "id": 30943,
+    "name": "Verdant Gloves",
     "slot": 9
   },
   {
     "id": 30937,
     "name": "Earthmender\u0027s Fists of Undoing",
-    "slot": 9
-  },
-  {
-    "id": 30943,
-    "name": "Verdant Gloves",
     "slot": 9
   },
   {
@@ -787,14 +857,14 @@
     "sockets": 1
   },
   {
-    "id": 31035,
-    "name": "Thunderheart Handguards",
+    "id": 31034,
+    "name": "Thunderheart Gauntlets",
     "slot": 9,
     "sockets": 1
   },
   {
-    "id": 31034,
-    "name": "Thunderheart Gauntlets",
+    "id": 31035,
+    "name": "Thunderheart Handguards",
     "slot": 9,
     "sockets": 1
   },
@@ -806,12 +876,14 @@
   {
     "id": 31165,
     "name": "Nethersteel-Reinforced Gloves",
-    "slot": 9
+    "slot": 9,
+    "randomEnchantment": true
   },
   {
     "id": 31179,
     "name": "Rockwurm Hide Gloves",
-    "slot": 9
+    "slot": 9,
+    "randomEnchantment": true
   },
   {
     "id": 31313,
@@ -824,13 +896,13 @@
     "slot": 9
   },
   {
-    "id": 31430,
-    "name": "Miner\u0027s Gloves",
+    "id": 31439,
+    "name": "Precise Gloves of Alacrity",
     "slot": 9
   },
   {
-    "id": 31439,
-    "name": "Precise Gloves of Alacrity",
+    "id": 31430,
+    "name": "Miner\u0027s Gloves",
     "slot": 9
   },
   {
@@ -841,7 +913,8 @@
   {
     "id": 31567,
     "name": "Skystalker\u0027s Gloves",
-    "slot": 9
+    "slot": 9,
+    "randomEnchantment": true
   },
   {
     "id": 31584,
@@ -869,13 +942,13 @@
     "slot": 9
   },
   {
-    "id": 31987,
-    "name": "Merciless Gladiator\u0027s Kodohide Gloves",
+    "id": 31998,
+    "name": "Merciless Gladiator\u0027s Leather Gloves",
     "slot": 9
   },
   {
-    "id": 31998,
-    "name": "Merciless Gladiator\u0027s Leather Gloves",
+    "id": 31987,
+    "name": "Merciless Gladiator\u0027s Kodohide Gloves",
     "slot": 9
   },
   {
@@ -884,15 +957,15 @@
     "slot": 9
   },
   {
+    "id": 32347,
+    "name": "Grips of Damnation",
+    "slot": 9
+  },
+  {
     "id": 32328,
     "name": "Botanist\u0027s Gloves of Growth",
     "slot": 9,
     "sockets": 2
-  },
-  {
-    "id": 32347,
-    "name": "Grips of Damnation",
-    "slot": 9
   },
   {
     "id": 32865,
@@ -943,12 +1016,6 @@
     "sockets": 2
   },
   {
-    "id": 34370,
-    "name": "Gloves of Immortal Dusk",
-    "slot": 9,
-    "sockets": 2
-  },
-  {
     "id": 34372,
     "name": "Leather Gauntlets of the Sun",
     "slot": 9,
@@ -961,10 +1028,22 @@
     "sockets": 2
   },
   {
+    "id": 34370,
+    "name": "Gloves of Immortal Dusk",
+    "slot": 9,
+    "sockets": 2
+  },
+  {
     "id": 34408,
     "name": "Gloves of the Forest Drifter",
     "slot": 9,
     "sockets": 2
+  },
+  {
+    "id": 34911,
+    "name": "Handwraps of the Aggressor",
+    "slot": 9,
+    "sockets": 1
   },
   {
     "id": 34904,
@@ -979,24 +1058,13 @@
     "sockets": 1
   },
   {
-    "id": 34911,
-    "name": "Handwraps of the Aggressor",
-    "slot": 9,
-    "sockets": 1
-  },
-  {
-    "id": 34998,
-    "name": "Brutal Gladiator\u0027s Dragonhide Gloves",
-    "slot": 9
-  },
-  {
     "id": 35022,
     "name": "Brutal Gladiator\u0027s Kodohide Gloves",
     "slot": 9
   },
   {
-    "id": 35032,
-    "name": "Brutal Gladiator\u0027s Leather Gloves",
+    "id": 34998,
+    "name": "Brutal Gladiator\u0027s Dragonhide Gloves",
     "slot": 9
   },
   {
@@ -1005,18 +1073,23 @@
     "slot": 9
   },
   {
+    "id": 35032,
+    "name": "Brutal Gladiator\u0027s Leather Gloves",
+    "slot": 9
+  },
+  {
     "id": 35356,
     "name": "Dragonhide Gloves",
     "slot": 9
   },
   {
-    "id": 35366,
-    "name": "Opportunist\u0027s Leather Gloves",
+    "id": 35361,
+    "name": "Kodohide Gloves",
     "slot": 9
   },
   {
-    "id": 35361,
-    "name": "Kodohide Gloves",
+    "id": 35366,
+    "name": "Opportunist\u0027s Leather Gloves",
     "slot": 9
   },
   {

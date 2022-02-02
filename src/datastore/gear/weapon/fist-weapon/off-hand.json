@@ -40,29 +40,34 @@
     "slot": 16
   },
   {
-    "id": 25185,
-    "name": "Thrasher Blades",
-    "slot": 16
+    "id": 25189,
+    "name": "Ironspine Point",
+    "slot": 16,
+    "randomEnchantment": true
   },
   {
     "id": 25191,
     "name": "Dread Fangs",
-    "slot": 16
+    "slot": 16,
+    "randomEnchantment": true
   },
   {
     "id": 25197,
     "name": "Razor Scythes",
-    "slot": 16
+    "slot": 16,
+    "randomEnchantment": true
+  },
+  {
+    "id": 25185,
+    "name": "Thrasher Blades",
+    "slot": 16,
+    "randomEnchantment": true
   },
   {
     "id": 25187,
     "name": "Shekketh Talons",
-    "slot": 16
-  },
-  {
-    "id": 25189,
-    "name": "Ironspine Point",
-    "slot": 16
+    "slot": 16,
+    "randomEnchantment": true
   },
   {
     "id": 27747,
@@ -137,13 +142,13 @@
     "sockets": 2
   },
   {
-    "id": 34951,
-    "name": "Vanir\u0027s Left Fist of Brutality",
+    "id": 34950,
+    "name": "Vanir\u0027s Left Fist of Savagery",
     "slot": 16
   },
   {
-    "id": 34950,
-    "name": "Vanir\u0027s Left Fist of Savagery",
+    "id": 34951,
+    "name": "Vanir\u0027s Left Fist of Brutality",
     "slot": 16
   },
   {

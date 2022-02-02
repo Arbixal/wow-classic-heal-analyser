@@ -27,7 +27,12 @@
   {
     "id": 8367,
     "name": "Dragonscale Breastplate",
-    "slot": 4
+    "slot": 4,
+    "resistances": {
+      "Fire": 13,
+      "Frost": 13,
+      "Shadow": 12
+    }
   },
   {
     "id": 9650,
@@ -37,37 +42,44 @@
   {
     "id": 10077,
     "name": "Lord\u0027s Breastplate",
-    "slot": 4
+    "slot": 4,
+    "randomEnchantment": true
   },
   {
     "id": 10118,
     "name": "Ornate Breastplate",
-    "slot": 4
+    "slot": 4,
+    "randomEnchantment": true
   },
   {
     "id": 10157,
     "name": "Mercurial Breastplate",
-    "slot": 4
+    "slot": 4,
+    "randomEnchantment": true
   },
   {
     "id": 10193,
     "name": "Crusader\u0027s Armor",
-    "slot": 4
+    "slot": 4,
+    "randomEnchantment": true
   },
   {
     "id": 10230,
     "name": "Engraved Breastplate",
-    "slot": 4
+    "slot": 4,
+    "randomEnchantment": true
   },
   {
     "id": 10266,
     "name": "Masterwork Breastplate",
-    "slot": 4
+    "slot": 4,
+    "randomEnchantment": true
   },
   {
     "id": 10784,
     "name": "Atal\u0027ai Breastplate",
-    "slot": 4
+    "slot": 4,
+    "randomEnchantment": true
   },
   {
     "id": 11194,
@@ -77,7 +89,10 @@
   {
     "id": 11606,
     "name": "Dark Iron Mail",
-    "slot": 4
+    "slot": 4,
+    "resistances": {
+      "Fire": 12
+    }
   },
   {
     "id": 11726,
@@ -107,7 +122,11 @@
   {
     "id": 12415,
     "name": "Radiant Breastplate",
-    "slot": 4
+    "slot": 4,
+    "resistances": {
+      "Frost": 16,
+      "Shadow": 16
+    }
   },
   {
     "id": 12615,
@@ -160,24 +179,36 @@
     "slot": 4
   },
   {
-    "id": 15050,
-    "name": "Black Dragonscale Breastplate",
-    "slot": 4
+    "id": 15047,
+    "name": "Red Dragonscale Breastplate",
+    "slot": 4,
+    "resistances": {
+      "Fire": 12
+    }
   },
   {
     "id": 15045,
     "name": "Green Dragonscale Breastplate",
-    "slot": 4
-  },
-  {
-    "id": 15047,
-    "name": "Red Dragonscale Breastplate",
-    "slot": 4
+    "slot": 4,
+    "resistances": {
+      "Nature": 11
+    }
   },
   {
     "id": 15048,
     "name": "Blue Dragonscale Breastplate",
-    "slot": 4
+    "slot": 4,
+    "resistances": {
+      "Arcane": 8
+    }
+  },
+  {
+    "id": 15050,
+    "name": "Black Dragonscale Breastplate",
+    "slot": 4,
+    "resistances": {
+      "Fire": 12
+    }
   },
   {
     "id": 15076,
@@ -187,37 +218,44 @@
   {
     "id": 15622,
     "name": "Gryphon Mail Breastplate",
-    "slot": 4
-  },
-  {
-    "id": 15650,
-    "name": "Merciless Surcoat",
-    "slot": 4
-  },
-  {
-    "id": 15631,
-    "name": "Formidable Chestpiece",
-    "slot": 4
-  },
-  {
-    "id": 15640,
-    "name": "Ironhide Breastplate",
-    "slot": 4
+    "slot": 4,
+    "randomEnchantment": true
   },
   {
     "id": 15660,
     "name": "Impenetrable Breastplate",
-    "slot": 4
+    "slot": 4,
+    "randomEnchantment": true
   },
   {
     "id": 15669,
     "name": "Magnificent Breastplate",
-    "slot": 4
+    "slot": 4,
+    "randomEnchantment": true
+  },
+  {
+    "id": 15640,
+    "name": "Ironhide Breastplate",
+    "slot": 4,
+    "randomEnchantment": true
   },
   {
     "id": 15680,
     "name": "Triumphant Chestpiece",
-    "slot": 4
+    "slot": 4,
+    "randomEnchantment": true
+  },
+  {
+    "id": 15631,
+    "name": "Formidable Chestpiece",
+    "slot": 4,
+    "randomEnchantment": true
+  },
+  {
+    "id": 15650,
+    "name": "Merciless Surcoat",
+    "slot": 4,
+    "randomEnchantment": true
   },
   {
     "id": 15787,
@@ -230,18 +268,13 @@
     "slot": 4
   },
   {
-    "id": 16425,
-    "name": "Knight-Captain\u0027s Chain Hauberk",
-    "slot": 4
-  },
-  {
     "id": 16466,
     "name": "Field Marshal\u0027s Chain Breastplate",
     "slot": 4
   },
   {
-    "id": 16525,
-    "name": "Legionnaire\u0027s Chain Breastplate",
+    "id": 16425,
+    "name": "Knight-Captain\u0027s Chain Hauberk",
     "slot": 4
   },
   {
@@ -250,13 +283,18 @@
     "slot": 4
   },
   {
-    "id": 16577,
-    "name": "Warlord\u0027s Mail Armor",
+    "id": 16525,
+    "name": "Legionnaire\u0027s Chain Breastplate",
     "slot": 4
   },
   {
     "id": 16565,
     "name": "Warlord\u0027s Chain Chestpiece",
+    "slot": 4
+  },
+  {
+    "id": 16577,
+    "name": "Warlord\u0027s Mail Armor",
     "slot": 4
   },
   {
@@ -272,22 +310,36 @@
   {
     "id": 16845,
     "name": "Giantstalker\u0027s Breastplate",
-    "slot": 4
+    "slot": 4,
+    "resistances": {
+      "Fire": 10
+    }
   },
   {
     "id": 16841,
     "name": "Earthfury Vestments",
-    "slot": 4
-  },
-  {
-    "id": 16950,
-    "name": "Breastplate of Ten Storms",
-    "slot": 4
+    "slot": 4,
+    "resistances": {
+      "Fire": 10
+    }
   },
   {
     "id": 16942,
     "name": "Dragonstalker\u0027s Breastplate",
-    "slot": 4
+    "slot": 4,
+    "resistances": {
+      "Fire": 10,
+      "Nature": 10
+    }
+  },
+  {
+    "id": 16950,
+    "name": "Breastplate of Ten Storms",
+    "slot": 4,
+    "resistances": {
+      "Fire": 10,
+      "Nature": 10
+    }
   },
   {
     "id": 18530,
@@ -312,7 +364,10 @@
   {
     "id": 20380,
     "name": "Dreamscale Breastplate",
-    "slot": 4
+    "slot": 4,
+    "resistances": {
+      "Nature": 30
+    }
   },
   {
     "id": 20479,
@@ -322,17 +377,10 @@
   {
     "id": 20478,
     "name": "Sandstalker Breastplate",
-    "slot": 4
-  },
-  {
-    "id": 20775,
-    "name": "63 green shaman vest",
-    "slot": 4
-  },
-  {
-    "id": 20795,
-    "name": "90 green shaman vest",
-    "slot": 4
+    "slot": 4,
+    "resistances": {
+      "Nature": 25
+    }
   },
   {
     "id": 21320,
@@ -340,13 +388,13 @@
     "slot": 4
   },
   {
-    "id": 21374,
-    "name": "Stormcaller\u0027s Hauberk",
+    "id": 21370,
+    "name": "Striker\u0027s Hauberk",
     "slot": 4
   },
   {
-    "id": 21370,
-    "name": "Striker\u0027s Hauberk",
+    "id": 21374,
+    "name": "Stormcaller\u0027s Hauberk",
     "slot": 4
   },
   {
@@ -377,16 +425,19 @@
   {
     "id": 22664,
     "name": "Icy Scale Breastplate",
+    "slot": 4,
+    "resistances": {
+      "Frost": 40
+    }
+  },
+  {
+    "id": 22876,
+    "name": "Legionnaire\u0027s Mail Hauberk",
     "slot": 4
   },
   {
     "id": 22874,
     "name": "Legionnaire\u0027s Chain Hauberk",
-    "slot": 4
-  },
-  {
-    "id": 22876,
-    "name": "Legionnaire\u0027s Mail Hauberk",
     "slot": 4
   },
   {
@@ -400,20 +451,14 @@
     "slot": 4
   },
   {
-    "id": 23490,
-    "name": "Fel Iron Chain Tunic",
-    "slot": 4
-  },
-  {
     "id": 23527,
     "name": "Earthpeace Breastplate",
     "slot": 4
   },
   {
-    "id": 23564,
-    "name": "Twisting Nether Chain Shirt",
-    "slot": 4,
-    "sockets": 3
+    "id": 23490,
+    "name": "Fel Iron Chain Tunic",
+    "slot": 4
   },
   {
     "id": 23563,
@@ -424,6 +469,12 @@
   {
     "id": 23565,
     "name": "Embrace of the Twisting Nether",
+    "slot": 4,
+    "sockets": 3
+  },
+  {
+    "id": 23564,
+    "name": "Twisting Nether Chain Shirt",
     "slot": 4,
     "sockets": 3
   },
@@ -440,74 +491,88 @@
     "sockets": 3
   },
   {
+    "id": 24824,
+    "name": "Netherstalker Armor",
+    "slot": 4,
+    "randomEnchantment": true
+  },
+  {
     "id": 24808,
     "name": "Unyielding Chain Vest",
-    "slot": 4
+    "slot": 4,
+    "randomEnchantment": true
   },
   {
     "id": 24816,
     "name": "Felstone Chain Vest",
-    "slot": 4
-  },
-  {
-    "id": 24832,
-    "name": "Nexus-Strider Breastplate",
-    "slot": 4
-  },
-  {
-    "id": 24824,
-    "name": "Netherstalker Armor",
-    "slot": 4
+    "slot": 4,
+    "randomEnchantment": true
   },
   {
     "id": 24840,
     "name": "Wrathfin Armor",
-    "slot": 4
+    "slot": 4,
+    "randomEnchantment": true
   },
   {
-    "id": 24856,
-    "name": "Marshcreeper Fen-Vest",
-    "slot": 4
-  },
-  {
-    "id": 24872,
-    "name": "Ironspine Chain Vest",
-    "slot": 4
-  },
-  {
-    "id": 24896,
-    "name": "Sundered Chestpiece",
-    "slot": 4
-  },
-  {
-    "id": 24880,
-    "name": "Der\u0027izu Chestpiece",
-    "slot": 4
-  },
-  {
-    "id": 24888,
-    "name": "Skettis Chestpiece",
-    "slot": 4
+    "id": 24832,
+    "name": "Nexus-Strider Breastplate",
+    "slot": 4,
+    "randomEnchantment": true
   },
   {
     "id": 24864,
     "name": "Blood Knight Breastplate",
-    "slot": 4
+    "slot": 4,
+    "randomEnchantment": true
   },
   {
     "id": 24848,
     "name": "Fenclaw Armor",
-    "slot": 4
+    "slot": 4,
+    "randomEnchantment": true
+  },
+  {
+    "id": 24856,
+    "name": "Marshcreeper Fen-Vest",
+    "slot": 4,
+    "randomEnchantment": true
+  },
+  {
+    "id": 24872,
+    "name": "Ironspine Chain Vest",
+    "slot": 4,
+    "randomEnchantment": true
+  },
+  {
+    "id": 24880,
+    "name": "Der\u0027izu Chestpiece",
+    "slot": 4,
+    "randomEnchantment": true
+  },
+  {
+    "id": 24896,
+    "name": "Sundered Chestpiece",
+    "slot": 4,
+    "randomEnchantment": true
   },
   {
     "id": 24904,
     "name": "Talhide Chestpiece",
-    "slot": 4
+    "slot": 4,
+    "randomEnchantment": true
   },
   {
     "id": 24912,
     "name": "Netherstorm Chestpiece",
-    "slot": 4
+    "slot": 4,
+    "randomEnchantment": true
+  },
+  {
+    "id": 24888,
+    "name": "Skettis Chestpiece",
+    "slot": 4,
+    "randomEnchantment": true
   },
   {
     "id": 25365,
@@ -530,13 +595,13 @@
     "slot": 4
   },
   {
-    "id": 25612,
-    "name": "Daggerfen Mail",
+    "id": 25614,
+    "name": "Feralfen Beastmaster\u0027s Hauberk",
     "slot": 4
   },
   {
-    "id": 25614,
-    "name": "Feralfen Beastmaster\u0027s Hauberk",
+    "id": 25612,
+    "name": "Daggerfen Mail",
     "slot": 4
   },
   {
@@ -594,14 +659,14 @@
     "sockets": 3
   },
   {
-    "id": 28231,
-    "name": "Tidefury Chestpiece",
+    "id": 28228,
+    "name": "Beast Lord Cuirass",
     "slot": 4,
     "sockets": 3
   },
   {
-    "id": 28228,
-    "name": "Beast Lord Cuirass",
+    "id": 28231,
+    "name": "Tidefury Chestpiece",
     "slot": 4,
     "sockets": 3
   },
@@ -669,14 +734,14 @@
     "sockets": 3
   },
   {
-    "id": 29038,
-    "name": "Cyclone Breastplate",
+    "id": 29033,
+    "name": "Cyclone Chestguard",
     "slot": 4,
     "sockets": 3
   },
   {
-    "id": 29033,
-    "name": "Cyclone Chestguard",
+    "id": 29038,
+    "name": "Cyclone Breastplate",
     "slot": 4,
     "sockets": 3
   },
@@ -699,10 +764,9 @@
     "sockets": 3
   },
   {
-    "id": 29515,
-    "name": "Ebon Netherscale Breastplate",
-    "slot": 4,
-    "sockets": 3
+    "id": 29514,
+    "name": "Thick Netherscale Breastplate",
+    "slot": 4
   },
   {
     "id": 29519,
@@ -711,9 +775,10 @@
     "sockets": 3
   },
   {
-    "id": 29514,
-    "name": "Thick Netherscale Breastplate",
-    "slot": 4
+    "id": 29515,
+    "name": "Ebon Netherscale Breastplate",
+    "slot": 4,
+    "sockets": 3
   },
   {
     "id": 29596,
@@ -731,13 +796,13 @@
     "slot": 4
   },
   {
-    "id": 29941,
-    "name": "Scale Brand Breastplate",
+    "id": 29932,
+    "name": "Arcane Ringed Tunic",
     "slot": 4
   },
   {
-    "id": 29932,
-    "name": "Arcane Ringed Tunic",
+    "id": 29941,
+    "name": "Scale Brand Breastplate",
     "slot": 4
   },
   {
@@ -799,7 +864,10 @@
   {
     "id": 30773,
     "name": "Inferno Forged Hauberk",
-    "slot": 4
+    "slot": 4,
+    "resistances": {
+      "Fire": 60
+    }
   },
   {
     "id": 30781,
@@ -812,13 +880,13 @@
     "slot": 4
   },
   {
-    "id": 30887,
-    "name": "Golden Links of Restoration",
+    "id": 30907,
+    "name": "Mail of Fevered Pursuit",
     "slot": 4
   },
   {
-    "id": 30907,
-    "name": "Mail of Fevered Pursuit",
+    "id": 30887,
+    "name": "Golden Links of Restoration",
     "slot": 4
   },
   {
@@ -833,14 +901,14 @@
     "sockets": 3
   },
   {
-    "id": 31018,
-    "name": "Skyshatter Tunic",
+    "id": 31017,
+    "name": "Skyshatter Breastplate",
     "slot": 4,
     "sockets": 3
   },
   {
-    "id": 31017,
-    "name": "Skyshatter Breastplate",
+    "id": 31018,
+    "name": "Skyshatter Tunic",
     "slot": 4,
     "sockets": 3
   },
@@ -858,12 +926,14 @@
   {
     "id": 31156,
     "name": "Drakescale Hauberk",
-    "slot": 4
+    "slot": 4,
+    "randomEnchantment": true
   },
   {
     "id": 31170,
     "name": "Demon-Forged Hauberk",
-    "slot": 4
+    "slot": 4,
+    "randomEnchantment": true
   },
   {
     "id": 31286,
@@ -884,17 +954,18 @@
   {
     "id": 31570,
     "name": "Mistshroud Tunic",
-    "slot": 4
-  },
-  {
-    "id": 31640,
-    "name": "Grand Marshal\u0027s Ringmail Chestguard",
     "slot": 4,
-    "sockets": 3
+    "randomEnchantment": true
   },
   {
     "id": 31646,
     "name": "High Warlord\u0027s Ringmail Chestguard",
+    "slot": 4,
+    "sockets": 3
+  },
+  {
+    "id": 31640,
+    "name": "Grand Marshal\u0027s Ringmail Chestguard",
     "slot": 4,
     "sockets": 3
   },
@@ -943,11 +1014,6 @@
     "slot": 4
   },
   {
-    "id": 33005,
-    "name": "TEST CHEST MAIL HUNTER",
-    "slot": 4
-  },
-  {
     "id": 33328,
     "name": "Arrow-fall Chestguard",
     "slot": 4
@@ -987,14 +1053,14 @@
     "slot": 4
   },
   {
-    "id": 34229,
-    "name": "Garments of Serene Shores",
+    "id": 34228,
+    "name": "Vicious Hawkstrider Hauberk",
     "slot": 4,
     "sockets": 3
   },
   {
-    "id": 34228,
-    "name": "Vicious Hawkstrider Hauberk",
+    "id": 34229,
+    "name": "Garments of Serene Shores",
     "slot": 4,
     "sockets": 3
   },
@@ -1028,12 +1094,6 @@
     "sockets": 3
   },
   {
-    "id": 34912,
-    "name": "Scaled Drakeskin Chestguard",
-    "slot": 4,
-    "sockets": 1
-  },
-  {
     "id": 34930,
     "name": "Wave of Life Chestguard",
     "slot": 4,
@@ -1046,14 +1106,14 @@
     "sockets": 1
   },
   {
-    "id": 34990,
-    "name": "Brutal Gladiator\u0027s Chain Armor",
+    "id": 34912,
+    "name": "Scaled Drakeskin Chestguard",
     "slot": 4,
-    "sockets": 3
+    "sockets": 1
   },
   {
-    "id": 35042,
-    "name": "Brutal Gladiator\u0027s Linked Armor",
+    "id": 34990,
+    "name": "Brutal Gladiator\u0027s Chain Armor",
     "slot": 4,
     "sockets": 3
   },
@@ -1070,14 +1130,20 @@
     "sockets": 3
   },
   {
-    "id": 35376,
-    "name": "Stalker\u0027s Chain Armor",
+    "id": 35042,
+    "name": "Brutal Gladiator\u0027s Linked Armor",
     "slot": 4,
     "sockets": 3
   },
   {
     "id": 35386,
     "name": "Seer\u0027s Mail Armor",
+    "slot": 4,
+    "sockets": 3
+  },
+  {
+    "id": 35376,
+    "name": "Stalker\u0027s Chain Armor",
     "slot": 4,
     "sockets": 3
   },
