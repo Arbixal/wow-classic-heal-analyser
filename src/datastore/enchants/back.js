@@ -1,4 +1,4 @@
-import { SPECS } from "./common";
+import { GROUPS, SPECS } from "./common";
 
 // eslint-disable-next-line import/no-anonymous-default-export
 export default {
@@ -19,6 +19,7 @@ export default {
             [SPECS.Shaman.Enhancement]: 1,
             [SPECS.Warrior.Arms]: 1,
             [SPECS.Warrior.Fury]: 1,
+            [SPECS.Warrior.Gladiator]: 1,
             [SPECS.Warrior.Protection]: 1,
         }
     },
@@ -32,38 +33,27 @@ export default {
     1441: {
         name: "Enchant Cloak - Greater Shadow Resistance",
         spellId: 34006,
+        score: {...GROUPS.All.BIS}
+    },
+    804: {
+        name: "Enchant Cloak - Lesser Shadow Resistance",
+        spellId: 13522,
+        score: {...GROUPS.All.OK}
+    },
+    2619: {
+        name: "Enchant Cloak - Greater Fire Resistance",
+        spellId: 25081,
         score: {
-            [SPECS.Druid.Balance]: 0.5,
-            [SPECS.Druid.Dreamstate]: 0.5,
-            [SPECS.Druid.Feral]: 0.5,
-            [SPECS.Druid.Guardian]: 0.5,
-            [SPECS.Druid.Restoration]: 0.5,
-            [SPECS.Druid.Warden]: 0.5,
-            [SPECS.Hunter.BeastMastery]: 0.5,
-            [SPECS.Hunter.Marksmanship]: 0.5,
-            [SPECS.Hunter.Survival]: 0.5,
-            [SPECS.Mage.Arcane]: 0.5,
-            [SPECS.Mage.Fire]: 0.5,
-            [SPECS.Mage.Frost]: 0.5,
-            [SPECS.Rogue.Assassination]: 0.5,
-            [SPECS.Rogue.Combat]: 0.5,
-            [SPECS.Rogue.Subtlety]: 0.5,
-            [SPECS.Shaman.Elemental]: 0.5,
-            [SPECS.Shaman.Enhancement]: 0.5,
-            [SPECS.Shaman.Restoration]: 1,
-            [SPECS.Paladin.Holy]: 0.5,
-            [SPECS.Paladin.Protection]: 0.5,
-            [SPECS.Paladin.Retribution]: 0.5,
-            [SPECS.Priest.Discipline]: 0.5,
-            [SPECS.Priest.Holy]: 0.5,
-            [SPECS.Priest.Shadow]: 0.5,
-            [SPECS.Warlock.Affliction]: 0.5,
-            [SPECS.Warlock.Demonology]: 0.5,
-            [SPECS.Warlock.Destruction]: 0.5,
-            [SPECS.Warrior.Arms]: 0.5,
-            [SPECS.Warrior.Fury]: 0.5,
-            [SPECS.Warrior.Protection]: 0.5,
+            ...GROUPS.Tanks.BIS,
+            [SPECS.Warlock.Affliction]: 1,
+            [SPECS.Warlock.Demonology]: 1,
+            [SPECS.Warlock.Destruction]: 1,
         }
+    },
+    2620: {
+        name: "Enchant Cloak - Greater Nature Resistance",
+        spellId: 25082,
+        score: {...GROUPS.Tanks.OK}
     },
     2621: {
         name: "Enchant Cloak - Subtlety",

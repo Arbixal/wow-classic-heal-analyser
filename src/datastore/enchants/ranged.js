@@ -22,5 +22,54 @@ export default {
             [SPECS.Warrior.Arms]: 1,
             [SPECS.Warrior.Fury]: 1,
         }
+    },
+    2722: {
+        name: "Adamantite Scope",
+        itemId: 23764,
+        score: {
+
+        }
+    },
+    2523: {
+        name: "Biznicks 247x128 Accurascope",
+        itemId: 18283,
+        score: {
+
+        }
+    },
+    664: {
+        name: "Sniper Scope",
+        itemId: 10548,
+        score: {
+
+        }
+    },
+    663: {
+        name: "Deadly Scope",
+        itemId: 10546,
+        score: {
+
+        }
+    },
+    33: {
+        name: "Accurate Scope",
+        itemId: 4407,
+        score: {
+
+        }
+    },
+    32: {
+        name: "Standard Scope",
+        itemId: 4406,
+        score: {
+
+        }
+    },
+    30: {
+        name: "Crude Scope",
+        itemId: 4405,
+        score: {
+            
+        }
     }
 }

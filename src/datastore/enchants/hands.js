@@ -5,12 +5,7 @@ export default {
     2613: {
         name: "Enchant Gloves - Threat",
         spellId: 25072,
-        score: {
-            [SPECS.Druid.Guardian]: 1,
-            [SPECS.Druid.Warden]: 1,
-            [SPECS.Paladin.Protection]: 1,
-            [SPECS.Warrior.Protection]: 1,
-        }
+        score: {...GROUPS.Tanks.BIS}
     },
     2937: {
         name: "Enchant Gloves - Major Spellpower",

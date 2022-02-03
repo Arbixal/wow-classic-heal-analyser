@@ -1,4 +1,4 @@
-import { SPECS } from "./common";
+import { GROUPS, SPECS } from "./common";
 
 // eslint-disable-next-line import/no-anonymous-default-export
 export default {
@@ -48,6 +48,7 @@ export default {
 
             [SPECS.Warrior.Arms]: 1,
             [SPECS.Warrior.Fury]: 1,
+            [SPECS.Warrior.Gladiator]: 1,
             [SPECS.Warrior.Protection]: 1,
         }
     },
@@ -65,12 +66,7 @@ export default {
     2933: {
         name: "Enchant Chest - Resilience Rating",
         spellId: 33992,
-        score: {
-            [SPECS.Druid.Guardian]: 1,
-            [SPECS.Druid.Warden]: 1,
-            [SPECS.Paladin.Protection]: 1,
-            [SPECS.Warrior.Protection]: 1,
-        }
+        score: {...GROUPS.Tanks.BIS}
     },
     2659: {
         name: "Enchant Chest - Exceptional Health",

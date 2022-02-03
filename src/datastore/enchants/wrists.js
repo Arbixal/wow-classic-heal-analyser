@@ -22,6 +22,7 @@ export default {
                     [SPECS.Druid.Guardian]: 1,
                     [SPECS.Druid.Warden]: 1,
                     [SPECS.Paladin.Protection]: 1,
+                    [SPECS.Warrior.Gladiator]: 1,
                     [SPECS.Warrior.Protection]: 1,
                     [SPECS.Priest.Shadow]: 1,
                 }
@@ -41,12 +42,7 @@ export default {
     2648: {
         name: "Enchant Bracer - Major Defense",
         spellId: 27906,
-        score: {
-            [SPECS.Druid.Guardian]: 1,
-            [SPECS.Druid.Warden]: 1,
-            [SPECS.Paladin.Protection]: 1,
-            [SPECS.Warrior.Protection]: 1,
-        }
+        score: {...GROUPS.Tanks.BIS}
     },
     2650: {
         name: "Enchant Bracer - Spellpower",
@@ -88,4 +84,18 @@ export default {
             [SPECS.Hunter.Marksmanship]: 1,
         }
     },
+    1891: {
+        name: "Enchant Bracer - Stats",
+        spellId: 27905,
+        score: {
+
+        }
+    },
+    369: {
+        name: "Enchant Bracer - Major Intellect",
+        spellId: 34001,
+        score: {
+            
+        }
+    }
 }

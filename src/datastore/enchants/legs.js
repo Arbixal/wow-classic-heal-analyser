@@ -47,22 +47,12 @@ export default {
     3011: {
         name: "Clefthide Leg Armor",
         itemId: 29534,
-        score: {
-            [SPECS.Druid.Guardian]: 0.5,
-            [SPECS.Druid.Warden]: 0.5,
-            [SPECS.Paladin.Protection]: 0.5,
-            [SPECS.Warrior.Protection]: 0.5,
-        }
+        score: {...GROUPS.Tanks.OK}
     },
     3013: {
         name: "Nethercleft Leg Armor",
         itemId: 29536,
-        score: {
-            [SPECS.Druid.Guardian]: 1,
-            [SPECS.Druid.Warden]: 1,
-            [SPECS.Paladin.Protection]: 1,
-            [SPECS.Warrior.Protection]: 1,
-        }
+        score: {...GROUPS.Tanks.BIS}
     },
     3010: {
         name: "Cobrahide Leg Armor",

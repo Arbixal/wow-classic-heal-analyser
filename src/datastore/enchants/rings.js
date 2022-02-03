@@ -19,6 +19,7 @@ export default {
             [SPECS.Rogue.Subtlety]: 1,
             [SPECS.Warrior.Arms]: 1,
             [SPECS.Warrior.Fury]: 1,
+            [SPECS.Warrior.Gladiator]: 1,
             [SPECS.Warrior.Protection]: 1,
         }
     },
@@ -54,6 +55,7 @@ export default {
             [SPECS.Rogue.Subtlety]: 0.5,
             [SPECS.Warrior.Arms]: 0.5,
             [SPECS.Warrior.Fury]: 0.5,
+            [SPECS.Warrior.Gladiator]: 0.5,
             [SPECS.Warrior.Protection]: 0.5,
         }
     },

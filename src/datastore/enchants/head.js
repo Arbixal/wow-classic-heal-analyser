@@ -22,6 +22,7 @@ export default {
             [SPECS.Paladin.Retribution]: 1,
             [SPECS.Warrior.Arms]: 1,
             [SPECS.Warrior.Fury]: 1,
+            [SPECS.Warrior.Gladiator]: 1,
             [SPECS.Hunter.BeastMastery]: 1,
             [SPECS.Hunter.Survival]: 1,
             [SPECS.Hunter.Marksmanship]: 1,
@@ -54,5 +55,26 @@ export default {
         name: "Glyph of the Defender",
         itemId: 29186,
         score: {...GROUPS.Tanks.BIS}
+    },
+
+    3007: {
+        name: "Glyph of Fire Warding",
+        itemId: 29197,
+        score: {...GROUPS.Tanks.BIS}
+    },
+    3008: {
+        name: "Glyph of Frost Warding",
+        itemId: 29198,
+        score: {...GROUPS.Tanks.BIS}
+    },
+    3005: {
+        name: "Glyph of Nature Warding",
+        itemId: 29194,
+        score: {...GROUPS.Tanks.BIS}
+    },
+    3009: {
+        name: "Glyph of Shadow Warding",
+        itemId: 29199,
+        score: {...GROUPS.All.BIS}
     },
 }

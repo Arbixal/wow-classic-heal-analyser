@@ -6,6 +6,7 @@ export default {
         name: "Presence of Might",
         itemId: 19782,
         score: {
+            [SPECS.Warrior.Gladiator]: 1,
             [SPECS.Warrior.Protection]: 1,
         }
     },
@@ -263,5 +264,10 @@ export default {
         score: {
             [SPECS.Priest.Shadow]: 1,
         }
+    },
+    2998: {
+        name: "Inscription of Endurance",
+        itemId: 29187,
+        score: {...GROUPS.All.BIS}
     },
 }

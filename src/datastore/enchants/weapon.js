@@ -48,6 +48,7 @@ export default {
         name: "Enchant Weapon - Mongoose",
         spellId: 27984,
         score: {
+            [SPECS.Warrior.Gladiator]: 1,
             [SPECS.Warrior.Protection]: 1,
             [SPECS.Rogue.Combat]: 1,
             [SPECS.Rogue.Subtlety]: 1,

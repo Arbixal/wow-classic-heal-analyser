@@ -30,6 +30,7 @@ export default {
             [SPECS.Warlock.Demonology]: 1,
             [SPECS.Warlock.Destruction]: 1,
             
+            [SPECS.Warrior.Gladiator]: 1,
             [SPECS.Warrior.Protection]: 1,
         }
     },
