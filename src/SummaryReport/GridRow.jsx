@@ -1,6 +1,6 @@
 import {Component, Children, isValidElement, cloneElement} from "react";
-import {protectionPotionEnum, rarity, enchants} from "../data";
-import {battleElixirBuffs, cooldownList, flaskBuffs, foodBuffs, guardianElixirBuffs, scrollBuffs, seasonBuffs, tempWeaponEnchants} from "../datastore";
+import {itemSlots, protectionPotionEnum, rarity} from "../data";
+import {battleElixirBuffs, cooldownList, flaskBuffs, foodBuffs, guardianElixirBuffs, scrollBuffs, seasonBuffs, tempWeaponEnchants, enchants} from "../datastore";
 import {DataPoints, emptyData} from "./GridContexts";
 import {sumNonNull} from "../utils";
 
@@ -659,8 +659,12 @@ export class GridRow extends Component {
                 let enchantInfo = enchants[enchant.id];
                 let score = 0;
                 if (enchantInfo) {
+                    if (enchantInfo.bySlot && enchantInfo.bySlot[enchant.slot]) {
+                        enchantInfo = enchantInfo.bySlot[enchant.slot];
+                    }
                     character.summary.specs.forEach(spec => {
-                        let specScore = enchantInfo.score[character.type + "-" + spec] ?? 0;
+                        let specDescription = character.type + "-" + spec;
+                        let specScore = enchantInfo.score[specDescription] ?? 0;
                         if (specScore > score) {
                             score = specScore;
                         }
@@ -689,9 +693,12 @@ export class GridRow extends Component {
                     enchantIcon.highlight = "bad";
                 }
             } else {
-                accum.missing += 1;
-                enchantIcon.itemId = enchant.gearId;
-                enchantIcon.highlight = "missing";
+                if (enchant.slot !== itemSlots.Ranged && enchant.slot !== itemSlots.Finger1 && enchant.slot !== itemSlots.Finger2)
+                {
+                    accum.missing += 1;
+                    enchantIcon.itemId = enchant.gearId;
+                    enchantIcon.highlight = "missing";
+                }
             }
 
             enchantList.push(enchantIcon);

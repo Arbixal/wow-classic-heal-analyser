@@ -11,6 +11,7 @@ export {default as battleElixirBuffs} from './buffs/elixir-battle.json';
 export {default as guardianElixirBuffs} from './buffs/elixir-guardian.json';
 export {default as scrollBuffs} from './buffs/scroll.json';
 export {default as foodBuffs} from './buffs/food.json';
+export {default as enchants} from './enchants';
 
 export const bosses = arrayToDictionary(bosses_raw, "id");
 export const gemList = arrayToDictionary(gems_raw, "id");

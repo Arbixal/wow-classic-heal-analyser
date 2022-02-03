@@ -1,4 +1,4 @@
-import { resistanceEnchants, resistanceGems, resistRandomEnchantBySlot } from "./data";
+import { itemSlots, resistanceEnchants, resistanceGems, resistRandomEnchantBySlot } from "./data";
 import {itemList, gemList} from "./datastore";
 import {removeDuplicates} from "./utils";
 
@@ -580,8 +580,8 @@ export class WarcraftLogLoader {
                     7: { enchantable: true, name: "Feet" },
                     8: { enchantable: true, name: "Arms" },
                     9: { enchantable: true, name: "Hands" },
-                    10: { enchantable: false, name: "Ring 1" },
-                    11: { enchantable: false, name: "Ring 2" },
+                    10: { enchantable: true, name: "Ring 1" },
+                    11: { enchantable: true, name: "Ring 2" },
                     12: { enchantable: false, name: "Trinket 1" },
                     13: { enchantable: false, name: "Trinket 2" },
                     14: { enchantable: true, name: "Back" },
@@ -594,7 +594,7 @@ export class WarcraftLogLoader {
                 let gearInfo = obj.combatantInfo?.gear?.reduce((accum, gear) => {
                     let gearItem = itemList[gear.id];
 
-                    if (!gearItem && gear.id > 0 && gear.slot !== 3 && gear.slot !== 18) {
+                    if (!gearItem && gear.id > 0 && gear.slot !== itemSlots.Shirt && gear.slot !== itemSlots.Tabard) {
                         console.log("Couldn't find item '" + gear.name + "' (" + gear.id + ")");
                     }
 
@@ -614,7 +614,11 @@ export class WarcraftLogLoader {
                         accum.resistances.includesGreens = true;
                     }
 
-                    if (slots[gear.slot].enchantable && gear.id !== 0 && (!gearItem || !gearItem.notEnchantable))
+                    if (slots[gear.slot].enchantable 
+                        && gear.id !== 0 
+                        && (!gearItem || !gearItem.notEnchantable) 
+                        && ((gear.slot !== itemSlots.Finger1 && gear.slot !== itemSlots.Finger2 && gear.slot !== itemSlots.Ranged) || gear.permanentEnchant)
+                    )
                     {
                         accum.permanentEnchants.push({
                             slot: gear.slot, 
@@ -635,12 +639,12 @@ export class WarcraftLogLoader {
                         }
                     }
 
-                    if (gear.slot === 15) {
+                    if (gear.slot === itemSlots.MainHand) {
                         accum.weaponEnchant.id = gear.temporaryEnchant;
                         accum.weaponEnchant.name = gear.temporaryEnchantName;
                     }
 
-                    if (gear.slot === 16) {
+                    if (gear.slot === itemSlots.Offhand) {
                         accum.offhandEnchant.id = gear.temporaryEnchant;
                         accum.offhandEnchant.name = gear.temporaryEnchantName;
                     }
