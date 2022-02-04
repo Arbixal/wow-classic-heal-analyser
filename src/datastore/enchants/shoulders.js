@@ -2,14 +2,6 @@ import { SPECS, GROUPS } from "./common";
 
 // eslint-disable-next-line import/no-anonymous-default-export
 export default {
-    2583: {
-        name: "Presence of Might",
-        itemId: 19782,
-        score: {
-            [SPECS.Warrior.Gladiator]: 1,
-            [SPECS.Warrior.Protection]: 1,
-        }
-    },
     2979: {
         name: "Inscription of Faith",
         itemId: 28878,
@@ -25,11 +17,7 @@ export default {
         itemId: 23547,
         score: {...GROUPS.Healers.BIS}
     },
-    2604: {
-        name: "Zandalar Signet of Serenity",
-        itemId: 20078,
-        score: {...GROUPS.Healers.OK}
-    },
+
     2992: {
         name: "Inscription of the Oracle",
         itemId: 28904,
@@ -40,27 +28,7 @@ export default {
         itemId: 28912,
         score: {...GROUPS.Healers.BIS}
     },
-    2717: {
-        name: "Might of the Scourge",
-        itemId: 23548,
-        score: {
-            [SPECS.Druid.Feral]: 1,
-            [SPECS.Druid.Guardian]: 1,
-            [SPECS.Druid.Warden]: 1,
-            
-            [SPECS.Hunter.BeastMastery]: 1,
-            [SPECS.Hunter.Marksmanship]: 1,
-            [SPECS.Hunter.Survival]: 1,
 
-            [SPECS.Rogue.Assassination]: 1,
-            [SPECS.Rogue.Combat]: 1,
-            [SPECS.Rogue.Subtlety]: 1,
-            
-            [SPECS.Paladin.Retribution]: 1,
-
-            [SPECS.Shaman.Enhancement]: 1,
-        }
-    },
     2996: {
         name: "Inscription of the Blade",
         itemId: 28907,
@@ -158,11 +126,6 @@ export default {
         }
     },
 
-    2716: {
-        name: "Fortitude of the Scourge",
-        itemId: 23549,
-        score: {...GROUPS.Tanks.BIS}
-    },
     2977: {
         name: "Inscription of Warding",
         itemId: 28882,
@@ -248,6 +211,27 @@ export default {
             [SPECS.Warlock.Demonology]: 1,
         }
     },
+
+    // ZG
+    2605: {
+        name: "Zandalar Signet of Mojo",
+        itemId: 20076,
+        score: {
+            [SPECS.Priest.Shadow]: 1,
+        }
+    },
+    2604: {
+        name: "Zandalar Signet of Serenity",
+        itemId: 20078,
+        score: {...GROUPS.Healers.OK}
+    },
+
+    // Naxx
+    2716: {
+        name: "Fortitude of the Scourge",
+        itemId: 23549,
+        score: {...GROUPS.Tanks.BIS}
+    },
     2721: {
         name: "Power of the Scourge",
         itemId: 23545,
@@ -256,15 +240,34 @@ export default {
             [SPECS.Warlock.Destruction]: 1,
             [SPECS.Warlock.Affliction]: 1,
             [SPECS.Warlock.Demonology]: 1,
+            [SPECS.Mage.Arcane]: 1,
+            [SPECS.Mage.Fire]: 1,
+            [SPECS.Mage.Frost]: 1,
         }
     },
-    2605: {
-        name: "Zandalar Signet of Mojo",
-        itemId: 20076,
+    2717: {
+        name: "Might of the Scourge",
+        itemId: 23548,
         score: {
-            [SPECS.Priest.Shadow]: 1,
+            [SPECS.Druid.Feral]: 1,
+            [SPECS.Druid.Guardian]: 1,
+            [SPECS.Druid.Warden]: 1,
+            
+            [SPECS.Hunter.BeastMastery]: 1,
+            [SPECS.Hunter.Marksmanship]: 1,
+            [SPECS.Hunter.Survival]: 1,
+
+            [SPECS.Rogue.Assassination]: 1,
+            [SPECS.Rogue.Combat]: 1,
+            [SPECS.Rogue.Subtlety]: 1,
+            
+            [SPECS.Paladin.Retribution]: 1,
+
+            [SPECS.Shaman.Enhancement]: 1,
         }
     },
+
+    // Resistance
     2998: {
         name: "Inscription of Endurance",
         itemId: 29187,

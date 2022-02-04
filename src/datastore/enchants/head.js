@@ -57,6 +57,16 @@ export default {
         score: {...GROUPS.Tanks.BIS}
     },
 
+    2583: {
+        name: "Presence of Might",
+        itemId: 19782,
+        score: {
+            [SPECS.Warrior.Gladiator]: 1,
+            [SPECS.Warrior.Protection]: 1,
+        }
+    },
+
+    // Resistance
     3007: {
         name: "Glyph of Fire Warding",
         itemId: 29197,
