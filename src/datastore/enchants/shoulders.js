@@ -273,4 +273,39 @@ export default {
         itemId: 29187,
         score: {...GROUPS.All.BIS}
     },
+    2487: {
+        name: "Shadow Mantle of the Dawn",
+        itemId: 18173,
+        score: {...GROUPS.All.OK}
+    },
+    2488: {
+        name: "Chromatic Mantle of the Dawn",
+        itemId: 18182,
+        score: {...GROUPS.All.OK}
+    },
+    2486: {
+        name: "Nature Mantle of the Dawn",
+        itemId: 18172,
+        score: {...GROUPS.Tanks.OK}
+    },
+    2484: {
+        name: "Frost Mantle of the Dawn",
+        itemId: 18170,
+        score: {...GROUPS.Tanks.OK}
+    },
+    2483: {
+        name: "Flame Mantle of the Dawn",
+        itemId: 18169,
+        score: {
+            ...GROUPS.Tanks.OK,
+            [SPECS.Warlock.Affliction]: 1,
+            [SPECS.Warlock.Demonology]: 1,
+            [SPECS.Warlock.Destruction]: 1,
+        }
+    },
+    2485: {
+        name: "Arcane Mantle of the Dawn",
+        itemId: 18171,
+        score: {}
+    },
 }

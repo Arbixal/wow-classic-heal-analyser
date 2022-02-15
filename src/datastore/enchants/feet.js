@@ -1,4 +1,4 @@
-import { SPECS } from "./common";
+import { SPECS, GROUPS } from "./common";
 
 // eslint-disable-next-line import/no-anonymous-default-export
 export default {
@@ -112,7 +112,9 @@ export default {
         name: "Enchant Boots - Vitality",
         spellId: 27948,
         score: {
+            ...GROUPS.Healers.BIS,
             [SPECS.Priest.Shadow]: 1,
+            [SPECS.Mage.Arcane]: 1,
         }
     },
 }

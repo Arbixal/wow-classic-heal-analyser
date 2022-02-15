@@ -79,4 +79,10 @@ export default {
             [SPECS.Warlock.Demonology]: 1,
         }
     },
+    2666: {
+        name: "Enchant Weapon - Major Intellect",
+        spellId: 27968,
+        score: {
+        }
+    },
 }
