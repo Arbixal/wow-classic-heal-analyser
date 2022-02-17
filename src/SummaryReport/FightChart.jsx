@@ -1,5 +1,5 @@
 import "./FightChart.scss";
-import { createRef } from 'react';
+import React, { createRef } from 'react';
 import { Tooltip } from 'react-svg-tooltip';
 import { asPercentage, msToTime } from "../utils";
 
@@ -102,13 +102,13 @@ export function FightChart(props) {
                 <g>
                     {fightBands.map(band => {
                         const bandRef = createRef();
-                        return (<>
-                                <rect key={band.id} ref={bandRef} x={band.start} y={fightIds.includes(band.id) ? "0" : "10"} height="65" width={band.end - band.start} className={band.cssClass} />
+                        return (<React.Fragment key={band.id}>
+                                <rect ref={bandRef} x={band.start} y={fightIds.includes(band.id) ? "0" : "10"} height="65" width={band.end - band.start} className={band.cssClass} />
                                 <Tooltip triggerRef={bandRef}>
-                                    <rect x={5} y={15} width={50} height={25} rx={5} ry={5} fill={'black'} fill-opacity={0.7} />
-                                    <text x={45} y={32} fontSize={14} text-anchor="end" className={band.cssClass}>{band.duration}</text>
+                                    <rect x={5} y={15} width={50} height={25} rx={5} ry={5} fill={'black'} fillOpacity={0.7} />
+                                    <text x={45} y={32} fontSize={14} textAnchor="end" className={band.cssClass}>{band.duration}</text>
                                 </Tooltip>
-                            </>)
+                            </React.Fragment>)
                     })}
                 </g>
                 <g>

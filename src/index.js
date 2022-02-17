@@ -3,6 +3,9 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import ReactGA from 'react-ga4';
+
+ReactGA.initialize('G-VQ66W8VBLM', { gtagOptions: { 'debug_mode':true } });
 
 ReactDOM.render(
   <React.StrictMode>

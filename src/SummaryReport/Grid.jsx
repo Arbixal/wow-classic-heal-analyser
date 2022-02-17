@@ -1,6 +1,7 @@
 import {Component, Children, isValidElement, cloneElement} from "react";
 import {DataPoints, emptyData, GroupKeys} from "./GridContexts";
 import {GridRow} from "./GridRow";
+import ReactGA from 'react-ga4';
 
 export class Grid extends Component {
     constructor(props) {
@@ -51,6 +52,7 @@ export class Grid extends Component {
     }
 
     handleColGroupToggle(colGroup) {
+        ReactGA.event("select_content", { content_type: "column_group", item_id: colGroup});
         this.setState((state) => ({
             collapsed: {...state.collapsed, [colGroup]: (state.collapsed[colGroup] ? !state.collapsed[colGroup] : true)}
         }));

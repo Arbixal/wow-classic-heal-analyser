@@ -651,7 +651,7 @@ export class GridRow extends Component {
         let enchantScore = character.summary.enchants.reduce((accum, enchant) => {
             let enchantIcon = {
                 id: enchant.gearId,
-                name: enchant.name,
+                name: enchant.gearId + "_" + enchant.name,
                 icon_url: slotToIconMapping[enchant.slot],
             }
 

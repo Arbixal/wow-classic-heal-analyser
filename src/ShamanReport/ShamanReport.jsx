@@ -5,6 +5,7 @@ import {LogLoader} from "../warcraftLogLoader";
 import { AncestralFortitudeReport } from "./AncestralFortitudeReport";
 import { CooldownReport } from "./CooldownReport";
 import { TotemReport } from "./TotemReport";
+import ReactGA from 'react-ga4';
 
 class ShamanReport extends Component {
     constructor(props) {
@@ -26,6 +27,8 @@ class ShamanReport extends Component {
         //const { reportId } = this.state;
         if (!id)
             return;
+
+        ReactGA.send({ hitType: "pageview", page: this.props.match.path, reportId: id });
 
         this.setState({reportId: id});
 
@@ -59,6 +62,8 @@ class ShamanReport extends Component {
 
     render() {
         const { error, isLoaded, reportId, startTime, endTime, shamans} = this.state;
+
+        ReactGA.send({ hitType: "pageview", page: this.props.match.path });
 
         if (error) {
             return <div>Error: {error.message}</div>;

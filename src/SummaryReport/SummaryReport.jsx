@@ -17,6 +17,7 @@ import { FightChart } from "./FightChart";
 import { WoWAnalyzerLink } from "./WoWAnalyzerLink";
 import { ThreatReportLink } from "./ThreatReportLink";
 import { WarcraftLogsLink } from "./WarcraftLogsLink";
+import ReactGA from 'react-ga4';
 
 const roles = {
     'tank': {
@@ -124,11 +125,13 @@ class SummaryReport extends Component {
     }
 
     componentDidMount() {
-        const { id, fightId } = this.props.match.params;
+        const { id, fightId, filter } = this.props.match.params;
         if (!id)
             return;
 
         let selectedFight = fightId == null || isNaN(parseInt(fightId)) ? -1 : parseInt(fightId);
+
+        ReactGA.send({ hitType: "pageview", page: this.props.match.path, reportId: id, fightId: fightId, filter: filter });
 
         this.setState({reportId: id, selectedFight: selectedFight});
 
@@ -151,8 +154,10 @@ class SummaryReport extends Component {
 
     componentDidUpdate(prevProps) {
         if (this.props.match !== prevProps.match) {
-            const { fightId } = this.props.match.params;
+            const { id, fightId, filter } = this.props.match.params;
             let selectedFight = fightId == null || isNaN(parseInt(fightId)) ? -1 : parseInt(fightId);
+
+            ReactGA.send({ hitType: "pageview", page: this.props.match.path, reportId: id, fightId: fightId, filter: filter });
 
             let report = this._getResults(selectedFight);
             this._generateFilteredData(report.Characters);

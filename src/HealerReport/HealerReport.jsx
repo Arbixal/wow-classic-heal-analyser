@@ -2,6 +2,7 @@ import {Component} from "react";
 import {FightReport} from "./FightReport";
 import {LogLoader} from "../warcraftLogLoader";
 import { withRouter } from "react-router-dom";
+import ReactGA from 'react-ga4';
 
 class HealerReport extends Component {
     constructor(props) {
@@ -21,6 +22,8 @@ class HealerReport extends Component {
         //const { reportId } = this.state;
         if (!id)
             return;
+
+        ReactGA.send({ hitType: "pageview", page: this.props.match.path, reportId: id });
 
         this.setState({reportId: id});
 
@@ -62,6 +65,7 @@ class HealerReport extends Component {
     render() {
         const { error, isLoaded, fights, reportId, characters, pets} = this.state;
         const {showTrash} = this.props;
+
         if (error) {
             return <div>Error: {error.message}</div>;
         } else if (!isLoaded) {
