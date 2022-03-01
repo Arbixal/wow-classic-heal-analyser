@@ -1,6 +1,6 @@
 import {Component, Children, isValidElement, cloneElement} from "react";
 import {itemSlots, protectionPotionEnum, rarity} from "../data";
-import {battleElixirBuffs, cooldownList, flaskBuffs, foodBuffs, guardianElixirBuffs, scrollBuffs, seasonBuffs, tempWeaponEnchants, enchants} from "../datastore";
+import {battleElixirBuffs, cooldownList, flaskBuffs, foodBuffs, guardianElixirBuffs, scrollBuffs, seasonBuffs, tempWeaponEnchants, enchants, gemList} from "../datastore";
 import {DataPoints, emptyData} from "./GridContexts";
 import {sumNonNull} from "../utils";
 
@@ -8,46 +8,11 @@ export class GridRow extends Component {
     constructor(props) {
         super(props);
 
-        this._logLoader = props.logLoader;
-        let report = this._logLoader.getResults();
-
         this.state = {
             id: props.character.id,
             classType: props.character.type,
-            raidTime: report.endTime - report.startTime,
-            isLoaded: false,
+            isLoaded: true,
             error: null,
-            Data: this._flattenCharacterData(null),
-        }
-    }
-
-    componentDidMount() {
-        
-        this._logLoader.loadCharacterDetails(this.state.id)
-        .then((data) => {
-            let character = data.getCharacter(this.state.id, this.props.fightId);
-
-            this.setState({
-                isLoaded: true,
-                Data: this._flattenCharacterData(character),
-            });
-        })
-        .catch((error) => {
-            this.setState({
-                isLoaded: true,
-                error: error
-            })
-        });
-    }
-
-    componentDidUpdate(prevProps) {
-        if (this.props.fightId !== prevProps.fightId) {
-            let character = this._logLoader.getCharacter(this.state.id, this.props.fightId);
-
-            this.setState({
-                isLoaded: true,
-                Data: this._flattenCharacterData(character),
-            });
         }
     }
 
@@ -59,7 +24,7 @@ export class GridRow extends Component {
         }
 
         characterData[DataPoints.Name] = character.name;
-        characterData[DataPoints.Deaths] = this._getDeathCount(character);
+        characterData[DataPoints.Deaths] = this._getDeathCount(character.data);
 
         this._getEnchantInfo(character, characterData);
 
@@ -78,25 +43,25 @@ export class GridRow extends Component {
         characterData[DataPoints.ElixirsScrolls] = this._getBuffs(character, scrollBuffs);
         characterData[DataPoints.ElixirsWeaponEnchants] = this._getWeaponImbue(character, tempWeaponEnchants);
 
-        characterData[DataPoints.ProtectionPotionsGreaterArcane] = this._getProtectionPotionCount(character, protectionPotionEnum.GAPP);
-        characterData[DataPoints.ProtectionPotionsMajorArcane] = this._getProtectionPotionCount(character, protectionPotionEnum.MAPP);
-        characterData[DataPoints.ProtectionPotionsArcaneAbsorbed] = this._getProtectionPotionAbsorb(character, protectionPotionEnum.GAPP, protectionPotionEnum.MAPP);
-        characterData[DataPoints.ProtectionPotionsFire] = this._getProtectionPotionCount(character, protectionPotionEnum.FPP);
-        characterData[DataPoints.ProtectionPotionsGreaterFire] = this._getProtectionPotionCount(character, protectionPotionEnum.GFPP);
-        characterData[DataPoints.ProtectionPotionsMajorFire] = this._getProtectionPotionCount(character, protectionPotionEnum.MFPP);
-        characterData[DataPoints.ProtectionPotionsFireAbsorbed] = this._getProtectionPotionAbsorb(character, protectionPotionEnum.GFPP, protectionPotionEnum.FPP, protectionPotionEnum.MFPP);
-        characterData[DataPoints.ProtectionPotionsFrost] = this._getProtectionPotionCount(character, protectionPotionEnum.FrPP);
-        characterData[DataPoints.ProtectionPotionsGreaterFrost] = this._getProtectionPotionCount(character, protectionPotionEnum.GFrPP);
-        characterData[DataPoints.ProtectionPotionsMajorFrost] = this._getProtectionPotionCount(character, protectionPotionEnum.MFrPP);
-        characterData[DataPoints.ProtectionPotionsFrostAbsorbed] = this._getProtectionPotionAbsorb(character, protectionPotionEnum.GFrPP, protectionPotionEnum.FrPP, protectionPotionEnum.MFrPP);
-        characterData[DataPoints.ProtectionPotionsNature] = this._getProtectionPotionCount(character, protectionPotionEnum.NPP);
-        characterData[DataPoints.ProtectionPotionsGreaterNature] = this._getProtectionPotionCount(character, protectionPotionEnum.GNPP);
-        characterData[DataPoints.ProtectionPotionsMajorNature] = this._getProtectionPotionCount(character, protectionPotionEnum.MNPP);
-        characterData[DataPoints.ProtectionPotionsNatureAbsorbed] = this._getProtectionPotionAbsorb(character, protectionPotionEnum.GNPP, protectionPotionEnum.NPP, protectionPotionEnum.MNPP);
-        characterData[DataPoints.ProtectionPotionsShadow] = this._getProtectionPotionCount(character, protectionPotionEnum.SPP);
-        characterData[DataPoints.ProtectionPotionsGreaterShadow] = this._getProtectionPotionCount(character, protectionPotionEnum.GSPP);
-        characterData[DataPoints.ProtectionPotionsMajorShadow] = this._getProtectionPotionCount(character, protectionPotionEnum.MSPP);
-        characterData[DataPoints.ProtectionPotionsShadowAbsorbed] = this._getProtectionPotionAbsorb(character, protectionPotionEnum.GSPP, protectionPotionEnum.SPP, protectionPotionEnum.MSPP);
+        characterData[DataPoints.ProtectionPotionsGreaterArcane] = this._getCastCount(character, protectionPotionEnum.GAPP);
+        characterData[DataPoints.ProtectionPotionsMajorArcane] = this._getCastCount(character, protectionPotionEnum.MAPP);
+        // characterData[DataPoints.ProtectionPotionsArcaneAbsorbed] = this._getProtectionPotionAbsorb(character, protectionPotionEnum.GAPP, protectionPotionEnum.MAPP);
+        characterData[DataPoints.ProtectionPotionsFire] = this._getCastCount(character, protectionPotionEnum.FPP);
+        characterData[DataPoints.ProtectionPotionsGreaterFire] = this._getCastCount(character, protectionPotionEnum.GFPP);
+        characterData[DataPoints.ProtectionPotionsMajorFire] = this._getCastCount(character, protectionPotionEnum.MFPP);
+        // characterData[DataPoints.ProtectionPotionsFireAbsorbed] = this._getProtectionPotionAbsorb(character, protectionPotionEnum.GFPP, protectionPotionEnum.FPP, protectionPotionEnum.MFPP);
+        characterData[DataPoints.ProtectionPotionsFrost] = this._getCastCount(character, protectionPotionEnum.FrPP);
+        characterData[DataPoints.ProtectionPotionsGreaterFrost] = this._getCastCount(character, protectionPotionEnum.GFrPP);
+        characterData[DataPoints.ProtectionPotionsMajorFrost] = this._getCastCount(character, protectionPotionEnum.MFrPP);
+        // characterData[DataPoints.ProtectionPotionsFrostAbsorbed] = this._getProtectionPotionAbsorb(character, protectionPotionEnum.GFrPP, protectionPotionEnum.FrPP, protectionPotionEnum.MFrPP);
+        characterData[DataPoints.ProtectionPotionsNature] = this._getCastCount(character, protectionPotionEnum.NPP);
+        characterData[DataPoints.ProtectionPotionsGreaterNature] = this._getCastCount(character, protectionPotionEnum.GNPP);
+        characterData[DataPoints.ProtectionPotionsMajorNature] = this._getCastCount(character, protectionPotionEnum.MNPP);
+        // characterData[DataPoints.ProtectionPotionsNatureAbsorbed] = this._getProtectionPotionAbsorb(character, protectionPotionEnum.GNPP, protectionPotionEnum.NPP, protectionPotionEnum.MNPP);
+        characterData[DataPoints.ProtectionPotionsShadow] = this._getCastCount(character, protectionPotionEnum.SPP);
+        characterData[DataPoints.ProtectionPotionsGreaterShadow] = this._getCastCount(character, protectionPotionEnum.GSPP);
+        characterData[DataPoints.ProtectionPotionsMajorShadow] = this._getCastCount(character, protectionPotionEnum.MSPP);
+        // characterData[DataPoints.ProtectionPotionsShadowAbsorbed] = this._getProtectionPotionAbsorb(character, protectionPotionEnum.GSPP, protectionPotionEnum.SPP, protectionPotionEnum.MSPP);
 
         characterData[DataPoints.ProtectionPotionsTotal] = sumNonNull(characterData[DataPoints.ProtectionPotionsGreaterArcane],
             characterData[DataPoints.ProtectionPotionsMajorArcane],
@@ -271,16 +236,14 @@ export class GridRow extends Component {
         characterData[DataPoints.CooldownsAbility] = this._getCooldownList(character, "Ability");
         characterData[DataPoints.CooldownsItems] = this._getCooldownList(character, "Trinket");
 
-        characterData[DataPoints.ResistanceArcane] = this._cleanResistanceValue(character.summary.resistances?.arcane, character.summary.resistances?.includesGreens);
-        characterData[DataPoints.ResistanceFire] = this._cleanResistanceValue(character.summary.resistances?.fire, character.summary.resistances?.includesGreens);
-        characterData[DataPoints.ResistanceFrost] = this._cleanResistanceValue(character.summary.resistances?.frost, character.summary.resistances?.includesGreens);
-        characterData[DataPoints.ResistanceNature] = this._cleanResistanceValue(character.summary.resistances?.nature, character.summary.resistances?.includesGreens);
-        characterData[DataPoints.ResistanceShadow] = this._cleanResistanceValue(character.summary.resistances?.shadow, character.summary.resistances?.includesGreens);
+        characterData[DataPoints.ResistanceArcane] = this._cleanResistanceValue(character.data.resistances?.arcane, character.data.resistances?.includesGreens);
+        characterData[DataPoints.ResistanceFire] = this._cleanResistanceValue(character.data.resistances?.fire, character.data.resistances?.includesGreens);
+        characterData[DataPoints.ResistanceFrost] = this._cleanResistanceValue(character.data.resistances?.frost, character.data.resistances?.includesGreens);
+        characterData[DataPoints.ResistanceNature] = this._cleanResistanceValue(character.data.resistances?.nature, character.data.resistances?.includesGreens);
+        characterData[DataPoints.ResistanceShadow] = this._cleanResistanceValue(character.data.resistances?.shadow, character.data.resistances?.includesGreens);
 
-        this._getTankStats(character, characterData);
+        //this._getTankStats(character, characterData);
         
-        this.props.onDataUpdate(characterData);
-
         return characterData;
     }
 
@@ -289,7 +252,7 @@ export class GridRow extends Component {
     }
 
     _getBuffs(character, options) {
-        const {buffs} = character;
+        const {buffs} = character.data;
 
         if (!buffs) {
             return [];
@@ -306,18 +269,18 @@ export class GridRow extends Component {
     }
 
     _getWeaponImbue(character, options) {
-        const {weaponEnchant, offhandEnchant} = character.summary;
+        const {imbues} = character.data;
 
-        if (!weaponEnchant) {
+        if (!imbues?.main_hand && !imbues?.off_hand) {
             return [];
         }
 
         let activeBuffs = [];
         for (let i = 0; i < options.length; ++i) {
-            if (weaponEnchant.id === options[i].id) {
+            if (imbues?.main_hand === options[i].id) {
                 activeBuffs.push(options[i]);
             }
-            if (offhandEnchant.id === options[i].id) {
+            if (imbues?.off_hand === options[i].id) {
                 activeBuffs.push({...options[i], name: options[i].name + ' (OH)'});
             }
             
@@ -327,80 +290,79 @@ export class GridRow extends Component {
     }
 
     _getMissingGemCount(character) {
-        const {gems} = character.summary;
+        const {gems} = character.data;
 
         if (!gems) {
             return null;
         }
 
-        return gems[0].count;
+        return gems[0] ?? 0;
     }
 
     _getGemCount(character, rarity) {
-        const {gems} = character.summary;
+        const {gems} = character.data;
 
         if (!gems) {
             return null;
         }
 
-        let gemList = Object.values(gems);
+        let gemEntries = Object.entries(gems);
 
-        return gemList.reduce((gemCount, gem) => {
+        return gemEntries.reduce((gemTotalCount, [gemId, gemCount]) => {
+            const gem = gemList[gemId]
 
-            if (gem.rarity === rarity) {
-                gemCount += gem.count;
+            if (gem?.rarity === rarity) {
+                gemTotalCount += gemCount;
             }
 
-            return gemCount;
+            return gemTotalCount;
         }, 0)
 
     }
 
     _getGemList(character) {
-        const {gems} = character.summary;
+        const {gems} = character.data;
 
         if (!gems) {
             return [];
         }
 
-        let gemList = Object.values(gems).filter(x => x.id !== 0);
+        let gemEntries = Object.entries(gems).filter(([key, count]) => key !== 0);
 
-        return gemList.reduce((gemIcons, gem) => {
+        return gemEntries.reduce((gemIcons, [gemId, gemCount]) => {
+            const gem = gemList[gemId];
 
-            gemIcons.push({
-                id: gem.id,
-                itemId: gem.id,
-                name: gem.count + " x " + gem.label + " (" + gem.description + ")",
-                icon: gem.icon,
-                count: gem.count,
-            })
+            if (gem != null) {
+                gemIcons.push({
+                    id: gem.id,
+                    itemId: gem.id,
+                    name: gemCount + " x " + gem.label + " (" + gem.description + ")",
+                    icon: gem.icon,
+                    count: gemCount,
+                })
+            }
 
             return gemIcons;
         }, []);
     }
 
     _getCooldownList(character, type = null) {
-        const {casts} = character;
+        const {casts} = character.data;
 
         if (!casts) {
             return [];
         }
 
-        let cooldowns = casts.reduce((cds, cast) => {
-            let cooldownInfo = cooldownList[cast.ability.guid];
+        let cooldowns = Object.entries(casts).reduce((cds, [castGuid, castCount]) => {
+            let cooldownInfo = cooldownList[castGuid];
             if (cooldownInfo && (type == null || type === cooldownInfo.type)) {
-                if (cds[cast.ability.guid]) {
-                    cds[cast.ability.guid].count++;
-                }
-                else {
-                    cds[cast.ability.guid] = {
-                        id: cast.ability.guid,
-                        itemId: cooldownInfo.itemId,
-                        spellId: cast.ability.guid,
-                        name: cooldownInfo.name,
-                        icon: cooldownInfo.icon,
-                        count: 1
-                    }
+                cds[castGuid] = {
+                    id: castGuid,
+                    itemId: cooldownInfo.itemId,
+                    spellId: castGuid,
+                    name: cooldownInfo.name,
+                    icon: cooldownInfo.icon,
+                    count: castCount
                 }
             }
 
@@ -472,7 +434,7 @@ export class GridRow extends Component {
     _getDeathCount(character) {
         const {deaths} = character;
 
-        return deaths?.length;
+        return deaths;
     }
 
     _getBossCastCount(character, ...spellIds) {
@@ -484,37 +446,35 @@ export class GridRow extends Component {
     }
 
     _getInterruptCount(character, ...spellIds) {
-        const {interrupts} = character;
+        const {interrupts} = character.data;
 
         if (!interrupts) {
             return 0;
         }
 
         let castCount = 0;
-        for (let i = 0; i < interrupts.length; ++i) {
-            let cast = interrupts[i];
-            if (spellIds.includes(cast.ability.guid)) {
-                castCount++;
+        Object.entries(interrupts).forEach(([spellId, count]) => {
+            if (spellIds.includes(parseInt(spellId))) {
+                castCount += count;
             }
-        }
+        });
 
         return castCount;
     }
 
     _getRestrictedCastCount(character, fightType, spellIds) {
-        const {casts} = character;
+        const {casts} = character.data;
 
         if (!casts) {
             return 0;
         }
 
         let castCount = 0;
-        for (let i = 0; i < casts.length; ++i) {
-            let cast = casts[i];
-            if ((fightType == null || cast.fightType === fightType) && cast.type === "cast" && spellIds.includes(cast.ability.guid)) {
-                castCount++;
+        Object.entries(casts).forEach(([spellId, count]) => {
+            if (spellIds.includes(parseInt(spellId))) {
+                castCount += count;
             }
-        }
+        });
 
         return castCount;
     }
@@ -648,7 +608,10 @@ export class GridRow extends Component {
             19: "https://wow.zamimg.com/images/wow/icons/large/inventoryslot_tabard.jpg",
         }
 
-        let enchantScore = character.summary.enchants.reduce((accum, enchant) => {
+        if (!character.data.enchants)
+            return;
+
+        let enchantScore = character.data.enchants.reduce((accum, enchant) => {
             let enchantIcon = {
                 id: enchant.gearId,
                 name: enchant.gearId + "_" + enchant.name,
@@ -662,7 +625,7 @@ export class GridRow extends Component {
                     if (enchantInfo.bySlot && enchantInfo.bySlot[enchant.slot]) {
                         enchantInfo = enchantInfo.bySlot[enchant.slot];
                     }
-                    character.summary.specs.forEach(spec => {
+                    character.data.specs.forEach(spec => {
                         let specDescription = character.type + "-" + spec;
                         let specScore = enchantInfo.score[specDescription] ?? 0;
                         if (specScore > score) {
@@ -706,7 +669,7 @@ export class GridRow extends Component {
             return accum;
         }, { good: 0, bad: 0, average: 0, missing: 0});
 
-        characterData[DataPoints.Enchants] = (enchantScore.good + (0.5 * enchantScore.average)) + '/' + character.summary.enchants.length;
+        characterData[DataPoints.Enchants] = (enchantScore.good + (0.5 * enchantScore.average)) + '/' + character.data.enchants.length;
         characterData[DataPoints.EnchantGood] = enchantScore.good;
         characterData[DataPoints.EnchantAverage] = enchantScore.average;
         characterData[DataPoints.EnchantBad] = enchantScore.bad;
@@ -715,8 +678,10 @@ export class GridRow extends Component {
     }
 
     render() {
-        const {Data, isLoaded, error, classType} = this.state;
-        const {children, row, context} = this.props;
+        const {isLoaded, error, classType} = this.state;
+        const {children, row, context, character} = this.props;
+
+        const Data = this._flattenCharacterData(character)
 
         return (
             <tr className={classType + " character " + (row % 2 === 0 ? "even" : "odd") + (!isLoaded ? " loading": "") + (error ? " error" : "")}>

@@ -1,11 +1,10 @@
-import { itemSlots, resistanceEnchants, resistanceGems, resistRandomEnchantBySlot } from "./data";
+/*import { itemSlots, resistanceEnchants, resistanceGems, resistRandomEnchantBySlot } from "./data";
 import {itemList, gemList} from "./datastore";
-import {removeDuplicates} from "./utils";
+import {removeDuplicates} from "./utils";*/
 
 export class WarcraftLogLoader {
     constructor(reportId = null) {
-        this.key = "e422378c419a25cc1accb41845b259ab";
-        this.domain = "https://classic.warcraftlogs.com/v1/";
+        this.domain = "https://d9ebrq4o3j.execute-api.ap-southeast-2.amazonaws.com/load-report/";
         this.reportId = reportId;
         this.Results = {};
         this._loadedStatus = {
@@ -31,7 +30,12 @@ export class WarcraftLogLoader {
         this.reportId = reportId;
     }
 
-    loadFights() {
+    loadReport(fightId = null) {
+        return fetch(this.domain + this.reportId + (fightId != null ? '/' + fightId : ''))
+            .then(res => res.json())
+    }
+
+    /*loadFights() {
         if (this._loadedStatus.fights) {
             return new Promise(resolve => resolve(this));
         }
@@ -818,7 +822,7 @@ export class WarcraftLogLoader {
 
             resolve({context: context, data: tankData});
         }).catch(reject));
-    }
+    }*/
 
     /* getManaRegeneration(start_time, end_time, events = []) {
         return new Promise((resolve, reject) => fetch(this.domain + "report/events/resources/" + this.reportId
@@ -843,7 +847,7 @@ export class WarcraftLogLoader {
         }).catch(reject));
     } */
 
-    getProtectionPotionHealingEvents(start_time, end_time, events = []) {
+    /*getProtectionPotionHealingEvents(start_time, end_time, events = []) {
         return new Promise((resolve, reject) => fetch(this.domain + "report/events/healing/" + this.reportId 
         + "?api_key=" + this.key 
         + "&start=" + start_time
@@ -992,7 +996,7 @@ export class WarcraftLogLoader {
                 resolve(data.auras)
             }).catch(reject);
         }).catch(reject));
-    }
+    }*/
 }
 
 export let LogLoader = new WarcraftLogLoader();

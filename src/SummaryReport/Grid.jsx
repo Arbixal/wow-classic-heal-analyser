@@ -17,10 +17,7 @@ export class Grid extends Component {
             summaryRow: {...emptyData, [DataPoints.Name]: "Totals"},
         }
 
-        this._logLoader = props.logLoader;
-
         this.handleColGroupToggle = this.handleColGroupToggle.bind(this);
-        this.handleDataUpdate = this.handleDataUpdate.bind(this);
     }
 
     shouldComponentUpdate(nextProps, nextState) {
@@ -58,33 +55,37 @@ export class Grid extends Component {
         }));
     }
 
-    handleDataUpdate(character) {
+    calculateSummaryRow(data) {
         const {children} = this.props;
-        let {summaryRow} = this.state;
+        let summaryRow = {...emptyData, [DataPoints.Name]: "Totals"};
 
-        Children.forEach(children, colGroup => {
-            if (!isValidElement(colGroup)) {
-                return;
-            }
-
-            Children.forEach(colGroup.props.children, column => {
-                if (!isValidElement(column)) {
+        data.forEach(character => {
+            Children.forEach(children, colGroup => {
+                if (!isValidElement(colGroup)) {
                     return;
                 }
-
-                if (column.props.aggregate === true && column.props.field) {
-                    const field = column.props.field;
-                    summaryRow[field] = (summaryRow[field] === ' ' ? 0 : summaryRow[field]) + character[field];
-                }
+    
+                Children.forEach(colGroup.props.children, column => {
+                    if (!isValidElement(column)) {
+                        return;
+                    }
+    
+                    if (column.props.aggregate === true && column.props.field) {
+                        const field = column.props.field;
+                        summaryRow[field] = (summaryRow[field] === ' ' ? 0 : summaryRow[field]) + character[field];
+                    }
+                });
             });
-        });
+        })
 
-        this.setState({summaryRow: {...summaryRow}});
+        return summaryRow;
     }
 
     render() {
         const {data, children, fightId, classFilter, roleFilter, boss} = this.props;
-        const {collapsed, summaryRow} = this.state;
+        const {collapsed} = this.state;
+
+        const summaryRow = this.calculateSummaryRow(data);
 
         let ctx = {collapsed: collapsed, classFilter: classFilter, roleFilter: roleFilter, boss: boss};
 
@@ -112,7 +113,7 @@ export class Grid extends Component {
             </thead>
             <tbody>
                 {data.map((obj, idx) => (
-                <GridRow key={obj.id} character={obj} row={idx} logLoader={this._logLoader} context={ctx} fightId={fightId} onDataUpdate={this.handleDataUpdate}>
+                <GridRow key={obj.id} character={obj} row={idx} context={ctx} fightId={fightId}>
                     {children}
                 </GridRow>
                 ))}

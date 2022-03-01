@@ -1873,5 +1873,21 @@
        "colour": "red",
        "icon": "inv_misc_gem_bloodstone_02.jpg",
        "description": "+14 attack power"
+    },
+    {
+       "id": 22459,
+       "label": "Void Sphere",
+       "rarity": "Epic",
+       "colour": "prismatic",
+       "icon": "inv_enchant_voidsphere.jpg",
+       "description": "+4 resist all"
+    },
+    {
+       "id": 22460,
+       "label": "Prismatic Sphere",
+       "rarity": "Rare",
+       "colour": "prismatic",
+       "icon": "inv_enchant_prismaticsphere.jpg",
+       "description": "+3 resist all"
     }
 ]

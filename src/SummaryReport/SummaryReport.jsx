@@ -106,12 +106,12 @@ class SummaryReport extends Component {
         this.handleFightMouseOver = this.handleFightMouseOver.bind(this);
     }
 
-    _getResults(selectedFight) {
-        let report = this._logLoader.getResults(selectedFight);
+    _getResults(report) {
+        //let report = this._logLoader.getResults(selectedFight);
         this.setState({
             isLoaded: true,
-            characters: report.Characters,
-            fights: report.Fights,
+            characters: report.characters,
+            fights: report.fights,
             raidStart: report.startTime,
             raidTime: report.endTime - report.startTime,
             reportDetails: {
@@ -136,31 +136,30 @@ class SummaryReport extends Component {
         this.setState({reportId: id, selectedFight: selectedFight});
 
         this._logLoader = WarcraftLogLoader.Load(id);
-        this._logLoader.loadFights()
-            .then(x => x.loadCharacterSummary())
-            .then(x => x.loadDeaths())
-            .then(x => x.loadInterrupts())
-            .then(x => {
-                let report = this._getResults();
-                this._generateFilteredData(report.Characters);
+        this.loadReport(selectedFight);
+    }
+
+    loadReport(fightId) {
+        this._logLoader.loadReport(fightId)
+        .then(report => {
+            this._getResults(report);
+            this._generateFilteredData(report.characters);
+        })
+        .catch((error) => {
+            this.setState({
+                isLoaded: true,
+                error: error
             })
-            .catch((error) => {
-                this.setState({
-                    isLoaded: true,
-                    error: error
-                })
-            });
+        });
     }
 
     componentDidUpdate(prevProps) {
         if (this.props.match !== prevProps.match) {
             const { id, fightId, filter } = this.props.match.params;
             let selectedFight = fightId == null || isNaN(parseInt(fightId)) ? -1 : parseInt(fightId);
-
+    
             ReactGA.send({ hitType: "pageview", page: this.props.match.path, reportId: id, fightId: fightId, filter: filter });
-
-            let report = this._getResults(selectedFight);
-            this._generateFilteredData(report.Characters);
+            this.loadReport(selectedFight);
         }
     }
 
@@ -227,7 +226,7 @@ class SummaryReport extends Component {
         let data = [...Object.values(characters)
         .filter((character) => character.type !== "NPC" && character.type !== "Pet" && character.type !== "Boss")
         .filter((character) => classFilter == null || character.type === classFilter)
-        .filter((character) => roleFilter == null || character.summary.roles.includes(roleFilter))
+        .filter((character) => roleFilter == null || character.data.roles.includes(roleFilter))
         .sort((aValue, bValue) => {
              let classCompare = classSortOrder[aValue.type] - classSortOrder[bValue.type];
 
@@ -315,7 +314,7 @@ class SummaryReport extends Component {
                         {Object.values(classes).map(role => <NavLink key={role.slug} to={"/" + reportId + "/" + selectedFight + "/" + role.slug} activeClassName="selected"><div className={"class_nav " + role.name}><img className="spell_icon" src={role.icon} alt={role.name} />{role.name}</div></NavLink>)}
                     </div>
 
-                    <Grid data={data} logLoader={this._logLoader} classFilter={classFilter} roleFilter={roleFilter} fightId={selectedFight} boss={boss}>
+                    <Grid data={data} classFilter={classFilter} roleFilter={roleFilter} fightId={selectedFight} boss={boss}>
                         <GridColumnGroup id={GroupKeys.Name} label="Name" cssClass="odd-colgroup">
                             <GridColumn field={DataPoints.Name} 
                                         cssClass="name" />

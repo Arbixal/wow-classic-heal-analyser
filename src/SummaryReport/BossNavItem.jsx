@@ -8,7 +8,7 @@ function getPercentageBar(fight) {
         return <div className={"boss_percentage kill"}></div>
     }
     
-    return <div className={"boss_percentage wipe"} style={{ width: (fight.fightPercentage/100).toString() + "%"}}></div>
+    return <div className={"boss_percentage wipe"} style={{ width: (fight.fight_percentage/100).toString() + "%"}}></div>
 }
 
 export function BossNavItem (props) {
