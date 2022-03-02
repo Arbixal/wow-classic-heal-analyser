@@ -1027,7 +1027,7 @@ class SummaryReport extends Component {
                             <GridColumn field={DataPoints.ResistanceShadow} label="S"
                                         cssClass="protection_potion shadow" />
                         </GridColumnGroup>
-                        <GridColumnGroup id={GroupKeys.Tank} label="Tank Stats" cssClass="even-colgroup">
+{/*                         <GridColumnGroup id={GroupKeys.Tank} label="Tank Stats" cssClass="even-colgroup">
                             <GridBarColumn label="Damage Taken" width="270" visibility={(ctx) => ctx.roleFilter === "tank"}>
                                 <GridBarColumnSection field={DataPoints.DamageTakenHit} label="Hit" cssClass="class-colour1" />
                                 <GridBarColumnSection field={DataPoints.DamageTakenCrushed} label="Crushing Blow" cssClass="bad2" />
@@ -1044,7 +1044,7 @@ class SummaryReport extends Component {
                             <GridColumn label="Parry" field={DataPoints.DamageTakenParry} format="%" cssClass="right percentage" visibility={(ctx) => ctx.roleFilter === "tank"}  />
                             <GridColumn label="Dodge" field={DataPoints.DamageTakenDodge} format="%" cssClass="right percentage" visibility={(ctx) => ctx.roleFilter === "tank"}  />
                             <GridColumn label="Miss" field={DataPoints.DamageTakenMiss} format="%" cssClass="right percentage" visibility={(ctx) => ctx.roleFilter === "tank"}  />
-                        </GridColumnGroup>
+                        </GridColumnGroup> */}
                     </Grid>
                     <ReactTooltip />
                     <p>* Resistance calculations include "random enchantment" items that can may or may not be "of [School] Protection"</p>

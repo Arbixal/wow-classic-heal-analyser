@@ -43,25 +43,25 @@ export class GridRow extends Component {
         characterData[DataPoints.ElixirsScrolls] = this._getBuffs(character, scrollBuffs);
         characterData[DataPoints.ElixirsWeaponEnchants] = this._getWeaponImbue(character, tempWeaponEnchants);
 
-        characterData[DataPoints.ProtectionPotionsGreaterArcane] = this._getCastCount(character, protectionPotionEnum.GAPP);
-        characterData[DataPoints.ProtectionPotionsMajorArcane] = this._getCastCount(character, protectionPotionEnum.MAPP);
-        // characterData[DataPoints.ProtectionPotionsArcaneAbsorbed] = this._getProtectionPotionAbsorb(character, protectionPotionEnum.GAPP, protectionPotionEnum.MAPP);
-        characterData[DataPoints.ProtectionPotionsFire] = this._getCastCount(character, protectionPotionEnum.FPP);
-        characterData[DataPoints.ProtectionPotionsGreaterFire] = this._getCastCount(character, protectionPotionEnum.GFPP);
-        characterData[DataPoints.ProtectionPotionsMajorFire] = this._getCastCount(character, protectionPotionEnum.MFPP);
-        // characterData[DataPoints.ProtectionPotionsFireAbsorbed] = this._getProtectionPotionAbsorb(character, protectionPotionEnum.GFPP, protectionPotionEnum.FPP, protectionPotionEnum.MFPP);
-        characterData[DataPoints.ProtectionPotionsFrost] = this._getCastCount(character, protectionPotionEnum.FrPP);
-        characterData[DataPoints.ProtectionPotionsGreaterFrost] = this._getCastCount(character, protectionPotionEnum.GFrPP);
-        characterData[DataPoints.ProtectionPotionsMajorFrost] = this._getCastCount(character, protectionPotionEnum.MFrPP);
-        // characterData[DataPoints.ProtectionPotionsFrostAbsorbed] = this._getProtectionPotionAbsorb(character, protectionPotionEnum.GFrPP, protectionPotionEnum.FrPP, protectionPotionEnum.MFrPP);
-        characterData[DataPoints.ProtectionPotionsNature] = this._getCastCount(character, protectionPotionEnum.NPP);
-        characterData[DataPoints.ProtectionPotionsGreaterNature] = this._getCastCount(character, protectionPotionEnum.GNPP);
-        characterData[DataPoints.ProtectionPotionsMajorNature] = this._getCastCount(character, protectionPotionEnum.MNPP);
-        // characterData[DataPoints.ProtectionPotionsNatureAbsorbed] = this._getProtectionPotionAbsorb(character, protectionPotionEnum.GNPP, protectionPotionEnum.NPP, protectionPotionEnum.MNPP);
-        characterData[DataPoints.ProtectionPotionsShadow] = this._getCastCount(character, protectionPotionEnum.SPP);
-        characterData[DataPoints.ProtectionPotionsGreaterShadow] = this._getCastCount(character, protectionPotionEnum.GSPP);
-        characterData[DataPoints.ProtectionPotionsMajorShadow] = this._getCastCount(character, protectionPotionEnum.MSPP);
-        // characterData[DataPoints.ProtectionPotionsShadowAbsorbed] = this._getProtectionPotionAbsorb(character, protectionPotionEnum.GSPP, protectionPotionEnum.SPP, protectionPotionEnum.MSPP);
+        characterData[DataPoints.ProtectionPotionsGreaterArcane] = this._getProtectionPotionCount(character, protectionPotionEnum.GAPP);
+        characterData[DataPoints.ProtectionPotionsMajorArcane] = this._getProtectionPotionCount(character, protectionPotionEnum.MAPP);
+        characterData[DataPoints.ProtectionPotionsArcaneAbsorbed] = this._getProtectionPotionAbsorb(character, protectionPotionEnum.GAPP, protectionPotionEnum.MAPP);
+        characterData[DataPoints.ProtectionPotionsFire] = this._getProtectionPotionCount(character, protectionPotionEnum.FPP);
+        characterData[DataPoints.ProtectionPotionsGreaterFire] = this._getProtectionPotionCount(character, protectionPotionEnum.GFPP);
+        characterData[DataPoints.ProtectionPotionsMajorFire] = this._getProtectionPotionCount(character, protectionPotionEnum.MFPP);
+        characterData[DataPoints.ProtectionPotionsFireAbsorbed] = this._getProtectionPotionAbsorb(character, protectionPotionEnum.GFPP, protectionPotionEnum.FPP, protectionPotionEnum.MFPP);
+        characterData[DataPoints.ProtectionPotionsFrost] = this._getProtectionPotionCount(character, protectionPotionEnum.FrPP);
+        characterData[DataPoints.ProtectionPotionsGreaterFrost] = this._getProtectionPotionCount(character, protectionPotionEnum.GFrPP);
+        characterData[DataPoints.ProtectionPotionsMajorFrost] = this._getProtectionPotionCount(character, protectionPotionEnum.MFrPP);
+        characterData[DataPoints.ProtectionPotionsFrostAbsorbed] = this._getProtectionPotionAbsorb(character, protectionPotionEnum.GFrPP, protectionPotionEnum.FrPP, protectionPotionEnum.MFrPP);
+        characterData[DataPoints.ProtectionPotionsNature] = this._getProtectionPotionCount(character, protectionPotionEnum.NPP);
+        characterData[DataPoints.ProtectionPotionsGreaterNature] = this._getProtectionPotionCount(character, protectionPotionEnum.GNPP);
+        characterData[DataPoints.ProtectionPotionsMajorNature] = this._getProtectionPotionCount(character, protectionPotionEnum.MNPP);
+        characterData[DataPoints.ProtectionPotionsNatureAbsorbed] = this._getProtectionPotionAbsorb(character, protectionPotionEnum.GNPP, protectionPotionEnum.NPP, protectionPotionEnum.MNPP);
+        characterData[DataPoints.ProtectionPotionsShadow] = this._getProtectionPotionCount(character, protectionPotionEnum.SPP);
+        characterData[DataPoints.ProtectionPotionsGreaterShadow] = this._getProtectionPotionCount(character, protectionPotionEnum.GSPP);
+        characterData[DataPoints.ProtectionPotionsMajorShadow] = this._getProtectionPotionCount(character, protectionPotionEnum.MSPP);
+        characterData[DataPoints.ProtectionPotionsShadowAbsorbed] = this._getProtectionPotionAbsorb(character, protectionPotionEnum.GSPP, protectionPotionEnum.SPP, protectionPotionEnum.MSPP);
 
         characterData[DataPoints.ProtectionPotionsTotal] = sumNonNull(characterData[DataPoints.ProtectionPotionsGreaterArcane],
             characterData[DataPoints.ProtectionPotionsMajorArcane],
@@ -277,12 +277,26 @@ export class GridRow extends Component {
 
         let activeBuffs = [];
         for (let i = 0; i < options.length; ++i) {
-            if (imbues?.main_hand === options[i].id) {
+            if (imbues?.main_hand != null) {
+                imbues.main_hand.forEach(x => {
+                    if (x === options[i].id) {
+                        activeBuffs.push(options[i]);
+                    }
+                })
+            }
+/*             if (imbues?.main_hand === options[i].id) {
                 activeBuffs.push(options[i]);
+            } */
+            if (imbues?.off_hand != null) {
+                imbues.off_hand.forEach(x => {
+                    if (x === options[i].id) {
+                        activeBuffs.push({...options[i], name: options[i].name + ' (OH)'});
+                    }
+                })
             }
-            if (imbues?.off_hand === options[i].id) {
+/*             if (imbues?.off_hand === options[i].id) {
                 activeBuffs.push({...options[i], name: options[i].name + ' (OH)'});
-            }
+            } */
             
         }
 
@@ -353,7 +367,7 @@ export class GridRow extends Component {
             return [];
         }
 
-        let cooldowns = Object.entries(casts).reduce((cds, [castGuid, castCount]) => {
+        let cooldowns = Object.entries(casts).reduce((cds, [castGuid, castCountByType]) => {
             let cooldownInfo = cooldownList[castGuid];
             if (cooldownInfo && (type == null || type === cooldownInfo.type)) {
                 cds[castGuid] = {
@@ -362,7 +376,7 @@ export class GridRow extends Component {
                     spellId: castGuid,
                     name: cooldownInfo.name,
                     icon: cooldownInfo.icon,
-                    count: castCount
+                    count: (castCountByType['boss'] ?? 0) + (castCountByType['trash'] ?? 0)
                 }
             }
 
@@ -373,10 +387,26 @@ export class GridRow extends Component {
     }
 
     _getProtectionPotionCount(character, spellId) {
-        const {casts, protectionPotions, fights} = character;
+        const {casts, healing} = character.data;
 
         let count = 0;
-        let countByFight = {};
+        let first_cast = null
+
+        if (casts && casts[spellId]) {
+            first_cast = casts[spellId].first_event;
+            count += (casts[spellId].boss + casts[spellId].trash);
+        }
+
+        // Check for an absorb without a cast event (pre-potting)
+        if (healing && healing[spellId] && (!first_cast || first_cast > healing[spellId].first_event)) {
+            count += 1;
+        }
+
+        /* Object.entries(casts).forEach(([cast_key, cast_value]) => {
+            if (spellId === cast_key) {
+
+            }
+        })
 
         if (casts) {
             for (let i = 0; i < casts.length; ++i) {
@@ -415,18 +445,25 @@ export class GridRow extends Component {
                     }
                 }
             }
-        }
+        } */
 
         return count;
     }
 
-    _getProtectionPotionAbsorb(character, spellId1, spellId2) {
-        const {protectionPotions} = character;
+    _getProtectionPotionAbsorb(character, ...spellIds) {
+        const {healing} = character.data;
+
+        if (!healing) {
+            return 0;
+        }
 
         let absorbed = 0;
 
-        absorbed += (protectionPotions[spellId1]?.amount || 0);
-        absorbed += (protectionPotions[spellId2]?.amount || 0);
+        Object.entries(healing).forEach(([key, value]) => {
+            if (spellIds.includes(parseInt(key))) {
+                absorbed += value.amount
+            }
+        })
 
         return absorbed;
     }
@@ -470,9 +507,14 @@ export class GridRow extends Component {
         }
 
         let castCount = 0;
-        Object.entries(casts).forEach(([spellId, count]) => {
+        Object.entries(casts).forEach(([spellId, countByType]) => {
             if (spellIds.includes(parseInt(spellId))) {
-                castCount += count;
+                if (fightType) {
+                    castCount += (countByType[fightType] ?? 0)
+                }
+                else {
+                    castCount += ((countByType['boss'] ?? 0) + (countByType['trash'] ?? 0));
+                }
             }
         });
 
