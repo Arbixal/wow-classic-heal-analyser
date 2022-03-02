@@ -4,7 +4,7 @@ import {removeDuplicates} from "./utils";*/
 
 export class WarcraftLogLoader {
     constructor(reportId = null) {
-        this.domain = "https://d9ebrq4o3j.execute-api.ap-southeast-2.amazonaws.com/load-report/";
+        this.domain = "https://api.bixnpieces.com/load-report/";
         this.reportId = reportId;
         this.Results = {};
         this._loadedStatus = {
