@@ -5,6 +5,8 @@ import {removeDuplicates} from "./utils";*/
 export class WarcraftLogLoader {
     constructor(reportId = null) {
         this.domain = "https://api.bixnpieces.com/load-report/";
+        this.contentType = "application/vnd.bixnpieces.logsummary-v1.0+json";
+        this.apiVersion = 1.0;
         this.reportId = reportId;
         this.Results = {};
         this._loadedStatus = {
@@ -26,13 +28,28 @@ export class WarcraftLogLoader {
         return new WarcraftLogLoader(reportId);
     }
 
+    _getContentType() {
+        return `application/vnd.bixnpieces.logsummary-v${this.apiVersion.toFixed(1)}+json`;
+    }
+
     setReport(reportId) {
         this.reportId = reportId;
     }
 
     loadReport(fightId = null) {
-        return fetch(this.domain + this.reportId + (fightId != null ? '/' + fightId : ''))
-            .then(res => res.json())
+        return fetch(this.domain + this.reportId + (fightId != null ? '/' + fightId : ''), {headers: {'Accept': this._getContentType()}})
+            .then(res => {
+                let contentType = res.headers.get('content-type');
+                const contentTypePrefix = 'application/vnd.bixnpieces.logsummary-v';
+                if (contentType.startsWith(contentTypePrefix)) {
+                    let apiVersion = parseFloat(contentType.substring(contentTypePrefix.length, contentTypePrefix.length+3))
+                    if (Math.floor(apiVersion) > Math.floor(this.apiVersion)) {
+                        // Need to refresh
+                        return { needsUpgrade: true}
+                    }
+                }
+                return res.json()
+            })
     }
 
     /*loadFights() {

@@ -89,6 +89,7 @@ class SummaryReport extends Component {
     constructor(props) {
         super(props);
         this.state = {
+            needsUpgrade: false,
             error: null,
             fights: [],
             characters: {},
@@ -142,6 +143,11 @@ class SummaryReport extends Component {
     loadReport(fightId) {
         this._logLoader.loadReport(fightId)
         .then(report => {
+            if (report.needsUpgrade) {
+                this.setState({needsUpgrade: true})
+                return;
+            }
+
             this._getResults(report);
             this._generateFilteredData(report.characters);
         })
@@ -240,21 +246,22 @@ class SummaryReport extends Component {
     }
 
     render() {
-        const { error, isLoaded, data, reportId, reportDetails, fights, raidStart, raidTime, classFilter, roleFilter} = this.state;
+        const { error, needsUpgrade, isLoaded, data, reportId, reportDetails, fights, raidStart, raidTime, classFilter, roleFilter} = this.state;
         const { fightId, filter } = this.props.match.params;
 
         let selectedFight = fightId == null || isNaN(parseInt(fightId)) ? -1 : parseInt(fightId);
         let boss = null;
 
-        let fightIds = this._getFightIds(selectedFight);
-
         const filterSuffix = filter ? "/" + filter : "";
         
         if (error) {
             return <div>Error: {error.message}</div>;
+        } else if (needsUpgrade) {
+            return <div>The report format has changed since refreshing the page. Please refresh your page for the latest version.</div>
         } else if (!isLoaded) {
             return <div>Loading ...</div>;
         } else {
+            let fightIds = this._getFightIds(selectedFight);
             let duration = intervalToDuration({start: reportDetails.startTime, end: reportDetails.endTime});
             return (
                 <>
