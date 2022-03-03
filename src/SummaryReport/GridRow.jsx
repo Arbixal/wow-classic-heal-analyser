@@ -236,19 +236,27 @@ export class GridRow extends Component {
         characterData[DataPoints.CooldownsAbility] = this._getCooldownList(character, "Ability");
         characterData[DataPoints.CooldownsItems] = this._getCooldownList(character, "Trinket");
 
-        characterData[DataPoints.ResistanceArcane] = this._cleanResistanceValue(character.data.resistances?.arcane, character.data.resistances?.includesGreens);
-        characterData[DataPoints.ResistanceFire] = this._cleanResistanceValue(character.data.resistances?.fire, character.data.resistances?.includesGreens);
-        characterData[DataPoints.ResistanceFrost] = this._cleanResistanceValue(character.data.resistances?.frost, character.data.resistances?.includesGreens);
-        characterData[DataPoints.ResistanceNature] = this._cleanResistanceValue(character.data.resistances?.nature, character.data.resistances?.includesGreens);
-        characterData[DataPoints.ResistanceShadow] = this._cleanResistanceValue(character.data.resistances?.shadow, character.data.resistances?.includesGreens);
+        let arcaneResist = character.data.resistances?.arcane ?? 0;
+        let fireResist = character.data.resistances?.fire ?? 0;
+        let frostResist = character.data.resistances?.frost ?? 0;
+        let natureResist = character.data.resistances?.nature ?? 0;
+        let shadowResist = character.data.resistances?.shadow ?? 0;
+        let randomResist = character.data.resistances?.random_enchantment ?? 0;
+        let maxResist = Math.max(arcaneResist, fireResist, frostResist, natureResist, shadowResist);
+        characterData[DataPoints.ResistanceArcane] = this._cleanResistanceValue(character.data.resistances?.arcane, arcaneResist === maxResist ? randomResist : 0);
+        characterData[DataPoints.ResistanceFire] = this._cleanResistanceValue(character.data.resistances?.fire, fireResist === maxResist ? randomResist : 0);
+        characterData[DataPoints.ResistanceFrost] = this._cleanResistanceValue(character.data.resistances?.frost, frostResist === maxResist ? randomResist : 0);
+        characterData[DataPoints.ResistanceNature] = this._cleanResistanceValue(character.data.resistances?.nature, natureResist === maxResist ? randomResist : 0);
+        characterData[DataPoints.ResistanceShadow] = this._cleanResistanceValue(character.data.resistances?.shadow, shadowResist === maxResist ? randomResist : 0);
 
         //this._getTankStats(character, characterData);
         
         return characterData;
     }
 
-    _cleanResistanceValue(value, includesGreens) {
-        return value ? value + (includesGreens ? "*" : "") : 0
+    _cleanResistanceValue(value, randomEnchantment) {
+        let valueWithRandom = value + randomEnchantment;
+        return valueWithRandom ? valueWithRandom + (randomEnchantment > 0 ? "*" : "") : 0
     }
 
     _getBuffs(character, options) {
