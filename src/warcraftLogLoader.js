@@ -4,7 +4,7 @@ import {removeDuplicates} from "./utils";*/
 
 export class WarcraftLogLoader {
     constructor(reportId = null) {
-        this.domain = "https://api.bixnpieces.com/load-report/";
+        this.domain = `${process.env.REACT_APP_API_ENDPOINT}/load-report/`;
         this.contentType = "application/vnd.bixnpieces.logsummary-v1.0+json";
         this.apiVersion = 1.0;
         this.reportId = reportId;
@@ -39,6 +39,9 @@ export class WarcraftLogLoader {
     loadReport(fightId = null) {
         return fetch(this.domain + this.reportId + (fightId != null ? '/' + fightId : ''), {headers: {'Accept': this._getContentType()}})
             .then(res => {
+                if (res.status !== 200) {
+                    throw new Error('An error occurred retrieving report data. Please try again shortly or if it continues to fail, report a bug providing the report id that failed.')
+                }
                 let contentType = res.headers.get('content-type');
                 const contentTypePrefix = 'application/vnd.bixnpieces.logsummary-v';
                 if (contentType.startsWith(contentTypePrefix)) {
