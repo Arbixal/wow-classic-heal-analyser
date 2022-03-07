@@ -18,6 +18,7 @@ import { WoWAnalyzerLink } from "./WoWAnalyzerLink";
 import { ThreatReportLink } from "./ThreatReportLink";
 import { WarcraftLogsLink } from "./WarcraftLogsLink";
 import ReactGA from 'react-ga4';
+import { CharacterMapper } from "./Mapper";
 
 const roles = {
     'tank': {
@@ -102,6 +103,7 @@ class SummaryReport extends Component {
             roleFilter: null,
         }
         this._logLoader = null;
+        this._characterMapper = new CharacterMapper();
 
         this.handleFightMouseOut = this.handleFightMouseOut.bind(this);
         this.handleFightMouseOver = this.handleFightMouseOver.bind(this);
@@ -240,7 +242,8 @@ class SummaryReport extends Component {
                  return classCompare;
 
              return aValue.name.localeCompare(bValue.name);
-            })];
+            })
+        .map((character) => this._characterMapper.Flatten(character))];
 
         this.setState({data: data, classFilter: classFilter, roleFilter: roleFilter});
     }
@@ -406,115 +409,136 @@ class SummaryReport extends Component {
                             <GridColumn field={DataPoints.ProtectionPotionsTotal} 
                                         label="Uses" 
                                         cssClass="center" 
-                                        visibility={(ctx) => ctx.collapsed === true} />
+                                        visibility={(ctx) => ctx.collapsed === true}
+                                        aggregate={true} />
                             <GridColumn field={DataPoints.ProtectionPotionsTotalAbsorbed} 
                                         label="Absorb" 
                                         cssClass="center" 
-                                        visibility={(ctx) => ctx.collapsed === true} />
+                                        visibility={(ctx) => ctx.collapsed === true}
+                                        aggregate={true} />
                             <GridIconColumn field={DataPoints.ProtectionPotionsNature} 
                                         label="Nature Protection Potion" 
                                         icon_name="inv_potion_06.jpg" 
                                         item_id={6052}
                                         cssClass="protection_potion nature" 
-                                        visibility={(ctx) => ctx.collapsed === false} />
+                                        visibility={(ctx) => ctx.collapsed === false}
+                                        aggregate={true} />
                             <GridIconColumn field={DataPoints.ProtectionPotionsGreaterNature} 
                                         label="Greater Nature Protection Potion" 
                                         icon_name="inv_potion_22.jpg" 
                                         item_id={13458}
                                         cssClass="protection_potion nature" 
-                                        visibility={(ctx) => ctx.collapsed === false} />
+                                        visibility={(ctx) => ctx.collapsed === false}
+                                        aggregate={true} />
                             <GridIconColumn field={DataPoints.ProtectionPotionsMajorNature} 
                                         label="Major Nature Protection Potion" 
                                         icon_name="inv_potion_127.jpg" 
                                         item_id={22844}
                                         cssClass="protection_potion nature" 
-                                        visibility={(ctx) => ctx.collapsed === false} />
+                                        visibility={(ctx) => ctx.collapsed === false}
+                                        aggregate={true} />
                             <GridColumn field={DataPoints.ProtectionPotionsNatureAbsorbed} 
                                         label="Absorb" 
                                         cssClass="protection_potion nature" 
-                                        visibility={(ctx) => ctx.collapsed === false} />
+                                        visibility={(ctx) => ctx.collapsed === false}
+                                        aggregate={true} />
                             <GridIconColumn field={DataPoints.ProtectionPotionsFire} 
                                         label="Fire Protection Potion" 
                                         icon_name="inv_potion_16.jpg" 
                                         item_id={6049}
                                         cssClass="protection_potion fire" 
-                                        visibility={(ctx) => ctx.collapsed === false} />
+                                        visibility={(ctx) => ctx.collapsed === false}
+                                        aggregate={true} />
                             <GridIconColumn field={DataPoints.ProtectionPotionsGreaterFire} 
                                         label="Greater Fire Protection Potion" 
                                         icon_name="inv_potion_24.jpg" 
                                         item_id={13457}
                                         cssClass="protection_potion fire" 
-                                        visibility={(ctx) => ctx.collapsed === false} />
+                                        visibility={(ctx) => ctx.collapsed === false}
+                                        aggregate={true} />
                             <GridIconColumn field={DataPoints.ProtectionPotionsMajorFire} 
                                         label="Major Fire Protection Potion" 
                                         icon_name="inv_potion_124.jpg" 
                                         item_id={22841}
                                         cssClass="protection_potion fire" 
-                                        visibility={(ctx) => ctx.collapsed === false} />
+                                        visibility={(ctx) => ctx.collapsed === false}
+                                        aggregate={true} />
                             <GridColumn field={DataPoints.ProtectionPotionsFireAbsorbed} 
                                         label="Absorb" 
                                         cssClass="protection_potion fire" 
-                                        visibility={(ctx) => ctx.collapsed === false} />
+                                        visibility={(ctx) => ctx.collapsed === false}
+                                        aggregate={true} />
                             <GridIconColumn field={DataPoints.ProtectionPotionsFrost} 
                                             label="Frost Protection Potion" 
                                             icon_name="inv_potion_13.jpg" 
                                             item_id={6050}
                                             cssClass="protection_potion frost" 
-                                            visibility={(ctx) => ctx.collapsed === false} />
+                                            visibility={(ctx) => ctx.collapsed === false}
+                                            aggregate={true} />
                             <GridIconColumn field={DataPoints.ProtectionPotionsGreaterFrost} 
                                             label="Greater Frost Protection Potion" 
                                             icon_name="inv_potion_20.jpg" 
                                             item_id={13456}
                                             cssClass="protection_potion frost" 
-                                            visibility={(ctx) => ctx.collapsed === false} />
+                                            visibility={(ctx) => ctx.collapsed === false}
+                                            aggregate={true} />
                             <GridIconColumn field={DataPoints.ProtectionPotionsMajorFrost} 
                                             label="Major Frost Protection Potion" 
                                             icon_name="inv_potion_126.jpg" 
                                             item_id={22842}
                                             cssClass="protection_potion frost" 
-                                            visibility={(ctx) => ctx.collapsed === false} />
+                                            visibility={(ctx) => ctx.collapsed === false}
+                                            aggregate={true} />
                             <GridColumn field={DataPoints.ProtectionPotionsFrostAbsorbed} 
                                         label="Absorb" 
                                         cssClass="protection_potion frost" 
-                                        visibility={(ctx) => ctx.collapsed === false} />
+                                        visibility={(ctx) => ctx.collapsed === false}
+                                        aggregate={true} />
                             <GridIconColumn field={DataPoints.ProtectionPotionsShadow} 
                                             label="Shadow Protection Potion" 
                                             icon_name="inv_potion_44.jpg" 
                                             item_id={6048}
                                             cssClass="protection_potion shadow" 
-                                            visibility={(ctx) => ctx.collapsed === false} />
+                                            visibility={(ctx) => ctx.collapsed === false}
+                                            aggregate={true} />
                             <GridIconColumn field={DataPoints.ProtectionPotionsGreaterShadow} 
                                             label="Greater Shadow Protection Potion" 
                                             icon_name="inv_potion_23.jpg" 
                                             item_id={13459}
                                             cssClass="protection_potion shadow" 
-                                            visibility={(ctx) => ctx.collapsed === false} />
+                                            visibility={(ctx) => ctx.collapsed === false}
+                                            aggregate={true} />
                             <GridIconColumn field={DataPoints.ProtectionPotionsMajorShadow} 
                                             label="Major Shadow Protection Potion" 
                                             icon_name="inv_potion_123.jpg" 
                                             item_id={22846}
                                             cssClass="protection_potion shadow" 
-                                            visibility={(ctx) => ctx.collapsed === false} />
+                                            visibility={(ctx) => ctx.collapsed === false}
+                                            aggregate={true} />
                             <GridColumn field={DataPoints.ProtectionPotionsShadowAbsorbed} 
                                         label="Absorb" 
                                         cssClass="protection_potion shadow" 
-                                        visibility={(ctx) => ctx.collapsed === false} />
+                                        visibility={(ctx) => ctx.collapsed === false}
+                                        aggregate={true} />
                             <GridIconColumn field={DataPoints.ProtectionPotionsGreaterArcane} 
                                             label="Greater Arcane Protection Potion" 
                                             icon_name="inv_potion_83.jpg" 
                                             item_id={13461}
                                             cssClass="protection_potion arcane" 
-                                            visibility={(ctx) => ctx.collapsed === false} />
+                                            visibility={(ctx) => ctx.collapsed === false}
+                                            aggregate={true} />
                             <GridIconColumn field={DataPoints.ProtectionPotionsMajorArcane} 
                                             label="Major Arcane Protection Potion" 
                                             icon_name="inv_potion_128.jpg" 
                                             item_id={22845}
                                             cssClass="protection_potion arcane" 
-                                            visibility={(ctx) => ctx.collapsed === false} />
+                                            visibility={(ctx) => ctx.collapsed === false}
+                                            aggregate={true} />
                             <GridColumn field={DataPoints.ProtectionPotionsArcaneAbsorbed} 
                                         label="Absorb" 
                                         cssClass="protection_potion arcane" 
-                                        visibility={(ctx) => ctx.collapsed === false} />
+                                        visibility={(ctx) => ctx.collapsed === false}
+                                        aggregate={true} />
                         </GridColumnGroup>
                         <GridColumnGroup id={GroupKeys.Consumes} label="Consumes" cssClass="odd-colgroup">
                             <GridIconColumn field={DataPoints.ConsumesPotions} 

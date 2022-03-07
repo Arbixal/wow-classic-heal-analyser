@@ -20,6 +20,7 @@ export const GroupKeys = {
 
 export const DataPoints = {
     Name: "Name",
+    Type: "Type",
     Enchants: "Enchants",
     EnchantGood: "EnchantGood",
     EnchantAverage: "EnchantAverage",
@@ -157,6 +158,7 @@ export const DataPoints = {
 
 export const emptyData = {
     [DataPoints.Name]: " ",
+    [DataPoints.Type]: " ",
     [DataPoints.Enchants]: " ",
     [DataPoints.EnchantGood]: " ",
     [DataPoints.EnchantAverage]: " ",

@@ -55,6 +55,13 @@ export class Grid extends Component {
         }));
     }
 
+    _numericValue(value) {
+        if (value === ' ' || typeof(value) !== 'number')
+            return 0;
+
+        return value;
+    }
+
     calculateSummaryRow(data) {
         const {children} = this.props;
         let summaryRow = {...emptyData, [DataPoints.Name]: "Totals"};
@@ -72,7 +79,7 @@ export class Grid extends Component {
     
                     if (column.props.aggregate === true && column.props.field) {
                         const field = column.props.field;
-                        summaryRow[field] = (summaryRow[field] === ' ' ? 0 : summaryRow[field]) + character[field];
+                        summaryRow[field] = this._numericValue(summaryRow[field]) + this._numericValue(character[field]);
                     }
                 });
             });
@@ -113,7 +120,7 @@ export class Grid extends Component {
             </thead>
             <tbody>
                 {data.map((obj, idx) => (
-                <GridRow key={obj.id} character={obj} row={idx} context={ctx} fightId={fightId}>
+                <GridRow key={obj.Name} character={obj} row={idx} context={ctx} fightId={fightId}>
                     {children}
                 </GridRow>
                 ))}
