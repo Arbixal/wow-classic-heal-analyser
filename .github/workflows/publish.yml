@@ -26,11 +26,26 @@ jobs:
         cache: 'npm'
     - run: npm ci
     - run: npm run build --if-present
+    - name: Store Artifacts
+      uses: actions/upload-artifact@v3
+      with:
+        name: package
+        path: build
 
-
+  deploy_github:
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+    - name: Download artifacts
+      uses: actions/download-artifact@v3
+      with:
+        name: package
+        path: build
+        
   # You may pin to the exact commit or the version.
   # uses: tagus/git-deploy@c7de901f0c7d498fefa2dbddf99290a5b3015550
-    - uses: tagus/git-deploy@v0.3.2
+    - name: Deploy to Github.io
+      uses: tagus/git-deploy@v0.3.2
       with:
         # The ssh url of the target repository.
         repository: git@github.com:Arbixal/Arbixal.github.io.git
@@ -51,3 +66,24 @@ jobs:
         # message: # optional
         # Whether to remove files from the repo not present in the given changes
         # clean_repo: # optional
+        
+  deploy_aws:
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+    - name: Download artifacts
+      uses: actions/download-artifact@v3
+      with:
+        name: package
+        path: build
+        
+    - name: Configure AWS Credentials  
+      uses: aws-actions/configure-aws-credentials@v1
+      with: 
+          # Created the Secrets Under the Repo only with These Variables
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }} 
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-region: ap-southeast-2 #--> Define Region of the AWS-CLI 
+          
+    - name: Deploy to S3
+      run: aws s3 cp ./build s3://log-summary-site/ --recursive
