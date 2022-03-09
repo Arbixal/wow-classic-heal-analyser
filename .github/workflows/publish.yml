@@ -40,6 +40,7 @@ jobs:
       uses: actions/download-artifact@v3
       with:
         name: package
+        path: build
         
   # You may pin to the exact commit or the version.
   # uses: tagus/git-deploy@c7de901f0c7d498fefa2dbddf99290a5b3015550
@@ -74,6 +75,7 @@ jobs:
       uses: actions/download-artifact@v3
       with:
         name: package
+        path: build
         
     - name: Configure AWS Credentials  
       uses: aws-actions/configure-aws-credentials@v1
