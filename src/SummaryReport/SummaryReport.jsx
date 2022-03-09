@@ -7,7 +7,7 @@ import {Grid} from "./Grid";
 import {GridColumnGroup} from "./GridColumnGroup";
 import {GridColumn} from "./GridColumn";
 import {GridIconColumn} from "./GridIconColumn";
-import { GridBarColumn, GridBarColumnSection } from "./GridBarColumn";
+//import { GridBarColumn, GridBarColumnSection } from "./GridBarColumn";
 import { GridIconListColumn } from "./GridIconListColumn";
 import { BossNavItem } from "./BossNavItem";
 import ReactTooltip from "react-tooltip";
