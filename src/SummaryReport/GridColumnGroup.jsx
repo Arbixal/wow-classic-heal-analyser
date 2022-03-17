@@ -30,6 +30,10 @@ export class GridColumnGroup extends Component {
             return true;
         }
 
+        if (this.props.summary !== nextProps.summary) {
+            return true;
+        }
+
         return false;
     }
 
@@ -53,11 +57,11 @@ export class GridColumnGroup extends Component {
     }
 
     _getVisibleChildCount() {
-        const {children} = this.props;
-        let ctx =  this._getContext();
+        const {children, summary} = this.props;
 
         let visibleCount = 0;
         Children.forEach(children, (child) => {
+            let ctx = {...this._getContext(), hasValue: this._hasValue(child, summary)};
             if (isValidElement(child)) {
                 if (child.props.visibility) {
                     let isVisible = child.props.visibility(ctx);
@@ -102,6 +106,13 @@ export class GridColumnGroup extends Component {
         };
     }
 
+    _hasValue(child, summary) {
+        const {field, aggregate} = child.props;
+        const hasValue = aggregate === true && summary && summary[field] && summary[field] !== ' ' && summary[field] !== 0;
+
+        return hasValue;
+    }
+
     renderHeader() {
         const {id, label, onColGroupToggle, cssClass} = this.props;
         const {collapsed} = this.state;
@@ -116,10 +127,10 @@ export class GridColumnGroup extends Component {
     }
 
     renderSubHeader() {
-        const {children, cssClass} = this.props;
-        let ctx =  this._getContext();
+        const {children, cssClass, summary} = this.props;
 
         return Children.map(children, child => {
+            let ctx = {...this._getContext(), hasValue: this._hasValue(child, summary)};
             // checking isValidElement is the safe way and avoids a typescript error too
             if (isValidElement(child)) {
                 if (child.props.visibility) {
@@ -135,10 +146,10 @@ export class GridColumnGroup extends Component {
     }
 
     renderCell() {
-        const {children, data} = this.props;
-        let ctx =  this._getContext();
+        const {children, data, summary} = this.props;
 
         return Children.map(children, child => {
+            let ctx = {...this._getContext(), hasValue: this._hasValue(child, summary)};
             // checking isValidElement is the safe way and avoids a typescript error too
             if (isValidElement(child)) {
                 if (child.props.visibility) {

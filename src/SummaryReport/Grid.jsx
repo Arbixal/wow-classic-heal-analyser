@@ -103,7 +103,7 @@ export class Grid extends Component {
                     {Children.map(children, child => {
                         // checking isValidElement is the safe way and avoids a typescript error too
                         if (isValidElement(child)) {
-                            return cloneElement(child, { render: (x) => x.renderHeader(), renderType: "header", context: ctx, onColGroupToggle: this.handleColGroupToggle });
+                            return cloneElement(child, { render: (x) => x.renderHeader(), renderType: "header", context: ctx, summary: summaryRow, onColGroupToggle: this.handleColGroupToggle });
                         }
                         return child;
                     })}
@@ -112,7 +112,7 @@ export class Grid extends Component {
                 {Children.map(children, child => {
                         // checking isValidElement is the safe way and avoids a typescript error too
                         if (isValidElement(child)) {
-                            return cloneElement(child, { render: (x) => x.renderSubHeader(), renderType: "sub-header", context: ctx });
+                            return cloneElement(child, { render: (x) => x.renderSubHeader(), renderType: "sub-header", context: ctx, summary: summaryRow });
                         }
                         return child;
                     })}
@@ -120,7 +120,7 @@ export class Grid extends Component {
             </thead>
             <tbody>
                 {data.map((obj, idx) => (
-                <GridRow key={obj.Name} character={obj} row={idx} context={ctx} fightId={fightId}>
+                <GridRow key={obj.Name} character={obj} summary={summaryRow} row={idx} context={ctx} fightId={fightId}>
                     {children}
                 </GridRow>
                 ))}
@@ -130,7 +130,7 @@ export class Grid extends Component {
                 <tr className="Summary">
                     {Children.map(children, child => {
                         if (isValidElement(child)) {
-                            return cloneElement(child, { render: (x) => x.renderCell(), renderType: "cell", data: summaryRow, context: ctx })
+                            return cloneElement(child, { render: (x) => x.renderCell(), renderType: "cell", data: summaryRow, summary: summaryRow, context: ctx })
                         }
                     })}
                 </tr>
