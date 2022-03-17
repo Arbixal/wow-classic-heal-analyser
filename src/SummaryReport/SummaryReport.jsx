@@ -805,13 +805,13 @@ class SummaryReport extends Component {
                             <GridIconColumn field={DataPoints.DispelBoss}
                                         label="Boss" 
                                         cssClass="center"
-                                        icon_url="https://image.flaticon.com/icons/png/128/3325/3325105.png"
+                                        icon_name="inv_misc_bone_elfskull_01.jpg"
                                         visibility={(ctx) => ctx.classFilter == null && ctx.collapsed === true}
                                         aggregate={true} />
                             <GridIconColumn field={DataPoints.DispelTrash}
                                         label="Trash" 
                                         cssClass="center"
-                                        icon_url="https://image.flaticon.com/icons/png/128/3022/3022156.png"
+                                        icon_name="inv_gizmo_03.jpg"
                                         visibility={(ctx) => ctx.classFilter == null && ctx.collapsed === true}
                                         aggregate={true} />
 
