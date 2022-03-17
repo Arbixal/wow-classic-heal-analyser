@@ -22,7 +22,13 @@ export function ReportLoad() {
     return (
         <div className="App">
             <form onSubmit={handleSubmit} >
-            Enter your Classic Warcraft Logs ID: <input type="text" onChange={handleChange} /> <input type="submit" value="Go" />
+            <p>
+                Enter your Classic Warcraft Logs ID
+            </p>
+            <input type="text" onChange={handleChange} /> <input type="submit" value="Go" />
+            <p>
+            <span style={{color: "#999999"}}>https://classic.warcraftlogs.com/reports/&lt;log id&gt;</span>
+            </p>
             </form>
         </div>
     )
