@@ -509,6 +509,68 @@
     },
 
     {
+        "id": 901,
+        "name": "Akil'zon",
+        "logo": "https://wow.zamimg.com/images/wow/journal/ui-ej-boss-akilzon.png"
+    },
+    {
+        "id": 902,
+        "name": "Nalorakk",
+        "logo": "https://wow.zamimg.com/images/wow/journal/ui-ej-boss-nalorakk.png"
+    },
+    {
+        "id": 903,
+        "name": "Jan'alai",
+        "logo": "https://wow.zamimg.com/images/wow/journal/ui-ej-boss-janalai.png"
+    },
+    {
+        "id": 904,
+        "name": "Halazzi",
+        "logo": "https://wow.zamimg.com/images/wow/journal/ui-ej-boss-halazzi.png"
+    },
+    {
+        "id": 905,
+        "name": "Malacrass",
+        "logo": "https://wow.zamimg.com/images/wow/journal/ui-ej-boss-hex-lord-malacrass.png"
+    },
+    {
+        "id": 906,
+        "name": "Zul'jin",
+        "logo": "https://wow.zamimg.com/images/wow/journal/ui-ej-boss-daakara.png"
+    },
+
+    {
+        "id": 907,
+        "name": "Kalecgos",
+        "logo": "https://wow.zamimg.com/images/wow/journal/ui-ej-boss-kalecgos.png"
+    },
+    {
+        "id": 908,
+        "name": "Brutallus",
+        "logo": "https://wow.zamimg.com/images/wow/journal/ui-ej-boss-brutallus.png"
+    },
+    {
+        "id": 909,
+        "name": "Felmyst",
+        "logo": "https://wow.zamimg.com/images/wow/journal/ui-ej-boss-felmyst.png"
+    },
+    {
+        "id": 910,
+        "name": "Eredar Twins",
+        "logo": "https://wow.zamimg.com/images/wow/journal/ui-ej-boss-eredar-twins.png"
+    },
+    {
+        "id": 911,
+        "name": "M'uru",
+        "logo": "https://wow.zamimg.com/images/wow/journal/ui-ej-boss-muru.png"
+    },
+    {
+        "id": 912,
+        "name": "Kil'jaeden",
+        "logo": "https://wow.zamimg.com/images/wow/journal/ui-ej-boss-kiljaeden.png"
+    },
+
+    {
         "id": 100001,
         "name": "Hellfire Ramparts",
         "logo": "https://wow.zamimg.com/images/wow/journal/ui-ej-boss-vazruden.png"

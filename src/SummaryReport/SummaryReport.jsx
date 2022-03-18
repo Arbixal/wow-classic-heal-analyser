@@ -1078,7 +1078,7 @@ class SummaryReport extends Component {
                         </GridColumnGroup> */}
                     </Grid>
                     <ReactTooltip />
-                    <p>* Resistance calculations include "random enchantment" items that can may or may not be "of [School] Protection"</p>
+                    <p>* Resistance calculations include "random enchantment" items that may or may not be "of [School] Protection"</p>
                 </>
             )
         }

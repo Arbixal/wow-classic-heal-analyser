@@ -12,7 +12,18 @@ export function ReportLoad() {
     let [reportId, setReportId] = useState();
 
     let handleChange = (event) => {
-        setReportId(event.target.value);
+        const urlPrefix = "https://classic.warcraftlogs.com/reports/"
+        const value = event.target.value;
+        let reportId = null;
+        if (value.match(/^[a-zA-Z0-9]{16}$/)) {
+            reportId = value;
+        } else if (value.startsWith(urlPrefix)) {
+            reportId = value.substr(urlPrefix.length, 16);
+        }
+
+        if (reportId !== null) {
+            setReportId(reportId);
+        }
     }
 
     let handleSubmit = () => {
@@ -23,11 +34,13 @@ export function ReportLoad() {
         <div className="App">
             <form onSubmit={handleSubmit} >
             <p>
-                Enter your Classic Warcraft Logs ID
+                Enter your Classic Warcraft Logs URL or ID
             </p>
-            <input type="text" onChange={handleChange} /> <input type="submit" value="Go" />
+            <input style={{width: "400px"}} type="text" onChange={handleChange} /> <input type="submit" value="Go" />
             <p>
-            <span style={{color: "#999999"}}>https://classic.warcraftlogs.com/reports/&lt;log id&gt;</span>
+            <span style={{color: "#999999"}}>https://classic.warcraftlogs.com/reports/&lt;log id&gt;</span><br />
+            or<br />
+            <span style={{color: "#999999"}}>&lt;log id&gt;</span><br />
             </p>
             </form>
         </div>
