@@ -86,4 +86,6 @@ jobs:
           aws-region: ap-southeast-2 #--> Define Region of the AWS-CLI 
           
     - name: Deploy to S3
-      run: aws s3 cp ./build s3://log-summary-site/ --recursive
+      run: |
+        aws s3 cp ./build s3://log-summary-site/ --recursive
+        aws cloudfront create-invalidation --distribution-id E1G7YVBUM32I0D --paths "/index.html"
