@@ -34,7 +34,7 @@ export function FightChart(props) {
                 cssClass: "idle", 
                 id: 10000 + index, 
                 duration: msToTime(fight.start_time - array[index-1].end_time),
-                tt_label: msToTime(fight.end_time - fight.start_time) + " (" + msToTime(fight.start_time) + "-" + msToTime(fight.end_time) + ")",
+                tt_label: msToTime(fight.start_time - array[index-1].end_time) + " (" + msToTime(array[index-1].end_time) + "-" + msToTime(fight.start_time) + ")",
                 name: null
             });
         }
