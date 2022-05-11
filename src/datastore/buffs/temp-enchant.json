@@ -76,5 +76,17 @@
         "itemId": 23122,
         "name": "Consecrated Sharpening Stone",
         "icon": "inv_stone_sharpeningstone_02.jpg"
+    },
+    {
+        "id": 2718,
+        "itemId": 23559,
+        "name": "Lesser Rune of Warding",
+        "icon": "inv_misc_rune_11.jpg"
+    },
+    {
+        "id": 2791,
+        "itemId": 25521,
+        "name": "Greater Rune of Warding",
+        "icon": "inv_misc_rune_10.jpg"
     }
 ]

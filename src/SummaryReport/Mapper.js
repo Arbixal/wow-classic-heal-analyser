@@ -1,5 +1,5 @@
 import {itemSlots, protectionPotionEnum, rarity} from "../data";
-import {battleElixirBuffs, cooldownList, flaskBuffs, foodBuffs, guardianElixirBuffs, scrollBuffs, seasonBuffs, tempWeaponEnchants, enchants, gemList} from "../datastore";
+import {battleElixirBuffs, cooldownList, flaskBuffs, foodBuffs, guardianElixirBuffs, scrollBuffs, seasonBuffs, tempWeaponEnchants, imbuesWithBuffs, enchants, gemList} from "../datastore";
 import {DataPoints, emptyData} from "./GridContexts";
 import {sumNonNull} from "../utils";
 
@@ -30,7 +30,7 @@ export class CharacterMapper {
         characterData[DataPoints.ElixirsGuardian] = this._getBuffs(character, guardianElixirBuffs);
         characterData[DataPoints.ElixirsSeasonal] = this._getBuffs(character, seasonBuffs);
         characterData[DataPoints.ElixirsScrolls] = this._getBuffs(character, scrollBuffs);
-        characterData[DataPoints.ElixirsWeaponEnchants] = this._getWeaponImbue(character, tempWeaponEnchants);
+        characterData[DataPoints.ElixirsWeaponEnchants] = this._getWeaponImbue(character, tempWeaponEnchants, imbuesWithBuffs);
 
         characterData[DataPoints.ProtectionPotionsGreaterArcane] = this._getProtectionPotionCount(character, protectionPotionEnum.GAPP);
         characterData[DataPoints.ProtectionPotionsMajorArcane] = this._getProtectionPotionCount(character, protectionPotionEnum.MAPP);
@@ -265,8 +265,8 @@ export class CharacterMapper {
         return activeBuffs;
     }
 
-    _getWeaponImbue(character, options) {
-        const {imbues} = character.data;
+    _getWeaponImbue(character, options, extraOptions) {
+        const {imbues, buffs} = character.data;
 
         if (!imbues?.main_hand && !imbues?.off_hand) {
             return [];
@@ -295,6 +295,12 @@ export class CharacterMapper {
                 activeBuffs.push({...options[i], name: options[i].name + ' (OH)'});
             } */
             
+        }
+
+        for (let i = 0; i < extraOptions.length; ++i) {
+            if (buffs[extraOptions[i].id]) {
+                activeBuffs.push(extraOptions[i]);
+            }
         }
 
         return activeBuffs;

@@ -4,6 +4,7 @@ import gems_raw from "./gems.json";
 import cooldowns_raw from './cooldowns';
 
 export {default as tempWeaponEnchants} from './buffs/temp-enchant.json';
+export {default as imbuesWithBuffs} from './buffs/imbues-with-buffs.json';
 export {default as seasonBuffs} from './buffs/seasonal.json';
 export {default as flaskBuffs} from './buffs/flask.json';
 export {default as battleElixirBuffs} from './buffs/elixir-battle.json';
