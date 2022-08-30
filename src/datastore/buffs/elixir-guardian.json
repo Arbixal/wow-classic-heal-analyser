@@ -106,5 +106,41 @@
         "itemId": 8424,
         "name": "Gizzard Gum",
         "icon": "inv_misc_food_30.jpg"
+    },
+    {
+        "id": 53764,
+        "itemId": 40109,
+        "name": "Elixir of Mighty Mageblood",
+        "icon": "inv_potion_129.jpg"
+    },
+    {
+        "id": 53747,
+        "itemId": 40072,
+        "name": "Elixir of Spirit",
+        "icon": "inv_potion_02.jpg"
+    },
+    {
+        "id": 60347,
+        "itemId": 44332,
+        "name": "Elixir of Mighty Thoughts",
+        "icon": "inv_potion_161.jpg"
+    },
+    {
+        "id": 60343,
+        "itemId": 44328,
+        "name": "Elixir of Mighty Defense",
+        "icon": "inv_alchemy_potion_03.jpg"
+    },
+    {
+        "id": 53763,
+        "itemId": 40097,
+        "name": "Elixir of Protection",
+        "icon": "inv_alchemy_potion_empty.jpg"
+    },
+    {
+        "id": 53751,
+        "itemId": 40078,
+        "name": "Elixir of Mighty Fortitude",
+        "icon": "inv_potion_164.jpg"
     }
 ]

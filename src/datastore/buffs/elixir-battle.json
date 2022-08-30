@@ -130,5 +130,65 @@
         "itemId": 13453,
         "name": "Elixir of Brute Force",
         "icon": "inv_potion_59.jpg"
+    },
+    {
+        "id": 28497,
+        "itemId": 39666,
+        "name": "Elixir of Mighty Agility",
+        "icon": "inv_potion_162.jpg"
+    },
+    {
+        "id": 53749,
+        "itemId": 40076,
+        "name": "Guru's Elixir",
+        "icon": "inv_potion_112.jpg"
+    },
+    {
+        "id": 33721,
+        "itemId": 40070,
+        "name": "Spellpower Elixir",
+        "icon": "inv_alchemy_potion_05.jpg"
+    },
+    {
+        "id": 53748,
+        "itemId": 40073,
+        "name": "Elixir of Mighty Strength",
+        "icon": "inv_potion_165.jpg"
+    },
+    {
+        "id": 60345,
+        "itemId": 44330,
+        "name": "Elixir of Armor Piercing",
+        "icon": "inv_alchemy_potion_06.jpg"
+    },
+    {
+        "id": 60344,
+        "itemId": 44329,
+        "name": "Elixir of Expertise",
+        "icon": "inv_alchemy_potion_01.jpg"
+    },
+    {
+        "id": 60346,
+        "itemId": 44331,
+        "name": "Elixir of Lightning Speed",
+        "icon": "inv_alchemy_potion_04.jpg"
+    },
+    {
+        "id": 53746,
+        "itemId": 40068,
+        "name": "Wrath Elixir",
+        "icon": "inv_potion_114.jpg"
+    },
+    {
+        "id": 60341,
+        "itemId": 44327,
+        "name": "Elixir of Deadly Strikes",
+        "icon": "inv_alchemy_potion_02.jpg"
+    },
+    {
+        "id": 60340,
+        "itemId": 44325,
+        "name": "Elixir of Accuracy",
+        "icon": "inv_potion_61.jpg"
     }
 ]

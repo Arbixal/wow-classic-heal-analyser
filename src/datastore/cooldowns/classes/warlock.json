@@ -75,5 +75,12 @@
         "type":  "Ability",
         "icon":  "spell_arcane_arcane01.jpg",
         "cooldown":  300000
+    },
+    {
+        "id": 47241,
+        "name":  "Metamorphosis",
+        "type":  "Ability",
+        "icon":  "spell_shadow_demonform.jpg",
+        "cooldown":  300000
     }
 ]

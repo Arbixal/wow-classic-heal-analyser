@@ -1,3 +1,4 @@
+import deathknight from './classes/deathknight.json';
 import druid from './classes/druid.json';
 import hunter from './classes/hunter.json';
 import mage from './classes/mage.json';
@@ -11,4 +12,4 @@ import racials from './racials.json';
 import items from './items.json';
 
 // eslint-disable-next-line import/no-anonymous-default-export
-export default [...druid, ...hunter, ...mage, ...paladin, ...priest, ...rogue, ...shaman, ...warlock, ...warrior, ...racials, ...items];
+export default [...deathknight, ...druid, ...hunter, ...mage, ...paladin, ...priest, ...rogue, ...shaman, ...warlock, ...warrior, ...racials, ...items];

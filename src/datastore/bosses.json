@@ -649,5 +649,93 @@
         "id": 100016,
         "name": "Magister's Terrace",
         "logo": "https://wow.zamimg.com/images/wow/journal/ui-ej-boss-kaelthas-sunstrider.png"
+    },
+
+    {
+        "id": 101118,
+        "name": "Patchwerk",
+        "logo": "https://wow.zamimg.com/images/wow/journal/ui-ej-boss-patchwerk.png"
+    },
+    {
+        "id": 101111,
+        "name": "Grobbulus",
+        "logo": "https://wow.zamimg.com/images/wow/journal/ui-ej-boss-grobbulus.png"
+    },
+    {
+        "id": 101108,
+        "name": "Gluth",
+        "logo": "https://wow.zamimg.com/images/wow/journal/ui-ej-boss-gluth.png"
+    },
+    {
+        "id": 101120,
+        "name": "Thaddius",
+        "logo": "https://wow.zamimg.com/images/wow/journal/ui-ej-boss-thaddius.png"
+    },
+    {
+        "id": 101117,
+        "name": "Noth",
+        "logo": "https://wow.zamimg.com/images/wow/journal/ui-ej-boss-noth-the-plaguebringer.png"
+    },
+    {
+        "id": 101112,
+        "name": "Heigan",
+        "logo": "https://wow.zamimg.com/images/wow/journal/ui-ej-boss-heigan-the-unclean.png"
+    },
+    {
+        "id": 101115,
+        "name": "Loatheb",
+        "logo": "https://wow.zamimg.com/images/wow/journal/ui-ej-boss-loatheb.png"
+    },
+    {
+        "id": 101107,
+        "name": "Anub'Rekhan",
+        "logo": "https://wow.zamimg.com/images/wow/journal/ui-ej-boss-anubrekhan.png"
+    },
+    {
+        "id": 101110,
+        "name": "Faerlina",
+        "logo": "https://wow.zamimg.com/images/wow/journal/ui-ej-boss-grand-widow-faerlina.png"
+    },
+    {
+        "id": 101116,
+        "name": "Maexxna",
+        "logo": "https://wow.zamimg.com/images/wow/journal/ui-ej-boss-maexxna.png"
+    },
+    {
+        "id": 101113,
+        "name": "Razuvious",
+        "logo": "https://wow.zamimg.com/images/wow/journal/ui-ej-boss-instructor-razuvious.png"
+    },
+    {
+        "id": 101109,
+        "name": "Gothik",
+        "logo": "https://wow.zamimg.com/images/wow/journal/ui-ej-boss-gothik-the-harvester.png"
+    },
+    {
+        "id": 101121,
+        "name": "Four Horsemen",
+        "logo": "https://wow.zamimg.com/images/wow/journal/ui-ej-boss-four-horseman.png"
+    },
+    {
+        "id": 101119,
+        "name": "Sapphiron",
+        "logo": "https://wow.zamimg.com/images/wow/journal/ui-ej-boss-sapphiron.png"
+    },
+    {
+        "id": 101114,
+        "name": "Kel'Thuzad",
+        "logo": "https://wow.zamimg.com/images/wow/journal/ui-ej-boss-kelthuzad.png"
+    },
+    {
+        "id": 742,
+        "name": "Sartharion",
+        "logo": "https://wow.zamimg.com/images/wow/journal/ui-ej-boss-sartharion.png"
+    },
+    {
+        "id": 734,
+        "name": "Malygos",
+        "logo": "https://wow.zamimg.com/images/wow/journal/ui-ej-boss-malygos.png"
     }
+
+
 ]

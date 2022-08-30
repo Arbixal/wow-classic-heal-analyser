@@ -94,5 +94,47 @@
         "itemId": 13513,
         "name": "Flask of Chromatic Resistance",
         "icon": "inv_potion_48.jpg"
+    },
+    {
+        "id": 53755,
+        "itemId": 46376,
+        "name": "Flask of the Frost Wyrm",
+        "icon": "inv_alchemy_endlessflask_04.jpg"
+    },
+    {
+        "id": 53760,
+        "itemId": 46377,
+        "name": "Flask of Endless Rage",
+        "icon": "inv_alchemy_endlessflask_06.jpg"
+    },
+    {
+        "id": 53758,
+        "itemId": 46379,
+        "name": "Flask of Stoneblood",
+        "icon": "inv_alchemy_endlessflask_05.jpg"
+    },
+    {
+        "id": 54212,
+        "itemId": 46378,
+        "name": "Flask of Pure Mojo",
+        "icon": "inv_alchemy_endlessflask_03.jpg"
+    },
+    {
+        "id": 67019,
+        "itemId": 47499,
+        "name": "Flask of the North",
+        "icon": "inv_alchemy_endlessflask_05.jpg"
+    },
+    {
+        "id": 53752,
+        "itemId": 40079,
+        "name": "Lesser Flask of Toughness",
+        "icon": "inv_alchemy_endlessflask_02.jpg"
+    },
+    {
+        "id": 62380,
+        "itemId": 44939,
+        "name": "Lesser Flask of Resistance",
+        "icon": "inv_potion_118.jpg"
     }
 ]
