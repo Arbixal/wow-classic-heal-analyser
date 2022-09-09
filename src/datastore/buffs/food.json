@@ -76,5 +76,137 @@
         "itemId": 33866,
         "name": "Stormchops",
         "icon": "inv_misc_food_91.jpg"
+    },
+    {
+        "id": 57399,
+        "itemId": 43015,
+        "name": "+80ap, +46sp, +40stam",
+        "icon": "inv_misc_fish_52.jpg"
+    },
+    {
+        "id": 57294,
+        "itemId": 34753,
+        "name": "+60ap, +35sp, +30stam",
+        "icon": "ability_hunter_pet_boar.jpg"
+    },
+    {
+        "id": 57371,
+        "itemId": 43000,
+        "name": "+40 strength",
+        "icon": "inv_misc_food_75.jpg"
+    },
+    {
+        "id": 57367,
+        "itemId": 42999,
+        "name": "+40 agility",
+        "icon": "inv_misc_food_142_fish.jpg"
+    },
+    {
+        "id": 57334,
+        "itemId": 42993,
+        "name": "+20 mp5",
+        "icon": "inv_misc_food_78.jpg"
+    },
+    {
+        "id": 57291,
+        "itemId": 34752,
+        "name": "+15 mp5",
+        "icon": "inv_misc_food_53.jpg"
+    },
+    {
+        "id": 57107,
+        "itemId": 34765,
+        "name": "+15 mp5",
+        "icon": "inv_misc_food_76.jpg"
+    },
+    {
+        "id": 57327,
+        "itemId": 34755,
+        "name": "+46 spell power",
+        "icon": "inv_misc_food_122_steak.jpg"
+    },
+    {
+        "id": 57139,
+        "itemId": 34749,
+        "name": "+35 spell power",
+        "icon": "inv_misc_food_89.jpg"
+    },
+    {
+        "id": 57097,
+        "itemId": 34763,
+        "name": "+35 spell power",
+        "icon": "inv_misc_food_130_fish.jpg"
+    },
+    {
+        "id": 57356,
+        "itemId": 42994,
+        "name": "+40 expertise rating",
+        "icon": "inv_misc_food_47.jpg"
+    },
+    {
+        "id": 57360,
+        "itemId": 42996,
+        "name": "+40 hit rating",
+        "icon": "inv_misc_food_129_fish.jpg"
+    },
+    {
+        "id": 57325,
+        "itemId": 34754,
+        "name": "+80 attack power",
+        "icon": "inv_misc_food_108_meadcaribou.jpg"
+    },
+    {
+        "id": 57079,
+        "itemId": 34762,
+        "name": "+60 attack power",
+        "icon": "inv_misc_food_79.jpg"
+    },
+    {
+        "id": 57111,
+        "itemId": 34748,
+        "name": "+60 attack power",
+        "icon": "inv_misc_food_116_condorleg.jpg"
+    },
+    {
+        "id": 57358,
+        "itemId": 42995,
+        "name": "+40 armor penetration",
+        "icon": "inv_misc_food_115_condorsoup.jpg"
+    },
+    {
+        "id": 57365,
+        "itemId": 42998,
+        "name": "+40 spirit",
+        "icon": "inv_misc_food_133_meat.jpg"
+    },
+    {
+        "id": 57332,
+        "itemId": 34769,
+        "name": "+40 haste rating",
+        "icon": "inv_misc_food_121_buttermeat.jpg"
+    },
+    {
+        "id": 57288,
+        "itemId": 34751,
+        "name": "+30 haste rating",
+        "icon": "inv_misc_food_86_basilisk.jpg"
+    },
+    {
+        "id": 57329,
+        "itemId": 34756,
+        "name": "+40 critical strike rating",
+        "icon": "inv_misc_food_65.jpg"
+    },
+    {
+        "id": 57286,
+        "itemId": 34750,
+        "name": "+30 critical strike rating",
+        "icon": "inv_misc_food_124_skewer.jpg"
+    },
+    {
+        "id": 57100,
+        "itemId": 34764,
+        "name": "+30 critical strike rating",
+        "icon": "inv_misc_food_138_fish.jpg"
     }
 ]

@@ -42,47 +42,62 @@ const classes = {
     'warrior': {
         slug: 'warrior',
         name: 'Warrior',
+        filter: 'Warrior',
         icon: 'https://assets.rpglogs.com/img/warcraft/abilities/inv_sword_27.jpg',
     },
     'rogue': {
         slug: 'rogue',
         name: 'Rogue',
+        filter: 'Rogue',
         icon: 'https://assets.rpglogs.com/img/warcraft/abilities/INV_ThrowingKnife_04.jpg',
     },
     'hunter': {
         slug: 'hunter',
         name: 'Hunter',
+        filter: 'Hunter',
         icon: 'https://assets.rpglogs.com/img/warcraft/abilities/INV_Weapon_Bow_07.jpg',
     },
     'mage': {
         slug: 'mage',
         name: 'Mage',
+        filter: 'Mage',
         icon: 'https://assets.rpglogs.com/img/warcraft/abilities/INV_Staff_13.jpg',
     },
     'warlock': {
         slug: 'warlock',
         name: 'Warlock',
+        filter: 'Warlock',
         icon: 'https://assets.rpglogs.com/img/warcraft/abilities/Spell_Nature_Drowsy.jpg',
     },
     'priest': {
         slug: 'priest',
         name: 'Priest',
+        filter: 'Priest',
         icon: 'https://assets.rpglogs.com/img/warcraft/abilities/INV_Staff_30.jpg',
     },
     'paladin': {
         slug: 'paladin',
         name: 'Paladin',
+        filter: 'Paladin',
         icon: 'https://wow.zamimg.com/images/wow/icons/medium/class_paladin.jpg',
     },
     'shaman': {
         slug: 'shaman',
         name: 'Shaman',
+        filter: 'Shaman',
         icon: 'https://assets.rpglogs.com/img/warcraft/abilities/inv_jewelry_talisman_04.jpg',
     },
     'druid': {
         slug: 'druid',
         name: 'Druid',
+        filter: 'Druid',
         icon: 'https://assets.rpglogs.com/img/warcraft/abilities/Ability_Druid_Maul.jpg',
+    },
+    'deathknight': {
+        slug: 'deathknight',
+        name: 'Death Knight',
+        filter: 'DeathKnight',
+        icon: 'https://wow.zamimg.com/images/wow/icons/medium/class_deathknight.jpg',
     },
 }
 
@@ -216,7 +231,7 @@ class SummaryReport extends Component {
     _generateFilteredData(characters) {
         const {filter} = this.props.match.params;
 
-        const classSortOrder = { Warrior: 0, Rogue: 1, Hunter: 2, Mage: 3, Warlock: 4, Priest: 5, Shaman: 6, Paladin: 7, Druid: 8 };
+        const classSortOrder = { Warrior: 0, Rogue: 1, Hunter: 2, Mage: 3, Warlock: 4, Priest: 5, Shaman: 6, Paladin: 7, Druid: 8, DeathKnight: 9 };
 
         let roleFilter = null;
         let classFilter = null;
@@ -227,12 +242,12 @@ class SummaryReport extends Component {
         }
 
         if (classes[filter]) {
-            classFilter = classes[filter].name;
+            classFilter = classes[filter].filter;
             roleFilter = null;
         }
 
         let data = [...Object.values(characters)
-        .filter((character) => character.type !== "NPC" && character.type !== "Pet" && character.type !== "Boss")
+        .filter((character) => character.type !== "NPC" && character.type !== "Pet" && character.type !== "Boss" && character.type !== "Unknown")
         .filter((character) => classFilter == null || character.type === classFilter)
         .filter((character) => roleFilter == null || character.data.roles.includes(roleFilter))
         .sort((aValue, bValue) => {
@@ -321,7 +336,7 @@ class SummaryReport extends Component {
                         <div className="separator"></div>
                         {Object.values(roles).map(role => <NavLink key={role.slug} to={"/" + reportId + "/" + selectedFight + "/" + role.slug} activeClassName="selected"><div className={"class_nav " + role.name}><img className="spell_icon" src={role.icon} alt={role.name} />{role.name}</div></NavLink>)}
                         <div className="separator"></div>
-                        {Object.values(classes).map(role => <NavLink key={role.slug} to={"/" + reportId + "/" + selectedFight + "/" + role.slug} activeClassName="selected"><div className={"class_nav " + role.name}><img className="spell_icon" src={role.icon} alt={role.name} />{role.name}</div></NavLink>)}
+                        {Object.values(classes).map(role => <NavLink key={role.slug} to={"/" + reportId + "/" + selectedFight + "/" + role.slug} activeClassName="selected"><div className={"class_nav " + role.slug}><img className="spell_icon" src={role.icon} alt={role.name} />{role.name}</div></NavLink>)}
                     </div>
 
                     <Grid data={data} classFilter={classFilter} roleFilter={roleFilter} fightId={selectedFight} boss={boss}>
@@ -549,22 +564,22 @@ class SummaryReport extends Component {
                                             aggregate={true} />
                             <GridIconColumn field={DataPoints.ConsumesManaPots} 
                                             label="Mana Potions" 
-                                            icon_name="inv_potion_137.jpg" 
-                                            item_id={22832}
+                                            icon_name="inv_alchemy_elixir_02.jpg" 
+                                            item_id={33448}
                                             cssClass="protection_potion frost"
                                             visibility={(ctx) => ctx.collapsed === false && ctx.hasValue}
                                             aggregate={true} />
                             <GridIconColumn field={DataPoints.ConsumesRejuvPots} 
                                             label="Rejuvenation Potions" 
-                                            icon_name="inv_potion_134.jpg" 
-                                            item_id={22850}
+                                            icon_name="inv_alchemy_elixir_06.jpg" 
+                                            item_id={40087}
                                             cssClass="protection_potion frost"
                                             visibility={(ctx) => ctx.collapsed === false && ctx.hasValue}
                                             aggregate={true} />
                             <GridIconColumn field={DataPoints.ConsumesHealthPots} 
                                             label="Healing Potion" 
-                                            icon_name="inv_potion_131.jpg" 
-                                            item_id={22829}
+                                            icon_name="inv_alchemy_elixir_05.jpg" 
+                                            item_id={33447}
                                             cssClass="protection_potion frost"
                                             visibility={(ctx) => ctx.collapsed === false && ctx.hasValue}
                                             aggregate={true} />
@@ -633,8 +648,8 @@ class SummaryReport extends Component {
                                             aggregate={true} />
                             <GridIconColumn field={DataPoints.ConsumesHaste} 
                                             label="Haste Potion" 
-                                            icon_name="inv_potion_108.jpg" 
-                                            item_id={22838}
+                                            icon_name="inv_alchemy_elixir_04.jpg" 
+                                            item_id={40211}
                                             cssClass="protection_potion frost"
                                             visibility={(ctx) => ctx.collapsed === false && ctx.hasValue}
                                             aggregate={true} />
@@ -642,6 +657,20 @@ class SummaryReport extends Component {
                                             label="Fel Mana Potion" 
                                             icon_name="inv_potion_138.jpg" 
                                             item_id={31677}
+                                            cssClass="protection_potion frost"
+                                            visibility={(ctx) => ctx.collapsed === false && ctx.hasValue}
+                                            aggregate={true} />
+                            <GridIconColumn field={DataPoints.ConsumesWildMagic} 
+                                            label="Potion of Wild Magic" 
+                                            icon_name="inv_alchemy_elixir_01.jpg" 
+                                            item_id={40212}
+                                            cssClass="protection_potion frost"
+                                            visibility={(ctx) => ctx.collapsed === false && ctx.hasValue}
+                                            aggregate={true} />
+                            <GridIconColumn field={DataPoints.ConsumesIndestructable} 
+                                            label="Indestructable Potion" 
+                                            icon_name="inv_alchemy_elixir_empty.jpg" 
+                                            item_id={40093}
                                             cssClass="protection_potion frost"
                                             visibility={(ctx) => ctx.collapsed === false && ctx.hasValue}
                                             aggregate={true} />
@@ -662,7 +691,7 @@ class SummaryReport extends Component {
                             <GridIconColumn field={DataPoints.ConsumesHealthStones} 
                                             label="Major Health Stone" 
                                             icon_name="inv_stone_04.jpg" 
-                                            item_id={22105}
+                                            item_id={36892}
                                             cssClass="protection_potion nature"
                                             visibility={(ctx) => ctx.collapsed === false && ctx.hasValue}
                                             aggregate={true} />
@@ -689,8 +718,8 @@ class SummaryReport extends Component {
                                             aggregate={true} />
                             <GridIconColumn field={DataPoints.ConsumesManaGem} 
                                             label="Mana Gem" 
-                                            icon_name="inv_misc_gem_stone_01.jpg" 
-                                            item_id={22044}
+                                            icon_name="inv_misc_gem_sapphire_02.jpg" 
+                                            item_id={33312}
                                             cssClass="protection_potion nature"
                                             visibility={(ctx) => ctx.collapsed === false && ctx.hasValue}
                                             aggregate={true} />
@@ -835,18 +864,11 @@ class SummaryReport extends Component {
                                             spell_id={2893}
                                             visibility={(ctx) => ctx.classFilter === "Druid"}
                                             aggregate={true} />
-                            <GridIconColumn field={DataPoints.DispelShamanCurePoison} 
-                                            label="Cure Poison" 
+                            <GridIconColumn field={DataPoints.DispelShamanCureToxins} 
+                                            label="Cure Toxins" 
                                             icon_name="spell_nature_nullifypoison.jpg" 
                                             cssClass="center"
                                             spell_id={526}
-                                            visibility={(ctx) => ctx.classFilter === "Shaman"}
-                                            aggregate={true} />
-                            <GridIconColumn field={DataPoints.DispelShamanPoisonCleansingTotem} 
-                                            label="Poison Cleansing Totem" 
-                                            icon_name="spell_nature_poisoncleansingtotem.jpg" 
-                                            cssClass="center"
-                                            spell_id={8166}
                                             visibility={(ctx) => ctx.classFilter === "Shaman"}
                                             aggregate={true} />
 
@@ -870,15 +892,8 @@ class SummaryReport extends Component {
                                             spell_id={552}
                                             visibility={(ctx) => ctx.classFilter === "Priest"}
                                             aggregate={true} />
-                            <GridIconColumn field={DataPoints.DispelShamanCureDisease} 
-                                            label="Cure Disease" 
-                                            icon_name="spell_nature_removedisease.jpg" 
-                                            cssClass="center"
-                                            spell_id={2870}
-                                            visibility={(ctx) => ctx.classFilter === "Shaman"}
-                                            aggregate={true} />
-                            <GridIconColumn field={DataPoints.DispelShamanDiseaseCleansingTotem} 
-                                            label="Disease Cleansing Totem" 
+                            <GridIconColumn field={DataPoints.DispelShamanCleansingTotem} 
+                                            label="Cleansing Totem" 
                                             icon_name="spell_nature_diseasecleansingtotem.jpg" 
                                             cssClass="center"
                                             spell_id={8170}
@@ -967,6 +982,13 @@ class SummaryReport extends Component {
                                             spell_id={16979}
                                             visibility={(ctx) => ctx.classFilter === "Druid"}
                                             aggregate={true} />
+                            <GridIconColumn field={DataPoints.InterruptDruidMaim} 
+                                            label="Maim" 
+                                            icon_name="ability_druid_mangle-tga.jpg" 
+                                            cssClass="center"
+                                            spell_id={49802}
+                                            visibility={(ctx) => ctx.classFilter === "Druid"}
+                                            aggregate={true} />
                             <GridIconColumn field={DataPoints.InterruptMageCounterspell} 
                                             label="Counterspell" 
                                             icon_name="spell_frost_iceshock.jpg" 
@@ -982,10 +1004,10 @@ class SummaryReport extends Component {
                                             visibility={(ctx) => ctx.classFilter === "Priest"}
                                             aggregate={true} />
                             <GridIconColumn field={DataPoints.InterruptShamanEarthShock} 
-                                            label="Earth Shock" 
-                                            icon_name="spell_nature_earthshock.jpg" 
+                                            label="Wind Shear" 
+                                            icon_name="spell_nature_cyclone.jpg" 
                                             cssClass="center"
-                                            spell_id={25454}
+                                            spell_id={57994}
                                             visibility={(ctx) => ctx.classFilter === "Shaman"}
                                             aggregate={true} />
                             <GridIconColumn field={DataPoints.InterruptRogueKick} 
@@ -1029,6 +1051,20 @@ class SummaryReport extends Component {
                                             cssClass="center"
                                             spell_id={6554}
                                             visibility={(ctx) => ctx.classFilter === "Warrior"}
+                                            aggregate={true} />
+                            <GridIconColumn field={DataPoints.InterruptMindFreeze} 
+                                            label="Mind Freeze" 
+                                            icon_name="spell_deathknight_mindfreeze.jpg" 
+                                            cssClass="center"
+                                            spell_id={47528}
+                                            visibility={(ctx) => ctx.classFilter === "DeathKnight"}
+                                            aggregate={true} />
+                            <GridIconColumn field={DataPoints.InterruptStrangulate} 
+                                            label="Strangulate" 
+                                            icon_name="spell_shadow_soulleech_3.jpg" 
+                                            cssClass="center"
+                                            spell_id={47476}
+                                            visibility={(ctx) => ctx.classFilter === "DeathKnight"}
                                             aggregate={true} />
                             
                         </GridColumnGroup>

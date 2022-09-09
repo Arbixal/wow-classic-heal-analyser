@@ -124,5 +124,26 @@
         "type":  "Ability",
         "icon":  "ability_bullrush.jpg",
         "cooldown":  180000
+    },
+    {
+        "id": 50334,
+        "name":  "Berserk",
+        "type":  "Ability",
+        "icon":  "ability_druid_berserk.jpg",
+        "cooldown":  180000
+    },
+    {
+        "id": 61336,
+        "name":  "Survival Instincts",
+        "type":  "Ability",
+        "icon":  "ability_druid_tigersroar.jpg",
+        "cooldown":  180000
+    },
+    {
+        "id": 48505,
+        "name":  "Starfall",
+        "type":  "Ability",
+        "icon":  "ability_druid_starfall.jpg",
+        "cooldown":  90000
     }
 ]

@@ -191,6 +191,10 @@ tr.Warrior {
     @include character-block($warrior);
 }
 
+tr.DeathKnight {
+    @include character-block($deathknight);
+}
+
 tr.Summary {
     @include character-block($poor);
 }
@@ -383,7 +387,8 @@ div.boss_nav {
     &.class_nav {
         padding: 5px;
         margin: 5px;
-        width: 70px;
+        min-width: 70px;
+        max-width: 100px;
         border: solid 1px #333333;
         border-radius: 5px;
         color: $class_color;
@@ -418,40 +423,44 @@ div.nav_bar {
                 @include class_hover($nature);
             }
 
-            div.Warrior {
+            div.warrior {
                 @include class_hover($warrior);
             }
 
-            div.Rogue {
+            div.rogue {
                 @include class_hover($rogue);
             }
 
-            div.Hunter {
+            div.hunter {
                 @include class_hover($hunter);
             }
 
-            div.Mage {
+            div.mage {
                 @include class_hover($mage);
             }
 
-            div.Warlock {
+            div.warlock {
                 @include class_hover($warlock);
             }
 
-            div.Priest {
+            div.priest {
                 @include class_hover($priest);
             }
 
-            div.Paladin {
+            div.paladin {
                 @include class_hover($paladin);
             }
 
-            div.Shaman {
+            div.shaman {
                 @include class_hover($shaman);
             }
 
-            div.Druid {
+            div.druid {
                 @include class_hover($druid);
+            }
+
+            div.deathknight {
+                @include class_hover($deathknight);
             }
         }
 
@@ -467,40 +476,44 @@ div.nav_bar {
             @include class_nav($nature);
         }
 
-        div.Warrior {
+        div.warrior {
             @include class_nav($warrior);
         }
     
-        div.Rogue {
+        div.rogue {
             @include class_nav($rogue);
         }
     
-        div.Hunter {
+        div.hunter {
             @include class_nav($hunter);
         }
     
-        div.Mage {
+        div.mage {
             @include class_nav($mage);
         }
     
-        div.Warlock {
+        div.warlock {
             @include class_nav($warlock);
         }
     
-        div.Priest {
+        div.priest {
             @include class_nav($priest);
         }
     
-        div.Paladin {
+        div.paladin {
             @include class_nav($paladin);
         }
     
-        div.Shaman {
+        div.shaman {
             @include class_nav($shaman);
         }
     
-        div.Druid {
+        div.druid {
             @include class_nav($druid);
+        }
+
+        div.deathknight {
+            @include class_nav($deathknight);
         }
 
         div.All {

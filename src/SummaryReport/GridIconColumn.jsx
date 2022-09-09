@@ -60,11 +60,11 @@ export class GridIconColumn extends Component {
 
         let cellContent = <img className="spell_icon" src={icon} alt={label} data-tip={item_id || spell_id ? null : label} />
         if (item_id) {
-            cellContent = <a href={"https://tbc.wowhead.com/item=" + item_id} target="_blank" rel="noreferrer">{cellContent}</a>
+            cellContent = <a href={"https://wowhead.com/wotlk/item=" + item_id} target="_blank" rel="noreferrer">{cellContent}</a>
         }
 
         if (spell_id) {
-            cellContent = <a href={"https://tbc.wowhead.com/spell=" + spell_id} target="_blank" rel="noreferrer">{cellContent}</a>
+            cellContent = <a href={"https://wowhead.com/wotlk/spell=" + spell_id} target="_blank" rel="noreferrer">{cellContent}</a>
         }
 
         return (

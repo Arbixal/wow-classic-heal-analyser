@@ -33,5 +33,33 @@
         "type":  "Ability",
         "icon":  "ability_criticalstrike.jpg",
         "cooldown":  1800000
+    },
+    {
+        "id": 46924,
+        "name":  "Bladestorm",
+        "type":  "Ability",
+        "icon":  "ability_warrior_bladestorm.jpg",
+        "cooldown":  1800000
+    },
+    {
+        "id": 64382,
+        "name":  "Shattering Throw",
+        "type":  "Ability",
+        "icon":  "ability_warrior_shatteringthrow.jpg",
+        "cooldown":  1800000
+    },
+    {
+        "id": 55694,
+        "name":  "Enraged Regeneration",
+        "type":  "Ability",
+        "icon":  "ability_warrior_focusedrage.jpg",
+        "cooldown":  1800000
+    },
+    {
+        "id": 57755,
+        "name":  "Heroic Throw",
+        "type":  "Ability",
+        "icon":  "inv_axe_66.jpg",
+        "cooldown":  1800000
     }
 ]

@@ -1,0 +1,42 @@
+[
+    {
+       "id": 41398,
+       "label": "Relentless Earthsiege Diamond",
+       "rarity": "Rare",
+       "colour": "meta",
+       "icon": "inv_jewelcrafting_shadowspirit_02.jpg",
+       "description": "+21 agility and 3% increase crit damage"
+    },
+    {
+        "id": 41380,
+        "label": "Austere Earthsiege Diamond",
+        "rarity": "Rare",
+        "colour": "meta",
+        "icon": "inv_jewelcrafting_shadowspirit_02.jpg",
+        "description": "+32 stamina and 2% increased armor value from items"
+    },
+    {
+        "id": 41401,
+        "label": "Insightful Earthsiege Diamond",
+        "rarity": "Rare",
+        "colour": "meta",
+        "icon": "inv_jewelcrafting_shadowspirit_02.jpg",
+        "description": "+21 intellect and chance to restore mana"
+    },
+    {
+        "id": 41396,
+        "label": "Eternal Earthsiege Diamond",
+        "rarity": "Rare",
+        "colour": "meta",
+        "icon": "inv_jewelcrafting_shadowspirit_02.jpg",
+        "description": "+21 defense rating and 5% shield block"
+    },
+    {
+        "id": 41385,
+        "label": "Invigorating Earthsiege Diamond",
+        "rarity": "Rare",
+        "colour": "meta",
+        "icon": "inv_jewelcrafting_shadowspirit_02.jpg",
+        "description": "+42 attack power and sometimes heals on crits"
+    }
+]

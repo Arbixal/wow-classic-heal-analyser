@@ -28,6 +28,13 @@
         "cooldown":  3600000
     },
     {
+        "id": 48788,
+        "name":  "Lay on Hands (Rank 5)",
+        "type":  "Ability",
+        "icon":  "spell_holy_layonhands.jpg",
+        "cooldown":  3600000
+    },
+    {
         "id": 19752,
         "name":  "Divine Intervention",
         "type":  "Ability",
@@ -103,5 +110,20 @@
         "type":  "Ability",
         "icon":  "spell_holy_avenginewrath.jpg",
         "cooldown":  180000
+    },
+    {
+        "id": 54428,
+        "name":  "Divine Plea",
+        "type":  "Ability",
+        "icon":  "spell_holy_aspiration.jpg",
+        "cooldown":  180000
+    },
+    {
+        "id": 64205,
+        "name":  "Divine Sacrifice",
+        "type":  "Ability",
+        "icon":  "spell_holy_powerwordbarrier.jpg",
+        "cooldown":  180000
     }
+    
 ]

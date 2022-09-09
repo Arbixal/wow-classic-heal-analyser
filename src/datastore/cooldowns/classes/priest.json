@@ -112,6 +112,13 @@
         "cooldown":  600000
     },
     {
+        "id": 48173,
+        "name":  "Desperate Prayer (Rank 9)",
+        "type":  "Ability",
+        "icon":  "spell_holy_restoration.jpg",
+        "cooldown":  600000
+    },
+    {
         "id": 13896,
         "name":  "Feedback (Rank 1)",
         "type":  "Ability",
@@ -210,6 +217,20 @@
         "cooldown":  180000
     },
     {
+        "id": 48299,
+        "name":  "Devouring Plague (Rank 8)",
+        "type":  "Ability",
+        "icon":  "spell_shadow_blackplague.jpg",
+        "cooldown":  180000
+    },
+    {
+        "id": 48300,
+        "name":  "Devouring Plague (Rank 9)",
+        "type":  "Ability",
+        "icon":  "spell_shadow_blackplague.jpg",
+        "cooldown":  180000
+    },
+    {
         "id": 32676,
         "name":  "Consume Magic",
         "type":  "Ability",
@@ -221,6 +242,41 @@
         "name":  "Shadowfiend",
         "type":  "Ability",
         "icon":  "spell_shadow_shadowfiend.jpg",
+        "cooldown":  300000
+    },
+    {
+        "id": 64843,
+        "name":  "Divine Hymn",
+        "type":  "Ability",
+        "icon":  "spell_holy_divinehymn.jpg",
+        "cooldown":  300000
+    },
+    {
+        "id": 64901,
+        "name":  "Hymn of Hope",
+        "type":  "Ability",
+        "icon":  "spell_holy_symbolofhope.jpg",
+        "cooldown":  300000
+    },
+    {
+        "id": 47768,
+        "name":  "Guardian Spirit",
+        "type":  "Ability",
+        "icon":  "spell_holy_guardianspirit.jpg",
+        "cooldown":  300000
+    },
+    {
+        "id": 64044,
+        "name":  "Psychic Horror",
+        "type":  "Ability",
+        "icon":  "spell_shadow_psychichorrors.jpg",
+        "cooldown":  300000
+    },
+    {
+        "id": 47585,
+        "name":  "Dispersion",
+        "type":  "Ability",
+        "icon":  "spell_shadow_dispersion.jpg",
         "cooldown":  300000
     }
 ]

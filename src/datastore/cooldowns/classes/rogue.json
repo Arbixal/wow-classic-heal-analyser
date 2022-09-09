@@ -68,5 +68,40 @@
         "type":  "Ability",
         "icon":  "ability_vanish.jpg",
         "cooldown":  300000
+    },
+    {
+        "id": 57934,
+        "name":  "Tricks of the Trade",
+        "type":  "Ability",
+        "icon":  "ability_rogue_tricksofthetrade.jpg",
+        "cooldown":  300000
+    },
+    {
+        "id": 31224,
+        "name":  "Cloak of Shadows",
+        "type":  "Ability",
+        "icon":  "spell_shadow_nethercloak.jpg",
+        "cooldown":  300000
+    },
+    {
+        "id": 51722,
+        "name":  "Dismantle",
+        "type":  "Ability",
+        "icon":  "ability_rogue_dismantle.jpg",
+        "cooldown":  300000
+    },
+    {
+        "id": 51690,
+        "name":  "Killing Spree",
+        "type":  "Ability",
+        "icon":  "ability_rogue_murderspree.jpg",
+        "cooldown":  300000
+    },
+    {
+        "id": 51713,
+        "name":  "Shadow Dance",
+        "type":  "Ability",
+        "icon":  "ability_rogue_shadowdance.jpg",
+        "cooldown":  300000
     }
 ]

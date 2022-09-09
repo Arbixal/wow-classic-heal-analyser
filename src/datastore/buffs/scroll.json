@@ -34,5 +34,53 @@
         "itemId": 27503,
         "name": "Scroll of Strength V",
         "icon": "inv_scroll_02.jpg"
+    },
+    {
+        "id": 58451,
+        "itemId": 43464,
+        "name": "Scroll of Agility VIII",
+        "icon": "inv_scroll_02.jpg"
+    },
+    {
+        "id": 48100,
+        "itemId": 37092,
+        "name": "Scroll of Intellect VIII",
+        "icon": "inv_scroll_01.jpg"
+    },
+    {
+        "id": 58453,
+        "itemId": 43468,
+        "name": "Scroll of Protection VIII",
+        "icon": "inv_scroll_07.jpg"
+    },
+    {
+        "id": 48104,
+        "itemId": 37098,
+        "name": "Scroll of Spirit VIII",
+        "icon": "inv_scroll_01.jpg"
+    },
+    {
+        "id": 48102,
+        "itemId": 37094,
+        "name": "Scroll of Stamina VIII",
+        "icon": "inv_scroll_07.jpg"
+    },
+    {
+        "id": 58449,
+        "itemId": 43466,
+        "name": "Scroll of Strength VIII",
+        "icon": "inv_scroll_02.jpg"
+    },
+    {
+        "id": 69377,
+        "itemId": 49632,
+        "name": "Runescroll of Fortitude",
+        "icon": "inv_scroll_14.jpg"
+    },
+    {
+        "id": 69994,
+        "itemId": 49768,
+        "name": "Runescroll of Brilliance",
+        "icon": "inv_scroll_12.jpg"
     }
 ]

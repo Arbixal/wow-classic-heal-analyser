@@ -1,0 +1,72 @@
+[
+    {
+        "id": 55233,
+        "name":  "Vampiric Blood",
+        "type":  "Ability",
+        "icon":  "spell_shadow_lifedrain.jpg",
+        "cooldown":  60000
+    },
+    {
+        "id": 49206,
+        "name":  "Summon Gargoyle",
+        "type":  "Ability",
+        "icon":  "ability_hunter_pet_bat.jpg",
+        "cooldown":  180000
+    },
+    {
+        "id": 51271,
+        "name":  "Unbreakable Armor",
+        "type":  "Ability",
+        "icon":  "inv_armor_helm_plate_naxxramas_raidwarrior_c_01.jpg",
+        "cooldown":  60000
+    },
+    {
+        "id": 49028,
+        "name":  "Dancing Rune Weapon",
+        "type":  "Ability",
+        "icon":  "inv_sword_07.jpg",
+        "cooldown":  90000
+    },
+    {
+        "id": 42650,
+        "name":  "Army of the Dead",
+        "type":  "Ability",
+        "icon":  "spell_deathknight_armyofthedead.jpg",
+        "cooldown":  600000
+    },
+    {
+        "id": 47568,
+        "name":  "Empower Rune Weapon",
+        "type":  "Ability",
+        "icon":  "inv_sword_62.jpg",
+        "cooldown":  300000
+    },
+    {
+        "id": 61999,
+        "name":  "Raise Ally",
+        "type":  "Ability",
+        "icon":  "spell_shadow_deadofnight.jpg",
+        "cooldown":  600000
+    },
+    {
+        "id": 48743,
+        "name":  "Death Pact",
+        "type":  "Ability",
+        "icon":  "spell_shadow_deathpact.jpg",
+        "cooldown":  120000
+    },
+    {
+        "id": 48792,
+        "name":  "Icebound Fortitude",
+        "type":  "Ability",
+        "icon":  "spell_deathknight_iceboundfortitude.jpg",
+        "cooldown":  120000
+    },
+    {
+        "id": 46584,
+        "name":  "Raise Dead",
+        "type":  "Ability",
+        "icon":  "spell_shadow_animatedead.jpg",
+        "cooldown":  180000
+    }
+]

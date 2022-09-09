@@ -1,5 +1,5 @@
 import {itemSlots, protectionPotionEnum, rarity} from "../data";
-import {battleElixirBuffs, cooldownList, flaskBuffs, foodBuffs, guardianElixirBuffs, scrollBuffs, seasonBuffs, tempWeaponEnchants, enchants, gemList} from "../datastore";
+import {battleElixirBuffs, cooldownList, flaskBuffs, foodBuffs, guardianElixirBuffs, scrollBuffs, seasonBuffs, tempWeaponEnchants, imbuesWithBuffs, enchants, gemList} from "../datastore";
 import {DataPoints, emptyData} from "./GridContexts";
 import {sumNonNull} from "../utils";
 
@@ -30,7 +30,7 @@ export class CharacterMapper {
         characterData[DataPoints.ElixirsGuardian] = this._getBuffs(character, guardianElixirBuffs);
         characterData[DataPoints.ElixirsSeasonal] = this._getBuffs(character, seasonBuffs);
         characterData[DataPoints.ElixirsScrolls] = this._getBuffs(character, scrollBuffs);
-        characterData[DataPoints.ElixirsWeaponEnchants] = this._getWeaponImbue(character, tempWeaponEnchants);
+        characterData[DataPoints.ElixirsWeaponEnchants] = this._getWeaponImbue(character, tempWeaponEnchants, imbuesWithBuffs);
 
         characterData[DataPoints.ProtectionPotionsGreaterArcane] = this._getProtectionPotionCount(character, protectionPotionEnum.GAPP);
         characterData[DataPoints.ProtectionPotionsMajorArcane] = this._getProtectionPotionCount(character, protectionPotionEnum.MAPP);
@@ -73,9 +73,9 @@ export class CharacterMapper {
             characterData[DataPoints.ProtectionPotionsNatureAbsorbed],
             characterData[DataPoints.ProtectionPotionsShadowAbsorbed]);
 
-        characterData[DataPoints.ConsumesManaPots] = this._getCastCount(character, 17531, 28499, 41618, 41617);
-        characterData[DataPoints.ConsumesRejuvPots] = this._getCastCount(character, 22729, 28517, 45051);
-        characterData[DataPoints.ConsumesHealthPots] = this._getCastCount(character, 17534, 28495, 41620, 41619);
+        characterData[DataPoints.ConsumesManaPots] = this._getCastCount(character, 17531, 28499, 41618, 41617, 43186);
+        characterData[DataPoints.ConsumesRejuvPots] = this._getCastCount(character, 22729, 28517, 45051, 53750, 53761);
+        characterData[DataPoints.ConsumesHealthPots] = this._getCastCount(character, 17534, 28495, 41620, 41619, 43185);
         characterData[DataPoints.ConsumesFreeActionPotion] = this._getCastCount(character, 6615, 24364);
         characterData[DataPoints.ConsumesRestorationPots] = this._getCastCount(character, 11359, 17550);
         characterData[DataPoints.ConsumesRagePotions] = this._getCastCount(character, 6613, 17528);
@@ -85,15 +85,17 @@ export class CharacterMapper {
         characterData[DataPoints.ConsumesFelRegeneration] = this._getCastCount(character, 38908);
         characterData[DataPoints.ConsumesHeroic] = this._getCastCount(character, 28506);
         characterData[DataPoints.ConsumesDestruction] = this._getCastCount(character, 28508); // Check for buff on combat start
-        characterData[DataPoints.ConsumesHaste] = this._getCastCount(character, 28507); // Check for buff on combat start
+        characterData[DataPoints.ConsumesHaste] = this._getCastCount(character, 28507, 53908); // Check for buff on combat start
         characterData[DataPoints.ConsumesFelMana] = this._getCastCount(character, 38929);
         characterData[DataPoints.ConsumesIronshield] = this._getCastCount(character, 17540, 28515);
+        characterData[DataPoints.ConsumesWildMagic] = this._getCastCount(character, 53909);
+        characterData[DataPoints.ConsumesIndestructable] = this._getCastCount(character, 53762);
 
         characterData[DataPoints.ConsumesRunes] = this._getCastCount(character, 16666, 27869);
-        characterData[DataPoints.ConsumesHealthStones] = this._getCastCount(character, 27235, 27236, 27237);
+        characterData[DataPoints.ConsumesHealthStones] = this._getCastCount(character, 27235, 27236, 27237, 47875, 47876, 47877);
         characterData[DataPoints.ConsumesWhipperRootTuber] = this._getCastCount(character, 15700);
         characterData[DataPoints.ConsumesThistleTea] = this._getCastCount(character, 9512);
-        characterData[DataPoints.ConsumesManaGem] = this._getCastCount(character, 10058, 10057, 10052, 5405, 27103);
+        characterData[DataPoints.ConsumesManaGem] = this._getCastCount(character, 10058, 10057, 10052, 5405, 27103, 42987);
         characterData[DataPoints.ConsumesNightmareSeed] = this._getCastCount(character, 28726);
 
         characterData[DataPoints.ConsumesDrumsBattle] = this._getCastCount(character, 35476, 351355);
@@ -159,24 +161,26 @@ export class CharacterMapper {
         characterData[DataPoints.DispelPriestCureDisease] = this._getCastCount(character, 528);
         characterData[DataPoints.DispelPriestAbolishDisease] = this._getCastCount(character, 552);
         characterData[DataPoints.DispelShamanPurge] = this._getCastCount(character, 8012, 370);
-        characterData[DataPoints.DispelShamanCurePoison] = this._getCastCount(character, 526);
-        characterData[DataPoints.DispelShamanCureDisease] = this._getCastCount(character, 2870);
-        characterData[DataPoints.DispelShamanPoisonCleansingTotem] = this._getCastCount(character, 8166);
-        characterData[DataPoints.DispelShamanDiseaseCleansingTotem] = this._getCastCount(character, 8170);
+        characterData[DataPoints.DispelShamanCureToxins] = this._getCastCount(character, 526);
+        characterData[DataPoints.DispelShamanCleanseSpirit] = this._getCastCount(character, 51886);
+        characterData[DataPoints.DispelShamanCleansingTotem] = this._getCastCount(character, 8170);
         characterData[DataPoints.DispelWarlockDevourMagic] = this._getCastCount(character, 19505, 19731, 19734, 19736, 27276, 27277);
 
         characterData[DataPoints.DispelPoison] = sumNonNull(characterData[DataPoints.DispelDruidCurePoison],
             characterData[DataPoints.DispelDruidAbolishPoison],
-            characterData[DataPoints.DispelShamanCurePoison],
-            characterData[DataPoints.DispelShamanPoisonCleansingTotem]);
+            characterData[DataPoints.DispelShamanCureToxins],
+            characterData[DataPoints.DispelShamanCleanseSpirit],
+            characterData[DataPoints.DispelShamanCleansingTotem]);
 
         characterData[DataPoints.DispelDisease] = sumNonNull(characterData[DataPoints.DispelPriestCureDisease],
             characterData[DataPoints.DispelPriestAbolishDisease],
-            characterData[DataPoints.DispelShamanCureDisease],
-            characterData[DataPoints.DispelShamanDiseaseCleansingTotem]);
+            characterData[DataPoints.DispelShamanCureToxins],
+            characterData[DataPoints.DispelShamanCleanseSpirit],
+            characterData[DataPoints.DispelShamanCleansingTotem]);
 
         characterData[DataPoints.DispelCurse] = sumNonNull(characterData[DataPoints.DispelDruidRemoveCurse],
-            characterData[DataPoints.DispelMageRemoveLesserCurse]);
+            characterData[DataPoints.DispelMageRemoveLesserCurse],
+            characterData[DataPoints.DispelShamanCleanseSpirit]);
 
         characterData[DataPoints.DispelMagic] = sumNonNull(characterData[DataPoints.DispelPriestDispelMagic],
             characterData[DataPoints.DispelShamanPurge],
@@ -196,19 +200,23 @@ export class CharacterMapper {
 
         characterData[DataPoints.InterruptDruidBash] = this._getInterruptCount(character, 8983);
         characterData[DataPoints.InterruptDruidFeralCharge] = this._getInterruptCount(character, 19675);
+        characterData[DataPoints.InterruptDruidMaim] = this._getInterruptCount(character, 49802);
         characterData[DataPoints.InterruptMageCounterspell] = this._getInterruptCount(character, 2139);
         characterData[DataPoints.InterruptPaladinHammerOfJustice] = this._getInterruptCount(character, 10308);
         characterData[DataPoints.InterruptPriestSilence] = this._getInterruptCount(character, 15487);
         characterData[DataPoints.InterruptRogueKick] = this._getInterruptCount(character, 1769, 1768, 1767, 1766, 38768);
         characterData[DataPoints.InterruptCheapShot] = this._getInterruptCount(character, 1833);
-        characterData[DataPoints.InterruptShamanEarthShock] = this._getInterruptCount(character, 10414, 8042, 8044, 8045, 8046, 10412, 10413, 25454);
+        characterData[DataPoints.InterruptShamanEarthShock] = this._getInterruptCount(character, 57994);
         characterData[DataPoints.InterruptWarriorPummel] = this._getInterruptCount(character, 6552, 6554);
         characterData[DataPoints.InterruptWarlockSpellLock] = this._getInterruptCount(character, 19647);
         characterData[DataPoints.InterruptHunterIntimidate] = this._getInterruptCount(character, 24394);
         characterData[DataPoints.InterruptWarstomp] = this._getInterruptCount(character, 20549);
+        characterData[DataPoints.InterruptMindFreeze] = this._getInterruptCount(character, 47528);
+        characterData[DataPoints.InterruptStrangulate] = this._getInterruptCount(character, 47476);
 
         characterData[DataPoints.InterruptTotal] = sumNonNull(characterData[DataPoints.InterruptDruidBash],
             characterData[DataPoints.InterruptDruidFeralCharge],
+            characterData[DataPoints.InterruptDruidMaim],
             characterData[DataPoints.InterruptMageCounterspell],
             characterData[DataPoints.InterruptPaladinHammerOfJustice],
             characterData[DataPoints.InterruptPriestSilence],
@@ -218,7 +226,9 @@ export class CharacterMapper {
             characterData[DataPoints.InterruptWarlockSpellLock],
             characterData[DataPoints.InterruptHunterIntimidate],
             characterData[DataPoints.InterruptWarstomp],
-            characterData[DataPoints.InterruptWarriorPummel]);
+            characterData[DataPoints.InterruptWarriorPummel],
+            characterData[DataPoints.InterruptMindFreeze],
+            characterData[DataPoints.InterruptStrangulate]);
 
         characterData[DataPoints.Cooldowns] = this._getCooldownList(character);
         characterData[DataPoints.CooldownsRacial] = this._getCooldownList(character, "Racial");
@@ -265,8 +275,8 @@ export class CharacterMapper {
         return activeBuffs;
     }
 
-    _getWeaponImbue(character, options) {
-        const {imbues} = character.data;
+    _getWeaponImbue(character, options, extraOptions) {
+        const {imbues, buffs} = character.data;
 
         if (!imbues?.main_hand && !imbues?.off_hand) {
             return [];
@@ -295,6 +305,12 @@ export class CharacterMapper {
                 activeBuffs.push({...options[i], name: options[i].name + ' (OH)'});
             } */
             
+        }
+
+        for (let i = 0; i < extraOptions.length; ++i) {
+            if (buffs[extraOptions[i].id]) {
+                activeBuffs.push(extraOptions[i]);
+            }
         }
 
         return activeBuffs;
