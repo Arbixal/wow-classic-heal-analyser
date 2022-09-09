@@ -100,7 +100,7 @@ export function FightChart(props) {
                     </tbody>
                 </table>
             </div>
-            <svg width={maxWidth} height="110">
+            <svg width={maxWidth * 1.2} height="110" preserveAspectRatio="xMaxYMin meet">
                 <g>
                     {fightBands.map(band => {
                         const bandRef = createRef();
