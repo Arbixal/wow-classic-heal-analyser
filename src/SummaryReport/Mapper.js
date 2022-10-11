@@ -85,7 +85,8 @@ export class CharacterMapper {
         characterData[DataPoints.ConsumesFelRegeneration] = this._getCastCount(character, 38908);
         characterData[DataPoints.ConsumesHeroic] = this._getCastCount(character, 28506);
         characterData[DataPoints.ConsumesDestruction] = this._getCastCount(character, 28508); // Check for buff on combat start
-        characterData[DataPoints.ConsumesHaste] = this._getCastCount(character, 28507, 53908); // Check for buff on combat start
+        characterData[DataPoints.ConsumesHaste] = this._getCastCount(character, 28507); // Check for buff on combat start
+        characterData[DataPoints.ConsumesSpeed] = this._getCastCount(character, 53908);
         characterData[DataPoints.ConsumesFelMana] = this._getCastCount(character, 38929);
         characterData[DataPoints.ConsumesIronshield] = this._getCastCount(character, 17540, 28515);
         characterData[DataPoints.ConsumesWildMagic] = this._getCastCount(character, 53909);
@@ -104,7 +105,9 @@ export class CharacterMapper {
         characterData[DataPoints.ConsumesDrumsPanic] = this._getCastCount(character, 35474, 351357);
 
         characterData[DataPoints.ConsumesHolyWater] = this._getCastCount(character, 17291);
-        characterData[DataPoints.ConsumesSapperCharge] = this._getCastCount(character, 13241, 30486);
+        characterData[DataPoints.ConsumesSapperCharge] = this._getCastCount(character, 13241);
+        characterData[DataPoints.ConsumesSuperSapperCharge] = this._getCastCount(character, 30486);
+        characterData[DataPoints.ConsumesGlobalThermalSapperCharge] = this._getCastCount(character, 56488);
         characterData[DataPoints.ConsumesDenseDynamite] = this._getCastCount(character, 23063);
         characterData[DataPoints.ConsumesEzThro] = this._getCastCount(character, 23000);
         characterData[DataPoints.ConsumesFelIronBombs] = this._getCastCount(character, 30216);
@@ -125,6 +128,7 @@ export class CharacterMapper {
             characterData[DataPoints.ConsumesHeroic],
             characterData[DataPoints.ConsumesDestruction],
             characterData[DataPoints.ConsumesHaste],
+            characterData[DataPoints.ConsumesSpeed],
             characterData[DataPoints.ConsumesFelMana],
             characterData[DataPoints.ConsumesIronshield]);
 
@@ -142,6 +146,8 @@ export class CharacterMapper {
 
         characterData[DataPoints.ConsumesExplosives] = sumNonNull(characterData[DataPoints.ConsumesHolyWater],
             characterData[DataPoints.ConsumesSapperCharge],
+            characterData[DataPoints.ConsumesSuperSapperCharge],
+            characterData[DataPoints.ConsumesGlobalThermalSapperCharge],
             characterData[DataPoints.ConsumesDenseDynamite],
             characterData[DataPoints.ConsumesFelIronBombs],
             characterData[DataPoints.ConsumesEzThro],
@@ -189,8 +195,8 @@ export class CharacterMapper {
 
         characterData[DataPoints.DispelFrenzy] = sumNonNull(characterData[DataPoints.DispelHunterTranqShot]);
 
-        characterData[DataPoints.DispelBoss] = this._getBossCastCount(character, 8946, 2893, 2782, 19801, 475, 1152, 4987, 988, 527, 528, 552, 8012, 370, 526, 2870, 8166, 8170, 19505, 19731, 19734, 19736, 27276, 27277);
-        characterData[DataPoints.DispelTrash] = this._getTrashCastCount(character, 8946, 2893, 2782, 19801, 475, 1152, 4987, 988, 527, 528, 552, 8012, 370, 526, 2870, 8166, 8170, 19505, 19731, 19734, 19736, 27276, 27277);
+        characterData[DataPoints.DispelBoss] = this._getBossCastCount(character, 8946, 2893, 2782, 19801, 475, 1152, 4987, 988, 527, 528, 552, 8012, 370, 526, 2870, 8166, 8170, 19505, 19731, 19734, 19736, 27276, 27277, 51886);
+        characterData[DataPoints.DispelTrash] = this._getTrashCastCount(character, 8946, 2893, 2782, 19801, 475, 1152, 4987, 988, 527, 528, 552, 8012, 370, 526, 2870, 8166, 8170, 19505, 19731, 19734, 19736, 27276, 27277, 51886);
 
         characterData[DataPoints.DispelTotal] = sumNonNull(characterData[DataPoints.DispelPoison],
             characterData[DataPoints.DispelDisease],

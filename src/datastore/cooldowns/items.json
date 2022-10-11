@@ -1110,5 +1110,43 @@
         "itemId":  22678,
         "icon":  "inv_misc_gem_pearl_04.jpg",
         "cooldown":  60000
+    },
+    {
+        "id": 54758,
+        "name": "Hyperspeed Accelerators",
+        "type": "Trinket",
+        "itemId": 41093,
+        "icon": "inv_misc_enggizmos_04.jpg",
+        "cooldown": 60000
+    },
+    {
+        "id": 54861,
+        "name": "Nitro Boosts",
+        "type": "Trinket",
+        "itemId": 41118,
+        "icon": "inv_gizmo_rocketbootextreme.jpg",
+        "cooldown": 180000
+    },
+    {
+        "id": 54757,
+        "name": "Hand Mounted Pyro Rocket",
+        "type": "Trinket",
+        "itemId": 41091,
+        "icon": "inv_misc_enggizmos_01.jpg",
+        "cooldown": 45000
+    },
+    {
+        "id": 67890,
+        "name": "Frag Belt",
+        "type": "Trinket",
+        "icon": "spell_fire_selfdestruct.jpg",
+        "cooldown": 360000
+    },
+    {
+        "id": 55001,
+        "name": "Parachute",
+        "type": "Trinket",
+        "icon": "spell_magic_featherfall.jpg",
+        "cooldown": 60000
     }
 ]

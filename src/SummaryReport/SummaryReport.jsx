@@ -55,7 +55,7 @@ const classes = {
         slug: 'hunter',
         name: 'Hunter',
         filter: 'Hunter',
-        icon: 'https://assets.rpglogs.com/img/warcraft/abilities/INV_Weapon_Bow_07.jpg',
+        icon: 'https://wow.zamimg.com/images/wow/icons/medium/class_hunter.jpg',
     },
     'mage': {
         slug: 'mage',
@@ -420,7 +420,7 @@ class SummaryReport extends Component {
                             <GridColumn field={DataPoints.Deaths} 
                                         cssClass="deaths" aggregate={true} />
                         </GridColumnGroup>
-                        <GridColumnGroup id={GroupKeys.ProtPotions} label="Prot Potions" cssClass="even-colgroup">
+{/*                         <GridColumnGroup id={GroupKeys.ProtPotions} label="Prot Potions" cssClass="even-colgroup">
                             <GridColumn field={DataPoints.ProtectionPotionsTotal} 
                                         label="Uses" 
                                         cssClass="center" 
@@ -554,8 +554,8 @@ class SummaryReport extends Component {
                                         cssClass="protection_potion arcane" 
                                         visibility={(ctx) => ctx.collapsed === false}
                                         aggregate={true} />
-                        </GridColumnGroup>
-                        <GridColumnGroup id={GroupKeys.Consumes} label="Consumes" cssClass="odd-colgroup">
+                        </GridColumnGroup> */}
+                        <GridColumnGroup id={GroupKeys.Consumes} label="Consumes" cssClass="even-colgroup">
                             <GridIconColumn field={DataPoints.ConsumesPotions} 
                                             label="Potions" 
                                             icon_name="inv_drink_06.jpg" 
@@ -639,17 +639,17 @@ class SummaryReport extends Component {
                                             cssClass="protection_potion frost"
                                             visibility={(ctx) => ctx.collapsed === false && ctx.hasValue}
                                             aggregate={true} />
-                            <GridIconColumn field={DataPoints.ConsumesDestruction} 
-                                            label="Destruction Potion" 
-                                            icon_name="inv_potion_107.jpg" 
-                                            item_id={22839}
+                            <GridIconColumn field={DataPoints.ConsumesSpeed} 
+                                            label="Speed Potion" 
+                                            icon_name="inv_alchemy_elixir_04.jpg" 
+                                            item_id={40211}
                                             cssClass="protection_potion frost"
                                             visibility={(ctx) => ctx.collapsed === false && ctx.hasValue}
                                             aggregate={true} />
                             <GridIconColumn field={DataPoints.ConsumesHaste} 
                                             label="Haste Potion" 
-                                            icon_name="inv_alchemy_elixir_04.jpg" 
-                                            item_id={40211}
+                                            icon_name="inv_potion_108.jpg" 
+                                            item_id={22838}
                                             cssClass="protection_potion frost"
                                             visibility={(ctx) => ctx.collapsed === false && ctx.hasValue}
                                             aggregate={true} />
@@ -664,6 +664,13 @@ class SummaryReport extends Component {
                                             label="Potion of Wild Magic" 
                                             icon_name="inv_alchemy_elixir_01.jpg" 
                                             item_id={40212}
+                                            cssClass="protection_potion frost"
+                                            visibility={(ctx) => ctx.collapsed === false && ctx.hasValue}
+                                            aggregate={true} />
+                            <GridIconColumn field={DataPoints.ConsumesDestruction} 
+                                            label="Destruction Potion" 
+                                            icon_name="inv_potion_107.jpg" 
+                                            item_id={22839}
                                             cssClass="protection_potion frost"
                                             visibility={(ctx) => ctx.collapsed === false && ctx.hasValue}
                                             aggregate={true} />
@@ -772,10 +779,24 @@ class SummaryReport extends Component {
                                             cssClass="protection_potion fire"
                                             visibility={(ctx) => ctx.collapsed === false && ctx.hasValue}
                                             aggregate={true} />
-                            <GridIconColumn field={DataPoints.ConsumesSapperCharge} 
-                                            label="Sapper Charge" 
+                            <GridIconColumn field={DataPoints.ConsumesGlobalThermalSapperCharge} 
+                                            label="Global Thermal Sapper Charge" 
+                                            icon_name="inv_gizmo_supersappercharge.jpg" 
+                                            item_id={42641}
+                                            cssClass="protection_potion fire"
+                                            visibility={(ctx) => ctx.collapsed === false && ctx.hasValue}
+                                            aggregate={true} />
+                            <GridIconColumn field={DataPoints.ConsumesSuperSapperCharge} 
+                                            label="Super Sapper Charge" 
                                             icon_name="inv_gizmo_supersappercharge.jpg" 
                                             item_id={23827}
+                                            cssClass="protection_potion fire"
+                                            visibility={(ctx) => ctx.collapsed === false && ctx.hasValue}
+                                            aggregate={true} />
+                            <GridIconColumn field={DataPoints.ConsumesSapperCharge} 
+                                            label="Sapper Charge" 
+                                            icon_name="spell_fire_selfdestruct.jpg" 
+                                            item_id={10646}
                                             cssClass="protection_potion fire"
                                             visibility={(ctx) => ctx.collapsed === false && ctx.hasValue}
                                             aggregate={true} />
@@ -830,7 +851,7 @@ class SummaryReport extends Component {
                                             aggregate={true} />
                         </GridColumnGroup>
 
-                        <GridColumnGroup id={GroupKeys.DispelsInterrupts} label="Dispels" cssClass="even-colgroup">
+                        <GridColumnGroup id={GroupKeys.DispelsInterrupts} label="Dispels" cssClass="odd-colgroup">
                             <GridIconColumn field={DataPoints.DispelBoss}
                                         label="Boss" 
                                         cssClass="center"
@@ -1068,7 +1089,7 @@ class SummaryReport extends Component {
                                             aggregate={true} />
                             
                         </GridColumnGroup>
-                        <GridColumnGroup id={GroupKeys.Cooldowns} label="Cooldowns" cssClass="odd-colgroup">
+                        <GridColumnGroup id={GroupKeys.Cooldowns} label="Cooldowns" cssClass="even-colgroup">
 {/*                             <GridIconListColumn field={DataPoints.Cooldowns}
                                         label=" "
                                         cssClass="center" /> */}
@@ -1082,7 +1103,7 @@ class SummaryReport extends Component {
                                         label=" "
                                         cssClass="cooldowns center" />
                         </GridColumnGroup>
-                        <GridColumnGroup id={GroupKeys.Resistance} label="Resistance" cssClass="even-colgroup">
+{/*                        <GridColumnGroup id={GroupKeys.Resistance} label="Resistance" cssClass="even-colgroup">
                             <GridColumn field={DataPoints.ResistanceArcane} label="A"
                                         cssClass="protection_potion arcane" />
                             <GridColumn field={DataPoints.ResistanceFire} label="F"
@@ -1094,7 +1115,7 @@ class SummaryReport extends Component {
                             <GridColumn field={DataPoints.ResistanceShadow} label="S"
                                         cssClass="protection_potion shadow" />
                         </GridColumnGroup>
-{/*                         <GridColumnGroup id={GroupKeys.Tank} label="Tank Stats" cssClass="even-colgroup">
+                         <GridColumnGroup id={GroupKeys.Tank} label="Tank Stats" cssClass="even-colgroup">
                             <GridBarColumn label="Damage Taken" width="270" visibility={(ctx) => ctx.roleFilter === "tank"}>
                                 <GridBarColumnSection field={DataPoints.DamageTakenHit} label="Hit" cssClass="class-colour1" />
                                 <GridBarColumnSection field={DataPoints.DamageTakenCrushed} label="Crushing Blow" cssClass="bad2" />
@@ -1114,7 +1135,7 @@ class SummaryReport extends Component {
                         </GridColumnGroup> */}
                     </Grid>
                     <ReactTooltip />
-                    <p>* Resistance calculations include "random enchantment" items that may or may not be "of [School] Protection"</p>
+                    {/* <p>* Resistance calculations include "random enchantment" items that may or may not be "of [School] Protection"</p> */}
                 </>
             )
         }

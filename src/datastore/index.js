@@ -1,6 +1,6 @@
 import { arrayToDictionary } from "../utils";
 import bosses_raw from "./bosses.json";
-import gems_raw from "./gems.json";
+import gems_raw from "./gems-wotlk.json";
 import cooldowns_raw from './cooldowns';
 
 export {default as tempWeaponEnchants} from './buffs/temp-enchant.json';
