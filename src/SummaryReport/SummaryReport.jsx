@@ -369,7 +369,7 @@ class SummaryReport extends Component {
                             <GridColumn field={DataPoints.GemsMissing} label="Nil"
                                         cssClass="gems empty"
                                         visibility={(ctx) => ctx.collapsed === true} />
-                            <GridColumn field={DataPoints.GemsCommon} label="Co"
+                            <GridColumn field={DataPoints.GemsCommon} label="Tbc"
                                         cssClass="gems common"
                                         visibility={(ctx) => ctx.collapsed === true} />
                             <GridColumn field={DataPoints.GemsUncommon} label="Un"

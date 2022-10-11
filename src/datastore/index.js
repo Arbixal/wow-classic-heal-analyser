@@ -1,5 +1,6 @@
 import { arrayToDictionary } from "../utils";
 import bosses_raw from "./bosses.json";
+import gems_old from "./gems.json";
 import gems_raw from "./gems-wotlk.json";
 import cooldowns_raw from './cooldowns';
 
@@ -14,5 +15,5 @@ export {default as foodBuffs} from './buffs/food.json';
 export {default as enchants} from './enchants';
 
 export const bosses = arrayToDictionary(bosses_raw, "id");
-export const gemList = arrayToDictionary(gems_raw, "id");
+export const gemList = arrayToDictionary([...gems_old,...gems_raw], "id");
 export const cooldownList = arrayToDictionary(cooldowns_raw, "id");
