@@ -1,7 +1,7 @@
 import "./FightChart.scss";
 import React, { createRef } from 'react';
 import { Tooltip } from 'react-svg-tooltip';
-import { asPercentage, msToTime } from "../utils";
+import { asPercentage, getTextWidth, msToTime } from "../utils";
 
 export function FightChart(props) {
     const {fights, raidStart,  raidTime, fightIds} = props;
@@ -34,15 +34,17 @@ export function FightChart(props) {
                 cssClass: "idle", 
                 id: 10000 + index, 
                 duration: msToTime(fight.start_time - array[index-1].end_time),
+                tt_label: msToTime(fight.start_time - array[index-1].end_time) + " (" + msToTime(array[index-1].end_time) + "-" + msToTime(fight.start_time) + ")",
                 name: null
             });
         }
 
         fightBands.push({
-            start: timeToPixel(fight.start_time - raidStart), 
+            start: timeToPixel(fight.start_time - raidStart),
             end: timeToPixel(fight.end_time - raidStart), 
             cssClass: getClassName(fight), id: fight.id, 
             duration: msToTime(fight.end_time - fight.start_time),
+            tt_label: msToTime(fight.end_time - fight.start_time) + " (" + msToTime(fight.start_time) + "-" + msToTime(fight.end_time) + ")",
             name: fight.name,
         });
     })
@@ -98,15 +100,15 @@ export function FightChart(props) {
                     </tbody>
                 </table>
             </div>
-            <svg width={maxWidth} height="110">
+            <svg width={maxWidth * 1.2} height="110" preserveAspectRatio="xMaxYMin meet">
                 <g>
                     {fightBands.map(band => {
                         const bandRef = createRef();
                         return (<React.Fragment key={band.id}>
                                 <rect ref={bandRef} x={band.start} y={fightIds.includes(band.id) ? "0" : "10"} height="65" width={band.end - band.start} className={band.cssClass} />
                                 <Tooltip triggerRef={bandRef}>
-                                    <rect x={5} y={15} width={50} height={25} rx={5} ry={5} fill={'black'} fillOpacity={0.7} />
-                                    <text x={45} y={32} fontSize={14} textAnchor="end" className={band.cssClass}>{band.duration}</text>
+                                    <rect x={5} y={15} width={getTextWidth(band.tt_label) + 20} height={25} rx={5} ry={5} fill={'black'} fillOpacity={0.7} />
+                                    <text x={10} y={32} fontSize={14} textAnchor="start" className={band.cssClass}>{band.tt_label}</text>
                                 </Tooltip>
                             </React.Fragment>)
                     })}
