@@ -740,6 +740,86 @@
         "id": 772,
         "name": "Archavon",
         "logo": "https://wow.zamimg.com/images/wow/journal/ui-ej-boss-archavon-the-stone-watcher.png"
+    },
+    {
+        "id": 100017,
+        "name": "Utgarde Keep",
+        "logo": "https://wow.zamimg.com/images/wow/journal/ui-ej-boss-ingvar-the-plunderer.png"
+    },
+    {
+        "id": 100018,
+        "name": "Utgarde Pinnacle",
+        "logo": "https://wow.zamimg.com/images/wow/journal/ui-ej-boss-king-ymiron.png"
+    },
+    {
+        "id": 100019,
+        "name": "The Nexus",
+        "logo": "https://wow.zamimg.com/images/wow/journal/ui-ej-boss-keristrasza.png"
+    },
+    {
+        "id": 100020,
+        "name": "The Oculus",
+        "logo": "https://wow.zamimg.com/images/wow/journal/ui-ej-boss-ley-guardian-eregos.png"
+    },
+    {
+        "id": 100021,
+        "name": "Culling of Stratholme",
+        "logo": "https://wow.zamimg.com/images/wow/journal/ui-ej-boss-malganis.png"
+    },
+    {
+        "id": 100022,
+        "name": "Halls of Stone",
+        "logo": "https://wow.zamimg.com/images/wow/journal/ui-ej-boss-sjonnir-the-ironshaper.png"
+    },
+    {
+        "id": 100023,
+        "name": "Drak'Tharon Keep",
+        "logo": "https://wow.zamimg.com/images/wow/journal/ui-ej-boss-the-prophet-tharonja.png"
+    },
+    {
+        "id": 100024,
+        "name": "Azjol-Nerub",
+        "logo": "https://wow.zamimg.com/images/wow/journal/ui-ej-boss-anubarak.png"
+    },
+    {
+        "id": 100025,
+        "name": "Halls of Lightning",
+        "logo": "https://wow.zamimg.com/images/wow/journal/ui-ej-boss-loken.png"
+    },
+    {
+        "id": 100026,
+        "name": "Gundrak",
+        "logo": "https://wow.zamimg.com/images/wow/journal/ui-ej-boss-galdarah.png"
+    },
+    {
+        "id": 100027,
+        "name": "Violet Hold",
+        "logo": "https://wow.zamimg.com/images/wow/journal/ui-ej-boss-cyanigosa.png"
+    },
+    {
+        "id": 100028,
+        "name": "Ahn'kahet",
+        "logo": "https://wow.zamimg.com/images/wow/journal/ui-ej-boss-herald-volazj.png"
+    },
+    {
+        "id": 100029,
+        "name": "Forge of Souls",
+        "logo": "https://wow.zamimg.com/images/wow/journal/ui-ej-boss-devourer-of-souls.png"
+    },
+    {
+        "id": 100030,
+        "name": "Trial of the Champion",
+        "logo": "https://wow.zamimg.com/images/wow/journal/ui-ej-boss-the-black-knight.png"
+    },
+    {
+        "id": 100031,
+        "name": "Pit of Saron",
+        "logo": "https://wow.zamimg.com/images/wow/journal/ui-ej-boss-scourgelord-tyrannus.png"
+    },
+    {
+        "id": 100032,
+        "name": "Halls of Reflection",
+        "logo": "https://wow.zamimg.com/images/wow/journal/ui-ej-boss-lich-king.png"
     }
 
 
