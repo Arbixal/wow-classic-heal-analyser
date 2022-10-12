@@ -73,24 +73,26 @@ export class CharacterMapper {
             characterData[DataPoints.ProtectionPotionsNatureAbsorbed],
             characterData[DataPoints.ProtectionPotionsShadowAbsorbed]);
 
-        characterData[DataPoints.ConsumesManaPots] = this._getCastCount(character, 17531, 28499, 41618, 41617, 43186);
+        characterData[DataPoints.ConsumesManaPots] = this._getCastCount(character, 17531, 28499, 41618, 41617, 43186, 67490);
         characterData[DataPoints.ConsumesRejuvPots] = this._getCastCount(character, 22729, 28517, 45051, 53750, 53761);
-        characterData[DataPoints.ConsumesHealthPots] = this._getCastCount(character, 17534, 28495, 41620, 41619, 43185);
-        characterData[DataPoints.ConsumesFreeActionPotion] = this._getCastCount(character, 6615, 24364);
+        characterData[DataPoints.ConsumesHealthPots] = this._getCastCount(character, 17534, 28495, 41620, 41619, 43185, 67489);
+        characterData[DataPoints.ConsumesFreeActionPotion] = this._getCastCount(character, 6615);
+        characterData[DataPoints.ConsumesLivingActionPotion] = this._getCastCount(character, 24364);
         characterData[DataPoints.ConsumesRestorationPots] = this._getCastCount(character, 11359, 17550);
         characterData[DataPoints.ConsumesRagePotions] = this._getCastCount(character, 6613, 17528);
-        characterData[DataPoints.ConsumesStoneshield] = this._getCastCount(character, 17540);
-        characterData[DataPoints.ConsumesInsaneStrength] = this._getCastCount(character, 28494);
-        characterData[DataPoints.ConsumesShrouding] = this._getCastCount(character, 28548);
+        characterData[DataPoints.ConsumesStoneshield] = this._getPotionCount(character, 17540);
+        characterData[DataPoints.ConsumesInsaneStrength] = this._getPotionCount(character, 28494);
+        characterData[DataPoints.ConsumesShrouding] = this._getPotionCount(character, 28548);
         characterData[DataPoints.ConsumesFelRegeneration] = this._getCastCount(character, 38908);
-        characterData[DataPoints.ConsumesHeroic] = this._getCastCount(character, 28506);
-        characterData[DataPoints.ConsumesDestruction] = this._getCastCount(character, 28508); // Check for buff on combat start
-        characterData[DataPoints.ConsumesHaste] = this._getCastCount(character, 28507); // Check for buff on combat start
-        characterData[DataPoints.ConsumesSpeed] = this._getCastCount(character, 53908);
+        characterData[DataPoints.ConsumesHeroic] = this._getPotionCount(character, 28506);
+        characterData[DataPoints.ConsumesDestruction] = this._getPotionCount(character, 28508);
+        characterData[DataPoints.ConsumesHaste] = this._getPotionCount(character, 28507);
+        characterData[DataPoints.ConsumesSpeed] = this._getPotionCount(character, 53908);
         characterData[DataPoints.ConsumesFelMana] = this._getCastCount(character, 38929);
-        characterData[DataPoints.ConsumesIronshield] = this._getCastCount(character, 17540, 28515);
-        characterData[DataPoints.ConsumesWildMagic] = this._getCastCount(character, 53909);
-        characterData[DataPoints.ConsumesIndestructable] = this._getCastCount(character, 53762);
+        characterData[DataPoints.ConsumesGreaterStoneshield] = this._getPotionCount(character, 17540);
+        characterData[DataPoints.ConsumesIronshield] = this._getPotionCount(character, 28515);
+        characterData[DataPoints.ConsumesWildMagic] = this._getPotionCount(character, 53909);
+        characterData[DataPoints.ConsumesIndestructable] = this._getPotionCount(character, 53762);
 
         characterData[DataPoints.ConsumesRunes] = this._getCastCount(character, 16666, 27869);
         characterData[DataPoints.ConsumesHealthStones] = this._getCastCount(character, 27235, 27236, 27237, 47875, 47876, 47877);
@@ -120,6 +122,7 @@ export class CharacterMapper {
             characterData[DataPoints.ConsumesRejuvPots],
             characterData[DataPoints.ConsumesHealthPots],
             characterData[DataPoints.ConsumesFreeActionPotion],
+            characterData[DataPoints.ConsumesLivingActionPotion],
             characterData[DataPoints.ConsumesRestorationPots],
             characterData[DataPoints.ConsumesRagePotions],
             characterData[DataPoints.ConsumesInsaneStrength],
@@ -130,7 +133,9 @@ export class CharacterMapper {
             characterData[DataPoints.ConsumesHaste],
             characterData[DataPoints.ConsumesSpeed],
             characterData[DataPoints.ConsumesFelMana],
-            characterData[DataPoints.ConsumesIronshield]);
+            characterData[DataPoints.ConsumesGreaterStoneshield],
+            characterData[DataPoints.ConsumesIronshield],
+            characterData[DataPoints.ConsumesWildMagic]);
 
         characterData[DataPoints.ConsumesGems] = sumNonNull(characterData[DataPoints.ConsumesRunes],
             characterData[DataPoints.ConsumesHealthStones],
@@ -176,13 +181,17 @@ export class CharacterMapper {
             characterData[DataPoints.DispelDruidAbolishPoison],
             characterData[DataPoints.DispelShamanCureToxins],
             characterData[DataPoints.DispelShamanCleanseSpirit],
-            characterData[DataPoints.DispelShamanCleansingTotem]);
+            characterData[DataPoints.DispelShamanCleansingTotem],
+            characterData[DataPoints.DispelPaladinCleanse],
+            characterData[DataPoints.DispelPaladinPurify]);
 
         characterData[DataPoints.DispelDisease] = sumNonNull(characterData[DataPoints.DispelPriestCureDisease],
             characterData[DataPoints.DispelPriestAbolishDisease],
             characterData[DataPoints.DispelShamanCureToxins],
             characterData[DataPoints.DispelShamanCleanseSpirit],
-            characterData[DataPoints.DispelShamanCleansingTotem]);
+            characterData[DataPoints.DispelShamanCleansingTotem],
+            characterData[DataPoints.DispelPaladinCleanse],
+            characterData[DataPoints.DispelPaladinPurify]);
 
         characterData[DataPoints.DispelCurse] = sumNonNull(characterData[DataPoints.DispelDruidRemoveCurse],
             characterData[DataPoints.DispelMageRemoveLesserCurse],
@@ -542,6 +551,31 @@ export class CharacterMapper {
 
     _getCastCount(character, ...spellIds) {
         return this._getRestrictedCastCount(character, null, spellIds);
+    }
+
+    _getPotionCount(character, spellId, buffId) {
+        const {casts, buffs} = character.data;
+
+        if (!casts) {
+            return 0;
+        }
+
+        let castCount = 0;
+        Object.entries(casts).forEach(([castSpellId, countByType]) => {
+            if (spellId === parseInt(castSpellId)) {
+                castCount += ((countByType['boss'] ?? 0) + (countByType['trash'] ?? 0));
+            }
+        });
+
+        if (!buffs) {
+            return castCount;
+        }
+
+        if (buffs[spellId]) {
+            castCount += buffs[spellId].prebuff.length;
+        }
+
+        return castCount;
     }
 
     _getDamageDone(character, ...spellIds) {
