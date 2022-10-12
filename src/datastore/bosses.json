@@ -735,6 +735,11 @@
         "id": 734,
         "name": "Malygos",
         "logo": "https://wow.zamimg.com/images/wow/journal/ui-ej-boss-malygos.png"
+    },
+    {
+        "id": 772,
+        "name": "Archavon",
+        "logo": "https://wow.zamimg.com/images/wow/journal/ui-ej-boss-archavon-the-stone-watcher.png"
     }
 
 
