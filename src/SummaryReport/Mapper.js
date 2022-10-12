@@ -263,6 +263,29 @@ export class CharacterMapper {
         characterData[DataPoints.ResistanceNature] = this._cleanResistanceValue(character.data.resistances?.nature, natureResist === maxResist ? randomResist : 0);
         characterData[DataPoints.ResistanceShadow] = this._cleanResistanceValue(character.data.resistances?.shadow, shadowResist === maxResist ? randomResist : 0);
 
+        characterData[DataPoints.MageArcaneBarrage] = this._getCastCount(character, 44781);
+        characterData[DataPoints.MageArcaneBlast] = this._getCastCount(character, 42897);
+        characterData[DataPoints.MageArcaneExplosion] = this._getCastCount(character, 42921);
+        characterData[DataPoints.MageArcaneMissiles] = this._getCastCount(character, 42846);
+        characterData[DataPoints.MageBlizzard] = this._getCastCount(character, 42940);
+        characterData[DataPoints.MageFireBlast] = this._getCastCount(character, 42873);
+        characterData[DataPoints.MageFireWard] = this._getCastCount(character, 43010);
+        characterData[DataPoints.MageFlamestrike] = this._getCastCount(character, 42926);
+        characterData[DataPoints.MageFrostWard] = this._getCastCount(character, 43012);
+        characterData[DataPoints.MageIceArmor] = this._getCastCount(character, 43008);
+        characterData[DataPoints.MageInvisibility] = this._getCastCount(character, 66);
+        characterData[DataPoints.MageMageArmor] = this._getCastCount(character, 43024);
+        characterData[DataPoints.MageManaShield] = this._getCastCount(character, 43020);
+        characterData[DataPoints.MageMoltenArmor] = this._getCastCount(character, 43046);
+        characterData[DataPoints.MageFireBall] = this._getCastCount(character, 42833);
+        characterData[DataPoints.MageLivingBomb] = this._getCastCount(character, 55362);
+        characterData[DataPoints.MagePyroblast] = this._getCastCount(character, 42891);
+        characterData[DataPoints.MageBlastWave] = this._getCastCount(character, 42945);
+        characterData[DataPoints.MageDragonsBreath] = this._getCastCount(character, 42950);
+        characterData[DataPoints.MageFrostbolt] = this._getCastCount(character, 42842);
+        characterData[DataPoints.MageDeepFreeze] = this._getCastCount(character, 58534);
+        characterData[DataPoints.MageFrostfireBolt] = this._getCastCount(character, 47610);
+
         //this._getTankStats(character, characterData);
         
         return characterData;

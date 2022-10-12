@@ -1138,6 +1138,162 @@ class SummaryReport extends Component {
                                         label=" "
                                         cssClass="cooldowns center" />
                         </GridColumnGroup>
+                        <GridColumnGroup id={GroupKeys.Mage} label="Abilities" cssClass="odd-colgroup">
+                            <GridIconColumn field={DataPoints.MageArcaneBarrage}
+                                        label="Arcane Barrage"
+                                        icon_name="ability_mage_arcanebarrage.jpg"
+                                        cssClass="center"
+                                        spell_id={44781}
+                                        visibility={(ctx) => ctx.classFilter === "Mage" && ctx.hasValue}
+                                        aggregate={true} />
+                            <GridIconColumn field={DataPoints.MageArcaneBlast}
+                                        label="Arcane Blast"
+                                        icon_name="spell_arcane_blast.jpg"
+                                        cssClass="center"
+                                        spell_id={42897}
+                                        visibility={(ctx) => ctx.classFilter === "Mage" && ctx.hasValue}
+                                        aggregate={true} />
+                            <GridIconColumn field={DataPoints.MageArcaneExplosion}
+                                        label="Arcane Explosion"
+                                        icon_name="spell_nature_wispsplode.jpg"
+                                        cssClass="center"
+                                        spell_id={42921}
+                                        visibility={(ctx) => ctx.classFilter === "Mage" && ctx.hasValue}
+                                        aggregate={true} />
+                            <GridIconColumn field={DataPoints.MageArcaneMissiles}
+                                        label="Arcane Missiles"
+                                        icon_name="spell_nature_starfall.jpg"
+                                        cssClass="center"
+                                        spell_id={42846}
+                                        visibility={(ctx) => ctx.classFilter === "Mage" && ctx.hasValue}
+                                        aggregate={true} />
+                            <GridIconColumn field={DataPoints.MageBlastWave}
+                                        label="Blizzard"
+                                        icon_name="spell_holy_excorcism_02.jpg"
+                                        cssClass="center"
+                                        spell_id={42945}
+                                        visibility={(ctx) => ctx.classFilter === "Mage" && ctx.hasValue}
+                                        aggregate={true} />
+                            <GridIconColumn field={DataPoints.MageBlizzard}
+                                        label="Blizzard"
+                                        icon_name="spell_frost_icestorm.jpg"
+                                        cssClass="center"
+                                        spell_id={42940}
+                                        visibility={(ctx) => ctx.classFilter === "Mage" && ctx.hasValue}
+                                        aggregate={true} />
+                            <GridIconColumn field={DataPoints.MageDeepFreeze}
+                                        label="Deep Freeze"
+                                        icon_name="ability_mage_deepfreeze.jpg"
+                                        cssClass="center"
+                                        spell_id={58534}
+                                        visibility={(ctx) => ctx.classFilter === "Mage" && ctx.hasValue}
+                                        aggregate={true} />
+                            <GridIconColumn field={DataPoints.MageDragonsBreath}
+                                        label="Dragon's Breath"
+                                        icon_name="inv_misc_head_dragon_01.jpg"
+                                        cssClass="center"
+                                        spell_id={42950}
+                                        visibility={(ctx) => ctx.classFilter === "Mage" && ctx.hasValue}
+                                        aggregate={true} />
+                            <GridIconColumn field={DataPoints.MageFireBall}
+                                        label="Fireball"
+                                        icon_name="spell_fire_flamebolt.jpg"
+                                        cssClass="center"
+                                        spell_id={42833}
+                                        visibility={(ctx) => ctx.classFilter === "Mage" && ctx.hasValue}
+                                        aggregate={true} />
+                            <GridIconColumn field={DataPoints.MageFireBlast}
+                                        label="Fire Blast"
+                                        icon_name="spell_fire_fireball.jpg"
+                                        cssClass="center"
+                                        spell_id={42873}
+                                        visibility={(ctx) => ctx.classFilter === "Mage" && ctx.hasValue}
+                                        aggregate={true} />
+                            <GridIconColumn field={DataPoints.MageFireWard}
+                                        label="Fire Ward"
+                                        icon_name="spell_fire_firearmor.jpg"
+                                        cssClass="center"
+                                        spell_id={43010}
+                                        visibility={(ctx) => ctx.classFilter === "Mage" && ctx.hasValue}
+                                        aggregate={true} />
+                            <GridIconColumn field={DataPoints.MageFlamestrike}
+                                        label="Flamestrike"
+                                        icon_name="spell_fire_selfdestruct.jpg"
+                                        cssClass="center"
+                                        spell_id={42926}
+                                        visibility={(ctx) => ctx.classFilter === "Mage" && ctx.hasValue}
+                                        aggregate={true} />
+                            <GridIconColumn field={DataPoints.MageFrostbolt}
+                                        label="Frostbolt"
+                                        icon_name="spell_frost_frostbolt02.jpg"
+                                        cssClass="center"
+                                        spell_id={42842}
+                                        visibility={(ctx) => ctx.classFilter === "Mage" && ctx.hasValue}
+                                        aggregate={true} />
+                            <GridIconColumn field={DataPoints.MageFrostfireBolt}
+                                        label="Frostfire Bolt"
+                                        icon_name="ability_mage_frostfirebolt.jpg"
+                                        cssClass="center"
+                                        spell_id={47610}
+                                        visibility={(ctx) => ctx.classFilter === "Mage" && ctx.hasValue}
+                                        aggregate={true} />
+                            <GridIconColumn field={DataPoints.MageFrostWard}
+                                        label="Frost Ward"
+                                        icon_name="spell_frost_frostward.jpg"
+                                        cssClass="center"
+                                        spell_id={43012}
+                                        visibility={(ctx) => ctx.classFilter === "Mage" && ctx.hasValue}
+                                        aggregate={true} />
+                            <GridIconColumn field={DataPoints.MageIceArmor}
+                                        label="Ice Armor"
+                                        icon_name="spell_frost_frostarmor02.jpg"
+                                        cssClass="center"
+                                        spell_id={43008}
+                                        visibility={(ctx) => ctx.classFilter === "Mage" && ctx.hasValue}
+                                        aggregate={true} />
+                            <GridIconColumn field={DataPoints.MageInvisibility}
+                                        label="Invisibility"
+                                        icon_name="ability_mage_invisibility.jpg"
+                                        cssClass="center"
+                                        spell_id={66}
+                                        visibility={(ctx) => ctx.classFilter === "Mage" && ctx.hasValue}
+                                        aggregate={true} />
+                            <GridIconColumn field={DataPoints.MageLivingBomb}
+                                        label="Living Bomb"
+                                        icon_name="ability_mage_livingbomb.jpg"
+                                        cssClass="center"
+                                        spell_id={55362}
+                                        visibility={(ctx) => ctx.classFilter === "Mage" && ctx.hasValue}
+                                        aggregate={true} />
+                            <GridIconColumn field={DataPoints.MageMageArmor}
+                                        label="Mage Armor"
+                                        icon_name="spell_magearmor.jpg"
+                                        cssClass="center"
+                                        spell_id={43024}
+                                        visibility={(ctx) => ctx.classFilter === "Mage" && ctx.hasValue}
+                                        aggregate={true} />
+                            <GridIconColumn field={DataPoints.MageManaShield}
+                                        label="Mana Shield"
+                                        icon_name="spell_shadow_detectlesserinvisibility.jpg"
+                                        cssClass="center"
+                                        spell_id={43020}
+                                        visibility={(ctx) => ctx.classFilter === "Mage" && ctx.hasValue}
+                                        aggregate={true} />
+                            <GridIconColumn field={DataPoints.MageMoltenArmor}
+                                        label="Molten Armor"
+                                        icon_name="ability_mage_moltenarmor.jpg"
+                                        cssClass="center"
+                                        spell_id={43046}
+                                        visibility={(ctx) => ctx.classFilter === "Mage" && ctx.hasValue}
+                                        aggregate={true} />
+                            <GridIconColumn field={DataPoints.MagePyroblast}
+                                        label="Pyroblast"
+                                        icon_name="spell_fire_fireball02.jpg"
+                                        cssClass="center"
+                                        spell_id={42891}
+                                        visibility={(ctx) => ctx.classFilter === "Mage" && ctx.hasValue}
+                                        aggregate={true} />
+                        </GridColumnGroup>
 {/*                        <GridColumnGroup id={GroupKeys.Resistance} label="Resistance" cssClass="even-colgroup">
                             <GridColumn field={DataPoints.ResistanceArcane} label="A"
                                         cssClass="protection_potion arcane" />
