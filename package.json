@@ -11,7 +11,7 @@
     "react-dom": "^17.0.1",
     "react-router-dom": "^5.2.0",
     "react-scripts": "5.0.0",
-    "web-vitals": "^0.2.4",
+    "web-vitals": "^3.0.3",
     "query-string": "6.13.3",
     "react-tooltip": "^4.2.11",
     "react-svg-tooltip": "^0.0.11",
