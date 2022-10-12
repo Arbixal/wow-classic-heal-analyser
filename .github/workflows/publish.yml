@@ -45,7 +45,7 @@ jobs:
   # You may pin to the exact commit or the version.
   # uses: tagus/git-deploy@c7de901f0c7d498fefa2dbddf99290a5b3015550
     - name: Deploy to Github.io
-      uses: tagus/git-deploy@v0.3.2
+      uses: tagus/git-deploy@v0.4.1
       with:
         # The ssh url of the target repository.
         repository: git@github.com:Arbixal/Arbixal.github.io.git
