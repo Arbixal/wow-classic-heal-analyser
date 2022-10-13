@@ -1,11 +1,9 @@
 import './App.css';
 import {Component} from "react";
-import {HealerReportWithRouter as HealerReport} from "./HealerReport/HealerReport";
-import {ShamanReportWithRouter as ShamanReport} from "./ShamanReport/ShamanReport";
-import {SummaryReportWithRouter as SummaryReport} from "./SummaryReport/SummaryReport";
+import {SummaryReport} from "./SummaryReport/SummaryReport";
 import {
   HashRouter as Router,
-  Switch,
+  Routes,
   Route,
 } from "react-router-dom";
 import { ReportLoad } from './ReportLoad';
@@ -21,20 +19,14 @@ class App extends Component {
         <h1>WoW Classic Log Analyser</h1>
       </div>
       <Router>
-          <Switch>
-            <Route exact path="/">
-              <ReportLoad />
+          <Routes>
+            <Route path="" element={<ReportLoad />} />
+            <Route path=":id" element={<SummaryReport />}>
+              <Route path=":fightId" element={<SummaryReport />}>
+                <Route path=":filter" element={<SummaryReport />} />
+              </Route>
             </Route>
-            <Route path="/:id/archived/shaman">
-              <ShamanReport />
-            </Route>
-            <Route path="/:id/archived/healer" >
-              <HealerReport />
-            </Route>
-            <Route path="/:id/:fightId?/:filter?">
-              <SummaryReport />
-            </Route>
-          </Switch>
+          </Routes>
       </Router>
       </>
     );

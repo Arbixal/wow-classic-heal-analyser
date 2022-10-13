@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { useHistory, useLocation } from "react-router-dom";
+import { useNavigate, useLocation } from "react-router-dom";
 import ReactGA from 'react-ga4';
 
 export function ReportLoad() {
@@ -8,7 +8,7 @@ export function ReportLoad() {
         ReactGA.send({ hitType: "pageview", page: location.pathname });
     }, [location]);
 
-    let history = useHistory();
+    let history = useNavigate();
     let [reportId, setReportId] = useState();
 
     let handleChange = (event) => {
@@ -27,7 +27,7 @@ export function ReportLoad() {
     }
 
     let handleSubmit = () => {
-        history.push("/" + reportId);
+        history.navigate("/" + reportId);
     }
 
     return (

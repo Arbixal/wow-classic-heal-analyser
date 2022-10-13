@@ -1,17 +1,16 @@
 import "./SummaryReport.scss";
-import {Component} from "react";
-import { NavLink } from "react-router-dom";
+import {useState} from "react";
+import { NavLink, useLocation, useParams } from "react-router-dom";
 import {WarcraftLogLoader} from "../warcraftLogLoader";
 import {GroupKeys, DataPoints} from "./GridContexts";
 import {Grid} from "./Grid";
 import {GridColumnGroup} from "./GridColumnGroup";
 import {GridColumn} from "./GridColumn";
 import {GridIconColumn} from "./GridIconColumn";
-//import { GridBarColumn, GridBarColumnSection } from "./GridBarColumn";
 import { GridIconListColumn } from "./GridIconListColumn";
 import { BossNavItem } from "./BossNavItem";
 import ReactTooltip from "react-tooltip";
-import { withRouter, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { format, intervalToDuration} from "date-fns";
 import { FightChart } from "./FightChart";
 import { WoWAnalyzerLink } from "./WoWAnalyzerLink";
@@ -19,6 +18,7 @@ import { ThreatReportLink } from "./ThreatReportLink";
 import { WarcraftLogsLink } from "./WarcraftLogsLink";
 import ReactGA from 'react-ga4';
 import { CharacterMapper } from "./Mapper";
+import { useEffect } from "react";
 
 const roles = {
     'tank': {
@@ -101,136 +101,122 @@ const classes = {
     },
 }
 
-class SummaryReport extends Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            needsUpgrade: false,
-            error: null,
-            fights: [],
-            characters: {},
-            isLoaded: false,
-            reportDetails: {},
-            context: {},
-            selectedFight: -1,
-            data: [],
-            classFilter: null,
-            roleFilter: null,
-        }
-        this._logLoader = null;
-        this._characterMapper = new CharacterMapper();
+export function SummaryReport() {
+    const { id, fightId, filter } = useParams();
+    const { pathname } = useLocation();
 
-        this.handleFightMouseOut = this.handleFightMouseOut.bind(this);
-        this.handleFightMouseOver = this.handleFightMouseOver.bind(this);
-    }
+    const [isLoaded, setLoaded] = useState(false);
+    const [error, setError] = useState();
+    const [needsUpgrade, setNeedsUpgrade] = useState(false);
+    const [characters, setCharacters] = useState({});
+    const [fights, setFights] = useState([]);
+    const [reportDetails, setReportDetails] = useState({});
+    const [raidStart, setRaidStart] = useState();
+    const [raidTime, setRaidTime] = useState();
+    const [selectedFight, setSelectedFight] = useState(-1);
+    const [hoverFight, setHoverFight] = useState();
+    const [fightIds, setFightIds] = useState([]);
+    const [boss, setBoss] = useState();
+    const [bossList, setBossList] = useState([]);
+    const [data, setData] = useState([]);
+    const [classFilter, setClassFilter] = useState();
+    const [roleFilter, setRoleFilter] = useState();
 
-    _getResults(report) {
-        //let report = this._logLoader.getResults(selectedFight);
-        this.setState({
-            isLoaded: true,
-            characters: report.characters,
-            fights: report.fights,
-            raidStart: report.startTime,
-            raidTime: report.endTime - report.startTime,
-            reportDetails: {
-                title: report.title,
-                startTime: new Date(report.startTimestamp),
-                endTime: new Date(report.endTimestamp)
-            }
-        });
+    useEffect(() => {
+        setSelectedFight(fightId == null || isNaN(parseInt(fightId)) ? -1 : parseInt(fightId));
+    }, [fightId]);
 
-        return report;
-    }
-
-    componentDidMount() {
-        const { id, fightId, filter } = this.props.match.params;
+    useEffect(() => {
         if (!id)
             return;
 
-        let selectedFight = fightId == null || isNaN(parseInt(fightId)) ? -1 : parseInt(fightId);
+        let logLoader = WarcraftLogLoader.Load(id);
 
-        ReactGA.send({ hitType: "pageview", page: this.props.match.path, reportId: id, fightId: fightId, filter: filter });
+        //ReactGA.send({ hitType: "pageview", page: this.props.match.path, reportId: id, fightId: fightId, filter: filter });
 
-        this.setState({reportId: id, selectedFight: selectedFight});
 
-        this._logLoader = WarcraftLogLoader.Load(id);
-        this.loadReport(selectedFight);
-    }
+        //this.setState({reportId: id, selectedFight: selectedFight});
 
-    loadReport(fightId) {
-        this._logLoader.loadReport(fightId)
+        logLoader.loadReport(selectedFight)
         .then(report => {
             if (report.needsUpgrade) {
-                this.setState({needsUpgrade: true})
+                setNeedsUpgrade(true);
                 return;
             }
 
-            this._getResults(report);
-            this._generateFilteredData(report.characters);
+            setCharacters(report.characters);
+            setFights(report.fights);
+
+            let startTime = new Date(report.startTimestamp);
+            let endTime = new Date(report.endTimestamp);
+            setReportDetails({
+                title: report.title,
+                startTime: startTime,
+                endTime: endTime,
+                duration: intervalToDuration({start: startTime, end: endTime})
+            });
+            setRaidStart(report.startTime);
+            setRaidTime(report.endTime - report.startTime);
+            setLoaded(true);
+
+            //this._getResults(report);
+            //this._generateFilteredData(report.characters);
         })
         .catch((error) => {
-            this.setState({
-                isLoaded: true,
-                error: error
-            })
+            setLoaded(true);
+            setError(error);
         });
-    }
+    }, [id, selectedFight]);
 
-    componentDidUpdate(prevProps) {
-        if (this.props.match !== prevProps.match) {
-            const { id, fightId, filter } = this.props.match.params;
-            let selectedFight = fightId == null || isNaN(parseInt(fightId)) ? -1 : parseInt(fightId);
-    
-            ReactGA.send({ hitType: "pageview", page: this.props.match.path, reportId: id, fightId: fightId, filter: filter });
-            this.loadReport(selectedFight);
-        }
-    }
-
-    _getFightIds(fightId) {
-        const { fights, hoverFight} = this.state;
-        let fightIds = [];
+    useEffect(() => {
+        let fightIdsRaw = [];
         if (fightId === -1 && hoverFight == null)
             return [];
             
         if (fightId > 0)
-            fightIds.push(fightId);
+        fightIdsRaw.push(fightId);
 
         if (hoverFight > 0)
-            fightIds.push(hoverFight);
+        fightIdsRaw.push(hoverFight);
 
         if (fightId === 0 || hoverFight === 0) {
             fights.forEach(fight => {
                 if (fight.boss !== 0)
                     return;
                     
-                fightIds.push(fight.id);
+                    fightIdsRaw.push(fight.id);
             });
         }
 
-        return fightIds;
-    }
+        setFightIds(fightIdsRaw);
 
-    handleFightMouseOver(fightId) {
-        const {hoverFight} = this.state;
+    }, [selectedFight, hoverFight, fightId, fights])
 
-        if (hoverFight !== fightId) {
-            console.log("OnMouseOver: " + fightId);
-            this.setState({hoverFight: fightId});
-        }
-    }
+    useEffect(() => {
+        setBossList(fights.filter(fight => fight.boss > 0)
+        .reduce((accum, fight) => {
+            let found = false;
+            for (let i = 0; i < accum.length; ++i) {
+                if (accum[i].id === fight.boss) {
+                    accum[i].fights.push(fight);
+                    found = true;
+                }
+            }
 
-    handleFightMouseOut(fightId) {
-        const {hoverFight} = this.state;
+            if (!found) {
+                accum.push({ id: fight.boss, fights: [fight] });
+            }
 
-        if (hoverFight === fightId) {
-            console.log("OnMouseOut: " + fightId);
-            this.setState({hoverFight: null});
-        }
-    }
+            if (fight.id === selectedFight) {
+                setBoss(fight.boss);
+            }
 
-    _generateFilteredData(characters) {
-        const {filter} = this.props.match.params;
+            return accum;
+        },[]));
+    }, [fights, selectedFight])
 
+    useEffect(() => {
+        const characterMapper = new CharacterMapper();
         const classSortOrder = { Warrior: 0, Rogue: 1, Hunter: 2, Mage: 3, Warlock: 4, Priest: 5, Shaman: 6, Paladin: 7, Druid: 8, DeathKnight: 9 };
 
         let roleFilter = null;
@@ -246,7 +232,7 @@ class SummaryReport extends Component {
             roleFilter = null;
         }
 
-        let data = [...Object.values(characters)
+        let dataRaw = [...Object.values(characters)
         .filter((character) => character.type !== "NPC" && character.type !== "Pet" && character.type !== "Boss" && character.type !== "Unknown")
         .filter((character) => classFilter == null || character.type === classFilter)
         .filter((character) => roleFilter == null || character.data.roles.includes(roleFilter))
@@ -258,88 +244,82 @@ class SummaryReport extends Component {
 
              return aValue.name.localeCompare(bValue.name);
             })
-        .map((character) => this._characterMapper.Flatten(character))];
+        .map((character) => characterMapper.Flatten(character))];
 
-        this.setState({data: data, classFilter: classFilter, roleFilter: roleFilter});
+        setData(dataRaw);
+        setClassFilter(classFilter);
+        setRoleFilter(roleFilter);
+
+        //this.setState({data: data, classFilter: classFilter, roleFilter: roleFilter});
+    }, [filter, characters])
+
+    useEffect(() => {
+        ReactGA.send({ hitType: "pageview", page: pathname, reportId: id, fightId: fightId, filter: filter });
+    }, [filter, fightId, id, pathname])
+
+    function _handleFightMouseOver(fightId) {
+
+        if (hoverFight !== fightId) {
+            console.log("OnMouseOver: " + fightId);
+            setHoverFight(fightId);
+        }
     }
 
-    render() {
-        const { error, needsUpgrade, isLoaded, data, reportId, reportDetails, fights, raidStart, raidTime, classFilter, roleFilter} = this.state;
-        const { fightId, filter } = this.props.match.params;
+    function _handleFightMouseOut(fightId) {
+        if (hoverFight === fightId) {
+            console.log("OnMouseOut: " + fightId);
+            setHoverFight(null);
+        }
+    }
 
-        let selectedFight = fightId == null || isNaN(parseInt(fightId)) ? -1 : parseInt(fightId);
-        let boss = null;
+    const filterSuffix = filter ? "/" + filter : "";
 
-        const filterSuffix = filter ? "/" + filter : "";
-        
-        if (error) {
-            return <div>Error: {error.message}</div>;
-        } else if (needsUpgrade) {
-            return <div>The report format has changed since refreshing the page. Please refresh your page for the latest version.</div>
-        } else if (!isLoaded) {
-            return <div>Loading ...</div>;
-        } else {
-            let fightIds = this._getFightIds(selectedFight);
-            let duration = intervalToDuration({start: reportDetails.startTime, end: reportDetails.endTime});
-            return (
-                <>
-                    <h3 className="report_title">{reportDetails.title}</h3>
-                    <div><strong>Report ID:</strong> {reportId} (<Link to="/">Load a different report</Link>)</div>
-                    <div>{format(reportDetails.startTime, "EEE do MMM HH:mm:ss")} - {format(reportDetails.endTime, "HH:mm:ss")} ({duration.hours}:{duration.minutes.toString().padStart(2, "0")}:{duration.seconds.toString().padStart(2, "0")})</div>
-                    <WoWAnalyzerLink reportId={reportId} fightId={selectedFight} />
-                    <ThreatReportLink reportId={reportId} fightId={selectedFight} />
-                    <WarcraftLogsLink reportId={reportId} fightId={selectedFight} />
-                    <div className="boss_nav">
-                    <div className="boss_tile">
-                        <NavLink to={"/" + reportId + (filterSuffix ? "/-1" + filterSuffix : "")}>
-                            <div className="boss_fight">
-                                <img src="https://wow.zamimg.com/images/wow/journal/ui-ej-boss-default.png" alt="Summary" />
-                                <div className="boss_name">Summary</div>
-                            </div>
-                        </NavLink>
-                    </div>
-                    <div className="boss_tile">
-                        <NavLink to={"/" + reportId + "/0" + filterSuffix} activeClassName="selected">
-                            <div className="boss_fight" onMouseOver={(e) => this.handleFightMouseOver(0)} onMouseOut={(e) => this.handleFightMouseOut(0)}>
-                                <img src="https://wow.zamimg.com/images/wow/journal/ui-ej-boss-timmy-the-cruel.png" alt="Trash" />
-                                <div className="boss_name">Trash</div>
-                            </div>
-                        </NavLink>
-                    </div>
-                        {fights.filter(fight => fight.boss > 0)
-                               .reduce((accum, fight) => {
-                                    let found = false;
-                                    for (let i = 0; i < accum.length; ++i) {
-                                        if (accum[i].id === fight.boss) {
-                                            accum[i].fights.push(fight);
-                                            found = true;
-                                        }
-                                    }
+    if (error) {
+        return <div>Error: {error.message}</div>;
+    } else if (needsUpgrade) {
+        return <div>The report format has changed since refreshing the page. Please refresh your page for the latest version.</div>
+    } else if (!isLoaded) {
+        return <div>Loading ...</div>;
+    } else {
+        return (
+            <>
+                <h3 className="report_title">{reportDetails.title}</h3>
+                <div><strong>Report ID:</strong> {id} (<Link to="/">Load a different report</Link>)</div>
+                <div>{format(reportDetails.startTime, "EEE do MMM HH:mm:ss")} - {format(reportDetails.endTime, "HH:mm:ss")} ({reportDetails.duration.hours}:{reportDetails.duration.minutes.toString().padStart(2, "0")}:{reportDetails.duration.seconds.toString().padStart(2, "0")})</div>
+                <WoWAnalyzerLink reportId={id} fightId={selectedFight} />
+                <ThreatReportLink reportId={id} fightId={selectedFight} />
+                <WarcraftLogsLink reportId={id} fightId={selectedFight} />
+                <div className="boss_nav">
+                <div className="boss_tile">
+                    <NavLink to={"/" + id + (filterSuffix ? "/-1" + filterSuffix : "")}>
+                        <div className="boss_fight">
+                            <img src="https://wow.zamimg.com/images/wow/journal/ui-ej-boss-default.png" alt="Summary" />
+                            <div className="boss_name">Summary</div>
+                        </div>
+                    </NavLink>
+                </div>
+                <div className="boss_tile">
+                    <NavLink to={"/" + id + "/0" + filterSuffix} activeClassName="selected">
+                        <div className="boss_fight" onMouseOver={(e) => _handleFightMouseOver(0)} onMouseOut={(e) => _handleFightMouseOut(0)}>
+                            <img src="https://wow.zamimg.com/images/wow/journal/ui-ej-boss-timmy-the-cruel.png" alt="Trash" />
+                            <div className="boss_name">Trash</div>
+                        </div>
+                    </NavLink>
+                </div>
+                    {bossList.map(bossObj => (
+                        <BossNavItem key={bossObj.id} boss={bossObj} onMouseOver={_handleFightMouseOver} onMouseOut={_handleFightMouseOut} />
+                    ))}
+                </div>
+                <FightChart fights={fights} raidStart={raidStart} raidTime={raidTime} fightIds={fightIds} />
+                <div className="nav_bar">
+                    <NavLink to={"/" + id + "/" + selectedFight} className={({ isActive }) => isActive ? "selected" : "" }><div className={"class_nav All"}><img className="spell_icon" src="https://assets.rpglogs.com/img/warcraft/abilities/inv_misc_questionmark.jpg" alt="All" />All</div></NavLink>
+                    <div className="separator"></div>
+                    {Object.values(roles).map(role => <NavLink key={role.slug} to={"/" + id + "/" + selectedFight + "/" + role.slug} className={({ isActive }) => isActive ? "selected" : "" }><div className={"class_nav " + role.name}><img className="spell_icon" src={role.icon} alt={role.name} />{role.name}</div></NavLink>)}
+                    <div className="separator"></div>
+                    {Object.values(classes).map(role => <NavLink key={role.slug} to={"/" + id + "/" + selectedFight + "/" + role.slug} className={({ isActive }) => isActive ? "selected" : "" }><div className={"class_nav " + role.slug}><img className="spell_icon" src={role.icon} alt={role.name} />{role.name}</div></NavLink>)}
+                </div>
 
-                                    if (!found) {
-                                        accum.push({ id: fight.boss, fights: [fight] });
-                                    }
-
-                                    if (fight.id === selectedFight) {
-                                        boss = fight.boss;
-                                    }
-
-                                    return accum;
-                               },[])
-                               .map(boss => (
-                            <BossNavItem key={boss.id} boss={boss} onMouseOver={this.handleFightMouseOver} onMouseOut={this.handleFightMouseOut} />
-                        ))}
-                    </div>
-                    <FightChart fights={fights} raidStart={raidStart} raidTime={raidTime} fightIds={fightIds} />
-                    <div className="nav_bar">
-                        <NavLink to={"/" + reportId + "/" + selectedFight} activeClassName="selected"><div className={"class_nav All"}><img className="spell_icon" src="https://assets.rpglogs.com/img/warcraft/abilities/inv_misc_questionmark.jpg" alt="All" />All</div></NavLink>
-                        <div className="separator"></div>
-                        {Object.values(roles).map(role => <NavLink key={role.slug} to={"/" + reportId + "/" + selectedFight + "/" + role.slug} activeClassName="selected"><div className={"class_nav " + role.name}><img className="spell_icon" src={role.icon} alt={role.name} />{role.name}</div></NavLink>)}
-                        <div className="separator"></div>
-                        {Object.values(classes).map(role => <NavLink key={role.slug} to={"/" + reportId + "/" + selectedFight + "/" + role.slug} activeClassName="selected"><div className={"class_nav " + role.slug}><img className="spell_icon" src={role.icon} alt={role.name} />{role.name}</div></NavLink>)}
-                    </div>
-
-                    <Grid data={data} classFilter={classFilter} roleFilter={roleFilter} fightId={selectedFight} boss={boss}>
+                <Grid data={data} classFilter={classFilter} roleFilter={roleFilter} fightId={selectedFight} boss={boss}>
                         <GridColumnGroup id={GroupKeys.Name} label="Name" cssClass="odd-colgroup">
                             <GridColumn field={DataPoints.Name} 
                                         cssClass="name" />
@@ -420,141 +400,6 @@ class SummaryReport extends Component {
                             <GridColumn field={DataPoints.Deaths} 
                                         cssClass="deaths" aggregate={true} />
                         </GridColumnGroup>
-{/*                         <GridColumnGroup id={GroupKeys.ProtPotions} label="Prot Potions" cssClass="even-colgroup">
-                            <GridColumn field={DataPoints.ProtectionPotionsTotal} 
-                                        label="Uses" 
-                                        cssClass="center" 
-                                        visibility={(ctx) => ctx.collapsed === true}
-                                        aggregate={true} />
-                            <GridColumn field={DataPoints.ProtectionPotionsTotalAbsorbed} 
-                                        label="Absorb" 
-                                        cssClass="center" 
-                                        visibility={(ctx) => ctx.collapsed === true}
-                                        aggregate={true} />
-                            <GridIconColumn field={DataPoints.ProtectionPotionsNature} 
-                                        label="Nature Protection Potion" 
-                                        icon_name="inv_potion_06.jpg" 
-                                        item_id={6052}
-                                        cssClass="protection_potion nature" 
-                                        visibility={(ctx) => ctx.collapsed === false}
-                                        aggregate={true} />
-                            <GridIconColumn field={DataPoints.ProtectionPotionsGreaterNature} 
-                                        label="Greater Nature Protection Potion" 
-                                        icon_name="inv_potion_22.jpg" 
-                                        item_id={13458}
-                                        cssClass="protection_potion nature" 
-                                        visibility={(ctx) => ctx.collapsed === false}
-                                        aggregate={true} />
-                            <GridIconColumn field={DataPoints.ProtectionPotionsMajorNature} 
-                                        label="Major Nature Protection Potion" 
-                                        icon_name="inv_potion_127.jpg" 
-                                        item_id={22844}
-                                        cssClass="protection_potion nature" 
-                                        visibility={(ctx) => ctx.collapsed === false}
-                                        aggregate={true} />
-                            <GridColumn field={DataPoints.ProtectionPotionsNatureAbsorbed} 
-                                        label="Absorb" 
-                                        cssClass="protection_potion nature" 
-                                        visibility={(ctx) => ctx.collapsed === false}
-                                        aggregate={true} />
-                            <GridIconColumn field={DataPoints.ProtectionPotionsFire} 
-                                        label="Fire Protection Potion" 
-                                        icon_name="inv_potion_16.jpg" 
-                                        item_id={6049}
-                                        cssClass="protection_potion fire" 
-                                        visibility={(ctx) => ctx.collapsed === false}
-                                        aggregate={true} />
-                            <GridIconColumn field={DataPoints.ProtectionPotionsGreaterFire} 
-                                        label="Greater Fire Protection Potion" 
-                                        icon_name="inv_potion_24.jpg" 
-                                        item_id={13457}
-                                        cssClass="protection_potion fire" 
-                                        visibility={(ctx) => ctx.collapsed === false}
-                                        aggregate={true} />
-                            <GridIconColumn field={DataPoints.ProtectionPotionsMajorFire} 
-                                        label="Major Fire Protection Potion" 
-                                        icon_name="inv_potion_124.jpg" 
-                                        item_id={22841}
-                                        cssClass="protection_potion fire" 
-                                        visibility={(ctx) => ctx.collapsed === false}
-                                        aggregate={true} />
-                            <GridColumn field={DataPoints.ProtectionPotionsFireAbsorbed} 
-                                        label="Absorb" 
-                                        cssClass="protection_potion fire" 
-                                        visibility={(ctx) => ctx.collapsed === false}
-                                        aggregate={true} />
-                            <GridIconColumn field={DataPoints.ProtectionPotionsFrost} 
-                                            label="Frost Protection Potion" 
-                                            icon_name="inv_potion_13.jpg" 
-                                            item_id={6050}
-                                            cssClass="protection_potion frost" 
-                                            visibility={(ctx) => ctx.collapsed === false}
-                                            aggregate={true} />
-                            <GridIconColumn field={DataPoints.ProtectionPotionsGreaterFrost} 
-                                            label="Greater Frost Protection Potion" 
-                                            icon_name="inv_potion_20.jpg" 
-                                            item_id={13456}
-                                            cssClass="protection_potion frost" 
-                                            visibility={(ctx) => ctx.collapsed === false}
-                                            aggregate={true} />
-                            <GridIconColumn field={DataPoints.ProtectionPotionsMajorFrost} 
-                                            label="Major Frost Protection Potion" 
-                                            icon_name="inv_potion_126.jpg" 
-                                            item_id={22842}
-                                            cssClass="protection_potion frost" 
-                                            visibility={(ctx) => ctx.collapsed === false}
-                                            aggregate={true} />
-                            <GridColumn field={DataPoints.ProtectionPotionsFrostAbsorbed} 
-                                        label="Absorb" 
-                                        cssClass="protection_potion frost" 
-                                        visibility={(ctx) => ctx.collapsed === false}
-                                        aggregate={true} />
-                            <GridIconColumn field={DataPoints.ProtectionPotionsShadow} 
-                                            label="Shadow Protection Potion" 
-                                            icon_name="inv_potion_44.jpg" 
-                                            item_id={6048}
-                                            cssClass="protection_potion shadow" 
-                                            visibility={(ctx) => ctx.collapsed === false}
-                                            aggregate={true} />
-                            <GridIconColumn field={DataPoints.ProtectionPotionsGreaterShadow} 
-                                            label="Greater Shadow Protection Potion" 
-                                            icon_name="inv_potion_23.jpg" 
-                                            item_id={13459}
-                                            cssClass="protection_potion shadow" 
-                                            visibility={(ctx) => ctx.collapsed === false}
-                                            aggregate={true} />
-                            <GridIconColumn field={DataPoints.ProtectionPotionsMajorShadow} 
-                                            label="Major Shadow Protection Potion" 
-                                            icon_name="inv_potion_123.jpg" 
-                                            item_id={22846}
-                                            cssClass="protection_potion shadow" 
-                                            visibility={(ctx) => ctx.collapsed === false}
-                                            aggregate={true} />
-                            <GridColumn field={DataPoints.ProtectionPotionsShadowAbsorbed} 
-                                        label="Absorb" 
-                                        cssClass="protection_potion shadow" 
-                                        visibility={(ctx) => ctx.collapsed === false}
-                                        aggregate={true} />
-                            <GridIconColumn field={DataPoints.ProtectionPotionsGreaterArcane} 
-                                            label="Greater Arcane Protection Potion" 
-                                            icon_name="inv_potion_83.jpg" 
-                                            item_id={13461}
-                                            cssClass="protection_potion arcane" 
-                                            visibility={(ctx) => ctx.collapsed === false}
-                                            aggregate={true} />
-                            <GridIconColumn field={DataPoints.ProtectionPotionsMajorArcane} 
-                                            label="Major Arcane Protection Potion" 
-                                            icon_name="inv_potion_128.jpg" 
-                                            item_id={22845}
-                                            cssClass="protection_potion arcane" 
-                                            visibility={(ctx) => ctx.collapsed === false}
-                                            aggregate={true} />
-                            <GridColumn field={DataPoints.ProtectionPotionsArcaneAbsorbed} 
-                                        label="Absorb" 
-                                        cssClass="protection_potion arcane" 
-                                        visibility={(ctx) => ctx.collapsed === false}
-                                        aggregate={true} />
-                        </GridColumnGroup> */}
                         <GridColumnGroup id={GroupKeys.Consumes} label="Consumes" cssClass="even-colgroup">
                             <GridIconColumn field={DataPoints.ConsumesPotions} 
                                             label="Potions" 
@@ -1125,9 +970,6 @@ class SummaryReport extends Component {
                             
                         </GridColumnGroup>
                         <GridColumnGroup id={GroupKeys.Cooldowns} label="Cooldowns" cssClass="even-colgroup">
-{/*                             <GridIconListColumn field={DataPoints.Cooldowns}
-                                        label=" "
-                                        cssClass="center" /> */}
                             <GridIconListColumn field={DataPoints.CooldownsRacial}
                                         label=" "
                                         cssClass="cooldowns center" />
@@ -1294,43 +1136,9 @@ class SummaryReport extends Component {
                                         visibility={(ctx) => ctx.classFilter === "Mage" && ctx.hasValue}
                                         aggregate={true} />
                         </GridColumnGroup>
-{/*                        <GridColumnGroup id={GroupKeys.Resistance} label="Resistance" cssClass="even-colgroup">
-                            <GridColumn field={DataPoints.ResistanceArcane} label="A"
-                                        cssClass="protection_potion arcane" />
-                            <GridColumn field={DataPoints.ResistanceFire} label="F"
-                                        cssClass="protection_potion fire" />
-                            <GridColumn field={DataPoints.ResistanceFrost} label="Fr"
-                                        cssClass="protection_potion frost" />
-                            <GridColumn field={DataPoints.ResistanceNature} label="N"
-                                        cssClass="protection_potion nature" />
-                            <GridColumn field={DataPoints.ResistanceShadow} label="S"
-                                        cssClass="protection_potion shadow" />
-                        </GridColumnGroup>
-                         <GridColumnGroup id={GroupKeys.Tank} label="Tank Stats" cssClass="even-colgroup">
-                            <GridBarColumn label="Damage Taken" width="270" visibility={(ctx) => ctx.roleFilter === "tank"}>
-                                <GridBarColumnSection field={DataPoints.DamageTakenHit} label="Hit" cssClass="class-colour1" />
-                                <GridBarColumnSection field={DataPoints.DamageTakenCrushed} label="Crushing Blow" cssClass="bad2" />
-                                <GridBarColumnSection field={DataPoints.DamageTakenCrit} label="Crit" cssClass="bad1" />
-                                <GridBarColumnSection field={DataPoints.DamageTakenBlocked} label="Blocked" cssClass="class-colour3" />
-                                <GridBarColumnSection field={DataPoints.DamageTakenParry} label="Parry" cssClass="good2" />
-                                <GridBarColumnSection field={DataPoints.DamageTakenDodge} label="Dodge" cssClass="good1" />
-                                <GridBarColumnSection field={DataPoints.DamageTakenMiss} label="Miss" cssClass="class-colour4" />
-                            </GridBarColumn>
-                            <GridColumn label="Hit" field={DataPoints.DamageTakenHit} format="%" cssClass="right class-colour4 percentage" visibility={(ctx) => ctx.roleFilter === "tank"} />
-                            <GridColumn label="Crush" field={DataPoints.DamageTakenCrushed} format="%" cssClass="right class-colour4 percentage" visibility={(ctx) => ctx.roleFilter === "tank"}  />
-                            <GridColumn label="Crit" field={DataPoints.DamageTakenCrit} format="%" cssClass="right class-colour4 percentage" visibility={(ctx) => ctx.roleFilter === "tank"}  />
-                            <GridColumn label="Block" field={DataPoints.DamageTakenBlocked} format="%" cssClass="right class-colour4 percentage" visibility={(ctx) => ctx.roleFilter === "tank"}  />
-                            <GridColumn label="Parry" field={DataPoints.DamageTakenParry} format="%" cssClass="right percentage" visibility={(ctx) => ctx.roleFilter === "tank"}  />
-                            <GridColumn label="Dodge" field={DataPoints.DamageTakenDodge} format="%" cssClass="right percentage" visibility={(ctx) => ctx.roleFilter === "tank"}  />
-                            <GridColumn label="Miss" field={DataPoints.DamageTakenMiss} format="%" cssClass="right percentage" visibility={(ctx) => ctx.roleFilter === "tank"}  />
-                        </GridColumnGroup> */}
                     </Grid>
                     <ReactTooltip />
-                    {/* <p>* Resistance calculations include "random enchantment" items that may or may not be "of [School] Protection"</p> */}
-                </>
-            )
-        }
+            </>
+        )
     }
 }
-
-export const SummaryReportWithRouter = withRouter(SummaryReport);
