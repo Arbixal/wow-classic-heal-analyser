@@ -18,7 +18,7 @@
     "react-ga4": "^1.4.1"
   },
   "devDependencies": {
-    "node-sass": "^7.0.3"
+    "node-sass": "^8.0.0"
   },
   "scripts": {
     "start": "react-scripts start",
