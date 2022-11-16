@@ -8,7 +8,7 @@ export function ReportLoad() {
         ReactGA.send({ hitType: "pageview", page: location.pathname });
     }, [location]);
 
-    let history = useNavigate();
+    let navigate = useNavigate();
     let [reportId, setReportId] = useState();
 
     let handleChange = (event) => {
@@ -27,7 +27,7 @@ export function ReportLoad() {
     }
 
     let handleSubmit = () => {
-        history.navigate("/" + reportId);
+        navigate("/" + reportId);
     }
 
     return (
