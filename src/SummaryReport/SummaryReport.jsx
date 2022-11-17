@@ -122,10 +122,12 @@ export function SummaryReport() {
     const [classFilter, setClassFilter] = useState();
     const [roleFilter, setRoleFilter] = useState();
 
+    // Selected Fight
     useEffect(() => {
         setSelectedFight(fightId == null || isNaN(parseInt(fightId)) ? -1 : parseInt(fightId));
     }, [fightId]);
 
+    // Load data
     useEffect(() => {
         if (!id)
             return;
@@ -168,6 +170,7 @@ export function SummaryReport() {
         });
     }, [id, selectedFight]);
 
+    // Get Fight Ids
     useEffect(() => {
         let fightIdsRaw = [];
         if (fightId === -1 && hoverFight == null)
@@ -192,6 +195,7 @@ export function SummaryReport() {
 
     }, [selectedFight, hoverFight, fightId, fights])
 
+    // Get Boss
     useEffect(() => {
         setBossList(fights.filter(fight => fight.boss > 0)
         .reduce((accum, fight) => {
@@ -215,6 +219,7 @@ export function SummaryReport() {
         },[]));
     }, [fights, selectedFight])
 
+    // Filter data
     useEffect(() => {
         const characterMapper = new CharacterMapper();
         const classSortOrder = { Warrior: 0, Rogue: 1, Hunter: 2, Mage: 3, Warlock: 4, Priest: 5, Shaman: 6, Paladin: 7, Druid: 8, DeathKnight: 9 };
@@ -253,6 +258,7 @@ export function SummaryReport() {
         //this.setState({data: data, classFilter: classFilter, roleFilter: roleFilter});
     }, [filter, characters])
 
+    // Send Analytics call
     useEffect(() => {
         ReactGA.send({ hitType: "pageview", page: pathname, reportId: id, fightId: fightId, filter: filter });
     }, [filter, fightId, id, pathname])

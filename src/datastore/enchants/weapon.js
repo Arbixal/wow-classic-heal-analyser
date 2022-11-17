@@ -50,13 +50,13 @@ export default {
         score: {
             [SPECS.Warrior.Gladiator]: 1,
             [SPECS.Warrior.Protection]: 1,
-            [SPECS.Rogue.Combat]: 1,
-            [SPECS.Rogue.Subtlety]: 1,
-            [SPECS.Rogue.Assassination]: 1,
-            [SPECS.Shaman.Enhancement]: 1,
-            [SPECS.Paladin.Retribution]: 1,
-            [SPECS.Warrior.Arms]: 1,
-            [SPECS.Warrior.Fury]: 1,
+            [SPECS.Rogue.Combat]: 0.5,
+            [SPECS.Rogue.Subtlety]: 0.5,
+            [SPECS.Rogue.Assassination]: 0.5,
+            [SPECS.Shaman.Enhancement]: 0.5,
+            [SPECS.Paladin.Retribution]: 0.5,
+            [SPECS.Warrior.Arms]: 0.5,
+            [SPECS.Warrior.Fury]: 0.5,
         }
     },
     2671: {
@@ -85,4 +85,19 @@ export default {
         score: {
         }
     },
+    3789: {
+        name: "Enchant Weapon - Berserking",
+        spellId: 59621,
+        score: {
+            [SPECS.Warrior.Arms]: 1,
+            [SPECS.Warrior.Fury]: 1,
+            [SPECS.Druid.Feral]: 1,
+            [SPECS.Paladin.Retribution]: 1,
+            [SPECS.Rogue.Assassination]: 1,
+            [SPECS.Rogue.Combat]: 1,
+            [SPECS.Rogue.Subtlety]: 1,
+            [SPECS.Shaman.Enhancement]: 1,
+
+        }
+    }
 }

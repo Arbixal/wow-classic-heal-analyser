@@ -38,9 +38,15 @@
 // Warrior-Protection
 
 export const SPECS = {
+    DeathKnight: {
+        Blood: "DeathKnight-Blood",
+        Frost: "DeathKnight-Frost",
+        Unholy: "DeathKnight-Unholy",
+        Runeblade: "DeathKnight-Runeblade",
+        Lichborne: "DeathKnight-Lichborne",
+    },
     Druid: {
         Balance: "Druid-Balance",
-        Dreamstate: "Druid-Dreamstate",
         Feral: "Druid-Feral",
         Guardian: "Druid-Guardian",
         Restoration: "Druid-Restoration",
@@ -70,6 +76,7 @@ export const SPECS = {
         Holy: "Paladin-Holy",
         Protection: "Paladin-Protection",
         Retribution: "Paladin-Retribution",
+        Justicar: "Paladin-Justicar",
     },
     Priest: {
         Discipline: "Priest-Discipline",
@@ -86,6 +93,7 @@ export const SPECS = {
         Fury: "Warrior-Fury",
         Gladiator: "Warrior-Gladiator",
         Protection: "Warrior-Protection",
+        Champion: "Warrior-Champion",
     }
 }
 
@@ -93,7 +101,6 @@ export const GROUPS = {
     Healers: {
         BIS: {
             [SPECS.Druid.Restoration]: 1,
-            [SPECS.Druid.Dreamstate]: 1,
             [SPECS.Shaman.Restoration]: 1,
             [SPECS.Priest.Holy]: 1,
             [SPECS.Priest.Discipline]: 1,
@@ -101,7 +108,6 @@ export const GROUPS = {
         },
         OK: {
             [SPECS.Druid.Restoration]: 0.5,
-            [SPECS.Druid.Dreamstate]: 0.5,
             [SPECS.Shaman.Restoration]: 0.5,
             [SPECS.Priest.Holy]: 0.5,
             [SPECS.Priest.Discipline]: 0.5,
@@ -110,6 +116,9 @@ export const GROUPS = {
     },
     Tanks: {
         BIS: {
+            [SPECS.DeathKnight.Blood]: 1,
+            [SPECS.DeathKnight.Runeblade]: 1,
+            [SPECS.DeathKnight.Lichborne]: 1,
             [SPECS.Warrior.Protection]: 1,
             [SPECS.Warrior.Gladiator]: 1,
             [SPECS.Paladin.Protection]: 1,
@@ -117,6 +126,9 @@ export const GROUPS = {
             [SPECS.Druid.Warden]: 1,
         },
         OK: {
+            [SPECS.DeathKnight.Blood]: 0.5,
+            [SPECS.DeathKnight.Runeblade]: 0.5,
+            [SPECS.DeathKnight.Lichborne]: 0.5,
             [SPECS.Warrior.Protection]: 0.5,
             [SPECS.Warrior.Gladiator]: 0.5,
             [SPECS.Paladin.Protection]: 0.5,
@@ -126,8 +138,12 @@ export const GROUPS = {
     },
     All: {
         BIS: {
+            [SPECS.DeathKnight.Blood]: 1,
+            [SPECS.DeathKnight.Frost]: 1,
+            [SPECS.DeathKnight.Unholy]: 1,
+            [SPECS.DeathKnight.Runeblade]: 1,
+            [SPECS.DeathKnight.Lichborne]: 1,
             [SPECS.Druid.Balance]: 1,
-            [SPECS.Druid.Dreamstate]: 1,
             [SPECS.Druid.Feral]: 1,
             [SPECS.Druid.Guardian]: 1,
             [SPECS.Druid.Restoration]: 1,
@@ -141,6 +157,7 @@ export const GROUPS = {
             [SPECS.Paladin.Holy]: 1,
             [SPECS.Paladin.Protection]: 1,
             [SPECS.Paladin.Retribution]: 1,
+            [SPECS.Paladin.Justicar]: 1,
             [SPECS.Priest.Discipline]: 1,
             [SPECS.Priest.Holy]: 1,
             [SPECS.Priest.Shadow]: 1,
@@ -159,8 +176,12 @@ export const GROUPS = {
             [SPECS.Warrior.Protection]: 1,
         },
         OK: {
+            [SPECS.DeathKnight.Blood]: 0.5,
+            [SPECS.DeathKnight.Frost]: 0.5,
+            [SPECS.DeathKnight.Unholy]: 0.5,
+            [SPECS.DeathKnight.Runeblade]: 0.5,
+            [SPECS.DeathKnight.Lichborne]: 0.5,
             [SPECS.Druid.Balance]: 0.5,
-            [SPECS.Druid.Dreamstate]: 0.5,
             [SPECS.Druid.Feral]: 0.5,
             [SPECS.Druid.Guardian]: 0.5,
             [SPECS.Druid.Restoration]: 0.5,
@@ -174,6 +195,7 @@ export const GROUPS = {
             [SPECS.Paladin.Holy]: 0.5,
             [SPECS.Paladin.Protection]: 0.5,
             [SPECS.Paladin.Retribution]: 0.5,
+            [SPECS.Paladin.Justicar]: 0.5,
             [SPECS.Priest.Discipline]: 0.5,
             [SPECS.Priest.Holy]: 0.5,
             [SPECS.Priest.Shadow]: 0.5,
