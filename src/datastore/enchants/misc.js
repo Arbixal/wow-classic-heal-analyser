@@ -25,31 +25,71 @@ export default {
     2984: {
         name: "Shadow Armor Kit",
         itemId: 29483,
-        score: {...GROUPS.All.BIS}
+        score: {}
     },
     2985: {
         name: "Flame Armor Kit",
         itemId: 29485,
-        score: {...GROUPS.Tanks.BIS}
+        score: {}
     },
     2988: {
         name: "Nature Armor Kit",
         itemId: 29487,
-        score: {...GROUPS.Tanks.BIS}
+        score: {}
     },
     2987: {
         name: "Frost Armor Kit",
         itemId: 29486,
-        score: {...GROUPS.Tanks.BIS}
+        score: {}
     },
     1505: {
         name: "Lesser Arcanum of Resilience",
         itemId: 11644,
-        score: {
-            ...GROUPS.Tanks.BIS,
-            [SPECS.Warlock.Affliction]: 1,
-            [SPECS.Warlock.Demonology]: 1,
-            [SPECS.Warlock.Destruction]: 1,
-        }
+        score: {}
     },
+    3330: {
+        name: "Heavy Borean Armor Kit",
+        itemId: 38376,
+        bySlot: {
+            [itemSlots.Chest]: {
+                itemId: 38376,
+                score: {
+                    [SPECS.DeathKnight.Blood]: 1,
+                    [SPECS.DeathKnight.Runeblade]: 1,
+                    [SPECS.Druid.Warden]: 1,
+                    [SPECS.Druid.Guardian]: 1,
+                    [SPECS.Paladin.Protection]: 1,
+                    [SPECS.Paladin.Justicar]: 1,
+                }
+            },
+            [itemSlots.Legs]: {
+                itemId: 38376,
+                score: {}
+            },
+            [itemSlots.Hands]: {
+                itemId: 38376,
+                score: {
+                    [SPECS.DeathKnight.Blood]: 1,
+                    [SPECS.DeathKnight.Runeblade]: 1,
+                    [SPECS.Warrior.Protection]: 1,
+                    [SPECS.Warrior.Gladiator]: 1,
+                }
+            },
+            [itemSlots.Feet]: {
+                itemId: 38376,
+                score: {
+                    [SPECS.Paladin.Protection]: 1,
+                    [SPECS.Paladin.Justicar]: 1,
+                }
+            }
+        },
+        score: {}
+    },
+    3601: {
+        name: "Frag Belt",
+        spellId: 54793,
+        score: {
+            ...GROUPS.All.BIS
+        }
+    }
 }
