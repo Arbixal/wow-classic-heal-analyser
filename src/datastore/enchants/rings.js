@@ -70,5 +70,64 @@ export default {
             [SPECS.Priest.Discipline]: 1,
             [SPECS.Shaman.Restoration]: 1,
         }
-    }
+    },
+    3840: {
+        name: "Enchant Ring - Greater Spellpower",
+        spellId: 44636,
+        score: {
+            [SPECS.Druid.Balance]: 1,
+            [SPECS.Druid.Restoration]: 1,
+            [SPECS.Mage.Arcane]: 1,
+            [SPECS.Mage.Fire]: 1,
+            [SPECS.Mage.Frost]: 1,
+            [SPECS.Paladin.Holy]: 1,
+            [SPECS.Priest.Discipline]: 1,
+            [SPECS.Priest.Holy]: 1,
+            [SPECS.Priest.Shadow]: 1,
+            [SPECS.Shaman.Elemental]: 1,
+            [SPECS.Shaman.Restoration]: 1,
+            [SPECS.Warlock.Affliction]: 1,
+            [SPECS.Warlock.Demonology]: 1,
+            [SPECS.Warlock.Destruction]: 1,
+        }
+    },
+    3839: {
+        name: "Enchant Ring - Assault",
+        spellId: 44645,
+        score: {
+            [SPECS.DeathKnight.Blood]: 1,
+            [SPECS.DeathKnight.Frost]: 1,
+            [SPECS.DeathKnight.Lichborne]: 1,
+            [SPECS.DeathKnight.Runeblade]: 1,
+            [SPECS.DeathKnight.Unholy]: 1,
+            [SPECS.Druid.Feral]: 1,
+            [SPECS.Druid.Guardian]: 1,
+            [SPECS.Hunter.BeastMastery]: 1,
+            [SPECS.Hunter.Marksmanship]: 1,
+            [SPECS.Hunter.Survival]: 1,
+            [SPECS.Paladin.Justicar]: 1,
+            [SPECS.Paladin.Protection]: 1,
+            [SPECS.Paladin.Retribution]: 1,
+            [SPECS.Rogue.Assassination]: 1,
+            [SPECS.Rogue.Combat]: 1,
+            [SPECS.Rogue.Subtlety]: 1,
+            [SPECS.Shaman.Enhancement]: 1,
+            [SPECS.Warrior.Arms]: 1,
+            [SPECS.Warrior.Champion]: 1,
+            [SPECS.Warrior.Fury]: 1,
+            [SPECS.Warrior.Gladiator]: 1,
+        }
+    },
+    3791: {
+        name: "Enchant Ring - Stamina",
+        spellId: 59636,
+        score: {
+            [SPECS.Druid.Guardian]: 1,
+            [SPECS.Druid.Warden]: 1,
+            [SPECS.Paladin.Protection]: 1,
+            [SPECS.Paladin.Justicar]: 1,
+            [SPECS.Warrior.Gladiator]: 1,
+            [SPECS.Warrior.Protection]: 1,
+        }
+    },
 }
