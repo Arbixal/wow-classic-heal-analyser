@@ -820,7 +820,76 @@
         "id": 100032,
         "name": "Halls of Reflection",
         "logo": "https://wow.zamimg.com/images/wow/journal/ui-ej-boss-lich-king.png"
+    },
+
+    {
+        "id": 744,
+        "name": "Flame Leviathan",
+        "logo": "https://wow.zamimg.com/images/wow/journal/ui-ej-boss-flame-leviathan.png"
+    },
+    {
+        "id": 745,
+        "name": "Ignis",
+        "logo": "https://wow.zamimg.com/images/wow/journal/ui-ej-boss-ignis-the-furnace-master.png"
+    },
+    {
+        "id": 746,
+        "name": "Razorscale",
+        "logo": "https://wow.zamimg.com/images/wow/journal/ui-ej-boss-razorscale.png"
+    },
+    {
+        "id": 747,
+        "name": "XT-002 Deconstructor",
+        "logo": "https://wow.zamimg.com/images/wow/journal/ui-ej-boss-xt-002-deconstructor.png"
+    },
+    {
+        "id": 748,
+        "name": "Assembly of Iron",
+        "logo": "https://wow.zamimg.com/images/wow/journal/ui-ej-boss-assembly-of-iron.png"
+    },
+    {
+        "id": 749,
+        "name": "Kologarn",
+        "logo": "https://wow.zamimg.com/images/wow/journal/ui-ej-boss-kologarn.png"
+    },
+    {
+        "id": 750,
+        "name": "Auriaya",
+        "logo": "https://wow.zamimg.com/images/wow/journal/ui-ej-boss-auriaya.png"
+    },
+    {
+        "id": 751,
+        "name": "Hodir",
+        "logo": "https://wow.zamimg.com/images/wow/journal/ui-ej-boss-hodir.png"
+    },
+    {
+        "id": 752,
+        "name": "Thorim",
+        "logo": "https://wow.zamimg.com/images/wow/journal/ui-ej-boss-thorim.png"
+    },
+    {
+        "id": 753,
+        "name": "Freya",
+        "logo": "https://wow.zamimg.com/images/wow/journal/ui-ej-boss-freya.png"
+    },
+    {
+        "id": 754,
+        "name": "Mimiron",
+        "logo": "https://wow.zamimg.com/images/wow/journal/ui-ej-boss-mimiron.png"
+    },
+    {
+        "id": 755,
+        "name": "General Vezax",
+        "logo": "https://wow.zamimg.com/images/wow/journal/ui-ej-boss-general-vezax.png"
+    },
+    {
+        "id": 756,
+        "name": "Yogg-Saron",
+        "logo": "https://wow.zamimg.com/images/wow/journal/ui-ej-boss-yogg-saron.png"
+    },
+    {
+        "id": 757,
+        "name": "Algalon",
+        "logo": "https://wow.zamimg.com/images/wow/journal/ui-ej-boss-algalon-the-observer.png"
     }
-
-
 ]
