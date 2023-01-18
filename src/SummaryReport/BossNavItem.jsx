@@ -12,7 +12,7 @@ function getPercentageBar(fight) {
 }
 
 function convertHardModeLevel(hardModes, hardModeLevel) {
-    if (hardModeLevel === 0)
+    if (!hardModeLevel || hardModeLevel === 0)
         return 0;
 
     if (hardModes === 1)
