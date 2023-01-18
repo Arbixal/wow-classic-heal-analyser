@@ -6,7 +6,7 @@ export class WarcraftLogLoader {
     constructor(reportId = null) {
         this.domain = `${process.env.REACT_APP_API_ENDPOINT}/load-report/`;
         this.contentType = "application/vnd.bixnpieces.logsummary-v1.0+json";
-        this.apiVersion = 1.0;
+        this.apiVersion = 1.2;
         this.reportId = reportId;
         this.Results = {};
         this._loadedStatus = {
