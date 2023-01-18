@@ -729,7 +729,8 @@
     {
         "id": 742,
         "name": "Sartharion",
-        "logo": "https://wow.zamimg.com/images/wow/journal/ui-ej-boss-sartharion.png"
+        "logo": "https://wow.zamimg.com/images/wow/journal/ui-ej-boss-sartharion.png",
+        "hardModes": 3
     },
     {
         "id": 734,
@@ -825,12 +826,14 @@
     {
         "id": 744,
         "name": "Flame Leviathan",
-        "logo": "https://wow.zamimg.com/images/wow/journal/ui-ej-boss-flame-leviathan.png"
+        "logo": "https://wow.zamimg.com/images/wow/journal/ui-ej-boss-flame-leviathan.png",
+        "hardModes": 4
     },
     {
         "id": 745,
         "name": "Ignis",
         "logo": "https://wow.zamimg.com/images/wow/journal/ui-ej-boss-ignis-the-furnace-master.png"
+
     },
     {
         "id": 746,
@@ -840,12 +843,14 @@
     {
         "id": 747,
         "name": "XT-002 Deconstructor",
-        "logo": "https://wow.zamimg.com/images/wow/journal/ui-ej-boss-xt-002-deconstructor.png"
+        "logo": "https://wow.zamimg.com/images/wow/journal/ui-ej-boss-xt-002-deconstructor.png",
+        "hardModes": 1
     },
     {
         "id": 748,
         "name": "Assembly of Iron",
-        "logo": "https://wow.zamimg.com/images/wow/journal/ui-ej-boss-assembly-of-iron.png"
+        "logo": "https://wow.zamimg.com/images/wow/journal/ui-ej-boss-assembly-of-iron.png",
+        "hardModes": 2
     },
     {
         "id": 749,
@@ -860,32 +865,38 @@
     {
         "id": 751,
         "name": "Hodir",
-        "logo": "https://wow.zamimg.com/images/wow/journal/ui-ej-boss-hodir.png"
+        "logo": "https://wow.zamimg.com/images/wow/journal/ui-ej-boss-hodir.png",
+        "hardModes": 1
     },
     {
         "id": 752,
         "name": "Thorim",
-        "logo": "https://wow.zamimg.com/images/wow/journal/ui-ej-boss-thorim.png"
+        "logo": "https://wow.zamimg.com/images/wow/journal/ui-ej-boss-thorim.png",
+        "hardModes": 1
     },
     {
         "id": 753,
         "name": "Freya",
-        "logo": "https://wow.zamimg.com/images/wow/journal/ui-ej-boss-freya.png"
+        "logo": "https://wow.zamimg.com/images/wow/journal/ui-ej-boss-freya.png",
+        "hardModes": 3
     },
     {
         "id": 754,
         "name": "Mimiron",
-        "logo": "https://wow.zamimg.com/images/wow/journal/ui-ej-boss-mimiron.png"
+        "logo": "https://wow.zamimg.com/images/wow/journal/ui-ej-boss-mimiron.png",
+        "hardModes": 1
     },
     {
         "id": 755,
         "name": "General Vezax",
-        "logo": "https://wow.zamimg.com/images/wow/journal/ui-ej-boss-general-vezax.png"
+        "logo": "https://wow.zamimg.com/images/wow/journal/ui-ej-boss-general-vezax.png",
+        "hardModes": 1
     },
     {
         "id": 756,
         "name": "Yogg-Saron",
-        "logo": "https://wow.zamimg.com/images/wow/journal/ui-ej-boss-yogg-saron.png"
+        "logo": "https://wow.zamimg.com/images/wow/journal/ui-ej-boss-yogg-saron.png",
+        "hardModes": 4
     },
     {
         "id": 757,
